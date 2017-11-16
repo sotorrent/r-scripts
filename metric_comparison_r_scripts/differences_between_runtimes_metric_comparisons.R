@@ -87,8 +87,8 @@ hist(data$runtimeCodeTotalDeviationWithMinAndMax,
 runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorLessEqual10 <- data[data$runtimeTextTotalDeviationWithConstantBaseAndAverage <= 10]
 runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorMoreThan10 <- data[data$runtimeTextTotalDeviationWithConstantBaseAndAverage > 10]
 
-nrow(runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorLessEqual10) # 636835
-nrow(runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorMoreThan10) #  165
+nrow(runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorLessEqual10) # 636528
+nrow(runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorMoreThan10) # 472
 
 hist(runtimeTextTotalDeviationWithConstantBaseAndAverage_limitFactorLessEqual10$runtimeTextTotalDeviationWithConstantBaseAndAverage, 
      main="divide values of one sample by the ones of the other sample text",
