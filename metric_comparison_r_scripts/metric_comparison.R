@@ -24,7 +24,7 @@ data <- rbindlist(list(data, data_unclear_matching), use.names=TRUE, fill=TRUE)
 data <- rbindlist(list(data, data_java_1), use.names=TRUE, fill=TRUE)
 data <- rbindlist(list(data, data_java_2), use.names=TRUE, fill=TRUE)
 
-names(data) <- c("Sample", "Metric", "Threshold", "PostId", "PostVersionCount", "PostBlockVersionCount", "PossibleConnections", "RuntimeTextTotal", "RuntimeTextCPU", "RuntimeTextUser", "TextBlockVersionCount", "PossibleConnectionsText", "TruePositivesText", "TrueNegativesText", "FalsePositivesText", "FalseNegativesText", "RuntimeCodeTotal", "RuntimeCodeCPU", "RuntimeCodeUser", "CodeBlockVersionCount", "PossibleConnectionsCode", "TruePositivesCode", "TrueNegativesCode", "FalsePositivesCode", "FalseNegativesCode")
+names(data) <- c("Sample", "Metric", "Threshold", "PostId", "PostVersionCount", "PostBlockVersionCount", "PossibleConnections", "RuntimeTextTotal", "RuntimeTextCPU", "RuntimeTextUser", "TextBlockVersionCount", "PossibleConnectionsText", "TruePositivesText", "FalsePositivesText", "TrueNegativesText", "FalseNegativesText", "RuntimeCodeTotal", "RuntimeCodeCPU", "RuntimeCodeUser", "CodeBlockVersionCount", "PossibleConnectionsCode", "TruePositivesCode", "FalsePositivesCode", "TrueNegativesCode", "FalseNegativesCode")
 
 # https://stackoverflow.com/a/10608587
 # write.table(data, "PostId_VersionCount_SO_17-06_sample_100_aggregated.csv", sep=";", row.names = F)
