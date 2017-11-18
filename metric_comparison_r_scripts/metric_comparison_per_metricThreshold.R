@@ -4,8 +4,8 @@
 setwd("C:\\Users\\Lorik\\Documents\\GitHub\\r-scripts\\metric_comparison_r_scripts") # Pfad bitte anpassen
 
 library(data.table)
-dataMTS <- fread("PostId_VersionCount_SO_17-06_sample_100_per_metricThresholdSample.csv", header=TRUE, sep=";", quote="", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
-dataMT <- fread("PostId_VersionCount_SO_17-06_sample_100_per_metricThreshold.csv", header=TRUE, sep=";", quote="", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+dataMTS <- fread("PostId_VersionCount_SO_17-06_sample_100_per_metricThresholdSample_relativeValues.csv", header=TRUE, sep=";", quote="", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+dataMT <- fread("PostId_VersionCount_SO_17-06_sample_100_per_metricThreshold_relativeValues.csv", header=TRUE, sep=";", quote="", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 
 ############################################################################################
 
@@ -150,16 +150,19 @@ parcoords_code
 # Parallele Koordinaten in R
 # Option 2
 
+data_tmp <- dataMT[dataMT$threshold == 0.9]
+
 # K-Means Cluster Analysis for 5 clusters
-fit <- kmeans(dataMT$threshold, 5)
+fit <- kmeans(data_tmp$threshold, 1)
 # append cluster assignment
-cluster_dataMT <- data.frame(dataMT, fit$cluster)
-colnames(cluster_dataMT)[12] <- "cluster"
+cluster_data_tmp <- data.frame(data_tmp, fit$cluster)
+colnames(cluster_data_tmp)[12] <- "cluster"
 
 # use parcoord from package MASS
 library(MASS)
 # draw parallel coordinates and color by cluster
-parcoord(cluster_dataMT[,2:8], col = 1 + (0:149)%/%50, main="Parallel coordinates of data (5 colored clusters)")
+#parcoord(cluster_data_tmp[,3:8], col = 1 + (0:149)%/%50, main="Parallel coordinates of data (5 colored clusters)")
+parcoord(cluster_data_tmp[,3:8], col = 'darkgrey', main="Parallel coordinates of data (5 colored clusters)")
 
 #require(grDevices)
-#stars(data)
+#stars(data_tmp)
