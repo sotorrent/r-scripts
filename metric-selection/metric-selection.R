@@ -1,7 +1,8 @@
-setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 library(data.table)
-metric_comparison <- fread("MetricComparison_aggregated.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+metric_comparison <- fread("MetricComparison_aggregated-all.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
 
 nrow(metric_comparison)
 # 1474
