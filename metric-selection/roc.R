@@ -1,5 +1,5 @@
-#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 library(data.table)
 metric_comparison <- fread("MetricComparison_aggregated-selected.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
@@ -39,13 +39,17 @@ roc_text[roc_text$Threshold==0.17,]
 
 plot(roc_text$FPR, roc_text$TPR,
      main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
-     pch=1
+     pch=1,
+     xlim=c(0.0, 0.01), ylim=c(0.7, 1.0),
+     xaxt="n", yaxt="n"
 )
+axis(1, at=seq(0, 0.01, by=0.002), labels=seq(0, 0.01, by=0.002))
+axis(2, at=seq(0.7, 1.0, by=0.05), labels=seq(0.7, 1.0, by=0.05), las=2)
 segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR, lty=2, lwd=1)
 segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR, lty=2, lwd=1)
 points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
-text(0.0074, 0.9, "\u2190 theshold: 0.17 (TPR=0.9860, FPR=0.0054)", font=3)
-
+text(0.0067, 0.9, "\u2190 theshold: 0.17", font=3, cex=1)
+text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
 
 ### CODE ###
 
@@ -78,12 +82,14 @@ roc_code[roc_code$Threshold==0.26,]
 
 plot(roc_code$FPR, roc_code$TPR,
      main="fiveGramDiceNormalizedPadding (Code)", xlab="False positive rate", ylab="True positive rate",
-     pch=1, xaxt="n", yaxt="n"
+     pch=1,
+     xlim=c(0.0, 0.01), ylim=c(0.7, 1.0),
+     xaxt="n", yaxt="n"
 )
-axis(1, at=seq(0, 0.01, by=0.001), labels=seq(0, 0.01, by=0.001))
+axis(1, at=seq(0, 0.01, by=0.002), labels=seq(0, 0.01, by=0.002))
 axis(2, at=seq(0.7, 1.0, by=0.05), labels=seq(0.7, 1.0, by=0.05), las=2)
 segments(x0=roc_code[roc_code$Threshold==0.26,]$FPR, y0=0, x1=roc_code[roc_code$Threshold==0.26,]$FPR, y1=roc_code[roc_code$Threshold==0.26,]$TPR, lty=2, lwd=1)
 segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.26,]$TPR, x1=roc_code[roc_code$Threshold==0.26,]$FPR, y1=roc_code[roc_code$Threshold==0.26,]$TPR, lty=2, lwd=1)
 points(roc_code[roc_code$Threshold==0.26,]$FPR, roc_code[roc_code$Threshold==0.26,]$TPR, pch=16)
-text(0.0074, 0.9, "\u2190 theshold: 0.26 (TPR=0.9860, FPR=0.0054)", font=3)
-
+text(0.0067, 0.9, "\u2190 theshold: 0.26", font=3, cex=1)
+text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
