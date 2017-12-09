@@ -29,6 +29,7 @@ metric_text$Metric
 metric_text$Threshold
 # 0.17
 
+# best metric
 roc_text <- metric_comparison[metric_comparison$Metric == "manhattanFourGramNormalized", c("Threshold", "RecallText", "InverseRecallText")]
 roc_text$InverseRecallText <- 1 - roc_text$InverseRecallText
 roc_text <- roc_text[with(roc_text, order(roc_text$Threshold)),]
@@ -37,6 +38,13 @@ roc_text[roc_text$Threshold==0.17,]
 # Threshold      TPR         FPR
 # 1:      0.17 0.985957 0.005367202
 
+# baseline metric
+roc_text_equal <- metric_comparison[metric_comparison$Metric == "equal", c("Threshold", "RecallText", "InverseRecallText")]
+roc_text_equal$InverseRecallText <- 1 - roc_text_equal$InverseRecallText
+roc_text_equal <- roc_text_equal[with(roc_text_equal, order(roc_text_equal$Threshold)),]
+names(roc_text_equal) <- c("Threshold", "TPR", "FPR")
+
+# plot
 plot(roc_text$FPR, roc_text$TPR,
      main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=1
@@ -45,6 +53,8 @@ segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$
 segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR, lty=2, lwd=1)
 points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
 text(0.0074, 0.9, "\u2190 theshold: 0.17 (TPR=0.9860, FPR=0.0054)", font=3)
+
+# TODO: add points roc_text_equal
 
 
 ### CODE ###
