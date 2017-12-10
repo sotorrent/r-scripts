@@ -340,10 +340,29 @@ best_falsePositives_code <- rbindlist(list(best_falsePositives_code, best_falseP
 rm(best_falsePositives_code_edit, best_falsePositives_code_set, best_falsePositives_code_profile, best_falsePositives_code_fingerprint)
 
 
+# runtime
+best_runtime_edit <- metric_comparison[metric_comparison$MetricType == 'EDIT' & metric_comparison$Runtime == min(metric_comparison[metric_comparison$MetricType == 'EDIT']$Runtime)]
+best_runtime_set <- metric_comparison[metric_comparison$MetricType == 'SET' & metric_comparison$Runtime == min(metric_comparison[metric_comparison$MetricType == 'SET']$Runtime)]
+best_runtime_profile <- metric_comparison[metric_comparison$MetricType == 'PROFILE' & metric_comparison$Runtime == min(metric_comparison[metric_comparison$MetricType == 'PROFILE']$Runtime)]
+best_runtime_fingerprint <- metric_comparison[metric_comparison$MetricType == 'FINGERPRINT' & metric_comparison$Runtime == min(metric_comparison[metric_comparison$MetricType == 'FINGERPRINT']$Runtime)]
+best_runtime_equal <- metric_comparison[metric_comparison$MetricType == 'EQUAL' & metric_comparison$Runtime == min(metric_comparison[metric_comparison$MetricType == 'EQUAL']$Runtime)]
+
+best_runtime <- rbindlist(list(best_runtime_edit, best_runtime_set), use.names=TRUE, fill=TRUE)
+best_runtime <- rbindlist(list(best_runtime, best_runtime_profile), use.names=TRUE, fill=TRUE)
+best_runtime <- rbindlist(list(best_runtime, best_runtime_fingerprint), use.names=TRUE, fill=TRUE)
+best_runtime <- rbindlist(list(best_runtime, best_runtime_equal), use.names=TRUE, fill=TRUE)
+
+rm(best_runtime_edit, best_runtime_set, best_runtime_profile, best_runtime_fingerprint, best_runtime_equal)
+
+
+# best code 
 best_code <- rbindlist(list(best_informedness_code, best_markedness_code), use.names=TRUE, fill=TRUE)
 best_code <- rbindlist(list(best_code, best_matthewsCorrelation_code), use.names=TRUE, fill=TRUE)
 best_code <- rbindlist(list(best_code, best_fScore_code), use.names=TRUE, fill=TRUE)
 best_code <- rbindlist(list(best_code, best_falsePositives_code), use.names=TRUE, fill=TRUE)
+
+best <- rbindlist(list(best_text, best_code), use.names=TRUE, fill=TRUE)
+best <- rbindlist(list(best, best_runtime), use.names=TRUE, fill=TRUE)
 
 
 # write best metrics in own csv files
@@ -354,4 +373,3 @@ write.table(best_falsePositives_code, "best_falsePositives_code.csv", sep=";", r
 write.table(best_runtime, "best_runtime.csv", sep=";", row.names = F)
 
 
-best_both <- rbindlist(list(best_text, best_code), use.names=TRUE, fill=TRUE)
