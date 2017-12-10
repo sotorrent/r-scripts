@@ -249,10 +249,18 @@ best_falsePositives_text <- rbindlist(list(best_falsePositives_text, best_falseP
 rm(best_falsePositives_text_edit, best_falsePositives_text_set, best_falsePositives_text_profile, best_falsePositives_text_fingerprint)
 
 
+# best text
 best_text <- rbindlist(list(best_informedness_text, best_markedness_text), use.names=TRUE, fill=TRUE)
 best_text <- rbindlist(list(best_text, best_matthewsCorrelation_text), use.names=TRUE, fill=TRUE)
 best_text <- rbindlist(list(best_text, best_fScore_text), use.names=TRUE, fill=TRUE)
 best_text <- rbindlist(list(best_text, best_falsePositives_text), use.names=TRUE, fill=TRUE)
+
+
+write.table(best_informedness_text, "best_informedness_text.csv", sep=";", row.names = F)
+write.table(best_markedness_text, "best_markedness_text.csv", sep=";", row.names = F)
+write.table(best_matthewsCorrelation_text, "best_matthewsCorrelation_text.csv", sep=";", row.names = F)
+write.table(best_falsePositives_text, "best_falsePositives_text.csv", sep=";", row.names = F)
+
 
 
 
@@ -336,6 +344,14 @@ best_code <- rbindlist(list(best_informedness_code, best_markedness_code), use.n
 best_code <- rbindlist(list(best_code, best_matthewsCorrelation_code), use.names=TRUE, fill=TRUE)
 best_code <- rbindlist(list(best_code, best_fScore_code), use.names=TRUE, fill=TRUE)
 best_code <- rbindlist(list(best_code, best_falsePositives_code), use.names=TRUE, fill=TRUE)
+
+
+# write best metrics in own csv files
+write.table(best_informedness_code, "best_informedness_code.csv", sep=";", row.names = F)
+write.table(best_markedness_code, "best_markedness_code.csv", sep=";", row.names = F)
+write.table(best_matthewsCorrelation_code, "best_matthewsCorrelation_code.csv", sep=";", row.names = F)
+write.table(best_falsePositives_code, "best_falsePositives_code.csv", sep=";", row.names = F)
+write.table(best_runtime, "best_runtime.csv", sep=";", row.names = F)
 
 
 best_both <- rbindlist(list(best_text, best_code), use.names=TRUE, fill=TRUE)
