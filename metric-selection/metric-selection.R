@@ -1,5 +1,7 @@
 #setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+setwd("C://Users//Lorik//Documents//GitHub//r-scripts//metric-selection")
+
 
 library(data.table)
 metric_comparison <- fread("MetricComparison_aggregated-all.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
@@ -98,3 +100,74 @@ unique(c(
 # [23] "fourGramDiceNormalized"                           
 # [24] "winnowingFourGramJaccard" 
 
+
+
+############################################################################################
+# preparing for scatterplot
+panel.cor <- function(x, y, digits=2, prefix="", cex.cor, ...){
+  usr <- par("usr"); on.exit(par(usr))
+  par(usr = c(0, 1, 0, 1))
+  r <- abs(cor(x, y))
+  txt <- format(c(r, 0.123456789), digits=digits)[1]
+  txt <- paste(prefix, txt, sep="")
+  if(missing(cex.cor)) cex.cor <- 0.8/strwidth(txt)
+  text(0.5, 0.5, txt, cex = cex.cor * r)
+}
+panel.pearson <- function(x, y, ...) {
+  horizontal <- (par("usr")[1] + par("usr")[2]) / 2; 
+  vertical <- (par("usr")[3] + par("usr")[4]) / 2; 
+  text(horizontal, vertical, format(abs(cor(x,y)), digits=2))
+}
+
+
+
+# scatterplot for text
+pairs(main = "scatterplot matrix (text)",
+  pch = 21,
+  las=1,
+  cex.panels = 3,
+  cex.labels=1.5,
+  upper.panel=panel.pearson,
+  lower.panel=panel.smooth,
+  
+  ~Threshold
+
+  +InformednessText
+  +MarkednessText
+  +MatthewsCorrelationText
+  +FScoreText
+  
+  +TruePositivesText
+  +TrueNegativesText
+  +FalsePositivesText
+  +FalseNegativesText
+  ,
+  data = metric_comparison)
+
+
+# scatterplot for code
+pairs(main = "scatterplot matrix (code)",
+      pch = 21,
+      las=1,
+      cex.panels = 3,
+      cex.labels=1.5,
+      upper.panel=panel.pearson,
+      lower.panel=panel.smooth,
+      
+      ~Threshold
+      
+      +InformednessCode
+      +MarkednessCode
+      +MatthewsCorrelationCode
+      +FScoreCode
+      
+      +TruePositivesCode
+      +TrueNegativesCode
+      +FalsePositivesCode
+      +FalseNegativesCode
+      ,
+      data = metric_comparison)
+############################################################################################
+
+
+data_filtered <- metric_comparison[metric_comparison$Threshold < 1 & metric_comparison$MetricType != 'EQUAL']
