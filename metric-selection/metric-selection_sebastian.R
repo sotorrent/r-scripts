@@ -3,9 +3,9 @@ setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
 #setwd("C://Users//Lorik//Documents//GitHub//r-scripts//metric-selection")
 
 
+# read results of first run with all metrics
 library(data.table)
 metric_comparison <- fread("MetricComparison_aggregated-all.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-
 nrow(metric_comparison)
 # 1474
 
@@ -110,3 +110,58 @@ selected_metrics
 # [17] "manhattanTwoShingleNormalized"    
 # [18] "fiveGramJaccard"                  
 # [19] "fourGramJaccard"
+
+
+
+# read results of second run with selected metrics and more thresholds
+library(data.table)
+metric_comparison_selected <- fread("MetricComparison_aggregated-selected.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+nrow(metric_comparison_selected)
+# 2020
+
+
+### TEXT ###
+
+MatthewsCorrelationText <- metric_comparison_selected$MatthewsCorrelationText
+
+summary(MatthewsCorrelationText)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.7735  0.9240  0.9640  0.9370  0.9739  0.9795
+
+boxplot(MatthewsCorrelationText)
+
+max(MatthewsCorrelationText)
+# 0.979533
+
+selected_metric_text <- metric_comparison_selected[metric_comparison_selected$MatthewsCorrelationText == max(MatthewsCorrelationText)]
+selected_metrics_text$Metric
+# [1] "manhattanFourGramNormalized"
+selected_metrics_text$Threshold
+# 0.17
+
+
+### CODE ###
+
+MatthewsCorrelationCode <- metric_comparison_selected$MatthewsCorrelationCode
+
+summary(MatthewsCorrelationCode)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.8602  0.9616  0.9769  0.9627  0.9813  0.9843 
+
+boxplot(MatthewsCorrelationCode)
+
+max(MatthewsCorrelationCode)
+# 0.9842914
+
+selected_metric_code <- metric_comparison_selected[metric_comparison_selected$MatthewsCorrelationCode == max(MatthewsCorrelationCode)]
+selected_metric_code$Metric
+# [1] "fiveGramJaccard"              
+# [2] "manhattanTwoShingleNormalized"
+# [3] "fiveGramDice"
+min_runtime_selected_metric_code <- min(selected_metric_code$Runtime)
+selected_metric_code <- metric_comparison_selected[metric_comparison_selected$MatthewsCorrelationCode == max(MatthewsCorrelationCode)
+                                                & metric_comparison_selected$Runtime == min_runtime_selected_metric_code]
+selected_metric_code$Metric
+# [1] "fiveGramDice"
+selected_metric_code$Threshold
+# 0.33
