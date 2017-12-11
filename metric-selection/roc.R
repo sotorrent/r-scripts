@@ -99,9 +99,7 @@ segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$
          lty=2, lwd=1, gray_darker)
 segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
          lty=2, lwd=1, gray_darker)
-#points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
-#text(0.0067, 0.9, "\u2190 theshold: 0.17", font=3, cex=1)
-#text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
+points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
@@ -124,9 +122,7 @@ segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$
          lty=2, lwd=1, gray_darker)
 segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.33,]$TPR, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
          lty=2, lwd=1, gray_darker)
-#points(roc_code[roc_code$Threshold==0.26,]$FPR, roc_code[roc_code$Threshold==0.26,]$TPR, pch=16)
-#text(0.0067, 0.9, "\u2190 theshold: 0.26", font=3, cex=1)
-#text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
+points(roc_code[roc_code$Threshold==0.33,]$FPR, roc_code[roc_code$Threshold==0.33,]$TPR, pch=16)
 
 par(mfrow = c(1, 1))
 dev.off() 
