@@ -1,42 +1,30 @@
 setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
 #setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
+# use defined colors
+source("colors.R")
+
 library(data.table)
 metric_comparison <- fread("MetricComparison_aggregated-selected.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
 
 nrow(metric_comparison)
-# 2424
+# 2020
 
 
 ### TEXT ###
 
-MatthewsCorrelationText <- metric_comparison$MatthewsCorrelationText
-
-summary(MatthewsCorrelationText)
-# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.7727  0.9331  0.9659  0.9454  0.9749  0.9794
-
-boxplot(MatthewsCorrelationText)
-
-MatthewsCorrelationText_max <- MatthewsCorrelationText[MatthewsCorrelationText == max(MatthewsCorrelationText)]
-MatthewsCorrelationText_max
-# 0.9794148
-
-metric_text <- metric_comparison[metric_comparison$MatthewsCorrelationText == MatthewsCorrelationText_max,]
-
-metric_text$Metric
-# [1] "manhattanFourGramNormalized"
-metric_text$Threshold
-# 0.17
-
 # best metric
+
+# see metric-selection_sebastian.R
+# metric: "manhattanFourGramNormalized"
+# threshold: 0.17
 roc_text <- metric_comparison[metric_comparison$Metric == "manhattanFourGramNormalized", c("Threshold", "RecallText", "InverseRecallText")]
 roc_text$InverseRecallText <- 1 - roc_text$InverseRecallText
 roc_text <- roc_text[with(roc_text, order(roc_text$Threshold)),]
 names(roc_text) <- c("Threshold", "TPR", "FPR")
 roc_text[roc_text$Threshold==0.17,]
-# Threshold      TPR         FPR
-# 1:      0.17 0.985957 0.005367202
+# Threshold       TPR         FPR
+# 1:      0.17 0.9864748 0.005473192
 
 # baseline metric
 roc_text_equal <- metric_comparison[metric_comparison$Metric == "equal", c("Threshold", "RecallText", "InverseRecallText")]
@@ -44,63 +32,101 @@ roc_text_equal$InverseRecallText <- 1 - roc_text_equal$InverseRecallText
 roc_text_equal <- roc_text_equal[with(roc_text_equal, order(roc_text_equal$Threshold)),]
 names(roc_text_equal) <- c("Threshold", "TPR", "FPR")
 
-# plot
-plot(roc_text$FPR, roc_text$TPR,
-     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
-     pch=1,
-     xlim=c(0.0, 0.01), ylim=c(0.7, 1.0),
-     xaxt="n", yaxt="n"
-)
-axis(1, at=seq(0, 0.01, by=0.002), labels=seq(0, 0.01, by=0.002))
-axis(2, at=seq(0.7, 1.0, by=0.05), labels=seq(0.7, 1.0, by=0.05), las=2)
-segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR, lty=2, lwd=1)
-segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR, lty=2, lwd=1)
-points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
-text(0.0067, 0.9, "\u2190 theshold: 0.17", font=3, cex=1)
-text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
-
-# TODO: add points roc_text_equal
-
 
 ### CODE ###
 
-MatthewsCorrelationCode <- metric_comparison$MatthewsCorrelationCode
+# best metric
 
-summary(MatthewsCorrelationCode)
-# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.8651  0.9649  0.9779  0.9678  0.9817  0.9850 
-
-boxplot(MatthewsCorrelationCode)
-
-MatthewsCorrelationCode_max <- MatthewsCorrelationCode[MatthewsCorrelationCode == max(MatthewsCorrelationCode)]
-MatthewsCorrelationCode_max
-# 0.9850383
-
-metric_code <- metric_comparison[metric_comparison$MatthewsCorrelationCode == MatthewsCorrelationCode_max,]
-
-metric_code$Metric
-# [1] "fiveGramDiceNormalizedPadding"
-metric_code$Threshold
-# 0.26
-
-roc_code <- metric_comparison[metric_comparison$Metric == "fiveGramDiceNormalizedPadding", c("Threshold", "RecallText", "InverseRecallText")]
-roc_code$InverseRecallText <- 1 - roc_code$InverseRecallText
+# see metric-selection_sebastian.R
+# metric: "fiveGramDice"
+# threshold: 0.33
+roc_code <- metric_comparison[metric_comparison$Metric == "fiveGramDice", c("Threshold", "RecallCode", "InverseRecallCode")]
+roc_code$InverseRecallCode <- 1 - roc_code$InverseRecallCode
 roc_code <- roc_code[with(roc_code, order(roc_code$Threshold)),]
 names(roc_code) <- c("Threshold", "TPR", "FPR")
-roc_code[roc_code$Threshold==0.26,]
-# Threshold      TPR         FPR
-# 1:      0.17 0.985957 0.005367202
+roc_code[roc_code$Threshold==0.33,]
+# Threshold       TPR         FPR
+# 1:      0.33 0.9884902 0.003974387
 
-plot(roc_code$FPR, roc_code$TPR,
-     main="fiveGramDiceNormalizedPadding (Code)", xlab="False positive rate", ylab="True positive rate",
+# baseline metric
+roc_code_equal <- metric_comparison[metric_comparison$Metric == "equal", c("Threshold", "RecallCode", "InverseRecallCode")]
+roc_code_equal$InverseRecallCode <- 1 - roc_code_equal$InverseRecallCode
+roc_code_equal <- roc_code_equal[with(roc_code_equal, order(roc_code_equal$Threshold)),]
+names(roc_code_equal) <- c("Threshold", "TPR", "FPR")
+
+
+### PLOT ###
+
+# plot filter histograms
+# quartz(type="pdf", file="roc.pdf", width=12, height=20) # prevents unicode issues in pdf
+pdf("roc.pdf", width=12, height=12)
+par(
+  bg="white",
+  #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
+  #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(2, 1),
+  #pin = (width, height)
+  # mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+#layout(matrix(c(1,2,3,4,5,5), 3, 2, byrow = TRUE))
+#layout(4, 1)
+
+
+# text
+plot(roc_text$FPR, roc_text$TPR,
+     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=1,
-     xlim=c(0.0, 0.01), ylim=c(0.7, 1.0),
+     xlim=c(0.0, 0.015), ylim=c(0.65, 1.0),
      xaxt="n", yaxt="n"
 )
-axis(1, at=seq(0, 0.01, by=0.002), labels=seq(0, 0.01, by=0.002))
-axis(2, at=seq(0.7, 1.0, by=0.05), labels=seq(0.7, 1.0, by=0.05), las=2)
-segments(x0=roc_code[roc_code$Threshold==0.26,]$FPR, y0=0, x1=roc_code[roc_code$Threshold==0.26,]$FPR, y1=roc_code[roc_code$Threshold==0.26,]$TPR, lty=2, lwd=1)
-segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.26,]$TPR, x1=roc_code[roc_code$Threshold==0.26,]$FPR, y1=roc_code[roc_code$Threshold==0.26,]$TPR, lty=2, lwd=1)
-points(roc_code[roc_code$Threshold==0.26,]$FPR, roc_code[roc_code$Threshold==0.26,]$TPR, pch=16)
-text(0.0067, 0.9, "\u2190 theshold: 0.26", font=3, cex=1)
-text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
+# axes
+axis(1, at=seq(0, 0.015, by=0.0025), labels=seq(0, 0.015, by=0.0025))
+axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+# baseline metric
+segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text_equal$FPR), y1=max(roc_text_equal$TPR),
+         lty=1, lwd=1, col=gray_darker)
+points(roc_text_equal$FPR, roc_text_equal$TPR,
+       pch=20, col=gray_darker)
+text(0.00825, 0.81, "equal", font=3, cex=1)
+# selected threshold
+segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
+         lty=2, lwd=1, gray_darker)
+segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
+         lty=2, lwd=1, gray_darker)
+#points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
+#text(0.0067, 0.9, "\u2190 theshold: 0.17", font=3, cex=1)
+#text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
+
+# code
+plot(roc_code$FPR, roc_code$TPR,
+     main="fiveGramDice (Code)", xlab="False positive rate", ylab="True positive rate",
+     pch=1,
+     xlim=c(0.0, 0.015), ylim=c(0.65, 1.0),
+     xaxt="n", yaxt="n"
+)
+# axes
+axis(1, at=seq(0, 0.015, by=0.0025), labels=seq(0, 0.015, by=0.0025))
+axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+# baseline metric
+segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code_equal$FPR), y1=max(roc_code_equal$TPR),
+         lty=1, lwd=1, col=gray_darker)
+points(roc_code_equal$FPR, roc_code_equal$TPR,
+       pch=20, col=gray_darker)
+text(0.00625, 0.858, "equal", font=3, cex=1)
+# selected threshold
+segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
+         lty=2, lwd=1, gray_darker)
+segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.33,]$TPR, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
+         lty=2, lwd=1, gray_darker)
+#points(roc_code[roc_code$Threshold==0.26,]$FPR, roc_code[roc_code$Threshold==0.26,]$TPR, pch=16)
+#text(0.0067, 0.9, "\u2190 theshold: 0.26", font=3, cex=1)
+#text(0.0076, 0.87, "(TPR=0.9860, FPR=0.0054)", font=3, cex=0.9)
+
+par(mfrow = c(1, 1))
+dev.off() 
