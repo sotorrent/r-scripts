@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 # use defined colors
 source("colors.R")
@@ -57,9 +57,9 @@ names(roc_code_equal) <- c("Threshold", "TPR", "FPR")
 
 ### PLOT ###
 
-# plot filter histograms
-# quartz(type="pdf", file="roc.pdf", width=12, height=20) # prevents unicode issues in pdf
-pdf("roc.pdf", width=12, height=12)
+# plot ROC curve (excerpt)
+
+pdf("roc_excerpt.pdf", width=12, height=12)
 par(
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
@@ -123,6 +123,56 @@ segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$
 segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.33,]$TPR, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
          lty=2, lwd=1, gray_darker)
 points(roc_code[roc_code$Threshold==0.33,]$FPR, roc_code[roc_code$Threshold==0.33,]$TPR, pch=16)
+
+par(mfrow = c(1, 1))
+dev.off() 
+
+
+# plot ROC curve (complete)
+
+pdf("roc_complete.pdf", width=12, height=12)
+par(
+  bg="white",
+  #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
+  #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(2, 1),
+  #pin = (width, height)
+  # mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+#layout(matrix(c(1,2,3,4,5,5), 3, 2, byrow = TRUE))
+#layout(4, 1)
+
+# text
+plot(roc_text$FPR, roc_text$TPR,
+     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
+     pch=1,
+     xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
+     xaxt="n", yaxt="n"
+)
+# axes
+axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
+axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
+# diagonal
+abline(0, 1)
+
+# code
+plot(roc_code$FPR, roc_code$TPR,
+     main="fiveGramDice (Code)", xlab="False positive rate", ylab="True positive rate",
+     pch=1,
+     xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
+     xaxt="n", yaxt="n"
+)
+# axes
+axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
+axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
+# diagonal
+abline(0, 1)
 
 par(mfrow = c(1, 1))
 dev.off() 
