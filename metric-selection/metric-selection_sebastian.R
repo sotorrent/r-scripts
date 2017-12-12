@@ -45,6 +45,23 @@ MatthewsCorrelationText_99_metrics
 # [13] "tokenDiceNormalized"             
 # [14] "manhattanFourGramNormalized"
 
+# backup metric
+backup_candidates <- metric_comparison[metric_comparison$FailuresText == 0 & metric_comparison$FailuresCode == 0,]
+MatthewsCorrelationText_backup <- backup_candidates$MatthewsCorrelationText
+
+MatthewsCorrelationText_99_backup <- MatthewsCorrelationText_backup[MatthewsCorrelationText_backup >= quantile(MatthewsCorrelationText_backup, 0.99)]
+
+length(MatthewsCorrelationText_99_backup)
+# 3
+
+MatthewsCorrelationText_99_backup_metrics <- unique(backup_candidates[backup_candidates$MatthewsCorrelationText %in% MatthewsCorrelationText_99_backup,]$Metric)
+length(MatthewsCorrelationText_99_backup_metrics)
+# 2
+
+MatthewsCorrelationText_99_backup_metrics
+# [1] "cosineTokenNormalizedNormalizedTermFrequency"
+# [2] "cosineTokenNormalizedBool"  
+
 
 ### CODE ###
 
@@ -77,14 +94,33 @@ MatthewsCorrelationCode_99_metrics
 # [9] "manhattanThreeGramNormalized"     
 # [10] "fourGramJaccard"  
 
+# backup metric
+backup_candidates <- metric_comparison[metric_comparison$FailuresText == 0 & metric_comparison$FailuresCode == 0,]
+MatthewsCorrelationCode_backup <- backup_candidates$MatthewsCorrelationCode
+
+MatthewsCorrelationCode_99_backup <- MatthewsCorrelationCode_backup[MatthewsCorrelationCode_backup >= quantile(MatthewsCorrelationCode_backup, 0.99)]
+
+length(MatthewsCorrelationCode_99_backup)
+# 3
+
+MatthewsCorrelationCode_99_backup_metrics <- unique(backup_candidates[backup_candidates$MatthewsCorrelationCode %in% MatthewsCorrelationCode_99_backup,]$Metric)
+length(MatthewsCorrelationCode_99_backup_metrics)
+# 3
+
+MatthewsCorrelationCode_99_backup_metrics
+# [1] "cosineTokenNormalizedBool"
+# [2] "twoGramJaccard"           
+# [3] "manhattanTokenNormalized" 
+
 
 ### BOTH ###
 
 boxplot(MatthewsCorrelationText, MatthewsCorrelationCode)
 
+# best metrics
 selected_metrics <- unique(c(
-  metric_comparison[metric_comparison$MatthewsCorrelationText %in% MatthewsCorrelationText_99,]$Metric,
-  metric_comparison[metric_comparison$MatthewsCorrelationCode %in% MatthewsCorrelationCode_99,]$Metric
+  MatthewsCorrelationText_99_metrics,
+  MatthewsCorrelationCode_99_metrics
 ))
 
 length(selected_metrics)
@@ -112,6 +148,25 @@ selected_metrics
 # [19] "fourGramJaccard"
 
 
+# backup metric
+selected_metrics_backup <- unique(c(
+  MatthewsCorrelationText_99_backup_metrics,
+  MatthewsCorrelationCode_99_backup_metrics
+))
+
+length(selected_metrics_backup)
+# 4
+
+selected_metrics_backup
+# [1] "cosineTokenNormalizedNormalizedTermFrequency"
+# [2] "cosineTokenNormalizedBool"                   
+# [3] "twoGramJaccard"                              
+# [4] "manhattanTokenNormalized" 
+
+
+##################
+### SECOND RUN ###
+##################
 
 # read results of second run with selected metrics and more thresholds
 library(data.table)
