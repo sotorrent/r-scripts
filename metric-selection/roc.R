@@ -100,6 +100,10 @@ segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$
 segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
          lty=2, lwd=1, gray_darker)
 points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
+# labels
+text(0.00065, 0.65, expression(paste(theta1, " = 1.0")))
+text(0.0102, 0.98, expression(paste(theta1, " = 0.0")))
+text(0.015, 0.952, expression(paste(theta1, " = 0.0")))
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
@@ -123,6 +127,10 @@ segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$
 segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.33,]$TPR, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
          lty=2, lwd=1, gray_darker)
 points(roc_code[roc_code$Threshold==0.33,]$FPR, roc_code[roc_code$Threshold==0.33,]$TPR, pch=16)
+# labels
+text(0.0006, 0.775, expression(paste(theta1, " = 1.0")))
+text(0.0077, 0.98, expression(paste(theta1, " = 0.0")))
+text(0.0123, 0.95, expression(paste(theta1, " = 0.0")))
 
 par(mfrow = c(1, 1))
 dev.off() 
@@ -159,7 +167,10 @@ plot(roc_text$FPR, roc_text$TPR,
 axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
 axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
 # diagonal
-abline(0, 1)
+abline(0, 1, col=gray_dark)
+# labels
+text(0.046, 0.65, expression(paste(theta1, " = 1.0")))
+text(0.058, 1.0, expression(paste(theta1, " = 0.0")))
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
@@ -172,7 +183,10 @@ plot(roc_code$FPR, roc_code$TPR,
 axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
 axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
 # diagonal
-abline(0, 1)
+abline(0, 1, col=gray_dark)
+# labels
+text(0.046, 0.772, expression(paste(theta1, " = 1.0")))
+text(0.056, 1.0, expression(paste(theta1, " = 0.0")))
 
 par(mfrow = c(1, 1))
 dev.off() 
