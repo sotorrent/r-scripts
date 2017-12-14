@@ -1,5 +1,5 @@
-#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 # use defined colors
 source("colors.R")
@@ -57,6 +57,8 @@ names(roc_code_equal) <- c("Threshold", "TPR", "FPR")
 
 ### PLOT ###
 
+color_scale <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("gray20", "gray60"))
+
 # plot ROC curve (excerpt)
 
 pdf("roc_excerpt.pdf", width=12, height=12)
@@ -81,18 +83,19 @@ par(
 # text
 plot(roc_text$FPR, roc_text$TPR,
      main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
-     pch=1,
+     pch=19,
      xlim=c(0.0, 0.015), ylim=c(0.65, 1.0),
-     xaxt="n", yaxt="n"
+     xaxt="n", yaxt="n",
+     col=color_scale
 )
 # axes
 axis(1, at=seq(0, 0.015, by=0.0025), labels=seq(0, 0.015, by=0.0025))
 axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
 # baseline metric
 segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text_equal$FPR), y1=max(roc_text_equal$TPR),
-         lty=1, lwd=1, col=gray_darker)
+         lty=1, lwd=1, col="gray60")
 points(roc_text_equal$FPR, roc_text_equal$TPR,
-       pch=20, col=gray_darker)
+       pch=20, col=color_scale)
 text(0.00825, 0.81, "equal", font=3, cex=1)
 # selected threshold
 segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
@@ -100,26 +103,30 @@ segments(x0=roc_text[roc_text$Threshold==0.17,]$FPR, y0=0, x1=roc_text[roc_text$
 segments(x0=-0.1, y0=roc_text[roc_text$Threshold==0.17,]$TPR, x1=roc_text[roc_text$Threshold==0.17,]$FPR, y1=roc_text[roc_text$Threshold==0.17,]$TPR,
          lty=2, lwd=1, gray_darker)
 points(roc_text[roc_text$Threshold==0.17,]$FPR, roc_text[roc_text$Threshold==0.17,]$TPR, pch=16)
-# labels
-text(0.00065, 0.65, expression(paste(theta1, " = 1.0")))
-text(0.0102, 0.98, expression(paste(theta1, " = 0.0")))
-text(0.015, 0.952, expression(paste(theta1, " = 0.0")))
+# legend
+legend(0.0115,0.8,
+       c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
+       c("gray20", "gray60"),
+       bty="n")
+
 
 # code
+library(plotrix)
 plot(roc_code$FPR, roc_code$TPR,
      main="fiveGramDice (Code)", xlab="False positive rate", ylab="True positive rate",
-     pch=1,
+     pch=19,
      xlim=c(0.0, 0.015), ylim=c(0.65, 1.0),
-     xaxt="n", yaxt="n"
+     xaxt="n", yaxt="n",
+     col=color_scale
 )
 # axes
 axis(1, at=seq(0, 0.015, by=0.0025), labels=seq(0, 0.015, by=0.0025))
 axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
 # baseline metric
 segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code_equal$FPR), y1=max(roc_code_equal$TPR),
-         lty=1, lwd=1, col=gray_darker)
+         lty=1, lwd=1, col="gray60")
 points(roc_code_equal$FPR, roc_code_equal$TPR,
-       pch=20, col=gray_darker)
+       pch=20, col=color_scale)
 text(0.00625, 0.858, "equal", font=3, cex=1)
 # selected threshold
 segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
@@ -127,10 +134,12 @@ segments(x0=roc_code[roc_code$Threshold==0.33,]$FPR, y0=0, x1=roc_code[roc_code$
 segments(x0=-0.1, y0=roc_code[roc_code$Threshold==0.33,]$TPR, x1=roc_code[roc_code$Threshold==0.33,]$FPR, y1=roc_code[roc_code$Threshold==0.33,]$TPR,
          lty=2, lwd=1, gray_darker)
 points(roc_code[roc_code$Threshold==0.33,]$FPR, roc_code[roc_code$Threshold==0.33,]$TPR, pch=16)
-# labels
-text(0.0006, 0.775, expression(paste(theta1, " = 1.0")))
-text(0.0077, 0.98, expression(paste(theta1, " = 0.0")))
-text(0.0123, 0.95, expression(paste(theta1, " = 0.0")))
+# legend
+legend(0.0115,0.8,
+       c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
+       c("gray20", "gray60"),
+       bty="n")
+
 
 par(mfrow = c(1, 1))
 dev.off() 
@@ -159,34 +168,40 @@ par(
 # text
 plot(roc_text$FPR, roc_text$TPR,
      main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
-     pch=1,
+     pch=19,
      xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
-     xaxt="n", yaxt="n"
+     xaxt="n", yaxt="n",
+     col=color_scale
 )
 # axes
 axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
 axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
 # diagonal
 abline(0, 1, col=gray_dark)
-# labels
-text(0.046, 0.65, expression(paste(theta1, " = 1.0")))
-text(0.058, 1.0, expression(paste(theta1, " = 0.0")))
+# legend
+legend(0.8,0.3,
+       c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
+       c("gray20", "gray60"),
+       bty="n")
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
      main="fiveGramDice (Code)", xlab="False positive rate", ylab="True positive rate",
-     pch=1,
+     pch=19,
      xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
-     xaxt="n", yaxt="n"
+     xaxt="n", yaxt="n",
+     col=color_scale
 )
 # axes
 axis(1, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1))
 axis(2, at=seq(0, 1.0, by=0.1), labels=seq(0, 1.0, by=0.1), las=2)
 # diagonal
 abline(0, 1, col=gray_dark)
-# labels
-text(0.046, 0.772, expression(paste(theta1, " = 1.0")))
-text(0.056, 1.0, expression(paste(theta1, " = 0.0")))
+# legend
+legend(0.8,0.3,
+       c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
+       c("gray20", "gray60"),
+       bty="n")
 
 par(mfrow = c(1, 1))
 dev.off() 
