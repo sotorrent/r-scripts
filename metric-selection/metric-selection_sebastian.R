@@ -16,7 +16,7 @@ MatthewsCorrelationText <- metric_comparison$MatthewsCorrelationText
 
 summary(MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.7735  0.9235  0.9630  0.9339  0.9700  0.9791 
+# 0.4342  0.6798  0.7791  0.7284  0.8132  0.8656
 
 boxplot(MatthewsCorrelationText)
 
@@ -27,23 +27,24 @@ length(MatthewsCorrelationText_99)
 
 MatthewsCorrelationText_99_metrics <- unique(metric_comparison[metric_comparison$MatthewsCorrelationText %in% MatthewsCorrelationText_99,]$Metric)
 length(MatthewsCorrelationText_99_metrics)
-# 14
+# 15
 
 MatthewsCorrelationText_99_metrics
-# [1] "cosineThreeGramNormalizedBool"   
-# [2] "fourGramDice"                    
-# [3] "fiveGramDiceNormalized"          
-# [4] "threeGramDiceNormalized"         
-# [5] "winnowingThreeGramDiceNormalized"
-# [6] "manhattanFiveGramNormalized"     
-# [7] "manhattanThreeGramNormalized"    
-# [8] "fourGramDiceNormalizedPadding"   
-# [9] "fiveGramDice"                    
-# [10] "threeGramDice"                   
-# [11] "fiveGramDiceNormalizedPadding"   
-# [12] "fourGramDiceNormalized"          
-# [13] "tokenDiceNormalized"             
-# [14] "manhattanFourGramNormalized"
+# [1] "tokenDiceNormalized"          
+# [2] "manhattanThreeGramNormalized" 
+# [3] "fourGramDiceNormalized"       
+# [4] "threeGramDiceNormalized"      
+# [5] "manhattanFiveGramNormalized"  
+# [6] "fiveGramDiceNormalized"       
+# [7] "cosineThreeGramNormalizedBool"
+# [8] "manhattanFourGramNormalized"  
+# [9] "fourGramDiceNormalizedPadding"
+# [10] "fiveGramJaccardNormalized"    
+# [11] "fiveGramDiceNormalizedPadding"
+# [12] "winnowingFiveGramDice"        
+# [13] "threeGramDice"                
+# [14] "fourGramDice"                 
+# [15] "fiveGramDice"
 
 # backup metric
 backup_candidates <- metric_comparison[metric_comparison$FailuresText == 0 & metric_comparison$FailuresCode == 0,]
@@ -69,7 +70,7 @@ MatthewsCorrelationCode <- metric_comparison$MatthewsCorrelationCode
 
 summary(MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.8602  0.9583  0.9743  0.9595  0.9792  0.9843 
+# 0.5891  0.8153  0.8653  0.8300  0.8910  0.9157 
 
 boxplot(MatthewsCorrelationCode)
 
@@ -83,16 +84,16 @@ length(MatthewsCorrelationCode_99_metrics)
 # 10
 
 MatthewsCorrelationCode_99_metrics
-# [1] "manhattanFiveGramNormalized"      
-# [2] "twoShingleDiceNormalized"         
-# [3] "fiveGramDiceNormalized"           
-# [4] "winnowingFourGramOptimalAlignment"
-# [5] "manhattanTwoShingleNormalized"    
-# [6] "fourGramDiceNormalized"           
-# [7] "manhattanFourGramNormalized"      
-# [8] "fiveGramJaccard"                  
-# [9] "manhattanThreeGramNormalized"     
-# [10] "fourGramJaccard"  
+# [1] "twoShingleDiceNormalized"         
+# [2] "manhattanFiveGramNormalized"      
+# [3] "fiveGramJaccard"                  
+# [4] "fiveGramDiceNormalized"           
+# [5] "manhattanThreeGramNormalized"     
+# [6] "manhattanTwoShingleNormalized"    
+# [7] "winnowingFourGramOptimalAlignment"
+# [8] "manhattanThreeShingleNormalized"  
+# [9] "fourGramDiceNormalized"           
+# [10] "manhattanFourGramNormalized"
 
 # backup metric
 backup_candidates <- metric_comparison[metric_comparison$FailuresText == 0 & metric_comparison$FailuresCode == 0,]
@@ -108,9 +109,9 @@ length(MatthewsCorrelationCode_99_backup_metrics)
 # 3
 
 MatthewsCorrelationCode_99_backup_metrics
-# [1] "cosineTokenNormalizedBool"
-# [2] "twoGramJaccard"           
-# [3] "manhattanTokenNormalized" 
+# [1] "twoGramJaccard"           
+# [2] "manhattanTokenNormalized" 
+# [3] "cosineTokenNormalizedBool"
 
 
 ### BOTH ###
@@ -124,29 +125,29 @@ selected_metrics <- unique(c(
 ))
 
 length(selected_metrics)
-# 19
+# 20
 
 selected_metrics
-# [1] "cosineThreeGramNormalizedBool"    
-# [2] "fourGramDice"                     
-# [3] "fiveGramDiceNormalized"           
+# [1] "tokenDiceNormalized"              
+# [2] "manhattanThreeGramNormalized"     
+# [3] "fourGramDiceNormalized"           
 # [4] "threeGramDiceNormalized"          
-# [5] "winnowingThreeGramDiceNormalized" 
-# [6] "manhattanFiveGramNormalized"      
-# [7] "manhattanThreeGramNormalized"     
-# [8] "fourGramDiceNormalizedPadding"    
-# [9] "fiveGramDice"                     
-# [10] "threeGramDice"                    
+# [5] "manhattanFiveGramNormalized"      
+# [6] "fiveGramDiceNormalized"           
+# [7] "cosineThreeGramNormalizedBool"    
+# [8] "manhattanFourGramNormalized"      
+# [9] "fourGramDiceNormalizedPadding"    
+# [10] "fiveGramJaccardNormalized"        
 # [11] "fiveGramDiceNormalizedPadding"    
-# [12] "fourGramDiceNormalized"           
-# [13] "tokenDiceNormalized"              
-# [14] "manhattanFourGramNormalized"      
-# [15] "twoShingleDiceNormalized"         
-# [16] "winnowingFourGramOptimalAlignment"
-# [17] "manhattanTwoShingleNormalized"    
-# [18] "fiveGramJaccard"                  
-# [19] "fourGramJaccard"
-
+# [12] "winnowingFiveGramDice"            
+# [13] "threeGramDice"                    
+# [14] "fourGramDice"                     
+# [15] "fiveGramDice"                     
+# [16] "twoShingleDiceNormalized"         
+# [17] "fiveGramJaccard"                  
+# [18] "manhattanTwoShingleNormalized"    
+# [19] "winnowingFourGramOptimalAlignment"
+# [20] "manhattanThreeShingleNormalized"
 
 # backup metric
 selected_metrics_backup <- unique(c(
@@ -161,7 +162,7 @@ selected_metrics_backup
 # [1] "cosineTokenNormalizedNormalizedTermFrequency"
 # [2] "cosineTokenNormalizedBool"                   
 # [3] "twoGramJaccard"                              
-# [4] "manhattanTokenNormalized" 
+# [4] "manhattanTokenNormalized"   
 
 
 ##################
