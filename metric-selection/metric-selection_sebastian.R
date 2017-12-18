@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 #setwd("C://Users//Lorik//Documents//GitHub//r-scripts//metric-selection")
 
 
