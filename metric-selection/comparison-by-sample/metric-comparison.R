@@ -1,5 +1,5 @@
-#setwd("F:/Git/github/r-scripts/metric-selection/comparison-by-sample") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection/comparison-by-sample")
+setwd("F:/Git/github/r-scripts/metric-selection/comparison-by-sample") # Pfad bitte anpassen
+#setwd("/Users/sebastian/git/github/r-scripts/metric-selection/comparison-by-sample")
 
 merge_samples <- function(sample1, sample2) {
   sample_merged <- merge(sample1, sample2, by=c("MetricType", "Metric", "Threshold"))
@@ -102,7 +102,7 @@ setorderv(sample_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3776  0.7232  0.8492  0.7710  0.8831  0.9365 
+# 0.3776  0.7232  0.8492  0.7709  0.8831  0.9365
 boxplot(sample_random$MatthewsCorrelationText)
 
 # select candidates
@@ -144,7 +144,7 @@ setorderv(sample_random_99, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random_99$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3944  0.6415  0.7504  0.7006  0.7948  0.8517
+# 0.3944  0.6415  0.7495  0.7002  0.7948  0.8517 
 boxplot(sample_random_99$MatthewsCorrelationText)
 
 # select candidates
@@ -163,7 +163,7 @@ setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random_99$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.5114  0.7724  0.8542  0.8066  0.8897  0.9289 
+# 0.5114  0.7724  0.8539  0.8066  0.8897  0.9289 
 boxplot(sample_random_99$MatthewsCorrelationCode)
 
 # select candidates
@@ -186,7 +186,7 @@ setorderv(sample_java_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_java_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3744  0.6646  0.7454  0.7020  0.7811  0.8417 
+# 0.3744  0.6646  0.7461  0.7028  0.7832  0.8417 
 boxplot(sample_java_random$MatthewsCorrelationText)
 
 # select candidates
@@ -205,7 +205,7 @@ setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_java_random$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.6312  0.8276  0.8653  0.8428  0.8893  0.9273 
+# 0.6312  0.8272  0.8653  0.8424  0.8893  0.9273 
 boxplot(sample_java_random$MatthewsCorrelationCode)
 
 # select candidates
@@ -228,7 +228,7 @@ setorderv(sample_unclear_matching, c("MatthewsCorrelationText", "Runtime"), c(-1
 # analyze
 summary(sample_unclear_matching$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2432  0.6101  0.7132  0.6828  0.7731  0.8508 
+# 0.2432  0.6101  0.7132  0.6830  0.7731  0.8508 
 boxplot(sample_unclear_matching$MatthewsCorrelationText)
 
 # select candidates
@@ -248,7 +248,7 @@ setorderv(sample_unclear_matching, c("MatthewsCorrelationCode", "Runtime"), c(-1
 # analyze
 summary(sample_unclear_matching$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2559  0.6856  0.7453  0.7307  0.7884  0.8706 
+# 0.2559  0.6856  0.7453  0.7309  0.7884  0.8706 
 boxplot(sample_unclear_matching$MatthewsCorrelationCode)
 
 # select candidates
@@ -272,7 +272,7 @@ setorderv(sample_multiple_possible_links, c("MatthewsCorrelationText", "Runtime"
 # analyze
 summary(sample_multiple_possible_links$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.5982  0.7629  0.8541  0.8158  0.8883  0.9423 
+# 0.5982  0.7623  0.8537  0.8160  0.8887  0.9423 
 boxplot(sample_multiple_possible_links$MatthewsCorrelationText)
 
 # select candidates
@@ -292,7 +292,7 @@ setorderv(sample_multiple_possible_links, c("MatthewsCorrelationCode", "Runtime"
 # analyze
 summary(sample_multiple_possible_links$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.7600  0.8794  0.9041  0.8915  0.9229  0.9602 
+# 0.7600  0.8802  0.9041  0.8915  0.9229  0.9602 
 boxplot(sample_multiple_possible_links$MatthewsCorrelationCode)
 
 # select candidates
@@ -351,13 +351,13 @@ candidates
 # [17] "cosineFourGramNormalizedNormalizedTermFrequency" 
 # [18] "manhattanFiveGramNormalized"                     
 # [19] "manhattanFourGramNormalized"                     
-# [20] "winnowingFourGramDiceNormalized"                 
-# [21] "winnowingFiveGramDiceNormalized"                 
+# [20] "winnowingFiveGramDiceNormalized"                 
+# [21] "winnowingFourGramDiceNormalized"                 
 # [22] "threeGramDiceNormalized"                         
 # [23] "threeGramDiceNormalizedPadding"                  
 # [24] "fourGramDiceNormalizedPadding"                   
-# [25] "fourGramJaccardNormalizedPadding"                
-# [26] "threeGramJaccardNormalizedPadding"
+# [25] "threeGramJaccardNormalizedPadding"               
+# [26] "fourGramJaccardNormalizedPadding"  
 
 
 ## backup metrics
@@ -369,8 +369,6 @@ candidates_backup_text <- intersect(
 )
 length(candidates_backup_text)
 # 2
-candidates_backup_text
-
 
 # code
 candidates_backup_code <- intersect(
@@ -414,12 +412,12 @@ candidates
 # [17] "cosineFourGramNormalizedNormalizedTermFrequency" 
 # [18] "manhattanFiveGramNormalized"                     
 # [19] "manhattanFourGramNormalized"                     
-# [20] "winnowingFourGramDiceNormalized"                 
-# [21] "winnowingFiveGramDiceNormalized"                 
+# [20] "winnowingFiveGramDiceNormalized"                 
+# [21] "winnowingFourGramDiceNormalized"                 
 # [22] "threeGramDiceNormalized"                         
 # [23] "threeGramDiceNormalizedPadding"                  
 # [24] "fourGramDiceNormalizedPadding"                   
-# [25] "fourGramJaccardNormalizedPadding"                
-# [26] "threeGramJaccardNormalizedPadding"               
+# [25] "threeGramJaccardNormalizedPadding"               
+# [26] "fourGramJaccardNormalizedPadding"                
 # [27] "tokenDiceNormalized"                             
 # [28] "tokenDice"
