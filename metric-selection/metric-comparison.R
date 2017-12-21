@@ -1,64 +1,9 @@
-setwd("F:/Git/github/r-scripts/metric-selection/comparison-by-sample") # Pfad bitte anpassen
-#setwd("/Users/sebastian/git/github/r-scripts/metric-selection/comparison-by-sample")
+#setwd("F:/Git/github/r-scripts/metric-selection/comparison-by-sample") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/metric-selection/comparison-by-sample")
 
-merge_samples <- function(sample1, sample2) {
-  sample_merged <- merge(sample1, sample2, by=c("MetricType", "Metric", "Threshold"))
-  sample_merged$Runtime <- sample_merged$Runtime.x + sample_merged$Runtime.y
-  sample_merged$PostCount <- sample_merged$PostCount.x + sample_merged$PostCount.y
-  sample_merged$PostVersionCount <- sample_merged$PostVersionCount.x + sample_merged$PostVersionCount.y
-  sample_merged$PostBlockVersionCount <- sample_merged$PostBlockVersionCount.x + sample_merged$PostBlockVersionCount.y
-  sample_merged$PossibleComparisons <- sample_merged$PossibleComparisons.x + sample_merged$PossibleComparisons.y
-  # text
-  sample_merged$TextBlockVersionCount <- sample_merged$TextBlockVersionCount.x + sample_merged$TextBlockVersionCount.y
-  sample_merged$PossibleComparisonsText <- sample_merged$PossibleComparisonsText.x + sample_merged$PossibleComparisonsText.y
-  sample_merged$TruePositivesText <- sample_merged$TruePositivesText.x + sample_merged$TruePositivesText.y
-  sample_merged$TrueNegativesText <- sample_merged$TrueNegativesText.x + sample_merged$TrueNegativesText.y
-  sample_merged$FalsePositivesText <- sample_merged$FalsePositivesText.x + sample_merged$FalsePositivesText.y
-  sample_merged$FalseNegativesText <- sample_merged$FalseNegativesText.x + sample_merged$FalseNegativesText.y
-  sample_merged$FailuresText <- sample_merged$FailuresText.x + sample_merged$FailuresText.y
-  # code
-  sample_merged$CodeBlockVersionCount <- sample_merged$CodeBlockVersionCount.x + sample_merged$CodeBlockVersionCount.y
-  sample_merged$PossibleComparisonsCode <- sample_merged$PossibleComparisonsCode.x + sample_merged$PossibleComparisonsCode.y
-  sample_merged$TruePositivesCode <- sample_merged$TruePositivesCode.x + sample_merged$TruePositivesCode.y
-  sample_merged$TrueNegativesCode <- sample_merged$TrueNegativesCode.x + sample_merged$TrueNegativesCode.y
-  sample_merged$FalsePositivesCode <- sample_merged$FalsePositivesCode.x + sample_merged$FalsePositivesCode.y
-  sample_merged$FalseNegativesCode <- sample_merged$FalseNegativesCode.x + sample_merged$FalseNegativesCode.y
-  sample_merged$FailuresCode <- sample_merged$FailuresCode.x + sample_merged$FailuresCode.y
-  
-  return(filter_columns(sample_merged))
-}
+# load functions
+source("functions.R")
 
-filter_columns <- function(df) {
-  return(df[,c(
-    "MetricType", "Metric", "Threshold", "Runtime",
-    "PostCount", "PostVersionCount", "PostBlockVersionCount", "PossibleComparisons",
-    "TextBlockVersionCount", "PossibleComparisonsText", "TruePositivesText", "TrueNegativesText", "FalsePositivesText", "FalseNegativesText", "FailuresText",
-    "CodeBlockVersionCount", "PossibleComparisonsCode", "TruePositivesCode", "TrueNegativesCode", "FalsePositivesCode", "FalseNegativesCode", "FailuresCode"
-  )])
-}
- 
-matthews_correlation <- function(TP, TN, FP, FN) {
-  TP <- as.numeric(TP)
-  TN <- as.numeric(TN)
-  FP <- as.numeric(FP)
-  FN <- as.numeric(FN)
-  numerator <- (TP * TN) - (FP * FN);
-  denominator <- (TP + FP) * (TP + FN) * (TN + FP) * (TN + FN);
-  filter <- denominator != 0
-  denominator[filter] <- sqrt(denominator[filter])
-  denominator[!filter] <- 1
-  return(numerator/denominator)
-} 
-
-add_matthews_correlation <- function(df) {
-  df$MatthewsCorrelationText <- matthews_correlation(df$TruePositivesText, df$TrueNegativesText,
-                                                     df$FalsePositivesText, df$FalseNegativesText)
-  df$MatthewsCorrelationCode <- matthews_correlation(df$TruePositivesCode, df$TrueNegativesCode,
-                                                     df$FalsePositivesCode, df$FalseNegativesCode)
-  return(df)
-}
-
-  
 # read results of first run with all metrics
 library(data.table)
 
@@ -456,16 +401,16 @@ sample_multiple_possible_links <- filter_columns(sample_multiple_possible_links)
 
 # DECISION: Select metrics that are in 99% quantile of sample_random, sample_java_random, and sample_random_99 for text or code
 
+# merge relevant samples
 sample_candidates <- merge_samples(sample_random, sample_java_random)
 sample_candidates <- merge_samples(sample_candidates, sample_random_99)
-sample_candidates <- add_matthews_correlation(sample_candidates)
-
-## text
-
 # calculate Matthews correlation
+sample_candidates <- add_matthews_correlation(sample_candidates)
 sample_random <- add_matthews_correlation(sample_random)
 sample_java_random <- add_matthews_correlation(sample_java_random)
 sample_random_99 <- add_matthews_correlation(sample_random_99)
+
+## text
 
 # order samples
 setorderv(sample_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
@@ -542,11 +487,95 @@ sample_candidates_backup_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationT
 
 ## code
 
-# TODO: continue here
+# order samples
+setorderv(sample_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+
+# select candidates
+MatthewsCorrelationCode_99 <- quantile(sample_random$MatthewsCorrelationCode, 0.99)
+sample_random_code_candidates <- sample_random[sample_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+
+MatthewsCorrelationCode_99 <- quantile(sample_java_random$MatthewsCorrelationCode, 0.99)
+sample_java_random_code_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+
+MatthewsCorrelationCode_99 <- quantile(sample_random_99$MatthewsCorrelationCode, 0.99)
+sample_random_99_code_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+
+# backup metric
+backup_candidates <- sample_random[sample_random$MetricType == "EDIT" | grepl("token", sample_random$Metric, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
+sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
+
+backup_candidates <- sample_java_random[sample_java_random$MetricType == "EDIT" | grepl("token", sample_java_random$Metric, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
+sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
+
+backup_candidates <- sample_random_99[sample_random_99$MetricType == "EDIT" | grepl("token", sample_random_99$Metric, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
+sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
 
 
-# TODO: check results in unclear matching
+# final candidates
+candidates_text <- intersect(
+  intersect(unique(sample_random_code_candidates$Metric), unique(sample_java_random_code_candidates$Metric)),
+  unique(sample_random_99_code_candidates$Metric)
+)
+length(candidates_code)
+# 9
+candidates_code
+# [1] "winnowingFiveGramDiceNormalized"  
+# [2] "winnowingFourGramDiceNormalized"  
+# [3] "winnowingThreeGramDiceNormalized" 
+# [4] "threeGramDiceNormalized"          
+# [5] "threeGramDiceNormalizedPadding"   
+# [6] "fourGramDiceNormalizedPadding"    
+# [7] "threeGramJaccardNormalized"       
+# [8] "threeGramJaccardNormalizedPadding"
+# [9] "fourGramJaccardNormalizedPadding" 
+
+summary(sample_candidates$MatthewsCorrelationCode)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.5520  0.8143  0.8797  0.8394  0.9008  0.9209 
+
+setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+sample_candidates_code <- sample_candidates[sample_candidates$Metric %in% candidates_code,]
+sample_candidates_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
+# Metric Threshold MatthewsCorrelationCode   Runtime
+# 1: winnowingFourGramDiceNormalized      0.23               0.9208735 845210866
+# 2: winnowingFourGramDiceNormalized      0.25               0.9199509 829410024
+# 3: winnowingFourGramDiceNormalized      0.20               0.9196971 841075205
 
 
+# backup metric
+backup_candidates_code <- intersect(
+  intersect(unique(sample_random_code_candidates_backup$Metric), unique(sample_java_random_code_candidates_backup$Metric)),
+  unique(sample_random_99_code_candidates_backup$Metric)
+)
+length(backup_candidates_code)
+# 2
+backup_candidates_code
+# [1] "tokenDiceNormalized"   
+# [2] "tokenJaccardNormalized"
+
+setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+sample_candidates_backup_code <- sample_candidates[sample_candidates$Metric %in% backup_candidates_code,]
+sample_candidates_backup_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
+# Metric Threshold MatthewsCorrelationCode    Runtime
+# 1:    tokenDiceNormalized      0.32               0.9162871 1089122626
+# 2: tokenJaccardNormalized      0.19               0.9162871 1215511980
+# 3:    tokenDiceNormalized      0.28               0.9161630 1089860835
 
 
+### check results of best metrics in sample_unclear_matching
+
+# calculate Matthews correlation
+sample_unclear_matching <- add_matthews_correlation(sample_unclear_matching)
+
+summary(sample_unclear_matching$MatthewsCorrelationText)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.2432  0.6865  0.7517  0.7244  0.7852  0.8508
+
+summary(sample_unclear_matching$MatthewsCorrelationCode)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.2559  0.7177  0.7672  0.7564  0.8026  0.8723 
