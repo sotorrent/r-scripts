@@ -512,8 +512,8 @@ summary(sample_candidates$MatthewsCorrelationText)
 # 0.4058  0.6721  0.7858  0.7312  0.8206  0.8572 
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
-sample_candidates_text <- sample_candidates[sample_candidates$Metric %in% candidates_text, c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-sample_candidates_text[1:3,]
+sample_candidates_text <- sample_candidates[sample_candidates$Metric %in% candidates_text,]
+sample_candidates_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
 #              Metric Threshold MatthewsCorrelationText   Runtime
 # 1:    threeGramDice      0.30               0.8542778 816896752
 # 2: threeGramJaccard      0.18               0.8516771 924226085
@@ -532,8 +532,8 @@ backup_candidates_text
 # [2] "tokenJaccardNormalized"
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
-sample_candidates_backup_text <- sample_candidates[sample_candidates$Metric %in% backup_candidates_text, c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-sample_candidates_backup_text[1:3,]
+sample_candidates_backup_text <- sample_candidates[sample_candidates$Metric %in% backup_candidates_text,]
+sample_candidates_backup_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
 # Metric Threshold MatthewsCorrelationText    Runtime
 # 1:    tokenDiceNormalized      0.23               0.8508510 1104157371
 # 2: tokenJaccardNormalized      0.13               0.8508510 1209240551
@@ -543,6 +543,9 @@ sample_candidates_backup_text[1:3,]
 ## code
 
 # TODO: continue here
+
+
+# TODO: check results in unclear matching
 
 
 
