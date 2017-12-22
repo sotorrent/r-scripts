@@ -1,5 +1,5 @@
-#setwd("F:/Git/github/r-scripts/metric-selection/comparison-by-sample") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection/comparison-by-sample")
+#setwd("F:/Git/github/r-scripts/metric-selection/") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/metric-selection/")
 
 # load functions
 source("functions.R")
@@ -47,7 +47,7 @@ setorderv(sample_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3776  0.7232  0.8492  0.7709  0.8831  0.9365
+# 0.3776  0.7232  0.8492  0.7709  0.8831  0.9365 
 boxplot(sample_random$MatthewsCorrelationText)
 
 # select candidates
@@ -66,7 +66,7 @@ setorderv(sample_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.6518  0.8520  0.8903  0.8670  0.9109  0.9455 
+# 0.6518  0.8504  0.8901  0.8668  0.9109  0.9455 
 boxplot(sample_random$MatthewsCorrelationCode)
 
 # select candidates
@@ -89,7 +89,7 @@ setorderv(sample_random_99, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random_99$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3944  0.6415  0.7495  0.7002  0.7948  0.8517 
+# 0.3944  0.6415  0.7496  0.7005  0.7951  0.8517 
 boxplot(sample_random_99$MatthewsCorrelationText)
 
 # select candidates
@@ -108,7 +108,7 @@ setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_random_99$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.5114  0.7724  0.8539  0.8066  0.8897  0.9289 
+# 0.5114  0.7692  0.8539  0.8066  0.8897  0.9289
 boxplot(sample_random_99$MatthewsCorrelationCode)
 
 # select candidates
@@ -131,7 +131,7 @@ setorderv(sample_java_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_java_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.3744  0.6646  0.7461  0.7028  0.7832  0.8417 
+# 0.3744  0.6646  0.7468  0.7030  0.7839  0.8417 
 boxplot(sample_java_random$MatthewsCorrelationText)
 
 # select candidates
@@ -150,7 +150,7 @@ setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 # analyze
 summary(sample_java_random$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.6312  0.8272  0.8653  0.8424  0.8893  0.9273 
+# 0.6312  0.8272  0.8653  0.8422  0.8893  0.9273 
 boxplot(sample_java_random$MatthewsCorrelationCode)
 
 # select candidates
@@ -173,7 +173,7 @@ setorderv(sample_unclear_matching, c("MatthewsCorrelationText", "Runtime"), c(-1
 # analyze
 summary(sample_unclear_matching$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2432  0.6101  0.7132  0.6830  0.7731  0.8508 
+# 0.2432  0.6101  0.7141  0.6830  0.7731  0.8508
 boxplot(sample_unclear_matching$MatthewsCorrelationText)
 
 # select candidates
@@ -193,7 +193,7 @@ setorderv(sample_unclear_matching, c("MatthewsCorrelationCode", "Runtime"), c(-1
 # analyze
 summary(sample_unclear_matching$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2559  0.6856  0.7453  0.7309  0.7884  0.8706 
+# 0.2559  0.6856  0.7460  0.7312  0.7884  0.8706
 boxplot(sample_unclear_matching$MatthewsCorrelationCode)
 
 # select candidates
@@ -217,7 +217,7 @@ setorderv(sample_multiple_possible_links, c("MatthewsCorrelationText", "Runtime"
 # analyze
 summary(sample_multiple_possible_links$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.5982  0.7623  0.8537  0.8160  0.8887  0.9423 
+# 0.5982  0.7623  0.8537  0.8159  0.8883  0.9423 
 boxplot(sample_multiple_possible_links$MatthewsCorrelationText)
 
 # select candidates
@@ -237,7 +237,7 @@ setorderv(sample_multiple_possible_links, c("MatthewsCorrelationCode", "Runtime"
 # analyze
 summary(sample_multiple_possible_links$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.7600  0.8802  0.9041  0.8915  0.9229  0.9602 
+# 0.7600  0.8802  0.9041  0.8917  0.9229  0.9602 
 boxplot(sample_multiple_possible_links$MatthewsCorrelationCode)
 
 # select candidates
@@ -270,40 +270,40 @@ candidates_code <- intersect(
   unique(sample_random_99_code_candidates$Metric)
 )
 length(candidates_code)
-# 9
+# 10
 
 # both
 candidates <- unique(c(candidates_text, candidates_code))
 length(candidates)
-# 26
+# 27
 candidates
 # [1] "twoGramJaccardNormalizedPadding"                 
 # [2] "winnowingThreeGramDiceNormalized"                
 # [3] "cosineTwoGramNormalizedBool"                     
 # [4] "threeGramDice"                                   
 # [5] "twoGramDiceNormalized"                           
-# [6] "manhattanThreeGramNormalized"                    
-# [7] "threeGramJaccard"                                
-# [8] "winnowingFourGramDice"                           
-# [9] "fiveGramDice"                                    
+# [6] "twoGramDiceNormalizedPadding"                    
+# [7] "manhattanThreeGramNormalized"                    
+# [8] "threeGramJaccard"                                
+# [9] "winnowingFourGramDice"                           
 # [10] "fourGramJaccard"                                 
-# [11] "winnowingThreeGramLongestCommonSubsequence"      
-# [12] "fourGramDice"                                    
-# [13] "threeGramJaccardNormalized"                      
-# [14] "tokenJaccardNormalized"                          
+# [11] "fiveGramDice"                                    
+# [12] "winnowingThreeGramLongestCommonSubsequence"      
+# [13] "fourGramDice"                                    
+# [14] "threeGramJaccardNormalized"                      
 # [15] "cosineThreeGramNormalizedBool"                   
 # [16] "cosineThreeGramNormalizedNormalizedTermFrequency"
 # [17] "cosineFourGramNormalizedNormalizedTermFrequency" 
 # [18] "manhattanFiveGramNormalized"                     
 # [19] "manhattanFourGramNormalized"                     
-# [20] "winnowingFiveGramDiceNormalized"                 
-# [21] "winnowingFourGramDiceNormalized"                 
-# [22] "threeGramDiceNormalized"                         
-# [23] "threeGramDiceNormalizedPadding"                  
-# [24] "fourGramDiceNormalizedPadding"                   
-# [25] "threeGramJaccardNormalizedPadding"               
-# [26] "fourGramJaccardNormalizedPadding"  
-
+# [20] "winnowingTwoGramDiceNormalized"                  
+# [21] "winnowingFiveGramDiceNormalized"                 
+# [22] "winnowingFourGramDiceNormalized"                 
+# [23] "threeGramDiceNormalized"                         
+# [24] "threeGramDiceNormalizedPadding"                  
+# [25] "fourGramDiceNormalizedPadding"                   
+# [26] "threeGramJaccardNormalizedPadding"               
+# [27] "fourGramJaccardNormalizedPadding" 
 
 ## backup metrics
 
@@ -313,7 +313,7 @@ candidates_backup_text <- intersect(
   unique(sample_random_99_text_candidates_backup$Metric)
 )
 length(candidates_backup_text)
-# 2
+# 3
 
 # code
 candidates_backup_code <- intersect(
@@ -326,46 +326,51 @@ length(candidates_backup_code)
 # both
 candidates_backup <- unique(c(candidates_backup_text, candidates_backup_code))
 length(candidates_backup)
-# 3
+# 4
 candidates_backup
-# [1] "tokenJaccardNormalized"
-# [2] "tokenDiceNormalized"   
-# [3] "tokenDice"  
+# [1] "cosineTokenNormalizedTermFrequency"          
+# [2] "cosineTokenNormalizedNormalizedTermFrequency"
+# [3] "tokenJaccardNormalized"                      
+# [4] "tokenDice" 
 
 
 ## best and backup metrics
 candidates <- unique(c(candidates, candidates_backup))
 length(candidates)
-# 28
+# 31
 candidates
 # [1] "twoGramJaccardNormalizedPadding"                 
 # [2] "winnowingThreeGramDiceNormalized"                
 # [3] "cosineTwoGramNormalizedBool"                     
 # [4] "threeGramDice"                                   
 # [5] "twoGramDiceNormalized"                           
-# [6] "manhattanThreeGramNormalized"                    
-# [7] "threeGramJaccard"                                
-# [8] "winnowingFourGramDice"                           
-# [9] "fiveGramDice"                                    
+# [6] "twoGramDiceNormalizedPadding"                    
+# [7] "manhattanThreeGramNormalized"                    
+# [8] "threeGramJaccard"                                
+# [9] "winnowingFourGramDice"                           
 # [10] "fourGramJaccard"                                 
-# [11] "winnowingThreeGramLongestCommonSubsequence"      
-# [12] "fourGramDice"                                    
-# [13] "threeGramJaccardNormalized"                      
-# [14] "tokenJaccardNormalized"                          
+# [11] "fiveGramDice"                                    
+# [12] "winnowingThreeGramLongestCommonSubsequence"      
+# [13] "fourGramDice"                                    
+# [14] "threeGramJaccardNormalized"                      
 # [15] "cosineThreeGramNormalizedBool"                   
 # [16] "cosineThreeGramNormalizedNormalizedTermFrequency"
 # [17] "cosineFourGramNormalizedNormalizedTermFrequency" 
 # [18] "manhattanFiveGramNormalized"                     
 # [19] "manhattanFourGramNormalized"                     
-# [20] "winnowingFiveGramDiceNormalized"                 
-# [21] "winnowingFourGramDiceNormalized"                 
-# [22] "threeGramDiceNormalized"                         
-# [23] "threeGramDiceNormalizedPadding"                  
-# [24] "fourGramDiceNormalizedPadding"                   
-# [25] "threeGramJaccardNormalizedPadding"               
-# [26] "fourGramJaccardNormalizedPadding"                
-# [27] "tokenDiceNormalized"                             
-# [28] "tokenDice"
+# [20] "winnowingTwoGramDiceNormalized"                  
+# [21] "winnowingFiveGramDiceNormalized"                 
+# [22] "winnowingFourGramDiceNormalized"                 
+# [23] "threeGramDiceNormalized"                         
+# [24] "threeGramDiceNormalizedPadding"                  
+# [25] "fourGramDiceNormalizedPadding"                   
+# [26] "threeGramJaccardNormalizedPadding"               
+# [27] "fourGramJaccardNormalizedPadding"                
+# [28] "cosineTokenNormalizedTermFrequency"              
+# [29] "cosineTokenNormalizedNormalizedTermFrequency"    
+# [30] "tokenJaccardNormalized"                          
+# [31] "tokenDice" 
+
 
 
 ### second run with selected metrics ###
