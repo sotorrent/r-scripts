@@ -404,7 +404,7 @@ sample_multiple_possible_links <- fread("selected/PostId_VersionCount_SO_17-06_s
 sample_multiple_possible_links <- filter_columns(sample_multiple_possible_links)
 
 
-# DECISION: Select metrics that are in 99% quantile of sample_random, sample_java_random, and sample_random_99 for text or code
+# DECISION: Select metrics that are in 95% quantile of sample_random, sample_java_random, and sample_random_99 for text/code
 
 # merge relevant samples
 sample_candidates <- merge_samples(sample_random, sample_java_random)
@@ -423,27 +423,27 @@ setorderv(sample_java_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 setorderv(sample_random_99, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
 # select candidates
-MatthewsCorrelationText_99 <- quantile(sample_random$MatthewsCorrelationText, 0.99)
-sample_random_text_candidates <- sample_random[sample_random$MatthewsCorrelationText >= MatthewsCorrelationText_99,]
+MatthewsCorrelationText_95 <- quantile(sample_random$MatthewsCorrelationText, 0.95)
+sample_random_text_candidates <- sample_random[sample_random$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
 
-MatthewsCorrelationText_99 <- quantile(sample_java_random$MatthewsCorrelationText, 0.99)
-sample_java_random_text_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationText >= MatthewsCorrelationText_99,]
+MatthewsCorrelationText_95 <- quantile(sample_java_random$MatthewsCorrelationText, 0.95)
+sample_java_random_text_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
 
-MatthewsCorrelationText_99 <- quantile(sample_random_99$MatthewsCorrelationText, 0.99)
-sample_random_99_text_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationText >= MatthewsCorrelationText_99,]
+MatthewsCorrelationText_95 <- quantile(sample_random_99$MatthewsCorrelationText, 0.95)
+sample_random_99_text_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
 
 # backup metric
 backup_candidates <- sample_random[sample_random$MetricType == "EDIT" | grepl("token", sample_random$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationText_99_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.99)
-sample_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_99_backup,]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
 
 backup_candidates <- sample_java_random[sample_java_random$MetricType == "EDIT" | grepl("token", sample_java_random$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationText_99_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.99)
-sample_java_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_99_backup,]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_java_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
 
 backup_candidates <- sample_random_99[sample_random_99$MetricType == "EDIT" | grepl("token", sample_random_99$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationText_99_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.99)
-sample_random_99_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_99_backup,]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_random_99_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
 
 
 # final candidates
@@ -452,22 +452,32 @@ candidates_text <- intersect(
   unique(sample_random_99_text_candidates$Metric)
 )
 length(candidates_text)
-# 2
+# 12
 candidates_text
-# [1] "threeGramDice"   
-# [2] "threeGramJaccard"
+# [1] "cosineTwoGramNormalizedBool"                     
+# [2] "winnowingThreeGramDiceNormalized"                
+# [3] "manhattanThreeGramNormalized"                    
+# [4] "threeGramDice"                                   
+# [5] "threeGramJaccard"                                
+# [6] "fourGramDice"                                    
+# [7] "cosineThreeGramNormalizedNormalizedTermFrequency"
+# [8] "manhattanFiveGramNormalized"                     
+# [9] "fiveGramDice"                                    
+# [10] "manhattanFourGramNormalized"                     
+# [11] "fourGramJaccard"                                 
+# [12] "winnowingThreeGramLongestCommonSubsequence"      
 
 summary(sample_candidates$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.4058  0.6721  0.7858  0.7312  0.8206  0.8572 
+# 0.4058  0.6808  0.7874  0.7344  0.8207  0.8572 
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 sample_candidates_text <- sample_candidates[sample_candidates$Metric %in% candidates_text,]
 sample_candidates_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-#              Metric Threshold MatthewsCorrelationText   Runtime
-# 1:    threeGramDice      0.30               0.8542778 816896752
-# 2: threeGramJaccard      0.18               0.8516771 924226085
-# 3:    threeGramDice      0.29               0.8512588 820814447
+# Metric Threshold MatthewsCorrelationText   Runtime
+# 1:  manhattanFourGramNormalized      0.17               0.8572117 343267912
+# 2:                threeGramDice      0.30               0.8542778 194886037
+# 3: manhattanThreeGramNormalized      0.21               0.8540757 316846492
 
 
 # backup metric
@@ -478,16 +488,16 @@ backup_candidates_text <- intersect(
 length(backup_candidates_text)
 # 2
 backup_candidates_text
-# [1] "tokenDiceNormalized"   
-# [2] "tokenJaccardNormalized"
+# [1] "tokenJaccardNormalized"            
+# [2] "cosineTokenNormalizedTermFrequency"
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 sample_candidates_backup_text <- sample_candidates[sample_candidates$Metric %in% backup_candidates_text,]
 sample_candidates_backup_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-# Metric Threshold MatthewsCorrelationText    Runtime
-# 1:    tokenDiceNormalized      0.23               0.8508510 1104157371
-# 2: tokenJaccardNormalized      0.13               0.8508510 1209240551
-# 3:    tokenDiceNormalized      0.26               0.8503906 1093360816
+# Metric Threshold MatthewsCorrelationText   Runtime
+# 1: cosineTokenNormalizedTermFrequency      0.37               0.8390520 124949300
+# 2:             tokenJaccardNormalized      0.19               0.8389551 101857303
+# 3: cosineTokenNormalizedTermFrequency      0.36               0.8388111 124984235
 
 
 ## code
@@ -498,27 +508,27 @@ setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
 # select candidates
-MatthewsCorrelationCode_99 <- quantile(sample_random$MatthewsCorrelationCode, 0.99)
-sample_random_code_candidates <- sample_random[sample_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+MatthewsCorrelationCode_95 <- quantile(sample_random$MatthewsCorrelationCode, 0.95)
+sample_random_code_candidates <- sample_random[sample_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
 
-MatthewsCorrelationCode_99 <- quantile(sample_java_random$MatthewsCorrelationCode, 0.99)
-sample_java_random_code_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+MatthewsCorrelationCode_95 <- quantile(sample_java_random$MatthewsCorrelationCode, 0.95)
+sample_java_random_code_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
 
-MatthewsCorrelationCode_99 <- quantile(sample_random_99$MatthewsCorrelationCode, 0.99)
-sample_random_99_code_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationCode >= MatthewsCorrelationCode_99,]
+MatthewsCorrelationCode_95 <- quantile(sample_random_99$MatthewsCorrelationCode, 0.95)
+sample_random_99_code_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
 
 # backup metric
 backup_candidates <- sample_random[sample_random$MetricType == "EDIT" | grepl("token", sample_random$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
-sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
 
 backup_candidates <- sample_java_random[sample_java_random$MetricType == "EDIT" | grepl("token", sample_java_random$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
-sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
 
 backup_candidates <- sample_random_99[sample_random_99$MetricType == "EDIT" | grepl("token", sample_random_99$Metric, ignore.case=TRUE, perl=TRUE),]
-MatthewsCorrelationCode_99_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.99)
-sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_99_backup,]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
 
 
 # final candidates
@@ -527,30 +537,30 @@ candidates_text <- intersect(
   unique(sample_random_99_code_candidates$Metric)
 )
 length(candidates_code)
-# 9
+# 10
 candidates_code
-# [1] "winnowingFiveGramDiceNormalized"  
-# [2] "winnowingFourGramDiceNormalized"  
-# [3] "winnowingThreeGramDiceNormalized" 
-# [4] "threeGramDiceNormalized"          
-# [5] "threeGramDiceNormalizedPadding"   
-# [6] "fourGramDiceNormalizedPadding"    
-# [7] "threeGramJaccardNormalized"       
-# [8] "threeGramJaccardNormalizedPadding"
-# [9] "fourGramJaccardNormalizedPadding" 
+# [1] "winnowingTwoGramDiceNormalized"   
+# [2] "winnowingFiveGramDiceNormalized"  
+# [3] "winnowingFourGramDiceNormalized"  
+# [4] "winnowingThreeGramDiceNormalized" 
+# [5] "threeGramDiceNormalized"          
+# [6] "threeGramDiceNormalizedPadding"   
+# [7] "fourGramDiceNormalizedPadding"    
+# [8] "threeGramJaccardNormalized"       
+# [9] "threeGramJaccardNormalizedPadding"
+# [10] "fourGramJaccardNormalizedPadding" 
 
 summary(sample_candidates$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.5520  0.8143  0.8797  0.8394  0.9008  0.9209 
+# 0.5520  0.8172  0.8799  0.8409  0.9006  0.9209 
 
 setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 sample_candidates_code <- sample_candidates[sample_candidates$Metric %in% candidates_code,]
 sample_candidates_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
 # Metric Threshold MatthewsCorrelationCode   Runtime
-# 1: winnowingFourGramDiceNormalized      0.23               0.9208735 845210866
-# 2: winnowingFourGramDiceNormalized      0.25               0.9199509 829410024
-# 3: winnowingFourGramDiceNormalized      0.20               0.9196971 841075205
-
+# 1: winnowingFourGramDiceNormalized      0.23               0.9208735 150771010
+# 2: winnowingFourGramDiceNormalized      0.25               0.9199509 151886364
+# 3: winnowingFourGramDiceNormalized      0.20               0.9196971 150684642
 
 # backup metric
 backup_candidates_code <- intersect(
@@ -558,18 +568,17 @@ backup_candidates_code <- intersect(
   unique(sample_random_99_code_candidates_backup$Metric)
 )
 length(backup_candidates_code)
-# 2
+# 1
 backup_candidates_code
-# [1] "tokenDiceNormalized"   
-# [2] "tokenJaccardNormalized"
+# [1] "cosineTokenNormalizedNormalizedTermFrequency"   
 
 setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 sample_candidates_backup_code <- sample_candidates[sample_candidates$Metric %in% backup_candidates_code,]
 sample_candidates_backup_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
-# Metric Threshold MatthewsCorrelationCode    Runtime
-# 1:    tokenDiceNormalized      0.32               0.9162871 1089122626
-# 2: tokenJaccardNormalized      0.19               0.9162871 1215511980
-# 3:    tokenDiceNormalized      0.28               0.9161630 1089860835
+# Metric Threshold MatthewsCorrelationCode   Runtime
+# 1: cosineTokenNormalizedNormalizedTermFrequency      0.26               0.9118216 123140086
+# 2: cosineTokenNormalizedNormalizedTermFrequency      0.27               0.9109130 125341607
+# 3: cosineTokenNormalizedNormalizedTermFrequency      0.24               0.9095888 126362629
 
 
 ### check results of best metrics in sample_unclear_matching
@@ -579,8 +588,8 @@ sample_unclear_matching <- add_matthews_correlation(sample_unclear_matching)
 
 summary(sample_unclear_matching$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2432  0.6865  0.7517  0.7244  0.7852  0.8508
+# 0.2432  0.6865  0.7487  0.7232  0.7837  0.8508 
 
 summary(sample_unclear_matching$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.2559  0.7177  0.7672  0.7564  0.8026  0.8723 
+# 0.2559  0.7177  0.7682  0.7568  0.8027  0.8723 
