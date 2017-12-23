@@ -42,16 +42,16 @@ sample_candidates <- add_recall(sample_candidates)
 # best metric
 
 # see metric-comparison.R
-# metric: "threeGramDice"
-# threshold: 0.30
-roc_text <- sample_candidates[sample_candidates$Metric == "threeGramDice", c("Threshold", "RecallText", "InverseRecallText")]
+# metric: "manhattanFourGramNormalized"
+# threshold: 0.17
+roc_text <- sample_candidates[sample_candidates$Metric == "manhattanFourGramNormalized", c("Threshold", "RecallText", "InverseRecallText")]
 roc_text$InverseRecallText <- 1 - roc_text$InverseRecallText
 roc_text <- roc_text[with(roc_text, order(roc_text$Threshold)),]
 names(roc_text) <- c("Threshold", "TPR", "FPR")
-roc_text_selected <- roc_text[roc_text$Threshold==0.30,]
+roc_text_selected <- roc_text[roc_text$Threshold==0.17,]
 roc_text_selected
-#    Threshold       TPR       FPR
-# 1:       0.3 0.9848354 0.1369863
+# Threshold       TPR       FPR
+# 1:      0.17 0.9863518 0.1421233
 
 # baseline metric
 roc_text_equal <- sample_candidates[sample_candidates$Metric == "equal", c("Threshold", "RecallText", "InverseRecallText")]
@@ -126,7 +126,7 @@ par(
 
 # text
 plot(roc_text$FPR, roc_text$TPR,
-     main="threeGramDice (Text)", xlab="False positive rate", ylab="True positive rate",
+     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
      xaxt="n", yaxt="n",
@@ -213,7 +213,7 @@ par(
 
 # text
 plot(roc_text$FPR, roc_text$TPR,
-     main="threeGramDice (Text)", xlab="False positive rate", ylab="True positive rate",
+     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
      xaxt="n", yaxt="n",
