@@ -606,18 +606,6 @@ sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsC
 # 14:   winnowingFourGramDiceNormalized      0.26               0.9190431 150800406
 # 15:   winnowingFourGramDiceNormalized      0.24               0.9187732 150614417
 
-unique(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Metric)
-# [1] "winnowingFourGramDiceNormalized"  
-# [2] "fourGramDiceNormalizedPadding"    
-# [3] "fourGramJaccardNormalizedPadding" 
-# [4] "threeGramJaccardNormalizedPadding"
-
-min(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Threshold)
-# 0.15
-
-max(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Threshold)
-# 0.31
-
 
 # backup metric
 backup_candidates_code <- intersect(
@@ -641,15 +629,6 @@ sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationC
 #                                           Metric Threshold MatthewsCorrelationCode   Runtime
 # 1: cosineTokenNormalizedNormalizedTermFrequency      0.26               0.9118216 123140086
 # 2: cosineTokenNormalizedNormalizedTermFrequency      0.27               0.9109130 125341607
-
-unique(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Metric)
-# [1] "cosineTokenNormalizedNormalizedTermFrequency"
-
-min(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Threshold)
-# 0.26
-
-max(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Threshold)
-# 0.27
 
 
 ### check results of best metrics in sample_unclear_matching
