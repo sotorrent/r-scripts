@@ -473,11 +473,27 @@ summary(sample_candidates$MatthewsCorrelationText)
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 sample_candidates_text <- sample_candidates[sample_candidates$Metric %in% candidates_text,]
-sample_candidates_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-# Metric Threshold MatthewsCorrelationText   Runtime
+
+MatthewsCorrelationText_99 <- quantile(sample_candidates_text$MatthewsCorrelationText, 0.99)
+MatthewsCorrelationText_99
+# 99% 
+# 0.8516912 
+
+sample_candidates_text[sample_candidates_text$MatthewsCorrelationText>=MatthewsCorrelationText_99, c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
+#                          Metric Threshold MatthewsCorrelationText   Runtime
 # 1:  manhattanFourGramNormalized      0.17               0.8572117 343267912
 # 2:                threeGramDice      0.30               0.8542778 194886037
 # 3: manhattanThreeGramNormalized      0.21               0.8540757 316846492
+# 4:  manhattanFourGramNormalized      0.16               0.8538118 345013616
+# 5:                 fourGramDice      0.23               0.8528021 181355519
+# 6:              fourGramJaccard      0.13               0.8528021 231721246
+# 7: manhattanThreeGramNormalized      0.20               0.8528021 322299635
+# 8: manhattanThreeGramNormalized      0.23               0.8525419 315863392
+# 9: manhattanThreeGramNormalized      0.22               0.8525419 317249184
+# 10:                 fourGramDice      0.22               0.8524111 181296507
+# 11:  manhattanFourGramNormalized      0.18               0.8519267 343582326
+# 12: manhattanThreeGramNormalized      0.24               0.8518902 316709954
+# 13: manhattanThreeGramNormalized      0.25               0.8516930 317101257
 
 
 # backup metric
@@ -493,8 +509,14 @@ backup_candidates_text
 
 setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 sample_candidates_backup_text <- sample_candidates[sample_candidates$Metric %in% backup_candidates_text,]
-sample_candidates_backup_text[1:3,c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
-# Metric Threshold MatthewsCorrelationText   Runtime
+
+MatthewsCorrelationText_99_backup <- quantile(sample_candidates_backup_text$MatthewsCorrelationText, 0.99)
+MatthewsCorrelationText_99_backup
+# 99% 
+# 0.8388076 
+
+sample_candidates_backup_text[sample_candidates_backup_text$MatthewsCorrelationText>=MatthewsCorrelationText_99_backup, c("Metric", "Threshold", "MatthewsCorrelationText", "Runtime")]
+#                                 Metric Threshold MatthewsCorrelationText   Runtime
 # 1: cosineTokenNormalizedTermFrequency      0.37               0.8390520 124949300
 # 2:             tokenJaccardNormalized      0.19               0.8389551 101857303
 # 3: cosineTokenNormalizedTermFrequency      0.36               0.8388111 124984235
@@ -560,11 +582,42 @@ summary(sample_candidates$MatthewsCorrelationCode)
 
 setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 sample_candidates_code <- sample_candidates[sample_candidates$Metric %in% candidates_code,]
-sample_candidates_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
-# Metric Threshold MatthewsCorrelationCode   Runtime
-# 1: winnowingFourGramDiceNormalized      0.23               0.9208735 150771010
-# 2: winnowingFourGramDiceNormalized      0.25               0.9199509 151886364
-# 3: winnowingFourGramDiceNormalized      0.20               0.9196971 150684642
+
+MatthewsCorrelationCode_99 <- quantile(sample_candidates_code$MatthewsCorrelationCode, 0.99)
+MatthewsCorrelationCode_99
+# 99% 
+# 0.9187565
+
+sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99, c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
+#                              Metric Threshold MatthewsCorrelationCode   Runtime
+# 1:   winnowingFourGramDiceNormalized      0.23               0.9208735 150771010
+# 2:   winnowingFourGramDiceNormalized      0.25               0.9199509 151886364
+# 3:   winnowingFourGramDiceNormalized      0.20               0.9196971 150684642
+# 4:     fourGramDiceNormalizedPadding      0.31               0.9196971 218302293
+# 5:     fourGramDiceNormalizedPadding      0.30               0.9195764 218382888
+# 6:     fourGramDiceNormalizedPadding      0.28               0.9195764 218662133
+# 7:     fourGramDiceNormalizedPadding      0.27               0.9195764 219420975
+# 8:     fourGramDiceNormalizedPadding      0.26               0.9195764 219593381
+# 9:     fourGramDiceNormalizedPadding      0.29               0.9195764 219882515
+# 10:  fourGramJaccardNormalizedPadding      0.15               0.9195764 239930286
+# 11:  fourGramJaccardNormalizedPadding      0.17               0.9195764 239944890
+# 12:  fourGramJaccardNormalizedPadding      0.16               0.9195764 240105827
+# 13: threeGramJaccardNormalizedPadding      0.20               0.9194600 228619576
+# 14:   winnowingFourGramDiceNormalized      0.26               0.9190431 150800406
+# 15:   winnowingFourGramDiceNormalized      0.24               0.9187732 150614417
+
+unique(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Metric)
+# [1] "winnowingFourGramDiceNormalized"  
+# [2] "fourGramDiceNormalizedPadding"    
+# [3] "fourGramJaccardNormalizedPadding" 
+# [4] "threeGramJaccardNormalizedPadding"
+
+min(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Threshold)
+# 0.15
+
+max(sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99,]$Threshold)
+# 0.31
+
 
 # backup metric
 backup_candidates_code <- intersect(
@@ -578,11 +631,25 @@ backup_candidates_code
 
 setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 sample_candidates_backup_code <- sample_candidates[sample_candidates$Metric %in% backup_candidates_code,]
-sample_candidates_backup_code[1:3,c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
-# Metric Threshold MatthewsCorrelationCode   Runtime
+
+MatthewsCorrelationCode_99_backup <- quantile(sample_candidates_backup_code$MatthewsCorrelationCode, 0.99)
+MatthewsCorrelationCode_99_backup
+# 99% 
+# 0.910913
+
+sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup, c("Metric", "Threshold", "MatthewsCorrelationCode", "Runtime")]
+#                                           Metric Threshold MatthewsCorrelationCode   Runtime
 # 1: cosineTokenNormalizedNormalizedTermFrequency      0.26               0.9118216 123140086
 # 2: cosineTokenNormalizedNormalizedTermFrequency      0.27               0.9109130 125341607
-# 3: cosineTokenNormalizedNormalizedTermFrequency      0.24               0.9095888 126362629
+
+unique(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Metric)
+# [1] "cosineTokenNormalizedNormalizedTermFrequency"
+
+min(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Threshold)
+# 0.26
+
+max(sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup,]$Threshold)
+# 0.27
 
 
 ### check results of best metrics in sample_unclear_matching
