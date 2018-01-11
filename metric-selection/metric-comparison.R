@@ -532,23 +532,27 @@ sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$M
 
 
 # final candidates
-candidates_text <- intersect(
+candidates_code <- intersect(
   intersect(unique(sample_random_code_candidates$Metric), unique(sample_java_random_code_candidates$Metric)),
   unique(sample_random_99_code_candidates$Metric)
 )
 length(candidates_code)
-# 10
+# 14
 candidates_code
-# [1] "winnowingTwoGramDiceNormalized"   
-# [2] "winnowingFiveGramDiceNormalized"  
-# [3] "winnowingFourGramDiceNormalized"  
-# [4] "winnowingThreeGramDiceNormalized" 
-# [5] "threeGramDiceNormalized"          
-# [6] "threeGramDiceNormalizedPadding"   
-# [7] "fourGramDiceNormalizedPadding"    
-# [8] "threeGramJaccardNormalized"       
-# [9] "threeGramJaccardNormalizedPadding"
-# [10] "fourGramJaccardNormalizedPadding" 
+# [1] "cosineThreeGramNormalizedNormalizedTermFrequency"
+# [2] "winnowingFourGramDiceNormalized"                 
+# [3] "cosineThreeGramNormalizedBool"                   
+# [4] "threeGramDiceNormalized"                         
+# [5] "threeGramDiceNormalizedPadding"                  
+# [6] "fourGramDiceNormalizedPadding"                   
+# [7] "threeGramJaccardNormalized"                      
+# [8] "threeGramJaccardNormalizedPadding"               
+# [9] "fourGramJaccardNormalizedPadding"                
+# [10] "manhattanThreeGramNormalized"                    
+# [11] "cosineFourGramNormalizedNormalizedTermFrequency" 
+# [12] "threeGramDice"                                   
+# [13] "fourGramDice"                                    
+# [14] "fourGramJaccard" 
 
 summary(sample_candidates$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
