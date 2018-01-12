@@ -25,6 +25,33 @@ merge_samples <- function(sample1, sample2) {
   return(filter_columns(sample_merged))
 }
 
+merge_samples_combined <- function(sample1, sample2) {
+  sample_merged <- merge(sample1, sample2, by=c("MetricTypeText", "MetricText", "ThresholdText", "MetricTypeTextBackup", "MetricTextBackup", "ThresholdTextBackup", "MetricTypeCode", "MetricCode", "ThresholdCode", "MetricTypeCodeBackup", "MetricCodeBackup", "ThresholdCodeBackup"))
+  sample_merged$Runtime <- sample_merged$Runtime.x + sample_merged$Runtime.y
+  sample_merged$PostCount <- sample_merged$PostCount.x + sample_merged$PostCount.y
+  sample_merged$PostVersionCount <- sample_merged$PostVersionCount.x + sample_merged$PostVersionCount.y
+  sample_merged$PostBlockVersionCount <- sample_merged$PostBlockVersionCount.x + sample_merged$PostBlockVersionCount.y
+  sample_merged$PossibleComparisons <- sample_merged$PossibleComparisons.x + sample_merged$PossibleComparisons.y
+  # text
+  sample_merged$TextBlockVersionCount <- sample_merged$TextBlockVersionCount.x + sample_merged$TextBlockVersionCount.y
+  sample_merged$PossibleComparisonsText <- sample_merged$PossibleComparisonsText.x + sample_merged$PossibleComparisonsText.y
+  sample_merged$TruePositivesText <- sample_merged$TruePositivesText.x + sample_merged$TruePositivesText.y
+  sample_merged$TrueNegativesText <- sample_merged$TrueNegativesText.x + sample_merged$TrueNegativesText.y
+  sample_merged$FalsePositivesText <- sample_merged$FalsePositivesText.x + sample_merged$FalsePositivesText.y
+  sample_merged$FalseNegativesText <- sample_merged$FalseNegativesText.x + sample_merged$FalseNegativesText.y
+  sample_merged$FailuresText <- sample_merged$FailuresText.x + sample_merged$FailuresText.y
+  # code
+  sample_merged$CodeBlockVersionCount <- sample_merged$CodeBlockVersionCount.x + sample_merged$CodeBlockVersionCount.y
+  sample_merged$PossibleComparisonsCode <- sample_merged$PossibleComparisonsCode.x + sample_merged$PossibleComparisonsCode.y
+  sample_merged$TruePositivesCode <- sample_merged$TruePositivesCode.x + sample_merged$TruePositivesCode.y
+  sample_merged$TrueNegativesCode <- sample_merged$TrueNegativesCode.x + sample_merged$TrueNegativesCode.y
+  sample_merged$FalsePositivesCode <- sample_merged$FalsePositivesCode.x + sample_merged$FalsePositivesCode.y
+  sample_merged$FalseNegativesCode <- sample_merged$FalseNegativesCode.x + sample_merged$FalseNegativesCode.y
+  sample_merged$FailuresCode <- sample_merged$FailuresCode.x + sample_merged$FailuresCode.y
+  
+  return(filter_columns_combined(sample_merged))
+}
+
 filter_columns <- function(df) {
   return(df[,c(
     "MetricType", "Metric", "Threshold", "Runtime",
@@ -33,6 +60,17 @@ filter_columns <- function(df) {
     "CodeBlockVersionCount", "PossibleComparisonsCode", "TruePositivesCode", "TrueNegativesCode", "FalsePositivesCode", "FalseNegativesCode", "FailuresCode"
   )])
 }
+
+filter_columns_combined <- function(df) {
+  return(df[,c(
+    "MetricTypeText", "MetricText", "ThresholdText", "MetricTypeTextBackup", "MetricTextBackup", "ThresholdTextBackup", "MetricTypeCode", "MetricCode", "ThresholdCode", "MetricTypeCodeBackup", "MetricCodeBackup", "ThresholdCodeBackup",
+    "Runtime",
+    "PostCount", "PostVersionCount", "PostBlockVersionCount", "PossibleComparisons",
+    "TextBlockVersionCount", "PossibleComparisonsText", "TruePositivesText", "TrueNegativesText", "FalsePositivesText", "FalseNegativesText", "FailuresText",
+    "CodeBlockVersionCount", "PossibleComparisonsCode", "TruePositivesCode", "TrueNegativesCode", "FalsePositivesCode", "FalseNegativesCode", "FailuresCode"
+  )])
+}
+
 
 matthews_correlation <- function(TP, TN, FP, FN) {
   TP <- as.numeric(TP)
