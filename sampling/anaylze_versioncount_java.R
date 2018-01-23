@@ -1,4 +1,5 @@
-setwd("") # Pfad bitte anpassen
+setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
+#setwd("/Users/sebastian/git/github/r-scripts/sampling")
 
 library(data.table)
 data_java <- fread("PostId_VersionCount_SO_Java_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))

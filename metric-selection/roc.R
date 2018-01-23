@@ -1,5 +1,5 @@
-#setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
+#setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 # use defined colors
 source("colors.R")
@@ -106,12 +106,12 @@ color_scale <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("gray20", "gray70"
 
 # plot ROC curve (complete)
 
-pdf("roc_complete.pdf", width=12, height=12)
+pdf("figures/roc_complete.pdf", width=14, height=5)
 par(
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
   #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
-  mfrow = c(2, 1),
+  mfrow = c(1, 2),
   #pin = (width, height)
   # mfcol # draw in columns
   # increase font size
@@ -150,7 +150,7 @@ segments(x0=-0.1, y0=roc_text_selected$TPR, x1=roc_text_selected$FPR, y1=roc_tex
          lty=2, lwd=1, gray_darker)
 points(roc_text_selected$FPR, roc_text_selected$TPR, pch=16)
 # legend
-legend(0.85,0.3,
+legend(0.75,0.3,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
@@ -181,7 +181,7 @@ segments(x0=-0.1, y0=roc_code_selected$TPR, x1=roc_code_selected$FPR, y1=roc_cod
          lty=2, lwd=1, gray_darker)
 points(roc_code_selected$FPR, roc_code_selected$TPR, pch=16)
 # legend
-legend(0.85,0.3,
+legend(0.75,0.3,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
@@ -192,12 +192,12 @@ dev.off()
 
 # plot ROC curve (excerpt)
 
-pdf("roc_excerpt.pdf", width=12, height=12)
+pdf("figures/roc_excerpt.pdf", width=14, height=5)
 par(
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
   #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
-  mfrow = c(2, 1),
+  mfrow = c(1, 2),
   #pin = (width, height)
   # mfcol # draw in columns
   # increase font size
@@ -227,7 +227,7 @@ segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text
          lty=1, lwd=1, col="gray70")
 points(roc_text_equal$FPR, roc_text_equal$TPR,
        pch=20, col=color_scale)
-text(0.175, 0.79, "equal", font=3, cex=1)
+text(0.2, 0.795, "equal", font=3, cex=1)
 # selected threshold
 segments(x0=roc_text_selected$FPR, y0=0, x1=roc_text_selected$FPR, y1=roc_text_selected$TPR,
          lty=2, lwd=1, gray_darker)
@@ -235,7 +235,7 @@ segments(x0=-0.1, y0=roc_text_selected$TPR, x1=roc_text_selected$FPR, y1=roc_tex
          lty=2, lwd=1, gray_darker)
 points(roc_text_selected$FPR, roc_text_selected$TPR, pch=16)
 # legend
-legend(0.3,0.75,
+legend(0.26,0.75,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
@@ -265,7 +265,7 @@ segments(x0=-0.1, y0=roc_code_selected$TPR, x1=roc_code_selected$FPR, y1=roc_cod
          lty=2, lwd=1, gray_darker)
 points(roc_code_selected$FPR, roc_code_selected$TPR, pch=16)
 # legend
-legend(0.3,0.75,
+legend(0.26,0.745,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
