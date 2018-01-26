@@ -44,7 +44,6 @@ par(
   cex.axis=1.3
 )
 
-# histogram + boxplot
 hist(data_filtered$VersionCount, 
      main="Version count of Stack Overflow Q&A (n=36,062,267)", 
      freq=TRUE,
