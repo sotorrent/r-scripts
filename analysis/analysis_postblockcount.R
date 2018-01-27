@@ -5,7 +5,7 @@ library(data.table)
 library(effsize)
 
 # use defined colors
-source("colors.R")
+source("../colors.R")
 
 # posts with version count + first/last post history id
 posts_versioncount <- fread("data/posts_versioncount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
@@ -149,11 +149,14 @@ boxplot(TextBlockCount-0.5,
         medcol=gray_darker,
         boxcol=gray_darker,
         staplecol=gray_darker,
-        boxwex=2200000,
+        boxwex=1800000,
         axes=FALSE
         #xaxt="n"
         #yaxt="n"
 )
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker) 
+# axes
 axis(1, at=seq(-0.5, 5.5, by=1), labels=c(seq(0, 5, by=1), "\u2265 6"))
 axis(2, at=seq(0, 20000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m"), las=2)
 
@@ -207,11 +210,14 @@ boxplot(CodeBlockCount-0.5,
         medcol=gray_darker,
         boxcol=gray_darker,
         staplecol=gray_darker,
-        boxwex=2200000,
+        boxwex=1800000,
         axes=FALSE
         #xaxt="n"
         #yaxt="n"
 )
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker) 
+# axes
 axis(1, at=seq(-0.5, 5.5, by=1), labels=c(seq(0, 5, by=1), "\u2265 6"))
 axis(2, at=seq(0, 20000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m"), las=2)
 
@@ -246,7 +252,7 @@ wilcox.test(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlock
 # V = 8.4289e+11, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
-cliff.delta(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlockCount)
+#cliff.delta(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlockCount)
 # too slow...
 
 cohen.d(posts_with_edits$LastTextBlockCount, # "treatment"

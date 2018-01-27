@@ -2,7 +2,7 @@ setwd("F:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
 #setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
 
 # use defined colors
-source("colors.R")
+source("../colors.R")
 
 # load functions
 source("functions.R")

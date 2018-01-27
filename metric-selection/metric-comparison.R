@@ -800,3 +800,34 @@ sample_candidates[,c("MatthewsCorrelationText", "MatthewsCorrelationCode", "Runt
 #    MetricText ThresholdText MetricTextBackup ThresholdTextBackup MetricCode ThresholdCode MetricCodeBackup ThresholdCodeBackup
 # 1:    default          0.17          default                0.36    default          0.23          default                0.26
 
+sample_candidates[,c("MatthewsCorrelationText", "MatthewsCorrelationCode", "Runtime", "MetricText", "ThresholdText", "MetricTextBackup", "ThresholdTextBackup", "MetricCode", "ThresholdCode", "MetricCodeBackup", "ThresholdCodeBackup")]
+
+
+# text
+sample_candidates[,c("TruePositivesText", "FalsePositivesText", "TrueNegativesText", "FalseNegativesText"),]
+# TruePositivesText FalsePositivesText TrueNegativesText FalseNegativesText
+# 1:              4558                 82               502                 58
+
+# true positive rate
+sample_candidates$TruePositivesText/(sample_candidates$TruePositivesText+sample_candidates$FalseNegativesText)
+# 0.987435
+
+# false positive rate
+sample_candidates$FalsePositivesText/(sample_candidates$FalsePositivesText+sample_candidates$TrueNegativesText)
+# 0.140411
+
+
+#code
+sample_candidates[,c("TruePositivesCode", "FalsePositivesCode", "TrueNegativesCode", "FalseNegativesCode"),]
+# TruePositivesCode FalsePositivesCode TrueNegativesCode FalseNegativesCode
+# 1:              3378                 37               481                 34
+
+# true positive rate
+sample_candidates$TruePositivesCode/(sample_candidates$TruePositivesCode+sample_candidates$FalseNegativesCode)
+# 0.9900352
+
+# false positive rate
+sample_candidates$FalsePositivesCode/(sample_candidates$FalsePositivesCode+sample_candidates$TrueNegativesCode)
+# 0.07142857
+
+

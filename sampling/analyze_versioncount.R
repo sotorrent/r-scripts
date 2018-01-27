@@ -1,6 +1,9 @@
 setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
 #setwd("/Users/sebastian/git/github/r-scripts/sampling")
 
+# use defined colors
+source("../colors.R")
+
 library(data.table)
 data <- fread("data/PostId_VersionCount_SO_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 names(data) <- c("PostId", "PostTypeId", "VersionCount")
@@ -20,18 +23,6 @@ length(data$VersionCount[data$VersionCount>10])
 data_filtered <- data[data$VersionCount<=10]
 
 boxplot(data_filtered$VersionCount)
-
-# colors
-library(grDevices)
-gray_transparent <- adjustcolor("gray60", alpha.f=0.5)
-gray_lighter <- adjustcolor("gray85", alpha.f=1)
-gray_light <- adjustcolor("gray60", alpha.f=1)
-gray_dark <- adjustcolor("gray34", alpha.f=1)
-gray_darker <- adjustcolor("gray24", alpha.f=1)
-blue_light <- adjustcolor("skyblue1", alpha.f=1)
-blue_dark <- adjustcolor("steelblue4", alpha.f=1)
-red_light <- adjustcolor("salmon", alpha.f=1)
-red_dark <- adjustcolor("firebrick3", alpha.f=1)
 
 # plot histogram + boxplot
 pdf("figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8)
@@ -98,6 +89,9 @@ boxplot(data_filtered$VersionCount-0.5,
         #xaxt="n"
         #yaxt="n"
 )
+# median
+abline(v=0.5, lty=1, lwd=3, col=gray_darker)
+# axes
 axis(1, at=seq(0.5, 9.5, by=1), labels=seq(1, 10, by=1))
 axis(2, at=seq(0, 25000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m", "25m"), las=2)
 

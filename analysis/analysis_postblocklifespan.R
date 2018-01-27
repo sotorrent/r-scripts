@@ -5,7 +5,7 @@ library(data.table)
 library(plotrix)
 
 # use defined colors
-source("colors.R")
+source("../colors.R")
 
 # length of all text block lifespans
 textblock_lifespan_length <- fread("data/textblock_lifespan_length.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
@@ -38,24 +38,6 @@ n_2
 TextLifespanLength <- ifelse(textblock_lifespan_length$LifespanLength>10, 10, textblock_lifespan_length$LifespanLength)
 TextLifespanLengthTable <- table(TextLifespanLength)
 
-#options(scipen=5) # prevent scientific notation
-gap.barplot(
-  TextLifespanLengthTable,
-  xlim=c(1, 10),
-  gap=c(13000000, 37000000),
-  xtics=seq(1, 10),
-  ytics=c(0, 5000000, 10000000, 39000000),
-  col=rep(gray_lighter, 10),
-  main="Length of Text Block Lifespans (n=71,756,580)",
-  xlab="",
-  ylab="",
-  xaxt="n"
-)
-# axes
-axis(1, at=seq(1, 10), labels=c(seq(1, 9), "\u2265 10"))
-title(xlab="Length", font.lab=3)
-title(ylab="Count", font.lab=3)
-
 
 ##########
 # code
@@ -79,22 +61,151 @@ n_2
 CodeLifespanLength <- ifelse(codeblock_lifespan_length$LifespanLength>10, 10, codeblock_lifespan_length$LifespanLength)
 CodeLifespanLengthTable <- table(CodeLifespanLength)
 
-#options(scipen=5) # prevent scientific notation
-gap.barplot(
-  CodeLifespanLengthTable,
-  xlim=c(1, 10),
-  gap=c(15000000, 19000000),
-  xtics=seq(1, 10),
-  ytics=c(0, 4000000, 8000000, 21000000),
-  col=rep(gray_lighter, 10),
-  main="Length of Code Block Lifespans (n=43,728,155)",
-  xlab="",
-  ylab="",
-  xaxt="n"
-)
-# axes
-axis(1, at=seq(1, 10), labels=c(seq(1, 9), "\u2265 10"))
-title(xlab="Length", font.lab=3)
-title(ylab="Count", font.lab=3)
 
+##########
+# plot
+##########
+
+# plot histogram
+#quartz(type="pdf", file="figures/exact_matches_so_filter_histograms.pdf", width=12, height=10) # prevents unicode issues in pdf
+pdf("figures/postblocklifespan_length.pdf", width=18, height=6)
+par(
+  bg="white",
+  #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
+  #  omi = c(0.0, 0.0, 0.0, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 2),
+  #pin = (width, height)
+  #mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+# text
+hist(TextLifespanLength, 
+     main="Length of text block lifespans (n=71,756,580)", 
+     freq=TRUE,
+     xlab="",
+     ylab="",
+     border="white",
+     col="white",
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 40000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+for (y in seq(0, 40000000, by=10000000)) {
+  segments(x0=-0.5, y0=y, x1=10, y1=y, lty=1, lwd=1, col=gray_lighter)
+}
+hist(TextLifespanLength,
+     add=TRUE,
+     main="", 
+     freq=TRUE,
+     xlab="x",
+     ylab="y",
+     border=gray_dark,
+     col=gray_lighter,
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 40000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+boxplot(TextLifespanLength-0.5,
+        add=TRUE,
+        outline=FALSE,
+        horizontal=TRUE,
+        ylim=c(0, 10),
+        log="",
+        col="white",
+        # https://stackoverflow.com/a/28890111
+        lwd=2,
+        medlwd=2,
+        #staplelty=0,
+        whisklty=1,
+        #staplelty=0,
+        whiskcol=gray_darker,
+        medcol=gray_darker,
+        boxcol=gray_darker,
+        staplecol=gray_darker,
+        boxwex=3200000,
+        axes=FALSE
+        #xaxt="n"
+        #yaxt="n"
+)
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker)
+# axes
+axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
+axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m"), las=2)
+
+
+# code
+hist(CodeLifespanLength, 
+     main="Length of code block lifespans (n=43,728,155)", 
+     freq=TRUE,
+     xlab="",
+     ylab="",
+     border="white",
+     col="white",
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 40000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+for (y in seq(0, 40000000, by=10000000)) {
+  segments(x0=-0.5, y0=y, x1=10, y1=y, lty=1, lwd=1, col=gray_lighter)
+}
+hist(CodeLifespanLength,
+     add=TRUE,
+     main="", 
+     freq=TRUE,
+     xlab="x",
+     ylab="y",
+     border=gray_dark,
+     col=gray_lighter,
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 40000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+boxplot(CodeLifespanLength-0.5,
+        add=TRUE,
+        outline=FALSE,
+        horizontal=TRUE,
+        ylim=c(0, 10),
+        log="",
+        col="white",
+        # https://stackoverflow.com/a/28890111
+        lwd=2,
+        medlwd=2,
+        #staplelty=0,
+        whisklty=1,
+        #staplelty=0,
+        whiskcol=gray_darker,
+        medcol=gray_darker,
+        boxcol=gray_darker,
+        staplecol=gray_darker,
+        boxwex=3200000,
+        axes=FALSE
+        #xaxt="n"
+        #yaxt="n"
+)
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker) 
+# axes
+axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
+axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m"), las=2)
+
+dev.off()
 

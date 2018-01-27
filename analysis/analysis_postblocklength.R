@@ -4,7 +4,7 @@ setwd("F:/Git/github/r-scripts/analysis/") # please update path
 library(data.table)
 
 # use defined colors
-source("colors.R")
+source("../colors.R")
 
 # posts with version count + first/last post history id
 posts_versioncount <- fread("data/posts_versioncount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)

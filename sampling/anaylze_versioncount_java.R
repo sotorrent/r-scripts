@@ -1,6 +1,9 @@
 setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
 #setwd("/Users/sebastian/git/github/r-scripts/sampling")
 
+# use defined colors
+source("../colors.R")
+
 library(data.table)
 data_java <- fread("PostId_VersionCount_SO_Java_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 names(data_java) <- c("PostId", "PostTypeId", "VersionCount")
@@ -29,18 +32,6 @@ length(data_java$VersionCount[data_java$VersionCount>10])
 data_java_filtered <- data_java[data_java$VersionCount<=10]
 
 boxplot(data_java_filtered$VersionCount)
-
-# colors
-library(grDevices)
-gray_transparent <- adjustcolor("gray60", alpha.f=0.5)
-gray_lighter <- adjustcolor("gray85", alpha.f=1)
-gray_light <- adjustcolor("gray60", alpha.f=1)
-gray_dark <- adjustcolor("gray34", alpha.f=1)
-gray_darker <- adjustcolor("gray24", alpha.f=1)
-blue_light <- adjustcolor("skyblue1", alpha.f=1)
-blue_dark <- adjustcolor("steelblue4", alpha.f=1)
-red_light <- adjustcolor("salmon", alpha.f=1)
-red_dark <- adjustcolor("firebrick3", alpha.f=1)
 
 plot_histogram <- function(v) {
   # histogram + boxplot
