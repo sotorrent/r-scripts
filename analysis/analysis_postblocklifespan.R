@@ -35,14 +35,14 @@ n_1/n*100
 n_2
 # 10,974,663
 
-LifespanLength <- ifelse(textblock_lifespan_length$LifespanLength>10, 10, textblock_lifespan_length$LifespanLength)
-LifespanLengthTable <- table(LifespanLength)
+TextLifespanLength <- ifelse(textblock_lifespan_length$LifespanLength>10, 10, textblock_lifespan_length$LifespanLength)
+TextLifespanLengthTable <- table(TextLifespanLength)
 
 #options(scipen=5) # prevent scientific notation
 gap.barplot(
-  LifespanLengthTable,
+  TextLifespanLengthTable,
   xlim=c(1, 10),
-  gap=c(12000000, 37500000),
+  gap=c(13000000, 37000000),
   xtics=seq(1, 10),
   ytics=c(0, 5000000, 10000000, 39000000),
   col=rep(gray_lighter, 10),
@@ -76,14 +76,14 @@ n_1/n*100
 n_2
 # 9,532,092
 
-LifespanLength <- ifelse(codeblock_lifespan_length$LifespanLength>10, 10, codeblock_lifespan_length$LifespanLength)
-LifespanLengthTable <- table(LifespanLength)
+CodeLifespanLength <- ifelse(codeblock_lifespan_length$LifespanLength>10, 10, codeblock_lifespan_length$LifespanLength)
+CodeLifespanLengthTable <- table(CodeLifespanLength)
 
 #options(scipen=5) # prevent scientific notation
 gap.barplot(
-  LifespanLengthTable,
+  CodeLifespanLengthTable,
   xlim=c(1, 10),
-  gap=c(10000000, 20000000),
+  gap=c(15000000, 19000000),
   xtics=seq(1, 10),
   ytics=c(0, 4000000, 8000000, 21000000),
   col=rep(gray_lighter, 10),
