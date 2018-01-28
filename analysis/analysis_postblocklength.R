@@ -2,6 +2,7 @@ setwd("F:/Git/github/r-scripts/analysis/") # please update path
 #setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
+library(effsize)
 
 # use defined colors
 source("../colors.R")
@@ -18,8 +19,14 @@ names(posts_textblock_length) <- c("PostId", "PostHistoryId", "PostBlockVersionI
 posts_codeblock_length <- fread("data/codeblock_length.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
 names(posts_codeblock_length) <- c("PostId", "PostHistoryId", "PostBlockVersionId", "Length", "LineCount")
 
+# retrieve text blocks in first version
+textblocks_first_version <- posts_textblock_length[posts_textblock_length$PostHistoryId %in% posts_versioncount$FirstPostHistoryId]
+
 # retrieve text blocks in last version
 textblocks_last_version <- posts_textblock_length[posts_textblock_length$PostHistoryId %in% posts_versioncount$LastPostHistoryId]
+
+# retrieve code blocks in first version
+codeblocks_first_version <- posts_codeblock_length[posts_codeblock_length$PostHistoryId %in% posts_versioncount$FirstPostHistoryId]
 
 # retrieve code blocks in last version
 codeblocks_last_version <- posts_codeblock_length[posts_codeblock_length$PostHistoryId %in% posts_versioncount$LastPostHistoryId]
@@ -96,3 +103,69 @@ title(ylab="Line count", font.lab=1)
 
 dev.off()
 
+##########
+# first vs. last version
+##########
+
+# text
+wilcox.test(textblocks_last_version$LineCount,
+            textblocks_first_version$LineCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 2.2852e+15, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(textblocks_last_version$LineCount, # "treatment"
+        textblocks_first_version$LineCount, # "control"
+        paired=FALSE)
+# d estimate: 0.0001946091 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+wilcox.test(textblocks_last_version$Length,
+            textblocks_first_version$Length,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 2.2704e+15, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(textblocks_last_version$Length, # "treatment"
+        textblocks_first_version$Length, # "control"
+        paired=FALSE)
+# d estimate: 0.01040951 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+
+# code
+wilcox.test(codeblocks_last_version$LineCount,
+            codeblocks_first_version$LineCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.0157e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version$LineCount, # "treatment"
+        codeblocks_first_version$LineCount, # "control"
+        paired=FALSE)
+# d estimate: 0.01230378 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+wilcox.test(codeblocks_last_version$Length,
+            codeblocks_first_version$Length,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.028e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version$Length, # "treatment"
+        codeblocks_first_version$Length, # "control"
+        paired=FALSE)
+# d estimate: 0.01506673 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA

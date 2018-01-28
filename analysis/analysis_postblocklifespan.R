@@ -1,8 +1,7 @@
-#setwd("F:/Git/github/r-scripts/analysis/") # please update path
-setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+setwd("F:/Git/github/r-scripts/analysis/") # please update path
+#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
-library(plotrix)
 
 # use defined colors
 source("../colors.R")
@@ -25,15 +24,18 @@ summary(textblock_lifespan_length$LifespanLength)
 
 n <- nrow(textblock_lifespan_length)
 n_1 <- length(textblock_lifespan_length$LifespanLength[textblock_lifespan_length$LifespanLength==1])
-n_2 <- length(textblock_lifespan_length$LifespanLength[textblock_lifespan_length$LifespanLength==2])
 n
 # 71,756,580
 n_1
 # 39,781,460
 n_1/n*100
 # 55.43946
-n_2
-# 10,974,663
+
+n_revised <- length(textblock_lifespan_length$LifespanLength[textblock_lifespan_length$LifespanLength>1])
+n_revised
+# 31,975,120
+n_revised/n*100
+# 44.56054
 
 TextLifespanLength <- ifelse(textblock_lifespan_length$LifespanLength>10, 10, textblock_lifespan_length$LifespanLength)
 TextLifespanLengthTable <- table(TextLifespanLength)
@@ -48,18 +50,61 @@ summary(codeblock_lifespan_length$LifespanLength)
 
 n <- nrow(codeblock_lifespan_length)
 n_1 <- length(codeblock_lifespan_length$LifespanLength[codeblock_lifespan_length$LifespanLength==1])
-n_2 <- length(codeblock_lifespan_length$LifespanLength[codeblock_lifespan_length$LifespanLength==2])
 n
 # 43,728,155
 n_1
 # 21,925,047
 n_1/n*100
 # 50.13943
-n_2
-# 9,532,092
+
+n_revised <- length(codeblock_lifespan_length$LifespanLength[codeblock_lifespan_length$LifespanLength>1])
+n_revised
+# 21,803,108
+n_revised/n*100
+# 49.86057
 
 CodeLifespanLength <- ifelse(codeblock_lifespan_length$LifespanLength>10, 10, codeblock_lifespan_length$LifespanLength)
 CodeLifespanLengthTable <- table(CodeLifespanLength)
+
+
+##########
+# differences
+##########
+
+revised_textblocks <- textblock_lifespan_length[textblock_lifespan_length$LifespanLength>1,]
+revised_codeblocks <- codeblock_lifespan_length[codeblock_lifespan_length$LifespanLength>1,]
+
+summary(revised_textblocks$LifespanLength)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 2.00     2.00     4.00     4.78     4.00 80660.00 
+
+sd(revised_textblocks$LifespanLength)
+# 17.27135
+
+summary(revised_codeblocks$LifespanLength)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 2.0      2.0      3.0      4.1      4.0 562500.0 
+
+sd(revised_codeblocks$LifespanLength)
+# 169.7573
+
+wilcox.test(revised_codeblocks$LifespanLength,
+            revised_textblocks$LifespanLength,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 3.0348e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+#cliff.delta(revised_textblocks$LifespanLength, revised_codeblocks$LifespanLength)
+# too slow...
+
+cohen.d(revised_codeblocks$LifespanLength, # "treatment"
+        revised_textblocks$LifespanLength, # "control"
+        paired=FALSE)
+# d estimate: -0.00636089 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
 
 
 ##########
@@ -86,7 +131,7 @@ par(
 
 # text
 hist(TextLifespanLength, 
-     main="Length of text block lifespans (n=71,756,580)", 
+     main="Text block version count (n=71,756,580)", 
      freq=TRUE,
      xlab="",
      ylab="",
@@ -109,7 +154,7 @@ hist(TextLifespanLength,
      xlab="x",
      ylab="y",
      border=gray_dark,
-     col=gray_lighter,
+     col=c(gray_lighter, rep(gray_selected, 9)),
      #labels=c(rep("", 10), "Selected"),
      xlim=c(0, 10),
      ylim=c(0, 40000000),
@@ -141,6 +186,8 @@ boxplot(TextLifespanLength-0.5,
 )
 # median
 abline(v=0.5, lty=1, lwd=2, col=gray_darker)
+# labels
+text(3.1, 14000000, "Edited Blocks (44.6%)", font=4, col=gray_darker, cex=1.1)
 # axes
 axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m"), las=2)
@@ -148,7 +195,7 @@ axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40
 
 # code
 hist(CodeLifespanLength, 
-     main="Length of code block lifespans (n=43,728,155)", 
+     main="Code block version count (n=43,728,155)", 
      freq=TRUE,
      xlab="",
      ylab="",
@@ -171,7 +218,7 @@ hist(CodeLifespanLength,
      xlab="x",
      ylab="y",
      border=gray_dark,
-     col=gray_lighter,
+     col=c(gray_lighter, rep(gray_selected, 9)),
      #labels=c(rep("", 10), "Selected"),
      xlim=c(0, 10),
      ylim=c(0, 40000000),
@@ -202,7 +249,9 @@ boxplot(CodeLifespanLength-0.5,
         #yaxt="n"
 )
 # median
-abline(v=0.5, lty=1, lwd=2, col=gray_darker) 
+abline(v=0.5, lty=1, lwd=2, col=gray_darker)
+# labels
+text(3.1, 14000000, "Edited Blocks (49.9%)", font=4, col=gray_darker, cex=1.1)
 # axes
 axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m"), las=2)

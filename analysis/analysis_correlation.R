@@ -34,33 +34,41 @@ posts <- merge(posts, users_reputation, by.x="OwnerUserId", by.y="UserId", all.x
 posts <- posts[,c("PostId", "PostTypeId", "Score", "CommentCount", "Age", "OwnerUserId", "VersionCount", "GHMatchCount", "Reputation")]
 
 
-correlations <- rcorr(as.matrix(posts[,c("Score", "CommentCount", "Age", "VersionCount", "GHMatchCount", "Reputation")]), type="spearman") # pairwise deletion, Alternativ: type="pearson"
+correlations <- rcorr(as.matrix(posts[,c("VersionCount", "Age", "Score", "CommentCount", "GHMatchCount", "Reputation")]), type="spearman") # pairwise deletion, Alternativ: type="pearson"
 correlations
-#              Score CommentCount   Age VersionCount GHMatchCount Reputation
-# Score         1.00         0.08  0.25         0.09         0.18       0.33
-# CommentCount  0.08         1.00 -0.03         0.26         0.08       0.03
-# Age           0.25        -0.03  1.00        -0.03         0.10       0.32
-# VersionCount  0.09         0.26 -0.03         1.00         0.08      -0.05
-# GHMatchCount  0.18         0.08  0.10         0.08         1.00       0.08
-# Reputation    0.33         0.03  0.32        -0.05         0.08       1.00
+#              VersionCount   Age Score CommentCount GHMatchCount Reputation
+# VersionCount         1.00 -0.03  0.09         0.26         0.08      -0.05
+# Age                 -0.03  1.00  0.25        -0.03         0.10       0.32
+# Score                0.09  0.25  1.00         0.08         0.18       0.33
+# CommentCount         0.26 -0.03  0.08         1.00         0.08       0.03
+# GHMatchCount         0.08  0.10  0.18         0.08         1.00       0.08
+# Reputation          -0.05  0.32  0.33         0.03         0.08       1.00
 # 
 # n
-# Score CommentCount      Age VersionCount GHMatchCount Reputation
-# Score        38394917     38394917 38394917     38394895       136609   38045397
-# CommentCount 38394917     38394917 38394917     38394895       136609   38045397
-# Age          38394917     38394917 38394917     38394895       136609   38045397
-# VersionCount 38394895     38394895 38394895     38394895       136609   38045375
-# GHMatchCount   136609       136609   136609       136609       136609     134721
-# Reputation   38045397     38045397 38045397     38045375       134721   38045397
+#              VersionCount      Age    Score CommentCount GHMatchCount
+# VersionCount     38394895 38394895 38394895     38394895       136609
+# Age              38394895 38394917 38394917     38394917       136609
+# Score            38394895 38394917 38394917     38394917       136609
+# CommentCount     38394895 38394917 38394917     38394917       136609
+# GHMatchCount       136609   136609   136609       136609       136609
+# Reputation       38045375 38045397 38045397     38045397       134721
+# Reputation
+# VersionCount   38045375
+# Age            38045397
+# Score          38045397
+# CommentCount   38045397
+# GHMatchCount     134721
+# Reputation     38045397
 # 
 # P
-# Score CommentCount Age VersionCount GHMatchCount Reputation
-# Score               0            0   0            0            0        
-# CommentCount  0                  0   0            0            0        
-# Age           0     0                0            0            0        
-# VersionCount  0     0            0                0            0        
-# GHMatchCount  0     0            0   0                         0        
-# Reputation    0     0            0   0            0              
+#             VersionCount Age Score CommentCount GHMatchCount Reputation
+# VersionCount               0   0     0            0            0        
+# Age           0                0     0            0            0        
+# Score         0            0         0            0            0        
+# CommentCount  0            0   0                  0            0        
+# GHMatchCount  0            0   0     0                         0        
+# Reputation    0            0   0     0            0               
+
 
 #####
 # quasi experiments

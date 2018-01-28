@@ -17,12 +17,16 @@ summary(data$VersionCount)
 
 boxplot(data$VersionCount, outline=FALSE)
 
-length(data$VersionCount[data$VersionCount>10])
-# 17,931 (0.05%)
+length(data$VersionCount[data$VersionCount==1])/nrow(data)*100
+# 64.05568
 
-data_filtered <- data[data$VersionCount<=10]
+length(data$VersionCount[data$VersionCount>1])
+# 12,962,337
 
-boxplot(data_filtered$VersionCount)
+length(data$VersionCount[data$VersionCount>1])/nrow(data)*100
+# 35.94432
+
+VersionCount <- ifelse(data$VersionCount>10, 10, data$VersionCount)
 
 # plot histogram + boxplot
 pdf("figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8)
@@ -35,7 +39,7 @@ par(
   cex.axis=1.3
 )
 
-hist(data_filtered$VersionCount, 
+hist(VersionCount, 
      main="Version count of Stack Overflow Q&A (n=36,062,267)", 
      freq=TRUE,
      xlab="",
@@ -52,14 +56,14 @@ hist(data_filtered$VersionCount,
 for (y in seq(0, 25000000, by=5000000)) {
   segments(x0=-0.5, y0=y, x1=10, y1=y, lty=1, lwd=1, col=gray_lighter)
 }
-hist(data_filtered$VersionCount,
+hist(VersionCount,
      add=TRUE,
      main="VersionCount distribution", 
      freq=TRUE,
      xlab="PostId",
      ylab="VersionCount",
      border=gray_dark,
-     col=gray_lighter,
+     col=c(gray_lighter, rep(gray_selected, 9)),
      #labels=c(rep("", 10), "Selected"),
      xlim=c(0,10),
      ylim=c(0, 25000000),
@@ -67,7 +71,7 @@ hist(data_filtered$VersionCount,
      xaxt="n",
      yaxt="n"
 )
-boxplot(data_filtered$VersionCount-0.5,
+boxplot(VersionCount-0.5,
         add=TRUE,
         outline=FALSE,
         horizontal=TRUE,
@@ -75,8 +79,8 @@ boxplot(data_filtered$VersionCount-0.5,
         log="",
         col="white",
         # https://stackoverflow.com/a/28890111
-        lwd=3,
-        medlwd=3,
+        lwd=2,
+        medlwd=2,
         #staplelty=0,
         whisklty=1,
         #staplelty=0,
@@ -91,8 +95,10 @@ boxplot(data_filtered$VersionCount-0.5,
 )
 # median
 abline(v=0.5, lty=1, lwd=3, col=gray_darker)
+# labels
+text(3.55, 3800000, "Edited Posts (35.9%)", font=4, col=gray_darker, cex=1.3)
 # axes
-axis(1, at=seq(0.5, 9.5, by=1), labels=seq(1, 10, by=1))
+axis(1, at=seq(0.5, 9.5, by=1), labels=c(seq(1, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 25000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m", "25m"), las=2)
 
 dev.off()
