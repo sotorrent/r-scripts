@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
-#setwd("/Users/sebastian/git/github/r-scripts/sampling")
+#setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
+setwd("/Users/sebastian/git/github/r-scripts/sampling")
 
 # use defined colors
 source("../colors.R")
@@ -29,7 +29,8 @@ length(data$VersionCount[data$VersionCount>1])/nrow(data)*100
 VersionCount <- ifelse(data$VersionCount>10, 10, data$VersionCount)
 
 # plot histogram + boxplot
-pdf("figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8)
+quartz(type="pdf", file="figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8) # prevents unicode issues in pdf
+#pdf("figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8)
 par(
   bg="white",
   cex=1.3,
@@ -96,7 +97,7 @@ boxplot(VersionCount-0.5,
 # median
 abline(v=0.5, lty=1, lwd=3, col=gray_darker)
 # labels
-text(3.55, 3800000, "Edited Posts (35.9%)", font=4, col=gray_darker, cex=1.3)
+text(3.8, 6000000, "Edited Posts (35.9%)", font=4, col=gray_darker, cex=1.3)
 # axes
 axis(1, at=seq(0.5, 9.5, by=1), labels=c(seq(1, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 25000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m", "25m"), las=2)

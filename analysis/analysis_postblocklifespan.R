@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
-#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+#setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 
@@ -112,8 +112,8 @@ cohen.d(revised_codeblocks$LifespanLength, # "treatment"
 ##########
 
 # plot histogram
-#quartz(type="pdf", file="figures/exact_matches_so_filter_histograms.pdf", width=12, height=10) # prevents unicode issues in pdf
-pdf("figures/postblocklifespan_length.pdf", width=18, height=6)
+quartz(type="pdf", file="figures/postblocklifespan_length.pdf", width=18, height=6) # prevents unicode issues in pdf
+#pdf("figures/postblocklifespan_length.pdf", width=18, height=6)
 par(
   bg="white",
   #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)

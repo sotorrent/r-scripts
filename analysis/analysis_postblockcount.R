@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
-#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+# setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 library(effsize)
@@ -83,8 +83,8 @@ CodeBlockCountTable["0"]/nrow(posts_versioncount_postblockcount)*100
 boxplot(posts_versioncount_postblockcount$LastTextBlockCount, posts_versioncount_postblockcount$LastCodeBlockCount, outline=FALSE)
 
 # plot histogram + boxplot
-#quartz(type="pdf", file="figures/exact_matches_so_filter_histograms.pdf", width=12, height=10) # prevents unicode issues in pdf
-pdf("figures/postblockcount_latest.pdf", width=14, height=5)
+quartz(type="pdf", file="figures/postblockcount_latest.pdf", width=14, height=5) # prevents unicode issues in pdf
+#pdf("figures/postblockcount_latest.pdf", width=14, height=5)
 par(
   bg="white",
   #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
