@@ -297,3 +297,72 @@ cohen.d(posts_with_edits$LastCodeBlockCount, # "treatment"
 # Warning message:
 #   In n1 * n2 : NAs produced by integer overflow
 
+
+##########
+# questions vs. answers
+##########
+
+questions <- posts_versioncount_postblockcount[posts_versioncount_postblockcount$PostTypeId == 1,]
+
+summary(questions$LastTextBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   1.000   2.000   2.139   3.000 256.000 
+sd(questions$LastTextBlockCount)
+# 1.346668
+
+summary(questions$LastCodeBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   0.000   1.000   1.348   2.000 256.000 
+sd(questions$LastCodeBlockCount)
+# 1.371103
+
+answers <- posts_versioncount_postblockcount[posts_versioncount_postblockcount$PostTypeId == 2,]
+
+summary(answers$LastTextBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   1.000   1.000   1.618   2.000  89.000
+sd(answers$LastTextBlockCount)
+# 1.073218
+
+summary(answers$LastCodeBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.0000  0.0000  1.0000  0.9554  1.0000 88.0000 
+sd(answers$LastCodeBlockCount)
+# 1.138441
+
+
+# difference text
+
+wilcox.test(answers$LastTextBlockCount,
+            questions$LastTextBlockCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 1.3244e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(answers$LastTextBlockCount, # "treatment"
+        questions$LastTextBlockCount, # "control"
+        paired=FALSE)
+# d estimate: -0.4385735 (small)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+# difference code
+
+wilcox.test(answers$LastCodeBlockCount,
+            questions$LastCodeBlockCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 1.4527e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(answers$LastCodeBlockCount, # "treatment"
+        questions$LastCodeBlockCount, # "control"
+        paired=FALSE)
+# d estimate: -0.3179121 (small)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+

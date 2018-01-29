@@ -3,6 +3,10 @@ setwd("F:/Git/github/r-scripts/analysis/") # please update path
 
 library(data.table)
 library(sqldf)
+library(plotrix)
+
+# use defined colors
+source("../colors.R")
 
 # textblock edits
 postversion_edits <- fread("data/postversion_edits.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
@@ -146,3 +150,88 @@ filtered_posts <- posts_score[posts_score$PostId %in% post_ids,]
 summary(filtered_posts$Score)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # -147.00     0.00     2.00    11.61     5.00 19900.00 
+
+
+
+##########
+# plot
+##########
+
+date_diff <- postversion_edits_succ$SuccCreationDateDiff
+max_weeks <- 8
+for (i in 1:max_weeks) {
+  date_diff[date_diff>(i-1)*7 & date_diff<=i*7] <- i 
+}
+date_diff[date_diff>max_weeks*7] <- max_weeks+1
+date_diff_table <- table(date_diff)
+
+pdf("figures/timespan_weeks.pdf", width=8, height=6)
+par(
+  bg="white",
+  #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
+  #  omi = c(0.0, 0.0, 0.0, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 1),
+  #pin = (width, height)
+  #mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+#options(scipen=5) # prevent scientific notation
+gap.barplot(
+  date_diff_table[1:max_weeks],
+  gap=c(1500000, 16500000),
+  ytics=c(0, 1000000, 17000000),
+  col=rep(gray_selected, max_weeks+1),
+  main="Timespan between edits (weeks)",
+  xlab="Timespan (weeks)",
+  ylab="Number of edits"
+)
+
+dev.off()
+
+
+##########
+# years
+##########
+max(postversion_edits_succ$SuccCreationDateDiff)/365
+# 9.246575
+date_diff <- postversion_edits_succ$SuccCreationDateDiff
+max_years <- 9
+for (i in 1:max_years) {
+  date_diff[date_diff>(i-1)*365 & date_diff<=i*365] <- i 
+}
+date_diff[date_diff>max_years*365] <- max_years+1
+date_diff_table <- table(date_diff)
+
+pdf("figures/timespan_years.pdf", width=8, height=6)
+par(
+  bg="white",
+  #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
+  #  omi = c(0.0, 0.0, 0.0, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 1),
+  #pin = (width, height)
+  #mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+gap.barplot(
+  date_diff_table,
+  gap=c(2800000, 16500000),
+  ytics=c(0, 1000000, 2000000, 17000000),
+  col=rep(gray_selected, max_years+1),
+  main="Timespan between edits (years)",
+  xlab="Timespan (years)",
+  ylab="Number of edits"
+)
+
+dev.off()

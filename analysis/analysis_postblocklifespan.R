@@ -258,3 +258,70 @@ axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40
 
 dev.off()
 
+
+##########
+# questions vs. answers
+##########
+
+# text
+textblock_lifespan_length_q <- textblock_lifespan_length[textblock_lifespan_length$PostTypeId == 1,]
+textblock_lifespan_length_a <- textblock_lifespan_length[textblock_lifespan_length$PostTypeId == 2,]
+
+summary(textblock_lifespan_length_q$LifespanLength)
+# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+# 1.000     1.000     2.000     2.986     4.000 15880.000
+sd(textblock_lifespan_length_q$LifespanLength)
+# 6.212795
+
+summary(textblock_lifespan_length_a$LifespanLength)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 1.00     1.00     1.00     2.43     2.00 80660.00 
+sd(textblock_lifespan_length_a$LifespanLength)
+# 14.84365
+
+wilcox.test(textblock_lifespan_length_a$LifespanLength,
+            textblock_lifespan_length_q$LifespanLength,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 5.4772e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(textblock_lifespan_length_a$LifespanLength, # "treatment"
+        textblock_lifespan_length_q$LifespanLength, # "control"
+        paired=FALSE)
+# d estimate: -0.0477892 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+
+# code
+codeblock_lifespan_length_q <- codeblock_lifespan_length[codeblock_lifespan_length$PostTypeId == 1,]
+codeblock_lifespan_length_a <- codeblock_lifespan_length[codeblock_lifespan_length$PostTypeId == 2,]
+
+summary(codeblock_lifespan_length_q$LifespanLength)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 1.000    1.000    2.000    2.656    3.000 1470.000 
+sd(codeblock_lifespan_length_q$LifespanLength)
+# 3.404558
+
+summary(codeblock_lifespan_length_a$LifespanLength)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 1.0      1.0      1.0      2.4      2.0 562500.0 
+sd(codeblock_lifespan_length_a$LifespanLength)
+# 166.1008
+
+wilcox.test(codeblock_lifespan_length_a$LifespanLength,
+            codeblock_lifespan_length_q$LifespanLength,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 2.0958e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblock_lifespan_length_a$LifespanLength, # "treatment"
+        codeblock_lifespan_length_q$LifespanLength, # "control"
+        paired=FALSE)
+# d estimate: -0.001840944 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
