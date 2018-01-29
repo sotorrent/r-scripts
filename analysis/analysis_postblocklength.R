@@ -97,7 +97,7 @@ boxplot(textblocks_last_version$LineCount,
         names=c("text blocks", "code blocks"),
         outline=FALSE,
         col=gray_lighter,
-        main="Length of post blocks in last version"
+        main="Length of post blocks in lastest version"
 )
 title(ylab="Line count", font.lab=1)
 

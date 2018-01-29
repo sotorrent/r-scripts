@@ -101,7 +101,7 @@ par(
 )
 
 hist(TextBlockCount, 
-     main="Text blocks in lastest version  (n=38,394,895)", 
+     main="Text blocks in latest version  (n=38,394,895)", 
      freq=TRUE,
      xlab="",
      ylab="",
@@ -162,7 +162,7 @@ axis(2, at=seq(0, 20000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m"
 
 
 hist(CodeBlockCount, 
-     main="Code blocks in lastest version (n=38,394,895)", 
+     main="Code blocks in latest version (n=38,394,895)", 
      freq=TRUE,
      xlab="",
      ylab="",
