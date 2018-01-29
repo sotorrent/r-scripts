@@ -325,3 +325,58 @@ cohen.d(codeblock_lifespan_length_a$LifespanLength, # "treatment"
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
+
+
+##########
+# java vs. others
+##########
+
+# post ids of Java questions
+java_questions <- fread("data/java_questions.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_questions) <- c("PostId", "PostTypeId")
+# post ids of Java answers
+java_answers <- fread("data/java_answers.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_answers) <- c("PostId", "PostTypeId")
+# merge post ids
+java_post_ids <- c(java_questions$PostId, java_answers$PostId)
+
+codeblock_lifespan_length_java <- codeblock_lifespan_length[codeblock_lifespan_length$PostId %in% java_post_ids,]
+codeblock_lifespan_length_others <- codeblock_lifespan_length[!(codeblock_lifespan_length$PostId %in% java_post_ids),]
+
+textblock_lifespan_length_java <- textblock_lifespan_length[textblock_lifespan_length$PostId %in% java_post_ids,]
+textblock_lifespan_length_others <- textblock_lifespan_length[!(textblock_lifespan_length$PostId %in% java_post_ids),]
+
+
+# text
+wilcox.test(textblock_lifespan_length_java$LifespanLength,
+            textblock_lifespan_length_others$LifespanLength,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 2.2729e+14, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(textblock_lifespan_length_java$LifespanLength, # "treatment"
+        textblock_lifespan_length_others$LifespanLength, # "control"
+        paired=FALSE)
+# d estimate: 0.01235921 (negligible)
+# 95 percent confidence interval:
+#  inf sup 
+# NA  NA 
+
+
+# code
+
+wilcox.test(codeblock_lifespan_length_java$LifespanLength,
+            codeblock_lifespan_length_others$LifespanLength,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.3689e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblock_lifespan_length_java$LifespanLength, # "treatment"
+        codeblock_lifespan_length_others$LifespanLength, # "control"
+        paired=FALSE)
+# d estimate: 0.0007196131 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 

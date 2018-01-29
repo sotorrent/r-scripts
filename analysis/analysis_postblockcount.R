@@ -366,3 +366,67 @@ cohen.d(answers$LastCodeBlockCount, # "treatment"
 # NA  NA 
 
 
+##########
+# java vs. others
+##########
+
+# post ids of Java questions
+java_questions <- fread("data/java_questions.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_questions) <- c("PostId", "PostTypeId")
+# post ids of Java answers
+java_answers <- fread("data/java_answers.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_answers) <- c("PostId", "PostTypeId")
+# merge post ids
+java_post_ids <- c(java_questions$PostId, java_answers$PostId)
+
+java <- posts_versioncount_postblockcount[posts_versioncount_postblockcount$PostId %in% java_post_ids,]
+others <- posts_versioncount_postblockcount[!(posts_versioncount_postblockcount$PostId %in% java_post_ids),]
+
+
+summary(java$LastTextBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   1.000   1.000   1.815   2.000  96.000
+sd(java$LastTextBlockCount)
+# 1.229142
+
+summary(java$LastCodeBlockCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   0.000   1.000   1.089   2.000  96.000 
+sd(java$LastCodeBlockCount)
+# 1.267344
+
+
+# difference text
+
+wilcox.test(java$LastTextBlockCount,
+            others$LastTextBlockCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 6.2548e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(java$LastTextBlockCount, # "treatment"
+        others$LastTextBlockCount, # "control"
+        paired=FALSE)
+# d estimate: -0.006347346 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+
+# difference code
+
+wilcox.test(java$LastCodeBlockCount,
+            others$LastCodeBlockCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 6.2064e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(java$LastCodeBlockCount, # "treatment"
+        others$LastCodeBlockCount, # "control"
+        paired=FALSE)
+# d estimate: -0.01770614 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 

@@ -302,3 +302,95 @@ cohen.d(codeblocks_last_version_a$LineCount, # "treatment"
 # 95 percent confidence interval:
 #   inf sup 
 #NA  NA 
+
+
+##########
+# java vs. others
+##########
+
+# post ids of Java questions
+java_questions <- fread("data/java_questions.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_questions) <- c("PostId", "PostTypeId")
+# post ids of Java answers
+java_answers <- fread("data/java_answers.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+names(java_answers) <- c("PostId", "PostTypeId")
+# merge post ids
+java_post_ids <- c(java_questions$PostId, java_answers$PostId)
+
+codeblocks_last_version_java <- codeblocks_last_version[codeblocks_last_version$PostId %in% java_post_ids,]
+textblocks_last_version_java <- textblocks_last_version[textblocks_last_version$PostId %in% java_post_ids,]
+
+codeblocks_last_version_others <- codeblocks_last_version[!(codeblocks_last_version$PostId %in% java_post_ids),]
+textblocks_last_version_others <- textblocks_last_version[!(textblocks_last_version$PostId %in% java_post_ids),]
+
+
+# text
+
+# length
+wilcox.test(codeblocks_last_version_java$Length,
+            codeblocks_last_version_others$Length,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.3862e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version_java$Length, # "treatment"
+        codeblocks_last_version_others$Length, # "control"
+        paired=FALSE)
+# d estimate: 0.1861596 (negligible)
+# 95 percent confidence interval:
+#  inf sup 
+# NA  NA 
+
+
+# line count
+wilcox.test(codeblocks_last_version_java$LineCount,
+            codeblocks_last_version_others$LineCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.2932e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version_java$LineCount, # "treatment"
+        codeblocks_last_version_others$LineCount, # "control"
+        paired=FALSE)
+# d estimate: 0.1844453 (negligible)
+# 95 percent confidence interval:
+#  inf sup 
+# NA  NA 
+
+
+# code
+
+# length
+wilcox.test(codeblocks_last_version_java$Length,
+            codeblocks_last_version_others$Length,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.3862e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version_java$Length, # "treatment"
+        codeblocks_last_version_others$Length, # "control"
+        paired=FALSE)
+# d estimate: 0.1861596 (negligible)
+# 95 percent confidence interval:
+# inf sup 
+#  NA  NA
+
+
+# line count
+wilcox.test(codeblocks_last_version_java$LineCount,
+            codeblocks_last_version_others$LineCount,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 8.2932e+13, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(codeblocks_last_version_java$LineCount, # "treatment"
+        codeblocks_last_version_others$LineCount, # "control"
+        paired=FALSE)
+# d estimate: 0.1844453 (negligible)
+# 95 percent confidence interval:
+#  inf sup 
+# NA  NA 
