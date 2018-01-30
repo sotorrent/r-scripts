@@ -3,6 +3,7 @@ setwd("F:/Git/github/r-scripts/analysis/") # please update path
 
 library(data.table)
 library(sqldf)
+library(effsize)
 
 # post history (edits)
 posthistory <- fread("data/posthistory_date_editcount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
@@ -18,7 +19,6 @@ comments$Date <- as.Date(comments$Date)
 
 
 # merge post history and comments
-
 posthistory_comments <- merge(posthistory, comments, by=c("PostId", "Date"), all.x=TRUE, all.y=TRUE)
 posthistory_comments$EditCount[is.na(posthistory_comments$EditCount)] <- 0
 posthistory_comments$CommentCount[is.na(posthistory_comments$CommentCount)] <- 0
@@ -176,57 +176,102 @@ n_after_1
 n_after_1/n_after*100
 # 73.72874
 
-
+same_time <- nrow(edits_comments_final[edits_comments_final$TimestampDiff==0,])
+same_time
+# 18,151
+same_time/n*100
+# 0.02027706
 
 
 # merge post history and votes
 
 # votes
-edits_votes <- fread("data/edits_votes.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(edits_votes) <- c("PostId", "Date", "EditCount", "UpVotes", "DownVotes")
+votes <- fread("data/votes_date_votecount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(votes) <- c("PostId", "Date", "UpVotes", "DownVotes")
 # parse date
-edits_votes$Date <- as.Date(edits_votes$Date)
+votes$Date <- as.Date(votes$Date)
+
+# merge post history and votes
+posthistory_votes <- merge(posthistory, votes, by=c("PostId", "Date"), all.x=TRUE, all.y=TRUE)
 # set NA values to 0
-edits_votes$UpVotes[is.na(edits_votes$UpVotes)] <- 0
-edits_votes$DownVotes[is.na(edits_votes$DownVotes)] <- 0
+posthistory_votes$EditCount[is.na(posthistory_votes$EditCount)] <- 0
+posthistory_votes$UpVotes[is.na(posthistory_votes$UpVotes)] <- 0
+posthistory_votes$DownVotes[is.na(posthistory_votes$DownVotes)] <- 0
 
-n <- nrow(edits_votes)
+
+n <- nrow(posthistory_votes)
 n
-# 159,04,858
+# 117,401,431
 
-summary(edits_votes$EditCount)
-# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.000   1.000   1.000   1.507   2.000 367.000 
+summary(posthistory_votes$EditCount)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   0.0000   0.5149   1.0000 367.0000 
 
-summary(edits_votes$UpVotes)
-# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.0     1.0     1.0     1.6     2.0  1436.0 
+summary(posthistory_votes$UpVotes)
+# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+# 0.0000    0.0000    1.0000    0.8404    1.0000 1436.0000 
 
-summary(edits_votes$DownVotes)
-# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.0000  0.0000  0.0000  0.2185  0.0000 59.0000 
+summary(posthistory_votes$DownVotes)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   0.0000   0.1071   0.0000 102.0000 
 
 
-only_edit <- edits_votes[edits_votes$EditCount>0 & edits_votes$UpVotes==0 & edits_votes$DownVotes==0,]
+only_edit <- posthistory_votes[posthistory_votes$EditCount>0 & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
 n_edit <- nrow(only_edit)
 n_edit
-# 0
+# 28,702,811
 n_edit/n*100
-# 0
+# 24.44843
 
-only_votes <- edits_votes[edits_votes$EditCount==0 & (edits_votes$UpVotes>0 | edits_votes$DownVotes>0),]
+only_votes <- posthistory_votes[posthistory_votes$EditCount==0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
 n_votes <- nrow(only_votes)
 n_votes
-# 0
+# 72,793,762
 n_votes/n*100
-# 0
+# 62.00415
 
-both <- edits_votes[edits_votes$EditCount>0 & (edits_votes$UpVotes>0 | edits_votes$DownVotes>0),]
+both <- posthistory_votes[posthistory_votes$EditCount>0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
 n_both <- nrow(both)
 n_both
 # 15,904,858
 n_both/n*100
-# 100
+# 13.54741
 
 
+# read data from BigQuery (see db-scripts for more information)
+sample_votes_before_edits <- fread("data/sample_votes_before_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(sample_votes_before_edits) <- c("PostId", "UpVotesBefore")
+sample_votes_after_edits <- fread("data/sample_votes_after_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(sample_votes_after_edits) <- c("PostId", "UpVotesAfter")
 
+# merge before and after
+sample_votes <- merge(sample_votes_before_edits, sample_votes_after_edits, on="PostId", all.x=TRUE, all.y=TRUE)
+sample_votes$UpVotesBefore[is.na(sample_votes$UpVotesBefore)] <- 0
+sample_votes$UpVotesAfter[is.na(sample_votes$UpVotesAfter)] <- 0
+
+summary(sample_votes$UpVotesBefore)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   1.0000   0.8825   1.0000 665.0000
+sd(sample_votes$UpVotesBefore)
+# 2.269097
+
+summary(sample_votes$UpVotesAfter)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   0.0000   0.7769   1.0000 425.0000 
+sd(sample_votes$UpVotesAfter)
+# 1.974936
+
+wilcox.test(sample_votes$UpVotesAfter,
+            sample_votes$UpVotesBefore,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 1.4191e+10, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(sample_votes$UpVotesAfter, # "treatment"
+        sample_votes$UpVotesBefore, # "control"
+        paired=TRUE)
+# d estimate: -0.03899819 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
