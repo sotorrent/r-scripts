@@ -186,17 +186,47 @@ edits_votes <- fread("data/edits_votes.csv", header=FALSE, sep=",", quote="\"", 
 names(edits_votes) <- c("PostId", "Date", "EditCount", "UpVotes", "DownVotes")
 # parse date
 edits_votes$Date <- as.Date(edits_votes$Date)
+# set NA values to 0
+edits_votes$UpVotes[is.na(edits_votes$UpVotes)] <- 0
+edits_votes$DownVotes[is.na(edits_votes$DownVotes)] <- 0
 
 n <- nrow(edits_votes)
 n
-# 117,401,431
+# 159,04,858
 
 summary(edits_votes$EditCount)
-#
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.000   1.000   1.000   1.507   2.000 367.000 
 
 summary(edits_votes$UpVotes)
-#
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.0     1.0     1.0     1.6     2.0  1436.0 
 
 summary(edits_votes$DownVotes)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.0000  0.0000  0.0000  0.2185  0.0000 59.0000 
+
+
+only_edit <- edits_votes[edits_votes$EditCount>0 & edits_votes$UpVotes==0 & edits_votes$DownVotes==0,]
+n_edit <- nrow(only_edit)
+n_edit
+# 0
+n_edit/n*100
+# 0
+
+only_votes <- edits_votes[edits_votes$EditCount==0 & (edits_votes$UpVotes>0 | edits_votes$DownVotes>0),]
+n_votes <- nrow(only_votes)
+n_votes
+# 0
+n_votes/n*100
+# 0
+
+both <- edits_votes[edits_votes$EditCount>0 & (edits_votes$UpVotes>0 | edits_votes$DownVotes>0),]
+n_both <- nrow(both)
+n_both
+# 15,904,858
+n_both/n*100
+# 100
+
 
 
