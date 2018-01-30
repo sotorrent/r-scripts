@@ -163,20 +163,21 @@ max(postversion_edits_succ$SuccCreationDateDiff)
 date_diff <- postversion_edits_succ$SuccCreationDateDiff
 max_weeks <- 8
 for (i in 1:max_weeks) {
-  date_diff[date_diff>(i-1)*7 & date_diff<=i*7] <- i 
+  date_diff[date_diff>(i-1)*7 & date_diff<=i*7] <- i-1 
 }
 date_diff[date_diff>max_weeks*7] <- max_weeks+1
+date_diff <- date_diff+1 # to adjust x axis of plot
 date_diff_table <- table(date_diff)
 
 n <- length(date_diff)
 n
 # 21,840,111
-n_1 <- length(date_diff[date_diff==0])
+n_1 <- length(date_diff[date_diff==1])
 n_1
-# 17,084,794
+# 18,213,756
 n_1/n*100
-# 78.22668
-n_excluded <- length(date_diff[date_diff==max_weeks+1])
+# 83.39589
+n_excluded <- length(date_diff[date_diff==max_weeks+2])
 n_excluded
 # 3,162,402
 n_excluded/n*100
@@ -211,16 +212,16 @@ par(
 options(scipen=5) # prevent scientific notation
 gap.barplot(
   date_diff_table[1:max_weeks],
-  gap=c(1500000, 16500000),
-  ytics=c(0, 1000000, 17000000),
+  gap=c(220000, 18100000),
+  ytics=c(0, 100000, 200000, 18200000),
   xlim=c(0.6, 8.4),
-  col=c(gray_selected_2, rep(gray_selected, max_weeks)),
+  col=c(gray_selected, rep(gray_lighter, max_weeks)),
   main="Timespan between edits (weeks)",
   xlab="Timespan (weeks)",
   ylab="Number of edits"
 )
 # labels
-text(2.2, 1850000, "\u2190 78.2%", font=1, col=gray_darker) # cex=1.3
+text(2.2, 300000, "\u2190 83.4%", font=1, col=gray_darker) # cex=1.3
 
 dev.off()
 
