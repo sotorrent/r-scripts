@@ -1,5 +1,5 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
-#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+#setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 library(sqldf)
@@ -157,6 +157,9 @@ summary(filtered_posts$Score)
 # plot
 ##########
 
+max(postversion_edits_succ$SuccCreationDateDiff)
+# 3375
+
 date_diff <- postversion_edits_succ$SuccCreationDateDiff
 max_weeks <- 8
 for (i in 1:max_weeks) {
@@ -165,7 +168,31 @@ for (i in 1:max_weeks) {
 date_diff[date_diff>max_weeks*7] <- max_weeks+1
 date_diff_table <- table(date_diff)
 
-pdf("figures/timespan_weeks.pdf", width=8, height=6)
+n <- length(date_diff)
+n
+# 21,840,111
+n_1 <- length(date_diff[date_diff==0])
+n_1
+# 17,084,794
+n_1/n*100
+# 78.22668
+n_excluded <- length(date_diff[date_diff==max_weeks+1])
+n_excluded
+# 3,162,402
+n_excluded/n*100
+# 14.47979
+n-n_excluded
+# 18,677,709
+(1-n_excluded/n)*100
+# 85.52021
+
+# range of missing values
+max(postversion_edits_succ$SuccCreationDateDiff/7)-max_weeks
+# 474.1429
+
+
+quartz(type="pdf", file="figures/timespan_weeks.pdf", width=8, height=6) # prevents unicode issues in pdf
+#pdf("figures/timespan_weeks.pdf", width=8, height=6)
 par(
   bg="white",
   #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
@@ -181,16 +208,19 @@ par(
   cex.axis=1
 )
 
-#options(scipen=5) # prevent scientific notation
+options(scipen=5) # prevent scientific notation
 gap.barplot(
   date_diff_table[1:max_weeks],
   gap=c(1500000, 16500000),
   ytics=c(0, 1000000, 17000000),
-  col=rep(gray_selected, max_weeks+1),
+  xlim=c(0.6, 8.4),
+  col=c(gray_selected_2, rep(gray_selected, max_weeks)),
   main="Timespan between edits (weeks)",
   xlab="Timespan (weeks)",
   ylab="Number of edits"
 )
+# labels
+text(2.2, 1850000, "\u2190 78.2%", font=1, col=gray_darker) # cex=1.3
 
 dev.off()
 
