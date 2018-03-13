@@ -78,24 +78,24 @@ boxplot(VersionCount-0.5,
         horizontal=TRUE,
         ylim=c(1,10),
         log="",
-        col="white",
+        col=gray_dark,
         # https://stackoverflow.com/a/28890111
         lwd=2,
         medlwd=2,
         #staplelty=0,
         whisklty=1,
         #staplelty=0,
-        whiskcol=gray_darker,
-        medcol=gray_darker,
-        boxcol=gray_darker,
-        staplecol=gray_darker,
-        boxwex=2400000,
+        whiskcol="black",
+        medcol="black",
+        boxcol="black",
+        staplecol="black",
+        boxwex=2500000,
         axes=FALSE
         #xaxt="n"
         #yaxt="n"
 )
 # median
-abline(v=0.5, lty=1, lwd=3, col=gray_darker)
+abline(v=0.5, lty=1, lwd=2, col="black")
 # labels
 text(3.8, 6000000, "Edited Posts (35.9%)", font=4, col=gray_darker, cex=1.3)
 # axes
