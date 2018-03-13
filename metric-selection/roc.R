@@ -273,3 +273,89 @@ legend(0.26,0.745,
 
 par(mfrow = c(1, 1))
 dev.off() 
+
+
+# both in one plot
+
+color_scale_red <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("red4", "peachpuff"))
+color_scale_blue <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("royalblue4", "lightskyblue1"))
+
+pdf("figures/roc_excerpt_combined.pdf", width=8, height=8)
+par(
+  bg="white",
+  #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
+  #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 1),
+  #pin = (width, height)
+  # mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+# text
+plot(roc_text$FPR, roc_text$TPR,
+     main="Performance of selected metrics", xlab="False positive rate", ylab="True positive rate",
+     pch=19,
+     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xaxt="n", yaxt="n",
+     col=color_scale_blue
+)
+
+# code
+points(roc_code$FPR, roc_code$TPR,
+     pch=19,
+     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xaxt="n", yaxt="n",
+     col=color_scale_red
+)
+
+# axes
+axis(1, at=seq(0, 0.35, by=0.05), labels=seq(0, 0.35, by=0.05))
+axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+
+# text
+# baseline metric
+segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text_equal$FPR), y1=max(roc_text_equal$TPR),
+         lty=1, lwd=2, col=color_scale_blue)
+points(roc_text_equal$FPR, roc_text_equal$TPR,
+       pch=20, col=color_scale_blue)
+text(0.2, 0.795, "equal", font=4, cex=1, col="royalblue4")
+# selected threshold
+segments(x0=roc_text_selected$FPR, y0=0, x1=roc_text_selected$FPR, y1=roc_text_selected$TPR,
+         lty=2, lwd=1, gray_darker)
+segments(x0=-0.1, y0=roc_text_selected$TPR, x1=roc_text_selected$FPR, y1=roc_text_selected$TPR,
+         lty=2, lwd=1, gray_darker)
+points(roc_text_selected$FPR, roc_text_selected$TPR, pch=16)
+
+# code
+# baseline metric
+segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code_equal$FPR), y1=max(roc_code_equal$TPR),
+         lty=1, lwd=2, col=color_scale_red)
+points(roc_code_equal$FPR, roc_code_equal$TPR,
+       pch=20, col=color_scale_red)
+text(0.12, 0.86, "equal", font=4, cex=1, col="red4")
+# selected threshold
+segments(x0=roc_code_selected$FPR, y0=0, x1=roc_code_selected$FPR, y1=roc_code_selected$TPR,
+         lty=2, lwd=1, gray_darker)
+segments(x0=-0.1, y0=roc_code_selected$TPR, x1=roc_code_selected$FPR, y1=roc_code_selected$TPR,
+         lty=2, lwd=1, gray_darker)
+points(roc_code_selected$FPR, roc_code_selected$TPR, pch=16)
+
+# legend code
+legend(0.26,0.75,
+       c(expression(paste(theta1^code, " = 0.0")), expression(paste(theta1^code, " = 1.0"))),
+       c("red4", "peachpuff"),
+       bty="n", border="white")
+
+# legend text
+legend(0.26,0.7,
+       c(expression(paste(theta1^text, " = 0.0")), expression(paste(theta1^text, " = 1.0"))),
+       c("royalblue4", "lightskyblue1"),
+       bty="n", border="white")
+
+par(mfrow = c(1, 1))
+dev.off() 
