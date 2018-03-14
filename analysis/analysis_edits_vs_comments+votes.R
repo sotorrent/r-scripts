@@ -117,7 +117,7 @@ sd(both_per_day$Comments)
 remove(both_per_day)
 
 
-# read final dataset from BigQuery (comments on same day as edits)
+# read final dataset (comments on same day as edits)
 
 edits_comments_final <- fread("data/edits_comments_final.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
 names(edits_comments_final) <- c("PostHistoryId", "CommentId", "TimestampDiff")
@@ -127,7 +127,7 @@ names(edits_comments_final) <- c("PostHistoryId", "CommentId", "TimestampDiff")
 edits_comments_final$TimestampDiff <- as.integer(edits_comments_final$TimestampDiff)
 
 nrow(edits_comments_final)
-# 89,514,938
+# 89,514,937
 
 edits_comments_final <- edits_comments_final[!is.na(edits_comments_final$TimestampDiff)]
 
@@ -165,10 +165,10 @@ n_after/n*100
 # 76.94314
 
 summary(after$TimestampDiff/3600) # hours
-#     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-# 0.000278  0.110600  0.328300  1.284000  1.077000 23.980000 
+# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+# 0.000278  0.110556  0.328333  1.284003  1.076667 23.979444 
 sd(after$TimestampDiff/3600)
-
+# 2.639866
 
 n_after_1 <- nrow(after[abs(after$TimestampDiff/3600) < 1,])
 n_after_1
@@ -181,6 +181,53 @@ same_time
 # 18,151
 same_time/n*100
 # 0.02027706
+
+
+# draw sample for qualitative analysis
+
+# get (PostId, PostHistoryId) mapping
+postid_posthistoryid <- fread("data/postid_posthistoryid.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(postid_posthistoryid) <- c("PostId", "PostHistoryId")
+
+# get (PostId, PostTypeId) mapping
+postid_posttypeid <- fread("data/postid_posttypeid.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(postid_posttypeid) <- c("PostId", "PostTypeId")
+
+# filter comments that happened up to 10 minutes before or after an edit (on the same day)
+
+# comments at most 10 minutes before edits
+before_10 <- edits_comments_final[edits_comments_final$TimestampDiff<0 & edits_comments_final$TimestampDiff/60>=-10,]
+n_before_10 <- nrow(before_10)
+n_before_10
+# 7,318,147
+n_before_10/n_before*100
+# 35.48849 (35.5% of the comments before edits on the same day happened up to 10 minutes before)
+
+before_10_posthistoryids <- unique(before_10$PostHistoryId)
+sample_before_10 <- sample(before_10_posthistoryids, 25)
+sample_before_10 <- postid_posthistoryid[postid_posthistoryid$PostHistoryId %in% sample_before_10,]
+sample_before_10 <- merge(sample_before_10, postid_posttypeid, by="PostId", all.x=TRUE, all.y=FALSE)
+sample_before_10 <- sample_before_10[,c("PostHistoryId", "PostId", "PostTypeId")]  # change order of columns
+
+# write sample to CSV file
+write.table(sample_before_10, file="data/sample_before_10.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+# comments at most 10 minutes after edits
+after_10 <- edits_comments_final[edits_comments_final$TimestampDiff>0 & edits_comments_final$TimestampDiff/60<=10,]
+n_after_10 <- nrow(after_10)
+n_after_10
+# 23,322,636
+n_after_10/n_after*100
+# 33.86197 (33.9% of the comments after edits on the same day happened up to 10 minutes after)
+
+after_10_posthistoryids <- unique(after_10$PostHistoryId)
+sample_after_10 <- sample(after_10_posthistoryids, 25)
+sample_after_10 <- postid_posthistoryid[postid_posthistoryid$PostHistoryId %in% sample_after_10,]
+sample_after_10 <- merge(sample_after_10, postid_posttypeid, by="PostId", all.x=TRUE, all.y=FALSE)
+sample_after_10 <- sample_after_10[,c("PostHistoryId", "PostId", "PostTypeId")]  # change order of columns
+
+# write sample to CSV file
+write.table(sample_after_10, file="data/sample_after_10.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
 
 # merge post history and votes

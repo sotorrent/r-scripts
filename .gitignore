@@ -41,11 +41,7 @@ target/
 ########
 # Misc #
 ########
-samples/
-metric_comparison_r_scripts/2017-11-14_sample_comparison_sebastian-4/
-metric_comparison_r_scripts/differences_between_runtimes_metric_comparisons.csv
-metric_comparison_r_scripts/PostId_VersionCount_SO_17-06_sample_100_aggregated.csv
-/analysis/data
-
-/sampling/data
-/analysis/fst18-bous/data
+/analysis/data/
+/analysis/data/
+/sampling/data/
+/analysis/fst18-bous/data/
