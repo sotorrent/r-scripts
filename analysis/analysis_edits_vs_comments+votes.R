@@ -7,180 +7,200 @@ library(effsize)
 
 # post history (edits)
 posthistory <- fread("data/posthistory_date_editcount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(posthistory) <- c("PostId", "Date", "EditCount")
+names(posthistory) <- c("PostId", "Date", "Creation", "Edits")
 # parse date
 posthistory$Date <- as.Date(posthistory$Date)
 
 # comments
 comments <- fread("data/comments_date_commentcount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(comments) <- c("PostId", "Date", "CommentCount")
+names(comments) <- c("PostId", "Date", "Comments")
 # parse date
 comments$Date <- as.Date(comments$Date)
 
-
 # merge post history and comments
 posthistory_comments <- merge(posthistory, comments, by=c("PostId", "Date"), all.x=TRUE, all.y=TRUE)
-posthistory_comments$EditCount[is.na(posthistory_comments$EditCount)] <- 0
-posthistory_comments$CommentCount[is.na(posthistory_comments$CommentCount)] <- 0
+posthistory_comments$Creation[is.na(posthistory_comments$Creation)] <- 0
+posthistory_comments$Edits[is.na(posthistory_comments$Edits)] <- 0
+posthistory_comments$Comments[is.na(posthistory_comments$Comments)] <- 0
 
 n <- nrow(posthistory_comments)
 n
 # 54,279,453
 
-only_edit <- posthistory_comments[posthistory_comments$EditCount>0 & posthistory_comments$CommentCount==0,]
-n_edit <- nrow(only_edit)
-n_edit
+only_creation <- posthistory_comments[posthistory_comments$Creation>0 & posthistory_comments$Edits==0 & posthistory_comments$Comments==0,]
+n_only_creation <- nrow(only_creation)
+n_only_creation
+# 18,083,313
+n_only_creation/n*100
+# 33.31521
+
+only_edit <- posthistory_comments[posthistory_comments$Creation==0 & posthistory_comments$Edits>0 & posthistory_comments$Comments==0,]
+n_only_edit <- nrow(only_edit)
+n_only_edit
+# 4,949,569
+n_only_edit/n*100
+# 9.118679
+
+only_creation_or_edit <- posthistory_comments[(posthistory_comments$Creation>0 | posthistory_comments$Edits>0) & posthistory_comments$Comments==0,]
+n_only_creation_or_edit <- nrow(only_creation_or_edit)
+n_only_creation_or_edit
 # 27,087,615
-n_edit/n*100
+n_only_creation_or_edit/n*100
 # 49.90399
 
-only_comment <- posthistory_comments[posthistory_comments$EditCount==0 & posthistory_comments$CommentCount>0,]
-n_comment <- nrow(only_comment)
-n_comment
+only_comment <- posthistory_comments[posthistory_comments$Creation==0 & posthistory_comments$Edits==0 & posthistory_comments$Comments>0,]
+n_only_comment <- nrow(only_comment)
+n_only_comment
 # 9,671,784
-n_comment/n*100
+n_only_comment/n*100
 # 17.8185
 
-both <- posthistory_comments[posthistory_comments$EditCount>0 & posthistory_comments$CommentCount>0,]
-n_both <- nrow(both)
-n_both
+creation_or_edit_and_comment <- posthistory_comments[(posthistory_comments$Creation>0 | posthistory_comments$Edits>0) & posthistory_comments$Comments>0,]
+n_creation_or_edit_and_comment <- nrow(creation_or_edit_and_comment)
+n_creation_or_edit_and_comment
 # 17,520,054
-n_both/n*100
+n_creation_or_edit_and_comment/n*100
 # 32.27751
 
 
 # focus on comments
-comments <- posthistory_comments[posthistory_comments$CommentCount>0,]
+comments <- posthistory_comments[posthistory_comments$Comments>0,]
 n <- nrow(comments)
 n
 # 27,191,838
 
-only_comment <- comments[comments$EditCount==0 & comments$CommentCount>0,]
-n_comment <- nrow(only_comment)
-n_comment
-# 9,671,784
-n_comment/n*100
+n_only_comment/n*100
 # 35.5687
 
-both <- comments[comments$EditCount>0 & comments$CommentCount>0,]
-n_both <- nrow(both)
-n_both
-# 17,520,054
-n_both/n*100
+n_creation_or_edit_and_comment/n*100
 # 64.4313
 
 
-# focus on edits
-edits <- posthistory_comments[posthistory_comments$EditCount>0,]
-n <- nrow(edits)
+# focus on creation or edits
+creation_or_edits <- posthistory_comments[posthistory_comments$Creation>0 | posthistory_comments$Edits>0,]
+n <- nrow(creation_or_edits)
 n
 # 44,607,669
 
-only_edit <- edits[edits$EditCount>0 & edits$CommentCount==0,]
-n_edit <- nrow(only_edit)
-n_edit
-# 27,087,615
-n_edit/n*100
+n_only_creation_or_edit/n*100
 # 60.72412
 
-both <- edits[edits$EditCount>0 & edits$CommentCount>0,]
-n_both <- nrow(both)
-n_both
-# 17,520,054
-n_both/n*100
+n_creation_or_edit_and_comment/n*100
 # 39.27588
 
 
-# focus on days with both comments and edits
+# focus on days with both comments and edits (or creation)
 remove(posthistory)
 remove(comments)
 remove(posthistory_comments)
+remove(creation_or_edits)
 remove(only_comment)
+remove(only_creation)
 remove(only_edit)
-remove(edits)
+remove(only_creation_or_edit)
 gc()
 
-both_per_day <- sqldf("select PostId, sum(EditCount) as Edits, sum(CommentCount) as Comments from both group by PostId, Date")
+actions_per_day <- sqldf("select PostId, sum(Creation) as Creation, sum(Edits) as Edits, sum(Comments) as Comments from creation_or_edit_and_comment group by PostId, Date")
 
-summary(both_per_day$Edits)
+summary(actions_per_day$Creation)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.000   1.000   1.000   1.578   2.000 367.000
-sd(both_per_day$Edits)
-# 0.9501668
+# 0.000   1.000   1.000   0.933   1.000   1.000 
+sd(actions_per_day$Creation)
+# 0.249948
 
-summary(both_per_day$Comments)
+summary(actions_per_day$Edits)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   0.0000   0.6452   1.0000 367.0000 
+sd(actions_per_day$Edits)
+# 0.9641421
+
+summary(actions_per_day$Comments)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.000   1.000   2.000   2.805   4.000 117.000 
-sd(both_per_day$Comments)
+# 1.000   1.000   2.000   2.805   4.000 117.000
+sd(actions_per_day$Comments)
 # 2.437511
 
-remove(both_per_day)
+remove(actions_per_day)
 
 
-# read final dataset (comments on same day as edits)
+# read dataset with comments on same day as edits
 
-edits_comments_final <- fread("data/edits_comments_final.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(edits_comments_final) <- c("PostHistoryId", "CommentId", "TimestampDiff")
+edits_comments <- fread("data/edits_comments_final.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(edits_comments) <- c("PostHistoryId", "CommentId", "TimestampDiff", "PostHistoryTypeId")
 
 # TimestampDiff = CommentTimestamp - EditTimestamp (in seconds)
 # convert to integer
-edits_comments_final$TimestampDiff <- as.integer(edits_comments_final$TimestampDiff)
+edits_comments$TimestampDiff <- as.integer(edits_comments$TimestampDiff)
 
-nrow(edits_comments_final)
-# 89,514,937
+nrow(edits_comments)
+# 65,965,375
 
-edits_comments_final <- edits_comments_final[!is.na(edits_comments_final$TimestampDiff)]
-
-n <- nrow(edits_comments_final)
+# distinguish between real edits and the initial version
+creation_comments <- edits_comments[edits_comments$PostHistoryTypeId == 2,]
+n_creation <- nrow(creation_comments)
+n_creation
+# 22,906,423
+edits_comments <- edits_comments[edits_comments$PostHistoryTypeId != 2,]
+n_edits <- nrow(edits_comments)
+n_edits
+# 43,058,952
+n <- n_creation+n_edits
 n
-# 89,514,937
+# 65,965,375
+
+# comments related to initial version
+n_creation/n*100
+# 34.72492
+
+# comments realted to an edit
+n_edits/n*100
+# 65.27508
 
 # comments before edits
-before <- edits_comments_final[edits_comments_final$TimestampDiff<0,]
+before <- edits_comments[edits_comments$TimestampDiff<0,]
 n_before <- nrow(before)
 n_before
-# 20,621,187
-n_before/n*100
-# 23.03659
+# 20,620,655
+n_before/n_edits*100
+# 47.88936
 
 summary(before$TimestampDiff/3600) # hours
-      # Min.    1st Qu.     Median       Mean    3rd Qu.       Max. 
-# -23.980000  -1.053000  -0.315800  -1.245000  -0.098610  -0.000278 
+# Min.    1st Qu.     Median       Mean    3rd Qu.       Max. 
+# -23.981667  -1.052778  -0.315833  -1.245290  -0.098611  -0.000278 
 sd(before$TimestampDiff/3600)
-# 2.565737
+# 2.565722
 
 n_before_1 <- nrow(before[abs(before$TimestampDiff/3600) < 1,])
 n_before_1
-# 15,283,439
+# 15,283,167
 n_before_1/n_before*100
-# 74.11522
-
+# 74.11582
 
 # comments after edits
-after <- edits_comments_final[edits_comments_final$TimestampDiff>0,]
+after <- edits_comments[edits_comments$TimestampDiff>0,]
 n_after <- nrow(after)
 n_after
-# 68,875,599
-n_after/n*100
-# 76.94314
+# 22,420,159
+n_after/n_edits*100
+# 52.06852
 
 summary(after$TimestampDiff/3600) # hours
 # Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-# 0.000278  0.110556  0.328333  1.284003  1.076667 23.979444 
+# 0.000278  0.076111  0.292778  1.292018  1.072778 23.965556 
 sd(after$TimestampDiff/3600)
-# 2.639866
+# 2.707173
 
 n_after_1 <- nrow(after[abs(after$TimestampDiff/3600) < 1,])
 n_after_1
-# 50,781,113
+# 16,559,789
 n_after_1/n_after*100
-# 73.72874
+# 73.86116
 
-same_time <- nrow(edits_comments_final[edits_comments_final$TimestampDiff==0,])
+same_time <- nrow(edits_comments[edits_comments$TimestampDiff==0,])
 same_time
-# 18,151
-same_time/n*100
-# 0.02027706
+# 18,138
+same_time/n_edits*100
+# 0.04212364
 
 
 # draw sample for qualitative analysis
@@ -196,12 +216,12 @@ names(postid_posttypeid) <- c("PostId", "PostTypeId")
 # filter comments that happened up to 10 minutes before or after an edit (on the same day)
 
 # comments at most 10 minutes before edits
-before_10 <- edits_comments_final[edits_comments_final$TimestampDiff<0 & edits_comments_final$TimestampDiff/60>=-10,]
+before_10 <- edits_comments[edits_comments$TimestampDiff<0 & edits_comments$TimestampDiff/60>=-10,]
 n_before_10 <- nrow(before_10)
 n_before_10
-# 7,318,147
+# 7,318,072
 n_before_10/n_before*100
-# 35.48849 (35.5% of the comments before edits on the same day happened up to 10 minutes before)
+# 35.48904 (35.5% of the comments before edits on the same day happened up to 10 minutes before)
 
 before_10_posthistoryids <- unique(before_10$PostHistoryId)
 sample_before_10 <- sample(before_10_posthistoryids, 25)
@@ -213,12 +233,12 @@ sample_before_10 <- sample_before_10[,c("PostHistoryId", "PostId", "PostTypeId")
 write.table(sample_before_10, file="data/sample_before_10.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
 # comments at most 10 minutes after edits
-after_10 <- edits_comments_final[edits_comments_final$TimestampDiff>0 & edits_comments_final$TimestampDiff/60<=10,]
+after_10 <- edits_comments[edits_comments$TimestampDiff>0 & edits_comments$TimestampDiff/60<=10,]
 n_after_10 <- nrow(after_10)
 n_after_10
-# 23,322,636
+# 8,627,277
 n_after_10/n_after*100
-# 33.86197 (33.9% of the comments after edits on the same day happened up to 10 minutes after)
+# 38.48 (38.5% of the comments after edits on the same day happened up to 10 minutes after)
 
 after_10_posthistoryids <- unique(after_10$PostHistoryId)
 sample_after_10 <- sample(after_10_posthistoryids, 25)
@@ -245,7 +265,6 @@ posthistory_votes$EditCount[is.na(posthistory_votes$EditCount)] <- 0
 posthistory_votes$UpVotes[is.na(posthistory_votes$UpVotes)] <- 0
 posthistory_votes$DownVotes[is.na(posthistory_votes$DownVotes)] <- 0
 
-
 n <- nrow(posthistory_votes)
 n
 # 117,401,431
@@ -264,17 +283,17 @@ summary(posthistory_votes$DownVotes)
 
 
 only_edit <- posthistory_votes[posthistory_votes$EditCount>0 & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
-n_edit <- nrow(only_edit)
-n_edit
+n_only_edit <- nrow(only_edit)
+n_only_edit
 # 28,702,811
-n_edit/n*100
+n_only_edit/n*100
 # 24.44843
 
 only_votes <- posthistory_votes[posthistory_votes$EditCount==0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
-n_votes <- nrow(only_votes)
-n_votes
+n_only_votes <- nrow(only_votes)
+n_only_votes
 # 72,793,762
-n_votes/n*100
+n_only_votes/n*100
 # 62.00415
 
 both <- posthistory_votes[posthistory_votes$EditCount>0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
