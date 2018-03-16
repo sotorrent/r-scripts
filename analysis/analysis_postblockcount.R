@@ -1,5 +1,5 @@
-# setwd("F:/Git/github/r-scripts/analysis/") # please update path
-setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
+#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 library(effsize)
@@ -61,7 +61,7 @@ TextBlockCount <- ifelse(posts_versioncount_postblockcount$LastTextBlockCount>6,
 TextBlockCountTable <- table(TextBlockCount)
 
 TextBlockCountTable["0"]/nrow(posts_versioncount_postblockcount)*100
-# 1.003602
+# 1.003576
 
 ##########
 # code
@@ -74,7 +74,7 @@ CodeBlockCount <- ifelse(posts_versioncount_postblockcount$LastCodeBlockCount>6,
 CodeBlockCountTable <- table(CodeBlockCount)
 
 CodeBlockCountTable["0"]/nrow(posts_versioncount_postblockcount)*100
-# 36.55571
+# 36.55482
 
 ##########
 # Plots
@@ -239,17 +239,17 @@ summary(posts_with_edits$FirstTextBlockCount)
 # 0.000   1.000   1.000   1.698   2.000 327.000 
 
 sd(posts_with_edits$FirstTextBlockCount)
-# 1.104623
+# 1.104613
 
 summary(posts_with_edits$LastTextBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   1.000   1.000   1.822   2.000 256.000 
 
 sd(posts_with_edits$LastTextBlockCount)
-# 1.214417
+# 1.214409
 
 wilcox.test(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlockCount, alternative="two.sided", paired=T, correct=T)
-# V = 8.4289e+11, p-value < 2.2e-16
+# V = 8.4282e+11, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 #cliff.delta(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlockCount)
@@ -258,7 +258,7 @@ wilcox.test(posts_with_edits$FirstTextBlockCount, posts_with_edits$LastTextBlock
 cohen.d(posts_with_edits$LastTextBlockCount, # "treatment"
         posts_with_edits$FirstTextBlockCount, # "control"
         paired=TRUE)
-# d estimate: 0.2071768 (small)
+# d estimate: 0.2071852 (small)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -274,23 +274,23 @@ summary(posts_with_edits$FirstCodeBlockCount)
 # 0.0000   0.0000   1.0000   0.9726   1.0000 326.0000 
 
 sd(posts_with_edits$FirstCodeBlockCount)
-# 1.13207
+# 1.132081
 
 summary(posts_with_edits$LastCodeBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   0.000   1.000   1.109   2.000 256.000 
 
 sd(posts_with_edits$LastCodeBlockCount)
-# 1.249302
+# 1.24932
 
 wilcox.test(posts_with_edits$FirstCodeBlockCount, posts_with_edits$LastCodeBlockCount, alternative="two.sided", paired=T, correct=T)
-# V = 5.7747e+11, p-value < 2.2e-16
+# V = 5.7766e+11, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(posts_with_edits$LastCodeBlockCount, # "treatment"
         posts_with_edits$FirstCodeBlockCount, # "control"
         paired=TRUE)
-# d estimate: 0.227515 (small)
+# d estimate: 0.227511 (small)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -308,13 +308,13 @@ summary(questions$LastTextBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   1.000   2.000   2.139   3.000 256.000 
 sd(questions$LastTextBlockCount)
-# 1.346668
+# 1.346657
 
 summary(questions$LastCodeBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   0.000   1.000   1.348   2.000 256.000 
 sd(questions$LastCodeBlockCount)
-# 1.371103
+# 1.371105
 
 answers <- posts_versioncount_postblockcount[posts_versioncount_postblockcount$PostTypeId == 2,]
 
@@ -322,13 +322,13 @@ summary(answers$LastTextBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   1.000   1.000   1.618   2.000  89.000
 sd(answers$LastTextBlockCount)
-# 1.073218
+# 1.073215
 
 summary(answers$LastCodeBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.0000  0.0000  1.0000  0.9554  1.0000 88.0000 
 sd(answers$LastCodeBlockCount)
-# 1.138441
+# 1.138472
 
 
 # difference text
@@ -343,7 +343,7 @@ wilcox.test(answers$LastTextBlockCount,
 cohen.d(answers$LastTextBlockCount, # "treatment"
         questions$LastTextBlockCount, # "control"
         paired=FALSE)
-# d estimate: -0.4385735 (small)
+# d estimate: -0.4385653 (small)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -360,7 +360,7 @@ wilcox.test(answers$LastCodeBlockCount,
 cohen.d(answers$LastCodeBlockCount, # "treatment"
         questions$LastCodeBlockCount, # "control"
         paired=FALSE)
-# d estimate: -0.3179121 (small)
+# d estimate: -0.3179004 (small)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -387,13 +387,13 @@ summary(java$LastTextBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   1.000   1.000   1.815   2.000  96.000
 sd(java$LastTextBlockCount)
-# 1.229142
+# 1.22914
 
 summary(java$LastCodeBlockCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.000   0.000   1.000   1.089   2.000  96.000 
 sd(java$LastCodeBlockCount)
-# 1.267344
+# 1.267346
 
 
 # difference text
@@ -408,7 +408,7 @@ wilcox.test(java$LastTextBlockCount,
 cohen.d(java$LastTextBlockCount, # "treatment"
         others$LastTextBlockCount, # "control"
         paired=FALSE)
-# d estimate: -0.006347346 (negligible)
+# d estimate: -0.006341986 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -420,13 +420,13 @@ wilcox.test(java$LastCodeBlockCount,
             others$LastCodeBlockCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 6.2064e+13, p-value < 2.2e-16
+# W = 6.2063e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(java$LastCodeBlockCount, # "treatment"
         others$LastCodeBlockCount, # "control"
         paired=FALSE)
-# d estimate: -0.01770614 (negligible)
+# d estimate: -0.01772044 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
