@@ -180,7 +180,7 @@ boxplot(CodeLifespanLength-0.5,
         medcol="black",
         boxcol="black",
         staplecol="black",
-        boxwex=2800000,
+        boxwex=2600000,
         axes=FALSE
         #xaxt="n"
         #yaxt="n"

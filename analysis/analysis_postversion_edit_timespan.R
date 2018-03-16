@@ -12,6 +12,7 @@ source("../colors.R")
 postversion_edits <- fread("data/postversion_edits.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
 names(postversion_edits) <- c("PostId", "PostTypeId", "PostHistoryId", "PostHistoryTypeId", "CreationDate", "SuccPostHistoryId", "SuccPostHistoryTypeId", "SuccCreationDate", "SuccCreationDateDiff")
 # parse timestamps
+options(tz="UTC")
 postversion_edits$CreationDate <- as.POSIXct(postversion_edits$CreationDate, tz="UTC")
 
 nrow(postversion_edits)
@@ -221,7 +222,7 @@ gap.barplot(
   ylab="Number of edits"
 )
 # labels
-text(2.2, 300000, "\u2190 83.4%", font=1, col=gray_darker) # cex=1.3
+text(2.2, 300000, "\u2190 83.4%", font=3, col="black") # cex=1.3
 
 dev.off()
 
