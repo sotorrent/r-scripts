@@ -97,7 +97,7 @@ boxplot(VersionCount-0.5,
 # median
 abline(v=0.5, lty=1, lwd=2, col="black")
 # labels
-text(3.8, 6000000, "Edited Posts (35.9%)", font=4, col=gray_darker, cex=1.3)
+text(3.8, 6000000, "Edited Posts (35.9%)", font=3, col="black", cex=1.3)
 # axes
 axis(1, at=seq(0.5, 9.5, by=1), labels=c(seq(1, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 25000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m", "25m"), las=2)

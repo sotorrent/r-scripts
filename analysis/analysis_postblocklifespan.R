@@ -112,7 +112,91 @@ cohen.d(revised_codeblocks$LifespanLength, # "treatment"
 # plot
 ##########
 
-# plot histogram
+# plot histogram (only code)
+quartz(type="pdf", file="figures/postblocklifespan_length_code.pdf", width=8, height=6) # prevents unicode issues in pdf
+#pdf("figures/postblocklifespan_length.pdf", width=8, height=6)
+par(
+  bg="white",
+  #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
+  #  omi = c(0.0, 0.0, 0.0, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 1),
+  #pin = (width, height)
+  #mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+# code
+hist(CodeLifespanLength, 
+     main="Code block version count (n=43,728,155)", 
+     freq=TRUE,
+     xlab="",
+     ylab="",
+     border="white",
+     col="white",
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 25000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+for (y in seq(0, 25000000, by=5000000)) {
+  segments(x0=-0.5, y0=y, x1=10, y1=y, lty=1, lwd=1, col=gray_lighter)
+}
+hist(CodeLifespanLength,
+     add=TRUE,
+     main="", 
+     freq=TRUE,
+     xlab="x",
+     ylab="y",
+     border=gray_dark,
+     col=c(gray_lighter, rep(gray_selected, 9)),
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 25000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+boxplot(CodeLifespanLength-0.5,
+        add=TRUE,
+        outline=FALSE,
+        horizontal=TRUE,
+        ylim=c(0, 10),
+        log="",
+        col=gray_dark,
+        # https://stackoverflow.com/a/28890111
+        lwd=2,
+        medlwd=2,
+        #staplelty=0,
+        whisklty=1,
+        #staplelty=0,
+        whiskcol="black",
+        medcol="black",
+        boxcol="black",
+        staplecol="black",
+        boxwex=2800000,
+        axes=FALSE
+        #xaxt="n"
+        #yaxt="n"
+)
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker)
+# labels
+text(5.0, 7500000, "Edited code blocks (49.9%)", font=3, col="black", cex=1.0)
+# axes
+axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
+axis(2, at=seq(0, 25000000, by=5000000), labels=c("0", "5m", "10m", "15m", "20m", "25m"), las=2)
+
+dev.off()
+
+
+# plot histogram (text and code)
 quartz(type="pdf", file="figures/postblocklifespan_length.pdf", width=18, height=6) # prevents unicode issues in pdf
 #pdf("figures/postblocklifespan_length.pdf", width=18, height=6)
 par(
