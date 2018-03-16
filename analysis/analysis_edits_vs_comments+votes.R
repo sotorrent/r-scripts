@@ -1,4 +1,4 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
 #setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
@@ -48,6 +48,13 @@ n_only_creation_or_edit
 n_only_creation_or_edit/n*100
 # 49.90399
 
+creation_and_edit <- posthistory_comments[(posthistory_comments$Creation>0 & posthistory_comments$Edits>0) & posthistory_comments$Comments==0,]
+n_creation_and_edit <- nrow(creation_and_edit)
+n_creation_and_edit
+# 4,054,733
+n_creation_and_edit/n*100
+# 7.470107
+
 only_comment <- posthistory_comments[posthistory_comments$Creation==0 & posthistory_comments$Edits==0 & posthistory_comments$Comments>0,]
 n_only_comment <- nrow(only_comment)
 n_only_comment
@@ -75,7 +82,6 @@ n_only_comment/n*100
 n_creation_or_edit_and_comment/n*100
 # 64.4313
 
-
 # focus on creation or edits
 creation_or_edits <- posthistory_comments[posthistory_comments$Creation>0 | posthistory_comments$Edits>0,]
 n <- nrow(creation_or_edits)
@@ -90,7 +96,6 @@ n_creation_or_edit_and_comment/n*100
 
 
 # focus on days with both comments and edits (or creation)
-remove(posthistory)
 remove(comments)
 remove(posthistory_comments)
 remove(creation_or_edits)
@@ -140,10 +145,12 @@ creation_comments <- edits_comments[edits_comments$PostHistoryTypeId == 2,]
 n_creation <- nrow(creation_comments)
 n_creation
 # 22,906,423
+
 edits_comments <- edits_comments[edits_comments$PostHistoryTypeId != 2,]
 n_edits <- nrow(edits_comments)
 n_edits
 # 43,058,952
+
 n <- n_creation+n_edits
 n
 # 65,965,375
@@ -203,6 +210,122 @@ same_time/n_edits*100
 # 0.04212364
 
 
+# merge post history and votes
+
+# votes
+votes <- fread("data/votes_date_votecount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(votes) <- c("PostId", "Date", "UpVotes", "DownVotes")
+# parse date
+votes$Date <- as.Date(votes$Date)
+
+# merge post history and votes
+posthistory_votes <- merge(posthistory, votes, by=c("PostId", "Date"), all.x=TRUE, all.y=TRUE)
+# set NA values to 0
+posthistory_votes$Creation[is.na(posthistory_votes$Creation)] <- 0
+posthistory_votes$Edits[is.na(posthistory_votes$Edits)] <- 0
+posthistory_votes$UpVotes[is.na(posthistory_votes$UpVotes)] <- 0
+posthistory_votes$DownVotes[is.na(posthistory_votes$DownVotes)] <- 0
+
+n <- nrow(posthistory_votes)
+n
+# 117,401,431
+
+summary(posthistory_votes$Creation)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.0000  0.0000  0.0000  0.3278  1.0000  1.0000 
+
+summary(posthistory_votes$Edits)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   0.000   0.000   0.187   0.000 367.000
+
+summary(posthistory_votes$UpVotes)
+# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+# 0.0000    0.0000    1.0000    0.8404    1.0000 1436.0000 
+
+summary(posthistory_votes$DownVotes)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   0.0000   0.1071   0.0000 102.0000 
+
+
+# TODO: distinguish between creation and edit!!!
+
+only_creation <- posthistory_votes[posthistory_votes$Creation>0 & posthistory_votes$Edits==0 & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
+n_only_creation <- nrow(only_creation)
+n_only_creation
+# 18,353,859
+n_only_creation/n*100
+# 15.63342
+
+only_edit <- posthistory_votes[posthistory_votes$Creation==0 & posthistory_votes$Edits>0 & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
+n_only_edit <- nrow(only_edit)
+n_only_edit
+# 5,067,181
+n_only_edit/n*100
+# 4.316115
+
+only_creation_or_edit <- posthistory_votes[(posthistory_votes$Creation>0 | posthistory_votes$Edits>0) & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
+n_only_creation_or_edit <- nrow(only_creation_or_edit)
+n_only_creation_or_edit
+# 28,702,811
+n_only_creation_or_edit/n*100
+# 24.44843
+
+only_votes <- posthistory_votes[(posthistory_votes$Creation==0 & posthistory_votes$Edits==0) & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
+n_only_votes <- nrow(only_votes)
+n_only_votes
+# 72,793,762
+n_only_votes/n*100
+# 62.00415
+
+creation_edit_and_votes <- posthistory_votes[(posthistory_votes$Creation>0 | posthistory_votes$Edits>0) & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
+n_creation_edit_and_votes <- nrow(creation_edit_and_votes)
+n_creation_edit_and_votes
+# 15,904,858
+n_creation_edit_and_votes/n*100
+# 13.54741
+
+
+# read vote activity one week before/after edits
+sample_votes_before_edits <- fread("data/sample_votes_before_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(sample_votes_before_edits) <- c("PostId", "UpVotesBefore")
+sample_votes_after_edits <- fread("data/sample_votes_after_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
+names(sample_votes_after_edits) <- c("PostId", "UpVotesAfter")
+
+# merge before and after
+sample_votes <- merge(sample_votes_before_edits, sample_votes_after_edits, on="PostId", all.x=TRUE, all.y=TRUE)
+sample_votes$UpVotesBefore[is.na(sample_votes$UpVotesBefore)] <- 0
+sample_votes$UpVotesAfter[is.na(sample_votes$UpVotesAfter)] <- 0
+
+summary(sample_votes$UpVotesBefore)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.0000   0.0000   1.0000   0.9477   1.0000 665.0000 
+sd(sample_votes$UpVotesBefore)
+# 2.344702
+
+summary(sample_votes$UpVotesAfter)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.000   0.000   0.000   0.712   1.000  99.000 
+sd(sample_votes$UpVotesAfter)
+# 1.559808
+
+wilcox.test(sample_votes$UpVotesAfter,
+            sample_votes$UpVotesBefore,
+            alternative="two.sided",
+            paired=F, correct=T)
+# W = 1.2424e+10, p-value < 2.2e-16
+# alternative hypothesis: true location shift is not equal to 0
+
+cohen.d(sample_votes$UpVotesAfter, # "treatment"
+        sample_votes$UpVotesBefore, # "control"
+        paired=TRUE)
+# d estimate: -0.09266001 (negligible)
+# 95 percent confidence interval:
+#   inf sup 
+# NA  NA 
+
+
+#################################################################################################
+
 # draw sample for qualitative analysis
 
 # get (PostId, PostHistoryId) mapping
@@ -248,96 +371,3 @@ sample_after_10 <- sample_after_10[,c("PostHistoryId", "PostId", "PostTypeId")] 
 
 # write sample to CSV file
 write.table(sample_after_10, file="data/sample_after_10.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
-
-
-# merge post history and votes
-
-# votes
-votes <- fread("data/votes_date_votecount.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(votes) <- c("PostId", "Date", "UpVotes", "DownVotes")
-# parse date
-votes$Date <- as.Date(votes$Date)
-
-# merge post history and votes
-posthistory_votes <- merge(posthistory, votes, by=c("PostId", "Date"), all.x=TRUE, all.y=TRUE)
-# set NA values to 0
-posthistory_votes$EditCount[is.na(posthistory_votes$EditCount)] <- 0
-posthistory_votes$UpVotes[is.na(posthistory_votes$UpVotes)] <- 0
-posthistory_votes$DownVotes[is.na(posthistory_votes$DownVotes)] <- 0
-
-n <- nrow(posthistory_votes)
-n
-# 117,401,431
-
-summary(posthistory_votes$EditCount)
-# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 0.0000   0.0000   0.0000   0.5149   1.0000 367.0000 
-
-summary(posthistory_votes$UpVotes)
-# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-# 0.0000    0.0000    1.0000    0.8404    1.0000 1436.0000 
-
-summary(posthistory_votes$DownVotes)
-# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 0.0000   0.0000   0.0000   0.1071   0.0000 102.0000 
-
-
-only_edit <- posthistory_votes[posthistory_votes$EditCount>0 & posthistory_votes$UpVotes==0 & posthistory_votes$DownVotes==0,]
-n_only_edit <- nrow(only_edit)
-n_only_edit
-# 28,702,811
-n_only_edit/n*100
-# 24.44843
-
-only_votes <- posthistory_votes[posthistory_votes$EditCount==0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
-n_only_votes <- nrow(only_votes)
-n_only_votes
-# 72,793,762
-n_only_votes/n*100
-# 62.00415
-
-both <- posthistory_votes[posthistory_votes$EditCount>0 & (posthistory_votes$UpVotes>0 | posthistory_votes$DownVotes>0),]
-n_both <- nrow(both)
-n_both
-# 15,904,858
-n_both/n*100
-# 13.54741
-
-
-# read data from BigQuery (see db-scripts for more information)
-sample_votes_before_edits <- fread("data/sample_votes_before_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(sample_votes_before_edits) <- c("PostId", "UpVotesBefore")
-sample_votes_after_edits <- fread("data/sample_votes_after_edits.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"), stringsAsFactors=FALSE)
-names(sample_votes_after_edits) <- c("PostId", "UpVotesAfter")
-
-# merge before and after
-sample_votes <- merge(sample_votes_before_edits, sample_votes_after_edits, on="PostId", all.x=TRUE, all.y=TRUE)
-sample_votes$UpVotesBefore[is.na(sample_votes$UpVotesBefore)] <- 0
-sample_votes$UpVotesAfter[is.na(sample_votes$UpVotesAfter)] <- 0
-
-summary(sample_votes$UpVotesBefore)
-# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 0.0000   0.0000   1.0000   0.8825   1.0000 665.0000
-sd(sample_votes$UpVotesBefore)
-# 2.269097
-
-summary(sample_votes$UpVotesAfter)
-# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 0.0000   0.0000   0.0000   0.7769   1.0000 425.0000 
-sd(sample_votes$UpVotesAfter)
-# 1.974936
-
-wilcox.test(sample_votes$UpVotesAfter,
-            sample_votes$UpVotesBefore,
-            alternative="two.sided",
-            paired=F, correct=T)
-# W = 1.4191e+10, p-value < 2.2e-16
-# alternative hypothesis: true location shift is not equal to 0
-
-cohen.d(sample_votes$UpVotesAfter, # "treatment"
-        sample_votes$UpVotesBefore, # "control"
-        paired=TRUE)
-# d estimate: -0.03899819 (negligible)
-# 95 percent confidence interval:
-#   inf sup 
-# NA  NA 

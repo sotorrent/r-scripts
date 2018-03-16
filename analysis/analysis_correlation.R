@@ -1,4 +1,4 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
 #setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
@@ -37,29 +37,22 @@ posts <- posts[,c("PostId", "PostTypeId", "Score", "CommentCount", "Age", "Owner
 correlations <- rcorr(as.matrix(posts[,c("VersionCount", "Age", "Score", "CommentCount", "GHMatchCount", "Reputation")]), type="spearman") # pairwise deletion, Alternativ: type="pearson"
 correlations
 #              VersionCount   Age Score CommentCount GHMatchCount Reputation
-# VersionCount         1.00 -0.03  0.09         0.26         0.08      -0.05
+# VersionCount         1.00 -0.03  0.09         0.26         0.09      -0.05
 # Age                 -0.03  1.00  0.25        -0.03         0.10       0.32
-# Score                0.09  0.25  1.00         0.08         0.18       0.33
-# CommentCount         0.26 -0.03  0.08         1.00         0.08       0.03
-# GHMatchCount         0.08  0.10  0.18         0.08         1.00       0.08
-# Reputation          -0.05  0.32  0.33         0.03         0.08       1.00
-# 
+# Score                0.09  0.25  1.00         0.08         0.23       0.33
+# CommentCount         0.26 -0.03  0.08         1.00         0.09       0.03
+# GHMatchCount         0.09  0.10  0.23         0.09         1.00       0.09
+# Reputation          -0.05  0.32  0.33         0.03         0.09       1.00
+
 # n
-#              VersionCount      Age    Score CommentCount GHMatchCount
-# VersionCount     38394895 38394895 38394895     38394895       136609
-# Age              38394895 38394917 38394917     38394917       136609
-# Score            38394895 38394917 38394917     38394917       136609
-# CommentCount     38394895 38394917 38394917     38394917       136609
-# GHMatchCount       136609   136609   136609       136609       136609
-# Reputation       38045375 38045397 38045397     38045397       134721
-# Reputation
-# VersionCount   38045375
-# Age            38045397
-# Score          38045397
-# CommentCount   38045397
-# GHMatchCount     134721
-# Reputation     38045397
-# 
+#              VersionCount      Age    Score CommentCount GHMatchCount Reputation
+# VersionCount     38394895 38394895 38394895     38394895       136609   38045375
+# Age              38394895 38394917 38394917     38394917       136609   38045397
+# Score            38394895 38394917 38394917     38394917       136609   38045397
+# CommentCount     38394895 38394917 38394917     38394917       136609   38045397
+# GHMatchCount       136609   136609   136609       136609       136609     134721
+# Reputation       38045375 38045397 38045397     38045397       134721   38045397
+
 # P
 #             VersionCount Age Score CommentCount GHMatchCount Reputation
 # VersionCount               0   0     0            0            0        
@@ -67,7 +60,8 @@ correlations
 # Score         0            0         0            0            0        
 # CommentCount  0            0   0                  0            0        
 # GHMatchCount  0            0   0     0                         0        
-# Reputation    0            0   0     0            0               
+# Reputation    0            0   0     0            0                     
+
 
 
 #####
