@@ -1,4 +1,4 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
 #setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
@@ -37,13 +37,13 @@ nrow(other_edits)/n*100
 post_id_filter_nonauthor <- unique(other_edits$PostId)
 posthistory_nonauthor_edits <- posthistory_users[posthistory_users$PostId %in% post_id_filter_nonauthor,]
 posthistory_nonauthor_edits$OwnerUserId <- as.numeric(posthistory_nonauthor_edits$OwnerUserId)
-# some author ids are actually login names -> NAs introduced
+# some owner user ids are actually login names -> NAs introduced
 # add author reputation
 posthistory_nonauthor_edits <- merge(posthistory_nonauthor_edits, users_reputation, by.x="OwnerUserId", by.y="UserId")
 
 summary(posthistory_nonauthor_edits$Reputation)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1      28     351   13560    2899  990400 
+#    1      28     351   13565    2899  990402 
 
 # get posts that only the author edited
 posthistory_users$author_edit_flag <- 0
@@ -63,7 +63,7 @@ posthistory_onlyauthor_edits <- merge(posthistory_onlyauthor_edits, users_reputa
 
 summary(posthistory_onlyauthor_edits$Reputation)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1     257    1802   25780   11360  990400 
+# 1     257    1802   25778   11362  990402
 
 intersect(post_id_filter_nonauthor, post_id_filter_onlyauthor)
 # integer(0)

@@ -1,4 +1,4 @@
-#setwd("F:/Git/github/r-scripts/analysis/") # please update path
+#setwd("E:/Git/github/r-scripts/analysis/") # please update path
 setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
@@ -23,42 +23,42 @@ nrow(postversion_edits_succ)
 
 broken_entries <- postversion_edits_succ[postversion_edits_succ$SuccCreationDateDiff < 0,]
 nrow(broken_entries)
-# 283
+# 0
 
 postversion_edits_succ <- postversion_edits_succ[postversion_edits_succ$SuccCreationDateDiff >= 0,]
 n <- nrow(postversion_edits_succ)
 n
-# 21,840,111
+# 21,840,394
 
 summary(postversion_edits_succ$SuccCreationDateDiff)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.0     0.0     0.0   134.4     0.0  3375.0
+# 0.0     0.0     0.0   134.4     0.0  3375.0 
 sd(postversion_edits_succ$SuccCreationDateDiff)
-# 421.4525
+# 421.4498
 
 n_0 <- length(postversion_edits_succ$SuccCreationDateDiff[postversion_edits_succ$SuccCreationDateDiff==0])
 n_0
-# 17,084,794
+# 17,085,046
 n_0/n*100
-# 78.22668
+# 78.22682
 
 n_week <- length(postversion_edits_succ$SuccCreationDateDiff[postversion_edits_succ$SuccCreationDateDiff > 0 & postversion_edits_succ$SuccCreationDateDiff <= 7])
 n_week
-# 1,128,962
+# 1,128,993
 n_week/n*100
-# 5.169214
+# 5.169289
 
 n_year <- length(postversion_edits_succ$SuccCreationDateDiff[postversion_edits_succ$SuccCreationDateDiff > 7 & postversion_edits_succ$SuccCreationDateDiff <= 365])
 n_year
-# 1,342,329
+# 1,342,332
 n_year/n*100
-# 6.146164
+# 6.146098
 
 n_more_than_one_year <- length(postversion_edits_succ$SuccCreationDateDiff[postversion_edits_succ$SuccCreationDateDiff > 365])
 n_more_than_one_year
-# 664,515
+# 2,284,023
 n_more_than_one_year/n*100
-# 3.042636
+# 10.45779
 
 
 
@@ -68,7 +68,7 @@ n_more_than_one_year/n*100
 postversion_edits_succ_first <- sqldf("select PostId, min(PostHistoryId) PostHistoryId, SuccCreationDateDiff from postversion_edits_succ group by PostId")
 n <- nrow(postversion_edits_succ_first)
 n
-# 13,874,674
+# 13,874,688
 
 summary(postversion_edits_succ_first$SuccCreationDateDiff)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -76,27 +76,27 @@ summary(postversion_edits_succ_first$SuccCreationDateDiff)
 
 n_0 <- length(postversion_edits_succ_first$SuccCreationDateDiff[postversion_edits_succ_first$SuccCreationDateDiff==0])
 n_0
-# 11,177,661
+# 11,177,672
 n_0/n*100
 # 80.56161
 
 n_week <- length(postversion_edits_succ_first$SuccCreationDateDiff[postversion_edits_succ_first$SuccCreationDateDiff > 0 & postversion_edits_succ_first$SuccCreationDateDiff <= 7])
 n_week
-# 636,871
+# 636,843
 n_week/n*100
-# 4.590169
+# 4.589963
 
 n_year <- length(postversion_edits_succ_first$SuccCreationDateDiff[postversion_edits_succ_first$SuccCreationDateDiff > 7 & postversion_edits_succ_first$SuccCreationDateDiff <= 365])
 n_year
-# 711,703
+# 711,690
 n_year/n*100
-# 5.129512
+# 5.129413
 
 n_more_than_year <- length(postversion_edits_succ_first$SuccCreationDateDiff[postversion_edits_succ_first$SuccCreationDateDiff > 365])
 n_more_than_year
-# 1,348,439
+# 1,348,483
 n_more_than_year/n*100
-# 9.718708
+# 9.719015
 
 
 ##########
@@ -105,35 +105,35 @@ n_more_than_year/n*100
 postversion_edits_succ_later <- sqldf("select PostId, PostHistoryId, SuccCreationDateDiff from postversion_edits_succ where PostHistoryId not in (select min(PostHistoryId) PostHistoryId from postversion_edits_succ group by PostId)")
 n <- nrow(postversion_edits_succ_later)
 n
-# 7,965,437
+# 7,965,706
 
 summary(postversion_edits_succ_later$SuccCreationDateDiff)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 0.0     0.0     0.0   149.4     1.0  3374.0 
+# 0.0     0.0     0.0   149.3     1.0  3374.0 
 
 n_0 <- length(postversion_edits_succ_later$SuccCreationDateDiff[postversion_edits_succ_later$SuccCreationDateDiff==0])
 n_0
-# 5,907,133
+# 5,907,374
 n_0/n*100
-# 74.15956
+# 74.16008
 
 n_week <- length(postversion_edits_succ_later$SuccCreationDateDiff[postversion_edits_succ_later$SuccCreationDateDiff > 0 & postversion_edits_succ_later$SuccCreationDateDiff <= 7])
 n_week
-# 492,091
+# 492,150
 n_week/n*100
-# 6.177828
+# 6.17836
 
 n_year <- length(postversion_edits_succ_later$SuccCreationDateDiff[postversion_edits_succ_later$SuccCreationDateDiff > 7 & postversion_edits_succ_later$SuccCreationDateDiff <= 365])
 n_year
-# 630,626
+# 630,642
 n_year/n*100
-# 7.91703
+# 7.916963
 
 n_more_than_year <- length(postversion_edits_succ_later$SuccCreationDateDiff[postversion_edits_succ_later$SuccCreationDateDiff > 365])
 n_more_than_year
-# 935,587
+# 935,540
 n_more_than_year/n*100
-# 11.74558
+# 11.7446
 
 
 ##########
@@ -149,7 +149,7 @@ filtered_posts <- posts_score[posts_score$PostId %in% post_ids,]
 
 summary(filtered_posts$Score)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# -147.00     0.00     2.00    11.61     5.00 19900.00 
+# -147.00     0.00     2.00    11.62     5.00 19904.00
 
 
 
@@ -171,21 +171,21 @@ date_diff_table <- table(date_diff)
 
 n <- length(date_diff)
 n
-# 21,840,111
+# 21,840,394
 n_1 <- length(date_diff[date_diff==1])
 n_1
-# 18,213,756
+# 18,214,039
 n_1/n*100
-# 83.39589
+# 83.39611
 n_excluded <- length(date_diff[date_diff==max_weeks+2])
 n_excluded
-# 3,162,402
+# 3,162,390
 n_excluded/n*100
-# 14.47979
+# 14.47955
 n-n_excluded
-# 18,677,709
+# 18,678,004
 (1-n_excluded/n)*100
-# 85.52021
+# 85.52045
 
 # range of missing values
 max(postversion_edits_succ$SuccCreationDateDiff/7)-max_weeks

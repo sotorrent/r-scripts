@@ -1,4 +1,4 @@
-setwd("F:/Git/github/r-scripts/analysis/") # please update path
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
 #setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
@@ -20,35 +20,34 @@ summary(localid_diff$LocalIdDiff)
 
 n <- nrow(localid_diff)
 n
-# 71,439,829
+# 71,440,329
 
 n_0 <- length(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff==0])
 n_0
-# 68,195,111
+# 68,195,919
 n_0/n*100
-# 95.45811
+# 95.45857
 
 n_1 <- length(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff==1])
 n_1
-# 372,992
+# 373,094
 n_1/n*100
-# 0.5221065
+# 0.5222456
 
 n_2 <- length(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff==2])
 n_2
-# 2,239,925
+# 2,239,611
 n_2/n*100
-# 3.135401
+# 3.134939
 
 n_3 <- length(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff==3])
 n_3
-# 44,418
+# 44,422
 n_3/n*100
-# 0.0621754
+# 0.06218056
 
 table(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff>0])
 
 table(localid_diff$LocalIdDiff[localid_diff$LocalIdDiff>0])[1:10]
 #       1         2        3        4        5        6        7        8       9       10 
-# 372,992 2,239,925   44,418  414,925    8,078   96,892    2,443   33,526     802   13,139  
-
+# 373,094 2,239,611   44,422  414,870    8,080   96,906    2,442   33,482     805   13,130   
