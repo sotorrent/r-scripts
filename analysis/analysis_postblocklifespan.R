@@ -1,7 +1,8 @@
-#setwd("F:/Git/github/r-scripts/analysis/") # please update path
-setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+setwd("E:/Git/github/r-scripts/analysis/") # please update path
+#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
+library(effsize)
 
 # use defined colors
 source("../colors.R")
@@ -20,22 +21,22 @@ names(codeblock_lifespan_length) <- c("PostId", "PostTypeId", "RootPostBlockId",
 ##########
 summary(textblock_lifespan_length$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-#1.00     1.00     1.00     2.69     3.00 80660.00 
+# 1.00     1.00     1.00     2.69     3.00 80655.00 
 
 n <- nrow(textblock_lifespan_length)
 n_1 <- length(textblock_lifespan_length$LifespanLength[textblock_lifespan_length$LifespanLength==1])
 n
-# 71,756,580
+# 71,755,618
 n_1
-# 39,781,460
+# 39,781,224
 n_1/n*100
-# 55.43946
+# 55.43987
 
 n_revised <- length(textblock_lifespan_length$LifespanLength[textblock_lifespan_length$LifespanLength>1])
 n_revised
-# 31,975,120
+# 31,974,394
 n_revised/n*100
-# 44.56054
+# 44.56013
 
 TextLifespanLength <- ifelse(textblock_lifespan_length$LifespanLength>10, 10, textblock_lifespan_length$LifespanLength)
 TextLifespanLengthTable <- table(TextLifespanLength)
@@ -46,22 +47,22 @@ TextLifespanLengthTable <- table(TextLifespanLength)
 ##########
 summary(codeblock_lifespan_length$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 1.0      1.0      1.0      2.5      3.0 562500.0 
+# 1.0      1.0      1.0      2.5      3.0 562484.0
 
 n <- nrow(codeblock_lifespan_length)
 n_1 <- length(codeblock_lifespan_length$LifespanLength[codeblock_lifespan_length$LifespanLength==1])
 n
-# 43,728,155
+# 43,729,000
 n_1
-# 21,925,047
+# 21,925,668
 n_1/n*100
-# 50.13943
+# 50.13988
 
 n_revised <- length(codeblock_lifespan_length$LifespanLength[codeblock_lifespan_length$LifespanLength>1])
 n_revised
-# 21,803,108
+# 21,803,332
 n_revised/n*100
-# 49.86057
+# 49.86012
 
 CodeLifespanLength <- ifelse(codeblock_lifespan_length$LifespanLength>10, 10, codeblock_lifespan_length$LifespanLength)
 CodeLifespanLengthTable <- table(CodeLifespanLength)
@@ -76,17 +77,17 @@ revised_codeblocks <- codeblock_lifespan_length[codeblock_lifespan_length$Lifesp
 
 summary(revised_textblocks$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 2.00     2.00     4.00     4.78     4.00 80660.00 
+# 2.00     2.00     4.00     4.78     4.00 80655.00 
 
 sd(revised_textblocks$LifespanLength)
-# 17.27135
+# 17.27118
 
 summary(revised_codeblocks$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 2.0      2.0      3.0      4.1      4.0 562500.0 
+# 2.0      2.0      3.0      4.1      4.0 562484.0
 
 sd(revised_codeblocks$LifespanLength)
-# 169.7573
+# 169.7564
 
 wilcox.test(revised_codeblocks$LifespanLength,
             revised_textblocks$LifespanLength,
@@ -101,7 +102,7 @@ wilcox.test(revised_codeblocks$LifespanLength,
 cohen.d(revised_codeblocks$LifespanLength, # "treatment"
         revised_textblocks$LifespanLength, # "control"
         paired=FALSE)
-# d estimate: -0.00636089 (negligible)
+# d estimate: -0.006360512 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -269,27 +270,27 @@ textblock_lifespan_length_a <- textblock_lifespan_length[textblock_lifespan_leng
 
 summary(textblock_lifespan_length_q$LifespanLength)
 # Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-# 1.000     1.000     2.000     2.986     4.000 15880.000
+# 1.000     1.000     2.000     2.986     4.000 15876.000 
 sd(textblock_lifespan_length_q$LifespanLength)
-# 6.212795
+# 6.212475
 
 summary(textblock_lifespan_length_a$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 1.00     1.00     1.00     2.43     2.00 80660.00 
+# 1.00     1.00     1.00     2.43     2.00 80655.00 
 sd(textblock_lifespan_length_a$LifespanLength)
-# 14.84365
+# 14.84347
 
 wilcox.test(textblock_lifespan_length_a$LifespanLength,
             textblock_lifespan_length_q$LifespanLength,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 5.4772e+14, p-value < 2.2e-16
+# W = 5.4771e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(textblock_lifespan_length_a$LifespanLength, # "treatment"
         textblock_lifespan_length_q$LifespanLength, # "control"
         paired=FALSE)
-# d estimate: -0.0477892 (negligible)
+# d estimate: -0.04778815 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -301,27 +302,27 @@ codeblock_lifespan_length_a <- codeblock_lifespan_length[codeblock_lifespan_leng
 
 summary(codeblock_lifespan_length_q$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 1.000    1.000    2.000    2.656    3.000 1470.000 
+# 1.000    1.000    2.000    2.656    3.000 1470.000
 sd(codeblock_lifespan_length_q$LifespanLength)
-# 3.404558
+# 3.40373
 
 summary(codeblock_lifespan_length_a$LifespanLength)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 1.0      1.0      1.0      2.4      2.0 562500.0 
+# 1.0      1.0      1.0      2.4      2.0 562484.0
 sd(codeblock_lifespan_length_a$LifespanLength)
-# 166.1008
+# 166.0985
 
 wilcox.test(codeblock_lifespan_length_a$LifespanLength,
             codeblock_lifespan_length_q$LifespanLength,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 2.0958e+14, p-value < 2.2e-16
+# W = 2.0959e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblock_lifespan_length_a$LifespanLength, # "treatment"
         codeblock_lifespan_length_q$LifespanLength, # "control"
         paired=FALSE)
-# d estimate: -0.001840944 (negligible)
+# d estimate: -0.001840913 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -352,13 +353,13 @@ wilcox.test(textblock_lifespan_length_java$LifespanLength,
             textblock_lifespan_length_others$LifespanLength,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 2.2729e+14, p-value < 2.2e-16
+# W = 2.2728e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(textblock_lifespan_length_java$LifespanLength, # "treatment"
         textblock_lifespan_length_others$LifespanLength, # "control"
         paired=FALSE)
-# d estimate: 0.01235921 (negligible)
+# d estimate: 0.01236462 (negligible)
 # 95 percent confidence interval:
 #  inf sup 
 # NA  NA 
@@ -370,13 +371,13 @@ wilcox.test(codeblock_lifespan_length_java$LifespanLength,
             codeblock_lifespan_length_others$LifespanLength,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.3689e+13, p-value < 2.2e-16
+# W = 8.3692e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblock_lifespan_length_java$LifespanLength, # "treatment"
         codeblock_lifespan_length_others$LifespanLength, # "control"
         paired=FALSE)
-# d estimate: 0.0007196131 (negligible)
+# d estimate: 0.0007201488 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 

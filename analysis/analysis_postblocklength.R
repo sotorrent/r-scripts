@@ -36,37 +36,37 @@ codeblocks_last_version <- posts_codeblock_length[posts_codeblock_length$PostHis
 # text
 ##########
 nrow(textblocks_last_version)
-# 69,940,599
+# 69,940,160
 
 summary(textblocks_last_version$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # 1.000    1.000    2.000    2.451    3.000 1608.000 
 sd(textblocks_last_version$LineCount)
-# 3.13954
+# 3.139416
 
 summary(textblocks_last_version$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 1.0    62.0   153.0   247.5   319.0 29830.0 
 sd(textblocks_last_version$Length)
-# 319.1321
+# 319.119
 
 
 ##########
 # code
 ##########
 nrow(codeblocks_last_version)
-# 42,568,011
+# 42,569,022
 summary(codeblocks_last_version$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 1       2       5      12      13    2576 
 sd(codeblocks_last_version$LineCount)
-# 23.38394
+# 23.3838
 
 summary(codeblocks_last_version$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.0    82.0   194.0   455.9   458.0 30010.0 
+# 1.0    82.0   194.0   455.9   458.0 30013.0 
 sd(codeblocks_last_version$Length)
-# 989.2887
+# 989.2889
 
 
 ##########
@@ -76,8 +76,8 @@ sd(codeblocks_last_version$Length)
 boxplot(textblocks_last_version$Length, codeblocks_last_version$Length, outline=FALSE)
 
 # plot boxplots
-#quartz(type="pdf", file="figures/exact_matches_so_filter_histograms.pdf", width=12, height=10) # prevents unicode issues in pdf
-pdf("figures/postblocklength_latest.pdf", width=6, height=5)
+#quartz(type="pdf", file="figures/postblocklength_latest.pdf", width=12, height=10) # prevents unicode issues in pdf
+pdf("figures/postblocklength_latest.pdf", width=8, height=4)
 par(
   bg="white",
   #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
@@ -92,10 +92,11 @@ par(
   cex.lab=1,
   cex.axis=1
 )
-boxplot(textblocks_last_version$LineCount,
-        codeblocks_last_version$LineCount,
-        names=c("text blocks", "code blocks"),
+boxplot(codeblocks_last_version$LineCount,
+        textblocks_last_version$LineCount,
+        names=c("code", "text"),
         outline=FALSE,
+        horizontal = TRUE,
         col=gray_lighter,
         main="Length of post blocks in lastest version"
 )
@@ -118,7 +119,7 @@ wilcox.test(textblocks_last_version$LineCount,
 cohen.d(textblocks_last_version$LineCount, # "treatment"
         textblocks_first_version$LineCount, # "control"
         paired=FALSE)
-# d estimate: 0.0001946091 (negligible)
+# d estimate: 0.0002064341 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -133,7 +134,7 @@ wilcox.test(textblocks_last_version$Length,
 cohen.d(textblocks_last_version$Length, # "treatment"
         textblocks_first_version$Length, # "control"
         paired=FALSE)
-# d estimate: 0.01040951 (negligible)
+# d estimate: 0.01041489 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -144,13 +145,13 @@ wilcox.test(codeblocks_last_version$LineCount,
             codeblocks_first_version$LineCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.0157e+14, p-value < 2.2e-16
+# W = 8.0161e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version$LineCount, # "treatment"
         codeblocks_first_version$LineCount, # "control"
         paired=FALSE)
-# d estimate: 0.01230378 (negligible)
+# d estimate: 0.01230062 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -159,13 +160,13 @@ wilcox.test(codeblocks_last_version$Length,
             codeblocks_first_version$Length,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.028e+14, p-value < 2.2e-16
+# W = 8.0284e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version$Length, # "treatment"
         codeblocks_first_version$Length, # "control"
         paired=FALSE)
-# d estimate: 0.01506673 (negligible)
+# d estimate: 0.01506254 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA
@@ -186,27 +187,27 @@ textblocks_last_version_a <- textblocks_last_version[textblocks_last_version$Pos
 # length
 summary(textblocks_last_version_q$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.0    63.0   166.0   255.2   339.0 29750.0 
+# 1.0    63.0   166.0   255.2   339.0 29753.0
 sd(textblocks_last_version_q$Length)
-# 321.1691
+# 321.1585
 
 summary(textblocks_last_version_a$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1      62     143     241     301   29830 
+# 1      62     143     241     301   29834 
 sd(textblocks_last_version_a$Length)
-# 317.252
+# 317.2369
 
 wilcox.test(textblocks_last_version_a$Length,
             textblocks_last_version_q$Length,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 5.79e+14, p-value < 2.2e-16
+# W = 5.7899e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(textblocks_last_version_a$Length, # "treatment"
         textblocks_last_version_q$Length, # "control"
         paired=FALSE)
-# d estimate: -0.04428078 (negligible)
+# d estimate: -0.04427886 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -217,25 +218,25 @@ summary(textblocks_last_version_q$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # 1.000    1.000    2.000    2.647    3.000 1608.000
 sd(textblocks_last_version_q$LineCount)
-# 3.557065
+# 3.556949
 
 summary(textblocks_last_version_a$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # 1.000    1.000    1.000    2.286    3.000 1009.000 
 sd(textblocks_last_version_a$LineCount)
-# 2.725516
+# 2.725385
 
 wilcox.test(textblocks_last_version_a$LineCount,
             textblocks_last_version_q$LineCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 5.4804e+14, p-value < 2.2e-16
+# W = 5.4803e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(textblocks_last_version_a$LineCount, # "treatment"
         textblocks_last_version_q$LineCount, # "control"
         paired=FALSE)
-# d estimate: -0.1150817 (negligible)
+# d estimate: -0.1150814 (negligible)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -249,27 +250,27 @@ codeblocks_last_version_a <- codeblocks_last_version[codeblocks_last_version$Pos
 # length
 summary(codeblocks_last_version_q$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.0   106.0   258.0   613.2   625.0 30010.0 
+# 1.0   106.0   258.0   613.2   625.0 30013.0
 sd(codeblocks_last_version_q$Length)
-#1264.207
+# 1264.208
  
 summary(codeblocks_last_version_a$Length)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 2.0    69.0   153.0   313.6   340.0 29780.0 
 sd(codeblocks_last_version_a$Length)
-# 613.114
+# 613.1202
 
 wilcox.test(codeblocks_last_version_a$Length,
             codeblocks_last_version_q$Length,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 1.7269e+14, p-value < 2.2e-16
+# W = 1.727e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_a$Length, # "treatment"
         codeblocks_last_version_q$Length, # "control"
         paired=FALSE)
-# d estimate: -0.3064505 (small)
+# d estimate: -0.3064541 (small)
 # 95 percent confidence interval:
 #   inf sup 
 # NA  NA 
@@ -280,25 +281,25 @@ summary(codeblocks_last_version_q$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 1.0     3.0     7.0    15.6    17.0  2576.0 
 sd(codeblocks_last_version_q$LineCount)
-# 29.01192
+# 29.01185
 
 summary(codeblocks_last_version_a$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # 1.000    1.000    4.000    8.744   10.000 2147.000 
 sd(codeblocks_last_version_a$LineCount)
-# 16.05854
+# 16.05838
 
 wilcox.test(codeblocks_last_version_a$LineCount,
             codeblocks_last_version_q$LineCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 1.7808e+14, p-value < 2.2e-16
+# W = 1.7809e+14, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_a$LineCount, # "treatment"
         codeblocks_last_version_q$LineCount, # "control"
         paired=FALSE)
-# d estimate: -0.2963673 (small)
+# d estimate: -0.2963719 (small)
 # 95 percent confidence interval:
 #   inf sup 
 #NA  NA 
@@ -331,13 +332,13 @@ wilcox.test(codeblocks_last_version_java$Length,
             codeblocks_last_version_others$Length,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.3862e+13, p-value < 2.2e-16
+# W = 8.3865e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_java$Length, # "treatment"
         codeblocks_last_version_others$Length, # "control"
         paired=FALSE)
-# d estimate: 0.1861596 (negligible)
+# d estimate: 0.186159 (negligible)
 # 95 percent confidence interval:
 #  inf sup 
 # NA  NA 
@@ -348,13 +349,13 @@ wilcox.test(codeblocks_last_version_java$LineCount,
             codeblocks_last_version_others$LineCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.2932e+13, p-value < 2.2e-16
+# W = 8.2935e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_java$LineCount, # "treatment"
         codeblocks_last_version_others$LineCount, # "control"
         paired=FALSE)
-# d estimate: 0.1844453 (negligible)
+# d estimate: 0.1844489 (negligible)
 # 95 percent confidence interval:
 #  inf sup 
 # NA  NA 
@@ -367,13 +368,13 @@ wilcox.test(codeblocks_last_version_java$Length,
             codeblocks_last_version_others$Length,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.3862e+13, p-value < 2.2e-16
+# W = 8.3865e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_java$Length, # "treatment"
         codeblocks_last_version_others$Length, # "control"
         paired=FALSE)
-# d estimate: 0.1861596 (negligible)
+# d estimate: 0.186159 (negligible)
 # 95 percent confidence interval:
 # inf sup 
 #  NA  NA
@@ -384,13 +385,13 @@ wilcox.test(codeblocks_last_version_java$LineCount,
             codeblocks_last_version_others$LineCount,
             alternative="two.sided",
             paired=F, correct=T)
-# W = 8.2932e+13, p-value < 2.2e-16
+# W =  8.2935e+13, p-value < 2.2e-16
 # alternative hypothesis: true location shift is not equal to 0
 
 cohen.d(codeblocks_last_version_java$LineCount, # "treatment"
         codeblocks_last_version_others$LineCount, # "control"
         paired=FALSE)
-# d estimate: 0.1844453 (negligible)
+# d estimate: 0.1844489 (negligible)
 # 95 percent confidence interval:
 #  inf sup 
-# NA  NA 
+# NA  NA
