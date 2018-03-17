@@ -323,7 +323,7 @@ segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text
          lty=1, lwd=2, col=color_scale_blue)
 points(roc_text_equal$FPR, roc_text_equal$TPR,
        pch=20, col=color_scale_blue)
-text(0.2, 0.795, "equal", font=4, cex=1, col="royalblue4")
+text(0.2, 0.795, expression(equal^text), font=4, cex=1, col="royalblue4")
 # selected threshold
 segments(x0=roc_text_selected$FPR, y0=0, x1=roc_text_selected$FPR, y1=roc_text_selected$TPR,
          lty=2, lwd=1, gray_darker)
@@ -337,7 +337,7 @@ segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code
          lty=1, lwd=2, col=color_scale_red)
 points(roc_code_equal$FPR, roc_code_equal$TPR,
        pch=20, col=color_scale_red)
-text(0.12, 0.86, "equal", font=4, cex=1, col="red4")
+text(0.1095, 0.845, expression(equal^code), font=4, cex=1, col="red4")
 # selected threshold
 segments(x0=roc_code_selected$FPR, y0=0, x1=roc_code_selected$FPR, y1=roc_code_selected$TPR,
          lty=2, lwd=1, gray_darker)
