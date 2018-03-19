@@ -1,5 +1,5 @@
-setwd("E:/Git/github/r-scripts/analysis/") # please update path
-#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+#setwd("E:/Git/github/r-scripts/analysis/") # please update path
+setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 library(effsize)
@@ -76,8 +76,8 @@ sd(codeblocks_last_version$Length)
 boxplot(textblocks_last_version$Length, codeblocks_last_version$Length, outline=FALSE)
 
 # plot boxplots
-#quartz(type="pdf", file="figures/postblocklength_latest.pdf", width=12, height=10) # prevents unicode issues in pdf
-pdf("figures/postblocklength_latest.pdf", width=8, height=4)
+quartz(type="pdf", file="figures/postblocklength_latest.pdf", width=8, height=4) # prevents unicode issues in pdf
+#pdf("figures/postblocklength_latest.pdf", width=8, height=4)
 par(
   bg="white",
   #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)

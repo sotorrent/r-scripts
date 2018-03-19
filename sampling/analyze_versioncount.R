@@ -1,4 +1,4 @@
-#setwd("F:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
+#setwd("E:/Git/github/r-scripts/sampling") # Pfad bitte anpassen
 setwd("/Users/sebastian/git/github/r-scripts/sampling")
 
 # use defined colors

@@ -1,5 +1,5 @@
-setwd("E:/Git/github/r-scripts/analysis/") # please update path
-#setwd("/Users/sebastian/git/github/r-scripts/analysis/")
+#setwd("E:/Git/github/r-scripts/analysis/") # please update path
+setwd("/Users/sebastian/git/github/r-scripts/analysis/")
 
 library(data.table)
 library(effsize)
