@@ -449,7 +449,7 @@ boxplot(PostBlockLifespanLength-0.5,
 # median
 abline(v=0.5, lty=1, lwd=2, col=gray_darker)
 # labels
-text(5.0, 25000000, "Edited post blocks (46.6%)", font=3, col="black", cex=1.0)
+text(5.0, 23000000, "Edited post blocks (46.6%)", font=3, col="black", cex=1.0)
 # axes
 axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
 axis(2, at=seq(0, 60000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m", "50m", "60m"), las=2)
