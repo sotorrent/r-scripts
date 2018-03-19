@@ -1,3 +1,5 @@
+# License remarks
+
 The data retrieved from Stack Overflow (including the snippets) is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.
 Please also see the [Stack Exchange Network Terms of Service](http://stackexchange.com/legal).
 
