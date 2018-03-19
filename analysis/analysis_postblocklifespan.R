@@ -343,6 +343,119 @@ axis(2, at=seq(0, 40000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40
 
 dev.off()
 
+##########
+# text and code in one plot
+##########
+PostBlockLifespanLength <- c(TextLifespanLength, CodeLifespanLength)
+n <- length(PostBlockLifespanLength)
+n
+# 115,484,618
+
+summary(PostBlockLifespanLength)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.000   1.000   1.000   2.373   3.000  10.000 
+
+sd(PostBlockLifespanLength)
+# 2.190244
+
+n_not_revised <- length(which(PostBlockLifespanLength==1))
+n_not_revised
+# 61,706,892
+n_not_revised/n*100
+# 53.433
+
+n_revised <- length(which(PostBlockLifespanLength>1))
+n_revised
+# 53,777,726
+n_revised/n*100
+# 46.567
+
+PostBlockLifespanLengthTable <- table(PostBlockLifespanLength)
+
+
+# plot histogram (text and code merged)
+quartz(type="pdf", file="figures/postblocklifespan_length_merged.pdf", width=8, height=6) # prevents unicode issues in pdf
+#pdf("figures/postblocklifespan_length.pdf", width=8, height=6)
+par(
+  bg="white",
+  #mar = c(3, 3, 3, 1)+0.1, # subplot margins (bottom, left, top, right)
+  #  omi = c(0.0, 0.0, 0.0, 0.0),  # outer margins in inches (bottom, left, top, right)
+  mfrow = c(1, 1),
+  #pin = (width, height)
+  #mfcol # draw in columns
+  # increase font size
+  cex=1.3,
+  cex.main=1.3,
+  cex.sub=1,
+  cex.lab=1,
+  cex.axis=1
+)
+
+# text and code merged
+hist(PostBlockLifespanLength, 
+     main="Post block version count (n=115,484,618)", 
+     freq=TRUE,
+     xlab="",
+     ylab="",
+     border="white",
+     col="white",
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 60000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+for (y in seq(0, 60000000, by=10000000)) {
+  segments(x0=-0.5, y0=y, x1=10, y1=y, lty=1, lwd=1, col=gray_lighter)
+}
+hist(PostBlockLifespanLength,
+     add=TRUE,
+     main="", 
+     freq=TRUE,
+     xlab="x",
+     ylab="y",
+     border=gray_dark,
+     col=c(gray_lighter, rep(gray_selected, 9)),
+     #labels=c(rep("", 10), "Selected"),
+     xlim=c(0, 10),
+     ylim=c(0, 60000000),
+     breaks=0:10,
+     xaxt="n",
+     yaxt="n"
+)
+boxplot(PostBlockLifespanLength-0.5,
+        add=TRUE,
+        outline=FALSE,
+        horizontal=TRUE,
+        ylim=c(0, 10),
+        log="",
+        col=gray_dark,
+        # https://stackoverflow.com/a/28890111
+        lwd=2,
+        medlwd=2,
+        #staplelty=0,
+        whisklty=1,
+        #staplelty=0,
+        whiskcol="black",
+        medcol="black",
+        boxcol="black",
+        staplecol="black",
+        boxwex=6000000,
+        axes=FALSE
+        #xaxt="n"
+        #yaxt="n"
+)
+# median
+abline(v=0.5, lty=1, lwd=2, col=gray_darker)
+# labels
+text(5.0, 25000000, "Edited post blocks (46.6%)", font=3, col="black", cex=1.0)
+# axes
+axis(1, at=seq(-0.5, 9.5, by=1), labels=c(seq(0, 9, by=1), "\u2265 10"))
+axis(2, at=seq(0, 60000000, by=10000000), labels=c("0", "10m", "20m", "30m", "40m", "50m", "60m"), las=2)
+
+dev.off()
+
 
 ##########
 # questions vs. answers
