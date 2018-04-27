@@ -29,7 +29,7 @@ rm(sample_java_100_1, sample_java_100_2)
 sample_unclear_matching <- fread("all/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
 sample_unclear_matching <- filter_columns(sample_unclear_matching)
 
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
+# sample with multiple possible connections (to test matching strategy)
 sample_multiple_possible_links <- fread("all/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
 sample_multiple_possible_links <- filter_columns(sample_multiple_possible_links)
 

@@ -194,6 +194,7 @@ dev.off()
 
 pdf("figures/roc_excerpt.pdf", width=14, height=5)
 par(
+  #bg=NA,
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
   #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
@@ -282,6 +283,7 @@ color_scale_blue <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("royalblue4",
 
 pdf("figures/roc_excerpt_combined.pdf", width=8, height=8)
 par(
+  #bg=NA,
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
   #omi = c(0.2, 0.4, 0.2, 0.0),  # outer margins in inches (bottom, left, top, right)
