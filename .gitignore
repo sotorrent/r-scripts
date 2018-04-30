@@ -42,6 +42,3 @@ target/
 # Misc #
 ########
 /analysis/data/
-/analysis/data/
-/sampling/data/
-/analysis/fst18-bous/data/

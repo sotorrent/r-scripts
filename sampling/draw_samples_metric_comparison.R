@@ -1,11 +1,11 @@
 setwd("") # Pfad bitte anpassen
 
 library(data.table)
-data <- fread("PostId_VersionCount_SO_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+data <- fread("data/PostId_VersionCount_SO_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 names(data) <- c("PostId", "PostTypeId", "VersionCount")
 nrow(data)
 # 36,062,267
-data_java <- fread("PostId_VersionCount_SO_Java_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+data_java <- fread("data/PostId_VersionCount_SO_Java_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 names(data_java) <- c("PostId", "PostTypeId", "VersionCount")
 nrow(data_java)
 # 5,410,059
@@ -47,13 +47,13 @@ nrow(data_filtered)
 # all posts, small sample
 nrow(data_filtered)
 # 12,962,337
-sample_1 <- fread("PostId_VersionCount_SO_17-06_sample_100_1.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_1 <- fread("data/PostId_VersionCount_SO_17-06_sample_100_1.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_1)
 # 100
 data_filtered_s1 <- data_filtered[!(data_filtered$PostId %in% sample_1$PostId)]
 nrow(data_filtered_s1)
 # 12,962,237
-sample_2 <- fread("PostId_VersionCount_SO_17-06_sample_100_2.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_2 <- fread("data/PostId_VersionCount_SO_17-06_sample_100_2.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_2)
 # 100
 data_filtered_s2 <- data_filtered_s1[!(data_filtered_s1$PostId %in% sample_2$PostId)]
@@ -64,13 +64,13 @@ data_filtered <- data_filtered_s2
 # Java posts
 nrow(data_java_filtered)
 # 1,988,375
-sample_1 <- fread("PostId_VersionCount_SO_Java_17-06_sample_100_1.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_1 <- fread("data/PostId_VersionCount_SO_Java_17-06_sample_100_1.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_1)
 # 100
 data_java_filtered_s1 <- data_java_filtered[!(data_java_filtered$PostId %in% sample_1$PostId)]
 nrow(data_java_filtered_s1)
 # 1,988,275
-sample_2 <- fread("PostId_VersionCount_SO_Java_17-06_sample_100_2.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_2 <- fread("data/PostId_VersionCount_SO_Java_17-06_sample_100_2.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_2)
 # 100
 data_java_filtered_s2 <- data_java_filtered_s1[!(data_java_filtered_s1$PostId %in% sample_2$PostId)]
@@ -81,13 +81,13 @@ data_java_filtered <- data_java_filtered_s2
 # posts with many versions
 nrow(data_filtered_many_versions)
 # 141,694
-sample_1 <- fread("PostId_VersionCount_SO_17-06_sample_100_1+.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_1 <- fread("data/PostId_VersionCount_SO_17-06_sample_100_1+.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_1)
 # 100
 data_filtered_many_versions_s1 <- data_filtered_many_versions[!(data_filtered_many_versions$PostId %in% sample_1$PostId)]
 nrow(data_filtered_many_versions_s1)
 # 141,594
-sample_2 <- fread("PostId_VersionCount_SO_17-06_sample_100_2+.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
+sample_2 <- fread("data/PostId_VersionCount_SO_17-06_sample_100_2+.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c(""))
 nrow(sample_2)
 # 100
 data_filtered_many_versions_s2 <- data_filtered_many_versions_s1[!(data_filtered_many_versions_s1$PostId %in% sample_2$PostId)]
