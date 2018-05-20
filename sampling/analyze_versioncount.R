@@ -6,39 +6,49 @@ source("../colors.R")
 
 library(data.table)
 #data <- fread("data/PostId_VersionCount_SO_17-06.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
-data <- fread("data/PostId_VersionCount_SO_17-12.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+#data <- fread("data/PostId_VersionCount_SO_17-12.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+data <- fread("data/PostId_VersionCount_SO_18-03.csv", header=FALSE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 names(data) <- c("PostId", "PostTypeId", "VersionCount")
 
 nrow(data)
-## 36,062,267
+# 36,062,267
+# 38,394,895
 # 39,554,826
 
 summary(data$VersionCount)
-## Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-## 1.000   1.000   1.000   1.564   2.000 754.000
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.000   1.000   1.000   1.564   2.000 754.000
+
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.000   1.000   1.000   1.569   2.000 754.000
+
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 1.000   1.000   1.000   1.572   2.000 754.000
+
 
 boxplot(data$VersionCount, outline=FALSE)
 
 length(data$VersionCount[data$VersionCount==1])/nrow(data)*100
-## 64.05568
+# 64.05568
+# 63.8632
 # 63.74939
 
 length(data$VersionCount[data$VersionCount>1])
-## 12,962,337
+# 12,962,337
+# 13,874,688
 # 14,338,864
 
 length(data$VersionCount[data$VersionCount>1])/nrow(data)*100
-## 35.94432
+# 35.94432
+# 36.1368
 # 36.25061
 
 VersionCount <- ifelse(data$VersionCount>10, 10, data$VersionCount)
 
 # plot histogram + boxplot
 #quartz(type="pdf", file="figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8) # prevents unicode issues in pdf
-quartz(type="pdf", file="figures/PostId_VersionCount_SO_17-12.pdf", width=12, height=8) # prevents unicode issues in pdf
-#pdf("figures/PostId_VersionCount_SO_17-06.pdf", width=12, height=8)
+#quartz(type="pdf", file="figures/PostId_VersionCount_SO_17-12.pdf", width=12, height=8) # prevents unicode issues in pdf
+quartz(type="pdf", file="figures/PostId_VersionCount_SO_18-03.pdf", width=12, height=8) # prevents unicode issues in pdf
 par(
   bg="white",
   cex=1.3,
@@ -49,6 +59,9 @@ par(
 )
 
 hist(VersionCount, 
+     # 36,062,267
+     # 38,394,895
+     # 39,554,826
      main="Version count of Stack Overflow Q&A (n=39,554,826)", 
      freq=TRUE,
      xlab="",
@@ -105,6 +118,9 @@ boxplot(VersionCount-0.5,
 # median
 abline(v=0.5, lty=1, lwd=2, col="black")
 # labels
+# 35.94432
+# 36.1368
+# 36.25061
 text(3.8, 6000000, "Edited Posts (36.3%)", font=3, col="black", cex=1.3)
 # axes
 axis(1, at=seq(0.5, 9.5, by=1), labels=c(seq(1, 9, by=1), "\u2265 10"))
