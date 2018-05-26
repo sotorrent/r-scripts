@@ -44,3 +44,7 @@ target/
 /analysis/data/
 sampling/data/PostId_VersionCount_SO_17-12.csv.gz
 sampling/data/PostId_VersionCount_SO_18-03.csv.gz
+sampling/data/EditedThreadsOwners.csv
+sampling/data/EditedThreadsEdits.csv
+sampling/data/EditedThreads.csv
+sampling/data/EditedThreadsComments.csv
