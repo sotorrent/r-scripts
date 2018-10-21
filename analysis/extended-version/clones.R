@@ -15,9 +15,12 @@ source("colors.R")
 library(data.table)
 library(hexbin)
 library(plotrix)
+library(sqldf)
 
 # read data
 clones <- fread("data/MostRecentPostBlockVersionNormalizedClonesExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+# prevent problems with SQLDF and integer64
+clones_so_links$ContentNormalizedHash <- as.character(clones_so_links$ContentNormalizedHash)
 n <- nrow(clones)
 n
 # 113,499,709
@@ -115,6 +118,49 @@ length(clones_code[clones_code$ThreadCount >= 10,]$ContentNormalizedHash)
 ############
 # DECISION # Consider clones occuring in at least 10 SO threads for the web visualization.
 ############
+
+
+# analyze links between posts containing clones
+
+# read SO links
+clones_so_links <- fread("data/CodeClonesSampleLargeLinksSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+# prevent problems with SQLDF and integer64
+clones_so_links$ContentNormalizedHash <- as.character(clones_so_links$ContentNormalizedHash)
+nrow(clones_so_links)
+# 55,852
+hash_values <- unique(clones_so_links$ContentNormalizedHash)
+length(hash_values)
+# 38,489
+
+results <- data.frame(
+  ContentNormalizedHash=hash_values,
+  PostCount=rep(NA, length(hash_values)),
+  PostsLinkingToClones=rep(NA, length(hash_values)),
+  stringsAsFactors = FALSE
+)
+for (hash_value in hash_values) {
+  links <- sqldf(paste0("SELECT PostId, PostTypeId, ParentId, LinkedPostId, LinkedPostTypeId FROM clones_so_links WHERE ContentNormalizedHash=", hash_value))
+  post_ids <- sqldf("SELECT DISTINCT PostId FROM links")
+  results[results$ContentNormalizedHash == hash_value,]$PostCount <- nrow(post_ids)
+  parent_ids <- sqldf("SELECT DISTINCT ParentId FROM links")
+  thread_ids <- data.frame(
+    PostId=unique(c(post_ids$PostId, parent_ids$ParentId)),
+    stringsAsFactors = FALSE)
+  linking_posts <- sqldf("SELECT DISTINCT PostId FROM links WHERE LinkedPostId IN (SELECT PostId FROM thread_ids)")
+  results[results$ContentNormalizedHash == hash_value,]$PostsLinkingToClones <- nrow(linking_posts)
+}
+
+post_count <- sum(results$PostCount)
+post_count
+# 46,256
+linking_posts <- sum(results$PostsLinkingToClones)
+linking_posts
+# 3,556
+linking_posts/post_count*100
+# 7.687651
+
+# write results
+write.table(results, file="data/CodeClonesSampleLargeLinksSOExport_per-hash.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
 
 # extended histogram for line count
