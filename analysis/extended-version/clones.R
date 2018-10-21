@@ -17,7 +17,7 @@ library(hexbin)
 library(plotrix)
 
 # read data
-clones <- fread("data/MostRecentPostBlockVersionNormalizedClonesHash.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones <- fread("data/MostRecentPostBlockVersionNormalizedClonesExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 n <- nrow(clones)
 n
 # 113,499,709
@@ -47,7 +47,7 @@ n_1_code/n_code*100
 # 97.93067
 
 ############
-# DECISION # Exclude normalized post blocks with only one occurrence 
+# DECISION # Exclude normalized post blocks with only one occurrence.
 ############
 
 clones <- clones[clones$ThreadCount > 1,]
@@ -63,54 +63,62 @@ n_code <- nrow(clones_code)
 n_code
 # 909,323
 
-summary(clones_text$AvgLineCount)
+summary(clones_text$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.000   1.000   1.000   1.248   1.080 221.000 
+# 1.000   1.000   1.000   1.157   1.000 165.000
 
-summary(clones_code$AvgLineCount)
+summary(clones_code$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-# 1.000    1.000    2.667    8.015    7.667 1656.000 
+# 1.000    1.000    2.000    5.431    5.000 1376.000 
 
 ############
-# DECISION # Focus on code blocks in the following, exclude code blocks with less than 6 LOC (Bellon et al. 2007)
+# DECISION # Focus on code blocks in the following, exclude code blocks with less than 6 LOC (Bellon et al. 2007).
 ############
 
-clones_code <- clones_code[clones_code$AvgLineCount > 5,]
+clones_code <- clones_code[clones_code$LineCount > 5,]
 n_code <- nrow(clones_code)
 n_code
-# 294,693
+# 215,746
 
-summary(clones_code$AvgLineCount)
+summary(clones_code$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 5.00    8.00   12.00   20.74   22.00 1656.00 
+# 6.00    7.00   11.00   17.05   18.00 1376.00
 
 summary(clones_code$ThreadCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 2.000   2.000   2.000   2.522   2.000 694.000 
+# 2.000   2.000   2.000   2.395   2.000 694.000 
 
-clones_code <- clones_code[order(-clones_code$ThreadCount, clones_code$AvgLineCount),]
+clones_code <- clones_code[order(-clones_code$ThreadCount, clones_code$LineCount),c("ContentNormalizedHash", "PostBlockTypeId", "LineCount", "ThreadCount")]
 clones_code[1:10]
 
-max_line_count <- max(clones_code$AvgLineCount)
-line_count <- ifelse(clones_code$AvgLineCount>50, 50, clones_code$AvgLineCount)
+max_line_count <- max(clones_code$LineCount)
+line_count <- ifelse(clones_code$LineCount>50, 50, clones_code$LineCount)
 
 max_thread_count <- max(clones_code$ThreadCount)
 thread_count <- ifelse(clones_code$ThreadCount>5, 5, clones_code$ThreadCount)
 
 n_2 <- length(which(thread_count>2))
 n_2
-# 55,626
+# 36,468
 n_2/n_code*100
-# 18.87591
+# 16.90321
 
 
 #plot(thread_count, line_count)
-bins = hexbin(clone_count, line_count)
+bins = hexbin(thread_count, line_count)
 plot(bins)
+
+# determine threshold for number of occurances
+length(clones_code[clones_code$ThreadCount >= 10,]$ContentNormalizedHash)
+# 1,584
+
+############
+# DECISION # Consider clones occuring in at least 10 SO threads for the web visualization.
+############
 
 
 # extended histogram for line count
-quartz(type="pdf", file="figures/code-clones_line-count.pdf", width=18, height=10) # prevents unicode issues in pdf
+quartz(type="pdf", file="figures/code-clones_line-count.pdf", width=12, height=10) # prevents unicode issues in pdf
 #pdf("figures/exact_matches_gh_filter_histograms.pdf", width=12, height=20)
 par(
   bg="white",
@@ -131,7 +139,7 @@ par(
 
 # histogram (background)
 hist(line_count,
-     main="Line count of non-trivial code blocks with at least one clone (n=294,693)", 
+     main="Line count of non-trivial code blocks with at least one clone (n=215,746)", 
      freq=TRUE,
      xlab="",
      ylab="",
@@ -169,7 +177,7 @@ hist(line_count,
 median(line_count)
 # 12
 segments(x0=median(line_count), y0=0, x1=median(line_count), y1=35000, lty=2, lwd=2, col=gray_dark)
-text(median(line_count)+2.3, 32500, "\u2190 median (12)", font=3)
+text(median(line_count)+3, 32500, "\u2190 median (12)", font=3)
 #boxplot
 boxplot(line_count,
         add=TRUE,
@@ -235,13 +243,13 @@ gap.barplot(
   xtics=seq(2, 5),
   ytics=c(0, 25000, 50000, 200000),
   col=c(gray_lighter, rep(gray_selected, 4)),
-  main="Number non-trivial code blocks being present in multiple threads (n=294,693)",
+  main="Number non-trivial code blocks being present in multiple threads (n=215,746)",
   xlab="",
   ylab="",
   xaxt="n"
 )
 # labels
-text(4, 20000, "18.9%", font=2)
+text(4, 20000, "16.9%", font=2)
 # axes
 axis(1, at=seq(2, 5, by=1), labels=c(seq(2, 4, by=1), "\u2265 5"))
 title(xlab="Number of threads", font.lab=3)
@@ -249,7 +257,3 @@ title(ylab="Number of code blocks", font.lab=3)
 
 par(mfrow = c(1, 1))
 dev.off() 
-
-
-
-
