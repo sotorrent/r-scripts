@@ -24,7 +24,7 @@ length(hash_values)
 
 # write metadata for each cloned code block
 for (hash_value in hash_values) {
-  clones <- sqldf(paste0("SELECT PostId, PostTypeId, ParentId FROM clones_sample WHERE ContentNormalizedHash=", hash_value))
+  clones <- sqldf(paste0("SELECT PostId, PostTypeId, ParentId, CreationDate FROM clones_sample WHERE ContentNormalizedHash=", hash_value))
   write.table(clones, file=paste0("export/", hash_value, ".csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 }
 
@@ -81,4 +81,3 @@ for (hash_value in hash_values) {
   links <- sqldf(paste0("SELECT Url, PostCount FROM clones_links WHERE ContentNormalizedHash=", hash_value, " ORDER BY PostCount DESC"))
   write.table(links, file=paste0("export/", hash_value, "_links.csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 }
-
