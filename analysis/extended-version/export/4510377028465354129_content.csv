@@ -1,0 +1,1 @@
+"      $data = array(array('title' => 'My title' ,&#xD;&#xA;'name' => 'My Name' ,&#xD;&#xA;'date' => 'My date' ),&#xD;&#xA;array('title' =>'Another title','name'=> 'Another Name','date' =>'Another date'));&#xD;&#xA;$this->db->insert_batch('mytable', $data); "

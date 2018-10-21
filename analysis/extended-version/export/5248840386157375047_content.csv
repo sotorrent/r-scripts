@@ -1,0 +1,1 @@
+"       public void onCreate(Bundle savedInstanceState)&#xD;&#xA;{&#xD;&#xA;super.onCreate(savedInstanceState);&#xD;&#xA;requestWindowFeature(Window.FEATURE_NO_TITLE);&#xD;&#xA;getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);&#xD;&#xA;setContentView(R.layout.main);&#xD;&#xA;}"

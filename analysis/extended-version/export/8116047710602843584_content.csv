@@ -1,0 +1,1 @@
+"public class Singleton&#xD;&#xA;{&#xD;&#xA;private static Singleton instance;&#xD;&#xA;private Singleton() {}&#xD;&#xA;public static Singleton Instance&#xD;&#xA;{&#xD;&#xA;get&#xD;&#xA;{&#xD;&#xA;if (instance == null)&#xD;&#xA;{&#xD;&#xA;instance = new Singleton();&#xD;&#xA;}&#xD;&#xA;return instance;&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;}"

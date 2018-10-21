@@ -1,0 +1,1 @@
+"    @Configuration&#xD;&#xA;@EnableWebMvc&#xD;&#xA;public class WebConfig  extends WebMvcConfigurerAdapter{&#xD;&#xA;@Override&#xD;&#xA;public void addCorsMappings(CorsRegistry registry) {&#xD;&#xA;registry.addMapping(""""/**"""");&#xD;&#xA;}&#xD;&#xA;}"

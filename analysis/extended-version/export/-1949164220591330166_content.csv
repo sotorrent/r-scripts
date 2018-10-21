@@ -1,0 +1,1 @@
+"        function ajaxObj( meth, url ) {&#xD;&#xA;var x = new XMLHttpRequest();&#xD;&#xA;x.open( meth, url, true );&#xD;&#xA;x.setRequestHeader(""""Content-type"""", """"application/x-www-form-urlencoded"""");&#xD;&#xA;return x;&#xD;&#xA;}&#xD;&#xA;function ajaxReturn(x){&#xD;&#xA;if(x.readyState == 4 && x.status == 200){&#xD;&#xA;return true;&#xD;&#xA;}&#xD;&#xA;}"

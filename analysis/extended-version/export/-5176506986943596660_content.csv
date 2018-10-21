@@ -1,0 +1,2 @@
+"Content"
+"	<key>NSAppTransportSecurity</key>&#xD;&#xA;	<dict>&#xD;&#xA;	  <!--Include to allow all connections (DANGER)-->&#xD;&#xA;	  <key>NSAllowsArbitraryLoads</key>&#xD;&#xA;	      <true/>&#xD;&#xA;	</dict>"

@@ -1,0 +1,1 @@
+"		#bg {&#xD;&#xA;position:fixed;&#xD;&#xA;top:-50%;&#xD;&#xA;left:-50%;&#xD;&#xA;width:200%;&#xD;&#xA;height:200%;&#xD;&#xA;}&#xD;&#xA;#bg img {&#xD;&#xA;position:absolute;&#xD;&#xA;top:0;&#xD;&#xA;left:0;&#xD;&#xA;right:0;&#xD;&#xA;bottom:0;&#xD;&#xA;margin:auto;&#xD;&#xA;min-width:50%;&#xD;&#xA;min-height:50%;&#xD;&#xA;}"

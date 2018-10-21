@@ -1,0 +1,1 @@
+"typedef struct _GUID {&#xD;&#xA;DWORD Data1;&#xD;&#xA;WORD  Data2;&#xD;&#xA;WORD  Data3;&#xD;&#xA;BYTE  Data4[8];&#xD;&#xA;} GUID;"

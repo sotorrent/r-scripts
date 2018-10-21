@@ -1,0 +1,1 @@
+"<dependency>&#xD;&#xA;<groupId>org.springframework</groupId>&#xD;&#xA;<artifactId>spring-context</artifactId>&#xD;&#xA;<version>${spring.version}</version>&#xD;&#xA;</dependency>"

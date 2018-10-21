@@ -1,0 +1,1 @@
+"    MIDDLEWARE_CLASSES = (&#xD;&#xA;#~ 'django.middleware.common.CommonMiddleware',&#xD;&#xA;'django.contrib.sessions.middleware.SessionMiddleware',&#xD;&#xA;#~ 'django.middleware.csrf.CsrfViewMiddleware',&#xD;&#xA;#~ 'django.contrib.auth.middleware.AuthenticationMiddleware',&#xD;&#xA;#~ 'django.contrib.messages.middleware.MessageMiddleware',&#xD;&#xA;)"

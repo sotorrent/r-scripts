@@ -1,0 +1,1 @@
+"		$( """"#birds"""" ).autocomplete({&#xD;&#xA;source: """"search.php"""",&#xD;&#xA;minLength: 2,&#xD;&#xA;select: function( event, ui ) {&#xD;&#xA;log( ui.item ?&#xD;&#xA;""""Selected: """" + ui.item.value + """" aka """" + ui.item.id :&#xD;&#xA;""""Nothing selected, input was """" + this.value );&#xD;&#xA;}&#xD;&#xA;});"

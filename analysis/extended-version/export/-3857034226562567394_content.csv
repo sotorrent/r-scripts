@@ -1,0 +1,2 @@
+"Content"
+"		@Override&#xD;&#xA;		public boolean onOptionsItemSelected(MenuItem item) {&#xD;&#xA;			switch (item.getItemId()) {&#xD;&#xA;			case android.R.id.home:&#xD;&#xA;				finish();&#xD;&#xA;				return true;&#xD;&#xA;			}&#xD;&#xA;			return super.onOptionsItemSelected(item);&#xD;&#xA;		}"

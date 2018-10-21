@@ -1,0 +1,1 @@
+"        app.post('/login',&#xD;&#xA;passport.authenticate('local'),function(req, res) {&#xD;&#xA;// If this function gets called, authentication was successful.&#xD;&#xA;// `req.user` contains the authenticated user.&#xD;&#xA;res.redirect('/users/' + req.user.username);&#xD;&#xA;});"

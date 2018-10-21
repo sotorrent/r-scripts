@@ -1,0 +1,1 @@
+"        from sys import argv&#xD;&#xA;script, filename = argv&#xD;&#xA;txt = open(filename)&#xD;&#xA;print """"Here's your file %r:"""" % filename&#xD;&#xA;print txt.read()&#xD;&#xA;print """"Type the filename again:""""&#xD;&#xA;file_again = raw_input(""""> """")&#xD;&#xA;txt_again = open(file_again)&#xD;&#xA;print txt_again.read()"

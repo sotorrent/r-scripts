@@ -1,0 +1,1 @@
+"#feedback { font-size: 1.4em; }&#xD;&#xA;#selectable .ui-selecting { background: #FECA40; }&#xD;&#xA;#selectable .ui-selected { background: #F39814; color: white; }&#xD;&#xA;#selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }&#xD;&#xA;#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }"

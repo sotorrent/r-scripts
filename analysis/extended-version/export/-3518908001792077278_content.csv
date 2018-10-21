@@ -1,0 +1,1 @@
+"			<script type=""""text/javascript"""">&#xD;&#xA;function stopRKey(evt) {&#xD;&#xA;var evt = (evt) ? evt : ((event) ? event : null);&#xD;&#xA;var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);&#xD;&#xA;if ((evt.keyCode == 13) && (node.type==""""text""""))  {return false;}&#xD;&#xA;}&#xD;&#xA;document.onkeypress = stopRKey;&#xD;&#xA;</script>"

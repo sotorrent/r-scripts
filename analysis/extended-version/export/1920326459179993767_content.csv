@@ -1,0 +1,1 @@
+"      protected function create(array $data)&#xD;&#xA;{&#xD;&#xA;return User::create([&#xD;&#xA;'name' => $data['name'],&#xD;&#xA;'email' => $data['email'],&#xD;&#xA;'password' => bcrypt($data['password']),&#xD;&#xA;]);&#xD;&#xA;}"

@@ -1,0 +1,1 @@
+"function isScrolledIntoView(elem)&#xD;&#xA;{&#xD;&#xA;var docViewTop = $(window).scrollTop();&#xD;&#xA;var docViewBottom = docViewTop + $(window).height();&#xD;&#xA;var elemTop = $(elem).offset().top;&#xD;&#xA;var elemBottom = elemTop + $(elem).height();&#xD;&#xA;return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));&#xD;&#xA;}"

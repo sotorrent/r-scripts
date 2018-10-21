@@ -1,0 +1,1 @@
+"SELECT *&#xD;&#xA;FROM information_schema.COLUMNS&#xD;&#xA;WHERE&#xD;&#xA;TABLE_SCHEMA = 'db_name'&#xD;&#xA;AND TABLE_NAME = 'table_name'&#xD;&#xA;AND COLUMN_NAME = 'column_name'"

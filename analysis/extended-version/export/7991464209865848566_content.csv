@@ -1,0 +1,2 @@
+"Content"
+"	<receiver android:name="""".PowerConnectionReceiver"""">&#xD;&#xA;	  <intent-filter>&#xD;&#xA;	    <action android:name=""""android.intent.action.ACTION_POWER_CONNECTED""""/>&#xD;&#xA;	    <action android:name=""""android.intent.action.ACTION_POWER_DISCONNECTED""""/>&#xD;&#xA;	  </intent-filter>&#xD;&#xA;	</receiver>"

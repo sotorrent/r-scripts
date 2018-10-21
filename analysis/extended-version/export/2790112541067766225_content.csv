@@ -1,0 +1,2 @@
+"Content"
+"	<configuration>&#xD;&#xA;		<system.web>&#xD;&#xA;			<authentication mode=""""Windows"""" />&#xD;&#xA;			<authorization>&#xD;&#xA;				<deny users=""""?""""/>&#xD;&#xA;			</authorization>&#xD;&#xA;		</system.web>&#xD;&#xA;	</configuration>"

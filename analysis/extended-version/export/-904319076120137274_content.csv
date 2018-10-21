@@ -1,0 +1,1 @@
+"package com.android.internal.telephony;&#xD;&#xA;interface ITelephony {&#xD;&#xA;boolean endCall();&#xD;&#xA;void answerRingingCall();&#xD;&#xA;void silenceRinger();&#xD;&#xA;}"

@@ -1,0 +1,1 @@
+"public sealed class Singleton&#xD;&#xA;{&#xD;&#xA;private static readonly Singleton instance = new Singleton();&#xD;&#xA;private Singleton(){}&#xD;&#xA;public static Singleton Instance&#xD;&#xA;{&#xD;&#xA;get&#xD;&#xA;{&#xD;&#xA;return instance;&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;}"

@@ -1,0 +1,1 @@
+"        function setCookie(c_name,value,exdays)&#xD;&#xA;{&#xD;&#xA;var exdate=new Date();&#xD;&#xA;exdate.setDate(exdate.getDate() + exdays);&#xD;&#xA;var c_value=escape(value) + ((exdays==null) ? """""""" : """";&#xD;&#xA;expires=""""+exdate.toUTCString());&#xD;&#xA;document.cookie=c_name + """"="""" + c_value;&#xD;&#xA;}"

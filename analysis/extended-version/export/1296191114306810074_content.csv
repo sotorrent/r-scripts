@@ -1,0 +1,1 @@
+"        from flask import Flask&#xD;&#xA;app = Flask(__name__)&#xD;&#xA;@app.route(""""/"""")&#xD;&#xA;def hello():&#xD;&#xA;return """"Hello World!""""&#xD;&#xA;if __name__ == """"__main__"""":&#xD;&#xA;app.run()"

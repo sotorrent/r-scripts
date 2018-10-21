@@ -1,0 +1,1 @@
+"    <receiver android:name=""""com.example.MyBroadcastReceiver"""">&#xD;&#xA;<intent-filter>&#xD;&#xA;<action android:name=""""android.intent.action.BOOT_COMPLETED"""" />&#xD;&#xA;</intent-filter>&#xD;&#xA;</receiver>"

@@ -1,0 +1,1 @@
+"    from multiprocessing import Process, Queue&#xD;&#xA;def f(q):&#xD;&#xA;q.put([42, None, 'hello'])&#xD;&#xA;if __name__ == '__main__':&#xD;&#xA;q = Queue()&#xD;&#xA;p = Process(target=f, args=(q,))&#xD;&#xA;p.start()&#xD;&#xA;print q.get()    # prints """"[42, None, 'hello']""""&#xD;&#xA;p.join()"

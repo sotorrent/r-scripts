@@ -1,0 +1,1 @@
+"	public String getRealPathFromURI(Uri contentUri) {&#xD;&#xA;String[] proj = { MediaStore.Images.Media.DATA };&#xD;&#xA;Cursor cursor = managedQuery(contentUri, proj, null, null, null);&#xD;&#xA;int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);&#xD;&#xA;cursor.moveToFirst();&#xD;&#xA;return cursor.getString(column_index);&#xD;&#xA;}"

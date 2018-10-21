@@ -1,0 +1,2 @@
+"Content"
+"     <system.webServer>&#xD;&#xA;        <modules>&#xD;&#xA;            <remove name=""""WebDAVModule"""" />&#xD;&#xA;        </modules>&#xD;&#xA;        <handlers>&#xD;&#xA;            <remove name=""""WebDAV"""" />&#xD;&#xA;        </handlers>&#xD;&#xA;    </system.webServer>"

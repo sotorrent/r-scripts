@@ -1,0 +1,1 @@
+"	@Configuration&#xD;&#xA;@ComponentScan&#xD;&#xA;@EnableAutoConfiguration&#xD;&#xA;public class Application {&#xD;&#xA;public static void main(String[] args) {&#xD;&#xA;SpringApplication.run(Application.class, args);&#xD;&#xA;}&#xD;&#xA;}"

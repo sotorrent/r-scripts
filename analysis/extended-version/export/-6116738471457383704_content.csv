@@ -1,0 +1,1 @@
+"class UsersController < ApplicationController&#xD;&#xA;.&#xD;&#xA;.&#xD;&#xA;.&#xD;&#xA;def new&#xD;&#xA;@user = User.new&#xD;&#xA;end&#xD;&#xA;.&#xD;&#xA;.&#xD;&#xA;.&#xD;&#xA;end"

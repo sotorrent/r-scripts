@@ -1,0 +1,1 @@
+"    spinner.setOnItemSelectedListener(new OnItemSelectedListener() {&#xD;&#xA;@Override&#xD;&#xA;public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {&#xD;&#xA;// your code here&#xD;&#xA;}&#xD;&#xA;@Override&#xD;&#xA;public void onNothingSelected(AdapterView<?> parentView) {&#xD;&#xA;// your code here&#xD;&#xA;}&#xD;&#xA;});"

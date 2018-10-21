@@ -1,0 +1,1 @@
+"Thread thread = new Thread(new Runnable(){&#xD;&#xA;@Override&#xD;&#xA;public void run() {&#xD;&#xA;try {&#xD;&#xA;//Your code goes here&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;e.printStackTrace();&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;});&#xD;&#xA;thread.start();"

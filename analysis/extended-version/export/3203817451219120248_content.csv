@@ -1,0 +1,1 @@
+"	<bean id=""""viewResolver"""" class=""""org.springframework.web.servlet.view.UrlBasedViewResolver"""">&#xD;&#xA;<property name=""""viewClass"""" value=""""org.springframework.web.servlet.view.JstlView"""" />&#xD;&#xA;<property name=""""prefix"""" value=""""/WEB-INF/jsp/"""" />&#xD;&#xA;<property name=""""suffix"""" value="""".jsp"""" />&#xD;&#xA;</bean>"

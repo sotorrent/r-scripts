@@ -1,0 +1,1 @@
+"@Override&#xD;&#xA;public void onStart() {&#xD;&#xA;super.onStart();&#xD;&#xA;EventBus.getDefault().register(this);&#xD;&#xA;}&#xD;&#xA;@Override&#xD;&#xA;public void onStop() {&#xD;&#xA;super.onStop();&#xD;&#xA;EventBus.getDefault().unregister(this);&#xD;&#xA;}"

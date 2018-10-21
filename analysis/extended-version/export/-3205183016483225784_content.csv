@@ -1,0 +1,1 @@
+"- (BOOL)shouldAutorotate&#xD;&#xA;{&#xD;&#xA;return NO;&#xD;&#xA;}&#xD;&#xA;- (NSUInteger)supportedInterfaceOrientations&#xD;&#xA;{&#xD;&#xA;return UIInterfaceOrientationMaskPortrait;&#xD;&#xA;}&#xD;&#xA;- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation&#xD;&#xA;{&#xD;&#xA;return UIInterfaceOrientationPortrait;&#xD;&#xA;}"

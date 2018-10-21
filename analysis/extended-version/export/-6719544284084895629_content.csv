@@ -1,0 +1,1 @@
+"     - (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {&#xD;&#xA;UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);&#xD;&#xA;[image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];&#xD;&#xA;UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();&#xD;&#xA;UIGraphicsEndImageContext();&#xD;&#xA;return newImage;&#xD;&#xA;}"

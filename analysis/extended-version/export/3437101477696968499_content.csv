@@ -1,0 +1,1 @@
+"        public Uri getImageUri(Context inContext, Bitmap inImage) {&#xD;&#xA;ByteArrayOutputStream bytes = new ByteArrayOutputStream();&#xD;&#xA;inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);&#xD;&#xA;String path = Images.Media.insertImage(inContext.getContentResolver(),&#xD;&#xA;inImage, """"Title"""", null);&#xD;&#xA;return Uri.parse(path);&#xD;&#xA;} "

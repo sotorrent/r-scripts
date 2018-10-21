@@ -1,0 +1,1 @@
+"    Intent shareIntent = new Intent();&#xD;&#xA;shareIntent.setAction(Intent.ACTION_SEND);&#xD;&#xA;shareIntent.putExtra(Intent.EXTRA_STREAM, uriToImage);&#xD;&#xA;shareIntent.setType(""""image/jpeg"""");&#xD;&#xA;startActivity(Intent.createChooser(shareIntent,    getResources().getText(R.string.send_to)));"

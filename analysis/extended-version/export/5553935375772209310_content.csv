@@ -1,0 +1,1 @@
+"public class SynchronizedCounter {&#xD;&#xA;private int c = 0;&#xD;&#xA;public synchronized void increment() {&#xD;&#xA;c++;&#xD;&#xA;}&#xD;&#xA;public synchronized void decrement() {&#xD;&#xA;c--;&#xD;&#xA;}&#xD;&#xA;public synchronized int value() {&#xD;&#xA;return c;&#xD;&#xA;}&#xD;&#xA;}"

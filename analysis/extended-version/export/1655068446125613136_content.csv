@@ -1,0 +1,1 @@
+"	 <?php&#xD;&#xA;$cache_expire = 60*60*24*365;&#xD;&#xA;header(""""Pragma: public"""");&#xD;&#xA;header(""""Cache-Control: max-age="""".$cache_expire);&#xD;&#xA;header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$cache_expire) . ' GMT');&#xD;&#xA;?>&#xD;&#xA;<script src=""""//connect.facebook.net/en_US/all.js""""></script>"

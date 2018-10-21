@@ -1,0 +1,1 @@
+"	@Override&#xD;&#xA;public boolean onOptionsItemSelected(MenuItem item)&#xD;&#xA;{&#xD;&#xA;switch(item.getItemId())&#xD;&#xA;{&#xD;&#xA;case android.R.id.home:&#xD;&#xA;NavUtils.navigateUpFromSameTask(this);&#xD;&#xA;return true;&#xD;&#xA;}&#xD;&#xA;return super.onOptionsItemSelected(item);&#xD;&#xA;}"

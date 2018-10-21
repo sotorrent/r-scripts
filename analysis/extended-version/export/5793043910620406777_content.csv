@@ -1,0 +1,1 @@
+"     function httpGet(theUrl)&#xD;&#xA;{&#xD;&#xA;var xmlHttp = null;&#xD;&#xA;xmlHttp = new XMLHttpRequest();&#xD;&#xA;xmlHttp.open( """"GET"""", theUrl, false );&#xD;&#xA;xmlHttp.send( null );&#xD;&#xA;return xmlHttp.responseText;&#xD;&#xA;}"

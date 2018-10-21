@@ -1,0 +1,2 @@
+"Content"
+"	body * {&#xD;&#xA;    	-webkit-touch-callout: none;&#xD;&#xA;    	-webkit-user-select: none;&#xD;&#xA;    	-khtml-user-select: none;&#xD;&#xA;    	-moz-user-select: none;&#xD;&#xA;    	-ms-user-select: none;&#xD;&#xA;    	user-select: none;&#xD;&#xA;	}"

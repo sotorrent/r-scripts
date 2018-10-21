@@ -1,0 +1,1 @@
+"public int hashCode() {&#xD;&#xA;int h = hash;&#xD;&#xA;if (h == 0 && value.length > 0) {&#xD;&#xA;char val[] = value;&#xD;&#xA;for (int i = 0; i < value.length; i++) {&#xD;&#xA;h = 31 * h + val[i];&#xD;&#xA;}&#xD;&#xA;hash = h;&#xD;&#xA;}&#xD;&#xA;return h;&#xD;&#xA;}"

@@ -1,0 +1,1 @@
+"        public class MyReceiver extends BroadcastReceiver&#xD;&#xA;{&#xD;&#xA;@Override&#xD;&#xA;public void onReceive(Context context, Intent intent)&#xD;&#xA;{&#xD;&#xA;Intent service1 = new Intent(context, MyAlarmService.class);&#xD;&#xA;context.startService(service1);&#xD;&#xA;}&#xD;&#xA;}"

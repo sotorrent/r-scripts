@@ -1,0 +1,2 @@
+"Content"
+"     <configuration>&#xD;&#xA;        <system.webServer>&#xD;&#xA;            <httpProtocol>&#xD;&#xA;              <customHeaders>&#xD;&#xA;                <add name=""""Access-Control-Allow-Origin"""" value=""""*"""" />&#xD;&#xA;              </customHeaders>&#xD;&#xA;           </httpProtocol>&#xD;&#xA;       </system.webServer>&#xD;&#xA;    </configuration>"

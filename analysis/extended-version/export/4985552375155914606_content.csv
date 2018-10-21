@@ -1,0 +1,2 @@
+"Content"
+"    sp_configure 'show advanced options', 1;  &#xD;&#xA;    GO  &#xD;&#xA;    RECONFIGURE;  &#xD;&#xA;    GO  &#xD;&#xA;    sp_configure 'Ole Automation Procedures', 1;  &#xD;&#xA;    GO  &#xD;&#xA;    RECONFIGURE;  &#xD;&#xA;    GO"

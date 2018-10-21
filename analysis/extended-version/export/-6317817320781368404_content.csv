@@ -1,0 +1,2 @@
+"Content"
+"<jsp-config>&#xD;&#xA;		<jsp-property-group>&#xD;&#xA;			<url-pattern>*.jsp</url-pattern>&#xD;&#xA;			<scripting-invalid>true</scripting-invalid>&#xD;&#xA;		</jsp-property-group>&#xD;&#xA;	</jsp-config>"

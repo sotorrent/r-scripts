@@ -1,0 +1,1 @@
+"        - (NSString *)GetUUID&#xD;&#xA;{&#xD;&#xA;CFUUIDRef theUUID = CFUUIDCreate(NULL);&#xD;&#xA;CFStringRef string = CFUUIDCreateString(NULL, theUUID);&#xD;&#xA;CFRelease(theUUID);&#xD;&#xA;return [(NSString *)string autorelease];&#xD;&#xA;}"

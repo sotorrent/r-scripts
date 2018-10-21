@@ -1,0 +1,1 @@
+"    $stmt = $dbConnection->prepare('SELECT * FROM employees WHERE name = ?');&#xD;&#xA;$stmt->bind_param('s', $name);&#xD;&#xA;$stmt->execute();&#xD;&#xA;$result = $stmt->get_result();&#xD;&#xA;while ($row = $result->fetch_assoc()) {&#xD;&#xA;// do something with $row&#xD;&#xA;}"

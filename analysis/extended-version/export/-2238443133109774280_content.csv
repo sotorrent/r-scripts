@@ -1,0 +1,1 @@
+"android {&#xD;&#xA;...&#xD;&#xA;defaultConfig {&#xD;&#xA;...&#xD;&#xA;jackOptions {&#xD;&#xA;enabled true&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;compileOptions {&#xD;&#xA;sourceCompatibility JavaVersion.VERSION_1_8&#xD;&#xA;targetCompatibility JavaVersion.VERSION_1_8&#xD;&#xA;}&#xD;&#xA;}"

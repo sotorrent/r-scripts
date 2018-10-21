@@ -1,0 +1,1 @@
+"          <android.support.v7.widget.Toolbar&#xD;&#xA;android:id=""""@+id/toolbar""""&#xD;&#xA;android:layout_width=""""match_parent""""&#xD;&#xA;android:layout_height=""""?attr/actionBarSize""""&#xD;&#xA;android:background=""""?attr/colorPrimary""""&#xD;&#xA;app:popupTheme=""""@style/AppTheme.PopupOverlay"""" />"

@@ -1,0 +1,1 @@
+"	<?php&#xD;&#xA;try {&#xD;&#xA;$dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);&#xD;&#xA;foreach($dbh->query('SELECT * from FOO') as $row) {&#xD;&#xA;print_r($row);&#xD;&#xA;}&#xD;&#xA;$dbh = null;&#xD;&#xA;} catch (PDOException $e) {&#xD;&#xA;print """"Error!: """" . $e->getMessage() . """"<br/>"""";&#xD;&#xA;die();&#xD;&#xA;}&#xD;&#xA;?>"

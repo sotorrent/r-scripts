@@ -1,0 +1,14 @@
+"Url","PostCount"
+"http://developer.android.com/reference/android/os/Looper.html",10
+"https://developer.android.com/reference/android/view/View.html#postDelayed",2
+"https://developer.android.com/reference/android/os/Looper.html",2
+"http://developer.android.com/reference/android/os/Handler.html#postDelayed%28java.lang.Runnable,%20long%29",1
+"https://developer.android.com/reference/android/view/View.html#post(java.lang.Runnable)",1
+"http://developer.android.com/reference/android/os/HandlerThread.html",1
+"http://developer.android.com/intl/de/reference/android/os/Looper.html",1
+"https://developer.android.com/reference/android/os/Handler.html",1
+"https://developer.android.com/reference/android/os/Message.html",1
+"http://developer.android.com/guide/components/processes-and-threads.html#Threads",1
+"https://developer.android.com/reference/android/app/Activity.html#runOnUiThread(java.lang.Runnable)",1
+"http://developer.android.com/intl/de/reference/android/os/Handler.html",1
+"http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/ScheduledExecutorService.html",1

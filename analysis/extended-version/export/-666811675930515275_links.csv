@@ -1,0 +1,10 @@
+"Url","PostCount"
+"https://s3-eu-west-1.amazonaws.com/my-bucket/some-file.jpg",2
+"https://my-bucket.s3.amazonaws.com/some-file.jpg",2
+"https://github.com/waynehoover/s3_direct_upload",1
+"https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html",1
+"http://www.blitztheory.com/direct-upload-with-s3_direct_upload/",1
+"http://blog.littleblimp.com/post/53942611764/direct-uploads-to-s3-with-rails-paperclip-and",1
+"http://blog.fineuploader.com/2014/01/15/uploads-without-any-server-code/",1
+"https://reactjs.org/",1
+"https://gist.github.com/bnd5k/352b7abde8d472f11872",1

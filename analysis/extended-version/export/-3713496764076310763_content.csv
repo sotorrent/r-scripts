@@ -1,0 +1,1 @@
+"	@Transactional&#xD;&#xA;public <S extends T> S save(S entity) {&#xD;&#xA;if (entityInformation.isNew(entity)) {&#xD;&#xA;em.persist(entity);&#xD;&#xA;return entity;&#xD;&#xA;} else {&#xD;&#xA;return em.merge(entity);&#xD;&#xA;}&#xD;&#xA;}"

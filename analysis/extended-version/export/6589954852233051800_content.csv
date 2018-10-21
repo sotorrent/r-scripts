@@ -1,0 +1,1 @@
+"        $.ajax({&#xD;&#xA;type: """"POST"""",&#xD;&#xA;url: url,&#xD;&#xA;data: data,&#xD;&#xA;success: success,&#xD;&#xA;dataType: dataType&#xD;&#xA;});"

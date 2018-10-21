@@ -1,0 +1,1 @@
+"		<dependency>&#xD;&#xA;<groupId>org.springframework.boot</groupId>&#xD;&#xA;<artifactId>spring-boot-starter-tomcat</artifactId>&#xD;&#xA;<!--<scope>provided</scope>-->&#xD;&#xA;</dependency>"

@@ -1,0 +1,2 @@
+"Content"
+"	<bean id=""""jacksonMessageConverter"""" class=""""org.springframework.http.converter.json.MappingJacksonHttpMessageConverter""""></bean>&#xD;&#xA;	 <bean class=""""org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"""">&#xD;&#xA;	<property name=""""messageConverters"""">&#xD;&#xA;	  <list>&#xD;&#xA;		<ref bean=""""jacksonMessageConverter""""/>&#xD;&#xA;	  </list>&#xD;&#xA;	</property>&#xD;&#xA;	</bean>"

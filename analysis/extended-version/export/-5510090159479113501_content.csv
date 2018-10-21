@@ -1,0 +1,1 @@
+"         String newString;&#xD;&#xA;if (savedInstanceState == null) {&#xD;&#xA;Bundle extras = getIntent().getExtras();&#xD;&#xA;if(extras == null) {&#xD;&#xA;newString= null;&#xD;&#xA;} else {&#xD;&#xA;newString= extras.getString(""""STRING_I_NEED"""");&#xD;&#xA;}&#xD;&#xA;} else {&#xD;&#xA;newString= (String) savedInstanceState.getSerializable(""""STRING_I_NEED"""");"

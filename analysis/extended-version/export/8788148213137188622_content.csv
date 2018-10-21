@@ -1,0 +1,1 @@
+"        auto && __range = range-init;&#xD;&#xA;for ( auto __begin = begin-expr,&#xD;&#xA;__end = end-expr;&#xD;&#xA;__begin != __end;&#xD;&#xA;++__begin ) {&#xD;&#xA;for-range-declaration = *__begin;&#xD;&#xA;statement&#xD;&#xA;}&#xD;&#xA;}"

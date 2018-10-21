@@ -1,0 +1,1 @@
+"	<application>&#xD;&#xA;<action-listener>org.primefaces.application.DialogActionListener</action-listener>&#xD;&#xA;<navigation-handler>org.primefaces.application.DialogNavigationHandler</navigation-handler>&#xD;&#xA;<view-handler>org.primefaces.application.DialogViewHandler</view-handler>&#xD;&#xA;</application>"

@@ -1,0 +1,1 @@
+"	protected void Application_Start()&#xD;&#xA;{&#xD;&#xA;AreaRegistration.RegisterAllAreas();&#xD;&#xA;FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);&#xD;&#xA;RouteConfig.RegisterRoutes(RouteTable.Routes);&#xD;&#xA;BundleConfig.RegisterBundles(BundleTable.Bundles);&#xD;&#xA;}"

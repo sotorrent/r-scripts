@@ -1,0 +1,1 @@
+"        <?php $file = $_GET['file'];&#xD;&#xA;header (""""Content-type: octet/stream""""); \&#xD;&#xA;header (""""Content-disposition: attachment; filename="""".$file."""";"""");&#xD;&#xA;header (""""Content-Length: """".filesize($file)); readfile($file); exit;&#xD;&#xA;?>"

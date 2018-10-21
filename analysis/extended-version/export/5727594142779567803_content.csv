@@ -1,0 +1,1 @@
+"	{&#xD;&#xA;auto && __range = range_expression ;&#xD;&#xA;auto __begin = begin_expr ;&#xD;&#xA;auto __end = end_expr ;&#xD;&#xA;for ( ; __begin != __end; ++__begin) {&#xD;&#xA;range_declaration = *__begin;&#xD;&#xA;loop_statement&#xD;&#xA;}&#xD;&#xA;}"

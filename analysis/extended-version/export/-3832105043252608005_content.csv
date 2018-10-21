@@ -1,0 +1,1 @@
+"        <intent-filter>&#xD;&#xA;<action android:name=""""android.nfc.action.TECH_DISCOVERED""""/>&#xD;&#xA;</intent-filter>&#xD;&#xA;<meta-data android:name=""""android.nfc.action.TECH_DISCOVERED""""&#xD;&#xA;android:resource=""""@xml/nfc_tech_filter"""" />"

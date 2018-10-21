@@ -1,0 +1,1 @@
+"        <Directory />&#xD;&#xA;Options FollowSymLinks&#xD;&#xA;AllowOverride All#&#xD;&#xA;Order deny,allow#&#xD;&#xA;Deny from all&#xD;&#xA;</Directory>"

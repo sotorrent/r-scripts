@@ -1,0 +1,1 @@
+"function printDiv(divName) {&#xD;&#xA;var printContents = document.getElementById(divName).innerHTML;&#xD;&#xA;var originalContents = document.body.innerHTML;&#xD;&#xA;document.body.innerHTML = printContents;&#xD;&#xA;window.print();&#xD;&#xA;document.body.innerHTML = originalContents;&#xD;&#xA;}"

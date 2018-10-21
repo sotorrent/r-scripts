@@ -1,0 +1,1 @@
+"     INSERT INTO example (example_id, name, value, other_value)&#xD;&#xA;VALUES&#xD;&#xA;(100, 'Name 1', 'Value 1', 'Other 1'),&#xD;&#xA;(101, 'Name 2', 'Value 2', 'Other 2'),&#xD;&#xA;(102, 'Name 3', 'Value 3', 'Other 3'),&#xD;&#xA;(103, 'Name 4', 'Value 4', 'Other 4');"

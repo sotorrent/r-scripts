@@ -1,0 +1,1 @@
+"@Override&#xD;&#xA;public void onBackPressed() {&#xD;&#xA;Intent intent = new Intent(Intent.ACTION_MAIN);&#xD;&#xA;intent.addCategory(Intent.CATEGORY_HOME);&#xD;&#xA;intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);&#xD;&#xA;startActivity(intent);&#xD;&#xA;}"

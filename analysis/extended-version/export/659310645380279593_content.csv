@@ -1,0 +1,1 @@
+"	RewriteEngine On&#xD;&#xA;# If an existing asset or directory is requested go to it as it is&#xD;&#xA;RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]&#xD;&#xA;RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d&#xD;&#xA;RewriteRule ^ - [L]&#xD;&#xA;# If the requested resource doesn't exist, use index.html&#xD;&#xA;RewriteRule ^ /index.html"

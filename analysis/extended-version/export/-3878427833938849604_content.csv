@@ -1,0 +1,1 @@
+"/* Large desktop */&#xD;&#xA;@media (min-width: 1200px) { ... }&#xD;&#xA;/* Portrait tablet to landscape and desktop */&#xD;&#xA;@media (min-width: 768px) and (max-width: 979px) { ... }&#xD;&#xA;/* Landscape phone to portrait tablet */&#xD;&#xA;@media (max-width: 767px) { ... }&#xD;&#xA;/* Landscape phones and down */&#xD;&#xA;@media (max-width: 480px) { ... }"

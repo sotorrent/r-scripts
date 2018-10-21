@@ -1,0 +1,1 @@
+"        <ListBox.ItemContainerStyle>&#xD;&#xA;<Style TargetType=""""ListBoxItem"""">&#xD;&#xA;<Setter Property=""""HorizontalContentAlignment"""" Value=""""Stretch"""" />&#xD;&#xA;</Style>&#xD;&#xA;</ListBox.ItemContainerStyle>"

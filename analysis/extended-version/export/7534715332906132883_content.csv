@@ -1,0 +1,1 @@
+"        <?php&#xD;&#xA;$array1 = array(""""a"""" => """"green"""", """"red"""", """"blue"""", """"red"""");&#xD;&#xA;$array2 = array(""""b"""" => """"green"""", """"yellow"""", """"red"""");&#xD;&#xA;$result = array_diff($array1, $array2);&#xD;&#xA;print_r($result);&#xD;&#xA;?>"

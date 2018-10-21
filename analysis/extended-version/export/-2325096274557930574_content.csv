@@ -1,0 +1,1 @@
+"        <html>&#xD;&#xA;<body>&#xD;&#xA;Welcome <?php echo $_POST[""""name""""]; ?><br>&#xD;&#xA;Your email address is: <?php echo $_POST[""""email""""]; ?>&#xD;&#xA;</body>&#xD;&#xA;</html>"

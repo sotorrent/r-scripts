@@ -1,0 +1,1 @@
+"    	<intent-filter>&#xD;&#xA;<action android:name=""""android.intent.action.SEND"""" />&#xD;&#xA;<category android:name=""""android.intent.category.DEFAULT"""" />&#xD;&#xA;<data android:mimeType=""""*/*"""" />&#xD;&#xA;</intent-filter>"

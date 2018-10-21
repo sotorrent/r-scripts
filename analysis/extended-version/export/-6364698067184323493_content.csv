@@ -1,0 +1,1 @@
+"      NSString * encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(&#xD;&#xA;NULL,&#xD;&#xA;(CFStringRef)unencodedString,&#xD;&#xA;NULL,&#xD;&#xA;(CFStringRef)@""""!*'();:@&=+$,/?%#[]"""",&#xD;&#xA;kCFStringEncodingUTF8 );"

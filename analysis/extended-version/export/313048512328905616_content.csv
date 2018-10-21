@@ -1,0 +1,1 @@
+"- (void)viewWillAppear:(BOOL)animated {&#xD;&#xA;[super viewWillAppear:animated];&#xD;&#xA;[self.navigationController setNavigationBarHidden:YES animated:YES];&#xD;&#xA;}&#xD;&#xA;- (void)viewWillDisappear:(BOOL)animated {&#xD;&#xA;[super viewWillDisappear:animated];&#xD;&#xA;[self.navigationController setNavigationBarHidden:NO animated:YES];&#xD;&#xA;}"

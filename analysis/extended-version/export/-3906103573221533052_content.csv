@@ -1,0 +1,1 @@
+"	<receiver android:name="""".SMSReceiver"""">&#xD;&#xA;<intent-filter>&#xD;&#xA;<action android:name=""""android.provider.Telephony.SMS_RECEIVED"""" />&#xD;&#xA;</intent-filter>&#xD;&#xA;</receiver>"

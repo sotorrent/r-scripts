@@ -1,0 +1,1 @@
+"	var io = require('socket.io').listen(80);&#xD;&#xA;io.sockets.on('connection', function (socket) {&#xD;&#xA;socket.emit('news', { hello: 'world' });&#xD;&#xA;socket.on('my other event', function (data) {&#xD;&#xA;console.log(data);&#xD;&#xA;});&#xD;&#xA;});"

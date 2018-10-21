@@ -1,0 +1,1 @@
+"     from sys import argv&#xD;&#xA;script, first, second, third = argv&#xD;&#xA;print (""""The script is called:"""", (script))&#xD;&#xA;print (""""Your first variable is:"""", (first))&#xD;&#xA;print (""""Your second variable is:"""", (second))&#xD;&#xA;print (""""Your third variable is:"""", (third))"

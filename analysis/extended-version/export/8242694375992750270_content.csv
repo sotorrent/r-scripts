@@ -1,0 +1,1 @@
+"@Configuration&#xD;&#xA;@EnableSwagger2&#xD;&#xA;public class SwaggerConfig {&#xD;&#xA;@Bean&#xD;&#xA;public Docket api() {&#xD;&#xA;return new Docket(DocumentationType.SWAGGER_2)&#xD;&#xA;.select()&#xD;&#xA;.apis(RequestHandlerSelectors.any())&#xD;&#xA;.paths(PathSelectors.any())&#xD;&#xA;.build();&#xD;&#xA;}"

@@ -1,0 +1,1 @@
+"				#import <UIKit/UIKit.h>&#xD;&#xA;int main(int argc, char *argv[])&#xD;&#xA;{&#xD;&#xA;NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];&#xD;&#xA;int retVal = UIApplicationMain(argc, argv, nil, nil);&#xD;&#xA;[pool release];&#xD;&#xA;return retVal;&#xD;&#xA;}"
