@@ -239,9 +239,9 @@ options(scipen=5) # prevent scientific notation
 gap.barplot(
   table(thread_count),
   xlim=c(1,6),
-  gap=c(80000, 190000),
+  gap=c(50000, 120000),
   xtics=seq(2, 5),
-  ytics=c(0, 25000, 50000, 200000),
+  ytics=c(0, 25000, 50000, 150000),
   col=c(gray_lighter, rep(gray_selected, 4)),
   main="Number non-trivial code blocks being present in multiple threads (n=215,746)",
   xlab="",
@@ -249,7 +249,7 @@ gap.barplot(
   xaxt="n"
 )
 # labels
-text(4, 20000, "16.9%", font=2)
+text(4, 15000, "16.9%", font=2)
 # axes
 axis(1, at=seq(2, 5, by=1), labels=c(seq(2, 4, by=1), "\u2265 5"))
 title(xlab="Number of threads", font.lab=3)
