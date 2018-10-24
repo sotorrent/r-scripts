@@ -1,2 +1,0 @@
-"Content"
-"        <img src=""""planets.gif"""" width=""""145"""" height=""""126"""" alt=""""Planets"""" usemap=""""#planetmap"""">&#xD;&#xA;    &#xD;&#xA;    <map name=""""planetmap"""">&#xD;&#xA;      <area shape=""""rect"""" coords=""""0,0,82,126"""" href=""""sun.htm"""" alt=""""Sun"""">&#xD;&#xA;      <area shape=""""circle"""" coords=""""90,58,3"""" href=""""mercur.htm"""" alt=""""Mercury"""">&#xD;&#xA;      <area shape=""""circle"""" coords=""""124,58,8"""" href=""""venus.htm"""" alt=""""Venus"""">&#xD;&#xA;    </map>"

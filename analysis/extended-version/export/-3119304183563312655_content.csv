@@ -1,2 +1,0 @@
-"Content"
-"AddOutputFilterByType DEFLATE text/plain&#xD;&#xA;    AddOutputFilterByType DEFLATE text/html&#xD;&#xA;    AddOutputFilterByType DEFLATE text/xml&#xD;&#xA;    AddOutputFilterByType DEFLATE text/css&#xD;&#xA;    AddOutputFilterByType DEFLATE application/xml&#xD;&#xA;    AddOutputFilterByType DEFLATE application/xhtml+xml&#xD;&#xA;    AddOutputFilterByType DEFLATE application/rss+xml&#xD;&#xA;    AddOutputFilterByType DEFLATE application/javascript&#xD;&#xA;    AddOutputFilterByType DEFLATE application/x-javascript"

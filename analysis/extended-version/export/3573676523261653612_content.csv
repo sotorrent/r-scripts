@@ -1,1 +1,0 @@
-"post_install do |installer|&#xD;&#xA;installer.pods_project.targets.each do |target|&#xD;&#xA;target.build_configurations.each do |config|&#xD;&#xA;config.build_settings['SWIFT_VERSION'] = '3.0'&#xD;&#xA;end&#xD;&#xA;end&#xD;&#xA;end"

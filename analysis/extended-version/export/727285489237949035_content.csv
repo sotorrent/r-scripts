@@ -1,2 +1,0 @@
-"Content"
-"	<html>&#xD;&#xA;	<head>&#xD;&#xA;		<title>PHP Test</title>&#xD;&#xA;	</head>&#xD;&#xA;	<body>&#xD;&#xA;		<?php echo '<p>Hello World</p>'; ?> &#xD;&#xA;	</body>&#xD;&#xA;	</html>"

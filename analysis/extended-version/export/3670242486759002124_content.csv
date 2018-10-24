@@ -1,2 +1,0 @@
-"Content"
-"	protected override CreateParams CreateParams&#xD;&#xA;	{&#xD;&#xA;		get&#xD;&#xA;		{&#xD;&#xA;			CreateParams cp = base.CreateParams;&#xD;&#xA;			cp.ExStyle |= 0x02000000;&#xD;&#xA;			return cp;&#xD;&#xA;		}&#xD;&#xA;	}"

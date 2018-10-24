@@ -1,2 +1,0 @@
-"Content"
-"MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL: myURL];&#xD;&#xA;        [player prepareToPlay];&#xD;&#xA;        [player.view setFrame: myView.bounds];  // player's frame must match parent's&#xD;&#xA;        [myView addSubview: player.view];&#xD;&#xA;        // ...&#xD;&#xA;        [player play];"

@@ -1,2 +1,0 @@
-"Content"
-"	function getRealIpAddr()&#xD;&#xA;	{&#xD;&#xA;	    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet&#xD;&#xA;	    {&#xD;&#xA;	      $ip=$_SERVER['HTTP_CLIENT_IP'];&#xD;&#xA;	    }&#xD;&#xA;	    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy&#xD;&#xA;	    {&#xD;&#xA;	      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];&#xD;&#xA;	    }&#xD;&#xA;	    else&#xD;&#xA;	    {&#xD;&#xA;	      $ip=$_SERVER['REMOTE_ADDR'];&#xD;&#xA;	    }&#xD;&#xA;	    return $ip;&#xD;&#xA;	}"

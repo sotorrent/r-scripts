@@ -1,2 +1,0 @@
-"Content"
-"	<configuration> &#xD;&#xA;		<system.webServer>&#xD;&#xA;			<modules>&#xD;&#xA;			  <remove name=""""Session"""" />&#xD;&#xA;			  <add name=""""Session"""" type=""""System.Web.SessionState.SessionStateModule""""/>&#xD;&#xA;			</modules>   &#xD;&#xA;		</system.webServer> &#xD;&#xA;	</configuration>"

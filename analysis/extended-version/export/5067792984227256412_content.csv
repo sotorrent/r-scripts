@@ -1,2 +1,0 @@
-"Content"
-"       <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;      <selector xmlns:android=""""http://schemas.android.com/apk/res/android"""">&#xD;&#xA;      <item android:state_pressed=""""true"""" &#xD;&#xA;        android:drawable=""""@drawable/pressed"""" />&#xD;&#xA;      <item  android:state_focused=""""false"""" &#xD;&#xA;        android:drawable=""""@drawable/normal"""" />&#xD;&#xA;      </selector>"

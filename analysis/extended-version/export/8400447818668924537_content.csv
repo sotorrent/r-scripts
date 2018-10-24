@@ -1,1 +1,0 @@
-"		@Override&#xD;&#xA;public int getViewTypeCount() {&#xD;&#xA;return getCount();&#xD;&#xA;}&#xD;&#xA;@Override&#xD;&#xA;public int getItemViewType(int position) {&#xD;&#xA;return position;&#xD;&#xA;}"

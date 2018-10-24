@@ -1,2 +1,0 @@
-"Content"
-"    RewriteEngine On&#xD;&#xA;    # Some hosts may require you to use the `RewriteBase` directive.&#xD;&#xA;    # If you need to use the `RewriteBase` directive, it should be the&#xD;&#xA;    # absolute physical path to the directory that contains this htaccess file.&#xD;&#xA;    #&#xD;&#xA;    #RewriteBase /&#xD;&#xA;    &#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-f&#xD;&#xA;    RewriteRule ^ index.php [QSA,L]"

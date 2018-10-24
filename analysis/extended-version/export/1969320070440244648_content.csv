@@ -1,2 +1,0 @@
-"Content"
-"	<intent-filter>&#xD;&#xA;		<action android:name=""""android.intent.action.MAIN"""" />&#xD;&#xA;		<category android:name=""""android.intent.category.HOME"""" />&#xD;&#xA;		<category android:name=""""android.intent.category.DEFAULT"""" />&#xD;&#xA;		<category android:name=""""android.intent.category.LAUNCHER"""" />&#xD;&#xA;	</intent-filter>"

@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$stmt = $dbh->prepare(""""INSERT INTO REGISTRY (name, value) VALUES (:name, :value)"""");&#xD;&#xA;	$stmt->bindParam(':name', $name);&#xD;&#xA;	$stmt->bindParam(':value', $value);&#xD;&#xA;	// insert one row&#xD;&#xA;	$name = 'one';&#xD;&#xA;	$value = 1;&#xD;&#xA;	$stmt->execute();&#xD;&#xA;	// insert another row with different values&#xD;&#xA;	$name = 'two';&#xD;&#xA;	$value = 2;&#xD;&#xA;	$stmt->execute();&#xD;&#xA;	?>"

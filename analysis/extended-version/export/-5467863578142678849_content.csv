@@ -1,2 +1,0 @@
-"Content"
-"    ::-webkit-scrollbar {&#xD;&#xA;    	-webkit-appearance: none;&#xD;&#xA;    	width: 7px;&#xD;&#xA;    }&#xD;&#xA;    ::-webkit-scrollbar-thumb {&#xD;&#xA;    	border-radius: 4px;&#xD;&#xA;    	background-color: rgba(0,0,0,.5);&#xD;&#xA;    	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);&#xD;&#xA;    }"

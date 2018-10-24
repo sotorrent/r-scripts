@@ -1,2 +1,0 @@
-"Content"
-"     string json = @""""{&#xD;&#xA;      'Name': 'Bad Boys',&#xD;&#xA;      'ReleaseDate': '1995-4-7T00:00:00',&#xD;&#xA;      'Genres': [&#xD;&#xA;        'Action',&#xD;&#xA;        'Comedy'&#xD;&#xA;      ]&#xD;&#xA;    }"""";&#xD;&#xA;    &#xD;&#xA;    Movie m = JsonConvert.DeserializeObject<Movie>(json);&#xD;&#xA;    &#xD;&#xA;    string name = m.Name;&#xD;&#xA;    // Bad Boys"

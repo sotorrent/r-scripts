@@ -1,2 +1,0 @@
-"Content"
-"        function copyToClipboard(element) {&#xD;&#xA;        var $temp = $(""""<input>"""");&#xD;&#xA;        $(""""body"""").append($temp);&#xD;&#xA;        $temp.val($(element).text()).select();&#xD;&#xA;        document.execCommand(""""copy"""");&#xD;&#xA;        $temp.remove();&#xD;&#xA;        }"

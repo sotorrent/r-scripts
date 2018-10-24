@@ -1,2 +1,0 @@
-"Content"
-"      <entityFramework>&#xD;&#xA;        <defaultConnectionFactory type=""""System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework"""">&#xD;&#xA;          <parameters>&#xD;&#xA;            <parameter value=""""v11.0"""" />&#xD;&#xA;          </parameters>&#xD;&#xA;        </defaultConnectionFactory>&#xD;&#xA;      </entityFramework>"

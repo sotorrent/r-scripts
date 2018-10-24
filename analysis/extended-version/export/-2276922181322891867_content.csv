@@ -1,2 +1,0 @@
-"Content"
-"          /* Always set the map height explicitly to define the size of the div&#xD;&#xA;           * element that contains the map. */&#xD;&#xA;          #map {&#xD;&#xA;            height: 100%;&#xD;&#xA;          }&#xD;&#xA;          /* Optional: Makes the sample page fill the window. */&#xD;&#xA;          html, body {&#xD;&#xA;            height: 100%;&#xD;&#xA;            margin: 0;&#xD;&#xA;            padding: 0;&#xD;&#xA;          }"

@@ -1,1 +1,0 @@
-"	public void sendMessage (View view) {&#xD;&#xA;Intent intent = new Intent(this, DisplayMessageActivity.class);&#xD;&#xA;EditText editText = (EditText) findViewById(R.id.edit_message);&#xD;&#xA;String message = editText.getText().toString();&#xD;&#xA;intent.putExtra(EXTRA_MESSAGE, message);&#xD;&#xA;startActivity(intent);&#xD;&#xA;}"

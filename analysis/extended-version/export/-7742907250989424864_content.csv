@@ -1,2 +1,0 @@
-"Content"
-"            app.UseMvc(routes =>&#xD;&#xA;            {&#xD;&#xA;                routes.MapRoute(&#xD;&#xA;                    name: """"default"""",&#xD;&#xA;                    template: """"{controller=Home}/{action=Index}/{id?}"""");&#xD;&#xA;                routes.MapSpaFallbackRoute(&#xD;&#xA;                    name: """"spa-fallback"""",&#xD;&#xA;                    defaults: new { controller = """"Home"""", action = """"Index"""" });&#xD;&#xA;            });"

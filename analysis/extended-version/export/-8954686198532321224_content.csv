@@ -1,2 +1,0 @@
-"Content"
-"		private void SetText(string text)&#xD;&#xA;		{&#xD;&#xA;			// InvokeRequired required compares the thread ID of the&#xD;&#xA;			// calling thread to the thread ID of the creating thread.&#xD;&#xA;			// If these threads are different, it returns true.&#xD;&#xA;			if (this.textBox1.InvokeRequired)&#xD;&#xA;			{	&#xD;&#xA;				SetTextCallback d = new SetTextCallback(SetText);&#xD;&#xA;				this.Invoke(d, new object[] { text });&#xD;&#xA;			}&#xD;&#xA;			else&#xD;&#xA;			{&#xD;&#xA;				this.textBox1.Text = text;&#xD;&#xA;			}&#xD;&#xA;		}"

@@ -1,2 +1,0 @@
-"Content"
-"	function catch_that_image() {&#xD;&#xA;	  global $post, $posts;&#xD;&#xA;	  $first_img = '';&#xD;&#xA;	  ob_start();&#xD;&#xA;	  ob_end_clean();&#xD;&#xA;	  $output = preg_match_all('/<img.+src=[\'""""]([^\'""""]+)[\'""""].*>/i', $post->post_content, $matches);&#xD;&#xA;	  $first_img = $matches [1] [0];&#xD;&#xA;	  if(empty($first_img)){ //Defines a default image&#xD;&#xA;		$first_img = """"/images/default.jpg"""";&#xD;&#xA;	  }&#xD;&#xA;	  return $first_img;&#xD;&#xA;	}"

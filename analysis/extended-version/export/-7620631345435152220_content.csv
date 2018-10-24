@@ -1,2 +1,0 @@
-"Content"
-"    <li>&#xD;&#xA;    	<%= gravatar_for user, size: 52 %>&#xD;&#xA;    	<%= link_to user.name, user %>&#xD;&#xA;    	<% if current_user.admin? && !current_user?(user) %>&#xD;&#xA;		<%= link_to """"delete"""", user, method: delete,&#xD;&#xA;								data: {confirm: """"You sure?""""} %>&#xD;&#xA;								<% end %>&#xD;&#xA;    </li>"

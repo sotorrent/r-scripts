@@ -1,2 +1,0 @@
-"Content"
-"#&#xD;&#xA;    Listen 80&#xD;&#xA;    <IfModule ssl_module>&#xD;&#xA;    Listen 443&#xD;&#xA;    </IfModule>&#xD;&#xA;    <IfModule mod_gnutls.c>&#xD;&#xA;    Listen 443&#xD;&#xA;    </IfModule>&#xD;&#xA;    \#"

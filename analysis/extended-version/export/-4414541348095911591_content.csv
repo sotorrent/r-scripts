@@ -1,2 +1,0 @@
-"Content"
-"        function deleteAllCookies() {&#xD;&#xA;          var cookies = document.cookie.split("""";"""");&#xD;&#xA;    &#xD;&#xA;          for (var i = 0; i < cookies.length; i++) {&#xD;&#xA;        	var cookie = cookies[i];&#xD;&#xA;        	var eqPos = cookie.indexOf(""""="""");&#xD;&#xA;        	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;&#xD;&#xA;        	document.cookie = name + """"=;expires=Thu, 01 Jan 1970 00:00:00 GMT"""";&#xD;&#xA;          }&#xD;&#xA;        }"

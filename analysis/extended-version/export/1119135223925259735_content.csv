@@ -1,2 +1,0 @@
-"Content"
-"	<filter>&#xD;&#xA;	<filter-name>PrimeFaces FileUpload Filter</filter-name>&#xD;&#xA;		<filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>&#xD;&#xA;	</filter>&#xD;&#xA;	<filter-mapping>&#xD;&#xA;		<filter-name>PrimeFaces FileUpload Filter</filter-name>&#xD;&#xA;		<servlet-name>Faces Servlet</servlet-name>&#xD;&#xA;	</filter-mapping>"

@@ -1,2 +1,0 @@
-"Content"
-"	<style name=""""Theme.Transparent"""" parent=""""android:Theme"""">&#xD;&#xA;	    <item name=""""android:windowIsTranslucent"""">true</item>&#xD;&#xA;	    <item name=""""android:windowBackground"""">@android:color/transparent</item>&#xD;&#xA;	    <item name=""""android:windowContentOverlay"""">@null</item>&#xD;&#xA;	    <item name=""""android:windowNoTitle"""">true</item>&#xD;&#xA;	    <item name=""""android:windowIsFloating"""">true</item>&#xD;&#xA;	    <item name=""""android:backgroundDimEnabled"""">false</item>&#xD;&#xA;	</style>"

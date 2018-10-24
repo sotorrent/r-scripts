@@ -1,2 +1,0 @@
-"Content"
-"        <system.webServer>&#xD;&#xA;        <httpProtocol>&#xD;&#xA;          <customHeaders>&#xD;&#xA;            <add name=""""Access-Control-Allow-Origin"""" value=""""*"""" />&#xD;&#xA;            <add name=""""Access-Control-Allow-Headers"""" value=""""Content-Type"""" />&#xD;&#xA;            <add name=""""Access-Control-Allow-Methods"""" value=""""GET, POST, PUT, DELETE, OPTIONS"""" />&#xD;&#xA;          </customHeaders>&#xD;&#xA;        </httpProtocol>&#xD;&#xA;    </system.webServer>"

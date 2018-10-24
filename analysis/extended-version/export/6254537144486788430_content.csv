@@ -1,1 +1,0 @@
-"     public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {&#xD;&#xA;Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());&#xD;&#xA;Canvas canvas = new Canvas(bmOverlay);&#xD;&#xA;canvas.drawBitmap(bmp1, new Matrix(), null);&#xD;&#xA;canvas.drawBitmap(bmp2, 0, 0, null);&#xD;&#xA;return bmOverlay;&#xD;&#xA;}"

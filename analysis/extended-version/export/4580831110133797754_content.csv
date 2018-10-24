@@ -1,2 +1,0 @@
-"Content"
-"     version: '2'&#xD;&#xA;     services:&#xD;&#xA;       db:&#xD;&#xA;         image: postgres&#xD;&#xA;       web:&#xD;&#xA;         build: .&#xD;&#xA;         command: python manage.py runserver 0.0.0.0:8000&#xD;&#xA;         volumes:&#xD;&#xA;           - .:/code&#xD;&#xA;         ports:&#xD;&#xA;           - """"8000:8000""""&#xD;&#xA;         depends_on:&#xD;&#xA;           - db"

@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	// Create a stream&#xD;&#xA;	$opts = array(&#xD;&#xA;	  'http'=>array(&#xD;&#xA;		'method'=>""""GET"""",&#xD;&#xA;		'header'=>""""Accept-language: en\r\n"""" .&#xD;&#xA;				  """"Cookie: foo=bar\r\n""""&#xD;&#xA;	  )&#xD;&#xA;	);&#xD;&#xA;	$context = stream_context_create($opts);&#xD;&#xA;	// Open the file using the HTTP headers set above&#xD;&#xA;	$file = file_get_contents('http://www.example.com/', false, $context);&#xD;&#xA;	?>"

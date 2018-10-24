@@ -1,2 +1,0 @@
-"Content"
-"package com.geeklabs.map;&#xD;&#xA;    &#xD;&#xA;    import android.os.Bundle;&#xD;&#xA;    import android.app.Activity;&#xD;&#xA;    import android.view.Menu;&#xD;&#xA;    &#xD;&#xA;    public class MainActivity extends Activity {&#xD;&#xA;    &#xD;&#xA;    	@Override&#xD;&#xA;    	protected void onCreate(Bundle savedInstanceState) {&#xD;&#xA;    		super.onCreate(savedInstanceState);&#xD;&#xA;    		setContentView(R.layout.activity_main);&#xD;&#xA;    	}&#xD;&#xA;    &#xD;&#xA;    }&#xD;&#xA;"

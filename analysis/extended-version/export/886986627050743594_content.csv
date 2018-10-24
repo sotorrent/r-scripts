@@ -1,2 +1,0 @@
-"Content"
-"public static <T extends Comparable<? super T>> void sort(List<T> list) {&#xD;&#xA;         Object[] a = list.toArray();&#xD;&#xA;         Arrays.sort(a);&#xD;&#xA;         ListIterator<T> i = list.listIterator();&#xD;&#xA;         for (int j=0; j<a.length; j++) {&#xD;&#xA;             i.next();&#xD;&#xA;             i.set((T)a[j]);&#xD;&#xA;         }&#xD;&#xA;     }"

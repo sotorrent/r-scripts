@@ -1,2 +1,0 @@
-"Content"
-"    	$("""".scroll"""").click(function(event){&#xD;&#xA;         event.preventDefault();&#xD;&#xA;         //calculate destination place&#xD;&#xA;         var dest=0;&#xD;&#xA;         if($(this.hash).offset().top > $(document).height()-$(window).height()){&#xD;&#xA;              dest=$(document).height()-$(window).height();&#xD;&#xA;         }else{&#xD;&#xA;              dest=$(this.hash).offset().top;&#xD;&#xA;         }&#xD;&#xA;         //go to destination&#xD;&#xA;         $('html,body').animate({scrollTop:dest}, 1000,'swing');&#xD;&#xA;     });&#xD;&#xA; "

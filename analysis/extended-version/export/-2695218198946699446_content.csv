@@ -1,2 +1,0 @@
-"Content"
-"        <location path=""""Login.aspx"""">&#xD;&#xA;          <system.web>&#xD;&#xA;            <authorization>&#xD;&#xA;              <allow users=""""*"""" />&#xD;&#xA;            </authorization>&#xD;&#xA;          </system.web>&#xD;&#xA;        </location>"

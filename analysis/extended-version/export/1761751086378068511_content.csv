@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;	<shape&#xD;&#xA;		xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;		android:shape=""""oval"""">&#xD;&#xA;	   <solid &#xD;&#xA;		   android:color=""""#666666""""/>&#xD;&#xA;	   <size &#xD;&#xA;		   android:width=""""120dp""""&#xD;&#xA;		   android:height=""""120dp""""/>&#xD;&#xA;	</shape> "

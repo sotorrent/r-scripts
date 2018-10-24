@@ -1,2 +1,0 @@
-"Content"
-"      /* Extra small devices (phones, less than 768px) */&#xD;&#xA;      /* No media query since this is the default in Bootstrap */&#xD;&#xA;      /* Small devices (tablets, 768px and up) */&#xD;&#xA;      @media (min-width: @screen-sm-min) { ... }&#xD;&#xA;      /* Medium devices (desktops, 992px and up) */&#xD;&#xA;      @media (min-width: @screen-md-min) { ... }&#xD;&#xA;      /* Large devices (large desktops, 1200px and up) */&#xD;&#xA;      @media (min-width: @screen-lg-min) { ... }"

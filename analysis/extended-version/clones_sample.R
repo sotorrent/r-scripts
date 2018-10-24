@@ -14,13 +14,13 @@ library(sqldf)
 
 
 # read metadata
-clones_sample <- fread("data/CodeClonesSample.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones_sample <- fread("data/CodeClonesSample2.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 # prevent problems with SQLDF and integer64
 clones_sample$ContentNormalizedHash <- as.character(clones_sample$ContentNormalizedHash)
 
 hash_values <- unique(clones_sample$ContentNormalizedHash)
 length(hash_values)
-# 1584
+# 1014
 
 # write metadata for each cloned code block
 for (hash_value in hash_values) {
@@ -30,12 +30,12 @@ for (hash_value in hash_values) {
 
 
 # read content
-clones_sample_data <- fread("data/CodeClonesSampleData.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones_sample_data <- fread("data/CodeClonesSample2Data.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 clones_sample_data$ContentNormalizedHash <- as.character(clones_sample_data$ContentNormalizedHash)
 names(clones_sample_data) <- c("HashValue", "LineCount", "ThreadCount", "Content")
 
 nrow(clones_sample_data)
-# 1584
+# 1014
 
 # write content for each cloned code block
 for (hash_value in hash_values) {
@@ -48,15 +48,15 @@ write.table(clones_sample_data[order(-clones_sample_data$ThreadCount, -clones_sa
 
 
 # read SO links
-clones_so_links <- fread("data/CodeClonesSampleLinksSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones_so_links <- fread("data/CodeClonesSample2LinksSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 # prevent problems with SQLDF and integer64
 clones_so_links$ContentNormalizedHash <- as.character(clones_so_links$ContentNormalizedHash)
 
 nrow(clones_so_links)
-# 1907
+# 416
 
 length(unique(clones_so_links$ContentNormalizedHash))
-# 848
+# 252
 
 # write SO links for each cloned code block
 for (hash_value in hash_values) {
@@ -66,18 +66,19 @@ for (hash_value in hash_values) {
 
 
 # read other links
-clones_links <- fread("data/CodeClonesSampleLinksNonSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones_links <- fread("data/CodeClonesSample2LinksNonSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 # prevent problems with SQLDF and integer64
 clones_links$ContentNormalizedHash <- as.character(clones_links$ContentNormalizedHash)
 
 nrow(clones_links)
-# 12381
+# 3,316
 
 length(unique(clones_links$ContentNormalizedHash))
-# 1509
+# 814
 
 # write SO links for each cloned code block
 for (hash_value in hash_values) {
   links <- sqldf(paste0("SELECT Url, PostCount FROM clones_links WHERE ContentNormalizedHash=", hash_value, " ORDER BY PostCount DESC"))
   write.table(links, file=paste0("export/", hash_value, "_links.csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 }
+

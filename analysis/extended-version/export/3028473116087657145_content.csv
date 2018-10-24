@@ -1,2 +1,0 @@
-"Content"
-"				<dependency>&#xD;&#xA;					<groupId>org.jboss.spec</groupId>&#xD;&#xA;					<artifactId>jboss-javaee-6.0</artifactId>&#xD;&#xA;					<version>1.0.0.Final</version>&#xD;&#xA;					<type>pom</type>&#xD;&#xA;					<scope>provided</scope>&#xD;&#xA;				</dependency>"

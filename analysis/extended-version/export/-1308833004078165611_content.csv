@@ -1,2 +1,0 @@
-"Content"
-"	<filter>&#xD;&#xA;		<filter-name>struts2</filter-name>&#xD;&#xA;		<filter-class>&#xD;&#xA;            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter&#xD;&#xA;        </filter-class>&#xD;&#xA;	</filter>&#xD;&#xA;	<filter-mapping>&#xD;&#xA;		<filter-name>struts2</filter-name>&#xD;&#xA;		<url-pattern>/*</url-pattern>&#xD;&#xA;	</filter-mapping>"

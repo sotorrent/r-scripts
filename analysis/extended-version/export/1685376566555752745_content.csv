@@ -1,2 +1,0 @@
-"Content"
-"	<system.webServer>&#xD;&#xA;	  <handlers>&#xD;&#xA;	    <remove name=""""ExtensionlessUrlHandler-Integrated-4.0"""" />&#xD;&#xA;	    <remove name=""""OPTIONSVerbHandler"""" />&#xD;&#xA;	    <remove name=""""TRACEVerbHandler"""" />&#xD;&#xA;	    <add name=""""ExtensionlessUrlHandler-Integrated-4.0"""" path=""""*."""" verb=""""*"""" type=""""System.Web.Handlers.TransferRequestHandler"""" preCondition=""""integratedMode,runtimeVersionv4.0"""" />&#xD;&#xA;	  </handlers>&#xD;&#xA;	</system.webServer>"

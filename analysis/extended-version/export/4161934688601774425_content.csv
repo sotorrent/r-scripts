@@ -1,2 +1,0 @@
-"Content"
-"<project>&#xD;&#xA;              ...&#xD;&#xA;              <repositories>&#xD;&#xA;                <repository>&#xD;&#xA;                  <id>my-internal-site</id>&#xD;&#xA;                  <url>http://myserver/repo</url>&#xD;&#xA;                </repository>&#xD;&#xA;              </repositories>&#xD;&#xA;              ...&#xD;&#xA;            </project>"

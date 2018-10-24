@@ -1,2 +1,0 @@
-"Content"
-"           Schema::create('users', function (Blueprint $table) {&#xD;&#xA;                $table->increments('id');&#xD;&#xA;                $table->string('name');&#xD;&#xA;                $table->string('email')->unique();&#xD;&#xA;                $table->string('password');&#xD;&#xA;                $table->rememberToken();&#xD;&#xA;                $table->timestamps();&#xD;&#xA;            });"

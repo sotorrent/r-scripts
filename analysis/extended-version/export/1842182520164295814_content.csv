@@ -1,2 +1,0 @@
-"Content"
-"	#include """"mainwindow.h""""&#xD;&#xA;	#include <QApplication>&#xD;&#xA;	int main(int argc, char *argv[])&#xD;&#xA;	{&#xD;&#xA;		QApplication a(argc, argv);&#xD;&#xA;		MainWindow w;&#xD;&#xA;		w.show();&#xD;&#xA;		return a.exec();&#xD;&#xA;	}"

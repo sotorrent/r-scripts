@@ -1,2 +1,0 @@
-"Content"
-"<filter>&#xD;&#xA;            <filter-name>UrlRewriteFilter</filter-name>&#xD;&#xA;            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>&#xD;&#xA;        </filter>&#xD;&#xA;        <filter-mapping>&#xD;&#xA;            <filter-name>UrlRewriteFilter</filter-name>&#xD;&#xA;            <url-pattern>/*</url-pattern>&#xD;&#xA;            <dispatcher>REQUEST</dispatcher>&#xD;&#xA;            <dispatcher>FORWARD</dispatcher>&#xD;&#xA;        </filter-mapping>"

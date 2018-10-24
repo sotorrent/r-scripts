@@ -1,2 +1,0 @@
-"Content"
-"<ifModule mod_gzip.c>&#xD;&#xA;             mod_gzip_on Yes&#xD;&#xA;             mod_gzip_dechunk Yes&#xD;&#xA;             mod_gzip_item_include file .(html?|txt|css|js|php|pl)$&#xD;&#xA;             mod_gzip_item_include handler ^cgi-script$&#xD;&#xA;             mod_gzip_item_include mime ^text/.*&#xD;&#xA;             mod_gzip_item_include mime ^application/x-javascript.*&#xD;&#xA;             mod_gzip_item_exclude mime ^image/.*&#xD;&#xA;             mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*&#xD;&#xA;             </ifModule>"

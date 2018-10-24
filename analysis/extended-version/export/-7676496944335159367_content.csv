@@ -1,2 +1,0 @@
-"Content"
-"	if (!Array.prototype.indexOf)&#xD;&#xA;	{&#xD;&#xA;	  Array.prototype.indexOf = function(elt /*, from*/)&#xD;&#xA;	  {&#xD;&#xA;		var len = this.length >>> 0;&#xD;&#xA;		var from = Number(arguments[1]) || 0;&#xD;&#xA;		from = (from < 0)&#xD;&#xA;			 ? Math.ceil(from)&#xD;&#xA;			 : Math.floor(from);&#xD;&#xA;		if (from < 0)&#xD;&#xA;		  from += len;&#xD;&#xA;		for (; from < len; from++)&#xD;&#xA;		{&#xD;&#xA;		  if (from in this &&&#xD;&#xA;			  this[from] === elt)&#xD;&#xA;			return from;&#xD;&#xA;		}&#xD;&#xA;		return -1;&#xD;&#xA;	  };&#xD;&#xA;	}"

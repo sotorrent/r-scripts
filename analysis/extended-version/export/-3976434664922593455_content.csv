@@ -1,2 +1,0 @@
-"Content"
-"    #include <boost/regex.hpp>&#xD;&#xA;    #include <iostream>&#xD;&#xA;    #include <string>&#xD;&#xA;    &#xD;&#xA;    int main()&#xD;&#xA;    {&#xD;&#xA;    	std::string line;&#xD;&#xA;    	boost::regex pat(""""^Subject: (Re: |Aw: )*(.*)"""");&#xD;&#xA;    &#xD;&#xA;    	while (std::cin)&#xD;&#xA;    	{&#xD;&#xA;    		std::getline(std::cin, line);&#xD;&#xA;    		boost::smatch matches;&#xD;&#xA;    		if (boost::regex_match(line, matches, pat))&#xD;&#xA;    			std::cout << matches[2] << std::endl;&#xD;&#xA;    	}&#xD;&#xA;    }"

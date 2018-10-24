@@ -1,2 +1,0 @@
-"Content"
-"	$.extend({&#xD;&#xA;	  getUrlVars: function(){&#xD;&#xA;		var vars = [], hash;&#xD;&#xA;		var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');&#xD;&#xA;		for(var i = 0; i < hashes.length; i++)&#xD;&#xA;		{&#xD;&#xA;		  hash = hashes[i].split('=');&#xD;&#xA;		  vars.push(hash[0]);&#xD;&#xA;		  vars[hash[0]] = hash[1];&#xD;&#xA;		}&#xD;&#xA;		return vars;&#xD;&#xA;	  },&#xD;&#xA;	  getUrlVar: function(name){&#xD;&#xA;		return $.getUrlVars()[name];&#xD;&#xA;	  }&#xD;&#xA;	});"

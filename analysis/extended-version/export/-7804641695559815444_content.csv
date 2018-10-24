@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;     $to = """"recipient@example.com"""";&#xD;&#xA;     $subject = """"Hi!"""";&#xD;&#xA;     $body = """"Hi,\n\nHow are you?"""";&#xD;&#xA;     if (mail($to, $subject, $body)) {&#xD;&#xA;       echo """"<p>Message successfully sent!</p>"""";&#xD;&#xA;      } else {&#xD;&#xA;       echo """"<p>Message delivery failed...</p>"""";&#xD;&#xA;      }&#xD;&#xA;     ?>"

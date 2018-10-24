@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$str = """"first=value&arr[]=foo+bar&arr[]=baz"""";&#xD;&#xA;	parse_str($str);&#xD;&#xA;	echo $first;  // value&#xD;&#xA;	echo $arr[0]; // foo bar&#xD;&#xA;	echo $arr[1]; // baz&#xD;&#xA;	parse_str($str, $output);&#xD;&#xA;	echo $output['first'];  // value&#xD;&#xA;	echo $output['arr'][0]; // foo bar&#xD;&#xA;	echo $output['arr'][1]; // baz&#xD;&#xA;	?>"

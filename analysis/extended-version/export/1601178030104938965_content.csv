@@ -1,2 +1,0 @@
-"Content"
-"        private void openScreenshot(File imageFile) {&#xD;&#xA;        Intent intent = new Intent();&#xD;&#xA;        intent.setAction(Intent.ACTION_VIEW);&#xD;&#xA;        Uri uri = Uri.fromFile(imageFile);&#xD;&#xA;        intent.setDataAndType(uri, """"image/*"""");&#xD;&#xA;        startActivity(intent);&#xD;&#xA;    }"

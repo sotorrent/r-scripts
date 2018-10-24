@@ -1,2 +1,0 @@
-"Content"
-"      <input list=""""browsers"""" name=""""browser"""">&#xD;&#xA;          <datalist id=""""browsers"""">&#xD;&#xA;            <option value=""""Internet Explorer"""">&#xD;&#xA;            <option value=""""Firefox"""">&#xD;&#xA;            <option value=""""Chrome"""">&#xD;&#xA;            <option value=""""Opera"""">&#xD;&#xA;            <option value=""""Safari"""">&#xD;&#xA;          </datalist>"

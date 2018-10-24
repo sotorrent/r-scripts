@@ -1,2 +1,0 @@
-"Content"
-"     body {&#xD;&#xA;         font: 12px Arial;&#xD;&#xA;     }&#xD;&#xA;     path {&#xD;&#xA;         stroke: steelblue;&#xD;&#xA;         stroke-width: 2;&#xD;&#xA;         fill: none;&#xD;&#xA;     }&#xD;&#xA;     .axis path, .axis line {&#xD;&#xA;         fill: none;&#xD;&#xA;         stroke: grey;&#xD;&#xA;         stroke-width: 1;&#xD;&#xA;         shape-rendering: crispEdges;&#xD;&#xA;     }"

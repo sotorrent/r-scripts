@@ -1,2 +1,0 @@
-"Content"
-"    public static MvcHtmlString ActionLink(&#xD;&#xA;	    this HtmlHelper htmlHelper,&#xD;&#xA;	    string linkText,&#xD;&#xA;	    string actionName,&#xD;&#xA;	    string controllerName,&#xD;&#xA;	    Object routeValues,&#xD;&#xA;	    Object htmlAttributes&#xD;&#xA;    )"

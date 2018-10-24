@@ -1,2 +1,0 @@
-"Content"
-"	<!-- Spring Security -->&#xD;&#xA;	<filter>&#xD;&#xA;		<filter-name>springSecurityFilterChain</filter-name>&#xD;&#xA;		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>&#xD;&#xA;	</filter>&#xD;&#xA; &#xD;&#xA;	<filter-mapping>&#xD;&#xA;		<filter-name>springSecurityFilterChain</filter-name>&#xD;&#xA;		<url-pattern>/*</url-pattern>&#xD;&#xA;	</filter-mapping>  &#xD;&#xA;	"

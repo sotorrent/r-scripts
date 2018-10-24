@@ -1,2 +1,0 @@
-"Content"
-"        Intent i;&#xD;&#xA;        PackageManager manager = getPackageManager();&#xD;&#xA;        try {&#xD;&#xA;            i = manager.getLaunchIntentForPackage(""""app package name"""");&#xD;&#xA;            if (i == null)&#xD;&#xA;                throw new PackageManager.NameNotFoundException();&#xD;&#xA;            i.addCategory(Intent.CATEGORY_LAUNCHER);&#xD;&#xA;            startActivity(i);&#xD;&#xA;        } catch (PackageManager.NameNotFoundException e) {&#xD;&#xA;    &#xD;&#xA;        }"

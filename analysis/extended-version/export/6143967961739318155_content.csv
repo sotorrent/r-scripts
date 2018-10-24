@@ -1,2 +1,0 @@
-"Content"
-"        <?php&#xD;&#xA;        // create curl resource&#xD;&#xA;        $ch = curl_init();&#xD;&#xA;        // set url&#xD;&#xA;        curl_setopt($ch, CURLOPT_URL, """"example.com"""");&#xD;&#xA;        //return the transfer as a string&#xD;&#xA;        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);&#xD;&#xA;        // $output contains the output string&#xD;&#xA;        $output = curl_exec($ch);&#xD;&#xA;        // close curl resource to free up system resources&#xD;&#xA;        curl_close($ch);     &#xD;&#xA;        ?>"

@@ -1,2 +1,0 @@
-"Content"
-"        class Picture < ActiveRecord::Base&#xD;&#xA;          belongs_to :imageable, polymorphic: true&#xD;&#xA;        end&#xD;&#xA;     &#xD;&#xA;        class Employee < ActiveRecord::Base&#xD;&#xA;          has_many :pictures, as: :imageable&#xD;&#xA;        end&#xD;&#xA;     &#xD;&#xA;        class Product < ActiveRecord::Base&#xD;&#xA;          has_many :pictures, as: :imageable&#xD;&#xA;        end"

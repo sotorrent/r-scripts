@@ -1,2 +1,0 @@
-"Content"
-"    RewriteEngine On&#xD;&#xA;    # browser requests PHP&#xD;&#xA;    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php&#xD;&#xA;    RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]&#xD;&#xA;    # check to see if the request is for a PHP file:&#xD;&#xA;    RewriteCond %{REQUEST_FILENAME}\.php -f&#xD;&#xA;    RewriteRule ^/?(.*)$ /$1.php [L]"

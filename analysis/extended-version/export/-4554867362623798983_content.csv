@@ -1,1 +1,0 @@
-"	<activity&#xD;&#xA;android:name="""".SplashActivity""""&#xD;&#xA;android:theme=""""@style/SplashTheme"""">&#xD;&#xA;<intent-filter>&#xD;&#xA;<action android:name=""""android.intent.action.MAIN"""" />&#xD;&#xA;<category android:name=""""android.intent.category.LAUNCHER"""" />&#xD;&#xA;</intent-filter>&#xD;&#xA;</activity>"

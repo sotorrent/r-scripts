@@ -1,2 +1,0 @@
-"Content"
-"	@Override&#xD;&#xA;		protected void onPostCreate(Bundle savedInstanceState) {&#xD;&#xA;		    super.onPostCreate(savedInstanceState);&#xD;&#xA;		    // Sync the toggle state after onRestoreInstanceState has occurred.&#xD;&#xA;		    mDrawerToggle.syncState();&#xD;&#xA;		}&#xD;&#xA;		@Override&#xD;&#xA;		public void onConfigurationChanged(Configuration newConfig) {&#xD;&#xA;		    super.onConfigurationChanged(newConfig);&#xD;&#xA;		    mDrawerToggle.onConfigurationChanged(newConfig);&#xD;&#xA;		}"

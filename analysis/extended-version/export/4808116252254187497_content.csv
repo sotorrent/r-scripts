@@ -1,2 +1,0 @@
-"Content"
-"	function getQuerystring(key, default_) {&#xD;&#xA;		if (default_==null) default_=""""""""; &#xD;&#xA;		key = key.replace(/[\[]/,""""\\\["""").replace(/[\]]/,""""\\\]"""");&#xD;&#xA;		var regex = new RegExp(""""[\\?&]""""+key+""""=([^&#]*)"""");&#xD;&#xA;		var qs = regex.exec(window.location.href);&#xD;&#xA;		if(qs == null)&#xD;&#xA;			return default_;&#xD;&#xA;		else&#xD;&#xA;			return qs[1];&#xD;&#xA;	}"

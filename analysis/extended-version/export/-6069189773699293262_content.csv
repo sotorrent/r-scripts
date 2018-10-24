@@ -1,2 +1,0 @@
-"Content"
-"DB_CONNECTION=mysql&#xD;&#xA;    DB_HOST=127.0.0.1&#xD;&#xA;    DB_PORT=3306&#xD;&#xA;    DB_DATABASE=homestead&#xD;&#xA;    DB_USERNAME=homestead&#xD;&#xA;    DB_PASSWORD=secret"

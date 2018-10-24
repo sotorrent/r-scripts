@@ -1,2 +1,0 @@
-"Content"
-"    #slideshow { &#xD;&#xA;        margin: 50px auto; &#xD;&#xA;        position: relative; &#xD;&#xA;        width: 240px; &#xD;&#xA;        height: 240px; &#xD;&#xA;        padding: 10px; &#xD;&#xA;        box-shadow: 0 0 20px rgba(0,0,0,0.4); &#xD;&#xA;    }&#xD;&#xA;        #slideshow > div { &#xD;&#xA;        position: absolute; &#xD;&#xA;        top: 10px; &#xD;&#xA;        left: 10px; &#xD;&#xA;        right: 10px; &#xD;&#xA;        bottom: 10px; &#xD;&#xA;    }"

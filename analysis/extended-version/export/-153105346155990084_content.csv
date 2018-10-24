@@ -1,2 +1,0 @@
-"Content"
-"	function gup(name) {&#xD;&#xA;	    name = name.replace(/[\[]/, """"\\\["""").replace(/[\]]/, """"\\\]"""");&#xD;&#xA;	    var regexS = """"[\\?&]"""" + name + """"=([^&#]*)"""";&#xD;&#xA;	    var regex = new RegExp(regexS);&#xD;&#xA;	    var results = regex.exec(window.location.href);&#xD;&#xA;	    if (results == null)&#xD;&#xA;	        return """""""";&#xD;&#xA;	    else&#xD;&#xA;	        return results[1];&#xD;&#xA;	}"

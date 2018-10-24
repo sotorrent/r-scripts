@@ -1,2 +1,0 @@
-"Content"
-"    swiftmailer:&#xD;&#xA;        transport: """"%mailer_transport%""""&#xD;&#xA;        host:      """"%mailer_host%""""&#xD;&#xA;        username:  """"%mailer_user%""""&#xD;&#xA;        password:  """"%mailer_password%""""&#xD;&#xA;        spool:     { type: memory }"

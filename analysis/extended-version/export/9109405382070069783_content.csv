@@ -1,2 +1,0 @@
-"Content"
-"    $stateProvider .state('contacts.detail', &#xD;&#xA;    { &#xD;&#xA;        url: """"/contacts/:contactId"""", &#xD;&#xA;        templateUrl: 'contacts.detail.html',&#xD;&#xA;        controller: function ($stateParams) { &#xD;&#xA;           // If we got here from a url of /contacts/42&#xD;&#xA;           expect($stateParams).toBe({contactId: """"42""""});&#xD;&#xA;        }&#xD;&#xA;    })"

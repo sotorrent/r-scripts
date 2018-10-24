@@ -1,2 +1,0 @@
-"Content"
-"    if (navigator.userAgent.toLowerCase().indexOf(""""chrome"""") >= 0) {&#xD;&#xA;	$(window).load(function(){&#xD;&#xA;		$('input:-webkit-autofill').each(function(){&#xD;&#xA;			var text = $(this).val();&#xD;&#xA;			var name = $(this).attr('name');&#xD;&#xA;			$(this).after(this.outerHTML).remove();&#xD;&#xA;			$('input[name=' + name + ']').val(text);&#xD;&#xA;		});&#xD;&#xA;	});}"

@@ -1,2 +1,0 @@
-"Content"
-"     Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();&#xD;&#xA;     // If there are paired devices&#xD;&#xA;          if (pairedDevices.size() > 0) {&#xD;&#xA;         // Loop through paired devices&#xD;&#xA;         for (BluetoothDevice device : pairedDevices) {&#xD;&#xA;        // Add the name and address to an array adapter to show in a ListView&#xD;&#xA;             mArrayAdapter.add(device.getName() + """"\n"""" + device.getAddress());&#xD;&#xA;         }&#xD;&#xA;     }"

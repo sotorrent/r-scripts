@@ -1,2 +1,0 @@
-"Content"
-"        <html>&#xD;&#xA;        <body>&#xD;&#xA;        <form action=""""welcome.php"""" method=""""post"""">&#xD;&#xA;        Name: <input type=""""text"""" name=""""name""""><br>&#xD;&#xA;        E-mail: <input type=""""text"""" name=""""email""""><br>&#xD;&#xA;        <input type=""""submit"""">&#xD;&#xA;        </form>&#xD;&#xA;        </body>&#xD;&#xA;        </html>"

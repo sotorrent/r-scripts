@@ -1,2 +1,0 @@
-"Content"
-"        async.series([&#xD;&#xA;        function(callback){&#xD;&#xA;            // do some stuff ...&#xD;&#xA;            callback(null, 'one');&#xD;&#xA;        },&#xD;&#xA;        function(callback){&#xD;&#xA;            // do some more stuff ...&#xD;&#xA;            callback(null, 'two');&#xD;&#xA;        }&#xD;&#xA;       ],&#xD;&#xA;       // optional callback&#xD;&#xA;       function(err, results){&#xD;&#xA;        // results is now equal to ['one', 'two']&#xD;&#xA;       });"

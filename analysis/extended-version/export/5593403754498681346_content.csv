@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$text = '<p>Test paragraph.</p><!-- Comment --> <a href=""""#fragment"""">Other text</a>';&#xD;&#xA;	echo strip_tags($text);&#xD;&#xA;	echo """"\n"""";&#xD;&#xA;	// Allow <p> and <a>&#xD;&#xA;	echo strip_tags($text, '<p><a>');&#xD;&#xA;	?>"

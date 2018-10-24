@@ -1,2 +1,0 @@
-"Content"
-"     <% if object.errors.any? %>&#xD;&#xA;      <div id=""""error_explanation"""">&#xD;&#xA;       <div class=""""alert alert-error"""">&#xD;&#xA;         The form contains <%= pluralize(object.errors.count, """"error"""") %>.&#xD;&#xA;       </div>&#xD;&#xA;      <ul>&#xD;&#xA;       <% object.errors.full_messages.each do |msg| %>&#xD;&#xA;        <li>* <%= msg %></li>&#xD;&#xA;       <% end %>&#xD;&#xA;     </ul>&#xD;&#xA;    </div>&#xD;&#xA;    <% end %>"

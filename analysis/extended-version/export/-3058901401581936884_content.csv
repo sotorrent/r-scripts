@@ -1,1 +1,0 @@
-"        <fragment&#xD;&#xA;android:id=""""@+id/place_autocomplete_fragment""""&#xD;&#xA;android:layout_width=""""match_parent""""&#xD;&#xA;android:layout_height=""""wrap_content""""&#xD;&#xA;android:name=""""com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"""" />"

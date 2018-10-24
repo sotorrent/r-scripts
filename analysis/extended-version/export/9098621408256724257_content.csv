@@ -1,2 +1,0 @@
-"Content"
-"       // Create new fragment and transaction&#xD;&#xA;       Fragment newFragment = new ExampleFragment();&#xD;&#xA;       FragmentTransaction transaction = getFragmentManager().beginTransaction();&#xD;&#xA;       // Replace whatever is in the fragment_container view with this fragment,&#xD;&#xA;       // and add the transaction to the back stack&#xD;&#xA;       transaction.replace(R.id.fragment_container, newFragment);&#xD;&#xA;       transaction.addToBackStack(null);&#xD;&#xA;       // Commit the transaction&#xD;&#xA;       transaction.commit();"

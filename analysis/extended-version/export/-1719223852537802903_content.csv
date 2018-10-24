@@ -1,2 +1,0 @@
-"Content"
-"@Override&#xD;&#xA;        public boolean onOptionsItemSelected(MenuItem item) {&#xD;&#xA;            // Handle item selection&#xD;&#xA;            switch (item.getItemId()) {&#xD;&#xA;            case R.id.new_game:&#xD;&#xA;                newGame();&#xD;&#xA;                return true;&#xD;&#xA;            case R.id.help:&#xD;&#xA;                showHelp();&#xD;&#xA;                return true;&#xD;&#xA;            default:&#xD;&#xA;                return super.onOptionsItemSelected(item);&#xD;&#xA;            }&#xD;&#xA;        }"

@@ -1,2 +1,0 @@
-"Content"
-"        <system.webServer>&#xD;&#xA;    <httpProtocol>&#xD;&#xA;        <customHeaders>&#xD;&#xA;            <clear />&#xD;&#xA;            <add name=""""X-UA-Compatible"""" value=""""IE=edge"""" />&#xD;&#xA;        </customHeaders>&#xD;&#xA;    </httpProtocol>&#xD;&#xA;    </system.webServer>"

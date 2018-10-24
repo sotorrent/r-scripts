@@ -1,2 +1,0 @@
-"Content"
-"    <?php // We'll be outputting a PDF&#xD;&#xA;    header('Content-type: application/pdf');&#xD;&#xA;    &#xD;&#xA;    // It will be called downloaded.pdf&#xD;&#xA;    header('Content-Disposition: attachment; filename=""""downloaded.pdf""""');&#xD;&#xA;    // The PDF source is in original.pdf&#xD;&#xA;    readfile('original.pdf'); ?>"

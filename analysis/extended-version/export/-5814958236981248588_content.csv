@@ -1,2 +1,0 @@
-"Content"
-"...&#xD;&#xA;      <plugin>&#xD;&#xA;        <artifactId>maven-assembly-plugin</artifactId>&#xD;&#xA;        <configuration>&#xD;&#xA;          <descriptorRefs>&#xD;&#xA;            <descriptorRef>jar-with-dependencies</descriptorRef>&#xD;&#xA;          </descriptorRefs>&#xD;&#xA;        </configuration>&#xD;&#xA;      </plugin>&#xD;&#xA;      ..."

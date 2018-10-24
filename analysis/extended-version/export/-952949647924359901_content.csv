@@ -1,1 +1,0 @@
-"            function allowDrop(ev) {&#xD;&#xA;ev.preventDefault();&#xD;&#xA;}&#xD;&#xA;function drag(ev) {&#xD;&#xA;ev.dataTransfer.setData(""""text"""", ev.target.id);&#xD;&#xA;}&#xD;&#xA;function drop(ev) {&#xD;&#xA;ev.preventDefault();&#xD;&#xA;var data = ev.dataTransfer.getData(""""text"""");&#xD;&#xA;ev.target.appendChild(document.getElementById(data));&#xD;&#xA;}"

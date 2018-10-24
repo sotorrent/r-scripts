@@ -1,1 +1,0 @@
-"        public String getStringImage(Bitmap bmp){&#xD;&#xA;ByteArrayOutputStream baos = new ByteArrayOutputStream();&#xD;&#xA;bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);&#xD;&#xA;byte[] imageBytes = baos.toByteArray();&#xD;&#xA;String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);&#xD;&#xA;return encodedImage;&#xD;&#xA;}"

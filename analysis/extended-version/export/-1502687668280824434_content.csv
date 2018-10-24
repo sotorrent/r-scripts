@@ -1,2 +1,0 @@
-"Content"
-"        function previewFile() {&#xD;&#xA;      var preview = document.querySelector('img');&#xD;&#xA;      var file    = document.querySelector('input[type=file]').files[0];&#xD;&#xA;      var reader  = new FileReader();&#xD;&#xA;    &#xD;&#xA;      reader.onloadend = function () {&#xD;&#xA;        preview.src = reader.result;&#xD;&#xA;      }&#xD;&#xA;    &#xD;&#xA;      if (file) {&#xD;&#xA;        reader.readAsDataURL(file);&#xD;&#xA;      } else {&#xD;&#xA;        preview.src = """""""";&#xD;&#xA;      }&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"	<% unless current_user?(@user) %>&#xD;&#xA;	  <div id=""""follow_form"""">&#xD;&#xA;	  <% if current_user.following?(@user) %>&#xD;&#xA;	    <%= render 'unfollow' %>&#xD;&#xA;	  <% else %>&#xD;&#xA;	    <%= render 'follow' %>&#xD;&#xA;	  <% end %>&#xD;&#xA;	  </div>&#xD;&#xA;	<% end %>"

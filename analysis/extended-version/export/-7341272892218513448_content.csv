@@ -1,2 +1,0 @@
-"Content"
-"<configuration>&#xD;&#xA;    	<property>&#xD;&#xA;    		<name>mapred.job.tracker</name>&#xD;&#xA;    		<value>localhost:9001</value>&#xD;&#xA;    	</property>&#xD;&#xA;    </configuration>"

@@ -1,2 +1,0 @@
-"Content"
-"    + (ALAssetsLibrary *)defaultAssetsLibrary {&#xD;&#xA;    	static dispatch_once_t pred = 0;&#xD;&#xA;    	static ALAssetsLibrary *library = nil;&#xD;&#xA;    	dispatch_once(&pred, ^{&#xD;&#xA;    		library = [[ALAssetsLibrary alloc] init];&#xD;&#xA;    	});&#xD;&#xA;    	return library; &#xD;&#xA;    }"

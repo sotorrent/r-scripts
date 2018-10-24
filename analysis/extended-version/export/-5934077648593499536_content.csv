@@ -1,2 +1,0 @@
-"Content"
-"     <!-- 16:9 aspect ratio -->&#xD;&#xA;    <div class=""""embed-responsive embed-responsive-16by9"""">&#xD;&#xA;      <iframe class=""""embed-responsive-item"""" src=""""...""""></iframe>&#xD;&#xA;    </div>&#xD;&#xA;    &#xD;&#xA;    <!-- 4:3 aspect ratio -->&#xD;&#xA;    <div class=""""embed-responsive embed-responsive-4by3"""">&#xD;&#xA;      <iframe class=""""embed-responsive-item"""" src=""""...""""></iframe>&#xD;&#xA;    </div>"

@@ -1,2 +1,0 @@
-"Content"
-"     class RegistrationsController < Devise::RegistrationsController&#xD;&#xA;     private&#xD;&#xA;     def sign_up_params&#xD;&#xA;       params.require(:user).permit(:first_name, :last_name, :email, :password, &#xD;&#xA;       :password_confirmation)&#xD;&#xA;     end&#xD;&#xA;     def account_update_params&#xD;&#xA;       params.require(:user).permit(:first_name, :last_name, :email, :password, &#xD;&#xA;       :password_confirmation, :current_password)&#xD;&#xA;     end&#xD;&#xA;     end"

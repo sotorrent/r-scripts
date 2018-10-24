@@ -1,2 +1,0 @@
-"Content"
-"        <uses-permission android:name=""""android.permission.ACCESS_COARSE_LOCATION""""/> &#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_FINE_LOCATION""""/>&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_WIFI_STATE"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_NETWORK_STATE"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.INTERNET"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.WRITE_EXTERNAL_STORAGE"""" />"

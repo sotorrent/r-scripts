@@ -1,2 +1,0 @@
-"Content"
-"	$row = 1;&#xD;&#xA;	if (($handle = fopen(""""test.csv"""", """"r"""")) !== FALSE) {&#xD;&#xA;	    while (($data = fgetcsv($handle, 1000, """","""")) !== FALSE) {&#xD;&#xA;	        $num = count($data);&#xD;&#xA;	        echo """"<p> $num fields in line $row: <br /></p>\n"""";&#xD;&#xA;	        $row++;&#xD;&#xA;	        for ($c=0; $c < $num; $c++) {&#xD;&#xA;	            echo $data[$c] . """"<br />\n"""";&#xD;&#xA;	        }&#xD;&#xA;	    }&#xD;&#xA;	    fclose($handle);&#xD;&#xA;	}"

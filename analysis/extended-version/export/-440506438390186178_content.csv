@@ -1,2 +1,0 @@
-"Content"
-"    <html>&#xD;&#xA;    <?php&#xD;&#xA;    /* This will give an error. Note the output&#xD;&#xA;     * above, which is before the header() call */&#xD;&#xA;    header('Location: http://www.example.com/');&#xD;&#xA;    exit;&#xD;&#xA;    ?>"

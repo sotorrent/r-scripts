@@ -1,2 +1,0 @@
-"Content"
-"        CREATE TABLE IF NOT EXISTS `ci_sessions` (&#xD;&#xA;            `id` varchar(40) NOT NULL,&#xD;&#xA;            `ip_address` varchar(45) NOT NULL,&#xD;&#xA;            `timestamp` int(10) unsigned DEFAULT 0 NOT NULL,&#xD;&#xA;            `data` blob NOT NULL,&#xD;&#xA;            PRIMARY KEY (id),&#xD;&#xA;            KEY `ci_sessions_timestamp` (`timestamp`)&#xD;&#xA;    );"

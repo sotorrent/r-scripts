@@ -1,2 +1,0 @@
-"Content"
-"    static IEnumerable<IEnumerable<T>> &#xD;&#xA;                  CartesianProduct<T>(this IEnumerable<IEnumerable<T>> sequences) &#xD;&#xA;    { &#xD;&#xA;      IEnumerable<IEnumerable<T>> emptyProduct = new[] { Enumerable.Empty<T>() }; &#xD;&#xA;      return sequences.Aggregate( &#xD;&#xA;        emptyProduct, &#xD;&#xA;        (accumulator, sequence) => &#xD;&#xA;          from accseq in accumulator &#xD;&#xA;          from item in sequence &#xD;&#xA;          select accseq.Concat(new[] {item})); &#xD;&#xA;    }"

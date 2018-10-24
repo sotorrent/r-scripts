@@ -1,2 +1,0 @@
-"Content"
-"      <system.web.extensions>&#xD;&#xA;         <scripting>&#xD;&#xA;            <webServices>&#xD;&#xA;               <jsonSerialization maxJsonLength=""""2147483644""""/>&#xD;&#xA;            </webServices>&#xD;&#xA;         </scripting>&#xD;&#xA;      </system.web.extensions>"

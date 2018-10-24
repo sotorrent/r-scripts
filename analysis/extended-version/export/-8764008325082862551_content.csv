@@ -1,2 +1,0 @@
-"Content"
-"	<h2><a href=""""#"""" id=""""addScnt"""">Add Another Input Box</a></h2>&#xD;&#xA;	<div id=""""p_scents"""">&#xD;&#xA;	    <p>&#xD;&#xA;		<label for=""""p_scnts"""">&#xD;&#xA;		    <input type=""""text"""" id=""""p_scnt"""" size=""""20"""" name=""""p_scnt"""" value="""""""" placeholder=""""Input Value"""" />&#xD;&#xA;		</label>&#xD;&#xA;	    </p>&#xD;&#xA;	</div>"

@@ -1,2 +1,0 @@
-"Content"
-"    from HTMLParser import HTMLParser   &#xD;&#xA;    class MLStripper(HTMLParser):&#xD;&#xA;        def __init__(self):&#xD;&#xA;            self.reset()&#xD;&#xA;            self.fed = []&#xD;&#xA;        def handle_data(self, d):&#xD;&#xA;            self.fed.append(d)&#xD;&#xA;        def get_data(self):&#xD;&#xA;            return ''.join(self.fed)&#xD;&#xA;    def strip_tags(html):&#xD;&#xA;        s = MLStripper()&#xD;&#xA;        s.feed(html)&#xD;&#xA;        return s.get_data()"

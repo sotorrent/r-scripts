@@ -1,2 +1,0 @@
-"Content"
-"    JFileChooser chooser = new JFileChooser();&#xD;&#xA;    FileNameExtensionFilter filter = new FileNameExtensionFilter(&#xD;&#xA;        """"JPG & GIF Images"""", """"jpg"""", """"gif"""");&#xD;&#xA;    chooser.setFileFilter(filter);&#xD;&#xA;    int returnVal = chooser.showOpenDialog(parent);&#xD;&#xA;    if(returnVal == JFileChooser.APPROVE_OPTION) {&#xD;&#xA;       System.out.println(""""You chose to open this file: """" +&#xD;&#xA;            chooser.getSelectedFile().getName());&#xD;&#xA;    }"

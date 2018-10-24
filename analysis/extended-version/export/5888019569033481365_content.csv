@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$mystring = 'abc';&#xD;&#xA;	$findme   = 'a';&#xD;&#xA;	$pos = strpos($mystring, $findme);&#xD;&#xA;	// Note our use of ===.  Simply == would not work as expected&#xD;&#xA;	// because the position of 'a' was the 0th (first) character.&#xD;&#xA;	if ($pos === false) {&#xD;&#xA;		echo """"The string '$findme' was not found in the string '$mystring'"""";&#xD;&#xA;	} else {&#xD;&#xA;		echo """"The string '$findme' was found in the string '$mystring'"""";&#xD;&#xA;		echo """" and exists at position $pos"""";&#xD;&#xA;	}&#xD;&#xA;	?>"

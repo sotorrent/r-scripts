@@ -1,2 +1,0 @@
-"Content"
-"     - (void)textViewDidChange::(UITextView *)textView&#xD;&#xA;        {&#xD;&#xA;            CGFloat fixedWidth = textView.frame.size.width;&#xD;&#xA;            CGSize newSize = [textView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];&#xD;&#xA;            CGRect newFrame = textView.frame;&#xD;&#xA;            newFrame.size = CGSizeMake(fmaxf(newSize.width, fixedWidth), newSize.height);&#xD;&#xA;            textView.frame = newFrame;&#xD;&#xA;        }"

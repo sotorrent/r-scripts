@@ -1,1 +1,0 @@
-"        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];&#xD;&#xA;[button addTarget:self&#xD;&#xA;action:@selector(aMethod:)forControlEvents:UIControlEventTouchDown];&#xD;&#xA;[button setTitle:@""""Show View"""" forState:UIControlStateNormal];&#xD;&#xA;button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);&#xD;&#xA;[view addSubview:button];"

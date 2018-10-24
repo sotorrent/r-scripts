@@ -1,2 +1,0 @@
-"Content"
-"	.node circle {&#xD;&#xA;    	  fill: #fff;&#xD;&#xA;    	  stroke: steelblue;&#xD;&#xA;    	  stroke-width: 3px;&#xD;&#xA;    	}&#xD;&#xA;    	.node text { font: 12px sans-serif; }&#xD;&#xA;    	.link {&#xD;&#xA;    	  fill: none;&#xD;&#xA;    	  stroke: #ccc;&#xD;&#xA;    	  stroke-width: 2px;&#xD;&#xA;    	}"

@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$sth = $dbh->prepare(""""SELECT name, colour FROM fruit"""");&#xD;&#xA;	$sth->execute();&#xD;&#xA;	/* Fetch all of the remaining rows in the result set */&#xD;&#xA;	print(""""Fetch all of the remaining rows in the result set:\n"""");&#xD;&#xA;	$result = $sth->fetchAll();&#xD;&#xA;	print_r($result);&#xD;&#xA;	?>"

@@ -1,2 +1,0 @@
-"Content"
-"    INSTALLED_APPS = (&#xD;&#xA;        'django.contrib.admin',&#xD;&#xA;        'django.contrib.auth',&#xD;&#xA;        'django.contrib.contenttypes',&#xD;&#xA;        'django.contrib.sessions',&#xD;&#xA;        'django.contrib.messages',&#xD;&#xA;        # 'django.contrib.staticfiles',        &#xD;&#xA;    )"

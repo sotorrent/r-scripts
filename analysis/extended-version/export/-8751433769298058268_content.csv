@@ -1,2 +1,0 @@
-"Content"
-"		try {&#xD;&#xA;			Files.delete(path);&#xD;&#xA;		} catch (NoSuchFileException x) {&#xD;&#xA;			System.err.format(""""%s: no such"""" + """" file or directory%n"""", path);&#xD;&#xA;		} catch (DirectoryNotEmptyException x) {&#xD;&#xA;			System.err.format(""""%s not empty%n"""", path);&#xD;&#xA;		} catch (IOException x) {&#xD;&#xA;			// File permission problems are caught here.&#xD;&#xA;			System.err.println(x);&#xD;&#xA;		}"

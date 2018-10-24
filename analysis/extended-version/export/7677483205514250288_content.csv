@@ -1,2 +1,0 @@
-"Content"
-"    function download(filename, text) {&#xD;&#xA;    			var element = document.createElement('a');&#xD;&#xA;    			element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));&#xD;&#xA;    			element.setAttribute('download', filename);&#xD;&#xA;    	&#xD;&#xA;    			element.style.display = 'none';&#xD;&#xA;    			document.body.appendChild(element);&#xD;&#xA;    	&#xD;&#xA;    			element.click();&#xD;&#xA;    	&#xD;&#xA;    			document.body.removeChild(element);&#xD;&#xA;    		}"

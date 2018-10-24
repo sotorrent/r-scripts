@@ -1,1 +1,0 @@
-"	Intent sendIntent = new Intent();&#xD;&#xA;sendIntent.setAction(Intent.ACTION_SEND);&#xD;&#xA;sendIntent.putExtra(Intent.EXTRA_TEXT, """"This is my text to send."""");&#xD;&#xA;sendIntent.setType(""""text/plain"""");&#xD;&#xA;sendIntent.setPackage(""""com.whatsapp"""");&#xD;&#xA;startActivity(sendIntent);"

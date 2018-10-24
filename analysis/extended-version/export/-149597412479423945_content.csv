@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;    echo strtotime(""""now""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""10 September 2000""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""+1 day""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""+1 week""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""+1 week 2 days 4 hours 2 seconds""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""next Thursday""""), """"\n"""";&#xD;&#xA;    echo strtotime(""""last Monday""""), """"\n"""";"

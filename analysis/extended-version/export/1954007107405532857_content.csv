@@ -1,2 +1,0 @@
-"Content"
-"	Intent intent = new Intent(Intent.ACTION_EDIT);  &#xD;&#xA;    intent.setType(""""vnd.android.cursor.item/event"""");&#xD;&#xA;  &#xD;&#xA;    intent.putExtra(""""title"""", """"Some title"""");&#xD;&#xA;    intent.putExtra(""""description"""", """"Some description"""");&#xD;&#xA;    intent.putExtra(""""beginTime"""", eventStartInMillis);&#xD;&#xA;    intent.putExtra(""""endTime"""", eventEndInMillis);&#xD;&#xA;    startActivity(intent);"

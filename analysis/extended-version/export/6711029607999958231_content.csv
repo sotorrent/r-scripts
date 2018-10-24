@@ -1,2 +1,0 @@
-"Content"
-"<Directory />&#xD;&#xA;    	Options FollowSymLinks&#xD;&#xA;    	AllowOverride None&#xD;&#xA;    	Require all denied&#xD;&#xA;    </Directory>&#xD;&#xA;    &#xD;&#xA;    <Directory /usr/share>&#xD;&#xA;    	AllowOverride None&#xD;&#xA;    	Require all granted&#xD;&#xA;    </Directory>&#xD;&#xA;    &#xD;&#xA;    <Directory /var/www/>&#xD;&#xA;    	Options Indexes FollowSymLinks&#xD;&#xA;    	AllowOverride None&#xD;&#xA;    	Require all granted&#xD;&#xA;    </Directory>"

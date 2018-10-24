@@ -1,2 +1,0 @@
-"Content"
-"        <com.facebook.widget.LoginButton&#xD;&#xA;        android:id=""""@+id/authButton""""&#xD;&#xA;        android:layout_width=""""wrap_content""""&#xD;&#xA;        android:layout_height=""""wrap_content""""&#xD;&#xA;        android:layout_gravity=""""center_horizontal""""&#xD;&#xA;        android:layout_marginTop=""""30dp"""""

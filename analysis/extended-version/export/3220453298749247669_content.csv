@@ -1,2 +1,0 @@
-"Content"
-"    <?php &#xD;&#xA;    // create a new cURL resource&#xD;&#xA;    $ch = curl_init();&#xD;&#xA;    &#xD;&#xA;    // set URL and other appropriate options&#xD;&#xA;    curl_setopt($ch, CURLOPT_URL, """"http://www.example.com/"""");&#xD;&#xA;    curl_setopt($ch, CURLOPT_HEADER, 0);&#xD;&#xA;    &#xD;&#xA;    // grab URL and pass it to the browser&#xD;&#xA;    curl_exec($ch);&#xD;&#xA;    &#xD;&#xA;    // close cURL resource, and free up system resources&#xD;&#xA;    curl_close($ch);&#xD;&#xA;    ?>"

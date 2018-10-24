@@ -1,2 +1,0 @@
-"Content"
-"      <com.google.android.gms.ads.AdView&#xD;&#xA;                android:id=""""@+id/adView""""&#xD;&#xA;                android:layout_width=""""wrap_content""""&#xD;&#xA;                android:layout_height=""""wrap_content""""&#xD;&#xA;                android:layout_centerHorizontal=""""true""""&#xD;&#xA;                android:layout_alignParentBottom=""""true""""&#xD;&#xA;                ads:adSize=""""BANNER""""&#xD;&#xA;                ads:adUnitId=""""@string/banner_ad_unit_id"""">&#xD;&#xA;        </com.google.android.gms.ads.AdView>"

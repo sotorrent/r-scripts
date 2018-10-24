@@ -1,2 +1,0 @@
-"Content"
-"- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation&#xD;&#xA;      {&#xD;&#xA;        return (interfaceOrientation == UIInterfaceOrientationPortrait);&#xD;&#xA;       }&#xD;&#xA;      - (BOOL)shouldAutorotate&#xD;&#xA;      {&#xD;&#xA;        return NO;&#xD;&#xA;        }&#xD;&#xA;     - (NSUInteger)supportedInterfaceOrientations&#xD;&#xA;      {&#xD;&#xA;        return UIInterfaceOrientationMaskPortrait;&#xD;&#xA;      }"

@@ -1,2 +1,0 @@
-"Content"
-"    >>> r = requests.get('https://api.github.com/user', auth=('user', 'pass'))&#xD;&#xA;	>>> r.status_code&#xD;&#xA;	200&#xD;&#xA;	>>> r.headers['content-type']&#xD;&#xA;	'application/json; charset=utf8'&#xD;&#xA;	>>> r.encoding&#xD;&#xA;	'utf-8'&#xD;&#xA;	>>> r.text&#xD;&#xA;	u'{""""type"""":""""User""""...'&#xD;&#xA;	>>> r.json&#xD;&#xA;	{u'private_gists': 419, u'total_private_repos': 77, ...}"

@@ -1,2 +1,0 @@
-"Content"
-"Display display = getWindowManager().getDefaultDisplay();&#xD;&#xA;        DisplayMetrics outMetrics = new DisplayMetrics();&#xD;&#xA;        display.getMetrics(outMetrics);&#xD;&#xA;        float density  = getResources().getDisplayMetrics().density;&#xD;&#xA;        float dpHeight = outMetrics.heightPixels / density;&#xD;&#xA;        float dpWidth  = outMetrics.widthPixels / density;"

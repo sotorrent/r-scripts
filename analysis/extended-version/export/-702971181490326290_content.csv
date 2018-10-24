@@ -1,2 +1,0 @@
-"Content"
-"		<dependency>&#xD;&#xA;			<groupId>org.springframework.boot</groupId>&#xD;&#xA;			<artifactId>spring-boot-starter</artifactId>&#xD;&#xA;			<exclusions>&#xD;&#xA;				<exclusion>&#xD;&#xA;					<groupId>org.springframework.boot</groupId>&#xD;&#xA;					<artifactId>spring-boot-starter-logging</artifactId>&#xD;&#xA;				</exclusion>&#xD;&#xA;			</exclusions>&#xD;&#xA;		</dependency>"

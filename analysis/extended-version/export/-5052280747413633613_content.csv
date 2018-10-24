@@ -1,2 +1,0 @@
-"Content"
-"public class App extends Application {&#xD;&#xA;            private static Context mContext;&#xD;&#xA;            @Override&#xD;&#xA;            public void onCreate() {&#xD;&#xA;                super.onCreate();&#xD;&#xA;                mContext = this;&#xD;&#xA;            }&#xD;&#xA;            public static Context getContext() {&#xD;&#xA;                return mContext;&#xD;&#xA;            }&#xD;&#xA;        }"

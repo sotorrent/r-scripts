@@ -1,2 +1,0 @@
-"Content"
-"    Options +FollowSymLinks&#xD;&#xA;    Options -Indexes&#xD;&#xA;    &#xD;&#xA;    DirectoryIndex index.php&#xD;&#xA;    RewriteEngine on&#xD;&#xA;    RewriteCond $1 !^(index\.php|images|robots\.txt)&#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-f&#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-d&#xD;&#xA;    RewriteRule ^(.*)$ index.php/$1 [L,QSA]"

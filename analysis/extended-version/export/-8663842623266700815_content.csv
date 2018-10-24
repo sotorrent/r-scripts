@@ -1,2 +1,0 @@
-"Content"
-"    # This will destroy any local modifications.&#xD;&#xA;    # Don't do it if you have uncommitted work you want to keep.&#xD;&#xA;    git reset --hard 0d1d7fc32&#xD;&#xA;    # Alternatively, if there's work to keep:&#xD;&#xA;    git stash&#xD;&#xA;    git reset --hard 0d1d7fc32&#xD;&#xA;    git stash pop&#xD;&#xA;    # This saves the modifications, then reapplies that patch after resetting.&#xD;&#xA;    # You could get merge conflicts, if you've modified things which were&#xD;&#xA;    # changed since the commit you reset to."

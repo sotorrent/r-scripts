@@ -1,1 +1,0 @@
-"		function getQueryVariable(variable) {&#xD;&#xA;var query = window.location.search.substring(1);&#xD;&#xA;var vars = query.split(""""&"""");&#xD;&#xA;for (var i = 0; i < vars.length; i++) {&#xD;&#xA;var pair = vars[i].split(""""="""");&#xD;&#xA;if (pair[0] == variable) { return pair[1]; }&#xD;&#xA;}&#xD;&#xA;return (false);&#xD;&#xA;}"

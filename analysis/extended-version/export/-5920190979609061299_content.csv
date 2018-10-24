@@ -1,2 +1,0 @@
-"Content"
-"    	if (isset($_SERVER['HTTP_COOKIE'])) {&#xD;&#xA;    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);&#xD;&#xA;    foreach($cookies as $cookie) {&#xD;&#xA;        $parts = explode('=', $cookie);&#xD;&#xA;        $name = trim($parts[0]);&#xD;&#xA;        setcookie($name, '', time()-1000);&#xD;&#xA;        setcookie($name, '', time()-1000, '/');&#xD;&#xA;    	}&#xD;&#xA;	}"

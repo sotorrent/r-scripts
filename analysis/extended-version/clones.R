@@ -50,7 +50,7 @@ n_1_code/n_code*100
 # 97.93067
 
 ############
-# DECISION # Exclude normalized post blocks with only one occurrence.
+# DECISION # Exclude normalized post blocks occuring only in one thread.
 ############
 
 clones <- clones[clones$ThreadCount > 1,]
@@ -78,59 +78,72 @@ summary(clones_code$LineCount)
 # DECISION # Focus on code blocks in the following, exclude code blocks with less than 6 LOC (Bellon et al. 2007).
 ############
 
-clones_code <- clones_code[clones_code$LineCount > 5,]
-n_code <- nrow(clones_code)
-n_code
+#clones_code <- clones_code[clones_code$LineCount > 5,]
+#n_code <- nrow(clones_code)
+#n_code
 # 215,746
 
-summary(clones_code$LineCount)
+#summary(clones_code$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 6.00    7.00   11.00   17.05   18.00 1376.00
 
-summary(clones_code$ThreadCount)
+#summary(clones_code$ThreadCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 2.000   2.000   2.000   2.395   2.000 694.000 
+
+quantile(clones_code$LineCount, seq(from=0.95, to=0.99, by=0.01))
+# 95% 96% 97% 98% 99% 
+# 20  23  28  35  53
+
+####################
+# REVISED DECISION # Many trivial snippets and configuration files, increase threshold to 20
+####################
+
+clones_code <- clones_code[clones_code$LineCount >= 20,]
+n_code <- nrow(clones_code)
+n_code
+# 46,818
+
+summary(clones_code$LineCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 20.00   24.00   30.00   42.62   46.00 1376.00
+
+summary(clones_code$ThreadCount)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 2.000   2.000   2.000   2.252   2.000  79.000
 
 clones_code <- clones_code[order(-clones_code$ThreadCount, clones_code$LineCount),c("ContentNormalizedHash", "PostBlockTypeId", "LineCount", "ThreadCount")]
 clones_code[1:10]
 
-max_line_count <- max(clones_code$LineCount)
-line_count <- ifelse(clones_code$LineCount>50, 50, clones_code$LineCount)
-
-max_thread_count <- max(clones_code$ThreadCount)
-thread_count <- ifelse(clones_code$ThreadCount>5, 5, clones_code$ThreadCount)
-
 n_2 <- length(which(thread_count>2))
 n_2
-# 36,468
+# 6,265
 n_2/n_code*100
-# 16.90321
-
+# 13.38161
 
 #plot(thread_count, line_count)
 bins = hexbin(thread_count, line_count)
 plot(bins)
 
 # determine threshold for number of occurances
-length(clones_code[clones_code$ThreadCount >= 10,]$ContentNormalizedHash)
-# 1,584
+nrow(clones_code[clones_code$ThreadCount >= 5,])
+# 1014
 
 ############
-# DECISION # Consider clones occuring in at least 10 SO threads for the web visualization.
+# DECISION # Consider clones occuring in at least 5 SO threads for the web visualization.
 ############
-
 
 # analyze links between posts containing clones
 
 # read SO links
-clones_so_links <- fread("data/CodeClonesSampleLargeLinksSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+clones_so_links <- fread("data/CodeClonesSample2LinksSO.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
 # prevent problems with SQLDF and integer64
 clones_so_links$ContentNormalizedHash <- as.character(clones_so_links$ContentNormalizedHash)
 nrow(clones_so_links)
-# 55,852
+# 541
 hash_values <- unique(clones_so_links$ContentNormalizedHash)
 length(hash_values)
-# 38,489
+# 259
 
 results <- data.frame(
   ContentNormalizedHash=hash_values,
@@ -152,15 +165,65 @@ for (hash_value in hash_values) {
 
 post_count <- sum(results$PostCount)
 post_count
-# 46,256
+# 437
 linking_posts <- sum(results$PostsLinkingToClones)
 linking_posts
-# 3,556
+# 32
 linking_posts/post_count*100
-# 7.687651
+# 7.322654
 
 # write results
-write.table(results, file="data/CodeClonesSampleLargeLinksSOExport_per-hash.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+write.table(results, file="data/CodeClonesSample2LinksSO_per-hash.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+
+# analyze external links
+
+# read SO links
+clones_links <- fread("data/CodeClonesSample2LinksNonSO.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+# prevent problems with SQLDF and integer64
+clones_links$ContentNormalizedHash <- as.character(clones_links$ContentNormalizedHash)
+nrow(clones_links)
+# 4,809
+hash_values <- unique(clones_links$ContentNormalizedHash)
+length(hash_values)
+# 814
+
+root_domains <- sqldf("SELECT RootDomain, COUNT(DISTINCT PostId) AS PostCount FROM clones_links GROUP BY RootDomain ORDER BY PostCount DESC")
+root_domains[1:10,]
+# RootDomain PostCount
+# 1         imgur.com       537
+# 2      jsfiddle.net       318
+# 3        github.com       295
+# 4       android.com       198
+# 5     microsoft.com       141
+# 6        google.com       124
+# 7           php.net        81
+# 8        oracle.com        74
+# 9  androidhive.info        72
+#  10    w3schools.com        72
+
+complete_domains <- sqldf("SELECT CompleteDomain, COUNT(DISTINCT PostId) AS PostCount FROM clones_links GROUP BY CompleteDomain ORDER BY PostCount DESC")
+complete_domains[1:10,]
+# CompleteDomain PostCount
+# 1      i.stack.imgur.com       526
+# 2           jsfiddle.net       317
+# 3             github.com       265
+# 4  developer.android.com       175
+# 5     msdn.microsoft.com       111
+# 6   www.androidhive.info        72
+# 7      www.w3schools.com        72
+# 8        docs.oracle.com        67
+# 9             codepen.io        65
+# 10 developers.google.com        62
+
+
+# create plots
+
+max_line_count <- max(clones_code$LineCount)
+line_count <- ifelse(clones_code$LineCount>50, 50, clones_code$LineCount)
+
+max_thread_count <- max(clones_code$ThreadCount)
+thread_count <- ifelse(clones_code$ThreadCount>5, 5, clones_code$ThreadCount)
 
 
 # extended histogram for line count
@@ -185,7 +248,7 @@ par(
 
 # histogram (background)
 hist(line_count,
-     main="Line count of non-trivial code blocks with at least one clone (n=215,746)", 
+     main="Line count of non-trivial code blocks with at least one clone (n=46,818)", 
      freq=TRUE,
      xlab="",
      ylab="",
@@ -289,13 +352,13 @@ gap.barplot(
   xtics=seq(2, 5),
   ytics=c(0, 25000, 50000, 150000),
   col=c(gray_lighter, rep(gray_selected, 4)),
-  main="Number non-trivial code blocks being present in multiple threads (n=215,746)",
+  main="Number non-trivial code blocks being present in multiple threads (n=46,818)",
   xlab="",
   ylab="",
   xaxt="n"
 )
 # labels
-text(4, 15000, "16.9%", font=2)
+text(4, 15000, "13.4%", font=2)
 # axes
 axis(1, at=seq(2, 5, by=1), labels=c(seq(2, 4, by=1), "\u2265 5"))
 title(xlab="Number of threads", font.lab=3)

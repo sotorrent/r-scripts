@@ -1,2 +1,0 @@
-"Content"
-"    template<&#xD;&#xA;        class Key,&#xD;&#xA;        class T,&#xD;&#xA;        class Compare = std::less<Key>,&#xD;&#xA;        class Allocator = std::allocator<std::pair<const Key, T> >&#xD;&#xA;    > class map;"

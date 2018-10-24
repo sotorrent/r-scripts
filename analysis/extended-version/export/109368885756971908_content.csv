@@ -1,2 +1,0 @@
-"Content"
-"    import os&#xD;&#xA;    from os.path import join, getsize&#xD;&#xA;    &#xD;&#xA;    for root, dirs, files in os.walk('python/Lib/email'):&#xD;&#xA;        print root, """"consumes"""",&#xD;&#xA;        print sum([getsize(join(root, name)) for name in files]),&#xD;&#xA;        print """"bytes in"""", len(files), """"non-directory files""""&#xD;&#xA;        if 'CVS' in dirs:&#xD;&#xA;            dirs.remove('CVS')  # don't visit CVS directories"

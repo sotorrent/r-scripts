@@ -1,1 +1,0 @@
-"        import java.util.Map;&#xD;&#xA;public class EnvMap {&#xD;&#xA;public static void main (String[] args) {&#xD;&#xA;Map<String, String> env = System.getenv();&#xD;&#xA;for (String envName : env.keySet()) {&#xD;&#xA;System.out.format(""""%s=%s%n"""", envName, env.get(envName));&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;}"

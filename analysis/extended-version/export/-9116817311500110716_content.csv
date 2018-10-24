@@ -1,2 +1,0 @@
-"Content"
-"      <?php&#xD;&#xA;      $path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');&#xD;&#xA;     echo $path_parts['dirname'], """"\n"""";&#xD;&#xA;     echo $path_parts['basename'], """"\n"""";&#xD;&#xA;     echo $path_parts['extension'], """"\n"""";&#xD;&#xA;     echo $path_parts['filename'], """"\n""""; // since PHP 5.2.0&#xD;&#xA;     ?>"

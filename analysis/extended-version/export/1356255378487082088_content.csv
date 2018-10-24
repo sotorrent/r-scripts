@@ -1,2 +1,0 @@
-"Content"
-"                    <windowsAuthentication enabled=""""true"""">&#xD;&#xA;                    <providers>&#xD;&#xA;                        <add value=""""Negotiate"""" />&#xD;&#xA;                        <add value=""""NTLM"""" />&#xD;&#xA;                    </providers>&#xD;&#xA;                    </windowsAuthentication>"

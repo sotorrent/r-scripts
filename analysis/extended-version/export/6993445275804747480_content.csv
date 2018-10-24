@@ -1,1 +1,0 @@
-"    File imgFile = new  File(""""/sdcard/Images/test_image.jpg"""");&#xD;&#xA;if(imgFile.exists()){&#xD;&#xA;Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());&#xD;&#xA;ImageView myImage = (ImageView) findViewById(R.id.imageviewTest);&#xD;&#xA;myImage.setImageBitmap(myBitmap);&#xD;&#xA;}"

@@ -1,1 +1,0 @@
-"	import org.springframework.boot.SpringApplication;&#xD;&#xA;import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;&#xA;@SpringBootApplication&#xD;&#xA;public class Application {&#xD;&#xA;public static void main(String[] args) {&#xD;&#xA;SpringApplication.run(Application.class, args);&#xD;&#xA;}&#xD;&#xA;}"

@@ -1,2 +1,0 @@
-"Content"
-"	Intent email = new Intent(Intent.ACTION_SEND);&#xD;&#xA;	email.putExtra(Intent.EXTRA_EMAIL, new String[]{""""youremail@yahoo.com""""});		  &#xD;&#xA;	email.putExtra(Intent.EXTRA_SUBJECT, """"subject"""");&#xD;&#xA;	email.putExtra(Intent.EXTRA_TEXT, """"message"""");&#xD;&#xA;	email.setType(""""message/rfc822"""");&#xD;&#xA;	startActivity(Intent.createChooser(email, """"Choose an Email client :""""));"

@@ -1,2 +1,0 @@
-"Content"
-"    public static void createFileFromString(String fileText, String fileName) {&#xD;&#xA;    	try {&#xD;&#xA;    		File file = new File(fileName);&#xD;&#xA;    		BufferedWriter output = new BufferedWriter(new FileWriter(file));&#xD;&#xA;    		output.write(fileText);&#xD;&#xA;    		output.close();&#xD;&#xA;        } catch ( IOException e ) {&#xD;&#xA;           e.printStackTrace();&#xD;&#xA;        }&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"    <filesMatch """".(html|htm|js|css)$"""">&#xD;&#xA;    FileETag None&#xD;&#xA;    <ifModule mod_headers.c>&#xD;&#xA;    Header unset ETag&#xD;&#xA;    Header set Cache-Control """"max-age=0, no-cache, no-store, must-revalidate""""&#xD;&#xA;    Header set Pragma """"no-cache""""&#xD;&#xA;    Header set Expires """"Wed, 11 Jan 1984 05:00:00 GMT""""&#xD;&#xA;    </ifModule>&#xD;&#xA;    </filesMatch>"

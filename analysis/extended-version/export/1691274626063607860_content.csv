@@ -1,2 +1,0 @@
-"Content"
-"<html>&#xD;&#xA;        <body>&#xD;&#xA;    &#xD;&#xA;            <h1>Welcome to my home page!</h1>&#xD;&#xA;            <p>Some text.</p>&#xD;&#xA;            <p>Some more text.</p>&#xD;&#xA;            <?php include 'footer.php';?>&#xD;&#xA;    &#xD;&#xA;        </body>&#xD;&#xA;    </html>"

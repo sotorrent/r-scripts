@@ -1,1 +1,0 @@
-"	@Override&#xD;&#xA;public boolean onCreateOptionsMenu(Menu menu) {&#xD;&#xA;// Inflate the menu items for use in the action bar&#xD;&#xA;MenuInflater inflater = getMenuInflater();&#xD;&#xA;inflater.inflate(R.menu.main_activity_actions, menu);&#xD;&#xA;return super.onCreateOptionsMenu(menu);&#xD;&#xA;}"

@@ -1,2 +1,0 @@
-"Content"
-"class Parent < ActiveRecord::Base &#xD;&#xA;      has_many :children&#xD;&#xA;    end&#xD;&#xA;    class Child < ActiveRecord::Base&#xD;&#xA;      belongs_to :parent&#xD;&#xA;    end"

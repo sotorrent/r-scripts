@@ -1,2 +1,0 @@
-"Content"
-"     #include <gtk/gtk.h>&#xD;&#xA;     int main( int argc,char *argv[] )&#xD;&#xA;    {&#xD;&#xA;       GtkWidget *window;&#xD;&#xA;       gtk_init (&argc, &argv);&#xD;&#xA;       window = gtk_window_new (GTK_WINDOW_TOPLEVEL);&#xD;&#xA;       gtk_widget_show  (window);&#xD;&#xA;       gtk_main ();&#xD;&#xA;       return 0;&#xD;&#xA;    }"

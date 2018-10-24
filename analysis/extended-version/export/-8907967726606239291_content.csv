@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;    include('Net/SSH2.php');&#xD;&#xA;    &#xD;&#xA;    $ssh = new Net_SSH2('www.domain.tld');&#xD;&#xA;    if (!$ssh->login('username', 'password')) {&#xD;&#xA;        exit('Login Failed');&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    echo $ssh->exec('pwd');&#xD;&#xA;    echo $ssh->exec('ls -la');&#xD;&#xA;    ?>"

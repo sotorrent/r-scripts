@@ -1,2 +1,0 @@
-"Content"
-"	$http({&#xD;&#xA;	  method: 'GET',&#xD;&#xA;	  url: '/someUrl'&#xD;&#xA;	}).then(function successCallback(response) {&#xD;&#xA;		// this callback will be called asynchronously&#xD;&#xA;		// when the response is available&#xD;&#xA;	  }, function errorCallback(response) {&#xD;&#xA;		// called asynchronously if an error occurs&#xD;&#xA;		// or server returns response with an error status.&#xD;&#xA;	  });"

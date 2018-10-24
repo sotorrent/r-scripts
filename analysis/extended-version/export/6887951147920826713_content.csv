@@ -1,2 +1,0 @@
-"Content"
-"    fetch('https://mywebsite.com/endpoint/', {  &#xD;&#xA;      method: 'POST',&#xD;&#xA;      headers: {&#xD;&#xA;        'Accept': 'application/json',&#xD;&#xA;        'Content-Type': 'application/json',&#xD;&#xA;      },&#xD;&#xA;      body: JSON.stringify({&#xD;&#xA;        firstParam: 'yourValue',&#xD;&#xA;        secondParam: 'yourOtherValue',&#xD;&#xA;      })&#xD;&#xA;    })"

@@ -1,2 +1,0 @@
-"Content"
-"    RewriteEngine On  &#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-f  &#xD;&#xA;    RewriteRule ^([^/]+)/$ $1.php  &#xD;&#xA;    RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php  &#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-f  &#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-d  &#xD;&#xA;    RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$  &#xD;&#xA;    RewriteRule (.*)$ /$1/ [R=301,L]  "

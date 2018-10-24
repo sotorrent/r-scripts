@@ -1,2 +1,0 @@
-"Content"
-"        <system.data>&#xD;&#xA;          <DbProviderFactories>&#xD;&#xA;    &#xD;&#xA;            <remove invariant=""""System.Data.SQLite"""" />&#xD;&#xA;            <add name=""""SQLite Data Provider""""&#xD;&#xA;                 invariant=""""System.Data.SQLite""""&#xD;&#xA;                 description="""".Net Framework Data Provider for SQLite""""&#xD;&#xA;                 type=""""System.Data.SQLite.SQLiteFactory, System.Data.SQLite"""" />&#xD;&#xA;    &#xD;&#xA;          </DbProviderFactories>&#xD;&#xA;        </system.data>"

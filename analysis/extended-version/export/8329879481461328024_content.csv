@@ -1,2 +1,0 @@
-"Content"
-"Session sess = factory.openSession();&#xD;&#xA;     Transaction tx;&#xD;&#xA;     try {&#xD;&#xA;         tx = sess.beginTransaction();&#xD;&#xA;         //do some work&#xD;&#xA;         ...&#xD;&#xA;         tx.commit();&#xD;&#xA;     }&#xD;&#xA;     catch (Exception e) {&#xD;&#xA;         if (tx!=null) tx.rollback();&#xD;&#xA;         throw e;&#xD;&#xA;     }&#xD;&#xA;     finally {&#xD;&#xA;         sess.close();&#xD;&#xA;     }"

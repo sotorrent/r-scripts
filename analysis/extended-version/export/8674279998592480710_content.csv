@@ -1,1 +1,0 @@
-"	<IfModule mod_rewrite.c>&#xD;&#xA;RewriteEngine On&#xD;&#xA;RewriteBase /&#xD;&#xA;RewriteRule ^index.html$ - [L]&#xD;&#xA;RewriteCond %{REQUEST_FILENAME} !-f&#xD;&#xA;RewriteCond %{REQUEST_FILENAME} !-d&#xD;&#xA;RewriteRule . /index.html [L]&#xD;&#xA;</IfModule>"

@@ -1,2 +1,0 @@
-"Content"
-"	public static class WebApiConfig&#xD;&#xA;	{&#xD;&#xA;	    public static void Register(HttpConfiguration config)&#xD;&#xA;	    {&#xD;&#xA;	        // Attribute routing.&#xD;&#xA;	        config.MapHttpAttributeRoutes();&#xD;&#xA;	        // Convention-based routing.&#xD;&#xA;	        config.Routes.MapHttpRoute(&#xD;&#xA;	            name: """"DefaultApi"""",&#xD;&#xA;	            routeTemplate: """"api/{controller}/{id}"""",&#xD;&#xA;	            defaults: new { id = RouteParameter.Optional }&#xD;&#xA;	        );&#xD;&#xA;	    }&#xD;&#xA;	}&#xD;&#xA;    "

@@ -1,2 +1,0 @@
-"Content"
-"attribute vec4 position;&#xD;&#xA;        attribute vec4 inputTextureCoordinate;&#xD;&#xA;        varying vec2 textureCoordinate;&#xD;&#xA;        void main()&#xD;&#xA;        {&#xD;&#xA;            gl_Position = position;&#xD;&#xA;            textureCoordinate = inputTextureCoordinate.xy;&#xD;&#xA;        }"

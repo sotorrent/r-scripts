@@ -1,2 +1,0 @@
-"Content"
-"class UsersController < ApplicationController&#xD;&#xA;		  def show&#xD;&#xA;		    @user = User.find(params[:id])&#xD;&#xA;		  end&#xD;&#xA;		  def new&#xD;&#xA;		  end&#xD;&#xA;		end"

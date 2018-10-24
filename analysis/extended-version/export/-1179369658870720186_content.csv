@@ -1,2 +1,0 @@
-"Content"
-"    ENV[""""RAILS_ENV""""] = """"test""""&#xD;&#xA;    require File.expand_path('../../config/environment', __FILE__)&#xD;&#xA;    require 'rails/test_help'&#xD;&#xA;    class ActiveSupport::TestCase&#xD;&#xA;      # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.&#xD;&#xA;      fixtures :all&#xD;&#xA;      # Add more helper methods to be used by all tests here...&#xD;&#xA;    end"

@@ -1,2 +1,0 @@
-"Content"
-"    - (UIImage *)croppIngimageByImageName:(UIImage *)imageToCrop toRect:(CGRect)rect&#xD;&#xA;        {&#xD;&#xA;            //CGRect CropRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height+15);&#xD;&#xA;            &#xD;&#xA;            CGImageRef imageRef = CGImageCreateWithImageInRect([imageToCrop CGImage], rect);&#xD;&#xA;            UIImage *cropped = [UIImage imageWithCGImage:imageRef];&#xD;&#xA;            CGImageRelease(imageRef);&#xD;&#xA;            &#xD;&#xA;            return cropped;&#xD;&#xA;        }"

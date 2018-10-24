@@ -1,2 +1,0 @@
-"Content"
-"        <script src=""""/socket.io/socket.io.js""""></script>&#xD;&#xA;        <script>&#xD;&#xA;          var socket = io.connect('http://localhost');&#xD;&#xA;          socket.on('news', function (data) {&#xD;&#xA;            console.log(data);&#xD;&#xA;            socket.emit('my other event', { my: 'data' });&#xD;&#xA;          });&#xD;&#xA;        </script>"

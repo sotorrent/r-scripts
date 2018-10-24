@@ -1,2 +1,0 @@
-"Content"
-"        function preload(arrayOfImages) {&#xD;&#xA;            $(arrayOfImages).each(function(){&#xD;&#xA;                $('<img/>')[0].src = this;&#xD;&#xA;                // Alternatively you could use:&#xD;&#xA;                // (new Image()).src = this;&#xD;&#xA;            });&#xD;&#xA;        }&#xD;&#xA;        &#xD;&#xA;        // Usage:&#xD;&#xA;        &#xD;&#xA;        preload([&#xD;&#xA;            'img/imageName.jpg',&#xD;&#xA;            'img/anotherOne.jpg',&#xD;&#xA;            'img/blahblahblah.jpg'&#xD;&#xA;    ]);"

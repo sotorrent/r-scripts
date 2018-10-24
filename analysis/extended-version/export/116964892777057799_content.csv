@@ -1,2 +1,0 @@
-"Content"
-"     public int nextInt(int n) {&#xD;&#xA;         if (n<=0)&#xD;&#xA;    		throw new IllegalArgumentException(""""n must be positive"""");&#xD;&#xA;    &#xD;&#xA;         if ((n & -n) == n)  // i.e., n is a power of 2&#xD;&#xA;             return (int)((n * (long)next(31)) >> 31);&#xD;&#xA;    &#xD;&#xA;         int bits, val;&#xD;&#xA;         do {&#xD;&#xA;             bits = next(31);&#xD;&#xA;             val = bits % n;&#xD;&#xA;         } while(bits - val + (n-1) < 0);&#xD;&#xA;         return val;&#xD;&#xA;     }"

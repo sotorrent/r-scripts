@@ -1,2 +1,0 @@
-"Content"
-"      <?php&#xD;&#xA;      echo round(3.4);         // 3&#xD;&#xA;      echo round(3.5);         // 4&#xD;&#xA;      echo round(3.6);         // 4&#xD;&#xA;      echo round(3.6, 0);      // 4&#xD;&#xA;      echo round(1.95583, 2);  // 1.96&#xD;&#xA;      echo round(1241757, -3); // 1242000&#xD;&#xA;      echo round(5.045, 2);    // 5.05&#xD;&#xA;      echo round(5.055, 2);    // 5.06&#xD;&#xA;      ?>"

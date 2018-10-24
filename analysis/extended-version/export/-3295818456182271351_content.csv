@@ -1,2 +1,0 @@
-"Content"
-"	function getStyle(oElm, strCssRule){&#xD;&#xA;		var strValue = """""""";&#xD;&#xA;		if (document.defaultView && document.defaultView.getComputedStyle){&#xD;&#xA;			strValue = document.defaultView.getComputedStyle(oElm, """""""").getPropertyValue(strCssRule);&#xD;&#xA;		} else if (oElm.currentStyle){&#xD;&#xA;			strCssRule = strCssRule.replace(/\-(\w)/g, function (strMatch, p1){&#xD;&#xA;				return p1.toUpperCase();&#xD;&#xA;			});&#xD;&#xA;			strValue = oElm.currentStyle[strCssRule];&#xD;&#xA;		}&#xD;&#xA;		return strValue;&#xD;&#xA;	}"

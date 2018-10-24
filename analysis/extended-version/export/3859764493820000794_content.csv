@@ -1,2 +1,0 @@
-"Content"
-"	$(document).ready(function(){&#xD;&#xA;		&#xD;&#xA;		$('ul.tabs li').click(function(){&#xD;&#xA;			var tab_id = $(this).attr('data-tab');&#xD;&#xA;	&#xD;&#xA;			$('ul.tabs li').removeClass('current');&#xD;&#xA;			$('.tab-content').removeClass('current');&#xD;&#xA;	&#xD;&#xA;			$(this).addClass('current');&#xD;&#xA;			$(""""#""""+tab_id).addClass('current');&#xD;&#xA;		})&#xD;&#xA;	&#xD;&#xA;	})"

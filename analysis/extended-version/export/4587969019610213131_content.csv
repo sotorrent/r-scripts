@@ -1,1 +1,0 @@
-"      <?php&#xD;&#xA;$str = """"A 'quote' is <b>bold</b>"""";&#xD;&#xA;// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;&#xD;&#xA;echo htmlentities($str);&#xD;&#xA;// Outputs: A &#039;quote&#039; is &lt;b&gt;bold&lt;/b&gt;&#xD;&#xA;echo htmlentities($str, ENT_QUOTES);&#xD;&#xA;?>"

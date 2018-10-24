@@ -1,2 +1,0 @@
-"Content"
-"     <resources>&#xD;&#xA;        <style name=""""MyTheme"""" parent=""""@android:style/Theme.Holo.Light"""">&#xD;&#xA;            <item name=""""android:actionBarStyle"""">@style/MyActionBar</item>&#xD;&#xA;        </style>&#xD;&#xA;    &#xD;&#xA;        <style name=""""MyActionBar"""" parent=""""@android:style/Widget.Holo.Light.ActionBar"""">&#xD;&#xA;            <item name=""""android:background"""">ANY_HEX_COLOR_CODE</item>&#xD;&#xA;        </style>&#xD;&#xA;    </resources>"

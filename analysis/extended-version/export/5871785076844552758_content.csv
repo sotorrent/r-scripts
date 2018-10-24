@@ -1,2 +1,0 @@
-"Content"
-"           class SessionsController < ApplicationController&#xD;&#xA;             def create&#xD;&#xA;             user = User.from_omniauth(env[""""omniauth.auth""""])&#xD;&#xA;             session[:user_id] = user.id&#xD;&#xA;             redirect_to root_url&#xD;&#xA;            end&#xD;&#xA;           def destroy&#xD;&#xA;               session[:user_id] = nil&#xD;&#xA;               redirect_to root_url&#xD;&#xA;            end&#xD;&#xA;                end"

@@ -1,2 +1,0 @@
-"Content"
-"    $apikey = 'xxx';&#xD;&#xA;    $apisecret = 'xxx';&#xD;&#xA;    $nonce = time();&#xD;&#xA;    $uri = 'https://bittrex.com/api/v1.1/market/getopenorders?apikey=' .&#xD;&#xA;        $apikey . '&nonce=' . $nonce;&#xD;&#xA;    $sign = hash_hmac('sha512', $uri, $apisecret);&#xD;&#xA;    $ch = curl_init($uri);&#xD;&#xA;    curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisign:' . $sign));&#xD;&#xA;    $execResult = curl_exec($ch);&#xD;&#xA;    $obj = json_decode($execResult);"

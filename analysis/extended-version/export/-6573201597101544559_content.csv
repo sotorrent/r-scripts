@@ -1,2 +1,0 @@
-"Content"
-"Access Levels  &#xD;&#xA;    Modifier    | Class | Package | Subclass | World | &#xD;&#xA;    --------------------------------------------------&#xD;&#xA;    public      | Y     |  Y      | Y        | Y     |  &#xD;&#xA;    protected   | Y     |  Y      | Y        | N     |  &#xD;&#xA;    no modifier | Y     |  Y      | N        | N     |  &#xD;&#xA;    private     | Y     |  N      | N        | N     |"

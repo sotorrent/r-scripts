@@ -1,2 +1,0 @@
-"Content"
-"    Product product = new Product();&#xD;&#xA;    product.Name = """"Apple"""";&#xD;&#xA;    product.Expiry = new DateTime(2008, 12, 28);&#xD;&#xA;    product.Sizes = new string[] { """"Small"""" };&#xD;&#xA;     &#xD;&#xA;    string json = JsonConvert.SerializeObject(product);&#xD;&#xA;    //{&#xD;&#xA;    //  """"Name"""": """"Apple"""",&#xD;&#xA;    //  """"Expiry"""": """"2008-12-28T00:00:00"""",&#xD;&#xA;    //  """"Sizes"""": [&#xD;&#xA;    //    """"Small""""&#xD;&#xA;    //  ]&#xD;&#xA;    //}"

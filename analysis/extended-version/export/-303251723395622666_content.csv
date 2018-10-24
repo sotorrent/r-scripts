@@ -1,1 +1,0 @@
-"        + (UIImage *) imageWithView:(UIView *)view&#xD;&#xA;{&#xD;&#xA;UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);&#xD;&#xA;[view.layer renderInContext:UIGraphicsGetCurrentContext()];&#xD;&#xA;UIImage * img = UIGraphicsGetImageFromCurrentImageContext();&#xD;&#xA;UIGraphicsEndImageContext();&#xD;&#xA;return img;&#xD;&#xA;}"

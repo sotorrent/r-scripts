@@ -1,1 +1,0 @@
-"     CREATE TABLE Persons&#xD;&#xA;(&#xD;&#xA;PersonID int,&#xD;&#xA;LastName varchar(255),&#xD;&#xA;FirstName varchar(255),&#xD;&#xA;Address varchar(255),&#xD;&#xA;City varchar(255)&#xD;&#xA;);  "

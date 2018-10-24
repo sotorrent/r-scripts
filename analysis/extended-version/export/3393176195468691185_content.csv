@@ -1,2 +1,0 @@
-"Content"
-"        @font-face {&#xD;&#xA;      font-family: 'MyWebFont';&#xD;&#xA;      src: url('webfont.eot'); /* IE9 Compat Modes */&#xD;&#xA;      src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */&#xD;&#xA;           url('webfont.woff2') format('woff2'), /* Super Modern Browsers */&#xD;&#xA;           url('webfont.woff') format('woff'), /* Pretty Modern Browsers */&#xD;&#xA;           url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */&#xD;&#xA;           url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */&#xD;&#xA;    }"

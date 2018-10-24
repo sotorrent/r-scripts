@@ -1,2 +1,0 @@
-"Content"
-"           $('.box').click(function() {&#xD;&#xA;                $(this).animate({&#xD;&#xA;                     left: '-50%'&#xD;&#xA;                 }, 500, function() {&#xD;&#xA;                $(this).css('left', '150%');&#xD;&#xA;                $(this).appendTo('#container');&#xD;&#xA;                });&#xD;&#xA;                $(this).next().animate({&#xD;&#xA;                     left: '50%'&#xD;&#xA;                }, 500);&#xD;&#xA;           });"

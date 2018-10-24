@@ -1,2 +1,0 @@
-"Content"
-"		<script type=""""text/javascript"""">&#xD;&#xA;		function downloadJSAtOnload() {&#xD;&#xA;		var element = document.createElement(""""script"""");&#xD;&#xA;		element.src = """"defer.js"""";&#xD;&#xA;		document.body.appendChild(element);&#xD;&#xA;		}&#xD;&#xA;		if (window.addEventListener)&#xD;&#xA;		window.addEventListener(""""load"""", downloadJSAtOnload, false);&#xD;&#xA;		else if (window.attachEvent)&#xD;&#xA;		window.attachEvent(""""onload"""", downloadJSAtOnload);&#xD;&#xA;		else window.onload = downloadJSAtOnload;&#xD;&#xA;		</script>"

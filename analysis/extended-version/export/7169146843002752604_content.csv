@@ -1,2 +1,0 @@
-"Content"
-"    Expression e = new Expression(""""Round(Pow(Pi, 2) + Pow([Pi2], 2) + X, 2)""""); &#xD;&#xA;     &#xD;&#xA;      e.Parameters[""""Pi2""""] = new Expression(""""Pi * Pi""""); &#xD;&#xA;      e.Parameters[""""X""""] = 10; &#xD;&#xA;     &#xD;&#xA;      e.EvaluateParameter += delegate(string name, ParameterArgs args) &#xD;&#xA;        { &#xD;&#xA;          if (name == """"Pi"""") &#xD;&#xA;          args.Result = 3.14; &#xD;&#xA;        }; &#xD;&#xA;     &#xD;&#xA;      Debug.Assert(117.07 == e.Evaluate()); "

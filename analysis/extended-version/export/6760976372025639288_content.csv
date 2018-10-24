@@ -1,2 +1,0 @@
-"Content"
-"	<configuration>&#xD;&#xA;	  <property> &#xD;&#xA;	    <name>mapreduce.framework.name</name> &#xD;&#xA;	    <value>yarn</value> &#xD;&#xA;	  </property>&#xD;&#xA;	</configuration>"

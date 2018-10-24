@@ -1,1 +1,0 @@
-"public void onDestroyView() {&#xD;&#xA;super.onDestroyView();&#xD;&#xA;Fragment fragment = (getFragmentManager().findFragmentById(R.id.map));&#xD;&#xA;FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();&#xD;&#xA;ft.remove(fragment);&#xD;&#xA;ft.commit();&#xD;&#xA;}"

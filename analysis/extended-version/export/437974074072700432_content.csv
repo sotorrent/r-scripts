@@ -1,2 +1,0 @@
-"Content"
-"    <% if @feed_items.any? %>&#xD;&#xA;    	<ol class=""""microposts"""">&#xD;&#xA;    		<%= render partial: 'shared/feed_item', collection: @feed_items %>&#xD;&#xA;    	</ol>&#xD;&#xA;    	<%= will_paginate @feed_items %>&#xD;&#xA;    <% end %>"

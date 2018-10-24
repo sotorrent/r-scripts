@@ -1,1 +1,0 @@
-"     let key = ref.child(""""posts"""").childByAutoId().key&#xD;&#xA;let post = [""""uid"""": userID, """"author"""": username, """"title"""": title, """"body"""": body]&#xD;&#xA;let childUpdates = [""""/posts/(key)"""": post, """"/user-posts/(userID)/(key)/"""": post]&#xD;&#xA;ref.updateChildValues(childUpdates)"

@@ -1,2 +1,0 @@
-"Content"
-"	<context-param>&#xD;&#xA;		<param-name>resteasy.scan</param-name>&#xD;&#xA;		<param-value>false</param-value>&#xD;&#xA;	</context-param>&#xD;&#xA;	<context-param>&#xD;&#xA;		<param-name>resteasy.scan.providers</param-name>&#xD;&#xA;		<param-value>false</param-value>&#xD;&#xA;	</context-param>&#xD;&#xA;	<context-param>&#xD;&#xA;		<param-name>resteasy.scan.resources</param-name>&#xD;&#xA;		<param-value>false</param-value>&#xD;&#xA;	</context-param>"

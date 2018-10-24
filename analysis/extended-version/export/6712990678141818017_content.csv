@@ -1,2 +1,0 @@
-"Content"
-"    <configuration>&#xD;&#xA;       <system.web>&#xD;&#xA;          <sessionState &#xD;&#xA;            mode=""""InProc""""&#xD;&#xA;            cookieless=""""true""""&#xD;&#xA;            timeout=""""30"""" />&#xD;&#xA;       </system.web>&#xD;&#xA;    </configuration>&#xD;&#xA;    "

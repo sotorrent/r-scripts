@@ -1,2 +1,0 @@
-"Content"
-"        <resources>&#xD;&#xA;        <!-- Base application theme. -->&#xD;&#xA;        <style name=""""AppTheme"""" parent=""""Theme.AppCompat.Light.NoActionBar"""">&#xD;&#xA;            <!-- Customize your theme here. -->&#xD;&#xA;            <item name=""""colorPrimary"""">@color/colorPrimary</item>&#xD;&#xA;            <item name=""""colorPrimaryDark"""">@color/colorPrimaryDark</item>&#xD;&#xA;            <item name=""""colorAccent"""">@color/colorAccent</item>&#xD;&#xA;        &#xD;&#xA;        </style>&#xD;&#xA;    </resources>"

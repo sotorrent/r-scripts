@@ -1,2 +1,0 @@
-"Content"
-"        android:singleLine=""""true"""" &#xD;&#xA;    	android:ellipsize=""""marquee""""&#xD;&#xA;    	android:marqueeRepeatLimit =""""marquee_forever""""&#xD;&#xA;    	android:scrollHorizontally=""""true""""&#xD;&#xA;    	android:focusable=""""true""""&#xD;&#xA;    	android:focusableInTouchMode=""""true"""""

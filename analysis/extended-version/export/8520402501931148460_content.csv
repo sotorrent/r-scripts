@@ -1,2 +1,0 @@
-"Content"
-"    var $rows = $('#table tr');&#xD;&#xA;    		$('#search').keyup(function() {&#xD;&#xA;    			var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();&#xD;&#xA;    			&#xD;&#xA;    			$rows.show().filter(function() {&#xD;&#xA;    				var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();&#xD;&#xA;    				return !~text.indexOf(val);&#xD;&#xA;    			}).hide();&#xD;&#xA;    		});"

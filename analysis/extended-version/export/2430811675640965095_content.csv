@@ -1,2 +1,0 @@
-"Content"
-"	<build>&#xD;&#xA;		. . . &#xD;&#xA;		<plugins>&#xD;&#xA;			<plugin>&#xD;&#xA;				<groupId>org.springframework.boot</groupId>&#xD;&#xA;				<artifactId>spring-boot-maven-plugin</artifactId>&#xD;&#xA;			</plugin>&#xD;&#xA;		</plugins>&#xD;&#xA;	</build>"

@@ -1,2 +1,0 @@
-"Content"
-"    private Bitmap getBitmapFromUri(Uri uri) throws IOException {&#xD;&#xA;            ParcelFileDescriptor parcelFileDescriptor =&#xD;&#xA;                 getContentResolver().openFileDescriptor(uri, """"r"""");&#xD;&#xA;            FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();&#xD;&#xA;            Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);&#xD;&#xA;            parcelFileDescriptor.close();&#xD;&#xA;            return image;&#xD;&#xA;    }"

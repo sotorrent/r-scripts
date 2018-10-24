@@ -1,2 +1,0 @@
-"Content"
-"	RewriteEngine On&#xD;&#xA; &#xD;&#xA;	RewriteRule ^\.htaccess$ - [F]&#xD;&#xA; &#xD;&#xA;	RewriteCond %{REQUEST_URI} =""""""""&#xD;&#xA;	RewriteRule ^.*$ /public/index.php [NC,L]&#xD;&#xA; &#xD;&#xA;	RewriteCond %{REQUEST_URI} !^/public/.*$&#xD;&#xA;	RewriteRule ^(.*)$ /public/$1&#xD;&#xA; &#xD;&#xA;	RewriteCond %{REQUEST_FILENAME} -f&#xD;&#xA;	RewriteRule ^.*$ - [NC,L]&#xD;&#xA; &#xD;&#xA;	RewriteRule ^public/.*$ /public/index.php [NC,L]"

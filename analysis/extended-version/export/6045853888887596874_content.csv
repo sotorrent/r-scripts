@@ -1,2 +1,0 @@
-"Content"
-"curl -F 'client_id=CLIENT_ID' \&#xD;&#xA;        -F 'client_secret=CLIENT_SECRET' \&#xD;&#xA;        -F 'grant_type=authorization_code' \&#xD;&#xA;        -F 'redirect_uri=AUTHORIZATION_REDIRECT_URI' \&#xD;&#xA;        -F 'code=CODE' \&#xD;&#xA;        https://api.instagram.com/oauth/access_token"

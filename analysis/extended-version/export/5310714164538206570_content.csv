@@ -1,2 +1,0 @@
-"Content"
-"	import { enableProdMode } from '@angular/core';&#xD;&#xA;	import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';&#xD;&#xA;	import { AppModule } from './app/app.module';&#xD;&#xA;	import { environment } from './environments/environment';&#xD;&#xA;	if (environment.production) {&#xD;&#xA;	    enableProdMode();&#xD;&#xA;	}&#xD;&#xA;	platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.log(err));"

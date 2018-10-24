@@ -1,1 +1,0 @@
-"	<system.webServer>&#xD;&#xA;<modules>&#xD;&#xA;<remove name=""""FormsAuthentication"""" />&#xD;&#xA;</modules>&#xD;&#xA;</system.webServer>"

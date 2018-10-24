@@ -1,2 +1,0 @@
-"Content"
-"      <!DOCTYPE html>&#xD;&#xA;    <html>&#xD;&#xA;    <body>&#xD;&#xA;    &#xD;&#xA;    <h1>My first PHP page</h1>&#xD;&#xA;    &#xD;&#xA;    <?php&#xD;&#xA;    echo """"Hello World!"""";&#xD;&#xA;    ?>&#xD;&#xA;    &#xD;&#xA;    </body>&#xD;&#xA;    </html>&#xD;&#xA;    "

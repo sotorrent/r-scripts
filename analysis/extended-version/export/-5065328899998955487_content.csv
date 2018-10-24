@@ -1,2 +1,0 @@
-"Content"
-"    app.use(function(req, res, next) {&#xD;&#xA;      res.header(""""Access-Control-Allow-Origin"""", """"*"""");&#xD;&#xA;      res.header(""""Access-Control-Allow-Headers"""", """"Origin, X-Requested-With, Content-Type, Accept"""");&#xD;&#xA;      next();&#xD;&#xA;    });&#xD;&#xA;    &#xD;&#xA;    app.get('/', function(req, res, next) {&#xD;&#xA;      // Handle the get for this route&#xD;&#xA;    });&#xD;&#xA;    &#xD;&#xA;    app.post('/', function(req, res, next) {&#xD;&#xA;     // Handle the post for this route&#xD;&#xA;    });"

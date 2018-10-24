@@ -1,2 +1,0 @@
-"Content"
-"function sticky_relocate() {&#xD;&#xA;          var window_top = $(window).scrollTop();&#xD;&#xA;          var div_top = $('#sticky-anchor').offset().top;&#xD;&#xA;          if (window_top > div_top) {&#xD;&#xA;            $('#sticky').addClass('stick');&#xD;&#xA;          } else {&#xD;&#xA;            $('#sticky').removeClass('stick');&#xD;&#xA;          }&#xD;&#xA;        }&#xD;&#xA;        $(function() {&#xD;&#xA;          $(window).scroll(sticky_relocate);&#xD;&#xA;          sticky_relocate();&#xD;&#xA;        });"

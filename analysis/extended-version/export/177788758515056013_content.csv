@@ -1,2 +1,0 @@
-"Content"
-"    <uses-permission android:name=""""android.permission.RECEIVE_BOOT_COMPLETED""""></uses-permission>&#xD;&#xA;        <receiver android:name="""".AutoStart"""">&#xD;&#xA;            <intent-filter>&#xD;&#xA;                <action android:name=""""android.intent.action.BOOT_COMPLETED""""></action>&#xD;&#xA;            </intent-filter>&#xD;&#xA;    </receiver>"

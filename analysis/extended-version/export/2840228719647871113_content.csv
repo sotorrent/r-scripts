@@ -1,2 +1,0 @@
-"Content"
-"private Bitmap getBitmapFromAsset(String strName) {&#xD;&#xA;		AssetManager assetManager = getAssets();&#xD;&#xA;		InputStream istr = null;&#xD;&#xA;		try {&#xD;&#xA;			istr = assetManager.open(strName);&#xD;&#xA;		} catch (IOException e) {&#xD;&#xA;			e.printStackTrace();&#xD;&#xA;		}&#xD;&#xA;		Bitmap bitmap = BitmapFactory.decodeStream(istr);&#xD;&#xA;		return bitmap;&#xD;&#xA;	}"

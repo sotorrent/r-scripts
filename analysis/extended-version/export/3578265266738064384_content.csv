@@ -1,2 +1,0 @@
-"Content"
-"	def worker():&#xD;&#xA;		while True:&#xD;&#xA;			item = q.get()&#xD;&#xA;			do_work(item)&#xD;&#xA;			q.task_done()&#xD;&#xA;	q = Queue()&#xD;&#xA;	for i in range(num_worker_threads):&#xD;&#xA;		 t = Thread(target=worker)&#xD;&#xA;		 t.daemon = True&#xD;&#xA;		 t.start()&#xD;&#xA;	for item in source():&#xD;&#xA;		q.put(item)&#xD;&#xA;	q.join()       # block until all tasks are done"

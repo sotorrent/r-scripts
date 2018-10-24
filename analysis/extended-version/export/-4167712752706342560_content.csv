@@ -1,2 +1,0 @@
-"Content"
-"        package hello;&#xD;&#xA;        &#xD;&#xA;        import org.springframework.boot.SpringApplication;&#xD;&#xA;        import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;&#xA;        &#xD;&#xA;        @SpringBootApplication&#xD;&#xA;        public class Application {&#xD;&#xA;        &#xD;&#xA;            public static void main(String[] args) {&#xD;&#xA;                SpringApplication.run(Application.class, args);&#xD;&#xA;            }&#xD;&#xA;        }"

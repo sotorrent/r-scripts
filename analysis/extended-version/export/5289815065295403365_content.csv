@@ -1,2 +1,0 @@
-"Content"
-"    Calendar cal = Calendar.getInstance();				&#xD;&#xA;    Intent intent = new Intent(Intent.ACTION_EDIT);&#xD;&#xA;    intent.setType(""""vnd.android.cursor.item/event"""");&#xD;&#xA;    intent.putExtra(""""beginTime"""", cal.getTimeInMillis());&#xD;&#xA;    intent.putExtra(""""allDay"""", true);&#xD;&#xA;    intent.putExtra(""""rrule"""", """"FREQ=YEARLY"""");&#xD;&#xA;    intent.putExtra(""""endTime"""", cal.getTimeInMillis()+60*60*1000);&#xD;&#xA;    intent.putExtra(""""title"""", """"A Test Event from android app"""");&#xD;&#xA;    startActivity(intent);"

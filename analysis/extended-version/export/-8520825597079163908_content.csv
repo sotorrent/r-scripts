@@ -1,2 +1,0 @@
-"Content"
-"      def full_title(page_title) &#xD;&#xA;        base_title = """"Ruby on Rails Tutorial Sample App""""&#xD;&#xA;    &#xD;&#xA;        if page_title.empty?&#xD;&#xA;          base_title&#xD;&#xA;        else&#xD;&#xA;          """"#{base_title} | #{page_title}""""&#xD;&#xA;        end&#xD;&#xA;      end"

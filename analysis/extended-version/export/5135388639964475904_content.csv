@@ -1,2 +1,0 @@
-"Content"
-"        function autoResize(id){&#xD;&#xA;         var newheight;&#xD;&#xA;         var newwidth;&#xD;&#xA;        if(document.getElementById){&#xD;&#xA;        newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;&#xD;&#xA;        newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;&#xD;&#xA;    }&#xD;&#xA;    document.getElementById(id).height= (newheight) + """"px"""";&#xD;&#xA;    document.getElementById(id).width= (newwidth) + """"px"""";"

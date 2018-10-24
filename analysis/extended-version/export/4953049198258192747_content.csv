@@ -1,2 +1,0 @@
-"Content"
-"runtime: python27&#xD;&#xA;          api_version: 1&#xD;&#xA;         threadsafe: true&#xD;&#xA;          handlers:&#xD;&#xA;          - url: /.*&#xD;&#xA;           script: main.app"

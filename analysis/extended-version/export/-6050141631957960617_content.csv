@@ -1,2 +1,0 @@
-"Content"
-"     <?php&#xD;&#xA;    $servername = """"localhost"""";&#xD;&#xA;    $username = """"username"""";&#xD;&#xA;    $password = """"password"""";&#xD;&#xA;    &#xD;&#xA;    // Create connection&#xD;&#xA;    $conn = new mysqli($servername, $username, $password);&#xD;&#xA;    &#xD;&#xA;    // Check connection&#xD;&#xA;    if ($conn->connect_error) {&#xD;&#xA;        die(""""Connection failed: """" . $conn->connect_error);&#xD;&#xA;    }&#xD;&#xA;    echo """"Connected successfully"""";&#xD;&#xA;    ?> "

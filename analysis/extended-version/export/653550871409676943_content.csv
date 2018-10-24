@@ -1,2 +1,0 @@
-"Content"
-"     <?xml version=""""1.0"""" encoding=""""utf-8"""" ?>&#xD;&#xA;     <configuration>&#xD;&#xA;         <appSettings>&#xD;&#xA;             <add key=""""log4net.Internal.Debug"""" value=""""true""""/>&#xD;&#xA;         </appSettings>&#xD;&#xA;     </configuration>"

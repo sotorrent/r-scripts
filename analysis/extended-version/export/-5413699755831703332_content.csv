@@ -1,2 +1,0 @@
-"Content"
-"     String input = """"1 fish 2 fish red fish blue fish"""";&#xD;&#xA;     Scanner s = new Scanner(input).useDelimiter(""""\\s*fish\\s*"""");&#xD;&#xA;     System.out.println(s.nextInt());&#xD;&#xA;     System.out.println(s.nextInt());&#xD;&#xA;     System.out.println(s.next());&#xD;&#xA;     System.out.println(s.next());&#xD;&#xA;     s.close();"

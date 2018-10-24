@@ -1,2 +1,0 @@
-"Content"
-"    ul, menu, dir {&#xD;&#xA;        display: block;&#xD;&#xA;        list-style-type: disc;&#xD;&#xA;        -webkit-margin-before: 1em;&#xD;&#xA;        -webkit-margin-after: 1em;&#xD;&#xA;        -webkit-margin-start: 0px;&#xD;&#xA;        -webkit-margin-end: 0px;&#xD;&#xA;        -webkit-padding-start: 40px;&#xD;&#xA;    }"

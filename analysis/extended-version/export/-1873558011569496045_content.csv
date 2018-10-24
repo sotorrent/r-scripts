@@ -1,2 +1,0 @@
-"Content"
-"    config.action_mailer.delivery_method = :smtp &#xD;&#xA;    config.action_mailer.smtp_settings = {   &#xD;&#xA;      address: 'smtp.gmail.com',   &#xD;&#xA;      port: 587,   &#xD;&#xA;      domain: 'example.com',   &#xD;&#xA;      user_name: '<username>',   &#xD;&#xA;      password:  '<password>',   &#xD;&#xA;      authentication: 'plain',   &#xD;&#xA;      enable_starttls_auto: true  &#xD;&#xA;    }"

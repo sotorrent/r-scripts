@@ -1,1 +1,0 @@
-"         config.paperclip_defaults = {&#xD;&#xA;storage: :s3,&#xD;&#xA;s3_credentials: {&#xD;&#xA;bucket: ENV.fetch('S3_BUCKET_NAME'),&#xD;&#xA;access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),&#xD;&#xA;secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),&#xD;&#xA;s3_region: ENV.fetch('AWS_REGION'),&#xD;&#xA;}&#xD;&#xA;}"

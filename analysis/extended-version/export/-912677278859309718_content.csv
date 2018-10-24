@@ -1,2 +1,0 @@
-"Content"
-"        group :development do&#xD;&#xA;	    gem 'sqlite3'&#xD;&#xA;        end&#xD;&#xA;        group :production do&#xD;&#xA;        gem """"pg""""&#xD;&#xA;        end"

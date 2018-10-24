@@ -1,2 +1,0 @@
-"Content"
-"	$to      = 'nobody@example.com';&#xD;&#xA;	$subject = 'the subject';&#xD;&#xA;	$message = 'hello';&#xD;&#xA;	$headers = 'From: webmaster@example.com' . """"\r\n"""" .&#xD;&#xA;		'Reply-To: webmaster@example.com' . """"\r\n"""" .&#xD;&#xA;		'X-Mailer: PHP/' . phpversion();&#xD;&#xA;	mail($to, $subject, $message, $headers);"

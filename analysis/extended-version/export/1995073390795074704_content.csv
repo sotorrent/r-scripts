@@ -1,2 +1,0 @@
-"Content"
-"    .parent {&#xD;&#xA;        position: relative;&#xD;&#xA;    }&#xD;&#xA;    .child {&#xD;&#xA;        position: absolute;&#xD;&#xA;        top: 50%;&#xD;&#xA;        left: 50%;&#xD;&#xA;        transform: translate(-50%, -50%);&#xD;&#xA;    }"

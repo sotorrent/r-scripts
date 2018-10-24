@@ -1,2 +1,0 @@
-"Content"
-"        {% for field in form %}&#xD;&#xA;      <div class=""""form-group"""">&#xD;&#xA;        <div class=""""col-sm-offset-2-col-sm-10"""">&#xD;&#xA;          <span class=""""text-danger small"""">{{ field.errors }}</span>&#xD;&#xA;        </div>&#xD;&#xA;        <label class=""""control-label col-sm-2"""">&#xD;&#xA;          {{field.label_tag}}&#xD;&#xA;        </label>&#xD;&#xA;          <div class=""""col-sm-10"""">{{ field }}</div>&#xD;&#xA;      </div>&#xD;&#xA;    {% endfor %}"

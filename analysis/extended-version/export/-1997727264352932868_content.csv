@@ -1,1 +1,0 @@
-"     <android.support.design.widget.FloatingActionButton android:id=""""@+id/fab""""&#xD;&#xA;android:layout_width=""""wrap_content"""" android:layout_height=""""wrap_content""""&#xD;&#xA;android:layout_gravity=""""bottom|end""""   android:layout_margin=""""@dimen/fab_margin""""&#xD;&#xA;android:src=""""@android:drawable/ic_dialog_email"""" />"

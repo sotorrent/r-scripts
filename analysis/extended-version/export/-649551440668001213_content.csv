@@ -1,2 +1,0 @@
-"Content"
-"		jmeter.save.saveservice.output_format=xml&#xD;&#xA;		jmeter.save.saveservice.response_data=true&#xD;&#xA;		jmeter.save.saveservice.samplerData=true&#xD;&#xA;		jmeter.save.saveservice.requestHeaders=true&#xD;&#xA;		jmeter.save.saveservice.url=true&#xD;&#xA;		jmeter.save.saveservice.responseHeaders=true"

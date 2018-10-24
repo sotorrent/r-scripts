@@ -1,2 +1,0 @@
-"Content"
-"	var casper = require('casper').create();&#xD;&#xA;	casper.start('http://casperjs.org/', function() {&#xD;&#xA;		this.echo(this.getTitle());&#xD;&#xA;	});&#xD;&#xA;	casper.thenOpen('http://phantomjs.org', function() {&#xD;&#xA;		this.echo(this.getTitle());&#xD;&#xA;	});&#xD;&#xA;	casper.run();"

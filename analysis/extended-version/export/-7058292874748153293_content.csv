@@ -1,1 +1,0 @@
-"- (NSManagedObjectContext *)managedObjectContext&#xD;&#xA;{&#xD;&#xA;NSManagedObjectContext *context = nil;&#xD;&#xA;id delegate = [[UIApplication sharedApplication] delegate];&#xD;&#xA;if ([delegate performSelector:@selector(managedObjectContext)]) {&#xD;&#xA;context = [delegate managedObjectContext];&#xD;&#xA;}&#xD;&#xA;return context;&#xD;&#xA;}"

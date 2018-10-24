@@ -1,2 +1,0 @@
-"Content"
-"	View decorView = getWindow().getDecorView();&#xD;&#xA;	// Hide the status bar.&#xD;&#xA;	int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;&#xD;&#xA;	decorView.setSystemUiVisibility(uiOptions);&#xD;&#xA;	// Remember that you should never show the action bar if the&#xD;&#xA;	// status bar is hidden, so hide that too if necessary.&#xD;&#xA;	ActionBar actionBar = getActionBar();&#xD;&#xA;	actionBar.hide();"

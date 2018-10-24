@@ -1,2 +1,0 @@
-"Content"
-"            android {&#xD;&#xA;          compileSdkVersion 22&#xD;&#xA;           buildToolsVersion """"23.0.0""""&#xD;&#xA;            defaultConfig {&#xD;&#xA;             minSdkVersion 14 //lower than 14 doesn't support multidex&#xD;&#xA;             targetSdkVersion 22&#xD;&#xA;             // Enabling multidex support.&#xD;&#xA;             multiDexEnabled true&#xD;&#xA;         }&#xD;&#xA;     }&#xD;&#xA;     dependencies {&#xD;&#xA;     compile 'com.android.support:multidex:1.0.1'&#xD;&#xA;     }"

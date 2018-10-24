@@ -1,1 +1,0 @@
-"    <system.webServer>&#xD;&#xA;...&#xD;&#xA;<staticContent>&#xD;&#xA;<mimeMap fileExtension="""".less"""" mimeType=""""text/css"""" />&#xD;&#xA;</staticContent>&#xD;&#xA;</system.webServer>"

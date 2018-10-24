@@ -1,2 +1,0 @@
-"Content"
-"     $ch = curl_init('http://example.com/image.php');&#xD;&#xA;     $fp = fopen('/my/folder/flower.gif', 'wb');&#xD;&#xA;     curl_setopt($ch, CURLOPT_FILE, $fp);&#xD;&#xA;     curl_setopt($ch, CURLOPT_HEADER, 0);&#xD;&#xA;     curl_exec($ch);&#xD;&#xA;     curl_close($ch);&#xD;&#xA;     fclose($fp);"

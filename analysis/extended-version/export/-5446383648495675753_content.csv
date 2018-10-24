@@ -1,2 +1,0 @@
-"Content"
-"	editor.putBoolean(""""key_name"""", true); // Storing boolean - true/false&#xD;&#xA;	editor.putString(""""key_name"""", """"string value""""); // Storing string&#xD;&#xA;	editor.putInt(""""key_name"""", """"int value""""); // Storing integer&#xD;&#xA;	editor.putFloat(""""key_name"""", """"float value""""); // Storing float&#xD;&#xA;	editor.putLong(""""key_name"""", """"long value""""); // Storing long&#xD;&#xA;	 &#xD;&#xA;	editor.commit(); // commit changes"

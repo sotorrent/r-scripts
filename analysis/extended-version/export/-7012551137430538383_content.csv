@@ -1,1 +1,0 @@
-"	public class MyApplication extends Application{&#xD;&#xA;private static Context context;&#xD;&#xA;public void onCreate(){&#xD;&#xA;super.onCreate();&#xD;&#xA;MyApplication.context = getApplicationContext();&#xD;&#xA;}&#xD;&#xA;public static Context getAppContext() {&#xD;&#xA;return MyApplication.context;&#xD;&#xA;}&#xD;&#xA;}"

@@ -1,1 +1,0 @@
-"        Resources res = context.getResources();&#xD;&#xA;// Change locale settings in the app.&#xD;&#xA;DisplayMetrics dm = res.getDisplayMetrics();&#xD;&#xA;android.content.res.Configuration conf = res.getConfiguration();&#xD;&#xA;conf.locale = new Locale(language_code.toLowerCase());&#xD;&#xA;res.updateConfiguration(conf, dm);"

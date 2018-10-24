@@ -1,1 +1,0 @@
-"		'urlManager'=>array&#xD;&#xA;(&#xD;&#xA;'urlFormat'=>'path',&#xD;&#xA;'showScriptName'=>false,&#xD;&#xA;'rules'=>array&#xD;&#xA;(&#xD;&#xA;'<controller:\w+>/<id:\d+>'=>'<controller>/view',&#xD;&#xA;'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',&#xD;&#xA;'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',&#xD;&#xA;),&#xD;&#xA;),"

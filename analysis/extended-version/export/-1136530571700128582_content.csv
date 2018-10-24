@@ -1,2 +1,0 @@
-"Content"
-"    function validateForm() {&#xD;&#xA;        var x = document.forms[""""myForm""""][""""email""""].value;&#xD;&#xA;        var atpos = x.indexOf(""""@"""");&#xD;&#xA;        var dotpos = x.lastIndexOf(""""."""");&#xD;&#xA;        if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {&#xD;&#xA;            alert(""""Not a valid e-mail address"""");&#xD;&#xA;            return false;&#xD;&#xA;        }&#xD;&#xA;    }"

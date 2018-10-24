@@ -1,2 +1,0 @@
-"Content"
-"         <receiver android:name=""""com.parse.ParseBroadcastReceiver"""" >&#xD;&#xA;                <intent-filter>&#xD;&#xA;                    <action android:name=""""android.intent.action.BOOT_COMPLETED"""" />&#xD;&#xA;                    <action android:name=""""android.intent.action.USER_PRESENT"""" />&#xD;&#xA;                </intent-filter>&#xD;&#xA;            </receiver>"

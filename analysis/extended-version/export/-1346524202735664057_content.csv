@@ -1,2 +1,0 @@
-"Content"
-"    <resources>&#xD;&#xA;    &#xD;&#xA;        <!--&#xD;&#xA;            Base application theme for API 14+. This theme completely replaces&#xD;&#xA;            AppBaseTheme from BOTH res/values/styles.xml and&#xD;&#xA;            res/values-v11/styles.xml on API 14+ devices.&#xD;&#xA;        -->&#xD;&#xA;        <style name=""""AppBaseTheme"""" parent=""""Theme.AppCompat.Light.DarkActionBar"""">&#xD;&#xA;            <!-- API 14 theme customizations can go here. -->&#xD;&#xA;        </style>&#xD;&#xA;    &#xD;&#xA;    </resources>"

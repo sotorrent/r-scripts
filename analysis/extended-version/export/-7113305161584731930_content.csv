@@ -1,2 +1,0 @@
-"Content"
-"	.clearfix:after {&#xD;&#xA;		visibility: hidden;&#xD;&#xA;		display: block;&#xD;&#xA;		font-size: 0;&#xD;&#xA;		content: """" """";&#xD;&#xA;		clear: both;&#xD;&#xA;		height: 0;&#xD;&#xA;	}&#xD;&#xA;	.clearfix { display: inline-block; }&#xD;&#xA;	/* start commented backslash hack \*/&#xD;&#xA;	* html .clearfix { height: 1%; }&#xD;&#xA;	.clearfix { display: block; }&#xD;&#xA;	/* close commented backslash hack */"

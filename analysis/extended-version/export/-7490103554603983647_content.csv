@@ -1,2 +1,0 @@
-"Content"
-"<script src='jquery-1.3.2.js'></script>&#xD;&#xA;    <script>&#xD;&#xA;        var jq132 = jQuery.noConflict();&#xD;&#xA;    </script>&#xD;&#xA;    <script src='jquery-1.4.2.js'></script>&#xD;&#xA;    <script>&#xD;&#xA;        var jq142 = jQuery.noConflict();&#xD;&#xA;    </script>"

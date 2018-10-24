@@ -1,2 +1,0 @@
-"Content"
-"class LooperThread extends Thread {&#xD;&#xA;          public Handler mHandler;&#xD;&#xA;    &#xD;&#xA;          public void run() {&#xD;&#xA;              Looper.prepare();&#xD;&#xA;    &#xD;&#xA;              mHandler = new Handler() {&#xD;&#xA;                  public void handleMessage(Message msg) {&#xD;&#xA;                      // process incoming messages here&#xD;&#xA;                  }&#xD;&#xA;              };&#xD;&#xA;    &#xD;&#xA;              Looper.loop();&#xD;&#xA;          }&#xD;&#xA;      }"

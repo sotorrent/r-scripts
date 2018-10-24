@@ -1,2 +1,0 @@
-"Content"
-"    function findPos(obj) {&#xD;&#xA;    	var curleft = curtop = 0;&#xD;&#xA;    	if (obj.offsetParent) {&#xD;&#xA;    	do {&#xD;&#xA;    			curleft += obj.offsetLeft;&#xD;&#xA;    			curtop += obj.offsetTop;&#xD;&#xA;    		} while (obj = obj.offsetParent);&#xD;&#xA;    	return [curleft,curtop];&#xD;&#xA;    }&#xD;&#xA;    }"

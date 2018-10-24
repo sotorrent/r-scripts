@@ -1,2 +1,0 @@
-"Content"
-"      table {&#xD;&#xA;        font-family: arial, sans-serif;&#xD;&#xA;        border-collapse: collapse;&#xD;&#xA;        width: 100%;&#xD;&#xA;    }&#xD;&#xA;    td, th {&#xD;&#xA;        border: 1px solid #dddddd;&#xD;&#xA;        text-align: left;&#xD;&#xA;        padding: 8px;&#xD;&#xA;    }&#xD;&#xA;    tr:nth-child(even) {&#xD;&#xA;        background-color: #dddddd;&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"    Public Sub PrintMeUsefulFormula()&#xD;&#xA;        &#xD;&#xA;        Dim strFormula  As String&#xD;&#xA;        Dim strParenth  As String&#xD;&#xA;        &#xD;&#xA;        strParenth = """"""""""""""""&#xD;&#xA;        &#xD;&#xA;        strFormula = Selection.Formula&#xD;&#xA;        strFormula = Replace(strFormula, """""""""""""""", """""""""""""""""""""""")&#xD;&#xA;        &#xD;&#xA;        strFormula = strParenth & strFormula & strParenth&#xD;&#xA;        Debug.Print strFormula&#xD;&#xA;        &#xD;&#xA;    End Sub"

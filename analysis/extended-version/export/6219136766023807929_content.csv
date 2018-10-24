@@ -1,2 +1,0 @@
-"Content"
-"`require 'paperclip/media_type_spoof_detector'         &#xD;&#xA;    module Paperclip         &#xD;&#xA;     class MediaTypeSpoofDetector        &#xD;&#xA;        def spoofed?         &#xD;&#xA;          false       &#xD;&#xA;        end       &#xD;&#xA;      end        &#xD;&#xA;    end"

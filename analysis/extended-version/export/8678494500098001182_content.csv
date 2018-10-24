@@ -1,2 +1,0 @@
-"Content"
-"        $.getJSON( """"ajax/test.json"""", function( data ) {&#xD;&#xA;      var items = [];&#xD;&#xA;      $.each( data, function( key, val ) {&#xD;&#xA;        items.push( """"<li id='"""" + key + """"'>"""" + val + """"</li>"""" );&#xD;&#xA;      });&#xD;&#xA;     &#xD;&#xA;      $( """"<ul/>"""", {&#xD;&#xA;        """"class"""": """"my-new-list"""",&#xD;&#xA;        html: items.join( """""""" )&#xD;&#xA;      }).appendTo( """"body"""" );&#xD;&#xA;    });"

@@ -1,2 +1,0 @@
-"Content"
-"<IfModule mod_rewrite.c>&#xD;&#xA;        RewriteEngine on&#xD;&#xA;        RewriteCond %{REQUEST_FILENAME} !-d&#xD;&#xA;        RewriteCond %{REQUEST_FILENAME}.php -f&#xD;&#xA;        RewriteRule ^(.*)$ $1.php&#xD;&#xA;    </IfModule>"

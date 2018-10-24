@@ -1,2 +1,0 @@
-"Content"
-"#container&#xD;&#xA;            {&#xD;&#xA;                height: 500px;&#xD;&#xA;                min-width: 310px;&#xD;&#xA;                max-width: 800px;&#xD;&#xA;                margin: 0 auto;&#xD;&#xA;            }&#xD;&#xA;            .loading&#xD;&#xA;            {&#xD;&#xA;                margin-top: 10em;&#xD;&#xA;                text-align: center;&#xD;&#xA;                color: gray;&#xD;&#xA;            }"

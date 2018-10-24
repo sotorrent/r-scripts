@@ -1,2 +1,0 @@
-"Content"
-"<IfModule mod_rewrite.c>&#xD;&#xA;    	RewriteEngine On&#xD;&#xA;    	RewriteCond %{REQUEST_FILENAME} !-f&#xD;&#xA;    	RewriteCond %{REQUEST_FILENAME} !-d&#xD;&#xA;    	RewriteRule (.*) index.php/$1 [L]&#xD;&#xA;    </IfModule>&#xD;&#xA;    <IfModule !mod_rewrite.c>&#xD;&#xA;    	ErrorDocument 404 /index.php&#xD;&#xA;    </IfModule>"

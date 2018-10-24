@@ -1,2 +1,0 @@
-"Content"
-"	protected final static int getResourceID&#xD;&#xA;	(final String resName, final String resType, final Context ctx)&#xD;&#xA;	{&#xD;&#xA;		final int ResourceID =&#xD;&#xA;			ctx.getResources().getIdentifier(resName, resType,&#xD;&#xA;				ctx.getApplicationInfo().packageName);&#xD;&#xA;		if (ResourceID == 0)&#xD;&#xA;		{&#xD;&#xA;			throw new IllegalArgumentException&#xD;&#xA;			(&#xD;&#xA;				""""No resource string found with name """" + resName&#xD;&#xA;				);&#xD;&#xA;		}&#xD;&#xA;		else&#xD;&#xA;		{&#xD;&#xA;			return ResourceID;&#xD;&#xA;		}&#xD;&#xA;	}"

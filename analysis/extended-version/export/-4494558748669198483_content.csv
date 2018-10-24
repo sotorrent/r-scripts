@@ -1,2 +1,0 @@
-"Content"
-"development:&#xD;&#xA;          adapter: sqlite3&#xD;&#xA;          database: db/development.sqlite3&#xD;&#xA;          pool: 5&#xD;&#xA;          timeout: 5000&#xD;&#xA;        test:&#xD;&#xA;          adapter: sqlite3&#xD;&#xA;          database: db/test.sqlite3&#xD;&#xA;          pool: 5&#xD;&#xA;          timeout: 5000&#xD;&#xA;        production:&#xD;&#xA;          adapter: sqlite3&#xD;&#xA;          database: db/production.sqlite3&#xD;&#xA;          pool: 5&#xD;&#xA;          timeout: 5000"

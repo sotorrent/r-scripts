@@ -1,1 +1,0 @@
-"	function getStyle(el, styleProp)	{&#xD;&#xA;var x = document.getElementById(el);&#xD;&#xA;if (x.currentStyle)&#xD;&#xA;var y = x.currentStyle[styleProp];&#xD;&#xA;else if (window.getComputedStyle)&#xD;&#xA;var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp);&#xD;&#xA;return y;&#xD;&#xA;}"

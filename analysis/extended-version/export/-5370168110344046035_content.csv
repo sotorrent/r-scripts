@@ -1,2 +1,0 @@
-"Content"
-"      public void composeEmail(String[] addresses, String subject) {&#xD;&#xA;            Intent intent = new Intent(Intent.ACTION_SENDTO);&#xD;&#xA;            intent.setData(Uri.parse(""""mailto:"""")); // only email apps should handle this&#xD;&#xA;            intent.putExtra(Intent.EXTRA_EMAIL, addresses);&#xD;&#xA;            intent.putExtra(Intent.EXTRA_SUBJECT, subject);&#xD;&#xA;            if (intent.resolveActivity(getPackageManager()) != null) {&#xD;&#xA;                startActivity(intent);&#xD;&#xA;            }&#xD;&#xA;        }"

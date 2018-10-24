@@ -1,2 +1,0 @@
-"Content"
-"static unsigned long next = 1;&#xD;&#xA;           /* RAND_MAX assumed to be 32767 */&#xD;&#xA;           int myrand(void) {&#xD;&#xA;               next = next * 1103515245 + 12345;&#xD;&#xA;               return((unsigned)(next/65536) % 32768);&#xD;&#xA;           }&#xD;&#xA;           void mysrand(unsigned seed) {&#xD;&#xA;               next = seed;&#xD;&#xA;           }"

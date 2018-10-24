@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;        header('Content-Type: text/event-stream');&#xD;&#xA;        header('Cache-Control: no-cache');&#xD;&#xA;        &#xD;&#xA;        $time = date('r');&#xD;&#xA;        echo """"data: The server time is: {$time}\n\n"""";&#xD;&#xA;        flush();&#xD;&#xA;        ?>"

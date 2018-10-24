@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;     <set xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;             android:shareInterpolator=""""false"""">&#xD;&#xA;            <translate android:fromXDelta=""""-100%"""" android:toXDelta=""""0%""""&#xD;&#xA;              android:fromYDelta=""""0%"""" android:toYDelta=""""0%""""&#xD;&#xA;             android:duration=""""700""""/>&#xD;&#xA;    </set>"

@@ -1,1 +1,0 @@
-"	 public boolean isOnline() {&#xD;&#xA;ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);&#xD;&#xA;NetworkInfo netInfo = cm.getActiveNetworkInfo();&#xD;&#xA;if (netInfo != null && netInfo.isConnectedOrConnecting()) {&#xD;&#xA;return true;&#xD;&#xA;}&#xD;&#xA;return false;&#xD;&#xA;}"

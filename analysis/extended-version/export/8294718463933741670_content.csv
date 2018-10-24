@@ -1,2 +1,0 @@
-"Content"
-"	'urlManager' => [&#xD;&#xA;	  'class' => 'yii\web\UrlManager',&#xD;&#xA;	  // Disable index.php&#xD;&#xA;	  'showScriptName' => false,&#xD;&#xA;	  // Disable r= routes&#xD;&#xA;	  'enablePrettyUrl' => true,&#xD;&#xA;	  'rules' => array(&#xD;&#xA;	    '<controller:\w+>/<id:\d+>' => '<controller>/view',&#xD;&#xA;	    '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',&#xD;&#xA;	    '<controller:\w+>/<action:\w+>' => '<controller>/<action>',&#xD;&#xA;	   ),&#xD;&#xA;	],"

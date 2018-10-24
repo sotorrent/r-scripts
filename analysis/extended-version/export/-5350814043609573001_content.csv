@@ -1,2 +1,0 @@
-"Content"
-"try&#xD;&#xA;    {&#xD;&#xA;        ...&#xD;&#xA;        client.Close();&#xD;&#xA;    }&#xD;&#xA;    catch (CommunicationException e)&#xD;&#xA;    {&#xD;&#xA;        ...&#xD;&#xA;        client.Abort();&#xD;&#xA;    }&#xD;&#xA;    catch (TimeoutException e)&#xD;&#xA;    {&#xD;&#xA;        ...&#xD;&#xA;        client.Abort();&#xD;&#xA;    }&#xD;&#xA;    catch (Exception e)&#xD;&#xA;    {&#xD;&#xA;        ...&#xD;&#xA;        client.Abort();&#xD;&#xA;        throw;&#xD;&#xA;    }"

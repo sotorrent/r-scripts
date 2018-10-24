@@ -1,2 +1,0 @@
-"Content"
-"    >>> class C(object):&#xD;&#xA;        def __init__(self):&#xD;&#xA;            self._x = None&#xD;&#xA;        @property&#xD;&#xA;        def x(self):&#xD;&#xA;            """"""""""""I'm the 'x' property.""""""""""""&#xD;&#xA;            return self._x&#xD;&#xA;        @x.setter&#xD;&#xA;        def x(self, value):&#xD;&#xA;            self._x = value&#xD;&#xA;        @x.deleter&#xD;&#xA;        def x(self):&#xD;&#xA;            del self._x"

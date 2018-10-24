@@ -1,2 +1,0 @@
-"Content"
-"    class AutoVivification(dict):  &#xD;&#xA;        """"""""""""Implementation of perl's autovivification feature.""""""""""""  &#xD;&#xA;        def __getitem__(self, item):                &#xD;&#xA;             try:  &#xD;&#xA;                return dict.__getitem__(self, item)  &#xD;&#xA;            except KeyError:   &#xD;&#xA;                value = self[item] = type(self)()  &#xD;&#xA;                return value"

@@ -1,2 +1,0 @@
-"Content"
-"switch(n)&#xD;&#xA;		{&#xD;&#xA;		case 1:&#xD;&#xA;		  execute code block 1&#xD;&#xA;		  break;&#xD;&#xA;		case 2:&#xD;&#xA;		  execute code block 2&#xD;&#xA;		  break;&#xD;&#xA;		default:&#xD;&#xA;		  code to be executed if n is different from case 1 and 2&#xD;&#xA;		}"

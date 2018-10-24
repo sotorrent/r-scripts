@@ -1,2 +1,0 @@
-"Content"
-"    from multiprocessing import Pool&#xD;&#xA;    &#xD;&#xA;    def f(x):&#xD;&#xA;        return x*x&#xD;&#xA;    &#xD;&#xA;    if __name__ == '__main__':&#xD;&#xA;        with Pool(5) as p:&#xD;&#xA;            print(p.map(f, [1, 2, 3]))"

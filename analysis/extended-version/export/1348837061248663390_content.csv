@@ -1,2 +1,0 @@
-"Content"
-"	import numpy as np&#xD;&#xA;	import cv2&#xD;&#xA;	cap = cv2.VideoCapture(0)&#xD;&#xA;	while(True):&#xD;&#xA;		# Capture frame-by-frame&#xD;&#xA;		ret, frame = cap.read()&#xD;&#xA;		# Our operations on the frame come here&#xD;&#xA;		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)&#xD;&#xA;		# Display the resulting frame&#xD;&#xA;		cv2.imshow('frame',gray)&#xD;&#xA;		if cv2.waitKey(1) & 0xFF == ord('q'):&#xD;&#xA;			break&#xD;&#xA;	# When everything done, release the capture&#xD;&#xA;	cap.release()&#xD;&#xA;	cv2.destroyAllWindows()"

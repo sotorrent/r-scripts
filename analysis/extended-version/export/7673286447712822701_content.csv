@@ -1,1 +1,0 @@
-"     - (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {&#xD;&#xA;CGPoint translation = [recognizer translationInView:self.view];&#xD;&#xA;recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,&#xD;&#xA;recognizer.view.center.y + translation.y);&#xD;&#xA;[recognizer setTranslation:CGPointMake(0, 0) inView:self.view];&#xD;&#xA;}"

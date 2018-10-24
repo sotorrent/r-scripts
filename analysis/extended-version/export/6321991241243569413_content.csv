@@ -1,2 +1,0 @@
-"Content"
-"    <html>&#xD;&#xA;        <head>&#xD;&#xA;            <link rel=""""stylesheet"""" href=""""layout.css"""" ... />&#xD;&#xA;        </head>&#xD;&#xA;        <body>&#xD;&#xA;            <div class=""""wrapper"""">&#xD;&#xA;                <p>Your website content here.</p>&#xD;&#xA;                <div class=""""push""""></div>&#xD;&#xA;            </div>&#xD;&#xA;            <div class=""""footer"""">&#xD;&#xA;                <p>Copyright (c) 2008</p>&#xD;&#xA;            </div>&#xD;&#xA;        </body> </html>"

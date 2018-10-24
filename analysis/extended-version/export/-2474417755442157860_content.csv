@@ -1,1 +1,0 @@
-"	mWebView.setDownloadListener(new DownloadListener() {&#xD;&#xA;public void onDownloadStart(String url, String userAgent,&#xD;&#xA;String contentDisposition, String mimetype,&#xD;&#xA;long contentLength) {&#xD;&#xA;Intent i = new Intent(Intent.ACTION_VIEW);&#xD;&#xA;i.setData(Uri.parse(url));&#xD;&#xA;startActivity(i);&#xD;&#xA;}&#xD;&#xA;});"

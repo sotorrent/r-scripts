@@ -1,2 +1,0 @@
-"Content"
-"     <?php&#xD;&#xA;        $datetime1 = date_create('2009-10-11');&#xD;&#xA;        $datetime2 = date_create('2009-10-13');&#xD;&#xA;        $interval = date_diff($datetime1, $datetime2);&#xD;&#xA;        echo $interval->format('%R%a days');&#xD;&#xA;        ?>"

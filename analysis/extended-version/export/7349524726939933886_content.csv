@@ -1,2 +1,0 @@
-"Content"
-"	/* strtok example */&#xD;&#xA;	#include <stdio.h>&#xD;&#xA;	#include <string.h>&#xD;&#xA;	int main ()&#xD;&#xA;	{&#xD;&#xA;	  char str[] =""""- This, a sample string."""";&#xD;&#xA;	  char * pch;&#xD;&#xA;	  printf (""""Splitting string \""""%s\"""" into tokens:\n"""",str);&#xD;&#xA;	  pch = strtok (str,"""" ,.-"""");&#xD;&#xA;	  while (pch != NULL)&#xD;&#xA;	  {&#xD;&#xA;		printf (""""%s\n"""",pch);&#xD;&#xA;		pch = strtok (NULL, """" ,.-"""");&#xD;&#xA;	  }&#xD;&#xA;	  return 0;&#xD;&#xA;	}"

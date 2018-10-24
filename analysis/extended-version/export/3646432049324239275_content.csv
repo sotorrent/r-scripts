@@ -1,2 +1,0 @@
-"Content"
-"    .clearfix:before,&#xD;&#xA;    .clearfix:after {&#xD;&#xA;		content: '\0020';&#xD;&#xA;		display: block;&#xD;&#xA;		overflow: hidden;&#xD;&#xA;		visibility: hidden;&#xD;&#xA;		width: 0;&#xD;&#xA;		height: 0; &#xD;&#xA;	}&#xD;&#xA;    .clearfix:after {clear: both;}&#xD;&#xA;    .clearfix {zoom: 1;}"

@@ -1,2 +1,0 @@
-"Content"
-"    import { BrowserModule } from '@angular/platform-browser';&#xD;&#xA;    import { NgModule } from '@angular/core';    &#xD;&#xA;    import { AppComponent } from './app.component';&#xD;&#xA;    &#xD;&#xA;    @NgModule({&#xD;&#xA;      declarations: [&#xD;&#xA;        AppComponent&#xD;&#xA;      ],&#xD;&#xA;      imports: [&#xD;&#xA;        BrowserModule&#xD;&#xA;      ],&#xD;&#xA;      providers: [],&#xD;&#xA;      bootstrap: [AppComponent]&#xD;&#xA;    })&#xD;&#xA;    export class AppModule {}"

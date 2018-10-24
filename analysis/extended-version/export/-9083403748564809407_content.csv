@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""utf-8"""" ?>&#xD;&#xA;	<access-policy>&#xD;&#xA;	  <cross-domain-access>&#xD;&#xA;		<policy>&#xD;&#xA;		  <allow-from http-request-headers=""""*"""">&#xD;&#xA;			<domain uri=""""*""""/>&#xD;&#xA;		  </allow-from>&#xD;&#xA;		  <grant-to>&#xD;&#xA;			<resource include-subpaths=""""true"""" path=""""/""""/>&#xD;&#xA;		  </grant-to>&#xD;&#xA;		</policy>&#xD;&#xA;	  </cross-domain-access>&#xD;&#xA;	</access-policy>"

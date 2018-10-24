@@ -1,2 +1,0 @@
-"Content"
-"    send(to, from, count)&#xD;&#xA;    register short *to, *from;&#xD;&#xA;    register count;&#xD;&#xA;    {&#xD;&#xA;    	register n=(count+7)/8;&#xD;&#xA;    	switch(count%8){&#xD;&#xA;    	case 0:	do{	*to = *from++;&#xD;&#xA;    	case 7:		*to = *from++;&#xD;&#xA;    	case 6:		*to = *from++;&#xD;&#xA;    	case 5:		*to = *from++;&#xD;&#xA;    	case 4:		*to = *from++;&#xD;&#xA;    	case 3:		*to = *from++;&#xD;&#xA;    	case 2:		*to = *from++;&#xD;&#xA;    	case 1:		*to = *from++;&#xD;&#xA;    		}while(--n>0);&#xD;&#xA;    	}&#xD;&#xA;    }"

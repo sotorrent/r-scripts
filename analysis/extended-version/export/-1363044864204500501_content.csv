@@ -1,2 +1,0 @@
-"Content"
-"[mysqld]&#xD;&#xA;    datadir=/var/lib/mysql&#xD;&#xA;    socket=/var/lib/mysql/mysql.sock&#xD;&#xA;    user=mysql&#xD;&#xA;    # Disabling symbolic-links is recommended to prevent assorted security risks&#xD;&#xA;    symbolic-links=0&#xD;&#xA;    &#xD;&#xA;    [mysqld_safe]&#xD;&#xA;    log-error=/var/log/mysqld.log&#xD;&#xA;    pid-file=/var/run/mysqld/mysqld.pid"

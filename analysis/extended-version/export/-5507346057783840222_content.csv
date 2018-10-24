@@ -1,2 +1,0 @@
-"Content"
-"    // Save data to sessionStorage&#xD;&#xA;    sessionStorage.setItem('key', 'value');&#xD;&#xA;    &#xD;&#xA;    // Get saved data from sessionStorage&#xD;&#xA;    var data = sessionStorage.getItem('key');&#xD;&#xA;    &#xD;&#xA;    // Remove saved data from sessionStorage&#xD;&#xA;    sessionStorage.removeItem('key');&#xD;&#xA;    &#xD;&#xA;    // Remove all saved data from sessionStorage&#xD;&#xA;    sessionStorage.clear();"

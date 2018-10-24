@@ -1,2 +1,0 @@
-"Content"
-"$config['sess_driver'] = 'files';&#xD;&#xA;        $config['sess_cookie_name'] = 'ci_session';&#xD;&#xA;        $config['sess_expiration'] = 7200;&#xD;&#xA;        $config['sess_save_path'] = NULL;&#xD;&#xA;        $config['sess_match_ip'] = FALSE;&#xD;&#xA;        $config['sess_time_to_update'] = 300;&#xD;&#xA;        $config['sess_regenerate_destroy'] = FALSE;"

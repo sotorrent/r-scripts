@@ -1,2 +1,0 @@
-"Content"
-"    Location loc1 = new Location("""""""");&#xD;&#xA;    loc1.setLatitude(lat1);&#xD;&#xA;    loc1.setLongitude(lon1);&#xD;&#xA;    &#xD;&#xA;    Location loc2 = new Location("""""""");&#xD;&#xA;    loc2.setLatitude(lat2);&#xD;&#xA;    loc2.setLongitude(lon2);&#xD;&#xA;    &#xD;&#xA;    float distanceInMeters = loc1.distanceTo(loc2);"

@@ -1,1 +1,0 @@
-"	// Check if no view has focus:&#xD;&#xA;View view = this.getCurrentFocus();&#xD;&#xA;if (view != null) {&#xD;&#xA;InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);&#xD;&#xA;imm.hideSoftInputFromWindow(view.getWindowToken(), 0);&#xD;&#xA;}"

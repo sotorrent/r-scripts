@@ -1,2 +1,0 @@
-"Content"
-"      <div class=""""input-field col s12"""">&#xD;&#xA;          <select>&#xD;&#xA;            <option value="""""""" disabled selected>Choose your option</option>&#xD;&#xA;            <option value=""""1"""">Option 1</option>&#xD;&#xA;            <option value=""""2"""">Option 2</option>&#xD;&#xA;            <option value=""""3"""">Option 3</option>&#xD;&#xA;          </select>&#xD;&#xA;          <label>Materialize Select</label>&#xD;&#xA;      </div>"

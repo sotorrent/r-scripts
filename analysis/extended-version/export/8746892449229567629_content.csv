@@ -1,2 +1,0 @@
-"Content"
-"	public static void Register(HttpConfiguration config)&#xD;&#xA;	{&#xD;&#xA;		// Web API configuration and services&#xD;&#xA;		// Web API routes&#xD;&#xA;		config.MapHttpAttributeRoutes();&#xD;&#xA;		//config.Routes.MapHttpRoute(&#xD;&#xA;		//	name: """"DefaultApi"""",&#xD;&#xA;		//	routeTemplate: """"api/{controller}/{id}"""",&#xD;&#xA;		//	defaults: new { id = RouteParameter.Optional }&#xD;&#xA;		//);&#xD;&#xA;	}"

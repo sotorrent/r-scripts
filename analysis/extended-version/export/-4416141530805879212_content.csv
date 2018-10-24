@@ -1,2 +1,0 @@
-"Content"
-"if year modulo 400 is 0 then&#xD;&#xA;        is_leap_year&#xD;&#xA;    else if year modulo 100 is 0 then&#xD;&#xA;       not_leap_year&#xD;&#xA;    else if year modulo 4 is 0 then&#xD;&#xA;       is_leap_year&#xD;&#xA;    else&#xD;&#xA;       not_leap_year"

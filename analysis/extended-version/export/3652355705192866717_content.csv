@@ -1,1 +1,0 @@
-"    @Override&#xD;&#xA;public int onStartCommand(Intent intent, int flags, int startId) {&#xD;&#xA;// We want this service to continue running until it is explicitly stopped, so return sticky.&#xD;&#xA;return START_STICKY;&#xD;&#xA;}"

@@ -1,2 +1,0 @@
-"Content"
-"	protected $middlewareGroups = [&#xD;&#xA;		'web' => [&#xD;&#xA;			\App\Http\Middleware\EncryptCookies::class,&#xD;&#xA;			\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,&#xD;&#xA;			\Illuminate\Session\Middleware\StartSession::class,&#xD;&#xA;			\Illuminate\View\Middleware\ShareErrorsFromSession::class,&#xD;&#xA;			//  \App\Http\Middleware\VerifyCsrfToken::class,&#xD;&#xA;		],&#xD;&#xA;		'api' => [&#xD;&#xA;			'throttle:60,1',&#xD;&#xA;		],&#xD;&#xA;	];"

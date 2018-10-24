@@ -1,2 +1,0 @@
-"Content"
-"       var express = require('express');&#xD;&#xA;       var router = express.Router();&#xD;&#xA;    &#xD;&#xA;       /* GET home page. */&#xD;&#xA;       router.get('/', function(req, res, next) {&#xD;&#xA;       res.render('index', { title: 'Express' });&#xD;&#xA;       });&#xD;&#xA;    &#xD;&#xA;       module.exports = router;"

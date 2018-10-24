@@ -1,2 +1,0 @@
-"Content"
-"    <?php $fp = fsockopen(""""www.example.com"""", 80, $errno, $errstr, 30); if (!$fp) {echo """"$errstr ($errno)<br />\n"""";} else {&#xD;&#xA;    $out = """"GET / HTTP/1.1\r\n"""";&#xD;&#xA;    $out .= """"Host: www.example.com\r\n"""";&#xD;&#xA;    $out .= """"Connection: Close\r\n\r\n"""";&#xD;&#xA;    fwrite($fp, $out);&#xD;&#xA;    while (!feof($fp)) {&#xD;&#xA;        echo fgets($fp, 128);&#xD;&#xA;    }&#xD;&#xA;    fclose($fp);} ?>"

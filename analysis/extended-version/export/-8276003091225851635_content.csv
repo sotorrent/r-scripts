@@ -1,2 +1,0 @@
-"Content"
-"    * {&#xD;&#xA;      margin: 0;&#xD;&#xA;    }&#xD;&#xA;    html, body {&#xD;&#xA;      height: 100%;&#xD;&#xA;    }&#xD;&#xA;    .page-wrap {&#xD;&#xA;      min-height: 100%;&#xD;&#xA;      /* equal to footer height */&#xD;&#xA;      margin-bottom: -142px; &#xD;&#xA;    }&#xD;&#xA;    .page-wrap:after {&#xD;&#xA;      content: """""""";&#xD;&#xA;      display: block;&#xD;&#xA;    }&#xD;&#xA;    .site-footer, .page-wrap:after {&#xD;&#xA;      height: 142px; &#xD;&#xA;    }&#xD;&#xA;    .site-footer {&#xD;&#xA;      background: orange;&#xD;&#xA;    }"

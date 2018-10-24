@@ -1,2 +1,0 @@
-"Content"
-"<project>&#xD;&#xA;        ...&#xD;&#xA;        <properties>&#xD;&#xA;            ...&#xD;&#xA;            <maven.compiler.source>1.8</maven.compiler.source>&#xD;&#xA;            <maven.compiler.target>1.8</maven.compiler.target>&#xD;&#xA;        </properties>&#xD;&#xA;    </project>"

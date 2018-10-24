@@ -1,1 +1,0 @@
-"      function readURL(input) {&#xD;&#xA;if (input.files && input.files[0]) {&#xD;&#xA;var reader = new FileReader();&#xD;&#xA;reader.onload = function (e) {&#xD;&#xA;$('#blah').attr('src', e.target.result);&#xD;&#xA;}&#xD;&#xA;reader.readAsDataURL(input.files[0]);&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;$(""""#imgInp"""").change(function(){&#xD;&#xA;readURL(this);&#xD;&#xA;});"

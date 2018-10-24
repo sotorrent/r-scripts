@@ -1,2 +1,0 @@
-"Content"
-"	public static Bitmap loadBitmapFromView(View v, int width, int height) {&#xD;&#xA;		Bitmap b = Bitmap.createBitmap(width , height, Bitmap.Config.ARGB_8888);                &#xD;&#xA;		Canvas c = new Canvas(b);&#xD;&#xA;		v.layout(0, 0, v.getLayoutParams().width, v.getLayoutParams().height);&#xD;&#xA;		v.draw(c);&#xD;&#xA;		return b;&#xD;&#xA;	}"

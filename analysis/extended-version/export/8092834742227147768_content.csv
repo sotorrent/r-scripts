@@ -1,2 +1,0 @@
-"Content"
-"@Override&#xD;&#xA;        protected void onResume() {&#xD;&#xA;          super.onResume();&#xD;&#xA;          MyApplication.activityResumed();&#xD;&#xA;        }&#xD;&#xA;        &#xD;&#xA;        @Override&#xD;&#xA;        protected void onPause() {&#xD;&#xA;          super.onPause();&#xD;&#xA;          MyApplication.activityPaused();&#xD;&#xA;        }"

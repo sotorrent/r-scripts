@@ -1,1 +1,0 @@
-"     CREATE FUNCTION SPLIT_STR(&#xD;&#xA;x VARCHAR(255),&#xD;&#xA;delim VARCHAR(12),&#xD;&#xA;pos INT&#xD;&#xA;)&#xD;&#xA;RETURNS VARCHAR(255)&#xD;&#xA;RETURN REPLACE(SUBSTRING(SUBSTRING_INDEX(x, delim, pos),LENGTH(SUBSTRING_INDEX(x, delim, pos -1)) + 1),&#xD;&#xA;delim, '');"

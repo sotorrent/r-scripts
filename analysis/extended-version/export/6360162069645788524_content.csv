@@ -1,2 +1,0 @@
-"Content"
-"    <configuration>&#xD;&#xA;      <system.webServer>&#xD;&#xA;        <handlers>&#xD;&#xA;          <add name=""""httpplatformhandler"""" path=""""*"""" verb=""""*""""     modules=""""httpPlatformHandler"""" resourceType=""""Unspecified"""" />&#xD;&#xA;        </handlers>&#xD;&#xA;        <httpPlatform processPath=""""..\approot\web.cmd"""" arguments="""""""" stdoutLogEnabled=""""false"""" stdoutLogFile=""""..\logs\stdout.log"""" startupTimeLimit=""""3600""""></httpPlatform>&#xD;&#xA;      </system.webServer>&#xD;&#xA;    </configuration>"

@@ -1,2 +1,0 @@
-"Content"
-"     	require 'spec_helper'&#xD;&#xA;	describe """"Static pages"""" do&#xD;&#xA;	   describe """"Home page"""" do&#xD;&#xA;	      it """"should have the content  'Sample App'"""" do&#xD;&#xA;		 visit '/static_pages/home'&#xD;&#xA;		 page.should have_content('Sample App')&#xD;&#xA;	      end&#xD;&#xA;	   end&#xD;&#xA;	end"

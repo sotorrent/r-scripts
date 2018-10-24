@@ -1,2 +1,0 @@
-"Content"
-"    import tornado.ioloop&#xD;&#xA;    import tornado.web&#xD;&#xA;    &#xD;&#xA;    class MainHandler(tornado.web.RequestHandler):&#xD;&#xA;        def get(self):&#xD;&#xA;            self.write(""""Hello, world"""")&#xD;&#xA;    &#xD;&#xA;    application = tornado.web.Application([&#xD;&#xA;        (r""""/"""", MainHandler),&#xD;&#xA;    ])&#xD;&#xA;    &#xD;&#xA;    if __name__ == """"__main__"""":&#xD;&#xA;        application.listen(8888)&#xD;&#xA;        tornado.ioloop.IOLoop.instance().start()"

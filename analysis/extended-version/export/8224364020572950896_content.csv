@@ -1,2 +1,0 @@
-"Content"
-"           @Override &#xD;&#xA;    protected void onCreate(Bundle savedInstanceState) { &#xD;&#xA;        super.onCreate(savedInstanceState); &#xD;&#xA;        if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) { &#xD;&#xA;            // Activity was brought to front and not created, &#xD;&#xA;            // Thus finishing this will get us to the last viewed activity &#xD;&#xA;            finish(); &#xD;&#xA;            return; &#xD;&#xA;        } &#xD;&#xA;    &#xD;&#xA;        // Regular activity creation code... &#xD;&#xA;    } "

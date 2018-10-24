@@ -1,2 +1,0 @@
-"Content"
-"	public Image Base64ToImage(string base64String)&#xD;&#xA;	{&#xD;&#xA;	  // Convert Base64 String to byte[]&#xD;&#xA;	  byte[] imageBytes = Convert.FromBase64String(base64String);&#xD;&#xA;	  MemoryStream ms = new MemoryStream(imageBytes, 0, &#xD;&#xA;		imageBytes.Length);&#xD;&#xA;	  // Convert byte[] to Image&#xD;&#xA;	  ms.Write(imageBytes, 0, imageBytes.Length);&#xD;&#xA;	  Image image = Image.FromStream(ms, true);&#xD;&#xA;	  return image;&#xD;&#xA;	}"

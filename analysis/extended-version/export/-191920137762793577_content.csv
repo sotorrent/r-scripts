@@ -1,2 +1,0 @@
-"Content"
-"      <%@ page contentType=""""text/html; charset=UTF-8"""" %>&#xD;&#xA;      <%@ taglib prefix=""""s"""" uri=""""/struts-tags"""" %>&#xD;&#xA;      <html>&#xD;&#xA;      <head>&#xD;&#xA;      <title>Hello World</title>&#xD;&#xA;      </head>&#xD;&#xA;      <body>&#xD;&#xA;         Hello World, <s:property value=""""name""""/>&#xD;&#xA;      </body>&#xD;&#xA;      </html>"

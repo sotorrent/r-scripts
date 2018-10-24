@@ -1,2 +1,0 @@
-"Content"
-"    <Directory """"c:/wamp/apps/phpmyadmin3.4.5/"""">&#xD;&#xA;            Options Indexes FollowSymLinks MultiViews&#xD;&#xA;            AllowOverride all&#xD;&#xA;            Order Deny,Allow&#xD;&#xA;            Deny from all&#xD;&#xA;            Allow from 127.0.0.1&#xD;&#xA;    </Directory>"

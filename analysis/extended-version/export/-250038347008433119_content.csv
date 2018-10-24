@@ -1,2 +1,0 @@
-"Content"
-"    $email = new PHPMailer();&#xD;&#xA;    $email->From      = 'you@example.com';&#xD;&#xA;    $email->FromName  = 'Your Name';&#xD;&#xA;    $email->Subject   = 'Message Subject';&#xD;&#xA;    $email->Body      = $bodytext;&#xD;&#xA;    $email->AddAddress( 'destinationaddress@example.com' );&#xD;&#xA;    $file_to_attach = 'PATH_OF_YOUR_FILE_HERE';&#xD;&#xA;    $email->AddAttachment( $file_to_attach , 'NameOfFile.pdf' );&#xD;&#xA;    return $email->Send();"

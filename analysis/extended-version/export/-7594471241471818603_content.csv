@@ -1,2 +1,0 @@
-"Content"
-"		'mysql' => [&#xD;&#xA;			'driver'    => 'mysql',&#xD;&#xA;			'host'      => env('DB_HOST', 'localhost'),&#xD;&#xA;			'database'  => env('DB_DATABASE', 'forge'),&#xD;&#xA;			'username'  => env('DB_USERNAME', 'forge'),&#xD;&#xA;			'password'  => env('DB_PASSWORD', ''),&#xD;&#xA;			'charset'   => 'utf8',&#xD;&#xA;			'collation' => 'utf8_unicode_ci',&#xD;&#xA;			'prefix'    => '',&#xD;&#xA;			'strict'    => false,&#xD;&#xA;		],"

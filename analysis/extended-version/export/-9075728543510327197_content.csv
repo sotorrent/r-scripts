@@ -1,2 +1,0 @@
-"Content"
-"    bool, for JSON booleans&#xD;&#xA;    float64, for JSON numbers&#xD;&#xA;    string, for JSON strings&#xD;&#xA;    []interface{}, for JSON arrays&#xD;&#xA;    map[string]interface{}, for JSON objects&#xD;&#xA;    nil for JSON null"

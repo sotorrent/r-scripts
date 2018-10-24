@@ -1,2 +1,0 @@
-"Content"
-"template <int N>&#xD;&#xA;    struct Factorial &#xD;&#xA;    {&#xD;&#xA;         enum { value = N * Factorial<N - 1>::value };&#xD;&#xA;    };&#xD;&#xA; &#xD;&#xA;    template <>&#xD;&#xA;    struct Factorial<0> &#xD;&#xA;    {&#xD;&#xA;        enum { value = 1 };&#xD;&#xA;    };&#xD;&#xA; &#xD;&#xA;    // Factorial<4>::value == 24&#xD;&#xA;    // Factorial<0>::value == 1&#xD;&#xA;    void foo()&#xD;&#xA;    {&#xD;&#xA;        int x = Factorial<4>::value; // == 24&#xD;&#xA;        int y = Factorial<0>::value; // == 1&#xD;&#xA;    }"

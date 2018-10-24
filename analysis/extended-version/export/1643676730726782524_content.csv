@@ -1,2 +1,0 @@
-"Content"
-"    <html> &#xD;&#xA;      <head> &#xD;&#xA;        <script src=""""jquery.js""""></script> &#xD;&#xA;        <script> &#xD;&#xA;        $(function(){&#xD;&#xA;          $(""""#includedContent"""").load(""""b.html""""); &#xD;&#xA;        });&#xD;&#xA;        </script> &#xD;&#xA;      </head> &#xD;&#xA;      <body> &#xD;&#xA;         <div id=""""includedContent""""></div>&#xD;&#xA;      </body> &#xD;&#xA;    </html>"

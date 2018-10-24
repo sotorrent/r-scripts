@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""utf-8"""" ?>&#xD;&#xA;	<selector xmlns:android=""""http://schemas.android.com/apk/res/android"""">&#xD;&#xA;	    <item &#xD;&#xA;	        android:state_selected=""""true""""&#xD;&#xA;	        android:drawable=""""@color/pressed_color""""/>&#xD;&#xA;	    <item&#xD;&#xA;	        android:drawable=""""@color/default_color"""" />&#xD;&#xA;	</selector>"

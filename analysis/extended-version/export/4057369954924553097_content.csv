@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;    /* Execute a prepared statement by         binding PHP variables */&#xD;&#xA;    $calories = 150;&#xD;&#xA;    $colour = 'red';&#xD;&#xA;    $sth = $dbh->prepare('SELECT name, colour, calories&#xD;&#xA;    FROM fruit&#xD;&#xA;    WHERE calories < :calories AND colour = :colour');&#xD;&#xA;    $sth->bindParam(':calories', $calories, PDO::PARAM_INT);&#xD;&#xA;    $sth->bindParam(':colour', $colour, PDO::PARAM_STR, 12);&#xD;&#xA;    $sth->execute();&#xD;&#xA;    ?>"

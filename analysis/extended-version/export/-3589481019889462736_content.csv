@@ -1,2 +1,0 @@
-"Content"
-"        <!DOCTYPE html>&#xD;&#xA;        <html>&#xD;&#xA;        <body>&#xD;&#xA;        <form action=""""upload.php"""" method=""""post"""" enctype=""""multipart/form-data"""">&#xD;&#xA;        Select image to upload:&#xD;&#xA;        <input type=""""file"""" name=""""fileToUpload"""" id=""""fileToUpload"""">&#xD;&#xA;        <input type=""""submit"""" value=""""Upload Image"""" name=""""submit"""">&#xD;&#xA;        </form>&#xD;&#xA;        </body>&#xD;&#xA;        </html>"

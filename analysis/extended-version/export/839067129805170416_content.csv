@@ -1,2 +1,0 @@
-"Content"
-"class User < ActiveRecord::Base&#xD;&#xA;      has_many :posts&#xD;&#xA;      ...&#xD;&#xA;    end&#xD;&#xA;    &#xD;&#xA;    class Post < ActiveRecord::Base&#xD;&#xA;      belongs_to :user&#xD;&#xA;      ...&#xD;&#xA;    end"

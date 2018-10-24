@@ -1,1 +1,0 @@
-"	public class SplashActivity extends AppCompatActivity {&#xD;&#xA;@Override&#xD;&#xA;protected void onCreate(Bundle savedInstanceState) {&#xD;&#xA;super.onCreate(savedInstanceState);&#xD;&#xA;Intent intent = new Intent(this, MainActivity.class);&#xD;&#xA;startActivity(intent);&#xD;&#xA;finish();&#xD;&#xA;}&#xD;&#xA;}"

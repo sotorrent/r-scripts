@@ -1,2 +1,0 @@
-"Content"
-"	static byte[] GetBytes(string str)&#xD;&#xA;	{&#xD;&#xA;		byte[] bytes = new byte[str.Length * sizeof(char)];&#xD;&#xA;		System.Buffer.BlockCopy(str.ToCharArray(), 0, bytes, 0, bytes.Length);&#xD;&#xA;		return bytes;&#xD;&#xA;	}&#xD;&#xA;	static string GetString(byte[] bytes)&#xD;&#xA;	{&#xD;&#xA;		char[] chars = new char[bytes.Length / sizeof(char)];&#xD;&#xA;		System.Buffer.BlockCopy(bytes, 0, chars, 0, bytes.Length);&#xD;&#xA;		return new string(chars);&#xD;&#xA;	}"

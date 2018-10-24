@@ -1,1 +1,0 @@
-"        <system.webServer>&#xD;&#xA;...&#xD;&#xA;<handlers>&#xD;&#xA;...&#xD;&#xA;<add name=""""MiniProfiler"""" path=""""mini-profiler-resources/*"""" verb=""""*""""&#xD;&#xA;type=""""System.Web.Routing.UrlRoutingModule"""" resourceType=""""Unspecified""""&#xD;&#xA;preCondition=""""integratedMode"""" />&#xD;&#xA;...&#xD;&#xA;</handlers>&#xD;&#xA;</system.webServer>"

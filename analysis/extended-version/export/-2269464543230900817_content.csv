@@ -1,2 +1,0 @@
-"Content"
-"    def consume(iterator, n):&#xD;&#xA;        """"Advance the iterator n-steps ahead. If n is none, consume entirely.""""&#xD;&#xA;        # Use functions that consume iterators at C speed.&#xD;&#xA;        if n is None:&#xD;&#xA;            # feed the entire iterator into a zero-length deque&#xD;&#xA;            collections.deque(iterator, maxlen=0)&#xD;&#xA;        else:&#xD;&#xA;            # advance to the empty slice starting at position n&#xD;&#xA;            next(islice(iterator, n, n), None)"

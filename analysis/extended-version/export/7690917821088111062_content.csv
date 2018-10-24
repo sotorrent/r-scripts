@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0"""" encoding=""""UTF-8""""?>&#xD;&#xA;    <!DOCTYPE plist PUBLIC """"-//Apple//DTD PLIST 1.0//EN"""" """"http://www.apple.com/DTDs/PropertyList-1.0.dtd"""">&#xD;&#xA;    <plist version=""""1.0"""">&#xD;&#xA;        <dict>&#xD;&#xA;            <key>com.apple.security.app-sandbox</key>&#xD;&#xA;            <true/>&#xD;&#xA;        </dict>&#xD;&#xA;    </plist>"

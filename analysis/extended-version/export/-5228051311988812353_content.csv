@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;    &#xD;&#xA;    <!--  Single List Item Design -->&#xD;&#xA;    <TextView xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;        android:id=""""@+id/label""""&#xD;&#xA;            android:layout_width=""""fill_parent""""&#xD;&#xA;            android:layout_height=""""fill_parent""""&#xD;&#xA;            android:padding=""""10dip""""&#xD;&#xA;            android:textSize=""""16dip""""&#xD;&#xA;            android:textStyle=""""bold"""" >&#xD;&#xA;    </TextView> "

@@ -1,2 +1,0 @@
-"Content"
-"        @font-face {&#xD;&#xA;    &#xD;&#xA;            font-family: 'MyFontFamily';&#xD;&#xA;            src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), &#xD;&#xA;                 url('myfont-webfont.woff') format('woff'), &#xD;&#xA;                 url('myfont-webfont.ttf')  format('truetype'),&#xD;&#xA;                 url('myfont-webfont.svg#svgFontName') format('svg');&#xD;&#xA;        }"

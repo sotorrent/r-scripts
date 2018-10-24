@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;     <selector xmlns:android=""""http://schemas.android.com/apk/res/android"""">&#xD;&#xA;         <item android:state_pressed=""""true"""" android:color=""""#000000"""" /> <!-- pressed -->&#xD;&#xA;         <item android:state_focused=""""true"""" android:color=""""#000000"""" /> <!-- focused -->&#xD;&#xA;         <item android:color=""""#FFFFFF"""" /> <!-- default -->&#xD;&#xA;     </selector>"

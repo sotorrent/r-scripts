@@ -1,2 +1,0 @@
-"Content"
-"        <?php&#xD;&#xA;    /* Connect to an ODBC database using driver invocation */&#xD;&#xA;    $dsn = 'mysql:dbname=testdb;host=127.0.0.1';&#xD;&#xA;    $user = 'dbuser';&#xD;&#xA;    $password = 'dbpass';&#xD;&#xA;    &#xD;&#xA;    try {&#xD;&#xA;        $dbh = new PDO($dsn, $user, $password);&#xD;&#xA;    } catch (PDOException $e) {&#xD;&#xA;        echo 'Connection failed: ' . $e->getMessage();&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    ?>"

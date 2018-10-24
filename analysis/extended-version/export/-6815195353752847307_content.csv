@@ -1,2 +1,0 @@
-"Content"
-"        <receiver android:name=""""com.parse.ParsePushBroadcastReceiver""""&#xD;&#xA;            android:exported=""""false"""">&#xD;&#xA;            <intent-filter>&#xD;&#xA;                <action android:name=""""com.parse.push.intent.RECEIVE"""" />&#xD;&#xA;                <action android:name=""""com.parse.push.intent.DELETE"""" />&#xD;&#xA;                <action android:name=""""com.parse.push.intent.OPEN"""" />&#xD;&#xA;            </intent-filter>&#xD;&#xA;        </receiver>"

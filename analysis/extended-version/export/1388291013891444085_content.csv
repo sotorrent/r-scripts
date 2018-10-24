@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;        $a = array('green', 'red', 'yellow');&#xD;&#xA;        $b = array('avocado', 'apple', 'banana');&#xD;&#xA;        $c = array_combine($a, $b);&#xD;&#xA;        print_r($c);&#xD;&#xA;    ?>"

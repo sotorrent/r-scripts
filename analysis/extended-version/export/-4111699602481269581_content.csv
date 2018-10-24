@@ -1,2 +1,0 @@
-"Content"
-"	<context-param>&#xD;&#xA;		<param-name>contextConfigLocation</param-name>&#xD;&#xA;		<param-value>classpath:applicationContext.xml</param-value>&#xD;&#xA;	</context-param>&#xD;&#xA;	<listener>&#xD;&#xA;		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>&#xD;&#xA;	</listener>"

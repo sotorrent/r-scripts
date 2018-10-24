@@ -1,2 +1,0 @@
-"Content"
-"    <resources>    &#xD;&#xA;        <style name=""""AppTheme.NoActionBar"""">&#xD;&#xA;            <item name=""""windowActionBar"""">false</item>&#xD;&#xA;            <item name=""""windowNoTitle"""">true</item>&#xD;&#xA;            <item name=""""android:windowDrawsSystemBarBackgrounds"""">true</item>&#xD;&#xA;            <item name=""""android:statusBarColor"""">@android:color/transparent</item>&#xD;&#xA;        </style>&#xD;&#xA;    </resources>"

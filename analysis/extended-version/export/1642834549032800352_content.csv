@@ -1,2 +1,0 @@
-"Content"
-"              <connectionStrings>&#xD;&#xA;              <add &#xD;&#xA;                     name=""""NorthwindConnectionString"""" &#xD;&#xA;                     connectionString=""""Data Source=serverName;Initial &#xD;&#xA;                     Catalog=Northwind;Persist Security Info=True;User &#xD;&#xA;                    ID=userName;Password=password""""&#xD;&#xA;                    providerName=""""System.Data.SqlClient""""&#xD;&#xA;              />&#xD;&#xA;              </connectionStrings>"

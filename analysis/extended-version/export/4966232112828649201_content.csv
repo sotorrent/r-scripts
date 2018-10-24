@@ -1,1 +1,0 @@
-"protected override CreateParams CreateParams {&#xD;&#xA;get {&#xD;&#xA;CreateParams cp = base.CreateParams;&#xD;&#xA;cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED&#xD;&#xA;return cp;&#xD;&#xA;}&#xD;&#xA;}"

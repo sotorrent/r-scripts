@@ -1,2 +1,0 @@
-"Content"
-"        <?php&#xD;&#xA;        $a = """"Hello """";&#xD;&#xA;        $b = $a . """"World!""""; // now $b contains """"Hello World!""""&#xD;&#xA;        $a = """"Hello """";&#xD;&#xA;        $a .= """"World!"""";     // now $a contains """"Hello World!""""&#xD;&#xA;        ?>"

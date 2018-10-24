@@ -1,2 +1,0 @@
-"Content"
-"	attribute vec4 a_position;&#xD;&#xA;	attribute vec4 a_color;&#xD;&#xA;	attribute vec2 a_texCoord0;&#xD;&#xA;	&#xD;&#xA;	uniform mat4 u_projTrans;&#xD;&#xA;	&#xD;&#xA;	varying vec4 v_color;&#xD;&#xA;	varying vec2 v_texCoords;&#xD;&#xA;	&#xD;&#xA;	void main() {&#xD;&#xA;	    v_color = a_color;&#xD;&#xA;	    v_texCoords = a_texCoord0;&#xD;&#xA;	    gl_Position = u_projTrans * a_position;&#xD;&#xA;	}"

@@ -1,2 +1,0 @@
-"Content"
-"    $sql = """"SELECT * FROM users WHERE username = ?"""";&#xD;&#xA;    $stmt = $dbh->prepare($sql);&#xD;&#xA;    $result = $stmt->execute([$_POST['username']]);&#xD;&#xA;    $users = $result->fetchAll();&#xD;&#xA;    if (isset($users[0]) {&#xD;&#xA;        if (password_verify($_POST['password'], $users[0]->password) {&#xD;&#xA;            // valid login&#xD;&#xA;        } else {&#xD;&#xA;            // invalid password&#xD;&#xA;        }&#xD;&#xA;    } else {&#xD;&#xA;        // invalid username&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"    function noisy(f) {   &#xD;&#xA;    	return function(arg) {     &#xD;&#xA;    		console.log(""""calling with"""", arg);     &#xD;&#xA;    		var val = f(arg);     &#xD;&#xA;    		console.log(""""called with"""", arg, """"- got"""", val);     &#xD;&#xA;    		return val;   }; &#xD;&#xA;    } &#xD;&#xA;    noisy(Boolean)(0); &#xD;&#xA;    // <U+2192> calling with 0 &#xD;&#xA;    // <U+2192> called with 0 - got false"

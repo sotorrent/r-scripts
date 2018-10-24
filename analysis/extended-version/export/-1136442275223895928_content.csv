@@ -1,2 +1,0 @@
-"Content"
-"        $(function () {&#xD;&#xA;          $(""""#sortable"""").sortable({&#xD;&#xA;            revert: true&#xD;&#xA;          });&#xD;&#xA;    &#xD;&#xA;          $(""""#draggable"""").draggable({&#xD;&#xA;            connectToSortable: """"#sortable"""",&#xD;&#xA;            helper: """"clone"""",&#xD;&#xA;            revert: """"invalid""""&#xD;&#xA;          });&#xD;&#xA;          $(""""ul, li"""").disableSelection();&#xD;&#xA;        });"

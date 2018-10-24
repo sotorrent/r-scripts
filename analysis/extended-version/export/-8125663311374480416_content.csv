@@ -1,2 +1,0 @@
-"Content"
-"	<resource-ref>&#xD;&#xA;		<description>DB Connection</description>&#xD;&#xA;		<res-ref-name>jdbc/TestDB</res-ref-name>&#xD;&#xA;		<res-type>javax.sql.DataSource</res-type>&#xD;&#xA;		<res-auth>Container</res-auth>&#xD;&#xA;	</resource-ref>"

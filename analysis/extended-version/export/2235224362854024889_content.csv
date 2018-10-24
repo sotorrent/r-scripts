@@ -1,1 +1,0 @@
-"	RewriteEngine on&#xD;&#xA;# Don't rewrite files or directories&#xD;&#xA;RewriteCond %{REQUEST_FILENAME} -f [OR]&#xD;&#xA;RewriteCond %{REQUEST_FILENAME} -d&#xD;&#xA;RewriteRule ^ - [L]&#xD;&#xA;# Rewrite everything else to index.html to allow html5 state links&#xD;&#xA;RewriteRule ^ index.html [L]"

@@ -1,1 +1,0 @@
-"     import { Component } from '@angular/core';&#xD;&#xA;@Component({&#xD;&#xA;selector: 'app-root',&#xD;&#xA;templateUrl: './app.component.html',&#xD;&#xA;styleUrls: ['./app.component.css']&#xD;&#xA;})&#xD;&#xA;export class AppComponent {&#xD;&#xA;title = 'app works!';&#xD;&#xA;}"

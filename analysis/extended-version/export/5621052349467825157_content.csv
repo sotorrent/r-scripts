@@ -1,2 +1,0 @@
-"Content"
-"public string RenderControl(Control ctrl)&#xD;&#xA;        {&#xD;&#xA;            StringBuilder sb = new StringBuilder();&#xD;&#xA;            StringWriter tw = new StringWriter(sb);&#xD;&#xA;            HtmlTextWriter hw = new HtmlTextWriter(tw);&#xD;&#xA;            ctrl.RenderControl(hw);&#xD;&#xA;            return sb.ToString();&#xD;&#xA;        }"

@@ -1,2 +1,0 @@
-"Content"
-"	var MODULE = (function () {&#xD;&#xA;	    var my = {},&#xD;&#xA;			privateVariable = 1;&#xD;&#xA;		function privateMethod() {&#xD;&#xA;			// ...&#xD;&#xA;		}&#xD;&#xA;		my.moduleProperty = 1;&#xD;&#xA;		my.moduleMethod = function () {&#xD;&#xA;			// ...&#xD;&#xA;		};&#xD;&#xA;		return my;&#xD;&#xA;	}());"

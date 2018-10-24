@@ -1,2 +1,0 @@
-"Content"
-"     <?xml version=""""1.0""""?>&#xD;&#xA;         <catalog>&#xD;&#xA;             <book id=""""bk101"""">&#xD;&#xA;                 <author>Gambardella, Matthew</author>&#xD;&#xA;                 <title>XML Developer's Guide</title>&#xD;&#xA;                 <genre>Computer</genre>&#xD;&#xA;                 <price>44.95</price>&#xD;&#xA;                 <publish_date>2000-10-01</publish_date>&#xD;&#xA;                 <description>An in-depth look at creating applications with XML.</description>&#xD;&#xA;             </book>&#xD;&#xA;         </catalog>"

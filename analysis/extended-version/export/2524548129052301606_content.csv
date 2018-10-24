@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;	<set xmlns:android=""""http://schemas.android.com/apk/res/android"""">&#xD;&#xA;		<translate&#xD;&#xA;			android:duration=""""1000""""&#xD;&#xA;			android:fromYDelta=""""100%""""&#xD;&#xA;			android:toYDelta=""""0%"""" />&#xD;&#xA;	</set>"

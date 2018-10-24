@@ -1,2 +1,0 @@
-"Content"
-"--Simple CASE expression:   &#xD;&#xA;    CASE input_expression   &#xD;&#xA;         WHEN when_expression THEN result_expression [ ...n ]   &#xD;&#xA;         [ ELSE else_result_expression ]   &#xD;&#xA;    END   &#xD;&#xA;    --Searched CASE expression:  &#xD;&#xA;    CASE  &#xD;&#xA;         WHEN Boolean_expression THEN result_expression [ ...n ]   &#xD;&#xA;         [ ELSE else_result_expression ]   &#xD;&#xA;    END"

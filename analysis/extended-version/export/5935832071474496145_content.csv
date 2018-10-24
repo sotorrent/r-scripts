@@ -1,2 +1,0 @@
-"Content"
-"		.directive('fileModel', ['$parse', function ($parse) {&#xD;&#xA;				return {&#xD;&#xA;					restrict: 'A',&#xD;&#xA;					link: function (scope, element, attrs) {&#xD;&#xA;						var model = $parse(attrs.fileModel);&#xD;&#xA;						var modelSetter = model.assign;&#xD;&#xA;						element.bind('change', function () {&#xD;&#xA;							scope.$apply(function () {&#xD;&#xA;								modelSetter(scope, element[0].files[0]);&#xD;&#xA;							});&#xD;&#xA;						});&#xD;&#xA;					}&#xD;&#xA;				};&#xD;&#xA;			}])"

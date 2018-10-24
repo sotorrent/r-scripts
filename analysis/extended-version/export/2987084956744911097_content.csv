@@ -1,2 +1,0 @@
-"Content"
-"     <%@ page contentType=""""text/html; charset=UTF-8"""" %>&#xD;&#xA;    <html>&#xD;&#xA;      <head>&#xD;&#xA;          <title>Hello World</title>&#xD;&#xA;    </head>&#xD;&#xA;    <body>&#xD;&#xA;     <h2>${message}</h2>&#xD;&#xA;    </body>&#xD;&#xA;    </html>"

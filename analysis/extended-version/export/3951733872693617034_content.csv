@@ -1,2 +1,0 @@
-"Content"
-"      window.onbeforeunload = function (e) {&#xD;&#xA;      var message = """"Your confirmation message goes here."""",&#xD;&#xA;      e = e || window.event;&#xD;&#xA;      // For IE and Firefox&#xD;&#xA;      if (e) {&#xD;&#xA;      e.returnValue = message;&#xD;&#xA;      }&#xD;&#xA;      // For Safari&#xD;&#xA;      return message;&#xD;&#xA;    };"

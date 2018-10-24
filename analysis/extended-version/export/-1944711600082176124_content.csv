@@ -1,1 +1,0 @@
-"	def application(environ, start_response):&#xD;&#xA;status = '200 OK'&#xD;&#xA;output = 'Hello World!'&#xD;&#xA;response_headers = [('Content-type', 'text/plain'),&#xD;&#xA;('Content-Length', str(len(output)))]&#xD;&#xA;start_response(status, response_headers)&#xD;&#xA;return [output]"

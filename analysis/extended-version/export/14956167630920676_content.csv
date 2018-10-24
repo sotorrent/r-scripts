@@ -1,2 +1,0 @@
-"Content"
-"       public String toString() {&#xD;&#xA;        Iterator<E> i = iterator();&#xD;&#xA;    	if (! i.hasNext())&#xD;&#xA;    	    return """"[]"""";&#xD;&#xA;    &#xD;&#xA;    	StringBuilder sb = new StringBuilder();&#xD;&#xA;    	sb.append('[');&#xD;&#xA;    	for (;;) {&#xD;&#xA;    	    E e = i.next();&#xD;&#xA;    	    sb.append(e == this ? """"(this Collection)"""" : e);&#xD;&#xA;    	    if (! i.hasNext())&#xD;&#xA;    		return sb.append(']').toString();&#xD;&#xA;    	    sb.append("""", """");&#xD;&#xA;    	}&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"    var ua = navigator.userAgent.toLowerCase();&#xD;&#xA;    var isAndroid = ua.indexOf(""""android"""") > -1; //&& ua.indexOf(""""mobile"""");&#xD;&#xA;    if(isAndroid) {&#xD;&#xA;	    // Do something!&#xD;&#xA;	    // Redirect to Android-site?&#xD;&#xA;	    window.location = 'http://android.davidwalsh.name';&#xD;&#xA;    }"

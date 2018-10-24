@@ -1,2 +1,0 @@
-"Content"
-"	function getParameterByName(name, url) {&#xD;&#xA;	    if (!url) url = window.location.href;&#xD;&#xA;	    name = name.replace(/[\[\]]/g, """"\\$&"""");&#xD;&#xA;	    var regex = new RegExp(""""[?&]"""" + name + """"(=([^&#]*)|&|#|$)""""),&#xD;&#xA;	        results = regex.exec(url);&#xD;&#xA;	    if (!results) return null;&#xD;&#xA;	    if (!results[2]) return '';&#xD;&#xA;	    return decodeURIComponent(results[2].replace(/\+/g, """" """"));&#xD;&#xA;	}"

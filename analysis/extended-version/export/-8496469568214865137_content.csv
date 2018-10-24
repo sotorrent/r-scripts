@@ -1,1 +1,0 @@
-"      Font font1 = new Font(""""Arial"""", 10.0f);&#xD;&#xA;try&#xD;&#xA;{&#xD;&#xA;byte charset = font1.GdiCharSet;&#xD;&#xA;}&#xD;&#xA;finally&#xD;&#xA;{&#xD;&#xA;if (font1 != null)&#xD;&#xA;((IDisposable)font1).Dispose();&#xD;&#xA;}"

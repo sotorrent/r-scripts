@@ -1,2 +1,0 @@
-"Content"
-"var lastScrollTop = 0;&#xD;&#xA;    $(window).scroll(function(event){&#xD;&#xA;        var st = $(this).scrollTop();&#xD;&#xA;            if (st > lastScrollTop){&#xD;&#xA;                // downscroll code&#xD;&#xA;            } else {&#xD;&#xA;               // upscroll code&#xD;&#xA;        }&#xD;&#xA;        lastScrollTop = st;&#xD;&#xA;    });"

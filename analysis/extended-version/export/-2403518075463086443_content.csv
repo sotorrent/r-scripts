@@ -1,2 +1,0 @@
-"Content"
-"    <assembly xmlns=""""urn:schemas-microsoft-com:asm.v1"""" manifestVersion=""""1.0"""" &#xD;&#xA;              xmlns:asmv3=""""urn:schemas-microsoft-com:asm.v3"""" >&#xD;&#xA;     <asmv3:application>&#xD;&#xA;       <asmv3:windowsSettings xmlns=""""http://schemas.microsoft.com/SMI/2005/WindowsSettings"""">&#xD;&#xA;         <dpiAware>true</dpiAware>&#xD;&#xA;       </asmv3:windowsSettings>&#xD;&#xA;     </asmv3:application>&#xD;&#xA;    </assembly>"

@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0""""?>&#xD;&#xA;    <!DOCTYPE cross-domain-policy SYSTEM """"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"""">&#xD;&#xA;    <cross-domain-policy>&#xD;&#xA;        <site-control permitted-cross-domain-policies=""""all""""/>&#xD;&#xA;        <allow-access-from domain=""""*"""" secure=""""false""""/>&#xD;&#xA;        <allow-http-request-headers-from domain=""""*"""" headers=""""*"""" secure=""""false""""/>&#xD;&#xA;    </cross-domain-policy>"

@@ -1,2 +1,0 @@
-"Content"
-"    <android.support.v7.widget.Toolbar  &#xD;&#xA;        android:id=""""@+id/my_awesome_toolbar""""&#xD;&#xA;        android:layout_height=""""wrap_content""""&#xD;&#xA;        android:layout_width=""""match_parent""""&#xD;&#xA;        android:minHeight=""""?attr/actionBarSize""""&#xD;&#xA;        android:background=""""?attr/colorPrimary"""" />"

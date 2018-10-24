@@ -1,1 +1,0 @@
-"			<a href=""""#""""&#xD;&#xA;onclick=""""&#xD;&#xA;window.open(&#xD;&#xA;'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),&#xD;&#xA;'facebook-share-dialog',&#xD;&#xA;'width=626,height=436');&#xD;&#xA;return false;"""">&#xD;&#xA;Share on Facebook&#xD;&#xA;</a>"

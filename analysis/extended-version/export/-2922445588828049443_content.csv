@@ -1,2 +1,0 @@
-"Content"
-"@Override&#xD;&#xA;    protected void onStart() {&#xD;&#xA;        super.onStart();&#xD;&#xA;        adapter.startListening();&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    @Override&#xD;&#xA;    protected void onStop() {&#xD;&#xA;        super.onStop();&#xD;&#xA;        adapter.stopListening();&#xD;&#xA;    }"

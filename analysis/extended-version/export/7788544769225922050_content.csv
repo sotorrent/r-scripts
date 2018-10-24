@@ -1,1 +1,0 @@
-"        <?php&#xD;&#xA;$input = array(""""Neo"""", """"Morpheus"""", """"Trinity"""", """"Cypher"""", """"Tank"""");&#xD;&#xA;$rand_keys = array_rand($input, 2);&#xD;&#xA;echo $input[$rand_keys[0]] . """"\n"""";&#xD;&#xA;echo $input[$rand_keys[1]] . """"\n"""";&#xD;&#xA;?>"

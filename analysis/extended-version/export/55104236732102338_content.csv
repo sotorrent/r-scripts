@@ -1,2 +1,0 @@
-"Content"
-"		{&#xD;&#xA;		  """"name"""": """"My extension"""",&#xD;&#xA;		  ...&#xD;&#xA;		  """"content_scripts"""": [&#xD;&#xA;		    {&#xD;&#xA;		      """"matches"""": [""""http://www.google.com/*""""],&#xD;&#xA;		      """"css"""": [""""mystyles.css""""],&#xD;&#xA;		      """"js"""": [""""jquery.js"""", """"myscript.js""""]&#xD;&#xA;		    }&#xD;&#xA;		  ],&#xD;&#xA;		  ...&#xD;&#xA;		}&#xD;&#xA;	"

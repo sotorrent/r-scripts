@@ -1,1 +1,0 @@
-"public ApplicationUserManager UserManager&#xD;&#xA;{&#xD;&#xA;get&#xD;&#xA;{&#xD;&#xA;return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();&#xD;&#xA;}&#xD;&#xA;private set&#xD;&#xA;{&#xD;&#xA;_userManager = value;&#xD;&#xA;}&#xD;&#xA;}"

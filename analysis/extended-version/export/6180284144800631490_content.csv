@@ -1,2 +1,0 @@
-"Content"
-"       .transparent_class {&#xD;&#xA;      /* IE 8 */&#xD;&#xA;      -ms-filter: """"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"""";&#xD;&#xA;    &#xD;&#xA;      /* IE 5-7 */&#xD;&#xA;      filter: alpha(opacity=50);&#xD;&#xA;    &#xD;&#xA;      /* Netscape */&#xD;&#xA;      -moz-opacity: 0.5;&#xD;&#xA;    &#xD;&#xA;      /* Safari 1.x */&#xD;&#xA;      -khtml-opacity: 0.5;&#xD;&#xA;    &#xD;&#xA;      /* Good browsers */&#xD;&#xA;      opacity: 0.5;&#xD;&#xA;    }"

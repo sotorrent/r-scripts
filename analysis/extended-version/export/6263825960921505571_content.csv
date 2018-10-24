@@ -1,1 +1,0 @@
-"    $list = array (&#xD;&#xA;array('aaa', 'bbb', 'ccc', 'dddd'),&#xD;&#xA;array('123', '456', '789'),&#xD;&#xA;array('""""aaa""""', '""""bbb""""')&#xD;&#xA;);$fp = fopen('file.csv', 'w');&#xD;&#xA;foreach ($list as $fields) {&#xD;&#xA;fputcsv($fp, $fields);&#xD;&#xA;}&#xD;&#xA;fclose($fp);"

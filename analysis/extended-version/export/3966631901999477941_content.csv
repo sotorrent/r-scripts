@@ -1,2 +1,0 @@
-"Content"
-"    <% provide(:title, 'All users') %>&#xD;&#xA;    <h1>All users</h1>&#xD;&#xA;    &#xD;&#xA;    <%= will_paginate %>&#xD;&#xA;    &#xD;&#xA;    <ul class=""""users"""">&#xD;&#xA;      <%= render @users %>&#xD;&#xA;    </ul>&#xD;&#xA;    &#xD;&#xA;    <%= will_paginate %>"

@@ -1,2 +1,0 @@
-"Content"
-"Line #    Mem usage  Increment   Line Contents&#xD;&#xA;     ==============================================&#xD;&#xA;     3                           @profile&#xD;&#xA;     4      5.97 MB    0.00 MB   def my_func():&#xD;&#xA;     5     13.61 MB    7.64 MB       a = [1] * (10 ** 6)&#xD;&#xA;     6    166.20 MB  152.59 MB       b = [2] * (2 * 10 ** 7)&#xD;&#xA;     7     13.61 MB -152.59 MB       del b&#xD;&#xA;     8     13.61 MB    0.00 MB       return a"

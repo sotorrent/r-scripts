@@ -1,1 +1,0 @@
-"	(function ($) {&#xD;&#xA;$(document).ready(function () {&#xD;&#xA;$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {&#xD;&#xA;event.preventDefault();&#xD;&#xA;event.stopPropagation();&#xD;&#xA;$(this).parent().siblings().removeClass('open');&#xD;&#xA;$(this).parent().toggleClass('open');&#xD;&#xA;});&#xD;&#xA;});&#xD;&#xA;})(jQuery);"

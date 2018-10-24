@@ -1,1 +1,0 @@
-"        .clearfix:after {&#xD;&#xA;content: """"."""";&#xD;&#xA;visibility: hidden;&#xD;&#xA;display: block;&#xD;&#xA;height: 0;&#xD;&#xA;clear: both;&#xD;&#xA;}"

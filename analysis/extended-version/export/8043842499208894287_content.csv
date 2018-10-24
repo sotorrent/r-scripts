@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$link = mysql_connect('localhost', 'mysql_user', 'mysql_password');&#xD;&#xA;	if (!$link) {&#xD;&#xA;	    die('Could not connect: ' . mysql_error());&#xD;&#xA;	}&#xD;&#xA;	mysql_select_db('mydb');&#xD;&#xA;	mysql_query(""""INSERT INTO mytable (product) values ('kossu')"""");&#xD;&#xA;	printf(""""Last inserted record has id %d\n"""", mysql_insert_id());&#xD;&#xA;	?>"

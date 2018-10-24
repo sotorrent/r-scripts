@@ -1,2 +1,0 @@
-"Content"
-"     <?php&#xD;&#xA;        require('fpdf.php');&#xD;&#xA;        &#xD;&#xA;        $pdf=new FPDF();&#xD;&#xA;        $pdf->AddPage();&#xD;&#xA;        $pdf->SetFont('Arial','B',16);&#xD;&#xA;        $pdf->Cell(40,10,'Hello World!');&#xD;&#xA;        $pdf->Output();&#xD;&#xA;    ?"

@@ -1,2 +1,0 @@
-"Content"
-"	<div id=""""fb-root""""></div>&#xD;&#xA;	<script>&#xD;&#xA;	  window.fbAsyncInit = function() {&#xD;&#xA;		FB.init({appId: 'your app id', status: true, cookie: true, xfbml: true});&#xD;&#xA;	  };&#xD;&#xA;	  (function() {&#xD;&#xA;		var e = document.createElement('script'); e.async = true;&#xD;&#xA;		e.src = document.location.protocol +&#xD;&#xA;		  '//connect.facebook.net/en_US/all.js';&#xD;&#xA;		document.getElementById('fb-root').appendChild(e);&#xD;&#xA;	  }());&#xD;&#xA;	</script>"

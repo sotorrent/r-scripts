@@ -1,2 +1,0 @@
-"Content"
-"        $config = Array(&#xD;&#xA;        'protocol' => 'smtp',&#xD;&#xA;        'smtp_host' => 'ssl://smtp.googlemail.com',&#xD;&#xA;        'smtp_port' => 465,&#xD;&#xA;        'smtp_user' => 'xxx',&#xD;&#xA;        'smtp_pass' => 'xxx',&#xD;&#xA;        'mailtype'  => 'html', &#xD;&#xA;        'charset'   => 'iso-8859-1'&#xD;&#xA;    );&#xD;&#xA;    $this->load->library('email', $config);&#xD;&#xA;    $this->email->set_newline(""""\r\n"""");&#xD;&#xA;    &#xD;&#xA;    // Set to, from, message, etc.&#xD;&#xA;    &#xD;&#xA;    $result = $this->email->send();"

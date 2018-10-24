@@ -1,2 +1,0 @@
-"Content"
-"	class Physician < ActiveRecord::Base&#xD;&#xA;	  has_many :appointments&#xD;&#xA;	  has_many :patients, :through => :appointments&#xD;&#xA;	end&#xD;&#xA;	 &#xD;&#xA;	class Appointment < ActiveRecord::Base&#xD;&#xA;	  belongs_to :physician&#xD;&#xA;	  belongs_to :patient&#xD;&#xA;	end&#xD;&#xA;	 &#xD;&#xA;	class Patient < ActiveRecord::Base&#xD;&#xA;	  has_many :appointments&#xD;&#xA;	  has_many :physicians, :through => :appointments&#xD;&#xA;	end"

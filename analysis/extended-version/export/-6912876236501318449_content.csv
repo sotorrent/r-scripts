@@ -1,2 +1,0 @@
-"Content"
-"        public class WebAppInterface {&#xD;&#xA;        	    Context mContext;&#xD;&#xA;        	    /** Instantiate the interface and set the context */&#xD;&#xA;        	    WebAppInterface(Context c) {&#xD;&#xA;        	        mContext = c;&#xD;&#xA;	            }&#xD;&#xA;	    /** Show a toast from the web page */&#xD;&#xA;	    @JavascriptInterface&#xD;&#xA;	    public void showToast(String toast) {&#xD;&#xA;            Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show();&#xD;&#xA;   	    }&#xD;&#xA;	}"

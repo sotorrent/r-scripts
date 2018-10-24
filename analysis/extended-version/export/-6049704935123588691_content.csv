@@ -1,2 +1,0 @@
-"Content"
-"        GCMRegistrar.checkDevice(this);&#xD;&#xA;        GCMRegistrar.checkManifest(this);&#xD;&#xA;        final String regId = GCMRegistrar.getRegistrationId(this);&#xD;&#xA;        if (regId.equals("""""""")) &#xD;&#xA;        {&#xD;&#xA;            GCMRegistrar.register(this, SENDER_ID);&#xD;&#xA;        } &#xD;&#xA;        else &#xD;&#xA;        {&#xD;&#xA;        	//Log.v(TAG, """"Already registered"""");&#xD;&#xA;        }"

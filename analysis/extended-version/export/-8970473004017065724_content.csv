@@ -1,2 +1,0 @@
-"Content"
-"      #include<stdio.h>&#xD;&#xA;    &#xD;&#xA;      #define TOTAL_ELEMENTS (sizeof(array) / sizeof(array[0]))&#xD;&#xA;      int array[] = {23,34,12,17,204,99,16};&#xD;&#xA;    &#xD;&#xA;      int main()&#xD;&#xA;      {&#xD;&#xA;          int d;&#xD;&#xA;    &#xD;&#xA;          for(d=-1;d <= (TOTAL_ELEMENTS-2);d++)&#xD;&#xA;              printf(""""%d\n"""",array[d+1]);&#xD;&#xA;    &#xD;&#xA;          return 0;&#xD;&#xA;      }"

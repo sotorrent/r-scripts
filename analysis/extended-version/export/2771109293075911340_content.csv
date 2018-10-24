@@ -1,2 +1,0 @@
-"Content"
-"    $( """"#clickme"""" ).click(function() {&#xD;&#xA;	  $( """"#book"""" ).animate({&#xD;&#xA;		opacity: 0.25,&#xD;&#xA;		left: """"+=50"""",&#xD;&#xA;		height: """"toggle""""&#xD;&#xA;	  }, 5000, function() {&#xD;&#xA;		// Animation complete.&#xD;&#xA;	  });&#xD;&#xA;	});"

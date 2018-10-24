@@ -1,1 +1,0 @@
-"        function createCookie(name,value,days) {&#xD;&#xA;if (days) {&#xD;&#xA;var date = new Date();&#xD;&#xA;date.setTime(date.getTime()+(days*24*60*60*1000));&#xD;&#xA;var expires = """"; expires=""""+date.toGMTString();&#xD;&#xA;}&#xD;&#xA;else var expires = """""""";&#xD;&#xA;document.cookie = name+""""=""""+value+expires+""""; path=/"""";&#xD;&#xA;}"

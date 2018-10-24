@@ -1,2 +1,0 @@
-"Content"
-"static class Program&#xD;&#xA;        {&#xD;&#xA;            /// <summary>&#xD;&#xA;            /// The main entry point for the application.&#xD;&#xA;            /// </summary>&#xD;&#xA;            [STAThread]&#xD;&#xA;            static void Main()&#xD;&#xA;            {&#xD;&#xA;                Application.EnableVisualStyles();&#xD;&#xA;                Application.SetCompatibleTextRenderingDefault(false);&#xD;&#xA;                Application.Run(new Form1());&#xD;&#xA;            }&#xD;&#xA;         }"

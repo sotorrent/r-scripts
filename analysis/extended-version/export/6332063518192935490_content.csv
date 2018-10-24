@@ -1,2 +1,0 @@
-"Content"
-"static int hash(int h)&#xD;&#xA;            {&#xD;&#xA;        .............&#xD;&#xA;        .............&#xD;&#xA;    &#xD;&#xA;     // This function ensures that hashCodes that differ only by&#xD;&#xA;                // constant multiples at each bit position have a bounded&#xD;&#xA;                // number of collisions (approximately 8 at default load factor).&#xD;&#xA;                 h  = (h >>> 20) ^ (h >>> 12);&#xD;&#xA;                 return h ^ (h >>> 7) ^ (h >>> 4);&#xD;&#xA;            }"

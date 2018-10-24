@@ -1,1 +1,0 @@
-"	#include <iostream>&#xD;&#xA;using namespace std;&#xD;&#xA;int main()&#xD;&#xA;{&#xD;&#xA;cout << """"Hello world!"""" << endl;&#xD;&#xA;return 0;&#xD;&#xA;}"

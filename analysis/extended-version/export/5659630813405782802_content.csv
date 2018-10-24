@@ -1,2 +1,0 @@
-"Content"
-"    $dbh = new PDO(...);&#xD;&#xA;    $username = $_POST[""""username""""];&#xD;&#xA;    $email = $_POST[""""email""""];&#xD;&#xA;    $password = $_POST[""""password""""];&#xD;&#xA;    $hash = password_hash($password, PASSWORD_DEFAULT);&#xD;&#xA;    $stmt = $dbh->prepare(""""insert into users set username=?, email=?, password=?"""");&#xD;&#xA;    $stmt->execute([$username, $email, $hash]);"

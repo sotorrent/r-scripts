@@ -1,1 +1,0 @@
-"import android.app.Activity;&#xD;&#xA;import android.os.Bundle;&#xD;&#xA;public class MainActivity extends Activity {&#xD;&#xA;@Override&#xD;&#xA;protected void onCreate(Bundle savedInstanceState) {&#xD;&#xA;super.onCreate(savedInstanceState);&#xD;&#xA;setContentView(R.layout.activity_main);&#xD;&#xA;}&#xD;&#xA;}"

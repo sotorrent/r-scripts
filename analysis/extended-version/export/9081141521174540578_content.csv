@@ -1,2 +1,0 @@
-"Content"
-".fileUpload {&#xD;&#xA;    	position: relative;&#xD;&#xA;    	overflow: hidden;&#xD;&#xA;    	margin: 10px;&#xD;&#xA;    }&#xD;&#xA;    .fileUpload input.upload {&#xD;&#xA;    	position: absolute;&#xD;&#xA;    	top: 0;&#xD;&#xA;    	right: 0;&#xD;&#xA;    	margin: 0;&#xD;&#xA;    	padding: 0;&#xD;&#xA;    	font-size: 20px;&#xD;&#xA;    	cursor: pointer;&#xD;&#xA;    	opacity: 0;&#xD;&#xA;    	filter: alpha(opacity=0);&#xD;&#xA;    }"

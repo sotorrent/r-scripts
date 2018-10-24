@@ -1,2 +1,0 @@
-"Content"
-"	SELECT &#xD;&#xA;		DB_NAME(dbid) as DBName, &#xD;&#xA;		COUNT(dbid) as NumberOfConnections,&#xD;&#xA;		loginame as LoginName&#xD;&#xA;	FROM&#xD;&#xA;		sys.sysprocesses&#xD;&#xA;	WHERE &#xD;&#xA;		dbid > 0&#xD;&#xA;	GROUP BY &#xD;&#xA;		dbid, loginame"

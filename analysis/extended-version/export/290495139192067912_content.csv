@@ -1,2 +1,0 @@
-"Content"
-"	<filter>&#xD;&#xA;		<filter-name>CORS</filter-name>&#xD;&#xA;		<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>&#xD;&#xA;	</filter>&#xD;&#xA;	<filter-mapping>&#xD;&#xA;		<filter-name>CORS</filter-name>&#xD;&#xA;		<url-pattern>*</url-pattern>&#xD;&#xA;	</filter-mapping>"

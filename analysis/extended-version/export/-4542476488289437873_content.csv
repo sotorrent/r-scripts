@@ -1,2 +1,0 @@
-"Content"
-"	function readCookie(name) {&#xD;&#xA;		var nameEQ = name + """"="""";&#xD;&#xA;		var ca = document.cookie.split(';');&#xD;&#xA;		for (var i = 0; i < ca.length; i++) {&#xD;&#xA;			var c = ca[i];&#xD;&#xA;			while (c.charAt(0) == ' ') c = c.substring(1, c.length);&#xD;&#xA;			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);&#xD;&#xA;		}&#xD;&#xA;		return null;&#xD;&#xA;	}"

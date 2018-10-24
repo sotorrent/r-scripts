@@ -1,1 +1,0 @@
-"    #include <stdio.h>&#xD;&#xA;main () {&#xD;&#xA;long nc;&#xD;&#xA;nc = 0;&#xD;&#xA;while (getchar() != EOF) {&#xD;&#xA;++nc;&#xD;&#xA;}&#xD;&#xA;printf(""""%ld\n"""", nc);&#xD;&#xA;}"

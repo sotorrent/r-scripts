@@ -1,2 +1,0 @@
-"Content"
-"    class Ability&#xD;&#xA;      include CanCan::Ability&#xD;&#xA;      def initialize(user)&#xD;&#xA;        user ||= User.new # guest user (not logged in)&#xD;&#xA;        if user.admin?&#xD;&#xA;          can :manage, :all&#xD;&#xA;        else&#xD;&#xA;          can :read, :all&#xD;&#xA;        end&#xD;&#xA;      end&#xD;&#xA;    end"

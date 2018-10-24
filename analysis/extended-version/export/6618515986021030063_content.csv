@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$ch = curl_init(""""http://www.example.com/"""");&#xD;&#xA;	$fp = fopen(""""example_homepage.txt"""", """"w"""");&#xD;&#xA;	curl_setopt($ch, CURLOPT_FILE, $fp);&#xD;&#xA;	curl_setopt($ch, CURLOPT_HEADER, 0);&#xD;&#xA;	curl_exec($ch);&#xD;&#xA;	curl_close($ch);&#xD;&#xA;	fclose($fp);&#xD;&#xA;	?>"

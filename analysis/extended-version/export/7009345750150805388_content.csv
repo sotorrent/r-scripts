@@ -1,2 +1,0 @@
-"Content"
-"        <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;        <TextView xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;        android:layout_width=""""fill_parent""""&#xD;&#xA;        android:layout_height=""""fill_parent""""&#xD;&#xA;        android:padding=""""10dp""""&#xD;&#xA;        android:textSize=""""20sp"""" >&#xD;&#xA;        </TextView>"

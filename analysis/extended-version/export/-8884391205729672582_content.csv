@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;	<manifest xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;	    package=""""com.example.android.multidex.myapplication"""">&#xD;&#xA;	    <application&#xD;&#xA;	        ...&#xD;&#xA;	        android:name=""""android.support.multidex.MultiDexApplication"""">&#xD;&#xA;	        ...&#xD;&#xA;	    </application>&#xD;&#xA;	</manifest>"

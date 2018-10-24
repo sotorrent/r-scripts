@@ -1,2 +1,0 @@
-"Content"
-"    <Directory />&#xD;&#xA;        #Options FollowSymLinks&#xD;&#xA;    	Options Indexes FollowSymLinks Includes ExecCGI&#xD;&#xA;        AllowOverride All&#xD;&#xA;        Order deny,allow&#xD;&#xA;        Allow from all&#xD;&#xA;    </Directory>"

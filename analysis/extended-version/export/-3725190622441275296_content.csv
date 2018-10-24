@@ -1,2 +1,0 @@
-"Content"
-"		<dependency>&#xD;&#xA;			<groupId>javax</groupId>&#xD;&#xA;			<artifactId>javaee-api</artifactId>&#xD;&#xA;			<version>6.0</version>&#xD;&#xA;			<scope>provided</scope>&#xD;&#xA;		</dependency>"

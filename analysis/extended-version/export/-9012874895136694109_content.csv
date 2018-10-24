@@ -1,2 +1,0 @@
-"Content"
-"		<dependency>&#xD;&#xA;			<groupId>javax.websocket</groupId>&#xD;&#xA;			<artifactId>javax.websocket-api</artifactId>&#xD;&#xA;			<version>1.0</version>&#xD;&#xA;			<scope>provided</scope>&#xD;&#xA;		</dependency>"

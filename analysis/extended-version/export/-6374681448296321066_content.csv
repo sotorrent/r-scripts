@@ -1,2 +1,0 @@
-"Content"
-"    ;[OPcache]&#xD;&#xA;    ;zend_extension=""""/Applications/MAMP/bin/php/php5.5.3/lib/php/extensions/no-debug-non-zts-20121212/opcache.so""""&#xD;&#xA;    ;opcache.memory_consumption=128&#xD;&#xA;    ;opcache.interned_strings_buffer=8&#xD;&#xA;    ;opcache.max_accelerated_files=4000&#xD;&#xA;    ;opcache.revalidate_freq=60&#xD;&#xA;    ;opcache.fast_shutdown=1&#xD;&#xA;    ;opcache.enable_cli=1"

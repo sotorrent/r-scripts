@@ -1,1 +1,0 @@
-"      'providers' => [&#xD;&#xA;// ...&#xD;&#xA;Collective\Html\HtmlServiceProvider::class,&#xD;&#xA;// ...&#xD;&#xA;],&#xD;&#xA;'aliases' => [&#xD;&#xA;// ...&#xD;&#xA;'Form' => Collective\Html\FormFacade::class,&#xD;&#xA;'Html' => Collective\Html\HtmlFacade::class,&#xD;&#xA;// ...&#xD;&#xA;],"

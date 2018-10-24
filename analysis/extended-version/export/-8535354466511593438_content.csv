@@ -1,2 +1,0 @@
-"Content"
-"	<security-constraint>&#xD;&#xA;		<web-resource-collection>&#xD;&#xA;			<web-resource-name>securedapp</web-resource-name>&#xD;&#xA;			<url-pattern>/*</url-pattern>&#xD;&#xA;		</web-resource-collection>&#xD;&#xA;		<user-data-constraint>&#xD;&#xA;			<transport-guarantee>CONFIDENTIAL</transport-guarantee>&#xD;&#xA;		</user-data-constraint>&#xD;&#xA;	</security-constraint>	"

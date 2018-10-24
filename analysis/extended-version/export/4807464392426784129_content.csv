@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;	 $base=$_REQUEST['image'];&#xD;&#xA;	 $binary=base64_decode($base);&#xD;&#xA;	 header('Content-Type: bitmap; charset=utf-8');&#xD;&#xA;	 $file = fopen('uploaded_image.jpg', 'wb');&#xD;&#xA;	 fwrite($file, $binary);&#xD;&#xA;	 fclose($file);&#xD;&#xA;	 echo 'Image upload complete!!, Please check your php file directory……';&#xD;&#xA;	"

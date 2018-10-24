@@ -1,2 +1,0 @@
-"Content"
-"     public <T> T[] toArray(T[] a) {&#xD;&#xA;            if (a.length < size)&#xD;&#xA;                // Make a new array of a's runtime type, but my contents:&#xD;&#xA;                return (T[]) Arrays.copyOf(elementData, size, a.getClass());&#xD;&#xA;            System.arraycopy(elementData, 0, a, 0, size);&#xD;&#xA;            if (a.length > size)&#xD;&#xA;                a[size] = null;&#xD;&#xA;            return a;&#xD;&#xA;        }"

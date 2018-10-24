@@ -1,2 +1,0 @@
-"Content"
-"    * {&#xD;&#xA;	margin: 0;&#xD;&#xA;    }&#xD;&#xA;    html, body {&#xD;&#xA;	height: 100%;&#xD;&#xA;    }&#xD;&#xA;    .wrapper {&#xD;&#xA;	min-height: 100%;&#xD;&#xA;	height: auto !important;&#xD;&#xA;	height: 100%;&#xD;&#xA;	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's     height */&#xD;&#xA;    }&#xD;&#xA;    .footer, .push {&#xD;&#xA;	height: 142px; /* .push must be the same height as .footer */&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"      <?php&#xD;&#xA;        /* Redirect to a different page in the current directory that was requested */&#xD;&#xA;        $host  = $_SERVER['HTTP_HOST'];&#xD;&#xA;        $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');&#xD;&#xA;        $extra = 'mypage.php';&#xD;&#xA;        header(""""Location: http://$host$uri/$extra"""");&#xD;&#xA;        exit;&#xD;&#xA;        ?>"

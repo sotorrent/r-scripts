@@ -1,2 +1,0 @@
-"Content"
-"        $.ajax({&#xD;&#xA;          type: """"POST"""",&#xD;&#xA;          url: """"PageName.aspx/MethodName"""",&#xD;&#xA;          data: """"{}"""",&#xD;&#xA;          contentType: """"application/json; charset=utf-8"""",&#xD;&#xA;          dataType: """"json"""",&#xD;&#xA;          success: function(msg) {&#xD;&#xA;            // Do something interesting here.&#xD;&#xA;          }&#xD;&#xA;        });"

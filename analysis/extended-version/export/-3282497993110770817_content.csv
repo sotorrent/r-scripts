@@ -1,2 +1,0 @@
-"Content"
-"      Map m = Collections.synchronizedMap(new HashMap());&#xD;&#xA;          ...&#xD;&#xA;      Set s = m.keySet();  // Needn't be in synchronized block&#xD;&#xA;          ...&#xD;&#xA;      synchronized (m) {  // Synchronizing on m, not s!&#xD;&#xA;          Iterator i = s.iterator(); // Must be in synchronized block&#xD;&#xA;          while (i.hasNext())&#xD;&#xA;              foo(i.next());&#xD;&#xA;      }"

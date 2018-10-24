@@ -1,2 +1,0 @@
-"Content"
-"    typedef enum {&#xD;&#xA;        UIDeviceOrientationUnknown,&#xD;&#xA;        UIDeviceOrientationPortrait,&#xD;&#xA;        UIDeviceOrientationPortraitUpsideDown,&#xD;&#xA;        UIDeviceOrientationLandscapeLeft,&#xD;&#xA;        UIDeviceOrientationLandscapeRight,&#xD;&#xA;        UIDeviceOrientationFaceUp,&#xD;&#xA;        UIDeviceOrientationFaceDown&#xD;&#xA;    } UIDeviceOrientation;"

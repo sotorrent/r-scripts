@@ -1,2 +1,0 @@
-"Content"
-"#if __LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64&#xD;&#xA;     typedef long NSInteger;&#xD;&#xA;     typedef unsigned long NSUInteger;&#xD;&#xA;     #else&#xD;&#xA;     typedef int NSInteger;&#xD;&#xA;     typedef unsigned int NSUInteger;&#xD;&#xA;     #endif"

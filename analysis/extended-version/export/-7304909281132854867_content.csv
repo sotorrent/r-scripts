@@ -1,2 +1,0 @@
-"Content"
-"import React from 'react';&#xD;&#xA;    &#xD;&#xA;    class App extends React.Component {&#xD;&#xA;       render() {&#xD;&#xA;          return (&#xD;&#xA;             <div>&#xD;&#xA;                Hello World!!!&#xD;&#xA;             </div>&#xD;&#xA;          );&#xD;&#xA;       }&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    export default App;"

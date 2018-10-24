@@ -1,1 +1,0 @@
-"     <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;<FrameLayout&#xD;&#xA;xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;android:id=""""@+id/fragment_container""""&#xD;&#xA;android:layout_width=""""match_parent""""&#xD;&#xA;android:layout_height=""""match_parent"""" />"

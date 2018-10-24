@@ -1,2 +1,0 @@
-"Content"
-"    private static Drawable sBackground;&#xD;&#xA;      &#xD;&#xA;    @Override&#xD;&#xA;    protected void onCreate(Bundle state) {&#xD;&#xA;      super.onCreate(state);&#xD;&#xA;      &#xD;&#xA;      TextView label = new TextView(this);&#xD;&#xA;      label.setText(""""Leaks are bad"""");&#xD;&#xA;      &#xD;&#xA;      if (sBackground == null) {&#xD;&#xA;        sBackground = getDrawable(R.drawable.large_bitmap);&#xD;&#xA;      }&#xD;&#xA;      label.setBackgroundDrawable(sBackground);&#xD;&#xA;      &#xD;&#xA;      setContentView(label);&#xD;&#xA;    }"

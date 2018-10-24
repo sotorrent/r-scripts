@@ -1,2 +1,0 @@
-"Content"
-"    <menu xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;          xmlns:app=""""http://schemas.android.com/apk/res-auto""""&#xD;&#xA;          xmlns:tools=""""http://schemas.android.com/tools""""&#xD;&#xA;          tools:context="""".MainActivity"""">&#xD;&#xA;        <item android:id=""""@+id/action_settings""""&#xD;&#xA;              android:title=""""@string/action_settings""""&#xD;&#xA;              android:orderInCategory=""""100""""&#xD;&#xA;              app:showAsAction=""""never""""/>&#xD;&#xA;    </menu>"

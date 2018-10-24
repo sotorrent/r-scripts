@@ -1,2 +1,0 @@
-"Content"
-"    import React from """"react"""";&#xD;&#xA;    import ReactDOM from """"react-dom"""";&#xD;&#xA;    import """"./index.css"""";&#xD;&#xA;    import App from """"./App"""";&#xD;&#xA;    import registerServiceWorker from """"./registerServiceWorker"""";&#xD;&#xA;    &#xD;&#xA;    ReactDOM.render(<App />, document.getElementById(""""root""""));&#xD;&#xA;    registerServiceWorker();"

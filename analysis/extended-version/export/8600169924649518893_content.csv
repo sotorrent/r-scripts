@@ -1,2 +1,0 @@
-"Content"
-"def current_user_session&#xD;&#xA;            return @current_user_session if defined?&#xD;&#xA;    (@current_user_session)&#xD;&#xA;            @current_user_session = UserSession.find&#xD;&#xA;        end&#xD;&#xA;    &#xD;&#xA;    def current_user&#xD;&#xA;            return @current_user if defined?(@current_user)&#xD;&#xA;            @current_user = current_user_session &&&#xD;&#xA;    current_user_session.record&#xD;&#xA;        end"

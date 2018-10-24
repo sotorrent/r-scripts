@@ -1,2 +1,0 @@
-"Content"
-"    <html xmlns=""""http://www.w3.org/1999/xhtml"""">&#xD;&#xA;    <head>&#xD;&#xA;    <title>My site. <?=$pagetitle?></title>&#xD;&#xA;    </head>&#xD;&#xA;    <body>&#xD;&#xA;    <div id=""""page"""">&#xD;&#xA;    <? include $tpl ?>&#xD;&#xA;    </div>&#xD;&#xA;    </body>&#xD;&#xA;    </html>"

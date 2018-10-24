@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	  &#xD;&#xA;		$file_path = """"uploads/"""";&#xD;&#xA;		 &#xD;&#xA;		$file_path = $file_path . basename( $_FILES['uploaded_file']['name']);&#xD;&#xA;		if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $file_path)) {&#xD;&#xA;			echo """"success"""";&#xD;&#xA;		} else{&#xD;&#xA;			echo """"fail"""";&#xD;&#xA;		}&#xD;&#xA;	 ?>"

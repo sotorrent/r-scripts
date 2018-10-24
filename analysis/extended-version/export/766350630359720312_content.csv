@@ -1,1 +1,0 @@
-"	<requestHandler name=""""/dataimport"""" class=""""org.apache.solr.handler.dataimport.DataImportHandler"""">&#xD;&#xA;<lst name=""""defaults"""">&#xD;&#xA;<str name=""""config"""">data-config.xml</str>&#xD;&#xA;</lst>&#xD;&#xA;</requestHandler>"

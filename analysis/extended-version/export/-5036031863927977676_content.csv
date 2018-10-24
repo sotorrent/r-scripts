@@ -1,2 +1,0 @@
-"Content"
-"/* Smartphones (portrait and landscape) ----------- */&#xD;&#xA;    @media only screen &#xD;&#xA;     and (min-device-width : 320px) &#xD;&#xA;    and (max-device-width : 480px) {&#xD;&#xA;    /* Styles */&#xD;&#xA;    }&#xD;&#xA;    /* Smartphones (landscape) ----------- */&#xD;&#xA;    @media only screen &#xD;&#xA;    and (min-width : 321px) {&#xD;&#xA;    /* Styles */&#xD;&#xA;    }&#xD;&#xA;    /* Smartphones (portrait) ----------- */&#xD;&#xA;    @media only screen &#xD;&#xA;    and (max-width : 320px) {&#xD;&#xA;    /* Styles */&#xD;&#xA;    }"

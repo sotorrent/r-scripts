@@ -1,1 +1,0 @@
-"        <service&#xD;&#xA;android:name="""".MyFirebaseInstanceIDService"""">&#xD;&#xA;<intent-filter>&#xD;&#xA;<action android:name=""""com.google.firebase.INSTANCE_ID_EVENT""""/>&#xD;&#xA;</intent-filter>&#xD;&#xA;</service>"

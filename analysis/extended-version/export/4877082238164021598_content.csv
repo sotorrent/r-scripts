@@ -1,2 +1,0 @@
-"Content"
-"<VirtualHost *:80>&#xD;&#xA;         ServerName www.example.com&#xD;&#xA;         Redirect / https://www.example.com/&#xD;&#xA;     </VirtualHost>&#xD;&#xA;     <VirtualHost *:443>&#xD;&#xA;         ServerName www.example.com&#xD;&#xA;         # ... SSL configuration goes here&#xD;&#xA;     </VirtualHost>"

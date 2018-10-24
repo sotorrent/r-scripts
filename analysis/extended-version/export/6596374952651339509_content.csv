@@ -1,2 +1,0 @@
-"Content"
-"    <script type=""""text/javascript"""">&#xD;&#xA;      $.noConflict();&#xD;&#xA;      jQuery(document).ready(function($) {&#xD;&#xA;        // Code that uses jQuery's $ can follow here.&#xD;&#xA;      });&#xD;&#xA;      // Code that uses other library's $ can follow here.&#xD;&#xA;    </script>"

@@ -1,1 +1,0 @@
-"        {&#xD;&#xA;""""Version"""": """"2012-10-17"""",&#xD;&#xA;""""Statement"""": [&#xD;&#xA;{&#xD;&#xA;""""Effect"""": """"Allow"""",&#xD;&#xA;""""Principal"""": {&#xD;&#xA;""""Service"""": """"ec2.amazonaws.com""""&#xD;&#xA;},&#xD;&#xA;""""Action"""": """"sts:AssumeRole""""&#xD;&#xA;}&#xD;&#xA;]&#xD;&#xA;}"

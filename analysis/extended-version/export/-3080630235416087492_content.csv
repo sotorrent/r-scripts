@@ -1,2 +1,0 @@
-"Content"
-"	$('a[href*=#]:not([href=#])').click(function() {&#xD;&#xA;		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &#xD;&#xA;			|| location.hostname == this.hostname) {&#xD;&#xA;			var target = $(this.hash);&#xD;&#xA;			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');&#xD;&#xA;			   if (target.length) {&#xD;&#xA;				 $('html,body').animate({&#xD;&#xA;					 scrollTop: target.offset().top&#xD;&#xA;				}, 1000);&#xD;&#xA;				return false;&#xD;&#xA;			}&#xD;&#xA;		}"

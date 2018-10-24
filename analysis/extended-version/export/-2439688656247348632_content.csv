@@ -1,2 +1,0 @@
-"Content"
-"        import web&#xD;&#xA;                &#xD;&#xA;        urls = (&#xD;&#xA;            '/(.*)', 'hello'&#xD;&#xA;        )&#xD;&#xA;        app = web.application(urls, globals())&#xD;&#xA;        &#xD;&#xA;        class hello:        &#xD;&#xA;            def GET(self, name):&#xD;&#xA;                if not name: &#xD;&#xA;                    name = 'World'&#xD;&#xA;                return 'Hello, ' + name + '!'&#xD;&#xA;        &#xD;&#xA;        if __name__ == """"__main__"""":&#xD;&#xA;            app.run()"

@@ -1,2 +1,0 @@
-"Content"
-"        Geocoder geocoder;&#xD;&#xA;        List<Address> addresses;&#xD;&#xA;        geocoder = new Geocoder(this, Locale.getDefault());&#xD;&#xA;        addresses = geocoder.getFromLocation(latitude, longitude, 1);&#xD;&#xA;        &#xD;&#xA;        String address = addresses.get(0).getAddressLine(0);&#xD;&#xA;        String city = addresses.get(0).getAddressLine(1);&#xD;&#xA;        String country = addresses.get(0).getAddressLine(2);&#xD;&#xA;    "

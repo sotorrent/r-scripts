@@ -1,2 +1,0 @@
-"Content"
-"    def product(*args, **kwds):&#xD;&#xA;        # product('ABCD', 'xy') --> Ax Ay Bx By Cx Cy Dx Dy&#xD;&#xA;        # product(range(2), repeat=3) --> 000 001 010 011 100 101 110 111&#xD;&#xA;        pools = map(tuple, args) * kwds.get('repeat', 1)&#xD;&#xA;        result = [[]]&#xD;&#xA;        for pool in pools:&#xD;&#xA;            result = [x+[y] for x in result for y in pool]&#xD;&#xA;        for prod in result:&#xD;&#xA;            yield tuple(prod)"

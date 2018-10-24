@@ -1,2 +1,0 @@
-"Content"
-"      public class FlagSecureTestActivity extends Activity {&#xD;&#xA;          @Override&#xD;&#xA;          public void onCreate(Bundle savedInstanceState) {&#xD;&#xA;                 super.onCreate(savedInstanceState);&#xD;&#xA;                 getWindow().setFlags(LayoutParams.FLAG_SECURE,&#xD;&#xA;                          LayoutParams.FLAG_SECURE);&#xD;&#xA;                 setContentView(R.layout.main);&#xD;&#xA;          }&#xD;&#xA;      }"

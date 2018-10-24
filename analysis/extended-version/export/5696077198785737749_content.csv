@@ -1,2 +1,0 @@
-"Content"
-"      <system.webServer>&#xD;&#xA;        <handlers>&#xD;&#xA;          <remove name=""""BlockViewHandler""""/>&#xD;&#xA;          <add name=""""BlockViewHandler"""" path=""""*"""" verb=""""*"""" preCondition=""""integratedMode"""" type=""""System.Web.HttpNotFoundHandler"""" />&#xD;&#xA;        </handlers>&#xD;&#xA;      </system.webServer>"

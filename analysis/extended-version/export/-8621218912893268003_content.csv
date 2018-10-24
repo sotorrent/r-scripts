@@ -1,2 +1,0 @@
-"Content"
-"	#include <QGuiApplication>&#xD;&#xA;	#include <QQmlApplicationEngine>&#xD;&#xA;	int main(int argc, char *argv[])&#xD;&#xA;	{&#xD;&#xA;		QGuiApplication app(argc, argv);&#xD;&#xA;		QQmlApplicationEngine engine;&#xD;&#xA;		engine.load(QUrl(QStringLiteral(""""qrc:/main.qml"""")));&#xD;&#xA;		return app.exec();&#xD;&#xA;	}"

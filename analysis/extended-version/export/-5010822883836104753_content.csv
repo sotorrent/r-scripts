@@ -1,1 +1,0 @@
-"	package com.example.demo;&#xD;&#xA;import org.springframework.boot.SpringApplication;&#xD;&#xA;import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;&#xA;@SpringBootApplication&#xD;&#xA;public class DemoApplication {&#xD;&#xA;public static void main(String[] args) {&#xD;&#xA;SpringApplication.run(DemoApplication.class, args);&#xD;&#xA;}&#xD;&#xA;}"

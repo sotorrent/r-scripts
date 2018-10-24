@@ -1,2 +1,0 @@
-"Content"
-"      Process sh = Runtime.getRuntime().exec(""""su"""", null,null);&#xD;&#xA;      OutputStream  os = sh.getOutputStream();&#xD;&#xA;      os.write((""""/system/bin/screencap -p """" + """"/sdcard/img.png"""").getBytes(""""ASCII""""));&#xD;&#xA;      os.flush();&#xD;&#xA;      os.close();&#xD;&#xA;      sh.waitFor();"

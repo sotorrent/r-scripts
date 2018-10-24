@@ -1,2 +1,0 @@
-"Content"
-"    <h2><?=$pagetitle?></h2>&#xD;&#xA;    <ul>&#xD;&#xA;    <? foreach($DATA as $row): ?>&#xD;&#xA;    <li><a href=""""<?=$row['link']?>"""" target=""""_blank""""><?=$row['name']?></a></li>&#xD;&#xA;    <? endforeach ?>&#xD;&#xA;    <ul>"

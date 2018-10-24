@@ -1,1 +1,0 @@
-"           $data = array(&#xD;&#xA;'title' => $title,&#xD;&#xA;'name' => $name,&#xD;&#xA;'date' => $date&#xD;&#xA;);&#xD;&#xA;$this->db->where('id', $id);&#xD;&#xA;$this->db->update('mytable', $data); "

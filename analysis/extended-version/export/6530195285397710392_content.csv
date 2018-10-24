@@ -1,2 +1,0 @@
-"Content"
-"        <Directory /var/www/html>&#xD;&#xA;        Options Indexes FollowSymLinks MultiViews&#xD;&#xA;        AllowOverride All&#xD;&#xA;        Order allow,deny&#xD;&#xA;        allow from all&#xD;&#xA;        </Directory>"

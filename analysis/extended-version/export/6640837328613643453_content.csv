@@ -1,2 +1,0 @@
-"Content"
-"	-- Pivot table with one row and five columns&#xD;&#xA;	SELECT 'AverageCost' AS Cost_Sorted_By_Production_Days, &#xD;&#xA;	[0], [1], [2], [3], [4]&#xD;&#xA;	FROM&#xD;&#xA;	(SELECT DaysToManufacture, StandardCost &#xD;&#xA;		FROM Production.Product) AS SourceTable&#xD;&#xA;	PIVOT&#xD;&#xA;	(&#xD;&#xA;	AVG(StandardCost)&#xD;&#xA;	FOR DaysToManufacture IN ([0], [1], [2], [3], [4])&#xD;&#xA;	) AS PivotTable"

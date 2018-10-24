@@ -1,2 +1,0 @@
-"Content"
-"RewriteEngine On &#xD;&#xA;    Options +FollowSymLinks&#xD;&#xA;    &#xD;&#xA;    RewriteBase /&#xD;&#xA;    &#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-f&#xD;&#xA;    RewriteCond %{REQUEST_FILENAME} !-d&#xD;&#xA;    &#xD;&#xA;    RewriteRule ^(.*)$ /#/$1 [L]"

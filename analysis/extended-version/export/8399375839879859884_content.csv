@@ -1,2 +1,0 @@
-"Content"
-"module ApplicationHelper&#xD;&#xA;      def resource_name&#xD;&#xA;        :user&#xD;&#xA;      end&#xD;&#xA;    &#xD;&#xA;      def resource&#xD;&#xA;        @resource ||= User.new&#xD;&#xA;      end&#xD;&#xA;    &#xD;&#xA;      def devise_mapping&#xD;&#xA;        @devise_mapping ||= Devise.mappings[:user]&#xD;&#xA;      end&#xD;&#xA;    end"

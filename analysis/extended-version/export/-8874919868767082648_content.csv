@@ -1,2 +1,0 @@
-"Content"
-"     {&#xD;&#xA;      """"compilerOptions"""": {&#xD;&#xA;        """"target"""": """"es5"""",&#xD;&#xA;        """"module"""": """"commonjs"""",&#xD;&#xA;        """"moduleResolution"""": """"node"""",&#xD;&#xA;        """"sourceMap"""": true,&#xD;&#xA;        """"emitDecoratorMetadata"""": true,&#xD;&#xA;        """"experimentalDecorators"""": true,&#xD;&#xA;        """"removeComments"""": false,&#xD;&#xA;        """"noImplicitAny"""": true,&#xD;&#xA;        """"suppressImplicitAnyIndexErrors"""": true&#xD;&#xA;      }&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"<configuration>&#xD;&#xA;                  <property>&#xD;&#xA;                      <name>yarn.nodemanager.aux-services</name>&#xD;&#xA;                      <value>mapreduce_shuffle</value>&#xD;&#xA;                  <property>&#xD;&#xA;                  <property>&#xD;&#xA;                      <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>&#xD;&#xA;                      <value> org.apache.hadoop.mapred.ShuffleHandler</value>&#xD;&#xA;                  </property>&#xD;&#xA;          </configuration>"

@@ -1,2 +1,0 @@
-"Content"
-"    <!DOCTYPE HTML>&#xD;&#xA;    <html xmlns:th=""""http://www.thymeleaf.org"""">&#xD;&#xA;    <head>&#xD;&#xA;        <title>Getting Started: Serving Web Content</title>&#xD;&#xA;        <meta http-equiv=""""Content-Type"""" content=""""text/html; charset=UTF-8"""" />&#xD;&#xA;    </head>&#xD;&#xA;    <body>&#xD;&#xA;        <p th:text=""""'Hello, ' + ${name} + '!'"""" />&#xD;&#xA;    </body>&#xD;&#xA;    </html>"

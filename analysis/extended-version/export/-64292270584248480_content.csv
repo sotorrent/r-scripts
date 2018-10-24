@@ -1,2 +1,0 @@
-"Content"
-"::-webkit-input-placeholder {&#xD;&#xA;       color: red;&#xD;&#xA;     }&#xD;&#xA;    :-moz-placeholder { /* Firefox 18- */&#xD;&#xA;       color: red;  &#xD;&#xA;    }&#xD;&#xA;    ::-moz-placeholder {  /* Firefox 19+ */&#xD;&#xA;       color: red;  &#xD;&#xA;    }&#xD;&#xA;    :-ms-input-placeholder {  &#xD;&#xA;    color: red;  &#xD;&#xA;    }"

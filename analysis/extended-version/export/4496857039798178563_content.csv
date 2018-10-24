@@ -1,2 +1,0 @@
-"Content"
-"    function array_flatten($array) { &#xD;&#xA;        if (!is_array($array)) { &#xD;&#xA;            return FALSE; &#xD;&#xA;        }&#xD;&#xA; &#xD;&#xA;        $result = array(); &#xD;&#xA;        foreach ($array as $key => $value) { &#xD;&#xA;            if (is_array($value)) { &#xD;&#xA;                $result = array_merge($result, array_flatten($value)); &#xD;&#xA;            } else { &#xD;&#xA;                $result[$key] = $value; &#xD;&#xA;            } &#xD;&#xA;        } &#xD;&#xA;      &#xD;&#xA;        return $result; &#xD;&#xA;    } "

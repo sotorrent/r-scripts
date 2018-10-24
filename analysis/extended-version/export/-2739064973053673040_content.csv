@@ -1,2 +1,0 @@
-"Content"
-"	table {&#xD;&#xA;		width: 100%;&#xD;&#xA;	}&#xD;&#xA;	thead, tbody, tr, td, th { display: block; }&#xD;&#xA;	tr:after {&#xD;&#xA;		content: ' ';&#xD;&#xA;		display: block;&#xD;&#xA;		visibility: hidden;&#xD;&#xA;		clear: both;&#xD;&#xA;	}&#xD;&#xA;	thead th {&#xD;&#xA;		height: 30px;&#xD;&#xA;        text-align: left;&#xD;&#xA;	}&#xD;&#xA;	tbody {&#xD;&#xA;		height: 120px;&#xD;&#xA;		overflow-y: auto;&#xD;&#xA;	}&#xD;&#xA;	thead {&#xD;&#xA;		/* fallback */&#xD;&#xA;	}&#xD;&#xA;	tbody td, thead th {&#xD;&#xA;		width: 19.2%;&#xD;&#xA;		float: left;&#xD;&#xA;	}"

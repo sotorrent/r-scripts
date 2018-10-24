@@ -1,2 +1,0 @@
-"Content"
-"    <?xml version=""""1.0"""" encoding=""""ISO-8859-1""""?>&#xD;&#xA;    &#xD;&#xA;    <bookstore>&#xD;&#xA;         <book>&#xD;&#xA;              <title lang=""""eng"""">Harry Potter</title>&#xD;&#xA;              <price>29.99</price>&#xD;&#xA;         </book>&#xD;&#xA;        &#xD;&#xA;         <book>&#xD;&#xA;               <title lang=""""eng"""">Learning XML</title>&#xD;&#xA;               <price>39.95</price>&#xD;&#xA;         </book>&#xD;&#xA;    </bookstore>"

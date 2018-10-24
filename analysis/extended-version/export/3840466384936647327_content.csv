@@ -1,1 +1,0 @@
-"        #include """"mainwindow.h""""&#xD;&#xA;#include """"ui_mainwindow.h""""&#xD;&#xA;MainWindow::MainWindow(QWidget *parent) :&#xD;&#xA;QMainWindow(parent),&#xD;&#xA;ui(new Ui::MainWindow)&#xD;&#xA;{&#xD;&#xA;ui->setupUi(this);&#xD;&#xA;}&#xD;&#xA;MainWindow::~MainWindow()&#xD;&#xA;{&#xD;&#xA;delete ui;&#xD;&#xA;}"

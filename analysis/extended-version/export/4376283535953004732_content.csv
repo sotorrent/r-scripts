@@ -1,1 +1,0 @@
-"// Create DOM from URL or file&#xD;&#xA;$html = file_get_html('http://www.google.com/');&#xD;&#xA;// Find all images&#xD;&#xA;foreach($html->find('img') as $element)&#xD;&#xA;echo $element->src . '<br>';&#xD;&#xA;// Find all links&#xD;&#xA;foreach($html->find('a') as $element)&#xD;&#xA;echo $element->href . '<br>';"

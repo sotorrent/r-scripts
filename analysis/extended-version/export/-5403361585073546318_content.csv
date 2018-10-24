@@ -1,2 +1,0 @@
-"Content"
-"    #panel, #flip {&#xD;&#xA;        padding: 5px;&#xD;&#xA;        text-align: center;&#xD;&#xA;        background-color: #e5eecc;&#xD;&#xA;        border: solid 1px #c3c3c3;&#xD;&#xA;    }&#xD;&#xA;    #panel {&#xD;&#xA;        padding: 50px;&#xD;&#xA;        display: none;&#xD;&#xA;    }"

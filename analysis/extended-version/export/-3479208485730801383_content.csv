@@ -1,2 +1,0 @@
-"Content"
-"    public class Point {&#xD;&#xA;        public int x = 0;&#xD;&#xA;        public int y = 0;&#xD;&#xA;            &#xD;&#xA;        //constructor&#xD;&#xA;        public Point(int x, int y) {&#xD;&#xA;            this.x = x;&#xD;&#xA;            this.y = y;&#xD;&#xA;        }&#xD;&#xA;    }"

@@ -1,2 +1,0 @@
-"Content"
-"    html, body {&#xD;&#xA;    	height:100%;&#xD;&#xA;    	width:100%;&#xD;&#xA;    	margin:0;&#xD;&#xA;    	padding:0;&#xD;&#xA;    }&#xD;&#xA;    #myChart {&#xD;&#xA;    	height:100%;&#xD;&#xA;    	width:100%;&#xD;&#xA;    	min-height:150px;&#xD;&#xA;    }&#xD;&#xA;    .zc-ref {&#xD;&#xA;    	display:none;&#xD;&#xA;    }"

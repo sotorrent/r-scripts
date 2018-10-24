@@ -1,2 +1,0 @@
-"Content"
-"    ; Magic quotes&#xD;&#xA;    ; Magic quotes for incoming GET/POST/Cookie data.&#xD;&#xA;    magic_quotes_gpc = Off&#xD;&#xA;    ; Magic quotes for runtime-generated data, e.g. data from SQL, from exec(), etc.&#xD;&#xA;    magic_quotes_runtime = Off&#xD;&#xA;    ; Use Sybase-style magic quotes (escape ' with '' instead of \').&#xD;&#xA;    magic_quotes_sybase = Off"

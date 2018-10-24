@@ -1,2 +1,0 @@
-"Content"
-"      function addCommas(nStr)&#xD;&#xA;        {&#xD;&#xA;        	nStr += '';&#xD;&#xA;        	x = nStr.split('.');&#xD;&#xA;        	x1 = x[0];&#xD;&#xA;        	x2 = x.length > 1 ? '.' + x[1] : '';&#xD;&#xA;        	var rgx = /(\d+)(\d{3})/;&#xD;&#xA;        	while (rgx.test(x1)) {&#xD;&#xA;        		x1 = x1.replace(rgx, '$1' + ',' + '$2');&#xD;&#xA;        	}&#xD;&#xA;        	return x1 + x2;&#xD;&#xA;        }"

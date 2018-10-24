@@ -1,2 +1,0 @@
-"Content"
-"	function getCaret(el) { &#xD;&#xA;		if (el.selectionStart) { &#xD;&#xA;			return el.selectionStart; &#xD;&#xA;		} else if (document.selection) { &#xD;&#xA;			el.focus();&#xD;&#xA;			var r = document.selection.createRange(); &#xD;&#xA;			if (r == null) { &#xD;&#xA;				return 0;&#xD;&#xA;			}&#xD;&#xA;			var re = el.createTextRange(), rc = re.duplicate();&#xD;&#xA;			re.moveToBookmark(r.getBookmark());&#xD;&#xA;			rc.setEndPoint('EndToStart', re);&#xD;&#xA;			return rc.text.length;&#xD;&#xA;		}  &#xD;&#xA;		return 0; &#xD;&#xA;	}"

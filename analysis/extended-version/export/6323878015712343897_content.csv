@@ -1,2 +1,0 @@
-"Content"
-"    var express = require('express');&#xD;&#xA;    var router = express.Router();&#xD;&#xA;    &#xD;&#xA;    /* GET users listing. */&#xD;&#xA;    router.get('/', function(req, res, next) {&#xD;&#xA;      res.send('respond with a resource');&#xD;&#xA;    });&#xD;&#xA;    &#xD;&#xA;    module.exports = router;"

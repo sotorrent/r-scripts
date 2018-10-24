@@ -1,2 +1,0 @@
-"Content"
-"	<?xml version=""""1.0"""" encoding=""""UTF-8""""?>&#xD;&#xA;	<shape xmlns:android=""""http://schemas.android.com/apk/res/android"""">&#xD;&#xA;		<solid android:color=""""#FFFFFF""""/>&#xD;&#xA;		<stroke android:width=""""3dip"""" android:color=""""#B1BCBE"""" />&#xD;&#xA;		<corners android:radius=""""10dip""""/>&#xD;&#xA;		<padding android:left=""""0dip"""" android:top=""""0dip"""" android:right=""""0dip"""" android:bottom=""""0dip"""" />&#xD;&#xA;	</shape>"

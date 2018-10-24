@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;    // Turn off error reporting&#xD;&#xA;    error_reporting(0);&#xD;&#xA;    &#xD;&#xA;    // Report runtime errors&#xD;&#xA;    error_reporting(E_ERROR | E_WARNING | E_PARSE);&#xD;&#xA;    &#xD;&#xA;    // Report all errors&#xD;&#xA;    error_reporting(E_ALL);&#xD;&#xA;    &#xD;&#xA;    // Same as error_reporting(E_ALL);&#xD;&#xA;    ini_set(""""error_reporting"""", E_ALL);&#xD;&#xA;    &#xD;&#xA;    // Report all errors except E_NOTICE&#xD;&#xA;    error_reporting(E_ALL & ~E_NOTICE);&#xD;&#xA;    ?"

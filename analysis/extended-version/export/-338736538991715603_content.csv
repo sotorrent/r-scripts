@@ -1,2 +1,0 @@
-"Content"
-"    function get_string_between($string, $start, $end)&#xD;&#xA;    {&#xD;&#xA;         $string = """" """".$string;&#xD;&#xA;         $ini = strpos($string,$start);&#xD;&#xA;         if ($ini == 0) return """""""";&#xD;&#xA;         $ini += strlen($start);   &#xD;&#xA;         $len = strpos($string,$end,$ini) - $ini;&#xD;&#xA;         return substr($string,$ini,$len);&#xD;&#xA;    }"

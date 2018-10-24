@@ -1,2 +1,0 @@
-"Content"
-"     // Given:&#xD;&#xA;     // URL: http://server.com/index.html#/Chapter/1/Section/2?search=moby&#xD;&#xA;     // Route: /Chapter/:chapterId/Section/:sectionId&#xD;&#xA;     //&#xD;&#xA;     // Then&#xD;&#xA;     $routeParams ==> {chapterId:'1', sectionId:'2', search:'moby'}"

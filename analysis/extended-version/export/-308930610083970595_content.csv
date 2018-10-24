@@ -1,2 +1,0 @@
-"Content"
-"    <div class=""""onoffswitch"""">&#xD;&#xA;	 <input type=""""checkbox"""" name=""""onoffswitch"""" class=""""onoffswitch-checkbox"""" id=""""myonoffswitch"""" checked> &#xD;&#xA;       <label class=""""onoffswitch-label"""" for=""""myonoffswitch""""> &#xD;&#xA;         <span class=""""onoffswitch-inner""""></span> &#xD;&#xA;         <span class=""""onoffswitch-switch""""></span>&#xD;&#xA;       </label>&#xD;&#xA;	</div>"

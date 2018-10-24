@@ -1,2 +1,0 @@
-"Content"
-"        {&#xD;&#xA;            status: 'connected',&#xD;&#xA;            authResponse: {&#xD;&#xA;                accessToken: '...',&#xD;&#xA;                expiresIn:'...',&#xD;&#xA;                signedRequest:'...',&#xD;&#xA;                userID:'...'&#xD;&#xA;            }&#xD;&#xA;        }"

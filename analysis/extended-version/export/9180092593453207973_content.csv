@@ -1,2 +1,0 @@
-"Content"
-"      <?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;      <resources>&#xD;&#xA;          <declare-styleable name=""""HelloGallery"""">&#xD;&#xA;         <attr name=""""android:galleryItemBackground"""" />&#xD;&#xA;          </declare-styleable>&#xD;&#xA;      </resources>"

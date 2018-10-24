@@ -1,1 +1,0 @@
-"#include <stdio.h>&#xD;&#xA;main() {&#xD;&#xA;int c;&#xD;&#xA;c = getchar();&#xD;&#xA;while (c != EOF) {&#xD;&#xA;putchar(c);&#xD;&#xA;c = getchar();&#xD;&#xA;}&#xD;&#xA;}"

@@ -1,2 +1,0 @@
-"Content"
-"     BitmapFactory.Options options = new BitmapFactory.Options();&#xD;&#xA;     options.inJustDecodeBounds = true;&#xD;&#xA;     BitmapFactory.decodeResource(getResources(), R.id.myimage, options);&#xD;&#xA;     int imageHeight = options.outHeight; &#xD;&#xA;     int imageWidth = options.outWidth; &#xD;&#xA;     String imageType = options.outMimeType;"

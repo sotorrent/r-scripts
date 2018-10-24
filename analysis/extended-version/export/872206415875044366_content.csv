@@ -1,1 +1,0 @@
-"        {% if latest_question_list %}&#xD;&#xA;<ul>&#xD;&#xA;{% for question in latest_question_list %}&#xD;&#xA;<li><a href=""""{% url 'polls:detail' question_id %}"""">{{ question.question_text }}</a></li>&#xD;&#xA;{% endfor %}&#xD;&#xA;</ul>&#xD;&#xA;{% else %}&#xD;&#xA;<p>No polls are available.</p>&#xD;&#xA;{% endif %}"

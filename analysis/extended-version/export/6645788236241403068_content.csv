@@ -1,2 +1,0 @@
-"Content"
-"<IfModule mod_php5.c>&#xD;&#xA;           php_value post_max_size 200M&#xD;&#xA;           php_value upload_max_filesize 200M&#xD;&#xA;           php_value memory_limit 300M&#xD;&#xA;           php_value max_execution_time 259200&#xD;&#xA;           php_value max_input_time 259200&#xD;&#xA;           php_value session.gc_maxlifetime 1200&#xD;&#xA;       </IfModule>"

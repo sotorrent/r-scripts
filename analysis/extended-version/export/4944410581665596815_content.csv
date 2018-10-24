@@ -1,2 +1,0 @@
-"Content"
-"	<menu xmlns:android=""""http://schemas.android.com/apk/res/android"""" >&#xD;&#xA;	    <item&#xD;&#xA;	        android:id=""""@+id/action_settings""""&#xD;&#xA;	        android:orderInCategory=""""100""""&#xD;&#xA;	        android:showAsAction=""""never""""&#xD;&#xA;	        android:title=""""@string/action_settings""""/>&#xD;&#xA;	</menu>"

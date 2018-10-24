@@ -1,2 +1,0 @@
-"Content"
-"    var server =  require(""""./server"""");&#xD;&#xA;    var router =  require(""""./router"""");&#xD;&#xA;    var requestHandlers = require(""""./requestHandlers"""");&#xD;&#xA;    var handle = {}&#xD;&#xA;    handle [""""/""""] = requestHandlers.start;&#xD;&#xA;    handle [""""/start""""] = requestHandlers.start;&#xD;&#xA;    handle [""""/upload""""] = requestHandlers.upload;&#xD;&#xA;    server.start(router.route, handle);"

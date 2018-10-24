@@ -1,2 +1,0 @@
-"Content"
-"<web-app ...>&#xD;&#xA;       <listener>&#xD;&#xA;    	<listener-class>&#xD;&#xA;    		org.springframework.web.context.request.RequestContextListener&#xD;&#xA;    	</listener-class>&#xD;&#xA;       </listener>&#xD;&#xA;    </web-app>"

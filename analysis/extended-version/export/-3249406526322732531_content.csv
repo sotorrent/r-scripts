@@ -1,2 +1,0 @@
-"Content"
-"      // Simple GET request example :&#xD;&#xA;      $http.get('/someUrl').&#xD;&#xA;        success(function(data, status, headers, config) {&#xD;&#xA;      // this callback will be called asynchronously&#xD;&#xA;     // when the response is available&#xD;&#xA;     }).&#xD;&#xA;       error(function(data, status, headers, config) {&#xD;&#xA;        // called asynchronously if an error occurs&#xD;&#xA;       // or server returns response with an error status.&#xD;&#xA;     });"

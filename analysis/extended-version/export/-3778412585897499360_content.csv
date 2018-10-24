@@ -1,1 +1,0 @@
-"    ...&#xD;&#xA;import { BrowserAnimationsModule } from '@angular/platform-browser/animations';&#xD;&#xA;...&#xD;&#xA;@NgModule({&#xD;&#xA;imports: [&#xD;&#xA;...&#xD;&#xA;BrowserAnimationsModule,&#xD;&#xA;..."

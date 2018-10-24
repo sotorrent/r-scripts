@@ -1,2 +1,0 @@
-"Content"
-"GET /chat HTTP/1.1&#xD;&#xA;    Host: example.com:8000&#xD;&#xA;    Upgrade: websocket&#xD;&#xA;    Connection: Upgrade&#xD;&#xA;    Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==&#xD;&#xA;    Sec-WebSocket-Version: 13"

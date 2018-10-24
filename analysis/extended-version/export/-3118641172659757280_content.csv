@@ -1,2 +1,0 @@
-"Content"
-"	-- To allow advanced options to be changed.  &#xD;&#xA;	EXEC sp_configure 'show advanced options', 1;  &#xD;&#xA;	GO  &#xD;&#xA;	-- To update the currently configured value for advanced options.  &#xD;&#xA;	RECONFIGURE;  &#xD;&#xA;	GO  &#xD;&#xA;	-- To enable the feature.  &#xD;&#xA;	EXEC sp_configure 'xp_cmdshell', 1;  &#xD;&#xA;	GO  &#xD;&#xA;	-- To update the currently configured value for this feature.  &#xD;&#xA;	RECONFIGURE;  &#xD;&#xA;	GO"

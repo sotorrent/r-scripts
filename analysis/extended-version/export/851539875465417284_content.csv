@@ -1,1 +1,0 @@
-"	{&#xD;&#xA;$lookup: {&#xD;&#xA;from: <collection to join>,&#xD;&#xA;localField: <field from the input documents>,&#xD;&#xA;foreignField: <field from the documents of the """"from"""" collection>,&#xD;&#xA;as: <output array field>&#xD;&#xA;}&#xD;&#xA;}"

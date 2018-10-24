@@ -1,2 +1,0 @@
-"Content"
-"public class MsLunch {&#xD;&#xA;        private long c1 = 0;&#xD;&#xA;        private long c2 = 0;&#xD;&#xA;        private Object lock1 = new Object();&#xD;&#xA;        private Object lock2 = new Object();&#xD;&#xA;        public void inc1() {&#xD;&#xA;            synchronized(lock1) {&#xD;&#xA;                c1++;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        public void inc2() {&#xD;&#xA;            synchronized(lock2) {&#xD;&#xA;                c2++;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }"

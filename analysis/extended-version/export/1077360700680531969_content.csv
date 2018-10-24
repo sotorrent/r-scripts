@@ -1,2 +1,0 @@
-"Content"
-"	CREATE FUNCTION dbo.Split(@sep char(1), @s varchar(512))&#xD;&#xA;	RETURNS table&#xD;&#xA;	AS&#xD;&#xA;	RETURN (&#xD;&#xA;		WITH Pieces(pn, start, stop) AS (&#xD;&#xA;		  SELECT 1, 1, CHARINDEX(@sep, @s)&#xD;&#xA;		  UNION ALL&#xD;&#xA;		  SELECT pn + 1, stop + 1, CHARINDEX(@sep, @s, stop + 1)&#xD;&#xA;		  FROM Pieces&#xD;&#xA;		  WHERE stop > 0&#xD;&#xA;		)&#xD;&#xA;		SELECT pn,&#xD;&#xA;		  SUBSTRING(@s, start, CASE WHEN stop > 0 THEN stop-start ELSE 512 END) AS s&#xD;&#xA;		FROM Pieces&#xD;&#xA;	  )"

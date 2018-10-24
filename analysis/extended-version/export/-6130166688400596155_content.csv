@@ -1,2 +1,0 @@
-"Content"
-"		<rewrite>&#xD;&#xA;			<rules>&#xD;&#xA;				<rule name=""""Main Rule"""" stopProcessing=""""true"""">&#xD;&#xA;					<match url="""".*"""" />&#xD;&#xA;					<conditions logicalGrouping=""""MatchAll"""">&#xD;&#xA;						<add input=""""{REQUEST_FILENAME}"""" matchType=""""IsFile"""" negate=""""true"""" />&#xD;&#xA;						<add input=""""{REQUEST_FILENAME}"""" matchType=""""IsDirectory"""" negate=""""true"""" />&#xD;&#xA;					</conditions>&#xD;&#xA;					<action type=""""Rewrite"""" url=""""index.php"""" />&#xD;&#xA;				</rule>&#xD;&#xA;			</rules>&#xD;&#xA;		</rewrite>"

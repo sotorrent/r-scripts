@@ -1,2 +1,0 @@
-"Content"
-"	-assumenosideeffects class android.util.Log {&#xD;&#xA;		public static boolean isLoggable(java.lang.String, int);&#xD;&#xA;		public static int v(...);&#xD;&#xA;		public static int i(...);&#xD;&#xA;		public static int w(...);&#xD;&#xA;		public static int d(...);&#xD;&#xA;		public static int e(...);&#xD;&#xA;	}"

@@ -1,2 +1,0 @@
-"Content"
-"	  <runtime>&#xD;&#xA;		<assemblyBinding xmlns=""""urn:schemas-microsoft-com:asm.v1"""">&#xD;&#xA;		  <dependentAssembly>&#xD;&#xA;			<assemblyIdentity name=""""System.Web.Mvc"""" publicKeyToken=""""31bf3856ad364e35"""" />&#xD;&#xA;			<bindingRedirect oldVersion=""""1.0.0.0-2.0.0.0"""" newVersion=""""3.0.0.0"""" />&#xD;&#xA;		  </dependentAssembly>&#xD;&#xA;		</assemblyBinding>&#xD;&#xA;	  </runtime>"

@@ -1,2 +1,0 @@
-"Content"
-"      def create&#xD;&#xA;        @user = User.new(user_params)&#xD;&#xA;    &#xD;&#xA;          respond_to do |format|&#xD;&#xA;          if @user.save&#xD;&#xA;            format.html { redirect_to @user, notice: 'User was successfully created.' }&#xD;&#xA;            format.json { render :show, status: :created, location: @user }&#xD;&#xA;          else&#xD;&#xA;            format.html { render :new }&#xD;&#xA;            format.json { render json: @user.errors, status: :unprocessable_entity }&#xD;&#xA;          end&#xD;&#xA;        end&#xD;&#xA;      end"

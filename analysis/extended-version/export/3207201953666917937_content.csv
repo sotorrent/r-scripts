@@ -1,2 +1,0 @@
-"Content"
-"<dependency>&#xD;&#xA;    			<groupId>org.apache.tomcat.embed</groupId>&#xD;&#xA;    			<artifactId>tomcat-embed-jasper</artifactId>&#xD;&#xA;    		</dependency>&#xD;&#xA;    &#xD;&#xA;    		<dependency>&#xD;&#xA;    			<groupId>javax.servlet</groupId>&#xD;&#xA;    			<artifactId>jstl</artifactId>&#xD;&#xA;    		</dependency>"

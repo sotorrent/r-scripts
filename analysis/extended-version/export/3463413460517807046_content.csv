@@ -1,2 +1,0 @@
-"Content"
-"	function getCookie(c_name) {&#xD;&#xA;		var i,x,y,ARRcookies=document.cookie.split("""";"""");&#xD;&#xA;		for (i=0;i<ARRcookies.length;i++) {&#xD;&#xA;			x=ARRcookies[i].substr(0,ARRcookies[i].indexOf(""""=""""));&#xD;&#xA;			y=ARRcookies[i].substr(ARRcookies[i].indexOf(""""="""")+1);&#xD;&#xA;			x=x.replace(/^\s+|\s+$/g,"""""""");&#xD;&#xA;			if (x==c_name) {&#xD;&#xA;				return unescape(y);&#xD;&#xA;			}&#xD;&#xA;		}&#xD;&#xA;	}"

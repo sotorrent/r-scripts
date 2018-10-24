@@ -1,1 +1,0 @@
-"	<android.support.v4.view.ViewPager xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;android:id=""""@+id/pager""""&#xD;&#xA;android:layout_width=""""match_parent""""&#xD;&#xA;android:layout_height=""""match_parent"""">&#xD;&#xA;</android.support.v4.view.ViewPager>"

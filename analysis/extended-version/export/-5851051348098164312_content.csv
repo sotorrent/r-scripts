@@ -1,1 +1,0 @@
-"    	body {&#xD;&#xA;font: 10px sans-serif;&#xD;&#xA;}&#xD;&#xA;.axis path,&#xD;&#xA;.axis line {&#xD;&#xA;fill: none;&#xD;&#xA;stroke: #000;&#xD;&#xA;shape-rendering: crispEdges;&#xD;&#xA;}&#xD;&#xA;.bar {&#xD;&#xA;fill: steelblue;&#xD;&#xA;}&#xD;&#xA;.x.axis path {&#xD;&#xA;display: none;&#xD;&#xA;}"

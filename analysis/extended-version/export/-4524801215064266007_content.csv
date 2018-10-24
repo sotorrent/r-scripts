@@ -1,1 +1,0 @@
-"private void galleryAddPic() {&#xD;&#xA;Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);&#xD;&#xA;File f = new File(mCurrentPhotoPath);&#xD;&#xA;Uri contentUri = Uri.fromFile(f);&#xD;&#xA;mediaScanIntent.setData(contentUri);&#xD;&#xA;this.sendBroadcast(mediaScanIntent);&#xD;&#xA;}"

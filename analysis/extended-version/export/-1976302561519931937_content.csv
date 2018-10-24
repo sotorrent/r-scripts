@@ -1,1 +1,0 @@
-"    var http = require(""""http"""");&#xD;&#xA;http.createServer(function (request, response) {&#xD;&#xA;response.writeHead(200, {""""Content-Type"""": """"text/plain""""});&#xD;&#xA;response.write(""""Hello World"""");&#xD;&#xA;response.end();&#xD;&#xA;}).listen(8888);"

@@ -1,2 +1,0 @@
-"Content"
-"		<configuration>&#xD;&#xA;		  <system.web>&#xD;&#xA;			<customErrors defaultRedirect=""""GenericError.htm""""&#xD;&#xA;						  mode=""""RemoteOnly"""">&#xD;&#xA;			  <error statusCode=""""500""""&#xD;&#xA;					 redirect=""""InternalError.htm""""/>&#xD;&#xA;			</customErrors>&#xD;&#xA;		  </system.web>&#xD;&#xA;		</configuration>"

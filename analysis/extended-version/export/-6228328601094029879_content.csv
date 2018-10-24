@@ -1,1 +1,0 @@
-"<?php&#xD;&#xA;$datetime1 = new DateTime('2009-10-11');&#xD;&#xA;$datetime2 = new DateTime('2009-10-13');&#xD;&#xA;$interval = $datetime1->diff($datetime2);&#xD;&#xA;echo $interval->format('%R%a days');"

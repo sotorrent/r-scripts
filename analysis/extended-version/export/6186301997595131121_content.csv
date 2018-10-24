@@ -1,2 +1,0 @@
-"Content"
-"     using (ZipFile zip = new ZipFile())&#xD;&#xA;     {&#xD;&#xA;         // add this map file into the """"images"""" directory in the zip archive&#xD;&#xA;         zip.AddFile(""""c:\\images\\personal\\7440-N49th.png"""", """"images"""");&#xD;&#xA;         // add the report into a different directory in the archive&#xD;&#xA;         zip.AddFile(""""c:\\Reports\\2008-Regional-Sales-Report.pdf"""", """"files"""");&#xD;&#xA;         zip.AddFile(""""ReadMe.txt"""");&#xD;&#xA;         zip.Save(""""MyZipFile.zip"""");&#xD;&#xA;     }"

@@ -1,2 +1,0 @@
-"Content"
-"        // returns stored preference value&#xD;&#xA;        // If value is not present return second param value - In this case null&#xD;&#xA;              pref.getString(""""key_name"""", null); // getting String&#xD;&#xA;              pref.getInt(""""key_name"""", null); // getting Integer&#xD;&#xA;              pref.getFloat(""""key_name"""", null); // getting Float&#xD;&#xA;              pref.getLong(""""key_name"""", null); // getting Long&#xD;&#xA;              pref.getBoolean(""""key_name"""", null); // getting boolean"

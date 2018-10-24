@@ -1,2 +1,0 @@
-"Content"
-"    FactoryGirl.define do &#xD;&#xA;      factory :user do &#xD;&#xA;        sequence(:name) { |n| """"Person #{n}"""" }&#xD;&#xA;        sequence(:email) { |n| """"person_#{n}@example.com"""" }&#xD;&#xA;        password """"foobar""""&#xD;&#xA;        password_confirmation """"foobar""""&#xD;&#xA;    &#xD;&#xA;        factory :admin do&#xD;&#xA;          admin true&#xD;&#xA;        end&#xD;&#xA;      end&#xD;&#xA;    end"

@@ -1,2 +1,0 @@
-"Content"
-"        #include <Python.h>&#xD;&#xA;        int&#xD;&#xA;        main(int argc, char *argv[])&#xD;&#xA;        {&#xD;&#xA;          Py_SetProgramName(argv[0]);  /* optional but recommended */&#xD;&#xA;          Py_Initialize();&#xD;&#xA;          PyRun_SimpleString(""""from time import time,ctime\n""""&#xD;&#xA;                     """"print 'Today is',ctime(time())\n"""");&#xD;&#xA;          Py_Finalize();&#xD;&#xA;          return 0;&#xD;&#xA;        }"

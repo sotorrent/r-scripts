@@ -1,2 +1,0 @@
-"Content"
-"		<?php&#xD;&#xA;		$orig = """"I'll \""""walk\"""" the <b>dog</b> now"""";&#xD;&#xA;		&#xD;&#xA;		$a = htmlentities($orig);&#xD;&#xA;		&#xD;&#xA;		$b = html_entity_decode($a);&#xD;&#xA;		&#xD;&#xA;		echo $a; // I'll &quot;walk&quot; the &lt;b&gt;dog&lt;/b&gt; now&#xD;&#xA;		&#xD;&#xA;		echo $b; // I'll """"walk"""" the <b>dog</b> now&#xD;&#xA;		?>"

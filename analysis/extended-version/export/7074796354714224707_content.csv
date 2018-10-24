@@ -1,2 +1,0 @@
-"Content"
-"     ImageView user_picture;&#xD;&#xA;     userpicture=(ImageView)findViewById(R.id.userpicture);&#xD;&#xA;     URL img_value = null;&#xD;&#xA;     img_value = new URL(""""http://graph.facebook.com/""""+id+""""/picture?type=large"""");&#xD;&#xA;     Bitmap mIcon1 = BitmapFactory.decodeStream(img_value.openConnection().getInputStream());&#xD;&#xA;     userpicture.setImageBitmap(mIcon1);"

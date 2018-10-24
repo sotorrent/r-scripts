@@ -1,1 +1,0 @@
-"	<c:url var=""""logoutUrl"""" value=""""/logout""""/>&#xD;&#xA;<form action=""""${logoutUrl}"""" method=""""post"""">&#xD;&#xA;<input type=""""submit"""" value=""""Logout""""/>&#xD;&#xA;<input type=""""hidden"""" name=""""${_csrf.parameterName}"""" value=""""${_csrf.token}""""/>&#xD;&#xA;</form>"

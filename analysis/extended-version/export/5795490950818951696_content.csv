@@ -1,2 +1,0 @@
-"Content"
-"    <script src=""""other_lib.js""""></script>&#xD;&#xA;    <script src=""""jquery.js""""></script>&#xD;&#xA;    &#xD;&#xA;    <script>&#xD;&#xA;    $.noConflict();&#xD;&#xA;    // Code that uses other library's $ can follow here.&#xD;&#xA;    </script>"

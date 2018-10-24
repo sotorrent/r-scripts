@@ -1,1 +1,0 @@
-"    <xsl:stylesheet version=""""1.0"""" xmlns:xsl=""""http://www.w3.org/1999/XSL/Transform"""">&#xD;&#xA;<xsl:template match=""""@* | node()"""">&#xD;&#xA;<xsl:copy>&#xD;&#xA;<xsl:apply-templates select=""""@* | node()""""/>&#xD;&#xA;</xsl:copy>&#xD;&#xA;</xsl:template>&#xD;&#xA;</xsl:stylesheet>"

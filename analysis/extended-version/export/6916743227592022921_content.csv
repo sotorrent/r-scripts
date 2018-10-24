@@ -1,2 +1,0 @@
-"Content"
-"         {&#xD;&#xA;          """"namespace"""": """"example.avro"""",&#xD;&#xA;          """"type"""": """"record"""",&#xD;&#xA;          """"name"""": """"User"""",&#xD;&#xA;          """"fields"""": [&#xD;&#xA;              {""""name"""": """"name"""", """"type"""": """"string""""},&#xD;&#xA;              {""""name"""": """"favorite_number"""",  """"type"""": [""""int"""", """"null""""]},&#xD;&#xA;              {""""name"""": """"favorite_color"""", """"type"""": [""""string"""", """"null""""]}&#xD;&#xA;          ]&#xD;&#xA;         }"

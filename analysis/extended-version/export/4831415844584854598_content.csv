@@ -1,1 +1,0 @@
-"	<?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;<configuration>&#xD;&#xA;<system.webServer>&#xD;&#xA;<httpProtocol>&#xD;&#xA;<customHeaders>&#xD;&#xA;<add name=""""Access-Control-Allow-Origin"""" value=""""*"""" />&#xD;&#xA;</customHeaders>&#xD;&#xA;</httpProtocol>&#xD;&#xA;</system.webServer>&#xD;&#xA;</configuration>"

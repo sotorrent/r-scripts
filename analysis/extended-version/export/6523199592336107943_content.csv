@@ -1,2 +1,0 @@
-"Content"
-"html {&#xD;&#xA;      position: relative;&#xD;&#xA;      min-height: 100%;&#xD;&#xA;    }&#xD;&#xA;    body {&#xD;&#xA;      /* Margin bottom by footer height */&#xD;&#xA;      margin-bottom: 60px;&#xD;&#xA;    }&#xD;&#xA;    .footer {&#xD;&#xA;      position: absolute;&#xD;&#xA;      bottom: 0;&#xD;&#xA;      width: 100%;&#xD;&#xA;      /* Set the fixed height of the footer here */&#xD;&#xA;      height: 60px;&#xD;&#xA;      background-color: #f5f5f5;&#xD;&#xA;    }"

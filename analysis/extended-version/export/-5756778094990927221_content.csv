@@ -1,2 +1,0 @@
-"Content"
-"module CurrentCart&#xD;&#xA;      extend ActiveSupport::Concern&#xD;&#xA;      &#xD;&#xA;      private&#xD;&#xA;        def set_cart&#xD;&#xA;          @cart = Cart.find(session[:cart_id])&#xD;&#xA;        rescue ActiveRecord::RecordNotFound&#xD;&#xA;          @cart = Cart.create&#xD;&#xA;          session[:cart_id] = @cart.id&#xD;&#xA;        end&#xD;&#xA;      &#xD;&#xA;    end"

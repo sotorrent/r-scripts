@@ -1,2 +1,0 @@
-"Content"
-"window.onbeforeunload = function (e) {&#xD;&#xA;          e = e || window.event;&#xD;&#xA;        &#xD;&#xA;          // For IE and Firefox prior to version 4&#xD;&#xA;          if (e) {&#xD;&#xA;            e.returnValue = 'Any string';&#xD;&#xA;          }&#xD;&#xA;        &#xD;&#xA;          // For Safari&#xD;&#xA;          return 'Any string';&#xD;&#xA;        };"

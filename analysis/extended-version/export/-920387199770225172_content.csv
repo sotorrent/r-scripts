@@ -1,2 +1,0 @@
-"Content"
-"	public static boolean isValidEmailAddress(String email) {&#xD;&#xA;		   boolean result = true;&#xD;&#xA;		   try {&#xD;&#xA;		      InternetAddress emailAddr = new InternetAddress(email);&#xD;&#xA;		      emailAddr.validate();&#xD;&#xA;		   } catch (AddressException ex) {&#xD;&#xA;		      result = false;&#xD;&#xA;		   }&#xD;&#xA;		   return result;&#xD;&#xA;	}"

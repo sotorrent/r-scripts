@@ -1,2 +1,0 @@
-"Content"
-"        <form action=""""action_page.php"""">&#xD;&#xA;           First name:<br>&#xD;&#xA;           <input type=""""text"""" name=""""firstname"""" value=""""Mickey"""">&#xD;&#xA;           <br>&#xD;&#xA;           Last name:<br>&#xD;&#xA;           <input type=""""text"""" name=""""lastname"""" value=""""Mouse"""">&#xD;&#xA;           <br><br>&#xD;&#xA;           <input type=""""submit"""" value=""""Submit"""">&#xD;&#xA;         </form> "

@@ -1,2 +1,0 @@
-"Content"
-"<configuration>&#xD;&#xA;        <property>&#xD;&#xA;          <name>fs.default.name</name>&#xD;&#xA;          <value>hdfs://localhost:9000</value>&#xD;&#xA;        </property>&#xD;&#xA;        </configuration>"

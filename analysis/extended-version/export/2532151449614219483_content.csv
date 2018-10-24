@@ -1,1 +1,0 @@
-"     if (window.XMLHttpRequest) {&#xD;&#xA;// code for IE7+, Firefox, Chrome, Opera, Safari&#xD;&#xA;xmlhttp = new XMLHttpRequest();&#xD;&#xA;} else {&#xD;&#xA;// code for IE6, IE5&#xD;&#xA;xmlhttp = new ActiveXObject(""""Microsoft.XMLHTTP"""");&#xD;&#xA;}"

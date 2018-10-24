@@ -1,1 +1,0 @@
-"	 @Override&#xD;&#xA;public boolean onKeyDown(int keyCode, KeyEvent event) {&#xD;&#xA;if(keyCode == KeyEvent.KEYCODE_HOME)&#xD;&#xA;{&#xD;&#xA;Log.i(""""Home Button"""",""""Clicked"""");&#xD;&#xA;}&#xD;&#xA;if(keyCode==KeyEvent.KEYCODE_BACK)&#xD;&#xA;{&#xD;&#xA;finish();&#xD;&#xA;}&#xD;&#xA;return false;&#xD;&#xA;};"

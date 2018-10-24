@@ -1,2 +1,0 @@
-"Content"
-"public Bitmap getBitmapFromURL(String src) {&#xD;&#xA;		try {&#xD;&#xA;			java.net.URL url = new java.net.URL(src);&#xD;&#xA;			HttpURLConnection connection = (HttpURLConnection) url&#xD;&#xA;					.openConnection();&#xD;&#xA;			connection.setDoInput(true);&#xD;&#xA;			connection.connect();&#xD;&#xA;			InputStream input = connection.getInputStream();&#xD;&#xA;			Bitmap myBitmap = BitmapFactory.decodeStream(input);&#xD;&#xA;			return myBitmap;&#xD;&#xA;		} catch (IOException e) {&#xD;&#xA;			e.printStackTrace();&#xD;&#xA;			return null;&#xD;&#xA;		}&#xD;&#xA;	}"

@@ -1,2 +1,0 @@
-"Content"
-"        {&#xD;&#xA;          """"Version"""":""""2012-10-17"""",&#xD;&#xA;          """"Statement"""":[&#xD;&#xA;            {&#xD;&#xA;              """"Sid"""":""""AddPerm"""",&#xD;&#xA;              """"Effect"""":""""Allow"""",&#xD;&#xA;              """"Principal"""": """"*"""",&#xD;&#xA;              """"Action"""":[""""s3:GetObject""""],&#xD;&#xA;              """"Resource"""":[""""arn:aws:s3:::examplebucket/*""""]&#xD;&#xA;            }&#xD;&#xA;          ]&#xD;&#xA;        }&#xD;&#xA;  "

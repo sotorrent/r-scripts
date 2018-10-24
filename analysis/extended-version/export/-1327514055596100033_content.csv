@@ -1,2 +1,0 @@
-"Content"
-"	#footer {&#xD;&#xA;	   position:fixed;&#xD;&#xA;	   left:0px;&#xD;&#xA;	   bottom:0px;&#xD;&#xA;	   height:30px;&#xD;&#xA;	   width:100%;&#xD;&#xA;	   background:#999;&#xD;&#xA;	}&#xD;&#xA;	/* IE 6 */&#xD;&#xA;	* html #footer {&#xD;&#xA;	   position:absolute;&#xD;&#xA;	   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');&#xD;&#xA;	}"

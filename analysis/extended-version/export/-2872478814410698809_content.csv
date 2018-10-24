@@ -1,2 +1,0 @@
-"Content"
-"	# Root logger option&#xD;&#xA;	log4j.rootLogger=INFO, stdout&#xD;&#xA;	 &#xD;&#xA;	# Direct log messages to stdout&#xD;&#xA;	log4j.appender.stdout=org.apache.log4j.ConsoleAppender&#xD;&#xA;	log4j.appender.stdout.Target=System.out&#xD;&#xA;	log4j.appender.stdout.layout=org.apache.log4j.PatternLayout&#xD;&#xA;	log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n&#xD;&#xA;	&#xD;&#xA;	&#xD;&#xA;	"

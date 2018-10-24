@@ -1,2 +1,0 @@
-"Content"
-"    create View [dbo].[cteTally] as&#xD;&#xA;    &#xD;&#xA;    WITH&#xD;&#xA;    	E1(N) AS (select 1 from (values (1),(1),(1),(1),(1),(1),(1),(1),(1),(1))dt(n)),&#xD;&#xA;    	E2(N) AS (SELECT 1 FROM E1 a, E1 b), --10E+2 or 100 rows&#xD;&#xA;    	E4(N) AS (SELECT 1 FROM E2 a, E2 b), --10E+4 or 10,000 rows max&#xD;&#xA;    	cteTally(N) AS &#xD;&#xA;    	(&#xD;&#xA;    		SELECT  ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) FROM E4&#xD;&#xA;    	)&#xD;&#xA;    select N from cteTally"

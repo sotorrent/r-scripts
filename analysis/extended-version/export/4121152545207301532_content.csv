@@ -1,2 +1,0 @@
-"Content"
-"    typedef enum {&#xD;&#xA;        UIReturnKeyDefault,&#xD;&#xA;        UIReturnKeyGo,&#xD;&#xA;        UIReturnKeyGoogle,&#xD;&#xA;        UIReturnKeyJoin,&#xD;&#xA;        UIReturnKeyNext,&#xD;&#xA;        UIReturnKeyRoute,&#xD;&#xA;        UIReturnKeySearch,&#xD;&#xA;        UIReturnKeySend,&#xD;&#xA;        UIReturnKeyYahoo,&#xD;&#xA;        UIReturnKeyDone,&#xD;&#xA;        UIReturnKeyEmergencyCall,&#xD;&#xA;    } UIReturnKeyType;"

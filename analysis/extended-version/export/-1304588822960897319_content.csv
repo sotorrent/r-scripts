@@ -1,2 +1,0 @@
-"Content"
-"        https://fcm.googleapis.com/fcm/send     &#xD;&#xA;        Content-Type:application/json&#xD;&#xA;       Authorization:key=AIzaSyZ-1u...0GBYzPu7Udno5aA&#xD;&#xA;       { """"data"""": {&#xD;&#xA;         """"score"""": """"5x1"""",&#xD;&#xA;             """"time"""": """"15:10""""   },  &#xD;&#xA;            """"to"""" : """"bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1..."""" }"

@@ -1,2 +1,0 @@
-"Content"
-"    <resources>&#xD;&#xA;        <!-- the theme applied to the application or activity -->&#xD;&#xA;        <style name=""""CustomActionBarTheme""""&#xD;&#xA;               parent=""""@android:style/Theme.Holo"""">&#xD;&#xA;            <item name=""""android:windowActionBarOverlay"""">true</item>&#xD;&#xA;        </style>&#xD;&#xA;    </resources>"

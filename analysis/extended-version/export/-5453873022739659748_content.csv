@@ -1,2 +1,0 @@
-"Content"
-"        <style name=""""Theme.AppCompat.Light.NoActionBar.FullScreen"""" parent=""""@style/Theme.AppCompat.Light"""">&#xD;&#xA;            <item name=""""windowNoTitle"""">true</item>&#xD;&#xA;            <item name=""""windowActionBar"""">false</item>&#xD;&#xA;            <item name=""""android:windowFullscreen"""">true</item>&#xD;&#xA;            <item name=""""android:windowContentOverlay"""">@null</item>&#xD;&#xA;        </style>"

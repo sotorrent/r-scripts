@@ -1,2 +1,0 @@
-"Content"
-"		<form action=""""file-upload.php"""" method=""""post"""" enctype=""""multipart/form-data"""">&#xD;&#xA;		  Send these files:<br />&#xD;&#xA;		  <input name=""""userfile[]"""" type=""""file"""" /><br />&#xD;&#xA;		  <input name=""""userfile[]"""" type=""""file"""" /><br />&#xD;&#xA;		  <input type=""""submit"""" value=""""Send files"""" />&#xD;&#xA;		</form>"

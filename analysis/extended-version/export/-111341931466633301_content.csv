@@ -1,2 +1,0 @@
-"Content"
-"    HKEY_CLASSES_ROOT &#xD;&#xA;         alert&#xD;&#xA;              (Default) = """"URL:Alert Protocol""""&#xD;&#xA;              URL Protocol = """"""""&#xD;&#xA;              DefaultIcon&#xD;&#xA;                   (Default) = """"alert.exe,1""""&#xD;&#xA;              shell&#xD;&#xA;                   open&#xD;&#xA;                        command&#xD;&#xA;                             (Default) = """"C:\Program Files\Alert\alert.exe"""" """"%1"""""

@@ -1,1 +1,0 @@
-"<Directory /var/www/>&#xD;&#xA;Options Indexes FollowSymLinks&#xD;&#xA;AllowOverride None&#xD;&#xA;Require all granted&#xD;&#xA;</Directory>"

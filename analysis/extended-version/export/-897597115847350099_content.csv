@@ -1,2 +1,0 @@
-"Content"
-"<CORSConfiguration>&#xD;&#xA;        <CORSRule>&#xD;&#xA;            <AllowedOrigin>*</AllowedOrigin>&#xD;&#xA;            <AllowedMethod>GET</AllowedMethod>&#xD;&#xA;            <MaxAgeSeconds>3000</MaxAgeSeconds>&#xD;&#xA;            <AllowedHeader>Authorization</AllowedHeader>&#xD;&#xA;        </CORSRule>&#xD;&#xA;       </CORSConfiguration>"

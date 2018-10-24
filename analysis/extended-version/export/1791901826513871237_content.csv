@@ -1,1 +1,0 @@
-"       URL url = new URL(""""http://www.android.com/"""");&#xD;&#xA;HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();&#xD;&#xA;try {&#xD;&#xA;InputStream in = new BufferedInputStream(urlConnection.getInputStream());&#xD;&#xA;readStream(in);&#xD;&#xA;finally {&#xD;&#xA;urlConnection.disconnect();&#xD;&#xA;}"

@@ -1,1 +1,0 @@
-"    import { Component, OnInit } from '@angular/core';&#xD;&#xA;@Component({&#xD;&#xA;selector: 'app-home',&#xD;&#xA;templateUrl: './home.component.html',&#xD;&#xA;styleUrls: ['./home.component.css']&#xD;&#xA;})&#xD;&#xA;export class HomeComponent implements OnInit {&#xD;&#xA;constructor() { }&#xD;&#xA;ngOnInit() {&#xD;&#xA;}&#xD;&#xA;}"

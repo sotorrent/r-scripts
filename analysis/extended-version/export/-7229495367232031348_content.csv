@@ -1,2 +1,0 @@
-"Content"
-"      @Override&#xD;&#xA;      public boolean onKeyDown(int keycode, KeyEvent e) {&#xD;&#xA;          switch(keycode) {&#xD;&#xA;              case KeyEvent.KEYCODE_MENU:&#xD;&#xA;                  doSomething();&#xD;&#xA;                  return true;&#xD;&#xA;          }&#xD;&#xA;          return super.onKeyDown(keycode, e);&#xD;&#xA;      }"

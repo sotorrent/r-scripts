@@ -1,2 +1,0 @@
-"Content"
-"    function get_data($url) &#xD;&#xA;    {&#xD;&#xA;        $ch = curl_init();&#xD;&#xA;	    $timeout = 5;&#xD;&#xA;	    curl_setopt($ch, CURLOPT_URL, $url);&#xD;&#xA;	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);&#xD;&#xA;	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);&#xD;&#xA;	    $data = curl_exec($ch);&#xD;&#xA;	    curl_close($ch);&#xD;&#xA;	    &#xD;&#xA;        return $data;&#xD;&#xA;    }"

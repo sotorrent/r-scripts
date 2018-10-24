@@ -1,2 +1,0 @@
-"Content"
-"	<system.codedom>&#xD;&#xA;	  <compilers>&#xD;&#xA;	    <compiler language=""""c#;cs;csharp"""" extension="""".cs"""" warningLevel=""""4"""" type=""""Microsoft.CSharp.CSharpCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"""">&#xD;&#xA;	      <providerOption name=""""CompilerVersion"""" value=""""v3.5""""/>&#xD;&#xA;	      <providerOption name=""""WarnAsError"""" value=""""false""""/>&#xD;&#xA;	    </compiler>&#xD;&#xA;	  </compilers>&#xD;&#xA;	</system.codedom>"

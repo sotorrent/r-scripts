@@ -1,2 +1,0 @@
-"Content"
-"    // Hash a new password for storing in the database.&#xD;&#xA;    // The function automatically generates a cryptographically safe salt.&#xD;&#xA;    $hashToStoreInDb = password_hash($password, PASSWORD_DEFAULT);&#xD;&#xA;    &#xD;&#xA;    // Check if the hash of the entered login password, matches the stored hash.&#xD;&#xA;    // The salt and the cost factor will be extracted from $existingHashFromDb.&#xD;&#xA;    $isPasswordCorrect = password_verify($password, $existingHashFromDb);"

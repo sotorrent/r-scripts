@@ -1,2 +1,0 @@
-"Content"
-"	var app = require('express')();&#xD;&#xA;	var http = require('http').Server(app);&#xD;&#xA;	var io = require('socket.io')(http);&#xD;&#xA;	&#xD;&#xA;	app.get('/', function(req, res){&#xD;&#xA;	  res.sendFile(__dirname + '/index.html');&#xD;&#xA;	});&#xD;&#xA;	&#xD;&#xA;	io.on('connection', function(socket){&#xD;&#xA;	  socket.on('chat message', function(msg){&#xD;&#xA;		io.emit('chat message', msg);&#xD;&#xA;	  });&#xD;&#xA;	});&#xD;&#xA;	&#xD;&#xA;	http.listen(3000, function(){&#xD;&#xA;	  console.log('listening on *:3000');&#xD;&#xA;	});"

@@ -1,2 +1,0 @@
-"Content"
-"	<activity android:name=""""MainActivity""""&#xD;&#xA;              android:label=""""@string/app_name"""">&#xD;&#xA;		<intent-filter>&#xD;&#xA;        	    <action android:name=""""android.intent.action.MAIN""""/>&#xD;&#xA;        	    <category android:name=""""android.intent.category.LAUNCHER""""/>&#xD;&#xA;		</intent-filter>&#xD;&#xA;	</activity>"

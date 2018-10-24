@@ -1,2 +1,0 @@
-"Content"
-"		<dependency>&#xD;&#xA;			<groupId>org.codehaus.jackson</groupId>&#xD;&#xA;			<artifactId>jackson-core-asl</artifactId>&#xD;&#xA;			<version>1.9.13</version>&#xD;&#xA;		</dependency>&#xD;&#xA;		<dependency>&#xD;&#xA;			<groupId>org.codehaus.jackson</groupId>&#xD;&#xA;			<artifactId>jackson-mapper-asl</artifactId>&#xD;&#xA;			<version>1.9.13</version>&#xD;&#xA;		</dependency>"

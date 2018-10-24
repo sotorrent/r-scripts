@@ -1,2 +1,0 @@
-"Content"
-".videoWrapper {&#xD;&#xA;	position: relative;&#xD;&#xA;	padding-bottom: 56.25%; /* 16:9 */&#xD;&#xA;	padding-top: 25px;&#xD;&#xA;	height: 0;&#xD;&#xA;    }&#xD;&#xA;    .videoWrapper iframe {&#xD;&#xA;	position: absolute;&#xD;&#xA;	top: 0;&#xD;&#xA;	left: 0;&#xD;&#xA;	width: 100%;&#xD;&#xA;	height: 100%;&#xD;&#xA;    }"

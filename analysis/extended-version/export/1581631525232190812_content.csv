@@ -1,2 +1,0 @@
-"Content"
-"	from multiprocessing import Process, Value, Array&#xD;&#xA;	def f(n, a):&#xD;&#xA;		n.value = 3.1415927&#xD;&#xA;		for i in range(len(a)):&#xD;&#xA;			a[i] = -a[i]&#xD;&#xA;	if __name__ == '__main__':&#xD;&#xA;		num = Value('d', 0.0)&#xD;&#xA;		arr = Array('i', range(10))&#xD;&#xA;		p = Process(target=f, args=(num, arr))&#xD;&#xA;		p.start()&#xD;&#xA;		p.join()&#xD;&#xA;		print num.value&#xD;&#xA;		print arr[:]"

@@ -1,2 +1,0 @@
-"Content"
-"    		@Override&#xD;&#xA;		public void onDetach() {&#xD;&#xA;		    super.onDetach();&#xD;&#xA;		    try {&#xD;&#xA;		        Field childFragmentManager = Fragment.class.getDeclaredField(""""mChildFragmentManager"""");&#xD;&#xA;		        childFragmentManager.setAccessible(true);&#xD;&#xA;		        childFragmentManager.set(this, null);&#xD;&#xA;		    } catch (NoSuchFieldException e) {&#xD;&#xA;		        throw new RuntimeException(e);&#xD;&#xA;		    } catch (IllegalAccessException e) {&#xD;&#xA;		        throw new RuntimeException(e);&#xD;&#xA;		    }&#xD;&#xA;		}"

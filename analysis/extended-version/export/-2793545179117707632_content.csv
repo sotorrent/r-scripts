@@ -1,1 +1,0 @@
-"        public String getPath(Uri uri) {&#xD;&#xA;String[] projection = { MediaStore.Images.Media.DATA };&#xD;&#xA;Cursor cursor = managedQuery(uri, projection, null, null, null);&#xD;&#xA;int column_index = cursor&#xD;&#xA;.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);&#xD;&#xA;cursor.moveToFirst();&#xD;&#xA;return cursor.getString(column_index);&#xD;&#xA;}"

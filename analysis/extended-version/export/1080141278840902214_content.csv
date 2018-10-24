@@ -1,2 +1,0 @@
-"Content"
-"      before_filter :set_cache_buster&#xD;&#xA;    &#xD;&#xA;      def set_cache_buster&#xD;&#xA;        response.headers[""""Cache-Control""""] = """"no-cache, no-store, max-age=0, must-revalidate""""&#xD;&#xA;        response.headers[""""Pragma""""] = """"no-cache""""&#xD;&#xA;        response.headers[""""Expires""""] = """"Fri, 01 Jan 1990 00:00:00 GMT""""&#xD;&#xA;      end"

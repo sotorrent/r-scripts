@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;        $string = 'cup';&#xD;&#xA;        $name = 'coffee';&#xD;&#xA;        $str = 'This is a $string with my $name in it.';&#xD;&#xA;        echo $str. """"\n"""";&#xD;&#xA;        eval(""""\$str = \""""$str\"""";"""");&#xD;&#xA;        echo $str. """"\n"""";&#xD;&#xA;    ?>"

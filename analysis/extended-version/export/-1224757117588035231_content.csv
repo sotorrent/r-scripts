@@ -1,2 +1,0 @@
-"Content"
-"      public Bitmap screenShot(View view) {&#xD;&#xA;            Bitmap bitmap = Bitmap.createBitmap(view.getWidth(),&#xD;&#xA;                    view.getHeight(), Config.ARGB_8888);&#xD;&#xA;            Canvas canvas = new Canvas(bitmap);&#xD;&#xA;            view.draw(canvas);&#xD;&#xA;            return bitmap;&#xD;&#xA;        }"

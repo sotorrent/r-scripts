@@ -1,2 +1,0 @@
-"Content"
-"        <uses-permission android:name=""""android.permission.INTERNET"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_GPS"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_ASSISTED_GPS"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_LOCATION"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_COARSE_LOCATION"""" />&#xD;&#xA;        <uses-permission android:name=""""android.permission.ACCESS_FINE_LOCATION"""" />"

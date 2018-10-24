@@ -1,2 +1,0 @@
-"Content"
-"	<build>&#xD;&#xA;		<plugins>&#xD;&#xA;			<plugin>&#xD;&#xA;				<groupId>org.apache.maven.plugins</groupId>&#xD;&#xA;				<artifactId>maven-compiler-plugin</artifactId>&#xD;&#xA;				<configuration>&#xD;&#xA;					<source>1.8</source>&#xD;&#xA;					<target>1.8</target>&#xD;&#xA;				</configuration>&#xD;&#xA;			</plugin>&#xD;&#xA;		</plugins>&#xD;&#xA;	</build>"

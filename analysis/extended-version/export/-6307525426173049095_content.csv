@@ -1,1 +1,0 @@
-"	$(document).ready(function(){&#xD;&#xA;$("""".slidingDiv"""").hide();&#xD;&#xA;$("""".show_hide"""").show();&#xD;&#xA;$('.show_hide').click(function(){&#xD;&#xA;$("""".slidingDiv"""").slideToggle();&#xD;&#xA;});&#xD;&#xA;});"

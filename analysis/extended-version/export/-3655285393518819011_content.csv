@@ -1,1 +1,0 @@
-"        function getUrlVars() {&#xD;&#xA;var vars = {};&#xD;&#xA;var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {&#xD;&#xA;vars[key] = value;&#xD;&#xA;});&#xD;&#xA;return vars;&#xD;&#xA;}"

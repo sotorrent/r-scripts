@@ -1,2 +1,0 @@
-"Content"
-"    <?php &#xD;&#xA;    $target_path = """"uploads/""""; &#xD;&#xA;    $target_path = $target_path . basename( $_FILES['uploadedfile']['name']); &#xD;&#xA;    if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) { &#xD;&#xA;        echo """"The file """". basename( $_FILES['uploadedfile']['name'])."""" has been uploaded""""; &#xD;&#xA;    } &#xD;&#xA;    else{ &#xD;&#xA;        echo """"There was an error uploading the file, please try again!""""; &#xD;&#xA;    }&#xD;&#xA;    ?> &#xD;&#xA;	&#xD;&#xA;	"

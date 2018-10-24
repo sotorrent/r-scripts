@@ -1,2 +1,0 @@
-"Content"
-"		<dependency>&#xD;&#xA;			<groupId>com.fasterxml.jackson.core</groupId>&#xD;&#xA;			<artifactId>jackson-core</artifactId>&#xD;&#xA;			<version>2.4.1</version>&#xD;&#xA;		</dependency>&#xD;&#xA;		<dependency>&#xD;&#xA;			<groupId>com.fasterxml.jackson.core</groupId>&#xD;&#xA;			<artifactId>jackson-databind</artifactId>&#xD;&#xA;			<version>2.4.1.1</version>&#xD;&#xA;		</dependency>"

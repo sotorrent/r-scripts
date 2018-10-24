@@ -1,2 +1,0 @@
-"Content"
-"	<script type=""""text/javascript"""">&#xD;&#xA;		//<![CDATA[&#xD;&#xA;		var theForm = document.forms['aspnetForm'];&#xD;&#xA;		if (!theForm) {&#xD;&#xA;			theForm = document.aspnetForm;&#xD;&#xA;		}&#xD;&#xA;		function __doPostBack(eventTarget, eventArgument) {&#xD;&#xA;			if (!theForm.onsubmit || (theForm.onsubmit() != false)) {&#xD;&#xA;				theForm.__EVENTTARGET.value = eventTarget;&#xD;&#xA;				theForm.__EVENTARGUMENT.value = eventArgument;&#xD;&#xA;				theForm.submit();&#xD;&#xA;			}&#xD;&#xA;		}&#xD;&#xA;		//]]>&#xD;&#xA;	</script>	"

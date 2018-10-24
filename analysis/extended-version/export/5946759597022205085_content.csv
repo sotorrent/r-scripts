@@ -1,2 +1,0 @@
-"Content"
-"        <?php&#xD;&#xA;        use Doctrine\Common\Annotations\AnnotationRegistry;&#xD;&#xA;        use Composer\Autoload\ClassLoader;&#xD;&#xA;        /**&#xD;&#xA;        * @var ClassLoader $loader&#xD;&#xA;        */&#xD;&#xA;        $loader = require __DIR__.'/../vendor/autoload.php';&#xD;&#xA;        AnnotationRegistry::registerLoader(array($loader, 'loadClass'));&#xD;&#xA;        return $loader;"

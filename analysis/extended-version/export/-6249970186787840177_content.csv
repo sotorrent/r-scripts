@@ -1,2 +1,0 @@
-"Content"
-"	    <servlet>&#xD;&#xA;			<servlet-name>spring</servlet-name>&#xD;&#xA;			<servlet-class>&#xD;&#xA;				org.springframework.web.servlet.DispatcherServlet&#xD;&#xA;			</servlet-class>&#xD;&#xA;			<load-on-startup>1</load-on-startup>&#xD;&#xA;		</servlet>&#xD;&#xA;		<servlet-mapping>&#xD;&#xA;			<servlet-name>spring</servlet-name>&#xD;&#xA;			<url-pattern>/</url-pattern>&#xD;&#xA;     </servlet-mapping>"

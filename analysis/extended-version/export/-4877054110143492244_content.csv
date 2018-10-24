@@ -1,2 +1,0 @@
-"Content"
-"	TEMPLATES = [&#xD;&#xA;	    {&#xD;&#xA;		'BACKEND': 'django.template.backends.django.DjangoTemplates',&#xD;&#xA;		'DIRS': [],&#xD;&#xA;		'APP_DIRS': True,&#xD;&#xA;		'OPTIONS': {&#xD;&#xA;		    'context_processors': [&#xD;&#xA;		        'django.template.context_processors.debug',&#xD;&#xA;		        'django.template.context_processors.request',&#xD;&#xA;		        'django.contrib.auth.context_processors.auth',&#xD;&#xA;		        'django.contrib.messages.context_processors.messages',&#xD;&#xA;		    ],&#xD;&#xA;		},&#xD;&#xA;	    },&#xD;&#xA;	]"

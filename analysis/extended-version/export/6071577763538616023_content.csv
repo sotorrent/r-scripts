@@ -1,2 +1,0 @@
-"Content"
-"       <?php&#xD;&#xA;        $to = """"someone@example.com"""";&#xD;&#xA;        $subject = """"Test mail"""";&#xD;&#xA;        $message = """"Hello! This is a simple email message."""";&#xD;&#xA;        $from = """"someonelse@example.com"""";&#xD;&#xA;        $headers = """"From:"""" . $from;&#xD;&#xA;        mail($to,$subject,$message,$headers);&#xD;&#xA;        echo """"Mail Sent."""";&#xD;&#xA;    &#xD;&#xA;    ?> "

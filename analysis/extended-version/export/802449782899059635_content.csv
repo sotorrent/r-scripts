@@ -1,2 +1,0 @@
-"Content"
-"    var parser = document.createElement('a');&#xD;&#xA;    parser.href = """"http://example.com:3000/pathname/?search=test#hash"""";&#xD;&#xA;     &#xD;&#xA;    parser.protocol; // => """"http:""""&#xD;&#xA;    parser.hostname; // => """"example.com""""&#xD;&#xA;    parser.port;     // => """"3000""""&#xD;&#xA;    parser.pathname; // => """"/pathname/""""&#xD;&#xA;    parser.search;   // => """"?search=test""""&#xD;&#xA;    parser.hash;     // => """"#hash""""&#xD;&#xA;    parser.host;     // => """"example.com:3000"""""

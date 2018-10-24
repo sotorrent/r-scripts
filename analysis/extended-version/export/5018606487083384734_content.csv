@@ -1,2 +1,0 @@
-"Content"
-"doctrine:&#xD;&#xA;         dbal:&#xD;&#xA;            driver:   %database_driver%&#xD;&#xA;            host:     %database_host%&#xD;&#xA;            port:     %database_port%&#xD;&#xA;            dbname:   %database_name%&#xD;&#xA;            user:     %database_user%&#xD;&#xA;            password: %database_password%&#xD;&#xA;            charset:  UTF8"

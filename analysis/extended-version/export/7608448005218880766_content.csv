@@ -1,2 +1,0 @@
-"Content"
-"        public Bitmap StringToBitMap(String encodedString) {&#xD;&#xA;		try {&#xD;&#xA;			byte[] encodeByte = Base64.decode(encodedString, Base64.DEFAULT);&#xD;&#xA;			Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0,&#xD;&#xA;					encodeByte.length);&#xD;&#xA;			return bitmap;&#xD;&#xA;		} catch (Exception e) {&#xD;&#xA;			e.getMessage();&#xD;&#xA;			return null;&#xD;&#xA;		}&#xD;&#xA;	}"

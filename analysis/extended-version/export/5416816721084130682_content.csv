@@ -1,2 +1,0 @@
-"Content"
-"	./bin/spark-submit \&#xD;&#xA;	  --class <main-class> \&#xD;&#xA;	  --master <master-url> \&#xD;&#xA;	  --deploy-mode <deploy-mode> \&#xD;&#xA;	  --conf <key>=<value> \&#xD;&#xA;	  ... # other options&#xD;&#xA;	  <application-jar> \&#xD;&#xA;	  [application-arguments]"

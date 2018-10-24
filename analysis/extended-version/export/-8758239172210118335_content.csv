@@ -1,2 +1,0 @@
-"Content"
-"      <script id=""""entry-template"""" type=""""text/x-handlebars-template"""">&#xD;&#xA;        <div class=""""entry"""">&#xD;&#xA;            <h1>{{title}}</h1>&#xD;&#xA;            <div class=""""body"""">&#xD;&#xA;               {{body}}&#xD;&#xA;            </div>&#xD;&#xA;        </div>&#xD;&#xA;      </script>"

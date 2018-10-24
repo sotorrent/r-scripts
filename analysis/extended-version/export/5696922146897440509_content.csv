@@ -1,2 +1,0 @@
-"Content"
-"    #include <boost/lambda/lambda.hpp>&#xD;&#xA;    #include <iostream>&#xD;&#xA;    #include <iterator>&#xD;&#xA;    #include <algorithm>&#xD;&#xA;        &#xD;&#xA;    int main()&#xD;&#xA;    {&#xD;&#xA;       using namespace boost::lambda;&#xD;&#xA;       typedef std::istream_iterator<int> in;&#xD;&#xA;       std::for_each(&#xD;&#xA;       in(std::cin), in(), std::cout << (_1 * 3) << """" """" );&#xD;&#xA;    }"

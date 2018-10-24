@@ -1,2 +1,0 @@
-"Content"
-"    BEGIN TRANSACTION; &#xD;&#xA;    CREATE TEMPORARY TABLE t1_backup(a,b); &#xD;&#xA;    INSERT INTO t1_backup SELECT a,b FROM t1; &#xD;&#xA;    DROP TABLE t1;&#xD;&#xA;    CREATE TABLE t1(a,b); &#xD;&#xA;    INSERT INTO t1 SELECT a,b FROM t1_backup; &#xD;&#xA;    DROP TABLE t1_backup;&#xD;&#xA;    COMMIT; "

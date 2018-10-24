@@ -1,2 +1,0 @@
-"Content"
-"android {&#xD;&#xA;            defaultConfig {&#xD;&#xA;                ...&#xD;&#xA;                minSdkVersion 15 &#xD;&#xA;                targetSdkVersion 26&#xD;&#xA;                multiDexEnabled true&#xD;&#xA;            }&#xD;&#xA;            ...&#xD;&#xA;        }&#xD;&#xA;    &#xD;&#xA;        dependencies {&#xD;&#xA;          compile 'com.android.support:multidex:1.0.1'&#xD;&#xA;        }"

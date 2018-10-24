@@ -1,2 +1,0 @@
-"Content"
-"	<?php&#xD;&#xA;	$number = 1234.56;&#xD;&#xA;	// english notation (default)&#xD;&#xA;	$english_format_number = number_format($number);&#xD;&#xA;	// 1,235&#xD;&#xA;	// French notation&#xD;&#xA;	$nombre_format_francais = number_format($number, 2, ',', ' ');&#xD;&#xA;	// 1 234,56&#xD;&#xA;	$number = 1234.5678;&#xD;&#xA;	// english notation without thousands separator&#xD;&#xA;	$english_format_number = number_format($number, 2, '.', '');&#xD;&#xA;	// 1234.57&#xD;&#xA;	?>"

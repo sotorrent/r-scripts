@@ -1,2 +1,0 @@
-"Content"
-"    Uri myUri = ....; // initialize Uri here&#xD;&#xA;    MediaPlayer mediaPlayer = new MediaPlayer();&#xD;&#xA;    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);&#xD;&#xA;    mediaPlayer.setDataSource(getApplicationContext(), myUri);&#xD;&#xA;    mediaPlayer.prepare();&#xD;&#xA;    mediaPlayer.start();"

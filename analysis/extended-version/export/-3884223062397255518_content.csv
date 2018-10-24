@@ -1,2 +1,0 @@
-"Content"
-"        function getPosition(element) {&#xD;&#xA;            var xPosition = 0;&#xD;&#xA;            var yPosition = 0;&#xD;&#xA;    &#xD;&#xA;            while (element) {&#xD;&#xA;                xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);&#xD;&#xA;                yPosition += (element.offsetTop - element.scrollTop + element.clientTop);&#xD;&#xA;                element = element.offsetParent;&#xD;&#xA;            }&#xD;&#xA;            return { x: xPosition, y: yPosition };&#xD;&#xA;        }"

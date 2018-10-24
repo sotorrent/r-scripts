@@ -1,2 +1,0 @@
-"Content"
-"    /*&#xD;&#xA;     * This is a manifest file that'll automatically include all the stylesheets available in this directory&#xD;&#xA;     * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at&#xD;&#xA;     * the top of the compiled file, but it's generally better to create a new file per style scope.&#xD;&#xA;     *= require_self &#xD;&#xA;     *= require_tree . &#xD;&#xA;    */"

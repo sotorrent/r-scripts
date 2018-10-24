@@ -1,1 +1,0 @@
-"packagingOptions {&#xD;&#xA;exclude 'META-INF/DEPENDENCIES'&#xD;&#xA;exclude 'META-INF/NOTICE'&#xD;&#xA;exclude 'META-INF/LICENSE'&#xD;&#xA;exclude 'META-INF/LICENSE.txt'&#xD;&#xA;exclude 'META-INF/NOTICE.txt'&#xD;&#xA;}"

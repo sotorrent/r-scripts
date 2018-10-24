@@ -1,2 +1,0 @@
-"Content"
-"     protected int next(int bits) {&#xD;&#xA;        long oldseed, nextseed;&#xD;&#xA;        AtomicLong seed = this.seed;&#xD;&#xA;        do {&#xD;&#xA;            oldseed = seed.get();&#xD;&#xA;            nextseed = (oldseed * multiplier + addend) & mask;&#xD;&#xA;        } while (!seed.compareAndSet(oldseed, nextseed));&#xD;&#xA;        return (int)(nextseed >>> (48 - bits));&#xD;&#xA;     }"

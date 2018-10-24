@@ -1,1 +1,0 @@
-"$(document).ready(function() {&#xD;&#xA;// bind your jQuery events here initially&#xD;&#xA;});&#xD;&#xA;var prm = Sys.WebForms.PageRequestManager.getInstance();&#xD;&#xA;prm.add_endRequest(function() {&#xD;&#xA;// re-bind your jQuery events here&#xD;&#xA;});"

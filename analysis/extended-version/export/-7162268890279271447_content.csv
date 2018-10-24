@@ -1,2 +1,0 @@
-"Content"
-"$config['sess_cookie_name']		= 'ci_session';&#xD;&#xA;        $config['sess_expiration']		= 7200;&#xD;&#xA;        $config['sess_expire_on_close']	= FALSE;&#xD;&#xA;        $config['sess_encrypt_cookie']	= FALSE;&#xD;&#xA;        $config['sess_use_database']	= TRUE;&#xD;&#xA;        $config['sess_table_name']		= 'ci_sessions';&#xD;&#xA;        $config['sess_match_ip']		= FALSE;&#xD;&#xA;        $config['sess_match_useragent']	= TRUE;&#xD;&#xA;        $config['sess_time_to_update']	= 300;"

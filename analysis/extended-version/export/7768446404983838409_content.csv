@@ -1,2 +1,0 @@
-"Content"
-"    add_action('init', 'myStartSession', 1);&#xD;&#xA;    add_action('wp_logout', 'myEndSession');&#xD;&#xA;    add_action('wp_login', 'myEndSession');&#xD;&#xA;       function myStartSession() {&#xD;&#xA;    if(!session_id()) {&#xD;&#xA;        session_start();&#xD;&#xA;      }&#xD;&#xA;      }&#xD;&#xA;     function myEndSession() {&#xD;&#xA;    session_destroy ();&#xD;&#xA;    }"

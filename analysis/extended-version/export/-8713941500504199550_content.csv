@@ -1,2 +1,0 @@
-"Content"
-"<servlet>&#xD;&#xA;        <servlet-name>jsp</servlet-name>&#xD;&#xA;        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>&#xD;&#xA;        <init-param>&#xD;&#xA;            <param-name>fork</param-name>&#xD;&#xA;            <param-value>false</param-value>&#xD;&#xA;        </init-param>&#xD;&#xA;        <init-param>&#xD;&#xA;            <param-name>xpoweredBy</param-name>&#xD;&#xA;            <param-value>false</param-value>&#xD;&#xA;        </init-param>&#xD;&#xA;        <load-on-startup>3</load-on-startup>&#xD;&#xA;    </servlet>"

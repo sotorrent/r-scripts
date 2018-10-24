@@ -1,2 +1,0 @@
-"Content"
-"        <?php&#xD;&#xA;        $result = mysql_query(""""SELECT id,email FROM people WHERE id = '42'"""");&#xD;&#xA;        if (!$result) {&#xD;&#xA;            echo 'Could not run query: ' . mysql_error();&#xD;&#xA;            exit;&#xD;&#xA;        }&#xD;&#xA;        $row = mysql_fetch_row($result);&#xD;&#xA;        echo $row[0]; // 42&#xD;&#xA;        echo $row[1]; // the email value&#xD;&#xA;        ?>"

@@ -1,2 +1,0 @@
-"Content"
-"     from django.conf.urls import patterns, include, url&#xD;&#xA;     from django.contrib import admin&#xD;&#xA;     admin.autodiscover()&#xD;&#xA;     urlpatterns = patterns('',&#xD;&#xA;       url(r'^polls/', include('polls.urls')),&#xD;&#xA;       url(r'^admin/', include(admin.site.urls)),&#xD;&#xA;    )"

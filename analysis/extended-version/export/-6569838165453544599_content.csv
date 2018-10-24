@@ -1,2 +1,0 @@
-"Content"
-"	String filename = """"myfile"""";&#xD;&#xA;	String string = """"Hello world!"""";&#xD;&#xA;	FileOutputStream outputStream;&#xD;&#xA;	try {&#xD;&#xA;	  outputStream = openFileOutput(filename, Context.MODE_PRIVATE);&#xD;&#xA;	  outputStream.write(string.getBytes());&#xD;&#xA;	  outputStream.close();&#xD;&#xA;	} catch (Exception e) {&#xD;&#xA;	  e.printStackTrace();&#xD;&#xA;	}"

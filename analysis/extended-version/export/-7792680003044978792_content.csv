@@ -1,2 +1,0 @@
-"Content"
-"	function get_string_between($string, $start, $end){&#xD;&#xA;		$string = ' ' . $string;&#xD;&#xA;		$ini = strpos($string, $start);&#xD;&#xA;		if ($ini == 0) return '';&#xD;&#xA;		$ini += strlen($start);&#xD;&#xA;		$len = strpos($string, $end, $ini) - $ini;&#xD;&#xA;		return substr($string, $ini, $len);&#xD;&#xA;	}&#xD;&#xA;	$fullstring = 'this is my [tag]dog[/tag]';&#xD;&#xA;	$parsed = get_string_between($fullstring, '[tag]', '[/tag]');&#xD;&#xA;	echo $parsed; // (result = dog)"

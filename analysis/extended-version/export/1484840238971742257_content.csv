@@ -1,2 +1,0 @@
-"Content"
-"    <?php&#xD;&#xA;    $array = array(&#xD;&#xA;        """"foo"""" => """"bar"""",&#xD;&#xA;        """"bar"""" => """"foo"""",&#xD;&#xA;    );&#xD;&#xA;    &#xD;&#xA;    // as of PHP 5.4&#xD;&#xA;    $array = [&#xD;&#xA;        """"foo"""" => """"bar"""",&#xD;&#xA;        """"bar"""" => """"foo"""",&#xD;&#xA;    ];&#xD;&#xA;    ?>"

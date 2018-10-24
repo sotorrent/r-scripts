@@ -1,1 +1,0 @@
-"	<?xml version=""""1.0"""" encoding=""""utf-8""""?>&#xD;&#xA;<WebView  xmlns:android=""""http://schemas.android.com/apk/res/android""""&#xD;&#xA;android:id=""""@+id/webview""""&#xD;&#xA;android:layout_width=""""fill_parent""""&#xD;&#xA;android:layout_height=""""fill_parent""""&#xD;&#xA;/>"

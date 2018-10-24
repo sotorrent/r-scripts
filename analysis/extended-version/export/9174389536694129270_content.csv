@@ -1,1 +1,0 @@
-"        ::-webkit-scrollbar {&#xD;&#xA;width: 12px;&#xD;&#xA;}&#xD;&#xA;::-webkit-scrollbar-track {&#xD;&#xA;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);&#xD;&#xA;border-radius: 10px;&#xD;&#xA;}&#xD;&#xA;::-webkit-scrollbar-thumb {&#xD;&#xA;border-radius: 10px;&#xD;&#xA;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);&#xD;&#xA;}"

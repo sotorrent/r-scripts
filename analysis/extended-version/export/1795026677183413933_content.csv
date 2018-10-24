@@ -1,2 +1,0 @@
-"Content"
-"FROM python:3&#xD;&#xA;       ENV PYTHONUNBUFFERED 1&#xD;&#xA;       RUN mkdir /code&#xD;&#xA;       WORKDIR /code&#xD;&#xA;       ADD requirements.txt /code/&#xD;&#xA;       RUN pip install -r requirements.txt&#xD;&#xA;       ADD . /code/"
