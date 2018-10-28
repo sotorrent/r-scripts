@@ -245,10 +245,10 @@ complete_domains[1:10,]
 # create plots
 
 max_line_count <- max(clones_code$LineCount)
-line_count <- ifelse(clones_code$LineCount>50, 50, clones_code$LineCount)
+line_count <- ifelse(clones_code$LineCount>100, 100, clones_code$LineCount)
 
 max_thread_count <- max(clones_code$ThreadCount)
-thread_count <- ifelse(clones_code$ThreadCount>5, 5, clones_code$ThreadCount)
+thread_count <- ifelse(clones_code$ThreadCount>6, 6, clones_code$ThreadCount)
 
 
 # extended histogram for line count
@@ -273,21 +273,21 @@ par(
 
 # histogram (background)
 hist(line_count,
-     main="Line count of non-trivial code blocks with at least one clone (n=46,818)", 
+     main="Line count of code blocks with \u2265 1 clone and \u2265 20 NLOC (n=46,818)", 
      freq=TRUE,
      xlab="",
      ylab="",
      border="white",
      col="white",
      #labels=c(rep("", 10), "Selected"),
-     xlim=c(5,50),
-     ylim=c(0, 35000),
-     breaks=seq(5, 55, by=1),
+     xlim=c(20,100),
+     ylim=c(0, 20000),
+     breaks=seq(20, 100, by=5),
      xaxt="n",
      yaxt="n"
 )
 # grid
-for (y in seq(0, 35000, by=5000)) {
+for (y in seq(0, 20000, by=5000)) {
   segments(x0=-5, y0=y, x1=50, y1=y, lty=1, lwd=1, col=gray_lighter)
 }
 # histogram (foreground)
@@ -301,23 +301,23 @@ hist(line_count,
      #col=c(gray_lighter, rep(gray_selected, 11)),
      col=gray_lighter,
      #labels=c(rep("", 10), "Selected"),
-     xlim=c(5,50),
-     ylim=c(0, 35000),
-     breaks=seq(5, 55, by=1),
+     xlim=c(20,100),
+     ylim=c(0, 20000),
+     breaks=seq(20, 100, by=5),
      xaxt="n",
      yaxt="n"
 )
 # median
 median(line_count)
-# 12
-segments(x0=median(line_count), y0=0, x1=median(line_count), y1=35000, lty=2, lwd=2, col=gray_dark)
-text(median(line_count)+3, 32500, "\u2190 median (12)", font=3)
+# 30
+segments(x0=median(line_count), y0=0, x1=median(line_count), y1=20000, lty=2, lwd=2, col=gray_dark)
+text(median(line_count)+7, 12500, "\u2190 median (30)", font=3)
 #boxplot
 boxplot(line_count,
         add=TRUE,
         outline=FALSE,
         horizontal=TRUE,
-        ylim=c(0, 35000),
+        ylim=c(0, 20000),
         log="",
         col="white",
         # https://stackoverflow.com/a/28890111
@@ -340,8 +340,8 @@ boxplot(line_count,
 # labels
 #text(2.5, 82620, "Excluded", font=3)
 # axes
-axis(1, at=seq(0, 50, by=5), labels=c(seq(0, 45, by=5), "\u2265 50"))
-axis(2, at=seq(0, 35000, by=5000), labels=c("0", "5k", "10k", "15k", "20k", "25k", "30k", "35k"), las=2)
+axis(1, at=seq(20, 100, by=5), labels=c(seq(20, 95, by=5), "\u2265 100"))
+axis(2, at=seq(0, 20000, by=5000), labels=c("0", "5k", "10k", "15k", "20k"), las=2)
 title(xlab="Line count", font.lab=3)
 title(ylab="Number of code blocks", font.lab=3)
 
@@ -372,20 +372,20 @@ par(
 options(scipen=5) # prevent scientific notation
 gap.barplot(
   table(thread_count),
-  xlim=c(1,6),
-  gap=c(50000, 120000),
-  xtics=seq(2, 5),
-  ytics=c(0, 25000, 50000, 150000),
+  xlim=c(1,7),
+  gap=c(5100, 38000),
+  xtics=seq(2, 6),
+  ytics=c(0, 2500, 5000, 40000),
   col=c(gray_lighter, rep(gray_selected, 4)),
-  main="Number non-trivial code blocks being present in multiple threads (n=46,818)",
+  main="Presence of code blocks with \u2265 20 NLOC in multiple threads (n=46,818)",
   xlab="",
   ylab="",
   xaxt="n"
 )
 # labels
-text(4, 15000, "13.4%", font=2)
+text(4.5, 2000, "13.4%", font=2)
 # axes
-axis(1, at=seq(2, 5, by=1), labels=c(seq(2, 4, by=1), "\u2265 5"))
+axis(1, at=seq(2, 6, by=1), labels=c(seq(2, 5, by=1), "\u2265 6"))
 title(xlab="Number of threads", font.lab=3)
 title(ylab="Number of code blocks", font.lab=3)
 
