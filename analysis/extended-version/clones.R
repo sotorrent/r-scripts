@@ -69,10 +69,35 @@ n_code
 summary(clones_text$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 1.000   1.000   1.000   1.157   1.000 165.000
+sd(clones_text$LineCount)
+# 0.9469697
+IQR(clones_text$LineCount)
+# 0
+
+summary(clones_text$ThreadCount)
+# Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+# 2.00      2.00      2.00      9.84      4.00 138225.00 
+sd(clones_text$ThreadCount)
+# 340.9586
+IQR(clones_text$ThreadCount)
+# 2
 
 summary(clones_code$LineCount)
 # Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 # 1.000    1.000    2.000    5.431    5.000 1376.000 
+sd(clones_code$LineCount)
+# 12.86862
+IQR(clones_code$LineCount)
+# 4
+
+summary(clones_code$ThreadCount)
+# Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 2.000    2.000    2.000    3.549    3.000 3905.000 
+sd(clones_code$ThreadCount)
+# 14.31302
+IQR(clones_code$ThreadCount)
+# 1
+
 
 ############
 # DECISION # Focus on code blocks in the following, exclude code blocks with less than 6 LOC (Bellon et al. 2007).
