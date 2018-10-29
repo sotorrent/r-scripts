@@ -132,10 +132,18 @@ n_code
 summary(clones_code$LineCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 20.00   24.00   30.00   42.62   46.00 1376.00
+sd(clones_code$LineCount)
+# 38.67035
+IQR(clones_code$LineCount)
+# 22
 
 summary(clones_code$ThreadCount)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 2.000   2.000   2.000   2.252   2.000  79.000
+sd(clones_code$ThreadCount)
+# 1.138763
+IQR(clones_code$ThreadCount)
+# 0
 
 clones_code <- clones_code[order(-clones_code$ThreadCount, clones_code$LineCount),c("ContentNormalizedHash", "PostBlockTypeId", "LineCount", "ThreadCount")]
 clones_code[1:10]
