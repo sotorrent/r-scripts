@@ -1,5 +1,12 @@
-#setwd("F:/Git/github/r-scripts/metric-selection/") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection/")
+# set working directory (see https://stackoverflow.com/a/35842119)
+dir = tryCatch({
+  # script being sourced
+  getSrcDirectory()[1]
+}, error = function(e) {
+  # script being run in RStudio
+  dirname(rstudioapi::getActiveDocumentContext()$path)
+})
+setwd(dir)
 
 # load functions
 source("functions.R")
@@ -57,13 +64,36 @@ fn_code <- rbind(
 )
 
 fp_text_posts <- unique(fp_text$PostId)
+length(fp_text_posts)
+# 62
+
 fn_text_posts <- unique(fn_text$PostId)
+length(fn_text_posts)
+# 48
+
 fp_code_posts <- unique(fp_code$PostId)
+length(fp_code_posts)
+# 31
+
 fn_code_posts <- unique(fn_code$PostId)
+length(fn_code_posts)
+# 28
+
+f_text  <- unique(fp_text_posts, fn_text_posts)
+length(f_text)
+# 62
+
+f_code <- unique(fp_code_posts, fn_code_posts)
+length(f_code)
+# 31
 
 # write post ids of false postives/negatives to separate CSV files
 write.table(fp_text_posts, file="fp+fn/fp_text.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 write.table(fn_text_posts, file="fp+fn/fn_text.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 write.table(fp_code_posts, file="fp+fn/fp_code.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 write.table(fn_code_posts, file="fp+fn/fn_code.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+write.table(f_text, file="fp+fn/f_text.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+write.table(f_code, file="fp+fn/f_code.csv", sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
 
