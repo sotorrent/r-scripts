@@ -78,3 +78,9 @@ write.table(sample_comments, file="data/EditedThreads_Sample50_Comments.csv", se
 # write sampled edits to CSV file
 write.table(sample_edits, file="data/EditedThreads_Sample50_Edits.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
+# read sample
+sample_50 <- fread("data/EditedThreads_Sample50.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"))
+
+#TODO: edited_threads_sample_50 <- edited_threads[edited_threads$ParentId %in% sample_50]
+#TODO: comments
+#TODO: edits
