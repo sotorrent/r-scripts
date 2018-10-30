@@ -81,6 +81,13 @@ write.table(sample_edits, file="data/EditedThreads_Sample50_Edits.csv", sep=",",
 # read sample
 sample_50 <- fread("data/EditedThreads_Sample50.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"))
 
-#TODO: edited_threads_sample_50 <- edited_threads[edited_threads$ParentId %in% sample_50]
-#TODO: comments
-#TODO: edits
+edited_threads_sample_50 <- edited_threads[edited_threads$ParentId %in% sample_50$PostId]
+posts_sample_50 <- unique(edited_threads_sample_50$PostId)
+length(posts_sample_50)
+# 140
+
+# first 20
+edited_threads_sample_50 <- edited_threads[edited_threads$ParentId %in% sample_50$PostId[1:20]]
+posts_sample_50 <- unique(edited_threads_sample_50$PostId)
+length(posts_sample_50)
+# 58
