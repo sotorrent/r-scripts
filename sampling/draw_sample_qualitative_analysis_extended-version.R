@@ -86,8 +86,20 @@ posts_sample_50 <- unique(edited_threads_sample_50$PostId)
 length(posts_sample_50)
 # 140
 
+length(unique(edits[edits$PostId %in% posts_sample_50])$PostHistoryId)
+# 255
+
+length(unique(comments[comments$PostId %in% posts_sample_50])$CommentId)
+# 319
+
 # first 20
-edited_threads_sample_50 <- edited_threads[edited_threads$ParentId %in% sample_50$PostId[1:20]]
-posts_sample_50 <- unique(edited_threads_sample_50$PostId)
-length(posts_sample_50)
+edited_threads_sample_20 <- edited_threads[edited_threads$ParentId %in% sample_50$PostId[1:20]]
+edited_threads_sample_20 <- unique(edited_threads_sample_20$PostId)
+length(edited_threads_sample_20)
 # 58
+
+length(unique(edits[edits$PostId %in% edited_threads_sample_20])$PostHistoryId)
+# 101
+
+length(unique(comments[comments$PostId %in% edited_threads_sample_20])$CommentId)
+# 112
