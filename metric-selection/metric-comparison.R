@@ -1,8 +1,16 @@
-setwd("F:/Git/github/r-scripts/metric-selection/") # Pfad bitte anpassen
-#setwd("/Users/sebastian/git/github/r-scripts/metric-selection/")
+# set working directory (see https://stackoverflow.com/a/35842119)
+dir = tryCatch({
+  # script being sourced
+  getSrcDirectory()[1]
+}, error = function(e) {
+  # script being run in RStudio
+  dirname(rstudioapi::getActiveDocumentContext()$path)
+})
+setwd(dir)
 
 # load functions
 source("functions.R")
+
 
 # read results of first run with all metrics
 library(data.table)
@@ -734,7 +742,9 @@ sample_candidates[c(1:3),c("MatthewsCorrelationText", "MatthewsCorrelationCode",
 # 2: winnowingFourGramDiceNormalized          0.23 cosineTokenNormalizedNormalizedTermFrequency                0.27
 # 3: winnowingFourGramDiceNormalized          0.23 cosineTokenNormalizedNormalizedTermFrequency                0.27
 
+
 # OBSERVATION: Tradeoff between MatthewsCorrelationText and MatthewsCorrelationCode (because other metric is relevant for context)
+
 
 # order occording to sum of MatthewsCorrelationText and MatthewsCorrelationCode
 sample_candidates$MatthewsCorrelationSum <- sample_candidates$MatthewsCorrelationText + sample_candidates$MatthewsCorrelationCode
@@ -829,5 +839,3 @@ sample_candidates$TruePositivesCode/(sample_candidates$TruePositivesCode+sample_
 # false positive rate
 sample_candidates$FalsePositivesCode/(sample_candidates$FalsePositivesCode+sample_candidates$TrueNegativesCode)
 # 0.07142857
-
-

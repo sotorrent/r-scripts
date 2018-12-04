@@ -1,11 +1,19 @@
-#setwd("E:/Git/github/r-scripts/metric-selection") # Pfad bitte anpassen
-setwd("/Users/sebastian/git/github/r-scripts/metric-selection")
+# set working directory (see https://stackoverflow.com/a/35842119)
+dir = tryCatch({
+  # script being sourced
+  getSrcDirectory()[1]
+}, error = function(e) {
+  # script being run in RStudio
+  dirname(rstudioapi::getActiveDocumentContext()$path)
+})
+setwd(dir)
 
 # use defined colors
 source("../colors.R")
 
 # load functions
 source("functions.R")
+
 
 ### read results from second run with selected metrics ###
 
