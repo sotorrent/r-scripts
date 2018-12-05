@@ -48,11 +48,17 @@ sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possib
 ### sample randomly drawn from all SO posts
 sample_random <- add_matthews_correlation(sample_random)
 
+# analyze runtime
+summary(sample_random$Runtime)
+# Min.     1st Qu.      Median        Mean     3rd Qu.        Max. 
+# 8182834   223423971   310652749   787078375   468136102 12663494809
+Runtime_Q3 <- quantile(sample_random$Runtime, 0.75)
+
 ## text
 # order
 setorderv(sample_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.3656  0.6915  0.8091  0.7463  0.8577  0.9084 
@@ -65,13 +71,13 @@ sample_random_text_candidates <- sample_random[sample_random$MatthewsCorrelation
 # backup metric
 backup_candidates <- sample_random[sample_random$MetricTypeText == "EDIT" | grepl("token", sample_random$MetricText, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.9)
-sample_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+sample_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 ## code
 # order
 setorderv(sample_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_random$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.6599  0.8624  0.9383  0.8970  0.916  0.9792
@@ -84,17 +90,23 @@ sample_random_code_candidates <- sample_random[sample_random$MatthewsCorrelation
 # backup metric
 backup_candidates <- sample_random[sample_random$MetricTypeCode == "EDIT" | grepl("token", sample_random$MetricCode, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.9)
-sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 ### sample randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
 sample_random_99 <- add_matthews_correlation(sample_random_99)
 
+# analyze runtime
+summary(sample_random_99$Runtime)
+# Min.      1st Qu.       Median         Mean      3rd Qu.         Max. 
+# 197468486   8203734960  11487859587  25206955934  17596325198 362320100616 
+Runtime_Q3 <- quantile(sample_random_99$Runtime, 0.75)
+
 ## text
 # order
 setorderv(sample_random_99, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_random_99$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.3984  0.6376  0.7763  0.7185  0.8285  0.8832 
@@ -107,13 +119,13 @@ sample_random_99_text_candidates <- sample_random_99[sample_random_99$MatthewsCo
 # backup metric
 backup_candidates <- sample_random_99[sample_random_99$MetricTypeText == "EDIT" | grepl("token", sample_random_99$MetricText, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.9)
-sample_random_99_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+sample_random_99_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 ## code
 # order
 setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_random_99$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.5133  0.7786  0.8996  0.8352  0.9321  0.9628
@@ -126,17 +138,23 @@ sample_random_99_code_candidates <- sample_random_99[sample_random_99$MatthewsCo
 # backup metric
 backup_candidates <- sample_random_99[sample_random_99$MetricTypeCode == "EDIT" | grepl("token", sample_random_99$MetricCode, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.9)
-sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 ### sample randomly drawn from all Java SO posts (tagged with <java> or <android>) with at least two versions
 sample_java_random <- add_matthews_correlation(sample_java_random)
 
+# analyze runtime
+summary(sample_java_random$Runtime)
+# Min.     1st Qu.      Median        Mean     3rd Qu.        Max. 
+# 19614757   651001234   907995053  1878502349  1233621914 36540435445 
+Runtime_Q3 <- quantile(sample_java_random$Runtime, 0.75)
+
 ## text
 # order
 setorderv(sample_java_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_java_random$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.3958  0.6698  0.7745  0.7291  0.8212  0.8902
@@ -149,13 +167,13 @@ sample_java_random_text_candidates <- sample_java_random[sample_java_random$Matt
 # backup metric
 backup_candidates <- sample_java_random[sample_java_random$MetricTypeText == "EDIT" | grepl("token", sample_java_random$MetricText, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.9)
-sample_java_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+sample_java_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 ## code
 # order
 setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_java_random$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.6291  0.8359  0.9105  0.8812  0.912  0.9755 
@@ -168,17 +186,23 @@ sample_java_random_code_candidates <- sample_java_random[sample_java_random$Matt
 # backup metric
 backup_candidates <- sample_java_random[sample_java_random$MetricTypeCode == "EDIT" | grepl("token", sample_java_random$MetricCode, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.9)
-sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 ### sample in which we moved posts with unclear matching according to the comments added in the GT App
 sample_unclear_matching <- add_matthews_correlation(sample_unclear_matching)
 
+# analyze runtime
+summary(sample_unclear_matching$Runtime)
+# Min.     1st Qu.      Median        Mean     3rd Qu.        Max. 
+# 20462868  1546121768  2183522018  3059756377  3025247059 29855452384 
+Runtime_Q3 <- quantile(sample_unclear_matching$Runtime, 0.75)
+
 ## text
 # order
 setorderv(sample_unclear_matching, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_unclear_matching$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.2654  0.6110  0.7232  0.6862  0.7828  0.8804 
@@ -191,14 +215,14 @@ sample_unclear_matching_text_candidates <- sample_unclear_matching[sample_unclea
 # backup metric
 backup_candidates <- sample_unclear_matching[sample_unclear_matching$MetricTypeText == "EDIT" | grepl("token", sample_unclear_matching$MetricText, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.9)
-sample_unclear_matching_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+sample_unclear_matching_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 ## code
 # order
 setorderv(sample_unclear_matching, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_unclear_matching$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.5545  0.6959  0.7537  0.7390  0.7950  0.8671
@@ -211,18 +235,24 @@ sample_unclear_matching_code_candidates <- sample_unclear_matching[sample_unclea
 # backup metric
 backup_candidates <- sample_unclear_matching[sample_unclear_matching$MetricTypeCode == "EDIT" | grepl("token", sample_unclear_matching$MetricCode, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.9)
-sample_unclear_matching_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+sample_unclear_matching_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 
 ### sample in which we moved posts with unclear matching according to the comments added in the GT App
 sample_multiple_possible_links <- add_matthews_correlation(sample_multiple_possible_links)
 
+# analyze runtime
+summary(sample_multiple_possible_links$Runtime)
+# Min.     1st Qu.      Median        Mean     3rd Qu.        Max. 
+# 31017599  1556218244  2122806975  3463719660  3061548129 28593309190 
+Runtime_Q3 <- quantile(sample_multiple_possible_links$Runtime, 0.75)
+
 ## text
 # order
 setorderv(sample_multiple_possible_links, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_multiple_possible_links$MatthewsCorrelationText)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.5965  0.7579  0.8618  0.8237  0.9052  0.905 
@@ -235,14 +265,14 @@ sample_multiple_possible_links_text_candidates <- sample_multiple_possible_links
 # backup metric
 backup_candidates <- sample_multiple_possible_links[sample_multiple_possible_links$MetricTypeText == "EDIT" | grepl("token", sample_multiple_possible_links$MetricText, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.9)
-sample_multiple_possible_links_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+sample_multiple_possible_links_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
 ## code
 # order
 setorderv(sample_multiple_possible_links, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
 
-# analyze
+# analyze quality
 summary(sample_multiple_possible_links$MatthewsCorrelationCode)
 # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 0.7687  0.9250  0.956  0.9302  0.9662  0.9926 
@@ -255,10 +285,11 @@ sample_multiple_possible_links_code_candidates <- sample_multiple_possible_links
 # backup metric
 backup_candidates <- sample_multiple_possible_links[sample_multiple_possible_links$MetricTypeCode == "EDIT" | grepl("token", sample_multiple_possible_links$MetricCode, ignore.case=TRUE, perl=TRUE),]
 MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.9)
-sample_multiple_possible_links_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+sample_multiple_possible_links_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup & backup_candidates$Runtime <= Runtime_Q3,]
 
 
-# DECISION: For second run, select metrics that are in 90% quantile of sample_random, sample_java_random, and sample_random_99 for text or code
+# DECISION: For second run, select metrics that are in 90% quantile of sample_random, sample_java_random, and sample_random_99 for text or code,
+#           with runtime <= Q_3 for backup metrics(edit-based metrics slowed down the evaluation run enourmously)
 
 ## best metrics
 
@@ -363,12 +394,12 @@ candidates_backup_code <- intersect(
   unique(sample_random_99_code_candidates_backup$MetricCode)
 )
 length(candidates_backup_code)
-# 8
+# 5
 
 # both
 candidates_backup <- unique(c(candidates_backup_text, candidates_backup_code))
 length(candidates_backup)
-# 10
+# 7
 candidates_backup
 # [1] "tokenDice"                                   
 # [2] "cosineTokenNormalizedNormalizedTermFrequency"
@@ -376,7 +407,4 @@ candidates_backup
 # [4] "cosineTokenNormalizedBool"                   
 # [5] "tokenDiceNormalized"                         
 # [6] "tokenJaccardNormalized"                      
-# [7] "manhattanTokenNormalized"                    
-# [8] "levenshtein"                                 
-# [9] "optimalAlignment"                            
-# [10] "damerauLevenshtein"  
+# [7] "manhattanTokenNormalized"    
