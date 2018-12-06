@@ -705,3 +705,83 @@ summary(sample_unclear_matching$MatthewsCorrelationCode)
 
 ### third run with combined metrics ###
 
+# samples randomly drawn from all SO posts
+sample_100_1 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_100_2 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_random <- merge_samples_combined(sample_100_1, sample_100_2)
+rm(sample_100_1, sample_100_2)
+
+# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
+sample_100_1_99 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_100_2_99 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_random_99 <- merge_samples_combined(sample_100_1_99, sample_100_2_99)
+rm(sample_100_1_99, sample_100_2_99)
+
+# samples randomly drawn from selected Java SO posts (tagged with <java> or <android>) with at least two versions
+sample_java_100_1 <- fread("combined-new/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_java_100_2 <- fread("combined-new/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_java_random <- merge_samples_combined(sample_java_100_1, sample_java_100_2)
+rm(sample_java_100_1, sample_java_100_2)
+
+# sample in which we moved posts with unclear matching according to the comments added in the GT App
+sample_unclear_matching <- fread("combined-new/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_unclear_matching <- filter_columns_combined(sample_unclear_matching)
+
+# sample in which we moved posts with unclear matching according to the comments added in the GT App
+sample_multiple_possible_links <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possible_links)
+
+# merge relevant samples
+sample_candidates <- merge_samples_combined(sample_random, sample_java_random)
+sample_candidates <- merge_samples_combined(sample_candidates, sample_random_99)
+# calculate Matthews correlation
+sample_candidates <- add_matthews_correlation(sample_candidates)
+sample_random <- add_matthews_correlation(sample_random)
+sample_java_random <- add_matthews_correlation(sample_java_random)
+sample_random_99 <- add_matthews_correlation(sample_random_99)
+
+# order candidates
+## text
+setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1,1))
+sample_candidates[c(1:3),c("MatthewsCorrelationText", "Runtime", "MetricText", "ThresholdText", "MetricTextBackup", "ThresholdTextBackup", "MetricCode", "ThresholdCode", "MetricCodeBackup", "ThresholdCodeBackup")]
+#    MatthewsCorrelationText    Runtime   MetricText ThresholdText          MetricTextBackup ThresholdTextBackup          MetricCode ThresholdCode       MetricCodeBackup ThresholdCodeBackup
+# 1:               0.8877625 9071289176 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized          0.09 tokenJaccardNormalized                0.05
+# 2:               0.8877625 9072770029 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized          0.08    tokenDiceNormalized                0.08
+# 3:               0.8877625 9077716296 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized          0.11    tokenDiceNormalized                0.08
+
+## code
+setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1,1))
+sample_candidates[c(1:3),c("MatthewsCorrelationCode", "Runtime", "MetricText", "ThresholdText", "MetricTextBackup", "ThresholdTextBackup", "MetricCode", "ThresholdCode", "MetricCodeBackup", "ThresholdCodeBackup")]
+#    MatthewsCorrelationCode    Runtime   MetricText ThresholdText          MetricTextBackup ThresholdTextBackup          MetricCode ThresholdCode    MetricCodeBackup ThresholdCodeBackup
+# 1:               0.9638847 8888194603 fourGramDice          0.06 cosineTokenNormalizedBool                0.16 tokenDiceNormalized           0.1 tokenDiceNormalized                0.08
+# 2:               0.9638847 8892330801 fourGramDice          0.06 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1 tokenDiceNormalized                0.08
+# 3:               0.9638847 8903428059 fourGramDice          0.05 cosineTokenNormalizedBool                0.14 tokenDiceNormalized           0.1 tokenDiceNormalized                0.08
+
+## text and code
+setorderv(sample_candidates, c("MatthewsCorrelationText", "MatthewsCorrelationCode", "Runtime"), c(-1,-1,1))
+sample_candidates[c(1:3),c("MatthewsCorrelationText", "MatthewsCorrelationCode", "Runtime", "MetricText", "ThresholdText", "MetricTextBackup", "ThresholdTextBackup", "MetricCode", "ThresholdCode", "MetricCodeBackup", "ThresholdCodeBackup")]
+# MatthewsCorrelationText MatthewsCorrelationCode    Runtime   MetricText ThresholdText          MetricTextBackup ThresholdTextBackup          MetricCode ThresholdCode       MetricCodeBackup ThresholdCodeBackup
+# 1:               0.8877625               0.9638847 9119245953 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1 tokenJaccardNormalized                0.05
+# 2:               0.8877625               0.9638847 9139957331 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.10
+# 3:               0.8877625               0.9638847 9164390872 fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.09
+
+# OBSERVATION: Tradeoff between MatthewsCorrelationText and MatthewsCorrelationCode (because other metric is relevant for context)
+
+
+# order occording to sum of MatthewsCorrelationText and MatthewsCorrelationCode
+sample_candidates$MatthewsCorrelationSum <- sample_candidates$MatthewsCorrelationText + sample_candidates$MatthewsCorrelationCode
+setorderv(sample_candidates, c("MatthewsCorrelationSum", "Runtime"), c(-1,1))
+sample_candidates[c(1:10),c("MatthewsCorrelationText", "MatthewsCorrelationCode", "Runtime", "MetricText", "ThresholdText", "MetricTextBackup", "ThresholdTextBackup", "MetricCode", "ThresholdCode", "MetricCodeBackup", "ThresholdCodeBackup")]
+#     MatthewsCorrelationText MatthewsCorrelationCode     Runtime             MetricText ThresholdText          MetricTextBackup ThresholdTextBackup          MetricCode ThresholdCode       MetricCodeBackup ThresholdCodeBackup
+#  1:               0.8877625               0.9638847  9119245953           fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1 tokenJaccardNormalized                0.05
+#  2:               0.8877625               0.9638847  9139957331           fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.10
+#  3:               0.8877625               0.9638847  9164390872           fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.09
+#  4:               0.8877625               0.9638847  9369853927           fiveGramDice          0.04 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.08
+#  5:               0.8877625               0.9638847 10069005939        fiveGramJaccard          0.02 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.10
+#  6:               0.8877625               0.9638847 10070470728        fiveGramJaccard          0.02 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1 tokenJaccardNormalized                0.05
+#  7:               0.8877625               0.9638847 10073689014        fiveGramJaccard          0.02 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.09
+#  8:               0.8877625               0.9638847 10103416959        fiveGramJaccard          0.02 cosineTokenNormalizedBool                0.19 tokenDiceNormalized           0.1    tokenDiceNormalized                0.08
+#  9:               0.8867775               0.9638847 10269247487 fourGramDiceNormalized          0.05 cosineTokenNormalizedBool                0.15 tokenDiceNormalized           0.1    tokenDiceNormalized                0.10
+# 10:               0.8867775               0.9638847 10272535843 fourGramDiceNormalized          0.05 cosineTokenNormalizedBool                0.18 tokenDiceNormalized           0.1    tokenDiceNormalized                0.08
+
+# DECISION: Choose option 2, since backup code metric will never be used. Sample quality, almost same runtime.
