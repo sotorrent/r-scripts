@@ -8,12 +8,12 @@ dir = tryCatch({
 })
 setwd(dir)
 
-# load functions
 source("functions.R")
+
+library(data.table)
 
 
 # read results of first run with all metrics
-library(data.table)
 
 # samples randomly drawn from all SO posts
 sample_100_1 <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
@@ -408,3 +408,300 @@ candidates_backup
 # [5] "tokenDiceNormalized"                         
 # [6] "tokenJaccardNormalized"                      
 # [7] "manhattanTokenNormalized"    
+
+
+###############################################################################################
+
+
+### second run with selected metrics ###
+
+# samples randomly drawn from all SO posts
+sample_100_1 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_100_2 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_random <- merge_samples_combined(sample_100_1, sample_100_2)
+rm(sample_100_1, sample_100_2)
+
+# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
+sample_100_1_99 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_100_2_99 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_random_99 <- merge_samples_combined(sample_100_1_99, sample_100_2_99)
+rm(sample_100_1_99, sample_100_2_99)
+
+# samples randomly drawn from selected Java SO posts (tagged with <java> or <android>) with at least two versions
+sample_java_100_1 <- fread("selected-new/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_java_100_2 <- fread("selected-new/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_java_random <- merge_samples_combined(sample_java_100_1, sample_java_100_2)
+rm(sample_java_100_1, sample_java_100_2)
+
+# sample in which we moved posts with unclear matching according to the comments added in the GT App
+sample_unclear_matching <- fread("selected-new/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_unclear_matching <- filter_columns_combined(sample_unclear_matching)
+
+# sample in which we moved posts with unclear matching according to the comments added in the GT App
+sample_multiple_possible_links <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possible_links)
+
+
+# DECISION: Select metrics that are in 95% quantile of sample_random, sample_java_random, and sample_random_99 for text/code
+
+# merge relevant samples
+sample_candidates <- merge_samples_combined(sample_random, sample_java_random)
+sample_candidates <- merge_samples_combined(sample_candidates, sample_random_99)
+# calculate Matthews correlation
+sample_candidates <- add_matthews_correlation(sample_candidates)
+sample_random <- add_matthews_correlation(sample_random)
+sample_java_random <- add_matthews_correlation(sample_java_random)
+sample_random_99 <- add_matthews_correlation(sample_random_99)
+
+## text
+
+# order samples
+setorderv(sample_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
+setorderv(sample_java_random, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
+setorderv(sample_random_99, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
+
+# select candidates
+MatthewsCorrelationText_95 <- quantile(sample_random$MatthewsCorrelationText, 0.95)
+sample_random_text_candidates <- sample_random[sample_random$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
+
+MatthewsCorrelationText_95 <- quantile(sample_java_random$MatthewsCorrelationText, 0.95)
+sample_java_random_text_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
+
+MatthewsCorrelationText_95 <- quantile(sample_random_99$MatthewsCorrelationText, 0.95)
+sample_random_99_text_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationText >= MatthewsCorrelationText_95,]
+
+# backup metric
+backup_candidates <- sample_random[sample_random$MetricTypeText == "EDIT" | grepl("token", sample_random$MetricText, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+
+backup_candidates <- sample_java_random[sample_java_random$MetricTypeText == "EDIT" | grepl("token", sample_java_random$MetricText, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_java_random_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+
+backup_candidates <- sample_random_99[sample_random_99$MetricTypeText == "EDIT" | grepl("token", sample_random_99$MetricText, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationText_95_backup <- quantile(backup_candidates$MatthewsCorrelationText, 0.95)
+sample_random_99_text_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationText >= MatthewsCorrelationText_95_backup,]
+
+
+# final candidates
+candidates_text <- intersect(
+  intersect(unique(sample_random_text_candidates$MetricText), unique(sample_java_random_text_candidates$MetricText)),
+  unique(sample_random_99_text_candidates$MetricText)
+)
+length(candidates_text)
+# 25
+candidates_text
+# [1] "cosineTwoGramNormalizedNormalizedTermFrequency"   
+# [2] "cosineThreeGramNormalizedNormalizedTermFrequency" 
+# [3] "cosineThreeGramNormalizedBool"                    
+# [4] "manhattanThreeGramNormalized"                     
+# [5] "cosineFourGramNormalizedNormalizedTermFrequency"  
+# [6] "manhattanFourGramNormalized"                      
+# [7] "cosineFourGramNormalizedBool"                     
+# [8] "cosineFiveGramNormalizedBool"                     
+# [9] "fourGramDiceNormalizedPadding"                    
+# [10] "fourGramJaccardNormalizedPadding"                 
+# [11] "fourGramDice"                                     
+# [12] "fiveGramDice"                                     
+# [13] "fourGramJaccard"                                  
+# [14] "fiveGramJaccard"                                  
+# [15] "threeGramDiceNormalized"                          
+# [16] "fourGramDiceNormalized"                           
+# [17] "fiveGramDiceNormalized"                           
+# [18] "threeGramJaccardNormalized"                       
+# [19] "fourGramJaccardNormalized"                        
+# [20] "twoShingleDiceNormalized"                         
+# [21] "twoShingleJaccardNormalized"                      
+# [22] "manhattanTwoShingleNormalized"                    
+# [23] "cosineTwoShingleNormalizedNormalizedTermFrequency"
+# [24] "cosineTwoShingleNormalizedTermFrequency"          
+# [25] "cosineTwoShingleNormalizedBool"   
+
+summary(sample_candidates$MatthewsCorrelationText)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.4032  0.6791  0.8029  0.7520  0.8542  0.8840 
+
+setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
+sample_candidates_text <- sample_candidates[sample_candidates$MetricText %in% candidates_text,]
+
+MatthewsCorrelationText_99 <- quantile(sample_candidates_text$MatthewsCorrelationText, 0.99)
+MatthewsCorrelationText_99
+# 99% 
+# 0.8812886
+
+sample_candidates_text[sample_candidates_text$MatthewsCorrelationText>=MatthewsCorrelationText_99, c("MetricText", "ThresholdText", "MatthewsCorrelationText", "Runtime")]
+#                      MetricText ThresholdText MatthewsCorrelationText     Runtime
+# 1:       fiveGramDiceNormalized          0.04               0.8840052 13902473845
+# 2: cosineFiveGramNormalizedBool          0.05               0.8839202 22758535743
+# 3:                 fiveGramDice          0.04               0.8838388 12034661521
+# 4:              fiveGramJaccard          0.02               0.8838388 13733218548
+# 5: cosineFiveGramNormalizedBool          0.03               0.8836873 22562328502
+# 6: cosineFiveGramNormalizedBool          0.04               0.8836873 22709502049
+# 7: cosineFiveGramNormalizedBool          0.06               0.8829495 22692362426
+# 8:       fourGramDiceNormalized          0.05               0.8828646 13562650146
+# 9:       fiveGramDiceNormalized          0.03               0.8828646 13669176751
+# 10:                 fiveGramDice          0.03               0.8827059 12007111762
+# 11: cosineFiveGramNormalizedBool          0.08               0.8820735 22733251324
+# 12:                 fourGramDice          0.08               0.8819814 11725227207
+# 13:                 fiveGramDice          0.05               0.8819814 12149066965
+# 14: cosineFiveGramNormalizedBool          0.07               0.8819814 22780266663
+# 15: cosineFiveGramNormalizedBool          0.14               0.8818780 22943880535
+# 16:    fourGramJaccardNormalized          0.03               0.8818082 14888361132
+# 17:  manhattanFourGramNormalized          0.05               0.8818082 21441765884
+# 18: cosineFourGramNormalizedBool          0.17               0.8817583 21749765816
+# 19:  manhattanFourGramNormalized          0.04               0.8817271 21402819562
+# 20:                 fourGramDice          0.06               0.8816498 11672687473
+# 21:              fourGramJaccard          0.03               0.8816498 13234364419
+# 22: cosineFourGramNormalizedBool          0.07               0.8816498 21896497941
+# 23:                 fourGramDice          0.05               0.8815762 11781944569
+# 24: cosineFourGramNormalizedBool          0.16               0.8814194 21748786935
+# 25: cosineFiveGramNormalizedBool          0.11               0.8814194 22647503662
+# 26: cosineFiveGramNormalizedBool          0.10               0.8813133 23017541253
+
+
+# backup metric
+backup_candidates_text <- intersect(
+  intersect(unique(sample_random_text_candidates_backup$MetricText), unique(sample_java_random_text_candidates_backup$MetricText)),
+  unique(sample_random_99_text_candidates_backup$MetricText)
+)
+length(backup_candidates_text)
+# 4
+backup_candidates_text
+# [1] "cosineTokenNormalizedNormalizedTermFrequency"
+# [2] "cosineTokenNormalizedBool"                   
+# [3] "tokenDiceNormalized"                         
+# [4] "tokenJaccardNormalized"
+
+setorderv(sample_candidates, c("MatthewsCorrelationText", "Runtime"), c(-1, 1))
+sample_candidates_backup_text <- sample_candidates[sample_candidates$MetricText %in% backup_candidates_text,]
+
+MatthewsCorrelationText_99_backup <- quantile(sample_candidates_backup_text$MatthewsCorrelationText, 0.99)
+MatthewsCorrelationText_99_backup
+# 99% 
+# 0.8798426 
+
+sample_candidates_backup_text[sample_candidates_backup_text$MatthewsCorrelationText>=MatthewsCorrelationText_99_backup, c("MetricText", "ThresholdText", "MatthewsCorrelationText", "Runtime")]
+#                   MetricText ThresholdText MatthewsCorrelationText    Runtime
+# 1: cosineTokenNormalizedBool          0.19               0.8812106 9275689314
+# 2: cosineTokenNormalizedBool          0.16               0.8809240 9142165190
+# 3: cosineTokenNormalizedBool          0.15               0.8808357 9227731991
+# 4: cosineTokenNormalizedBool          0.18               0.8801522 9276384771
+# 5: cosineTokenNormalizedBool          0.14               0.8798658 9248218885
+
+
+## code
+
+# order samples
+setorderv(sample_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+setorderv(sample_java_random, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+setorderv(sample_random_99, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+
+# select candidates
+MatthewsCorrelationCode_95 <- quantile(sample_random$MatthewsCorrelationCode, 0.95)
+sample_random_code_candidates <- sample_random[sample_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
+
+MatthewsCorrelationCode_95 <- quantile(sample_java_random$MatthewsCorrelationCode, 0.95)
+sample_java_random_code_candidates <- sample_java_random[sample_java_random$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
+
+MatthewsCorrelationCode_95 <- quantile(sample_random_99$MatthewsCorrelationCode, 0.95)
+sample_random_99_code_candidates <- sample_random_99[sample_random_99$MatthewsCorrelationCode >= MatthewsCorrelationCode_95,]
+
+# backup metric
+backup_candidates <- sample_random[sample_random$MetricTypeCode == "EDIT" | grepl("token", sample_random$MetricCode, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+
+backup_candidates <- sample_java_random[sample_java_random$MetricTypeCode == "EDIT" | grepl("token", sample_java_random$MetricCode, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_java_random_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+
+backup_candidates <- sample_random_99[sample_random_99$MetricTypeCode == "EDIT" | grepl("token", sample_random_99$MetricCode, ignore.case=TRUE, perl=TRUE),]
+MatthewsCorrelationCode_95_backup <- quantile(backup_candidates$MatthewsCorrelationCode, 0.95)
+sample_random_99_code_candidates_backup <- backup_candidates[backup_candidates$MatthewsCorrelationCode >= MatthewsCorrelationCode_95_backup,]
+
+
+# final candidates
+candidates_code <- intersect(
+  intersect(unique(sample_random_code_candidates$MetricCode), unique(sample_java_random_code_candidates$MetricCode)),
+  unique(sample_random_99_code_candidates$MetricCode)
+)
+length(candidates_code)
+# 5
+candidates_code
+# [1] "tokenDice"                
+# [2] "tokenJaccard"             
+# [3] "tokenDiceNormalized"      
+# [4] "tokenJaccardNormalized"   
+# [5] "cosineTokenNormalizedBool" 
+
+summary(sample_candidates$MatthewsCorrelationCode)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.5517  0.8254  0.9164  0.8704  0.9464  0.9639 
+
+setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+sample_candidates_code <- sample_candidates[sample_candidates$MetricCode %in% candidates_code,]
+
+MatthewsCorrelationCode_99 <- quantile(sample_candidates_code$MatthewsCorrelationCode, 0.99)
+MatthewsCorrelationCode_99
+# 99% 
+# 0.9616897
+
+sample_candidates_code[sample_candidates_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99, c("MetricCode", "ThresholdCode", "MatthewsCorrelationCode", "Runtime")]
+#                   MetricCode ThresholdCode MatthewsCorrelationCode    Runtime
+# 1:       tokenDiceNormalized          0.10               0.9638847 7286795340
+# 2:       tokenDiceNormalized          0.08               0.9627729 7399154375
+# 3:       tokenDiceNormalized          0.09               0.9627729 7472382012
+# 4:    tokenJaccardNormalized          0.05               0.9627729 7601886261
+# 5:       tokenDiceNormalized          0.12               0.9616897 7245929933
+# 6:       tokenDiceNormalized          0.11               0.9616897 7347308745
+# 7:    tokenJaccardNormalized          0.06               0.9616897 7577012153
+# 8: cosineTokenNormalizedBool          0.10               0.9616897 9180838103
+
+
+# backup metric
+backup_candidates_code <- intersect(
+  intersect(unique(sample_random_code_candidates_backup$MetricCode), unique(sample_java_random_code_candidates_backup$MetricCode)),
+  unique(sample_random_99_code_candidates_backup$MetricCode)
+)
+length(backup_candidates_code)
+# 3
+backup_candidates_code
+# [1] "tokenDiceNormalized"      
+# [2] "tokenJaccardNormalized"   
+# [3] "cosineTokenNormalizedBool" 
+
+setorderv(sample_candidates, c("MatthewsCorrelationCode", "Runtime"), c(-1, 1))
+sample_candidates_backup_code <- sample_candidates[sample_candidates$MetricCode %in% backup_candidates_code,]
+
+MatthewsCorrelationCode_99_backup <- quantile(sample_candidates_backup_code$MatthewsCorrelationCode, 0.99)
+MatthewsCorrelationCode_99_backup
+# 99% 
+# 0.9627513
+
+sample_candidates_backup_code[sample_candidates_backup_code$MatthewsCorrelationCode>=MatthewsCorrelationCode_99_backup, c("MetricCode", "ThresholdCode", "MatthewsCorrelationCode", "Runtime")]
+#                MetricCode ThresholdCode MatthewsCorrelationCode    Runtime
+# 1:    tokenDiceNormalized          0.10               0.9638847 7286795340
+# 2:    tokenDiceNormalized          0.08               0.9627729 7399154375
+# 3:    tokenDiceNormalized          0.09               0.9627729 7472382012
+# 4: tokenJaccardNormalized          0.05               0.9627729 7601886261
+
+### check results of best metrics in sample_unclear_matching
+
+# calculate Matthews correlation
+sample_unclear_matching <- add_matthews_correlation(sample_unclear_matching)
+
+summary(sample_unclear_matching$MatthewsCorrelationText)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.3112  0.7106  0.7585  0.7402  0.7978  0.8907
+
+summary(sample_unclear_matching$MatthewsCorrelationCode)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.5545  0.7349  0.7795  0.7628  0.8042  0.8671 
+
+
+###############################################################################################
+
+
+### third run with combined metrics ###
+
