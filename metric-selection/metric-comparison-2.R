@@ -10,36 +10,10 @@ setwd(dir)
 
 source("functions.R")
 
-library(data.table)
+ITERATION <- 2
 
-
-# read results of first run with all metrics
-
-# samples randomly drawn from all SO posts
-sample_100_1 <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2 <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random <- merge_samples_combined(sample_100_1, sample_100_2)
-rm(sample_100_1, sample_100_2)
-
-# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
-sample_100_1_99 <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2_99 <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random_99 <- merge_samples_combined(sample_100_1_99, sample_100_2_99)
-rm(sample_100_1_99, sample_100_2_99)
-
-# samples randomly drawn from all Java SO posts (tagged with <java> or <android>) with at least two versions
-sample_java_100_1 <- fread("all-new/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_100_2 <- fread("all-new/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_random <- merge_samples_combined(sample_java_100_1, sample_java_100_2)
-rm(sample_java_100_1, sample_java_100_2)
-
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
-sample_unclear_matching <- fread("all-new/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_unclear_matching <- filter_columns_combined(sample_unclear_matching)
-
-# sample with multiple possible connections (to test matching strategy)
-sample_multiple_possible_links <- fread("all-new/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possible_links)
+# read results of metric evaluation run
+read_metrics_evaluation_per_sample(ITERATION, "all")
 
 
 #### calculate Matthews correlation and select candidates using 95% quantile for text and code
@@ -415,43 +389,11 @@ candidates_backup
 
 ### second run with selected metrics ###
 
-# samples randomly drawn from all SO posts
-sample_100_1 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random <- merge_samples_combined(sample_100_1, sample_100_2)
-rm(sample_100_1, sample_100_2)
-
-# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
-sample_100_1_99 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2_99 <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random_99 <- merge_samples_combined(sample_100_1_99, sample_100_2_99)
-rm(sample_100_1_99, sample_100_2_99)
-
-# samples randomly drawn from selected Java SO posts (tagged with <java> or <android>) with at least two versions
-sample_java_100_1 <- fread("selected-new/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_100_2 <- fread("selected-new/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_random <- merge_samples_combined(sample_java_100_1, sample_java_100_2)
-rm(sample_java_100_1, sample_java_100_2)
-
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
-sample_unclear_matching <- fread("selected-new/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_unclear_matching <- filter_columns_combined(sample_unclear_matching)
-
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
-sample_multiple_possible_links <- fread("selected-new/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possible_links)
-
+read_metrics_evaluation_per_sample(ITERATION, "selected")
+merge_and_matthews_correlation()
 
 # DECISION: Select metrics that are in 95% quantile of sample_random, sample_java_random, and sample_random_99 for text/code
 
-# merge relevant samples
-sample_candidates <- merge_samples_combined(sample_random, sample_java_random)
-sample_candidates <- merge_samples_combined(sample_candidates, sample_random_99)
-# calculate Matthews correlation
-sample_candidates <- add_matthews_correlation(sample_candidates)
-sample_random <- add_matthews_correlation(sample_random)
-sample_java_random <- add_matthews_correlation(sample_java_random)
-sample_random_99 <- add_matthews_correlation(sample_random_99)
 
 ## text
 
@@ -705,40 +647,8 @@ summary(sample_unclear_matching$MatthewsCorrelationCode)
 
 ### third run with combined metrics ###
 
-# samples randomly drawn from all SO posts
-sample_100_1 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random <- merge_samples_combined(sample_100_1, sample_100_2)
-rm(sample_100_1, sample_100_2)
-
-# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
-sample_100_1_99 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2_99 <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random_99 <- merge_samples_combined(sample_100_1_99, sample_100_2_99)
-rm(sample_100_1_99, sample_100_2_99)
-
-# samples randomly drawn from selected Java SO posts (tagged with <java> or <android>) with at least two versions
-sample_java_100_1 <- fread("combined-new/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_100_2 <- fread("combined-new/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_random <- merge_samples_combined(sample_java_100_1, sample_java_100_2)
-rm(sample_java_100_1, sample_java_100_2)
-
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
-sample_unclear_matching <- fread("combined-new/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_unclear_matching <- filter_columns_combined(sample_unclear_matching)
-
-# sample in which we moved posts with unclear matching according to the comments added in the GT App
-sample_multiple_possible_links <- fread("combined-new/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_multiple_possible_links <- filter_columns_combined(sample_multiple_possible_links)
-
-# merge relevant samples
-sample_candidates <- merge_samples_combined(sample_random, sample_java_random)
-sample_candidates <- merge_samples_combined(sample_candidates, sample_random_99)
-# calculate Matthews correlation
-sample_candidates <- add_matthews_correlation(sample_candidates)
-sample_random <- add_matthews_correlation(sample_random)
-sample_java_random <- add_matthews_correlation(sample_java_random)
-sample_random_99 <- add_matthews_correlation(sample_random_99)
+read_metrics_evaluation_per_sample(ITERATION, "combined")
+merge_and_matthews_correlation()
 
 # order candidates
 ## text

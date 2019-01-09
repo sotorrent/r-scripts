@@ -14,61 +14,44 @@ source("../colors.R")
 # load functions
 source("functions.R")
 
+library(data.table)
+library(plotrix)
+
+ITERATION <- 2
 
 ### read results from second run with selected metrics ###
 
-library(data.table)
+read_metrics_evaluation_per_sample(ITERATION, "selected")
+merge_and_matthews_correlation()
 
-# samples randomly drawn from all SO posts
-sample_100_1 <- fread("selected/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2 <- fread("selected/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random <- merge_samples(sample_100_1, sample_100_2)
-rm(sample_100_1, sample_100_2)
-
-# samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
-sample_100_1_99 <- fread("selected/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_100_2_99 <- fread("selected/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_random_99 <- merge_samples(sample_100_1_99, sample_100_2_99)
-rm(sample_100_1_99, sample_100_2_99)
-
-# samples randomly drawn from selected Java SO posts (tagged with <java> or <android>) with at least two versions
-sample_java_100_1 <- fread("selected/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_100_2 <- fread("selected/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv", header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
-sample_java_random <- merge_samples(sample_java_100_1, sample_java_100_2)
-rm(sample_java_100_1, sample_java_100_2)
-
-# merge relevant samples
-sample_candidates <- merge_samples(sample_random, sample_java_random)
-sample_candidates <- merge_samples(sample_candidates, sample_random_99)
-# calculate Matthews correlation
-sample_candidates <- add_matthews_correlation(sample_candidates)
 # calculate recall and inverse recall
 sample_candidates <- add_recall(sample_candidates)
+
 
 ### TEXT ###
 
 # best metric
 
-# see metric-comparison.R
-# metric: "manhattanFourGramNormalized"
-# threshold: 0.17
-roc_text <- sample_candidates[sample_candidates$Metric == "manhattanFourGramNormalized", c("Threshold", "RecallText", "InverseRecallText")]
+# see metric-comparison-new.R
+# metric: "fiveGramDice"
+# threshold: 0.04
+roc_text <- sample_candidates[sample_candidates$MetricText == "fiveGramDice", c("ThresholdText", "RecallText", "InverseRecallText")]
 roc_text$InverseRecallText <- 1 - roc_text$InverseRecallText
 roc_text <- roc_text[with(roc_text, order(roc_text$Threshold)),]
 names(roc_text) <- c("Threshold", "TPR", "FPR")
-roc_text_selected <- roc_text[roc_text$Threshold==0.17,]
+roc_text_selected <- roc_text[roc_text$Threshold==0.04,]
 roc_text_selected
-# Threshold       TPR       FPR
-# 1:      0.17 0.9863518 0.1421233
+#    Threshold       TPR      FPR
+# 1:      0.04 0.9935691 0.148532
 
 # baseline metric
-roc_text_equal <- sample_candidates[sample_candidates$Metric == "equal", c("Threshold", "RecallText", "InverseRecallText")]
+roc_text_equal <- sample_candidates[sample_candidates$MetricText == "equal", c("ThresholdText", "RecallText", "InverseRecallText")]
 roc_text_equal$InverseRecallText <- 1 - roc_text_equal$InverseRecallText
 roc_text_equal <- roc_text_equal[with(roc_text_equal, order(roc_text_equal$Threshold)),]
 names(roc_text_equal) <- c("Threshold", "TPR", "FPR")
 roc_text_equal[roc_text_equal$Threshold==1.0,]
-# Threshold       TPR FPR
-# 1:         1 0.6371317   0
+#    Threshold       TPR FPR
+# 1:         1 0.6375134   0
 
 # sort for correct painting order
 setorderv(roc_text, c("Threshold"), c(1))
@@ -80,26 +63,26 @@ setorderv(roc_text_equal, c("Threshold"), c(1))
 
 # best metric
 
-# see metric-selection_sebastian.R
-# metric: "winnowingFourGramDiceNormalized"
-# threshold: 0.23
-roc_code <- sample_candidates[sample_candidates$Metric == "winnowingFourGramDiceNormalized", c("Threshold", "RecallCode", "InverseRecallCode")]
+# see metric-comparison-new.R
+# metric: "tokenDiceNormalized"
+# threshold: 0.1
+roc_code <- sample_candidates[sample_candidates$MetricCode == "tokenDiceNormalized", c("ThresholdCode", "RecallCode", "InverseRecallCode")]
 roc_code$InverseRecallCode <- 1 - roc_code$InverseRecallCode
 roc_code <- roc_code[with(roc_code, order(roc_code$Threshold)),]
 names(roc_code) <- c("Threshold", "TPR", "FPR")
-roc_code_selected <- roc_code[roc_code$Threshold==0.23,]
+roc_code_selected <- roc_code[roc_code$Threshold==0.1,]
 roc_code_selected
-# Threshold       TPR        FPR
-# 1:      0.23 0.9900352 0.07142857
+#    Threshold       TPR       FPR
+# 1:       0.1 0.9971123 0.0433145
 
 # baseline metric
-roc_code_equal <- sample_candidates[sample_candidates$Metric == "equal", c("Threshold", "RecallCode", "InverseRecallCode")]
+roc_code_equal <- sample_candidates[sample_candidates$MetricCode == "equal", c("ThresholdCode", "RecallCode", "InverseRecallCode")]
 roc_code_equal$InverseRecallCode <- 1 - roc_code_equal$InverseRecallCode
 roc_code_equal <- roc_code_equal[with(roc_code_equal, order(roc_code_equal$Threshold)),]
 names(roc_code_equal) <- c("Threshold", "TPR", "FPR")
 roc_code_equal[roc_code_equal$Threshold==1.0,]
-# Threshold       TPR FPR
-# 1:         1 0.7687573   0
+#    Threshold       TPR FPR
+# 1:         1 0.7669651   0
 
 # sort for correct painting order
 setorderv(roc_code, c("Threshold"), c(1))
@@ -109,12 +92,11 @@ setorderv(roc_code_equal, c("Threshold"), c(1))
 
 ### PLOT ###
 
-library(plotrix)
 color_scale <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("gray20", "gray70"))
 
 # plot ROC curve (complete)
 
-pdf("figures/roc_complete.pdf", width=14, height=5)
+pdf("figures/roc_complete_new.pdf", width=14, height=5)
 par(
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
@@ -134,7 +116,7 @@ par(
 
 # text
 plot(roc_text$FPR, roc_text$TPR,
-     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
+     main="fiveGramDice (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
      xaxt="n", yaxt="n",
@@ -165,7 +147,7 @@ legend(0.75,0.3,
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
-     main="winnowingFourGramDiceNormalized (Code)", xlab="False positive rate", ylab="True positive rate",
+     main="tokenDiceNormalized (Code)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 1.0), ylim=c(0.0, 1.0),
      xaxt="n", yaxt="n",
@@ -200,7 +182,7 @@ dev.off()
 
 # plot ROC curve (excerpt)
 
-pdf("figures/roc_excerpt.pdf", width=14, height=5)
+pdf("figures/roc_excerpt_new.pdf", width=14, height=5)
 par(
   #bg=NA,
   bg="white",
@@ -222,7 +204,7 @@ par(
 
 # text
 plot(roc_text$FPR, roc_text$TPR,
-     main="manhattanFourGramNormalized (Text)", xlab="False positive rate", ylab="True positive rate",
+     main="fiveGramDice (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
      xaxt="n", yaxt="n",
@@ -252,7 +234,7 @@ legend(0.26,0.75,
 
 # code
 plot(roc_code$FPR, roc_code$TPR,
-     main="winnowingFourGramDiceNormalized (Code)", xlab="False positive rate", ylab="True positive rate",
+     main="tokenDiceNormalized (Code)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
      xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
      xaxt="n", yaxt="n",

@@ -1,3 +1,5 @@
+library(data.table)
+
 merge_samples <- function(sample1, sample2) {
   sample_merged <- merge(sample1, sample2, by=c("MetricType", "Metric", "Threshold"))
   sample_merged$Runtime <- sample_merged$Runtime.x + sample_merged$Runtime.y
@@ -111,4 +113,140 @@ add_recall <- function(df) {
   df$InverseRecallText <- inverse_recall(df$TrueNegativesText, df$FalsePositivesText)
   df$InverseRecallCode <- inverse_recall(df$TrueNegativesCode, df$FalsePositivesCode)
   return(df)
+}
+
+read_metrics_evaluation_per_post <- function(iteration, sample_name) {
+  default_metrics_path <- paste0(sample_name, "-", iteration)
+  
+  # samples randomly drawn from all SO posts
+  sample_100_1 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_1_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_100_2 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_2_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_random <<- rbind(sample_100_1, sample_100_2)
+  sample_random <<- sample_random[,c("PostId", "FalsePositivesText", "FalseNegativesText", "FalsePositivesCode", "FalseNegativesCode")]
+  
+  # samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
+  sample_100_1_99 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_1+_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_100_2_99 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_2+_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_random_99 <<- rbind(sample_100_1_99, sample_100_2_99)
+  sample_random_99 <<- sample_random_99[,c("PostId", "FalsePositivesText", "FalseNegativesText", "FalsePositivesCode", "FalseNegativesCode")]
+  
+  # samples randomly drawn from all Java SO posts (tagged with <java> or <android>) with at least two versions
+  sample_java_100_1 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_java_100_2 <- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_java_random <<- rbind(sample_java_100_1, sample_java_100_2)
+  sample_java_random <<- sample_java_random[,c("PostId", "FalsePositivesText", "FalseNegativesText", "FalsePositivesCode", "FalseNegativesCode")]
+  
+  # sample with multiple possible connections (to test matching strategy)
+  sample_multiple_possible_links <<- fread(paste0(default_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_post.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_multiple_possible_links <<- sample_multiple_possible_links[,c("PostId", "FalsePositivesText", "FalseNegativesText", "FalsePositivesCode", "FalseNegativesCode")]
+}
+
+retrieve_fp_fn <- function(iteration) {
+  fp_fn_path <- paste0("fp+fn", "-", iteration)
+  
+  fp_text <<- rbind(
+    sample_random[sample_random$FalsePositivesText>0,],
+    sample_random_99[sample_random_99$FalsePositivesText>0,],
+    sample_java_random[sample_java_random$FalsePositivesText>0,]
+  )
+  
+  fn_text <<- rbind(
+    sample_random[sample_random$FalseNegativesText>0,],
+    sample_random_99[sample_random_99$FalseNegativesText>0,],
+    sample_java_random[sample_java_random$FalseNegativesText>0,]
+  )
+  
+  fp_code <<- rbind(
+    sample_random[sample_random$FalsePositivesCode>0,],
+    sample_random_99[sample_random_99$FalsePositivesCode>0,],
+    sample_java_random[sample_java_random$FalsePositivesCode>0,]
+  )
+  
+  fn_code <<- rbind(
+    sample_random[sample_random$FalseNegativesCode>0,],
+    sample_random_99[sample_random_99$FalseNegativesCode>0,],
+    sample_java_random[sample_java_random$FalseNegativesCode>0,]
+  )
+  
+  fp_text_posts <<- unique(fp_text$PostId)
+  fn_text_posts <<- unique(fn_text$PostId)
+  fp_code_posts <<- unique(fp_code$PostId)
+  fn_code_posts <<- unique(fn_code$PostId)
+  f_text  <<- unique(fp_text_posts, fn_text_posts)
+  f_code <<- unique(fp_code_posts, fn_code_posts)
+  
+  # write post ids of false postives/negatives to separate CSV files
+  write.table(fp_text_posts, file=paste0(fp_fn_path, "/fp_text.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  write.table(fn_text_posts, file=paste0(fp_fn_path, "/fn_text.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  write.table(fp_code_posts, file=paste0(fp_fn_path, "/fp_code.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  write.table(fn_code_posts, file=paste0(fp_fn_path, "/fn_code.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  
+  write.table(f_text, file=paste0(fp_fn_path, "/f_text.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  write.table(f_code, file=paste0(fp_fn_path, "/f_code.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+}
+
+
+read_metrics_evaluation_per_sample <- function(iteration, sample_name, combined=TRUE) {
+  all_metrics_path <- paste0(sample_name, "-", iteration)
+  
+  # samples randomly drawn from all SO posts
+  sample_100_1 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_1_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_100_2 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_2_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  if (combined) {
+    sample_random <<- merge_samples_combined(sample_100_1, sample_100_2)
+  } else {
+    sample_random <<- merge_samples(sample_100_1, sample_100_2)
+  }
+  
+  # samples randomly drawn from all SO posts with at least seven versions (99% quantile of version count of all posts)
+  sample_100_1_99 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_1+_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_100_2_99 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_2+_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  if (combined) {
+    sample_random_99 <<- merge_samples_combined(sample_100_1_99, sample_100_2_99)
+  } else {
+    sample_random_99 <<- merge_samples(sample_100_1_99, sample_100_2_99)
+  }
+  
+  # samples randomly drawn from all Java SO posts (tagged with <java> or <android>) with at least two versions
+  sample_java_100_1 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_Java_17-06_sample_100_1_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  sample_java_100_2 <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_Java_17-06_sample_100_2_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  if (combined) {
+    sample_java_random <<- merge_samples_combined(sample_java_100_1, sample_java_100_2)
+  } else {
+    sample_java_random <<- merge_samples(sample_java_100_1, sample_java_100_2)
+  }
+  
+  # sample in which we moved posts with unclear matching according to the comments added in the GT App
+  sample_unclear_matching <- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17_06_sample_unclear_matching_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  if (combined) {
+    sample_unclear_matching <<- filter_columns_combined(sample_unclear_matching)
+  } else {
+    sample_unclear_matching <<- filter_columns(sample_unclear_matching)
+  }
+  
+  # sample with multiple possible connections (to test matching strategy)
+  sample_multiple_possible_links <<- fread(paste0(all_metrics_path, "/PostId_VersionCount_SO_17-06_sample_100_multiple_possible_links_per_sample.csv"), header=TRUE, sep=";", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"), stringsAsFactors=FALSE)
+  
+  if (combined) {
+    sample_multiple_possible_links <<- filter_columns_combined(sample_multiple_possible_links)
+  } else {
+    sample_multiple_possible_links <<- filter_columns(sample_multiple_possible_links)
+  }
+}
+
+merge_and_matthews_correlation <- function(combined=TRUE) {
+  # merge relevant samples
+  if (combined) {
+    sample_candidates <<- merge_samples_combined(sample_random, sample_java_random)
+    sample_candidates <<- merge_samples_combined(sample_candidates, sample_random_99)  
+  } else {
+    sample_candidates <<- merge_samples(sample_random, sample_java_random)
+    sample_candidates <<- merge_samples(sample_candidates, sample_random_99)
+  }
+
+  # calculate Matthews correlation
+  sample_candidates <<- add_matthews_correlation(sample_candidates)
+  sample_random <<- add_matthews_correlation(sample_random)
+  sample_java_random <<- add_matthews_correlation(sample_java_random)
+  sample_random_99 <<- add_matthews_correlation(sample_random_99)
 }
