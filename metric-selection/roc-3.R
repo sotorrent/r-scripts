@@ -182,6 +182,9 @@ dev.off()
 
 # plot ROC curve (excerpt)
 
+x_max <- 0.25
+y_min <- 0.65
+
 pdf(paste0("figures/roc_excerpt", "-", ITERATION, ".pdf"), width=14, height=5)
 par(
   #bg=NA,
@@ -201,18 +204,17 @@ par(
 #layout(matrix(c(1,2,3,4,5,5), 3, 2, byrow = TRUE))
 #layout(4, 1)
 
-
 # text
 plot(roc_text$FPR, roc_text$TPR,
      main="fiveGramDice (Text)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
-     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xlim=c(0.0, x_max), ylim=c(y_min, 1.0),
      xaxt="n", yaxt="n",
      col=color_scale
 )
 # axes
-axis(1, at=seq(0, 0.35, by=0.05), labels=seq(0, 0.35, by=0.05))
-axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+axis(1, at=seq(0, x_max, by=0.05), labels=seq(0, x_max, by=0.05))
+axis(2, at=seq(y_min, 1.0, by=0.05), labels=seq(y_min, 1.0, by=0.05), las=2)
 # baseline metric
 segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text_equal$FPR), y1=max(roc_text_equal$TPR),
          lty=1, lwd=1, col="gray70")
@@ -226,7 +228,7 @@ segments(x0=-0.1, y0=roc_text_selected$TPR, x1=roc_text_selected$FPR, y1=roc_tex
          lty=2, lwd=1, gray_darker)
 points(roc_text_selected$FPR, roc_text_selected$TPR, pch=16)
 # legend
-legend(0.26,0.75,
+legend(x_max-0.0625, 0.75,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
@@ -236,13 +238,13 @@ legend(0.26,0.75,
 plot(roc_code$FPR, roc_code$TPR,
      main="tokenDiceNormalized (Code)", xlab="False positive rate", ylab="True positive rate",
      pch=19,
-     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xlim=c(0.0, x_max), ylim=c(y_min, 1.0),
      xaxt="n", yaxt="n",
      col=color_scale
 )
 # axes
-axis(1, at=seq(0, 0.35, by=0.05), labels=seq(0, 0.35, by=0.05))
-axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+axis(1, at=seq(0, x_max, by=0.05), labels=seq(0, x_max, by=0.05))
+axis(2, at=seq(y_min, 1.0, by=0.05), labels=seq(y_min, 1.0, by=0.05), las=2)
 # baseline metric
 segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code_equal$FPR), y1=max(roc_code_equal$TPR),
          lty=1, lwd=1, col="gray70")
@@ -256,11 +258,10 @@ segments(x0=-0.1, y0=roc_code_selected$TPR, x1=roc_code_selected$FPR, y1=roc_cod
          lty=2, lwd=1, gray_darker)
 points(roc_code_selected$FPR, roc_code_selected$TPR, pch=16)
 # legend
-legend(0.26,0.745,
+legend(x_max-0.0625, 0.745,
        c(expression(paste(theta1, " = 0.0")), expression(paste(theta1, " = 1.0"))),
        c("gray20", "gray70"),
        bty="n", border="white")
-
 
 par(mfrow = c(1, 1))
 dev.off() 
@@ -270,6 +271,8 @@ dev.off()
 
 color_scale_red <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("red4", "peachpuff"))
 color_scale_blue <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("royalblue4", "lightskyblue1"))
+x_max <- 0.25
+y_min <- 0.65
 
 pdf(paste0("figures/roc_excerpt_combined", "-", ITERATION, ".pdf"), width=8, height=8)
 par(
@@ -292,7 +295,7 @@ par(
 plot(roc_text$FPR, roc_text$TPR,
      main="Performance of selected metrics", xlab="False positive rate", ylab="True positive rate",
      pch=19,
-     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xlim=c(0.0, x_max), ylim=c(y_min, 1.0),
      xaxt="n", yaxt="n",
      col=color_scale_blue
 )
@@ -300,14 +303,14 @@ plot(roc_text$FPR, roc_text$TPR,
 # code
 points(roc_code$FPR, roc_code$TPR,
      pch=19,
-     xlim=c(0.0, 0.35), ylim=c(0.65, 1.0),
+     xlim=c(0.0, x_max), ylim=c(y_min, 1.0),
      xaxt="n", yaxt="n",
      col=color_scale_red
 )
 
 # axes
-axis(1, at=seq(0, 0.35, by=0.05), labels=seq(0, 0.35, by=0.05))
-axis(2, at=seq(0.65, 1.0, by=0.05), labels=seq(0.65, 1.0, by=0.05), las=2)
+axis(1, at=seq(0, x_max, by=0.05), labels=seq(0, x_max, by=0.05))
+axis(2, at=seq(y_min, 1.0, by=0.05), labels=seq(y_min, 1.0, by=0.05), las=2)
 
 # text
 # baseline metric
@@ -315,7 +318,7 @@ segments(x0=min(roc_text_equal$FPR), y0=min(roc_text_equal$TPR), x1=max(roc_text
          lty=1, lwd=2, col=color_scale_blue)
 points(roc_text_equal$FPR, roc_text_equal$TPR,
        pch=20, col=color_scale_blue)
-text(0.2, 0.795, expression(equal^text), font=4, cex=1, col="royalblue4")
+text(0.14, 0.795, expression(equal^text), font=4, cex=1, col="royalblue4")
 # selected threshold
 segments(x0=roc_text_selected$FPR, y0=0, x1=roc_text_selected$FPR, y1=roc_text_selected$TPR,
          lty=2, lwd=1, gray_darker)
@@ -329,7 +332,7 @@ segments(x0=min(roc_code_equal$FPR), y0=min(roc_code_equal$TPR), x1=max(roc_code
          lty=1, lwd=2, col=color_scale_red)
 points(roc_code_equal$FPR, roc_code_equal$TPR,
        pch=20, col=color_scale_red)
-text(0.1095, 0.845, expression(equal^code), font=4, cex=1, col="red4")
+text(0.0595, 0.845, expression(equal^code), font=4, cex=1, col="red4")
 # selected threshold
 segments(x0=roc_code_selected$FPR, y0=0, x1=roc_code_selected$FPR, y1=roc_code_selected$TPR,
          lty=2, lwd=1, gray_darker)
@@ -338,13 +341,13 @@ segments(x0=-0.1, y0=roc_code_selected$TPR, x1=roc_code_selected$FPR, y1=roc_cod
 points(roc_code_selected$FPR, roc_code_selected$TPR, pch=16)
 
 # legend code
-legend(0.26,0.75,
+legend(x_max-0.0625, 0.75,
        c(expression(paste(theta1^code, " = 0.0")), expression(paste(theta1^code, " = 1.0"))),
        c("red4", "peachpuff"),
        bty="n", border="white")
 
 # legend text
-legend(0.26,0.7,
+legend(x_max-0.0625, 0.7,
        c(expression(paste(theta1^text, " = 0.0")), expression(paste(theta1^text, " = 1.0"))),
        c("royalblue4", "lightskyblue1"),
        bty="n", border="white")
