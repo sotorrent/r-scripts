@@ -17,7 +17,7 @@ source("functions.R")
 library(data.table)
 library(plotrix)
 
-ITERATION <- 2
+ITERATION <- 3
 
 ### read results from second run with selected metrics ###
 
@@ -32,7 +32,7 @@ sample_candidates <- add_recall(sample_candidates)
 
 # best metric
 
-# see metric-comparison-2.R
+# see metric-comparison-3.R
 # metric: "fiveGramDice"
 # threshold: 0.04
 roc_text <- sample_candidates[sample_candidates$MetricText == "fiveGramDice", c("ThresholdText", "RecallText", "InverseRecallText")]
@@ -41,8 +41,8 @@ roc_text <- roc_text[with(roc_text, order(roc_text$Threshold)),]
 names(roc_text) <- c("Threshold", "TPR", "FPR")
 roc_text_selected <- roc_text[roc_text$Threshold==0.04,]
 roc_text_selected
-#    Threshold       TPR      FPR
-# 1:      0.04 0.9935691 0.148532
+#    Threshold       TPR        FPR
+# 1:      0.04 0.9972423 0.01190476
 
 # baseline metric
 roc_text_equal <- sample_candidates[sample_candidates$MetricText == "equal", c("ThresholdText", "RecallText", "InverseRecallText")]
@@ -51,7 +51,7 @@ roc_text_equal <- roc_text_equal[with(roc_text_equal, order(roc_text_equal$Thres
 names(roc_text_equal) <- c("Threshold", "TPR", "FPR")
 roc_text_equal[roc_text_equal$Threshold==1.0,]
 #    Threshold       TPR FPR
-# 1:         1 0.6375134   0
+# 1:         1 0.6285532   0
 
 # sort for correct painting order
 setorderv(roc_text, c("Threshold"), c(1))
@@ -63,7 +63,7 @@ setorderv(roc_text_equal, c("Threshold"), c(1))
 
 # best metric
 
-# see metric-comparison-2.R
+# see metric-comparison-3.R
 # metric: "tokenDiceNormalized"
 # threshold: 0.1
 roc_code <- sample_candidates[sample_candidates$MetricCode == "tokenDiceNormalized", c("ThresholdCode", "RecallCode", "InverseRecallCode")]
@@ -72,8 +72,8 @@ roc_code <- roc_code[with(roc_code, order(roc_code$Threshold)),]
 names(roc_code) <- c("Threshold", "TPR", "FPR")
 roc_code_selected <- roc_code[roc_code$Threshold==0.1,]
 roc_code_selected
-#    Threshold       TPR       FPR
-# 1:       0.1 0.9971123 0.0433145
+#    Threshold       TPR         FPR
+# 1:       0.1 0.9985557 0.001984127
 
 # baseline metric
 roc_code_equal <- sample_candidates[sample_candidates$MetricCode == "equal", c("ThresholdCode", "RecallCode", "InverseRecallCode")]
@@ -82,7 +82,7 @@ roc_code_equal <- roc_code_equal[with(roc_code_equal, order(roc_code_equal$Thres
 names(roc_code_equal) <- c("Threshold", "TPR", "FPR")
 roc_code_equal[roc_code_equal$Threshold==1.0,]
 #    Threshold       TPR FPR
-# 1:         1 0.7669651   0
+# 1:         1 0.7634315   0
 
 # sort for correct painting order
 setorderv(roc_code, c("Threshold"), c(1))

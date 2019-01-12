@@ -32,7 +32,7 @@ sample_candidates <- add_recall(sample_candidates)
 
 # best metric
 
-# see metric-comparison.R
+# see metric-comparison-1.R
 # metric: "manhattanFourGramNormalized"
 # threshold: 0.17
 roc_text <- sample_candidates[sample_candidates$Metric == "manhattanFourGramNormalized", c("Threshold", "RecallText", "InverseRecallText")]
@@ -63,7 +63,7 @@ setorderv(roc_text_equal, c("Threshold"), c(1))
 
 # best metric
 
-# see metric-selection_sebastian.R
+# see metric-comparison-1.R
 # metric: "winnowingFourGramDiceNormalized"
 # threshold: 0.23
 roc_code <- sample_candidates[sample_candidates$Metric == "winnowingFourGramDiceNormalized", c("Threshold", "RecallCode", "InverseRecallCode")]
@@ -96,7 +96,7 @@ color_scale <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("gray20", "gray70"
 
 # plot ROC curve (complete)
 
-pdf("figures/roc_complete.pdf", width=14, height=5)
+pdf(paste0("figures/roc_complete", "-", ITERATION, ".pdf"), width=14, height=5)
 par(
   bg="white",
   #mar = c(3, 1.8, 3, 1.5)+0.1, # subplot margins (bottom, left, top, right)
@@ -182,7 +182,7 @@ dev.off()
 
 # plot ROC curve (excerpt)
 
-pdf("figures/roc_excerpt.pdf", width=14, height=5)
+pdf(paste0("figures/roc_excerpt", "-", ITERATION, ".pdf"), width=14, height=5)
 par(
   #bg=NA,
   bg="white",
@@ -271,7 +271,7 @@ dev.off()
 color_scale_red <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("red4", "peachpuff"))
 color_scale_blue <- color.scale(seq(0.0, 1.0, by=0.01), extremes=c("royalblue4", "lightskyblue1"))
 
-pdf("figures/roc_excerpt_combined.pdf", width=8, height=8)
+pdf(paste0("figures/roc_excerpt_combined", "-", ITERATION, ".pdf"), width=8, height=8)
 par(
   #bg=NA,
   bg="white",

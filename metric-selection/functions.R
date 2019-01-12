@@ -2,7 +2,7 @@ library(data.table)
 
 merge_samples <- function(sample1, sample2) {
   sample_merged <- merge(sample1, sample2, by=c("MetricType", "Metric", "Threshold"))
-  sample_merged$Runtime <- sample_merged$Runtime.x + sample_merged$Runtime.y
+  sample_merged$Runtime <- as.numeric(sample_merged$Runtime.x) + as.numeric(sample_merged$Runtime.y)
   sample_merged$PostCount <- sample_merged$PostCount.x + sample_merged$PostCount.y
   sample_merged$PostVersionCount <- sample_merged$PostVersionCount.x + sample_merged$PostVersionCount.y
   sample_merged$PostBlockVersionCount <- sample_merged$PostBlockVersionCount.x + sample_merged$PostBlockVersionCount.y
@@ -29,7 +29,7 @@ merge_samples <- function(sample1, sample2) {
 
 merge_samples_combined <- function(sample1, sample2) {
   sample_merged <- merge(sample1, sample2, by=c("MetricTypeText", "MetricText", "ThresholdText", "MetricTypeTextBackup", "MetricTextBackup", "ThresholdTextBackup", "MetricTypeCode", "MetricCode", "ThresholdCode", "MetricTypeCodeBackup", "MetricCodeBackup", "ThresholdCodeBackup"))
-  sample_merged$Runtime <- sample_merged$Runtime.x + sample_merged$Runtime.y
+  sample_merged$Runtime <- as.numeric(sample_merged$Runtime.x) + as.numeric(sample_merged$Runtime.y)
   sample_merged$PostCount <- sample_merged$PostCount.x + sample_merged$PostCount.y
   sample_merged$PostVersionCount <- sample_merged$PostVersionCount.x + sample_merged$PostVersionCount.y
   sample_merged$PostBlockVersionCount <- sample_merged$PostBlockVersionCount.x + sample_merged$PostBlockVersionCount.y
