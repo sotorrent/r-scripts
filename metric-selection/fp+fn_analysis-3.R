@@ -18,7 +18,7 @@ read_metrics_evaluation_per_post(ITERATION, "default")
 retrieve_fp_fn(ITERATION)
 
 length(fp_text_posts)
-# 5
+# 4
 
 length(fn_text_posts)
 # 6
@@ -30,7 +30,7 @@ length(fn_code_posts)
 # 4
 
 length(f_text)
-# 5
+# 7
 
 length(f_code)
-# 1
+# 4

@@ -172,8 +172,8 @@ retrieve_fp_fn <- function(iteration) {
   fn_text_posts <<- unique(fn_text$PostId)
   fp_code_posts <<- unique(fp_code$PostId)
   fn_code_posts <<- unique(fn_code$PostId)
-  f_text  <<- unique(fp_text_posts, fn_text_posts)
-  f_code <<- unique(fp_code_posts, fn_code_posts)
+  f_text  <<- unique(c(fp_text_posts, fn_text_posts))
+  f_code <<- unique(c(fp_code_posts, fn_code_posts))
   
   # write post ids of false postives/negatives to separate CSV files
   write.table(fp_text_posts, file=paste0(fp_fn_path, "/fp_text.csv"), sep=";", col.names=FALSE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
