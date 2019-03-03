@@ -678,6 +678,6 @@ sample_candidates[c(1:10),c("MatthewsCorrelationText", "MatthewsCorrelationCode"
 #  9:                0.983577               0.9932143 9055805232 fiveGramDice          0.04 cosineTokenNormalizedNormalizedTermFrequency                0.15 tokenDiceNormalized           0.1                          tokenDiceNormalized                0.08
 # 10:                0.983577               0.9932143 9056108008 fiveGramDice          0.04 cosineTokenNormalizedNormalizedTermFrequency                0.16 tokenDiceNormalized           0.1 cosineTokenNormalizedNormalizedTermFrequency                0.09
 
-# DECISION: Choose option 1,.
+# DECISION: Choose option 1.
 # REMARK: Backup code metric will never be used, because the regular metric can be applied to all inputs.
 
