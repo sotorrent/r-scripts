@@ -78,6 +78,8 @@ write.table(sample_comments, file="data/EditedThreads_Sample50_Comments.csv", se
 # write sampled edits to CSV file
 write.table(sample_edits, file="data/EditedThreads_Sample50_Edits.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
+################################
+
 # read sample
 sample_50 <- fread("data/EditedThreads_Sample50.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null", "\\N"))
 
@@ -103,3 +105,30 @@ length(unique(edits[edits$PostId %in% edited_threads_sample_20])$PostHistoryId)
 
 length(unique(comments[comments$PostId %in% edited_threads_sample_20])$CommentId)
 # 112
+
+# extend sample
+thread_ids_filtered <- thread_ids[!(thread_ids %in% sample_50$PostId)]
+sample_thread_ids <- c(sample_50$PostId, thread_ids_filtered[sample(length(thread_ids_filtered), 350)])
+length(sample_thread_ids)
+# 400
+sample_df <- threads_edits_comments[threads_edits_comments$PostId %in% sample_thread_ids,]
+length(unique(sample_df$PostId))
+# 400
+
+# randomize order
+sample_df <- sample_df[sample(nrow(sample_df)),]
+
+# get comments
+sample_comments <- comments[comments$PostId %in% sample_df$PostId,]
+
+# get edits
+sample_edits <- edits[edits$PostId %in% sample_df$PostId,]
+
+# write sampled threads to CSV file
+write.table(sample_df, file="data/EditedThreads_Sample400.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+# write sampled comments to CSV file
+write.table(sample_comments, file="data/EditedThreads_Sample400_Comments.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+# write sampled edits to CSV file
+write.table(sample_edits, file="data/EditedThreads_Sample400_Edits.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
