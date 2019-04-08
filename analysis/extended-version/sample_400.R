@@ -20,8 +20,9 @@ length(unique(sample_400$PostId))
 # 399 (one post deleted in the meantime)
 
 for (i in 1:nrow(sample_400)) {
-  sample_400[i]$TextBlockContent <- str_replace_all(sample_400[i]$TextBlockContent, "&#xD;&#xA;", "\n")
+  sample_400[i]$TextBlockContent <- str_replace_all(sample_400[i]$TextBlockContent, "&#xD;&#xA;", "\n") # replace escaped newlines
   sample_400[i]$TextBlockContent <- str_replace_all(sample_400[i]$TextBlockContent, "\"\"", "\"") # replace escaped double quotes
+  sample_400[i]$TextBlockContent <- str_replace_all(sample_400[i]$TextBlockContent, "`[^`]+`[:blank:]*", "") # remove inline code
   sample_400[i]$TextBlockContent <- markdown_text(sample_400[i]$TextBlockContent)
 }
 
