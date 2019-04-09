@@ -1,0 +1,2 @@
+This might best be solved with rewrite rules in your web server config (e.g. .htaccess) instead of through Cake routes.
+

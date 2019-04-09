@@ -1,0 +1,3 @@
+Yes, you can.
+The thing you can't change, though, is the Main method name (and signature, to certain extent). Besides, if you have two Main methods in different classes you'll have to tell the compiler which is the entry point to your application.
+

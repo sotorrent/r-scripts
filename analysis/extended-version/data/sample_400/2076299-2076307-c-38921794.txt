@@ -1,0 +1,2 @@
+The browser does not allow this behavior.  Javascript can only close a tab that it opened.
+

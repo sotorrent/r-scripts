@@ -1,0 +1,4 @@
+My question is not about whether an injected instance may be exposed to access by multiple threads or not - I know that, and actually want it. One typical use case is a JAX-RS resource class that's ApplicationScoped and gets some fields injected. Of course this means that many threads will acccess the same instance.
+
+MyClass itself may be perfectly thread-safe (e.g. by having all field accesses guarded by a lock) and could still be published in an unsafe manner (see this). Does CDI do anything about this?
+

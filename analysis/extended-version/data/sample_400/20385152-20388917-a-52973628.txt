@@ -1,0 +1,3 @@
+Yep, I'll build a new release of Splat tomorrow'ish, but building from source will also solve this.
+Edit: Splat 1.0 is live and contains the fix for this bug
+

@@ -1,0 +1,2 @@
+The only way with a regex is to duplicate you pattern and capture the whole pattern into groups. Here is my suggestion.
+

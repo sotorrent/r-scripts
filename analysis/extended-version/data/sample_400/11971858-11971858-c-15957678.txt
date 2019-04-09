@@ -1,0 +1,2 @@
+How about using SQLite database? Much better than loading the entire 1000 entries into the RAM!
+

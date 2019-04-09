@@ -1,0 +1,2 @@
+You want to hit books index action in ajax?
+

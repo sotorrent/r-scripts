@@ -1,0 +1,7 @@
+i tried that quary:
+name[i] is the table name
+dt.Columns[j].ColumnName is the column name
+but it working for every column and not only the specific the identiy one
+maybe someone know how i can in that quary:
+add into the select the column name???
+

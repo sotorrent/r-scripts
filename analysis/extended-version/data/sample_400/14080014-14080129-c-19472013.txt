@@ -1,0 +1,2 @@
+For the given examples, it will gives three combinations i.e , and . Ideally there are 27 possible combinations.
+

@@ -1,0 +1,5 @@
+We've run into a resource management problem that we've been struggling with for several weeks now and while we finally have a solution, it still seems weird to me.
+We have a significant amount of interop code we've developed against a legacy system, which exposes a C API.  One of the many peculiarities of this system is that (for reasons unknown), the "environment", which appears to be process-scoped must be initialized prior to the API being consumed.  However, it can only be initialized once and must be "shutdown" once you're finished with it.
+We were originally using a singleton pattern to accomplish this but as we're consuming this system inside an IIS hosted web service, our AppDomain will occasionally be recycled, leading to "orphaned" environments that leak memory.  Since finalization and (apparently) even IIS-recycling is non-deterministic and hard to detect in all cases, we've switched to a disposal+ref counting pattern that seems to work well.  However, doing reference counting manually feels weird and I'm sure there's a better approach.
+Any thoughts on managing a static global disposable resource in an environment like this?
+

@@ -1,0 +1,2 @@
+Look at the actual HTTP request and the header that the template is being served with.
+

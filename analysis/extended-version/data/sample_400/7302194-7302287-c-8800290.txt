@@ -1,0 +1,2 @@
+thank you to take time explain both Javascript and functions for me. It is good that I know more than one way to make it working by now, but I will keep my update as it is. Personally I would say anonymous function implementation is slightly better for my case.
+

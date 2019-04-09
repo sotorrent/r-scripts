@@ -1,0 +1,2 @@
+IDs are layout-wide unique. My advice would be to give each include an id like view1, view2... then use a for statement to set the text of the child TextView
+

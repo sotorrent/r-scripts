@@ -1,0 +1,5 @@
+I reported this as a bug in github The author of the plugin Leonardo Santos at came up with a smart hacky way to solve the problem.
+He gave me this code
+The code can also be found in this fiddle
+I hope this code help someone :)
+

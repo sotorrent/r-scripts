@@ -1,0 +1,2 @@
+I added a 3rd code block with how I would personally handle that query. It might show your data now.
+

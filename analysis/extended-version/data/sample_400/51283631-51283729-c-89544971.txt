@@ -1,0 +1,2 @@
+I already have the name of the image i want to use stored in a variable, i want to be able to use a construction like to show an image depending on the name stored in the variable
+

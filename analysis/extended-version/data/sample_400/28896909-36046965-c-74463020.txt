@@ -1,0 +1,2 @@
+If you are using CMake, this post shows you how you can use CMake's [](to find all files and pass them to .
+

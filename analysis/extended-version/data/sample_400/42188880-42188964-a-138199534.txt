@@ -1,0 +1,4 @@
+You can nest loops. The best solution here is to use two nested loops:
+As you can see, it stops at , exactly like you wanted :)
+You can find more about different types of loops and iteration on MDN.
+

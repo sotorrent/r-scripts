@@ -1,0 +1,3 @@
+What about:
+in the project folder. The -i option makes it inplace (by default formatted output is written to stdout).
+

@@ -1,0 +1,4 @@
+You are passing the animate method a big string for your top value.
+It doesn't know how to handle it.
+You need to calculate the top value first and then pass it to the animate method.
+

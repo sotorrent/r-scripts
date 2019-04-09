@@ -1,0 +1,2 @@
+I downvoted you because you didn't provide any explanation for your changes. See how nice it is to get explanations for certain actions? You are also  potentially changing the behavior of the code: The function will now be executed by the browser when the script was loaded, it's not passed to and executed by anymore.
+

@@ -1,0 +1,2 @@
+EDIT: Actually, your "player" table is already kind of like the event table i'm thinking of anyway (except there's no column in the sample data for recording what team they're on). So I'd just query against that or perhaps create a view/stored procedure to do that if I needed to.
+

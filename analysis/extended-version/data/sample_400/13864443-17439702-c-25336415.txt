@@ -1,0 +1,4 @@
+While it seems that Guice allows to use field injection on final fields, the CDI spec specifically excludes that: "An injected field is a non-static, non-final field of a bean class ..." (3.8).
+
+Also, the CDI spec doesn't seem to say anything about whether injection is done in a single thread or not.
+

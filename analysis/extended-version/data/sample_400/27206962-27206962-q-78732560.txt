@@ -1,0 +1,4 @@
+I would like to use the divide blendMode in PIXI.js. How to do it?
+I've tried all the other blendModes availables but none were good enough for the effect I'm trying to make.
+Using the phaser based on pixi.js:
+

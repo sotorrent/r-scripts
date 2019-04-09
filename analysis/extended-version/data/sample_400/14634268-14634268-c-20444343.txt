@@ -1,0 +1,2 @@
+@crush I added screenshot to my post with this array, I find it very convenient to test strings in such way.
+

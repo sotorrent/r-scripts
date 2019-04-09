@@ -1,0 +1,2 @@
+@MarkAnthony Instead of thinking about how to get a background image inside of the triangle make your background image hang lower than you need it to and put two black triangles on the top of the row bellow the image. That way it provides the illusion that your background is hanging below, when in reality you are just hiding most of it.
+

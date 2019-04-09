@@ -1,0 +1,2 @@
+I didn't put the field in for that one yet, the top portion which is the div CaseStudyPic-left the one I put in the fields for. Currently nothing is showing in that one
+

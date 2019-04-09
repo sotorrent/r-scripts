@@ -1,0 +1,2 @@
+On a side note, an ajax call should not update the "view-source" feature of most browsers.  Ajax calls typically modify the DOM only.
+

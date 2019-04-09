@@ -1,0 +1,2 @@
+Chrome console log message: Scripts may close only the windows that were opened by it.
+

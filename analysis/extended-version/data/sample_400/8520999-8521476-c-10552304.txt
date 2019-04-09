@@ -1,0 +1,2 @@
+In fact, now that I look at it, it doesn't accept anything EXCEPT for $id. Even when I set $trythis=16; and then put $trythis instead of $in, it won't work.
+

@@ -1,0 +1,21 @@
+if(stdin.hasNextDouble())
+		{
+			
+			double number = stdin.nextDouble();
+
+			if(number !=0)
+			{
+
+			
+			System.out.println("The Reciprocal is "+ 1/number);
+		
+
+		}
+		
+		
+		else
+		{
+			System.out.println(" The input you entered is invalid, please try again.");
+			
+		}}}}
+

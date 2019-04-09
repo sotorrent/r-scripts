@@ -1,0 +1,2 @@
+this may be to associate corresponding list that does not works and remove qqFileId and it shows renamed filename. In firebug looks for qqFileId could not found so I deleted that code but it modify all li list when uploading new file. Would you please tell me what might be problem.
+

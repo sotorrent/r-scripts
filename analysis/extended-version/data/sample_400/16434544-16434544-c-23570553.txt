@@ -1,0 +1,2 @@
+You can't use a unix timestamp because it contains the seconds. Try using DATE('date')='2013-05-08' in the WHERE clause.
+

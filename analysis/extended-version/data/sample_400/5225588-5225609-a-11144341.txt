@@ -1,0 +1,2 @@
+Use a pure virtual destructor, since all classes have one.
+

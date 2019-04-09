@@ -1,0 +1,2 @@
+Please use actual paragraphs when describing your issue. It makes it much clearer to read and understand. This is not the first time I've seen you use unnecessary bullet points.
+

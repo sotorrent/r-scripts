@@ -1,0 +1,9 @@
+I am currently trying to work with ajax and I this is the error I am getting.
+
+ActiveRecord::RecordNotFound at /books/index. Couldn't find Book with 'id'=index
+My Intention is that I want the cards of the Books to sort by themselves when I click on the Select and change the value without reloading. Therefore, I use js and ajax but currently I am still in the process.
+Book Index.html.erb
+This is my BooksController.rb
+I really don't get why this error is appearing since I declared that this method should only work on [:show], etc... and not on [:index]. The error says that it's because of that that line here inside of my BooksController.
+And lastly my routes.rb
+

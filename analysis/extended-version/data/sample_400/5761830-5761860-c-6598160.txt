@@ -1,0 +1,2 @@
+My Div's have IDs of tracker_0, tracker_1 etc. Can you explain how I can set this up to do an "each" on each one of these. How can I do the select: "#divWrapper div". Thanks for your help so far.
+

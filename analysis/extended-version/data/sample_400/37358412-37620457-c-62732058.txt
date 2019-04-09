@@ -1,0 +1,2 @@
+Thanks! More info: the thread doesn't have a runloop - the nsstream in question is using the main thread's runloop. I found the error in more detail: CFHash is getting called with NULL by CFReadStreamRead. Am i not allowed to read an nsstream by multiple threads even if the nsstream is declared atomic?
+

@@ -1,0 +1,2 @@
+@Blam The event fires, it is essentialy the same as using , but that way you'd have to handle the event in the code behind the view, attaching the event to Caliburn's Micro attached property enables you to handle this in the view model. Still, even if you use the and do everything in code-behind, it's still the same - event goes through, Details row opens.
+

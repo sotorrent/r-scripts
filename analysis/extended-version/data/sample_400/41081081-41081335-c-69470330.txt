@@ -1,0 +1,2 @@
+What forms are you currently using? Think of how you want it laid out for user accessibility. Would a Tab control be helpful? Do you actually need as many forms as you are using or is a popup dialog enough for questions? If you want to compress your files you currently have and post a link, I'll take a look at them for you.
+

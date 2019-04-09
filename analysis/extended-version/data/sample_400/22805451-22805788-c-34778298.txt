@@ -1,0 +1,2 @@
+you can use statement anywhere in the function to return. The returning value is specified by in the above function (part). So if you return the function without setting value, it will give you an error.
+

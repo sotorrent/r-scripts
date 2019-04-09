@@ -1,0 +1,2 @@
+You can annotated a constructor with and it will inject al of the args into the constructor, then you can proceed as you normally do. Of course any qualifiers will need to be on the constructor args.
+

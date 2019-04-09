@@ -1,0 +1,5 @@
+You should do both: toggle the model as well as call the function inside without the need of passing the model as a parameter. Also you dont need to bind the model to the s:
+
+(I guess those and in your HTML need to be like and )
+JS:
+

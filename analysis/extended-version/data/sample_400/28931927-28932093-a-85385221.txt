@@ -1,0 +1,5 @@
+Your "row" and "box" classes are reversed in this section of your code:
+And the padding appearing below your home page footer (which is not applied on your sub pages) is coming from a rule in your 'bootstrap-lightbox.css' file:
+UPDATE: Padding Issue Fix When Modal Window Opens
+The easiest way to fix this issue is to override the inline styles I mentioned in the comments below. Add the following style rule to your 'business-casual.css' file:
+

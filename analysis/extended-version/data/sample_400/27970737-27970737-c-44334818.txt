@@ -1,0 +1,2 @@
+@FISOCPP: It was always possible to modify a temporary through an rvalue expression (though I concede there were one or two very minor restrictions). That is not new in C++11. It's just that, in your example, you'd have had to fiddle with or invoke a member function to do it, because, you could only have bound the temporary to a ref in the first place. However, if you consider a simple example like then it becomes clearer.
+

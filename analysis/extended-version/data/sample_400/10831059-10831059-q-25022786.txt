@@ -1,0 +1,5 @@
+Been doing some research on finding a solution to my problem with little luck!
+Is there a SQL keyword which allows me to easily remove duplicate rows from a table (SQL Server CE compatible)?
+If not could any of you guys possibly know any resources which can help?
+Thanks in advance.
+

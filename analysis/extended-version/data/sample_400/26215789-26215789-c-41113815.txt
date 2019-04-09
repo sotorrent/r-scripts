@@ -1,0 +1,2 @@
+I need the program to print out that the input you entered is invalid, please try again. I can get either the !=0 line to work or the hasNextDouble to work, but I can't get both of them to work
+

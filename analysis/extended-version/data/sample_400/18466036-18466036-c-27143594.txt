@@ -1,0 +1,6 @@
+I try to add some details to give additional infos:
+
+- there aren't duplicated ids;
+- it doesn't matter from which page I come from, the problem in mainpage it's there;
+- The HTML page is validated correctly from the W3C tool, Javascript is valid too and there aren't errors in the console
+

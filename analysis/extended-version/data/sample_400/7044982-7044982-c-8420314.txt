@@ -1,0 +1,2 @@
+The first problem I see with your approach is that it will fail if the search string is a single word. BTW, how do you plan to get it without relying ?
+

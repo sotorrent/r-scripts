@@ -1,0 +1,2 @@
+It really depends on how are you using eclipse. Is your project a dynamic web project? Is your project a maven project? ...? James instructions are right, but it is impossible for us to know how are you project managed.
+

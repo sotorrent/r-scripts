@@ -1,0 +1,2 @@
+Could you please post your shader code, or at least the definition of all used uniforms. And you're right isofar, that you need to divide the 1024 by 4 not multiply. The wiki entry is worded badly.
+

@@ -1,0 +1,2 @@
+Try this: By using the binding you can store the variable to check if the sceen is maximized
+

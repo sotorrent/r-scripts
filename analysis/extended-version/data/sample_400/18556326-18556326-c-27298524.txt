@@ -1,0 +1,2 @@
+You could easily debug and see your error by using the browser's JavaScript/Error Console which says: "Uncaught TypeError: undefined is not a function".
+

@@ -1,0 +1,2 @@
+How about using AOP to hide the session management from the API, thus making it appear stateless? You could intercept all public API calls to ensure the environment is initialised before proceeding with the call.  Again, bind the lifetime of the process to that of the client AppDomain. I'm grabbing at straws here, but that is my two pence worth.
+

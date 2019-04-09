@@ -1,0 +1,2 @@
+Thanks, can you please expand on what you mean by wiring my checkboxes to the is selected property? Is this in the view model? Because I need to create a checkbox for each location, and I don't know what locations will be retrieved
+

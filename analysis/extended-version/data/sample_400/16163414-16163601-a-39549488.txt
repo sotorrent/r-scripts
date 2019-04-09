@@ -1,0 +1,3 @@
+Your function increment is in the loop, but does not really do anything for UI.
+I believe it should looks like:
+

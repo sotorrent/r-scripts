@@ -1,0 +1,2 @@
+@lori: I have updated the answer to show how you don't really need to write a handcrafted trait class to detect this, and a generic approach will be both more concise and flexible.
+

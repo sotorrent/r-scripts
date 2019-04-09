@@ -1,0 +1,7 @@
+You can use scheduled task (control panel-administrative tools) and start a .cmd/.bat file where you use sqlcmd to execute SP's or run scripts.
+is a command line tool. will show you what you can do with it.
+enter image description here
+Here is how you can use to execute a SP called StoredProcName in database YourDatabase on server instance ComputerName\sqlexpress.
+Read more about Using the sqlcmd Utility here
+Read about the Task Scheduler here
+

@@ -1,0 +1,11 @@
+You can create a JSP page that accepts an XML parameter in GET format, and do operation on that data.
+Example:
+You create a page like this, which will accept XML formatted data:
+Suppose you have the following XML data:
+Now you just do this in your Android code:
+That's all...!
+Now you've called your JSP page with the XML data as the GET parameter. In your JSP, you need to retrieve the XML data, and parse it, and perform the operation!
+Just like: (I am trying some JSP!)
+Tip:
+For added security, you can include a spot-generated session-key to the URL like this:
+

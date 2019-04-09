@@ -1,0 +1,2 @@
+I got a 'Users' table on my database ( I use devise). A user has some attributes and public_key is on of them (and is just a string). I produce a public key inside a script on new.html.erb and I want to save it on database for each user. What is the proper way to do this?
+

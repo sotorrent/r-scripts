@@ -1,0 +1,2 @@
+Never mind, I figured it out. I wasn't using a property of a control correctly. So, it was giving the illusion that the markup wasn't changing.
+

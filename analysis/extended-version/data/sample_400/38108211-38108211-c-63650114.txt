@@ -1,0 +1,2 @@
+Little Bobby says your script is at risk for SQL Injection Attacks. Learn about prepared statements for MySQLi. Even escaping the string is not safe!
+

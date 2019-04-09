@@ -1,0 +1,2 @@
+how can i check is any cathegory exists and if exsist return it ID else create it?
+

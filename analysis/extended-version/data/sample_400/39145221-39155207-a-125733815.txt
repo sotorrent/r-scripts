@@ -1,0 +1,4 @@
+Ok, so if you use JavaScript or Jquery?
+First Created the select:
+Try .change for assing a new location:
+

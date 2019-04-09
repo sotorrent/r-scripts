@@ -1,0 +1,4 @@
+I agree with having a break in a final default case, and don't agree with breaks after returns.  (A colleague does those and it hurts my eyes.)
+I also indent switches so as to reduce proliferation of indent levels. :)  i.e.:
+(I also think that, since the return statement is not a function, it isn't appropriate to enforce a superfluous style that makes it look like one.)
+

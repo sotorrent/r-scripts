@@ -1,0 +1,4 @@
+Ok. A number of issues have come up as I have tried to implement your suggestions:
+
+1. The xsd validator my editor uses is only compatible with xsd version 1.0. Nonetheless, I've attempted to acheive my goal with 1.0 based off your example above. In doing so, I've encountered the following issues/questions:
+

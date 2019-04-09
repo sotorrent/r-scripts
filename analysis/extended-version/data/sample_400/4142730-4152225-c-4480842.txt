@@ -1,0 +1,2 @@
+The goal is to make function g that automatically generates function f for arbitrary graph, not making function f by hand
+

@@ -1,0 +1,2 @@
+It works correctly for me: Ubuntu 10.04; MySQL 5.1.41-3ubuntu12.6; PHP 5.3.2-1ubuntu4.2; Apache/2.2.14
+

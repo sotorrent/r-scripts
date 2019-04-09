@@ -1,0 +1,3 @@
+I have the following code, which works great. The only down side is that the user must click on the submit score button in order for the code below to work.
+Is there anyway possible that one could make this an automatic feature? So that when the game is finished the user will automatically be taken to .
+

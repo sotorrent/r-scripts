@@ -1,0 +1,2 @@
+None of the answer tells which file is it to add those configurations, is it project pom or other maven specific xml file?
+

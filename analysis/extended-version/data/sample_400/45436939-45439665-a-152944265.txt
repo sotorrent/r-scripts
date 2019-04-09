@@ -1,0 +1,4 @@
+It looks like you create your own with the class and you also redirect your output to which I guess is created with the UI designer and also an instance of . in then displayed in the top left of your window because you don't provide it with any layout information and just a parent widget.
+To clarifiy, your is derived from which in term is derived from , so your is also an object of type itself.
+If you follow the example provided in your link you don't have to create another , if you want to do that you also have to place it in your UI etc..
+

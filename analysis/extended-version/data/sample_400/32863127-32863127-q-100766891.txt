@@ -1,0 +1,9 @@
+I'm reading this article (about memory leaks which mentions this as a memory leak:
+
+JavaScript interpreter has no idea which variables may be required by
+the inner function, so it keeps everything. In every outer
+LexicalEnvironment. I hope, newer interpreters try to optimize it, but
+not sure about their success.
+The article suggests we need to manually set before we return the inner function.
+Does this hold true today? Or is this article outdated? (If it's outdated, can someone point me to a resource about current pitfalls)
+

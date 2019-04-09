@@ -1,0 +1,2 @@
+Just asking because, for example, the documentation says to reboot if you uninstall Xcode before installing a new one. Unsure if just renaming the old Xcode /Developer directory is possibly causing problems.
+

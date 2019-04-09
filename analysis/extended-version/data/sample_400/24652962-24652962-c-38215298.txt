@@ -1,0 +1,2 @@
+by "add" - do you mean create  tables with no data, or copy the tables, data and all
+

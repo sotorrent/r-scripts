@@ -1,0 +1,9 @@
+I have Class in src/groovy . I want to use my service here . but error occurred "java.lang.NullPointerException: Cannot invoke method serviceMethod() on null object". i try to debug but not able to find . can you please help me that wht my mistake .
+class ListenerSession implements HttpSessionListener  {
+def transactionService
+public ListenerSession() {
+}
+-----}catch (Exception e) {
+println e
+}
+

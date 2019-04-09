@@ -1,0 +1,2 @@
+The main issue is that you are calling initWithMPMediaItem on a UIImage. It is declared as a method in your class (I think, can't really know until you show us the header it is declared in) so it is expecting to be called on self (which I assume is not a UIImage). You need to decide how you want this this method to act - should it be in a UIImage category?
+

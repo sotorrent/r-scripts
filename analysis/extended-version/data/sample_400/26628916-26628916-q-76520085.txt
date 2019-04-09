@@ -1,0 +1,5 @@
+What I'm trying to do is filter the data in the spreadsheet on Column W, then copy all rows from this sheet into another sheet if the value in Column N is equal to today's date.
+Where I'm getting stuck is filtering the data in Column N to today's date in the macro. Below I chose a random data to see how it would look, what I'm trying to do is figure out if there is a way of making this automatically update to the current date without being manually changed. Or if I need to take another approach.
+The dates are formatted to ("ddd, date, mmmyy hh:mm -> Tue 20 Jan15  14:00) I only want it to filter based on the date not the time. I also don't want to change this format as its not a spreadsheet I created, its given to me updated each day.
+I'm fairly new to vba so any help would be appreciated.
+

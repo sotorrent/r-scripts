@@ -1,0 +1,2 @@
+ASCII only goes from 0 to 127. Beyond that is a giant mess. Even within that range is enough of a mess from other encodings like EBCDIC.
+

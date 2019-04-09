@@ -1,0 +1,6 @@
+It is possible through the new portal. First I want to ask you if you're using a Classic VM or a Resource manager VM. If you're using the last one you can easily switch between subnets by changing the configuration settings.
+go to your network interface > Ip configurations and click on the Nic name (see picture below)
+View nic Azure
+A new tab will open and you can change the Subnet of the nic.
+Change Subnet
+

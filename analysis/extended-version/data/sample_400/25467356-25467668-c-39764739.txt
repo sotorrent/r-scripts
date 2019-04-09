@@ -1,0 +1,2 @@
+I think that my Locale problem is caused by VC++ 8, I updated my original post detailing why.  I do believe that using the locale class would have been the easiest solution for my problem.
+

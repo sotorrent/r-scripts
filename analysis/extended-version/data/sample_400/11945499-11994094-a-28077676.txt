@@ -1,0 +1,3 @@
+After thinking this over, a partial answer to my own question is that the first style is probably easier to multithread. Someone using the library can create a function like this:
+Whereas doing that once for every function call in style 2 is way more work.
+

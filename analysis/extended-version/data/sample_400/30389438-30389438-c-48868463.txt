@@ -1,0 +1,5 @@
+The errors are   Error in WHERE clause near '='.
+Error in WHERE clause near 'GROUP'.
+Error in WHERE clause near ','.
+Unable to parse query text.
+

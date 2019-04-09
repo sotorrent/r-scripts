@@ -1,0 +1,2 @@
+The project by default uses mode only. In order to run simulation in open file (from root directory) in a text editor and add to the variable. As a consequence, this line should look like:
+

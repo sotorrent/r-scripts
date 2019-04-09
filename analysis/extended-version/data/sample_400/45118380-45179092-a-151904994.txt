@@ -1,0 +1,4 @@
+Add this to your options: 
+What this will do is that it will show you the configuration interface which will allow you to play around with different visual options on your network and then generate the code by the push of a button once you have it looking visually how you want it. 
+This should allow you to figure out which option will help bring your trees closer together.
+

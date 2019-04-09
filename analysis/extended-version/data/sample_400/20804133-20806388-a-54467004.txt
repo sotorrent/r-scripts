@@ -1,0 +1,4 @@
+Ok, I think I finally figured out what your issue is. Your needs to know about the attached to it to calculate its position. But the , being s, also need to know about the they are attached to so that they can trigger a re-calculation of the limb's position.
+One solution is to keep a back-reference on the to the they're attached to.
+In this example, I create a back-reference called in on both bones - you could also call it to be more generic about it.
+

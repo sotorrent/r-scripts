@@ -1,0 +1,10 @@
+I wrote a function to test if a string consists only of letters, and it works well:
+My next step was to include “Extended ASCII Codes”, I thought it was going to be really easy but that’s where I ran into trouble.  For example:
+I thought that the decimal value for ‘ñ’ was going to be 164 as listed on the ASCII chart at  www.asciitable.com.
+My goal is to restrict user input to only letters in ISO 8859-1 (latin 1). I’ve only worked with single byte characters and would like to avoid multi-byte characters if possible.
+I am guessing that I can compare the unsigned int values above, i.e.: 4294967281, but it does not feel right to me and besides, I don’t know if that large integer is VC 8.0 representation of 'ñ' and changes from compiler to compiler.
+Please advise
+UPDATE - Per some suggestions made by Christophe, I ran the following code:
+It does return Spanish_Spain.1252 but unfortunately, the loop iterations print the same data as the default C locale (using VC++ 8 / VS 2005).
+Christophe shows different (desired) results as you can see in his screen shots below, but he uses a much newer version of VC++.
+

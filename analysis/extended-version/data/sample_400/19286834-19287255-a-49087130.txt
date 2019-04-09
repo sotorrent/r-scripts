@@ -1,0 +1,6 @@
+Try this
+
+Update: Adding attribute to queryset is not easy and referring dicts in templates with key as variable is not possible too.
+So the solution would be add method/property in model to get percentage as
+Then in template you can all this method to get percentage as
+

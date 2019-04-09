@@ -1,0 +1,2 @@
+Ok this works but it breaks my vertical centering method which im using display: table; for, I am trying to find another method to center the text vertically now if you having any suggestions
+

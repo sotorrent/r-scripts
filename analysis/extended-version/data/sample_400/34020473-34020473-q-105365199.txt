@@ -1,0 +1,4 @@
+I want to go from www.site.com/page.php?url=string.html to www.site.com/string.html
+My .htaccess looks like this:
+But it does not do anything.
+

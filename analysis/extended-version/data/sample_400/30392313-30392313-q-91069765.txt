@@ -1,0 +1,23 @@
+Okay, this seems to be getting the better of me.
+I've been reading blog after blog, where guys explain how to get this going, but after countless hours of removing, adding, changing, debugging, pulling-at-hair, copious amounts of coffee and no luck in getting this to work, I'm turning here for some professional insight.
+As the title suggest, I'm trying to get angular to work within an MVC 5 with Razor views, but I'm experiencing some very weird behavior.
+Firstly, angular does not kick in on page load. I have to refresh the landing page at least 5 - 10 times before it kicks in.
+When it eventually works, Chrome goes into overburn, consuming nearly all of the available resources before crashing. Console in developer tools comes up with a message "Warning: Trying to load angular multiple times".
+The error is very descriptive, so I assume that I'm loading the _layout.cshtml page twice, when the client-side routing eventually kicks in, but each Razor view contains the @{ Layout = null } call, as it has been explained on so many blogs.
+I've tried everything I could possibly read up on, and I cannot get passed this issue.
+Following, my code:
+ASP.Net Razor View
+1.) _Layout.cshtml
+I assumed that, because the is used for the index page (Home), it is where the angular instantiate should occur. I've seen blogs where they skip the all together, but to keep it consistent, I want this to be my starting point. I have tried to not use Layout in Home/Index, and call all my scripts in there, but it does the exact same thing, couple of refreshes, and Warning.
+2.) Home/Index.cshtml
+has been commented out, because this causes to not even load my JS files, weird behaviour :/
+3.) Gallery/Index.cshtml
+This is just a page to test the route.
+4.) Web.config
+The rewrite rule is important to ensure that the routing is done appropriately. I am using HTMLMode for angular, so this step is vital.
+5.) app.js
+There really is nothing weird about this, it creates the angular app reference, attaches the routing to the module and form there I configure the routing behavior.
+From what I've read and understand, it makes sense to call the controller/action block as you would do normally in ASP.Net MVC.
+The default routing for MVC I did not touch, as it's irrelevant in this scope.
+I'm at a loss as to why this behavior is occurring and don't know where to start investigating. I've read blogs on the refresh issue and have tried what has been stated, but in this scenario, I just cannot get it to work.
+

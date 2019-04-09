@@ -1,0 +1,2 @@
+Thanks - however, does this imply that "general structure" is all tied together? Or am I thinking about it incorrectly?  Very few of my projects are actually related to each other (in code terms), just the department they are for, although I do have shared "library" type code as well.
+

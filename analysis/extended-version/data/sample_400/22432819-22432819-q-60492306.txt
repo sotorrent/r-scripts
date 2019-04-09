@@ -1,0 +1,9 @@
+I have a simple EntityFramework model that I'm trying to filter by using checkboxes.
+My model contains 2 properties:
+What I'd like to do is to:
+
+1.  Show an index view of all the companies in the database
+2.  Show a list of checkboxes corresponding to each of the distinct locations of the companies
+3.  Allow a user to select one or more of the checkboxes and submit the form to redisplay the index with the filter to locations applied.
+    I'm not sure how best to approach this - I think I need a viewmodel of my Companies and locations, but I'm not sure how to display the list of checkboxes and then filter by them.
+

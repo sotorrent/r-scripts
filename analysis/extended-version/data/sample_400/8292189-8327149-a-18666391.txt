@@ -1,0 +1,4 @@
+EDIT
+Your adapter should look like this:
+And the method in your that set the should be changed to this:
+

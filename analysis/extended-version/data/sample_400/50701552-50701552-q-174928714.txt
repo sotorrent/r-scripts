@@ -1,0 +1,5 @@
+I use this command:
+But it fails on some images (jpegoptim receive SEGFAULT) and crash xargs, and all process fail.
+How to skip fails, and continue task?
+Thank
+

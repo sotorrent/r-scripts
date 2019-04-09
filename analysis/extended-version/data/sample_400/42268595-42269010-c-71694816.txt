@@ -1,0 +1,2 @@
+I can't put break points in Testfairy classes, it's a 3rd party library for crash reporting. I can't seem to reproduce this bug, it only happens for a user with iPhone 5s SDK:9.1. It's didn't even crash on a simulator or other devices.
+

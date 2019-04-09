@@ -1,0 +1,3 @@
+Us the Empty() method in jquery
+See fiddle Jquery Empty Documentation here
+

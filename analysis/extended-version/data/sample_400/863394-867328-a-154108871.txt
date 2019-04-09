@@ -1,0 +1,10 @@
+Via code
+
+You can configure the TraceOutputOptions flags enum.
+This does not work for Write and WriteLine, you have use the TraceXXX methods.
+
+Via app.config
+
+This can also be configured in your App.config with a somewhat equivalent and using TraceSource:
+And in code you can:
+

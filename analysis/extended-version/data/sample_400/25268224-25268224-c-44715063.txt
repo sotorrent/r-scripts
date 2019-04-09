@@ -1,0 +1,2 @@
+I had a similar problem.  When adding the custom function I received the same error.  I was able to start a clean project with the custom function and it worked fine, but after adding an additional controller to the mix I would receive the above error.  Found the solution and an explanation here : Adding a new OData controller fails existing controller
+

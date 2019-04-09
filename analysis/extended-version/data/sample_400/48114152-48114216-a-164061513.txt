@@ -1,0 +1,9 @@
+You go through the UNION ALL Query for fetching data and try it...
+SELECT expression1, expression2, ... expression_n
+FROM tables
+[WHERE conditions]
+UNION
+SELECT expression1, expression2, ... expression_n
+FROM tables
+[WHERE conditions];
+

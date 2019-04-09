@@ -1,0 +1,5 @@
+If you wanted to use image then you need to render that in base 64 first and then use
+use that in src property of  tag.
+for example:
+One thing worth to mention that I have tested the same on iis7 and mvc 4.5 version. Results may differ for mvc 3.
+

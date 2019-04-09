@@ -1,0 +1,2 @@
+You can dublicate with .htaccess
+

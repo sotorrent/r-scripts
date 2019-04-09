@@ -1,0 +1,4 @@
+I have the following button on my site:
+
+I'd first like to move the span circle to be exactly in the center of the main button. I'd then like if I can somehow "merge" the two shapes together in CSS. So basically remove the top half of the circle and the main bar that cuts through the middle of the circle.
+

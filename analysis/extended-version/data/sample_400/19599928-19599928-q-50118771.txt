@@ -1,0 +1,3 @@
+Really simple question here.  After ben is created, is there anyway I can call ben[0] to call name and ben[1] to call age?
+i'm wondering if there is a way to access these attributes as a list.
+

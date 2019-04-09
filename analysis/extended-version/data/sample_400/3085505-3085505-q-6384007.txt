@@ -1,0 +1,22 @@
+These is my django URLconf:
+urlpatterns = patterns('',
+('^hello/$', hello),
+(r'^polls/$', 'mysite.polls.views.index'),
+(r'^polls/(?P<poll_id>\d+)/$', 'mysite.polls.views.detail'),
+(r'^polls/(?P<poll_id>\d+)/results/$', 'mysite.polls.views.results'),
+(r'^polls/(?P<poll_id>\d+)/vote/$', 'mysite.polls.views.vote'),
+(r'^admin/', include(admin.site.urls)),
+)
+I dont understand what the r in this regex does:
+r'^polls/$
+I dont understand what this Regex does:
+(?P<poll_id>\d+)
+And I dont understand why in:
+(r'^admin/', include(admin.site.urls))
+There is no $ sign and it still works.
+AND
+I dont understand what URLconf I have to add, to see a site under
+Thanks for the time!
+Best
+L.
+

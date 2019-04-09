@@ -1,0 +1,2 @@
+Indeed, it gave me : "heure normale de l’Europe centrale / 2012-12-29 16:47:02 +0000", thanks. But how can I convert it to a date ???
+

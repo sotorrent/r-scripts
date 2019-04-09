@@ -1,0 +1,2 @@
+In the code you use to print the users you do have conversations with, couldn't you just use the logic used to just print those users to print all users, but only add an additional image to the set with/without a conversation? It would be useful to see the code where you print those as well.
+

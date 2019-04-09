@@ -1,0 +1,5 @@
+While every view has a method, the interpretation of the value set through it varies by subclass.
+In your case, , , and have logic to respond to this value when it is set. The others don't. In a similar fashion, you're only able to set the attribute on the these because it is defined as an attribute that can be used with TextViews.
+If you'd like to have and respond to the value, you can create custom views which extend each of those, override the method, then implement how you'd like each of these views to react.
+)
+

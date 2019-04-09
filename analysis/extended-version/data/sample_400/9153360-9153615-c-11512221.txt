@@ -1,0 +1,2 @@
+You cannot get the output parameter (from ADO.NET) until you've read the entire rowset AND called .NextResult on the datareader.  I've just re-verified this.
+

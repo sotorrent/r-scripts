@@ -1,0 +1,2 @@
+thanks. that is working now. but clear me how it is returning? like in c++ we write "return" statement. how this is returning???
+

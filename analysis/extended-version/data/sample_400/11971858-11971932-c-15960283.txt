@@ -1,0 +1,2 @@
+oh no i meant the arrays, each string is probably 10 characters long, how would i do it in a separate class? would i just use an intent to send the data back to my main activity?
+

@@ -1,0 +1,2 @@
+This says From all the items in boardarray loop through all of the items inside of that and return faslse if one isn't zero, then we are inversing that false.
+

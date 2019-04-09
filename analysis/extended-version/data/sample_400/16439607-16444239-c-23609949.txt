@@ -1,0 +1,2 @@
+Could you create a project using storyboard, and then disable the storyboard and try the code again? Because I am wondering that it's because of the storyboard is missing, but the code is working, and the  system couldn't get around with that.
+

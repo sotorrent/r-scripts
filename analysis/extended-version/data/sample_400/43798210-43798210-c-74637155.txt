@@ -1,0 +1,2 @@
+One of those questions which could have been avoided if one built the code with all warnings enabled (`` on gcc).
+

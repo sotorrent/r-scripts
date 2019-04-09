@@ -1,0 +1,4 @@
+This is algebra, not programming.  Write the equations with variables for the concepts, rather than specific dollar amounts.  Now solve for the price; substitute one expression for another until the right side consists of the other variables.
+
+If you post your actual equations, I can help walk you through this.
+

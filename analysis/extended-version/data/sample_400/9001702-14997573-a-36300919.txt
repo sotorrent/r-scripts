@@ -1,0 +1,9 @@
+The folder being password protected has nothing to do with PHP!
+The method being used is called "Basic Authentication". There are no cross-browser ways to "logout" from it, except to ask the user to close and then open their browser...
+Here's how you you could do it in PHP instead (fully remove your Apache basic auth in or wherever it is first):
+login.php:
+index.php
+logout.php:
+Obviously this is a very basic implementation. You'd expect the usernames and passwords to be in a database, not as a hardcoded comparison. I'm just trying to give you an idea of how to do the session thing.
+Hope this helps you understand what's going on.
+

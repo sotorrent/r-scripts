@@ -1,0 +1,2 @@
+Great! But as you can see, the initial message (when the page is loaded is not "blah", but "New Title")... And to be more precise, this code is intended to validate a textbox. When the page is loaded, the title should be fe "blah". When the user inserts/or not something in the textbox, the title should change accordingly: is the length < 3? title="New Title"; is the length > 3, title="". Now I can certainly say that i can reach the limit of the Universe, than to resolve this kind of problem.
+

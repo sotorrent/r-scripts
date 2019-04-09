@@ -1,0 +1,5 @@
+Some browsers are more aggressive than others when it comes to caching 'static' resources.
+Typically they use URL patterns to cache.
+If you are including scripts yourself you can append a date parameter to the script resource url kinda like this: where you dynamically generate a new time stamp every time the page loads (either server side or through JS)
+ExtJS automatically adds param to the file resources it loades through loader and any AJAX requests it makes.
+

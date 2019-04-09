@@ -1,0 +1,5 @@
+I am new to IOS i need to know how to pass string as parameter in nsurlconnection POST method,i passed string but it become empty
+viewdidload:
+post method:
+In post method i passed the string as parameter
+

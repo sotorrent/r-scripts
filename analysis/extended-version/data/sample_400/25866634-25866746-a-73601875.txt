@@ -1,0 +1,3 @@
+How about
+That will output all tables (in format) and the identity column (if any) for that table.
+

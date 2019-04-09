@@ -1,0 +1,2 @@
+how are you trying to shuffle? The shuffle function does randomize the order of elements in an array.
+

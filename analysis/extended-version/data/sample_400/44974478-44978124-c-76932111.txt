@@ -1,0 +1,2 @@
+The issue isn't server side, datatables is extremely memory intensive client side. I can generate 10,000 records in less than 2 seconds, but it'll take upwards of 30 seconds for the client to attach the datatable elements on it.
+

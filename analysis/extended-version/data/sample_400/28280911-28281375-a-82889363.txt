@@ -1,0 +1,2 @@
+Keep a dictionary from to a generated that invokes your method quickly. The call overhead then is a dictionary lookup which is much less than a Reflection based invocation.
+

@@ -1,0 +1,2 @@
+Your question is quite vague. Are you actually calling the delete() method on the File object? Then, instead, just use the remove method on the Banner object. That should remove the relation and keep the File object.
+

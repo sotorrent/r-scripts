@@ -1,0 +1,13 @@
+I am trying to read XML files from a Folder. After I read the files I am extracting an element and write that in a text file.
+The files Name Looks like that
+But when I am reading the files I dont get the right order.
+I am getting the order like this :
+Here is my code:
+private String rgId;
+private NodeList rgIdList;
+ArrayList list = new ArrayList();
+ArrayList counter = new ArrayList();
+String splitFile = null;
+}
+Can anyone help how to sort the files in the right order? Thank you in advance
+

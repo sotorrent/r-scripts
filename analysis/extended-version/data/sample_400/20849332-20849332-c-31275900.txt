@@ -1,0 +1,2 @@
+Aha. It was the order of the channels. Perhaps for an acceptable answer, if I could get something to add to to tell what order to read the channels in. How can I tell whether the context uses RGB or BGR, etc?
+

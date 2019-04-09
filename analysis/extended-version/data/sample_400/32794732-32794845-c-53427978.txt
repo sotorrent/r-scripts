@@ -1,0 +1,3 @@
+I've package com.ebank.rajeev.controllers under src folder. Alogin is the servlet inside the package. 
+How to add this class into jars.? Or what should I do?
+

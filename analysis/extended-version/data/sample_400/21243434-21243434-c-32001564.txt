@@ -1,0 +1,2 @@
+Not really because I have to remove the special chars before of compare the query with $keywords. If I do the comparison after It, %like% return false always.
+

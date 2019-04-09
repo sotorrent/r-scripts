@@ -1,0 +1,2 @@
+@Marius98 NetMage just made my code a one-liner; it's in no way any faster.
+

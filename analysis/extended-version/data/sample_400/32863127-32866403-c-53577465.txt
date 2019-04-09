@@ -1,0 +1,2 @@
+Thanks torazaburo. What worries me is that the last snippet in the article you've provided about the Meteor bug does indeed leak memory in V8.
+

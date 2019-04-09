@@ -1,0 +1,2 @@
+convert bitmap to string generate a string to big, make you sure de field on database be a field type text and allow many characters
+

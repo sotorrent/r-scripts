@@ -1,0 +1,9 @@
+Steps:
+
+1.  Add your file as a resource.
+2.  Add Windows Media Player to your toolbox and then put it on Form.
+3.  Write this code to play your embedded video
+    Code:
+    Screenshot:
+    enter image description here
+

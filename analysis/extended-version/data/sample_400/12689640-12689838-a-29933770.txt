@@ -1,0 +1,3 @@
+Modifying your example SQL so that it works:
+The most important change is that I've added a clause.
+

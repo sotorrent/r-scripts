@@ -1,0 +1,5 @@
+I want to update my partial View with Ajax, but for some reason, it doesn't work. If I use load method (and comment ajax code), it works. this is my code:
+this is my main View:
+this is my question action method int Test controller:
+what mistake do I have?
+

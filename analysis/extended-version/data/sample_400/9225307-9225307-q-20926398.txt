@@ -1,0 +1,4 @@
+I am trying to create a word document from a java application and am using Apache POI stable version 3.7 for the same. When i try to change the font for a paragraph, i am encountering a null pointer exception even if the font family exists. In fact if i call the function with any font family it gives a npe. Heres the code:
+Here is the exception:
+Any idea what wrong am I doing? Also, how reliable is Apache POI to create formatted word documents?
+

@@ -1,0 +1,4 @@
+Your question is more of a rant than a question.
+is only really used in modal view controller presentations, as indicated by being in the "Presenting Modal Views" section of the documentation. The navigation and tab bar controllers each have their own property (and respectively.) for accessing them as parent view controllers, so what's the big deal in adding your own?
+If you want custom behavior, you'll need to add custom code.
+

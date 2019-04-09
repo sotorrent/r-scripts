@@ -1,0 +1,2 @@
+Saying collisions happen misses the point. I don't follow the second sentence of your latest comment. I'd suggest that your answer as it is now is a side note and doesn't address the original question or current problem description. On the otherhand, I appreciate your comment that moving Program out of MyCompany namespace to something like MyCompany.Bootstrap.Program is a worthwhile answer to avoiding this problem.
+

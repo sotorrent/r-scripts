@@ -1,0 +1,2 @@
+Thanks @doowb. I tried the async method. I did a console.log(result.rows) and I get data. But in the UI, all I get is an empty object.
+

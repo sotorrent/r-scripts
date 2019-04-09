@@ -1,0 +1,4 @@
+Any concurrency risks when using an injected instance depend on the effective scope of that instance.
+If is in the default scope, each injection point will get its own instance. The precautions you take with respect to thread safety would be the same as if you called yourself. If you access that instance from multiple threads, you'll need to make sure that is thread-safe or provide some synchronization around it.
+If is in a wider scope such as or , then the same instance (or a proxy to it) could be injected into multiple injection points in the same context. For example, If you have parallel browser requests from the same session accessing and is annotated , you could have multiple threads accessing the same instance in parallel. CDI isn't going to put any synchronization around this for you, so you'd have to make sure that is thread safe.
+

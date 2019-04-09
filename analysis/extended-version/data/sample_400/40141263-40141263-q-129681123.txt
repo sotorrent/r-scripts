@@ -1,0 +1,10 @@
+I need to make 2 database constraints that connect two different tables at one time.
+
+1.  The total score of the two quarters equals the total score of the game the quarters belong to.
+
+2.  The total point of all the players equals to the score of the game of that team.
+
+Here is what my tables look like.
+So Virtually I need to use CHECK I think to make sure that players points = score of their team ie (hScore, aScore) and also make sure that the hScore and aScore = the total score in the Game table.
+Thanks
+

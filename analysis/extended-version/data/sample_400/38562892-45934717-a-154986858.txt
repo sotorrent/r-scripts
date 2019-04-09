@@ -1,0 +1,4 @@
+I get this quite often at work. Our team consists of 2 windows, 3 linux and 1 ios users. Somewhere, someone is pushing files with dodgy permissions which causes the live Linux server to throw a hissy sometimes.
+What I've always found fixes this is simply removing the gc.log file, i.e
+Then on your next pull all the errors will be gone. What I think actually happens is the files do get unlinked in the first place, however the log file isn't updated correctly, so then on the next pull it try's to remove them again even thought they do not exists and throws an error.
+

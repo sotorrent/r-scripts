@@ -1,0 +1,3 @@
+I have two input fields consider A and B. I want to validate that user can input at lease one field that is either A or B field.
+Please guide how can create custom rule validation for this condition.
+

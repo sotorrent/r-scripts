@@ -1,0 +1,6 @@
+You just could make your custom tab buttons and it is quite easy and straightforward:
+Create a normal like xml layout for the tab. For example:
+Then in your tab activity class infalte this layout, like this:
+Afterwards just use it normally in the tab host:
+I hope this helps to better customize your tab.
+

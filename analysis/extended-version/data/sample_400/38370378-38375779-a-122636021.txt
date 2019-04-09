@@ -1,0 +1,4 @@
+All solutions provided so far use either loops or the function which are both inneficient.
+Just use matrix indexation:
+By the way in your example are you discarting the s even if they come in repeated sequences?
+

@@ -1,0 +1,5 @@
+i have this code i found to cut a string into words.
+i cant figure out how the while part works. how does it know to extract words without whitespaces to the buf variable?
+it seems the extraction operator (>>) is used both to progress bits into the buffer, and to return true for the loop - i just cant figure out how it knows to cut the words by whitespaces.
+thanks in advance!
+

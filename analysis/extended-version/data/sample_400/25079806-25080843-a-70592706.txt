@@ -1,0 +1,5 @@
+Look around the interwebs for Jaro pattern distance matching. This should point you in the right direction. I have implemented this in various companies and when done correctly provides exactly what you're looking for and is very fast.
+
+Cheers,
+Rob
+

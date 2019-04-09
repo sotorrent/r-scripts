@@ -1,0 +1,2 @@
+This wouldn't work because DoTrace is static and you don't have access to Trace. You could use HttpContext.Current.Trace.WriteLine(DateTime.Now + ": " + message)
+

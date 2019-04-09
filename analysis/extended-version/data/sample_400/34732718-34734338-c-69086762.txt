@@ -1,0 +1,2 @@
+Then feel free to sign up for the OpenType discussion list and posit that statement, and then you will likely get a pretty well-reasoned response on why that isn't happening (most notably: it fixes something that isn't a problem because font engines can deal with font stacks just fine, while at the same time breaking compatibility for every device on the planet. Not just computers, but also the million or so models of printers currently in use across the world)
+

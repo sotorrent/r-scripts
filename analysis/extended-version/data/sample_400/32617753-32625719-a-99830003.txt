@@ -1,0 +1,5 @@
+A a good way to deal with legacy password hashes described in the official migration guide:
+On that page search for and see how they do the password matching.
+Basically the idea is simple - when you update your system to Identity you copy all the old users and their hashes (and salts) into new Identity table. Then you tell identity to use the above-mentioned to try to match either the old SHA hash or (for already updated users) the new-style hash. And (optionally) you can update the hash for freshly logged in users to the new-style.
+I have done this with a few projects and there was not a single problem.
+

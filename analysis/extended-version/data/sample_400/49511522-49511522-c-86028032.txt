@@ -1,0 +1,2 @@
+Start by checking what the Open Graph debug tool has to say about the URLs you are pointing the comments plugin to.
+

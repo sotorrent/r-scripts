@@ -1,0 +1,2 @@
+having a dynamic versus a static sprite could be done by declaration ... are these derived classes even needed?
+

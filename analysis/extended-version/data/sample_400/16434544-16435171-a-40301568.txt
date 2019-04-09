@@ -1,0 +1,7 @@
+there are many flaws with your code, not one:
+
+  - format of the value you are checking
+  - way you are checking in SQL
+  - the way you are getting result
+    So, the code have to be
+

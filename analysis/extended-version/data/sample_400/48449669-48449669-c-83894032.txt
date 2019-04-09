@@ -1,0 +1,2 @@
+@LordWilmore that's not always true: you sometimes can calculate partial results; but this is a math question, more than a programming question. Marius, I recommend asking yourself the question without thinking of programming it. Instead "How would I do it on paper?"
+

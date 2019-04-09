@@ -1,0 +1,2 @@
+I am pretty new guy to react/redux.I am little bit confused why my action is not triggering when it is inside map function.It is just a simple tagging system..When user clicked on tag this function simply add to an array but it should also want to check wheather any duplicate values are added.
+

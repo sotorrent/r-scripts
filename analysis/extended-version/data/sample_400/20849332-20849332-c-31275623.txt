@@ -1,0 +1,2 @@
+The RGB colors don't match either. Perhaps I have an error in my color querying method. I'll update the question in a minute with more detail and some output.
+

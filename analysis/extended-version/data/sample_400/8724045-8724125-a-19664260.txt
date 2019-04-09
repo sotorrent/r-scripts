@@ -1,0 +1,2 @@
+IMHO, unused imports have no performance impact. It is purely a namespace mechanism. Nonetheless, you should always import only what you need for readability and avoid namespace collisions which are a nuisance.
+

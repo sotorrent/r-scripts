@@ -1,0 +1,2 @@
+I prefer always have a break in each case including the default and avoid doing return at all inside switch's. For short switches with just 2-3 cases(including default) return is ok but only if all cases do it the same way. 'pointless' break i see as pointless and only make's it more code to read. Same goes for empty defaults that just do break, totally pointless. The ease to read the code is in my opinion more important that what happens if someone happens to change this or that.
+

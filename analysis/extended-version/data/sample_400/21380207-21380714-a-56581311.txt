@@ -1,0 +1,2 @@
+You can convert your JSON response in JavaScript array like below :
+

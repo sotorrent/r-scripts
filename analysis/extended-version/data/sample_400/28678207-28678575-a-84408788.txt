@@ -1,0 +1,2 @@
+This should do it. It uses two loops to parse the data. The function is needed to make the shifting of the index of the data-attribute work.
+

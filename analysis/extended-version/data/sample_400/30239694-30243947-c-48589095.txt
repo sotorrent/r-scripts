@@ -1,0 +1,2 @@
+I was just about to post an identical solution. It may be prudent to let the OP know that the update to the field is useless since that is the field the update is being based upon.
+

@@ -1,0 +1,4 @@
+As it's been pointed out, you can't reliably get the keywords without supplying the parameters to look for. Here's what I would do: Basically all this does is parse the url using PHP's [][1] and look for the parameter q. If it's not there, it uses ssearch, and then oq. You can add more of them if you need to. If by the end of it it's not found, $query_str will be NULL.
+
+Unless you have a very compelling reason to do it with MySQL only, just process everything on the PHP side. Databases are made to store data, not process it. What I would do is have PHP figure out the search engine and the keywords used and insert those into the DB, as separate fields. ie, have a table like so:
+

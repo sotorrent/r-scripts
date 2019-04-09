@@ -1,0 +1,14 @@
+I want to create a web application in IIS that does not live at the root of the IIS site.
+i.e. MySite/beta/WebApplication.
+This is my starting point:
+>New-WebApplication "WebApplication" -Site "MySite" -ApplicationPool "MyAppPool" -PhysicalPath "C:\Sites\MySite\beta\WebApplication"
+That creates me the physical structure I want , but makes IIS look like this:
+
+MySite (IIS Web Site)
+
+WebApplication (IIS WebApplication)
+beta (Folder)
+
+WebApplication (Folder)
+Is there a way this can be done via powershell?  I do not really want to be a web application, just a folder.
+

@@ -1,0 +1,4 @@
+Do it on the command line:
+No need for script.Just lets keep it simple and easy to understand
+ouput:
+

@@ -1,0 +1,2 @@
+The question was about closing the current active tab from within that tab. As you say, it's not possible in Chrome or Firefox. This should be the accepted answer.
+

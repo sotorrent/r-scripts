@@ -1,0 +1,5 @@
+The WPF way is to just bind to your data and let WPF resolve the visual tree:
+In order to render your content, WPF will look for a matching the type of data bound. So, for each type of data you have, you would define a :
+You can also tell WPF explicitly how to represent your data by specifying the property:
+TLDR: neither of your proposed approaches are idiomatic WPF. You should look into data templating.
+

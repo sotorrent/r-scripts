@@ -1,0 +1,2 @@
+as i see they are separators, thus you can get q and oq. From your post edit, i see that there may be other urls. so why not using OR operator in WHERE clause ? Something like that.
+

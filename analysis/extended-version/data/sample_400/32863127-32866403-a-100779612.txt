@@ -1,0 +1,3 @@
+It doesn't matter if you set before returning the inner function, because the inner function does not depend on .
+If the inner function did depend on --perhaps it returns it--then setting is certainly not what you want to, because then, well, it would be null instead of having it's original value!
+

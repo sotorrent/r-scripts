@@ -1,0 +1,2 @@
+I tried using pathForResources: ofType: (I like that, it seems a lot cleaner than the other way), and it returns nil.  I guess I need to understand how to add the db to the test bundle better.  I tried just setting its targets to both Project and UnitTests, tried deleting the reference to the file and re-adding it under resources and making sure both were checked, and tried deleting the file completely and adding it again, but all of those methods are making pathForResource return nil.  Am I adding it to the bundle incorrectly?
+

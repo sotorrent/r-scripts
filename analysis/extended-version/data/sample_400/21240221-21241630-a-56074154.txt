@@ -1,0 +1,5 @@
+Your first XPath expression () actually represents what you described in natrual language: is the first child of the body element, and selects the first element (below) having an attribute.
+In your example, there is no element below the anchor tag having such an attribute. Fore xample, this query would match
+The non-abbreviated version of this query is:
+Putting your second query in contrast, the problem should be easy to see:
+

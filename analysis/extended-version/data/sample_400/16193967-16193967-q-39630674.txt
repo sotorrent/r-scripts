@@ -1,0 +1,5 @@
+I use the following static method to execute requests:
+After testing, I found that the error in this line:
+I looked for other ways to make requests, however this seemed the most common form.
+Remembering that my project uses ARC architecture.Best regards,Bolivar
+

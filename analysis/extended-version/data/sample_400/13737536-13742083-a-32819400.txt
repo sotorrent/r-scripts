@@ -1,0 +1,4 @@
+Don't instantiate services with . If they use nearly any piece of Grails framework, that piece won't work - like GORM session in this case.
+Here's an exactly your question:
+with Burt's answer:
+

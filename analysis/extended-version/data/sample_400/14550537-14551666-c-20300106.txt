@@ -1,0 +1,2 @@
+In your example, how do we perform a check whether this element is same as next element? Is a special trick we use here?
+

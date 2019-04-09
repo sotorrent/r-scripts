@@ -1,0 +1,2 @@
+Thanks @TheOnlyError!  The problem I run into with "margin-left" is that the spacing relative to surrounding text (or, in my case, other stars) is off.  I updated my problem description to include an image.  Do you have any thoughts on how to fix the problem?  Thanks again!
+

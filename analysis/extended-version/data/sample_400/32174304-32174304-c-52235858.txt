@@ -1,0 +1,2 @@
+@RobG document.links seems cleaner way to get what I need. But what's up with setAttribute? Anyways, I have made the changes to the question description.
+

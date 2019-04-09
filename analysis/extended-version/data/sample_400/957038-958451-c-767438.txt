@@ -1,0 +1,2 @@
+Actually, in C#, you don't use breaks in a switch statement. If you want to fall through, you actually have to use a goto statement to go to the case you want to fall through to (e.g., goto case 2;). I was quite surprised when I learned this, given how similar the syntax is between C# and C/C++. I guess it makes sense, though, because it forces you to do something explicit in order to implement fall through. (And in fact, it makes "fall through" a lot more flexible, albeit with all of the caveats that go along with using goto's in other situations.)
+

@@ -1,0 +1,2 @@
+Creating the instance for the class Alogin is working in other class file.
+

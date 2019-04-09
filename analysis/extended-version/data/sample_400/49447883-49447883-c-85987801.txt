@@ -1,0 +1,2 @@
+what do I have to do, so my db is filled with the data from my csv?
+

@@ -1,0 +1,5 @@
+You can change your SQL to use IF EXISTS condition and insert only if the records does not already exists.
+Your SQL may look like:
+IF NOT EXISTS
+(
+

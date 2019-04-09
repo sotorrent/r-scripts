@@ -1,0 +1,3 @@
+To remove a file from your computer, use . It takes full path to the file as it's parameter, so instead of calling you would call
+So your should contain full paths to the files, and then just call:
+

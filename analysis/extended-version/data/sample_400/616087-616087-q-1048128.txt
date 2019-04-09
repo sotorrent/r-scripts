@@ -1,0 +1,5 @@
+I have a set of bytes I want to apply an sha1 hash to. One hash will be in .net, the other in PHP. Then I'll test to see if they match.
+In .net, you can create a byte array and use sha.ComputeHash().
+In PHP, you call sha1($string).
+I can't do anything about the .net side of the code, but how can I get the same hash out of PHP that .net will generate?
+

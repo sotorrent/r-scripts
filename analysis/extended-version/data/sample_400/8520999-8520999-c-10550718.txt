@@ -1,0 +1,2 @@
+die isn't saying anything. the query works in the database directly, the problem is somehow with the variable.
+

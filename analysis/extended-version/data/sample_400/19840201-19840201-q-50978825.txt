@@ -1,0 +1,4 @@
+I use mongo_insert() three times to insert my data in three different collections. The problem is that the "_id" field must be exactly the same in each of the collections, but I do not know how to (ideally) recover and reuse the "_id" field generated in my first mongo_insert...
+Can you help me ?
+Best regards.
+

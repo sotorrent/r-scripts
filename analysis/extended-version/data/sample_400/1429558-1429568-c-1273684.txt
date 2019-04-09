@@ -1,0 +1,2 @@
+Also, the code I've seen so far varies between using 1 << XX form, and using _BV(XX). _BV is a provided macro that does (1 << n). But that still means too much typing.
+

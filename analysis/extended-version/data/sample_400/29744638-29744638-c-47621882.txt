@@ -1,0 +1,2 @@
+What do you mean exactly by 'I want to change only the changed elements'? - What do you want to change? Do you mean, update the view?
+

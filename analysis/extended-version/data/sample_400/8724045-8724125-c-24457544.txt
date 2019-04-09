@@ -1,0 +1,2 @@
+Why unnoticeable? Surely that depends on how many compilations you're doing? For example - we have a CI build server that is continually compiling multiple projects - therefore even the smallest optimization should increase compile performance slightly, right?
+

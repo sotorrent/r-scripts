@@ -1,0 +1,2 @@
+I think maybe you can't use a bundle file as a dependency; just list all the dependencies individually.
+

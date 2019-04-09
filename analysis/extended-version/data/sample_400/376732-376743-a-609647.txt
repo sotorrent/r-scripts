@@ -1,0 +1,2 @@
+I don't know of any automatic/systematic way to convert the htaccess-file, you'll probably have to do it manually. is a good resource for nginx documentation.
+

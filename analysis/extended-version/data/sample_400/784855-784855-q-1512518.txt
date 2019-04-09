@@ -1,0 +1,8 @@
+I'm looking for a library or toolkit (so I don't have to write it) that will allow me to do common things like the following in Linux:
+
+  - Get the uid for a username.
+  - Get user / group membership information.
+  - Get information about free space on disk drives.
+  - Any other potentially useful API calls that are not normally available in Java because they break portability.
+    Anyone out there have any ideas?
+

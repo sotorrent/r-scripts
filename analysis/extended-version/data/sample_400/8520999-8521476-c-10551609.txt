@@ -1,0 +1,2 @@
+bool(false) string(61) "INSERT INTO tagovi_rel (column1, column2) values ('16', '81')" string(61) "INSERT INTO tagovi_rel (column1, column2) values ('11', '81')" - that's what var_dump prints out
+

@@ -1,0 +1,8 @@
+I'm going to have unknown number of prompt dialogs.
+I will have their number after some user actions, but I want to create them, display them and at the end check if some of them is .
+I'm looking for ideas how to do that.
+Can I do it without loop?
+Something like:
+and then check if some of them is empty?
+And can I declare array in shorthand way like in PHP and C#?
+

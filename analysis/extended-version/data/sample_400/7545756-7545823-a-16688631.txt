@@ -1,0 +1,3 @@
+The quantifier in your regex is greedy (meaning it matches as much as it can). In order to match the minimum required you could use something like . The brackets indicate a character class. So it will match everything inside of the brackets. The carat at the beginning of your character class is a negation, meaning it will match everything except what is specified in the brackets.
+An alternative would be to tell the quantifier to be lazy by changing it to which will match as little as it can.
+

@@ -1,0 +1,2 @@
+I have a with two s, all in a . Both s are set to be transparent with . However, I would like to capture mouse events on the (top, if it makes a difference) transparent panel. Is this possible, or should I just do it from the underlying ? (It would definitely work to capture from the ; it just makes more logical sense to capture the events from the transparent frame).
+

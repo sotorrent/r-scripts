@@ -1,0 +1,2 @@
+I'll try to explain more carefully. I would like to write code here like in Java, just like that . If something like that is possible, there is no need in writing extra conditions in my method's code. I don't know all the possibilities of PHP, that's why I asked this question. If that's not possible – no problems, just wanted to ensure.
+

@@ -1,0 +1,2 @@
+@R: I'm not sure what you're after. Any conversion to the range (0.0..1.0) necessarily has some non-uniformity. A denominator with any prime factor other than 2 can't be represented precisely. RAND_MAX+2.0 is no easier or harder to deal with than the others though, unless RAND_MAX+2.0 exceeds the range that can be represented precisely. In the typical case (32-bit RNG, 64-bit double) that won't be the case -- a 64-bit double has a 53-bit mantissa, so numbers in the range +/- 2**53-1 are all represented precisely.
+

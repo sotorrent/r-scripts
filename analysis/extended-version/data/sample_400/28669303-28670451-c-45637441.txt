@@ -1,0 +1,2 @@
+@com2ghz: No, I am helping you to improve your answer style, so you won't get downvotes in the future. If I would be up to insult you, I could just show why asking for "local or clientside storage" is totally wrong (WTF is local vs. clientside storage?) Or what security has to to with a db password protection or since when you ask for "many storage" when you should ask for "how much storage" or that you possibly did not read the question when asking if persistance of data is mandatory. Should I go on, or do you agree that "Don't be a smartass" is a very nice way to put it.
+

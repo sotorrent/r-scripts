@@ -1,0 +1,2 @@
+Some codes would be nice. Eventually I want to create a List partial view to also display on the index.
+

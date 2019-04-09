@@ -1,0 +1,4 @@
+It is a bug in 3.7:
+
+But is working in 3.8 (currently in Beta):
+

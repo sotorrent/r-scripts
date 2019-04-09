@@ -1,0 +1,4 @@
+well, thats because of  this  code$(document).on('click', '.uploadimg', function() {
+  $('input:file').click();
+});
+

@@ -1,0 +1,4 @@
+First of all, it would be useful to see your schema. Are you allowing multiple entries in the conversation table where users A and B can be entered as user1 = A, user2 = B in one conversation, and user1 = B, user2 = A in a different conversation?
+Also, might as well change the on line 9 of your second posted code block to , for consistency, safety, and a more modern SQL framework.
+Lastly, as Little Bobby said, you should use prepared statements to avoid SQL injection.
+

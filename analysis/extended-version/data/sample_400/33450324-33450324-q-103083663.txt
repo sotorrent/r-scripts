@@ -1,0 +1,6 @@
+i installed omnet++ on my ubuntu 15.10
+i am trying to run omnetpp.ini on TKenv simulator but it gave an error i don't know what it is.
+this is a photo for the error
+please help me.
+error screen shot
+

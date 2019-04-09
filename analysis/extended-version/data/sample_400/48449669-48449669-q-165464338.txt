@@ -1,0 +1,5 @@
+Last digit of 2^n without calculate the number.
+n=(0,1000000) or bigger.
+The point is this n can be a realy huge number, i don't want to store it in a BigInterger or other.
+Who know another way to solve this problem?
+

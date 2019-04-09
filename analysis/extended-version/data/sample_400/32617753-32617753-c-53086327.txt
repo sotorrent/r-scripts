@@ -1,0 +1,2 @@
+I believe SHA is one-way, right? So I can't decrypt the password and do a migration if the encryption scheme isn't the same. The hash I have in the old table is not the same hash in the new table.
+

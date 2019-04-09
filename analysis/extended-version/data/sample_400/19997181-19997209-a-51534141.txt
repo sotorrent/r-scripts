@@ -1,0 +1,10 @@
+From [][1]
+
+Return Value
+
+The first column of the first row in the result set, or a null
+reference if the result set is empty.
+That's why when there is no row as a result, you actually try to convert to .
+And you should always use [][2]. This kind of string concatenations are open for [][3] attacks.
+For example;
+

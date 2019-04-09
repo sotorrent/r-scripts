@@ -1,0 +1,7 @@
+I justed stumbled upon your question and thought I would like to explain why it is not possible to use different enums as keys to the map.
+In order to do that, we first have to look into the implementation of EnumMap. In Java, an EnumMap is just an object with an array of the value objects. Let's assume this example:
+You have your Enum-class Colors:
+and a class that stores some colored fruits in an EnumMap:
+What Java does now is creating a new EnumMap - object with the following array:
+This is exactly what makes an EnumMap so efficient. It's really not more than just an object with an array of value objects and some field that stores the class (in our example that would be ). In order for this to work as intended there can only be one keyType class.
+

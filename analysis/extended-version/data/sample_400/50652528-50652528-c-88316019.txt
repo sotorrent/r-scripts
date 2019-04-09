@@ -1,0 +1,2 @@
+@muecas No, I have posted the headers... Please check it on localhost. If it had not been called, the alert neither. But is undefined.
+

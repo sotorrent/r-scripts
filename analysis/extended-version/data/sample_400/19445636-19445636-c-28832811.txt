@@ -1,0 +1,2 @@
+First, there is no scroller id in your fiddle and second the height never goes to 150, it's either 100 or 200 in your fiddle
+

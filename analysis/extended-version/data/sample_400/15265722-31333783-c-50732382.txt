@@ -1,0 +1,2 @@
+Don't know how to explain that. But let's try. In the original code path to files and directories are placed on the Clipboard. Question was "how to cope a folder", the code example analyzing all paths on the Clipboard, selecting folders and copying folders to a destination path. You are self responsible for a correct destination path in this case.
+

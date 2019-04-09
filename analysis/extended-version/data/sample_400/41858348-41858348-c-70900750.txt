@@ -1,0 +1,2 @@
+I guess your floating point divide take a lot of time. Try per-compute the reciprocal and multiply it with the sum, Should save some time.
+

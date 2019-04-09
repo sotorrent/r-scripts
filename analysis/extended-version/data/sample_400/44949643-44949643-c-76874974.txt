@@ -1,0 +1,2 @@
+Making following assumptions: 1: There is no way for you to group the addresses by pool when getting the xlrd response. 3: Single addresses without a pool are preceded and superceded by empty strings. 4: Address dont repeat in the response. Are these assumptions correct?
+

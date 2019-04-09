@@ -1,0 +1,4 @@
+It's not just g++.  That's invalid C++.  Every statement in a function (template or not) must be valid, even if you can "prove" it's not executed.
+What's so bad about giving them separate functions?  Of course, you can deal with some common subparts by calling another subfunction.
+If you want the functions to have the same name, go ahead and do that.  Function overloading will handle it.
+

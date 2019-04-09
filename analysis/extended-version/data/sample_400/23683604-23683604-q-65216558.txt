@@ -1,0 +1,7 @@
+I made a script in order to create this "slideshow":
+yet I can not go back to the last slide if I hit "previous" when it is on the first slide
+I tried using the last-child selector but had no success
+I also tried resetting the count directly like so:
+I've been stuck with this for two days, I'm trying to understand what I'm doing wrong!
+all I what's left to do is to go to the last slide if I hit "previous" while I'm "standing" on the first slide
+

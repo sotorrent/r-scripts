@@ -1,0 +1,2 @@
+You can't find documentation on the difference between 2.0 and 1.3 because the project has not been properly maintained for quite a few months.  If an active committer takes over, then we will all know.  Thanks @CoronA.
+

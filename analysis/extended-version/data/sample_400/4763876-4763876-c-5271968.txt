@@ -1,0 +1,2 @@
+@Šime Vidas I just went with the method the Mozilla directory listed. Ah, that works for IE too? That'd be perfect then, thank you for the tip. So the localStorage commands can be used for IE exactly as they are in Chrome then? I'll check out the link now! :D
+

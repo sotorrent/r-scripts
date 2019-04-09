@@ -1,0 +1,2 @@
+While seemingly correct, I can't say I'm a fan of this answer because it doesn't use try-with-resources where that language construct fits perfectly (and the OP uses it).
+

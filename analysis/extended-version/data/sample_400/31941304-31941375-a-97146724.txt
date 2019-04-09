@@ -1,0 +1,8 @@
+does a literal substitution of the string of characters you have defined. So the expression:
+Will expand to:
+Which, given operator order of evaluation, will evaluate as:
+Not what you want. You probably really want so you should have:
+Or even better, as @Jongware points out, since itself could be an expression:
+That way, expressions like, will evaluate properly as , not .
+Also as pointed out in comments, you need to beware of macro expression results when you have side effects in your arguments. For example, what does do, and what is the value of when it is done? In this case, it would give , with the value of being post incremented twice.
+

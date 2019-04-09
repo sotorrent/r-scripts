@@ -1,0 +1,2 @@
+@cmaster It makes some sense, namely it won't allow you to call non-const member functions on the class prvalue. I don't have an example right now, but I guess one can come up with some scenario, see e.g. Of course in C++11 one shouldn't do this, as it'll make move semantics stop working.
+

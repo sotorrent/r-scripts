@@ -1,0 +1,2 @@
+I see the same happening when setting the environment variable, which according to [](should also have the desired effect. Perhaps the man page is wrong and glibc doesn't actually respect these requests?
+

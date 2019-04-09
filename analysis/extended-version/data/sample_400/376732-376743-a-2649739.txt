@@ -1,0 +1,5 @@
+I don't know of any automatic/systematic way to convert the htaccess-file, you'll probably have to do it manually. The Nginx wiki is the best resource for nginx documentation.
+Edit:
+I'm running Zend Framework on Nginx myself now and the config looks like this:
+As you can see, the rewrite rule itself is very simple.
+

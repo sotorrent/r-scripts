@@ -1,0 +1,6 @@
+Borders overlaping isn't possible…
+… but, here is how I'll do to create your effect, using only CSS,
+with s in and for the corners:
+(Note that if you don't use the you can pick which gradients are overlapping the others by playing with their order!)
+Hope it helps.
+

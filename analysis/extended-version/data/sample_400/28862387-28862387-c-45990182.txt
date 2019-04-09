@@ -1,0 +1,2 @@
+@Plutonix The columns are a set size, not autosized, I don't want them to be autosized to fit the contents, just to match the resizing of the page
+

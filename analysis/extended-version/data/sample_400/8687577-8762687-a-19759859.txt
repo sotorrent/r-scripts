@@ -1,0 +1,3 @@
+OP said this is the answer: working example: jsfiddle.net/pseudorad10/GeRhW/5 using: var crumbs = $(".current").parents("ul") .prev("a").add(".current").
+A more elegant solution would probably be to build an array using parentsUntil() and is(), and then join(' > ') to make the final HTML.
+

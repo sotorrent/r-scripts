@@ -1,0 +1,2 @@
+Just put the login view in the viewDidAppear method of each tab bar view and then prompt them to sign in if not already
+

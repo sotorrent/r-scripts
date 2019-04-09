@@ -1,0 +1,10 @@
+I guess the problem relies on the definition of on. (see
+There are actually two way that "on" works.
+vs.
+the first basically means:
+bind the function on all elements having "life-post" currently as class and execute when a click happens.
+The second is: when a click event happens within "body" on an element having class "like-post" execute the function.
+The main difference is that the first binds on the "current state" of elements when the code is first executed (meaning the bind code), while the second case reflects the state of the dom elements when the "click" action happens.
+Instead of body you can use $(document) or some other selector, but basically you have to avoid using the element directly and rather use a parent of it.
+Alternatively you could also to a check like:
+

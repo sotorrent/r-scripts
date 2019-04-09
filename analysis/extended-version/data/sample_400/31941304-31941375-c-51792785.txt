@@ -1,0 +1,2 @@
+@lurker perhaps reword "literal string substitution" as to avoid vocabulary collisions with "string literal" and the stringification operator.
+

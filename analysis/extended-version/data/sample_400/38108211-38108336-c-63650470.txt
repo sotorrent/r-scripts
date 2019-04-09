@@ -1,0 +1,2 @@
+That's true, I didn't think about the ordering of the users. I updated the code I have now in the question, now its not returning any users
+

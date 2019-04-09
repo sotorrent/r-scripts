@@ -1,0 +1,4 @@
+I've edited the code.
+A limb is composed of several bones (i've corrected the comments)
+Calling Servo instance method setAngle, I pretend to recalculate all positions running HexLimb.calcPosition
+

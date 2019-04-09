@@ -1,0 +1,4 @@
+Use radio button as control usually used for such purpose
+Your code should be as follows.
+Considering you need to disable all other button after selecting one.
+

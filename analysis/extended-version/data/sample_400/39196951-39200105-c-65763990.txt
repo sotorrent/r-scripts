@@ -1,0 +1,2 @@
+I agree with Thomas.  These are called Inverted Indexes and we use them a lot on our data set that has over 120 million records.
+

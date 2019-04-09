@@ -1,0 +1,9 @@
+I'm having a weird issue here it seems. I have an interface, known as . I then have another class, like so:
+However when I go to make another class, called , like so:
+When doing the following in a JUnit test:
+I receive the following error:
+
+The constructor LeftSort(List<Foo>) is undefined.
+I swear you're able to use interfaces in generics like I have done so. Is there anything I've done wrong here?
+I've also messed around with doing too but to no avail.
+

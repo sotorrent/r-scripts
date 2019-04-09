@@ -1,0 +1,3 @@
+What i want to do is have my program pick randomly from a large list (about a 1000 entries), what is the best way of keeping that large list in my app? should i put it into a large string array? or would that slow down my program too much when it tried to randomly pick a string?
+Thanks!
+

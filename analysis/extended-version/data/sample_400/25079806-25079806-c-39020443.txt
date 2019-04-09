@@ -1,0 +1,2 @@
+What specific issues do you have? Do you have string combinations that match when they should not be matching? Do you have string combinations that do not match when they should? Do you not get any matches at all? It is clear what you have tried, but it is not clear what you wanted to happen. If you could expand on the list of strings on both sides, with an indication which ones should match, the question may become answerable.
+

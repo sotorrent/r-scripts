@@ -1,0 +1,2 @@
+I didn't think of that, Our professor just gave us the assignment and wanted to see how everyone went after it... I was thinking of creating separate foreign key constraints is that viable or a waste of time? I like where you are going with the view though! By foreign key constraints I mean create a variable that references hScore and lScore and make tScore have to = the sum of those two..
+

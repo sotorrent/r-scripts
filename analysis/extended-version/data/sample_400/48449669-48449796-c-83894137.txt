@@ -1,0 +1,2 @@
+@pm100 Any such cycle would be a result of the way our base-10 digit system interacts with powers of two. It should not be difficult to prove.
+

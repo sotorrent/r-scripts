@@ -1,0 +1,2 @@
+Here's one possible approach. Note that I created the data slightly different.
+

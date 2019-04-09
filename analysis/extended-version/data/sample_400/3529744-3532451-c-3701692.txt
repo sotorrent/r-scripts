@@ -1,0 +1,2 @@
+I added mysql log. And php log is clear. Look there is no semicolumn (;) in the end of my query and there is no 'Quit' command too. It doesn't looks good.
+

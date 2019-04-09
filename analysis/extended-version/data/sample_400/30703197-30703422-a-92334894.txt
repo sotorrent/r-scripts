@@ -1,0 +1,6 @@
+You can pass the data to the load function using JSON.stringify (data) and then receive it in the load function using JSON.parse (parameter).
+EXAMPLE
+EDIT1
+EDIT2
+I found that just passing the data in the stringify format, it is being received as an object in the Load functionality. Also I have added an escape to the single quotes as such your function will be inside the onclick event call.
+

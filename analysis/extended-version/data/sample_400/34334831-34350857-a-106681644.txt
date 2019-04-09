@@ -1,0 +1,10 @@
+You are using knockout against its design.
+The viewmodel manages data and state - and nothing else. It is not supposed to contain any code that does HTML or DOM manipulation, at all.
+In this case your data is a list of category objects. You want to inform the server when one of them becomes the selected category. Additionally you want to keep track of whether the viewmodel is busy talking with the server.
+Therefore we need , and observables, as well as a subscription to changes in the selected category:
+The view displays the category list, provides a way of changing the selected category, and reacts to whether the viewmodel is busy.
+Therefore we need , , and bindings:
+Note that you can use an observable as a click handler.
+
+Finally, to keep the viewmodel tidy, here's a helper that concentrates all Ajax handling in a central spot.
+

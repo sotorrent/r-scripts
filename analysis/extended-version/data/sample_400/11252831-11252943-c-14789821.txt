@@ -1,0 +1,2 @@
+thank you for your comment. it is not the operator i thought it is indeed. also the boolean context makes sense now. but where does it say about whitespaces? just curious to understand how that thing works, im a c++ newbie :)
+

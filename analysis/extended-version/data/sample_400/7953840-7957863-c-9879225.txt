@@ -1,0 +1,2 @@
+The problem with the SDCard support was solved, it seems that my emulator does not always see the card, But as I said running the application on a real android-device,Nexus S, it works fine.
+

@@ -1,0 +1,2 @@
+Well, thanks! That works. I just don't understand yet, why. I worked through "the book" to chapter 4.12, but unwrap() is only handled in chapter 5.7 (error handling).
+

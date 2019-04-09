@@ -1,0 +1,9 @@
+I have an app with the following models: , , and . Each Assignment a User and a Task (or in other words, a Task is assigned to a User via an Assignment).
+Once a User completes a Task, the Assignment is marked as complete, and the app immediately creates a new Assignment (or in other words, assigns the task to someone else).
+Immediately after creating this new Assignment, I want to send an email to the new assignee. I know I can do this one of three ways:
+
+1.  Explicitly send the email in my controller.
+2.  Send the email in a callback on the Assignment model.
+3.  Create an observer on the Assignment model and send the email in .
+    Which of these options do people think is best, and why? #1 seems bad to me, because I don't want to have to remember to send it in every action that might complete an Assignment. I've heard a couple people say that Rails observers are bad and should be avoided, but I'm not sure if they're people I should trust or not. Any other opinions?
+

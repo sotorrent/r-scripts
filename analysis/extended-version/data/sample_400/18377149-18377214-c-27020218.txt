@@ -1,0 +1,2 @@
+I am not using ng-repeat though.  It is a a hard coded template not data driven.
+

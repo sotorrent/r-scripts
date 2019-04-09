@@ -1,0 +1,9 @@
+i'm trying to build a general purpose template function which should function with 2 different type of structure i'll write an example
+then in main:
+now , this is a short example of my issue where i'm handling much more complicated structures, anyway what i get is
+error: 'struct sa' has no member named 'd'
+the problem is that the gnu c++ compiler didn't recognize that not all operations in the function are execute when struct sa is passed, and d is printed only when sb is passed,
+how i can fix this without creating a duplicated function 1 for each structure type?
+thank you :)
+Francesco
+

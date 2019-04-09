@@ -1,0 +1,2 @@
+Your Index view also must need the header like in Partialview  "@model MvcApplication1.Models.InsertCarViewModel " . Please go-through my code.
+

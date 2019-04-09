@@ -1,0 +1,2 @@
+Why is this a problem? The two classes should have different namespaces. Renaming is pure evil - will you remember in one year that you renamed the class to something else? Will the support guy know this?
+

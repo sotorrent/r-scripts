@@ -1,0 +1,25 @@
+this is the code:
+import java.awt.;
+import java.awt.event.;
+import java.applet.*;
+import java.util.Vector;
+
+public class PainterNN extends Applet implements MouseListener, MouseMotionListener{
+}
+}
+}
+public void mouseReleased( MouseEvent e ) {  // called after a button is released
+repaint();
+e.consume();
+}
+public void mouseMoved( MouseEvent e ) {  // called during motion when no buttons are down
+e.consume();
+}
+public void mouseDragged( MouseEvent e ) {  // called during motion with buttons down
+int mx = e.getX();
+int my = e.getY();
+}
+
+}
+It should draw circles at mouse drag but it didn't. Why?
+

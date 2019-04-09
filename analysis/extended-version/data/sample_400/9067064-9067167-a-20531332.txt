@@ -1,0 +1,6 @@
+But what about certain server side validations, like duplication
+check, etc.. what are the best practices?
+In ASP.NET MVC 3 you could use the [][1] data annotation.
+In ASP.NET MVC 2 it doesn't exist but you could implement it using jQuery.validate [][2] rule. This assumes that you use the jQuery validate plugin of course instead of the built-in Microsoft client side validation framework.
+Microsoft scripts are now obsolete. If you want to ease the migration towards ASP.NET MVC 3 and even 4 you should forget about those and use jQuery and jQuery validate which are the default client side frameworks now in ASP.NET MVC.
+

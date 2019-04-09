@@ -1,0 +1,2 @@
+Nope, this is version that actually accepts BigInteger. Though, the more I think the more Im confident that he given a string instead of BigInteger. So, he basically needs 2 last character. I can write extension, but it will look ugly. Just like any boolean/discrete math out there. It is already ugly, though.
+

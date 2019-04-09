@@ -1,0 +1,2 @@
+@pandit Go to the Help menu and install CollabNet Desktop - Eclipse Edition This should give you the option of installing SVNKit. (As well as Subversive). One of the problems is that SVNKIt's Open Source license is a bit wanky, and Subclipse might not have given you the choice over JavaHL. See the SVNBook about SVNKIt vs JavaHL.
+

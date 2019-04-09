@@ -1,0 +1,5 @@
+How about
+That will output all tables (in format) and the identity column (if any) for that table.
+Update: OK, so you obviously want to do this for a single table - OK then use this code:
+That will return the name of the column for the table with name - or it will return if that table doesn't have an column ....
+

@@ -1,0 +1,2 @@
+You could just use , no need for render partial here.
+

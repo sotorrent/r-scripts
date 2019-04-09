@@ -1,0 +1,2 @@
+@Ed.S. Something like that. The article uses separator (pipe) between hash, type of hash and salt. If you have only one type of hash in your legacy app, you can amend the provided code and exclude the hash type, only have .
+

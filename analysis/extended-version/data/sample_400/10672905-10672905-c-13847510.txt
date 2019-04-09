@@ -1,0 +1,2 @@
+Your layout seems to be fine. Can you please show how you are adding a small listview in the top layout.
+

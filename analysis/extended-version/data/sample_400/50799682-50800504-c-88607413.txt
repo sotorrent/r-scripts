@@ -1,0 +1,2 @@
+This is a good approach (+1 from my side), but I prefer to avoid sub-selects with due to namespace repetitions. In this case there is no namespace, but this might come later. (Or someone else with a similar issue comes here)
+

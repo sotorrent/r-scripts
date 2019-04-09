@@ -1,0 +1,2 @@
+You can fetch Account ID,Email and Phone number using below code:
+

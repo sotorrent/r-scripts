@@ -1,0 +1,2 @@
+Well, I wasn't able to find it, so I applied display: initial; on the body, is that correct? @trevor - probably not, now it moves down instead of left //EDITED
+

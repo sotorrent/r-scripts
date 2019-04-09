@@ -1,0 +1,8 @@
+I am using Google Docs and unfortunately it does not have a GetPivotData function.  As I add more categories and subcategories to my data, the Pivot Table data will be moving (column wise).
+So I took the liberty to use formulas and find the Row and Column numbers for all my ranges, so regardless of any new data, my range will expand/contract/shift with the correct data.
+Now all I have left is to use a VlookUp to feed the data for that specific subcategory.  I have a cell that shows the value for my range.... my range is D7:S100... but like I said, if I add one more subcategory, then my range will be D7:T100 and my cell will reflect this change.  I want to use this cell reference in my VlookUp so it can be dynamic in the range.
+VLOOKUP(search_key, range, index, [is_sorted])
+VLOOKUP(A1, cell reference, 2, 0)
+Can the range ever be a cell reference so my vlookup's range be dynamic?
+Thanks@!!!
+

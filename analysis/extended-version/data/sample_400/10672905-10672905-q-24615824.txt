@@ -1,0 +1,10 @@
+In my app, I have 2 linear layouts : one at the top, one at the bottom.
+I'd like that whatever is inside these layout, the layout of the top occupies 60% of the height of the screen and the layout of the bottom 40%.
+Here is my XML code :
+
+When these layouts are empty, no problem, they have the good proportion.
+The problem is that if I put a small listview in the top layout for eg, then the layout will take the size of the listview and won't preserve the 60/40% proportion.
+I'd like that even if my listview is small (only 3 item for eg), the layout preserve it's 60% and so put some empty space under my listview.
+I've tried tho change to but it doesn't change anything.
+Thanks.
+

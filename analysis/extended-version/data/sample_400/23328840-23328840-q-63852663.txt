@@ -1,0 +1,3 @@
+I am new in NDK and i want to use a c library in my application. I try with a simple c file and it work. I succeded to send and receive data between the two api. But when i want to introduce an existing c library i have this kind of error when i run ndk-build.
+How can i solve this problem? I read all the Android.mk documentation but i did not see any thing to solve it. Regards
+

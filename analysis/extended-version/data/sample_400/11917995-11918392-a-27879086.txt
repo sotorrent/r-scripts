@@ -1,0 +1,2 @@
+GAE mail (I use Python) does not give any feedback when you send mail. To receive feedback you have to use another service /API. I use Amazon SES in my applications.
+

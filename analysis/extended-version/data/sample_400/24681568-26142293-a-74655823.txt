@@ -1,0 +1,2 @@
+Writing a new directive would be the right way to do it I believe. You would possibly run into all sorts of issues using , if combined with for instance.
+

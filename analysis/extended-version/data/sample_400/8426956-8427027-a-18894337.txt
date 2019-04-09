@@ -1,0 +1,3 @@
+BigDecimal will take a long in the constructor.  But you will need an L at the end.
+new BigDecimal(2147483648L) should work.
+

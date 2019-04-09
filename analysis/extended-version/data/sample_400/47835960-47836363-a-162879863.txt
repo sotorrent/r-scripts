@@ -1,0 +1,3 @@
+I'd go with [][1] to achieve something like this.
+There's this great tool to easily generate the clip-path params:
+

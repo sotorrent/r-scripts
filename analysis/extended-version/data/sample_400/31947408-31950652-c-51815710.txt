@@ -1,0 +1,5 @@
+I tried using this and I get a giant white border around dropdown. Is there a way to make it so the menus are on the right until it gets to a certain size and then it goes underneath the logo?
+
+'
+
+

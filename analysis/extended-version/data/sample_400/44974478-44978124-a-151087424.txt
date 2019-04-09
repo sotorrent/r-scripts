@@ -1,0 +1,4 @@
+I was using will-paginate for while but I stopped using it. Try to use datatables only without pagination as it has a pagination inside.
+
+Here is the code example
+

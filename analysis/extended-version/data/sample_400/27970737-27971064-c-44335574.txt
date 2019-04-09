@@ -1,0 +1,2 @@
+Probably, the reason is that prvalues of non-class non-array type are immutable - they're values, not objects. Even if we try to bind them to rvalue refs, they're not directly bound, but an object which is initialized with them. Methinks prvalues of non-class non-array types are treated as true values, not objects.
+

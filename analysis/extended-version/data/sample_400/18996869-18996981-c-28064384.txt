@@ -1,0 +1,2 @@
+Yeah when i tested it originally that was the problem, it kept giving me the error. So the if/else seems more appropriate, thanks.
+

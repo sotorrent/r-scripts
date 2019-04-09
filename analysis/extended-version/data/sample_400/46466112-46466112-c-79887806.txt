@@ -1,0 +1,2 @@
+In my example I have two rows, for the first row I would like to replace '2' by '1R', in the second row replace '2' by '2R' and so on. I updated my question for clarity.
+

@@ -1,0 +1,2 @@
+With C++11, there's no need to define , you can use
+

@@ -1,0 +1,2 @@
+As per one of the more popular answers, this is only effective when the TraceXXX methods are used.
+

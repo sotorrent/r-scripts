@@ -1,0 +1,2 @@
+So how can I do that? How the source can be compiled into web-inf/classes or the other thing you mentioned.
+

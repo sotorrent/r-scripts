@@ -1,0 +1,11 @@
+This is going to be a hard one to explain...
+I have a button which is a custom like button.
+After the user clicks like, I do an AJAX call and add a row to the DB and then add and remove the class.
+This is all working okay, except after the class have changed to 'unlike-post' the button still reacts to a like-post class trigger.
+So I have this:
+Which carries out that action even after the button doesn't have a class of like-post. I have checked and the class is definitely getting removed / added correctly.
+I want to carry out another action with the unlike-post class but can't until this is resolved.
+I have noticed a similiar issue elsewhere on my site regarding .on(). I cannot recreate the issue in jsFiddle since it works fine there.
+Using bootstrap + latest jQuery version. Any ideas? I know its a long shot but thought someone might have had a similiar issue.
+Thanks.
+

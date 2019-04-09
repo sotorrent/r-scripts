@@ -1,0 +1,6 @@
+I tried to keep the code similar to what you have above, but I noticed at the end that you're using a higher level object to pass references around.
+In the below code, I'm not using since that's not entirely necessary for this example since the method takes a callback. Instead, I created and functions that return Promises. Then I use those with which will let both promises run in parallel and return the results as an array in the same order the promises are passed to . See further down for an example using when returns a promise instead.
+The next example shows using assuming can return a Promise. I'm also making the assumption that the object references will still be maintained and is why I'm assigning in the part of the .
+I hope this helps you understand how you can do parallel processing with . The only issue I see that may come up in your code is if the query returns before the query since won't be set yet.
+EDIT: personally, I think I would handle the logic like this with 1 query instead of 2 different queries:
+

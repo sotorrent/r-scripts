@@ -1,0 +1,2 @@
+@MatthieuM. Today I Learnt. To clarify, is there something equivalent to that with GCC, or does GCC not need it because in GCC -Wall -Wextra in fact turns on all warnings?
+

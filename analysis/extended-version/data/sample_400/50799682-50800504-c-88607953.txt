@@ -1,0 +1,2 @@
+Thank you! I'd tried some approaches using a subquery approach, but couldn't get near what you've outlined above.
+

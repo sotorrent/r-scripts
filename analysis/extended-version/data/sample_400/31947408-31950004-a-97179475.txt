@@ -1,0 +1,3 @@
+Try on you logo
+Is a class of bootstrap, that directly make your image responsive, i hope this help you.
+

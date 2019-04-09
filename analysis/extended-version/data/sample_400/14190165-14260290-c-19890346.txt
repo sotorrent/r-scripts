@@ -1,0 +1,2 @@
+Thanks Diego :)  Last one (I promise!) as I am still a little confused.  There is no clear project life-cycle...it's "as and when" for most of them - When you "Tag" a Trunk - does that take everything from the trunk...as it is at THAT moment, or can you specify part of the Trunk?  e.g.  If I am working on Proj1 and "diego" has just started Proj2 - then when I Tag the trunk, do I get your part completed code?
+

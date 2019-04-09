@@ -1,0 +1,2 @@
+I think it is a rare case that the API classes cannot handle. I've yet to run into one in either my code or the code of others I have examined. If you keep requiring them, perhaps you've got a glitch in your understanding of the API design.
+

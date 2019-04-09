@@ -1,0 +1,2 @@
+Note that you cannot consume output parameters until you've read all the rows in the rowsets returned by the proc - kind of making the rowcount as output parameter in addition to rows basically pointless.
+

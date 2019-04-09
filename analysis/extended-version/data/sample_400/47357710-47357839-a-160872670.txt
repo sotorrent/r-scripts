@@ -1,0 +1,7 @@
+?? is the Nil-Coalescing Operator.
+
+The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that is stored inside a.
+The nil-coalescing operator is shorthand for the code below:
+It is used to define a default value for an Optional type that has no value. It is being used in your example to set the frequencyOfAnswers dictionary value to 0 for cases where the frequencyOfAnswers dictionary has no value for a given response type key.
+Read more in the Nil-Coalescing Operator section of
+

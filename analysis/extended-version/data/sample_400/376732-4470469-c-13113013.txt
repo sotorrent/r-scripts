@@ -1,0 +1,2 @@
+There are examples on the site of Nginx for try_files + PHP:
+

@@ -1,0 +1,2 @@
+Do you absolutely have to have the optional parameters in the url path? Is there a problem with having them as querystring parameters?
+

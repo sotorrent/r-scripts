@@ -1,0 +1,2 @@
+Right now invokes its inner function and returns its result. It does not return the function. Therefore, will indeed alert immediately, and your further assumptions are wrong.
+

@@ -1,0 +1,2 @@
+I looked in Finder under build/Debug-iphonesimulator/ProjectFusion, "Show Package Contents" on ProjectFusion and it was in there.  Is that what you mean?
+

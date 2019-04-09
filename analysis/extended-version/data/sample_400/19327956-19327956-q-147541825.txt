@@ -1,0 +1,8 @@
+Here is the code:
+I think there is no logic flaw here?  But instead of getting a string of printed, I got .
+If I change the to .  Then everything is as expected.  The content of win is all zeros.
+Am I missing something here?
+I'm using on .
+Sorry for this duplicated question.
+Here is the answer.  Thanks
+

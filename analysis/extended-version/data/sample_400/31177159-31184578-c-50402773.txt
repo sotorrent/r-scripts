@@ -1,0 +1,2 @@
+Thanks for the answer VonC. I am sorry I didn't mention the whole scenario. Our requirement is to delete a directory from a branch that has just been created; and file structure isn't available on the server. That's why we are looking for client hooks. Secondly, if there is a work around to delete the directory from the refs, there is another concern. Shouldn't the directory be deleted before staging it? In my understanding, server side hooks will come into act only when the newly created branch is pushed.
+

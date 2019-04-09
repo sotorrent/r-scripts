@@ -1,0 +1,2 @@
+The regular syntax is (somewhat simplified):
+

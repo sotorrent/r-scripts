@@ -1,0 +1,2 @@
+And if you return a row set or sets and put the count in an output variable, you cannot get to the count output variable until AFTER consuming all the rows, making it often pointless.  A workaround is to return the count in a first rowset and NOT as an output variable.
+

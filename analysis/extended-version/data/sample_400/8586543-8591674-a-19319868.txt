@@ -1,0 +1,2 @@
+You're right isofar, that you need to divide the 1024 by 4 not multiply. The wiki entry is worded badly.
+

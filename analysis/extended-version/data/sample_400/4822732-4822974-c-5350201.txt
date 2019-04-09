@@ -1,0 +1,2 @@
+don't use  [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName] . You should use [[NSBundle mainBundle] pathForResource: ofType:] if it returns nil, than your db is not in your test bundle.
+

@@ -1,0 +1,9 @@
+I am writing an application with 5 tabbed view. but I am stuck with how to insert login page. I have read through a lot of threads, but I don't think any of them solves my problem. Here is the issue
+
+1.  The first view is visible for both login users and guests. (Default view when user launch application)
+2.  When guests try to view other four tabs, they are prompted to a login page (view)
+3.  If guest cancel logging in, guest will come back to first view. If guest login, they will go to whatever view he clicked before.
+    I have been thinking about this, it looks like I "insert" an view between tabbed view switching; and This view is "smart" enough to know whether should proceed to the view user wants (loggin case) or come back to where user started ( cancel cases). Any thoughts on this?
+    Best,
+    Bin
+

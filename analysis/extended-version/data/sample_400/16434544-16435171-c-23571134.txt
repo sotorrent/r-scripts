@@ -1,0 +1,2 @@
+Instead of having to pass the date as formatted string, this should also work as query (with timestamp as parameter): . converts a timestamp to , converts this to (i.e. lowers precision from second to day).
+

@@ -1,0 +1,8 @@
+I'm facing difficulties with simple Angular/Java application. During rest call, I'm also creating a tile component. Data is being retrived - I can see logs in the network tab and in backend logs, however Tile component is not being created. Here is the code:
+app.module.ts:
+main.grid.ts:
+album.service.ts:
+tile.utils.ts:
+This one is a bit messy
+in the logs on frontend side I can see:
+

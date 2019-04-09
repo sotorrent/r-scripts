@@ -1,0 +1,11 @@
+Been trying to compile this IronPython program into a working .exe for the past 3-4 hours with no luck.
+I'm using the pyc.py that came with "IronPython 2.6 for .NET 4.0"
+The program compiles out to Program.dll & Program.exe but the Program.exe cannot run.
+I'm using this as a guide:
+
+The very simple 'HelloWorld' program I got to work, but my more complex program failed. I'm thinking my complex program failed to run as compiled becaues it's missing DLL's?
+
+From IronPython directory I copied all the necessary DLL's (Microsoft*.dll, IronPython*.dll) that are needed for compilation and as run-time prerequisite to run compiled HelloWorld.exe.
+How can I figure out why my .exe won't run? Or how do I determine what .NET DLL files are needed to be included in the directory? (Assuming I have to put all .NET DLL's in the .exe directory example ? )
+Thanks for any help.
+

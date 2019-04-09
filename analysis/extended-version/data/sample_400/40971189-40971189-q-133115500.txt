@@ -1,0 +1,6 @@
+I have a problem with Symfony DependencyInjection Component. I want to inject interfaces into controllers, so I could only use interface methods. But, I notice I can use any public method from class that implement the interface and this is wrong. I follow the great article:
+Write the test service class and interface
+Configure my application service class as a service (test_service)
+Configure my controller as a service:
+Using service in controller
+

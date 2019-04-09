@@ -1,0 +1,2 @@
+added curlies, but this is really c-like pseudo-code not actual C. As for JSON vs XML, the API offers both. The users of the library will generally be more familiar with XML, but again, the given code is just to illustrate  style 1 v style 2, not actual code.
+

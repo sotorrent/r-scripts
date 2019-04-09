@@ -1,0 +1,2 @@
+That is exactly why you should have one assert per test.
+

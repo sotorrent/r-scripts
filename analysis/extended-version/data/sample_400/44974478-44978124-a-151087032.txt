@@ -1,0 +1,2 @@
+I was using will-paginate for while but I stopped using it, but there is a javascript tool which will help you a lot, you can only return the data and it will do the pagination and sorting and you can control different things as well. try to use datatables
+

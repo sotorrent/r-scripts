@@ -1,0 +1,6 @@
+I tried this query:
+is the table name, is the column name, but it working for every column and not only the specific the identity one
+Maybe someone know how I can in that query:
+add into the select the column name???
+I just need to get the column name or add expression that where the column name (to get only one option)
+

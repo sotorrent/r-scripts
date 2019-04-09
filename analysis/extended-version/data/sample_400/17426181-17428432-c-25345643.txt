@@ -1,0 +1,2 @@
+@pandit - I just looked at the Subversive webpage: JavaHL and SVNKit EPL-incompatible SVN Connectors are marked as “exempt pre-req” and “works with” dependencies (correspondingly) and are distributed from polarion.com. That might be the issue: Subversive might not have installed either plugin.
+

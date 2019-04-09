@@ -1,0 +1,2 @@
+I like your use of , however Anthony's use of and checking for non-zero is superior to using and checking for zero. will stop looping as soon as it finds a value other than zero, while will keep going even after it has enough information to answer the question, "Is there a non-zero value?"
+

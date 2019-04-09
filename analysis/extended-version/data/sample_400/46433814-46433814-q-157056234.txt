@@ -1,0 +1,5 @@
+Right now I am building a distributed application and am looking into using rpc:cast vs rpc:call because I don't want the calling processes to wait on the return value, or even receive one.
+Cast works perfectly for this, but I am curious, what process executes the function passed by rpc:cast and call? Should I be worried about over/under concurrency?
+Usually, when I want another process executing code, I use a pool of workers and send one of them an asynchronous cast with gen_server:cast/2 and let them handle it. But for RPC, it doesn't define what process does the computation. Are the processes pre-allocated and waiting? Or is every process spawned as rpc calls it and then terminated? From what I have read, this is incredibly inefficient if you are making many calls, as the processes are just being created and destroyed which isn't computationally easy.
+Thank you for your help in advance!
+

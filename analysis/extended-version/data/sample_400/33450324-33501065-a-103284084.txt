@@ -1,0 +1,4 @@
+The solution is based on this line: User interface 'Tkenv' not found (not linked in or loaded dynamically). Available ones are: Cmdenv : command-line user interface.
+This means that OMNeT++ itself was built without Tk support. Follow carefully the Installation guide. It specifies exactly what pakages you should install before running the . It's most likely that you have not installed the development Tk and Tcl packages.
+Hint: watch the output of the command closely. It prints out whether Tk was correctly detected or not.
+

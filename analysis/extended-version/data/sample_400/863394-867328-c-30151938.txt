@@ -1,0 +1,2 @@
+Config file equivalent: traceOutputOptions = "DateTime, Timestamp" to the system.diagnostics/sources/listeners/add tag. Save an  MSDN lookup - and it is mentioned in one of the other answers here. Somehow ended up seeing the MSDN one before the other answer.
+

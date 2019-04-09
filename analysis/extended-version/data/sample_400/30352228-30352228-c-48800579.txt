@@ -1,0 +1,2 @@
+Use to test your server configuration to see if TLS 1.x is actually supported and what cipher suites are supported by your server. This and the handshake simulation section may be helpful to determine why the newer versions of Chrome and Firefox fail to connect to your site.
+

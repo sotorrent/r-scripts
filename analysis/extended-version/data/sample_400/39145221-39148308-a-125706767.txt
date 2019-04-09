@@ -1,0 +1,2 @@
+Try including in your select the attribute 'onchange' and in the value of option the link, how that:
+

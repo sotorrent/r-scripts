@@ -1,0 +1,2 @@
+So are you saying that reading an address that falls in the GPIO address range, just above the register range would/could result in a fault?
+

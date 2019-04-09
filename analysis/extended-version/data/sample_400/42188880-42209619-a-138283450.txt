@@ -1,0 +1,7 @@
+Here is a fun solution. It is not what I would do but for educational purposes, so take it for what it is.
+It uses on inner and outer arrays. The accumulated result of the inner array on each iteration gets added to the accumulator of the outer array. The inner reduce is where all the actual data is added. The outer reduce just accumulates the inner results.
+It uses some ECMAScript 2015 features also like the spread syntax and arrow functions.
+I used instead of so that it shows up in console.
+Don't actually use this. Its just to show different way. I would use a nested loop in practice.
+Have fun!
+

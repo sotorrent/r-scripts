@@ -1,0 +1,2 @@
+This kind of regex is uneadable, FYI, the first element of it is:
+

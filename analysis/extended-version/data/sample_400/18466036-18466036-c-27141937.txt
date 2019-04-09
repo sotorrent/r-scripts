@@ -1,0 +1,12 @@
+I've tried every possible combination (panel closed or opened and navigate to different pages).
+The problem is only with the mainpage.
+
+Example: let's say I have the pages , , .
+ 1) First load, mainpage shown: panel works (close/open all the time you want);
+ 2) I change page, I go to elist. Panel works.
+ 3) I go to estats, Panel works.
+ 4) Repeat 2) and 3) how many times you want, it works.
+ 5) Go back in mainpage: doesn't work anymore.
+
+Another interesting thing is that if I go again to another page, in that page the panel works. it's only mainpage the problem
+

@@ -1,0 +1,2 @@
+@alfC Looks like it's to stop people from doing weird things with temporary class objects.
+

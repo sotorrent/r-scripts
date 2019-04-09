@@ -1,0 +1,3 @@
+IMHO, unused imports have no performance impact at runtime. It is purely a namespace mechanism. Nonetheless, you should always import only what you need for readability and avoid namespace collisions which are a nuisance.
+Apart from code readability and hence maintainability of code, there may be faster compilation of java code (however, unnoticeable) by tidying up imports, but Runtime performance is not impacted, since byte code generated is not impacted by untidy imports. Byte code generated remains the same.
+

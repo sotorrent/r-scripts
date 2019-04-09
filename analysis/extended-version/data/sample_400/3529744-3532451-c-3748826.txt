@@ -1,0 +1,2 @@
+I'm at lost... since it's InnoDB, you might try changing the query into the one I've edited above.. it worked for me
+

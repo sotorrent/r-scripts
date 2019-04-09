@@ -1,0 +1,2 @@
+It may be unknown to the script at the time of writing and receive an unknown number of prompts from a cfout or php echo or whatever
+

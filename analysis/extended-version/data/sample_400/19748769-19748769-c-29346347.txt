@@ -1,0 +1,2 @@
+I've fixed the problems above but i want to know if it's possible to make my digit.length() an less or greater value to my validLength, so that i can know if the digits are 4 digits or 6.
+

@@ -1,0 +1,8 @@
+###Determine by Cursor Location
+One way you could do this would be to only show the element when the user is hovering over the content of the page itself, well below the header, and navigation links:
+
+You can see the effect here:
+###Or, Slowly Uncover It
+Alternatively, you could slowly uncover the link with another element. In the example below, I use the body's pseudo element to cover up the element, and slowly reveal it as the user scrolls:
+You can see this effect here:
+

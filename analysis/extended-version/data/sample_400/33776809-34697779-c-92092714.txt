@@ -1,0 +1,2 @@
+JUnit 5 is here and they decoupled testing framework from assertion framework. Since that time up to 2018 there haven't been releases of Hamcrest. On other hands is sound alternative.
+

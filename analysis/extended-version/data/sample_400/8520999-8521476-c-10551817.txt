@@ -1,0 +1,2 @@
+bool(true) string(61) "INSERT INTO tagovi_rel (column1, column2) values ('16', '81')" string(61) "INSERT INTO tagovi_rel (column1, column2) values ('16', '81')"
+

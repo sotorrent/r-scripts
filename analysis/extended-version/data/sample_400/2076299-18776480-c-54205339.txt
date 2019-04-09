@@ -1,0 +1,2 @@
+Doing this from the Chrome console outputs "Scripts may close only the windows that were opened by it"
+

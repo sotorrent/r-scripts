@@ -1,0 +1,2 @@
+When providing declaration file for the 3rd party module that is non-TypeScript based, the declare module must be in the global scope, and no import or export outside the declare module.
+

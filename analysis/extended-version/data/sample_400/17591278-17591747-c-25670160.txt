@@ -1,0 +1,3 @@
+counter needs to be incremented only if the condition is true, that's why I set it alone.
+I tried your suggestion with some modification and it worked in a certain way (I'll edit my post in few minutes), but the array seems to keep the size and values of his first passage, and then, for the others passages, it replace the old values by the new ones who have the same index... but old values who'll have a bigger index than the new values, will remain the same as for the first passage.
+

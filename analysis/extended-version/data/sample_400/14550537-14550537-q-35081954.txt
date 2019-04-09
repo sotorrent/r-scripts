@@ -1,0 +1,8 @@
+Given a list of elements of which some are repeated multiple times, i need to produce a new list with tuples, where each tuple contains number of times an element is repeated in a row and an element itself.
+For example, given
+This is my best attempt at this point. I feel that i am missing something very basic, please help me understand what
+After analyzing what the problem is, it seems to me that at the point when i recursively call , does not have enough information to figure out the count of elements. Say we're dealing with . Ok, so,  is , is and is . Following my logic above, the fact that 1 was seen 2 times is lost for the next call.
+The problem may be that i am not thinking about the problem the right way. What i have in mind is "go along the list until you find that this element is not the same as a previous elements, at which point, count the number of occurrences of an element and make it into the tuple")
+I recognize that in the above scenario (in my code) the problem is that when numbers are in fact the same (1,1) the fact that we already saw a number is not reflected anywhere. But where can this be done please, given that i am not yet ready to compose a tuple
+In answering this question, please stick to case structure. I realize that there maybe other better, cleaner ways to address this problem, i would like to better understand what i am doing wrong here
+

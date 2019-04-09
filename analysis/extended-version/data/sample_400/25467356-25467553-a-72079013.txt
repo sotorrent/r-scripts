@@ -1,0 +1,4 @@
+I thought that the decimal value for ‘ñ’ was going to be 164 as listed on the ASCII chart at www.asciitable.com.
+Asciitable.com appears to give the code for the old IBM437 DOS character set (still used in the Windows command prompt), in which is indeed 164.  But that's just one of hundreds of “extended ASCII” variants.
+The value 4294967281 = 0xFFFFFFF1 you got is a sign-extension of the (signed) value 0xF1, which is how is encoded in ISO-8859-1 and close variants like Windows-1252.
+

@@ -1,0 +1,2 @@
+It doesn't take 87% of the resources. The costs shown in the actual plan are still estimated costs. It doesn't adjust them to take account of what actually happened. For some reason it thinks that it will end up sorting 3,348,560 rows. The Filter on reduces the actual row count to 0 and thereafter all the costings are way off.
+

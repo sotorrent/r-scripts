@@ -1,0 +1,2 @@
+Not sure what platform you're targeting (for example on Windows, it's really easy to "get onto" the UI thread via window messages), but in many environments it's not so easy to asynchronously "get back" to the original calling thread without substantially restructuring your program - it might be simpler to just call the completion routine from whatever thread you happen to be on and let the callback handle it however it needs to (and put the request on some other thread only if it actually cares or needs to care).
+

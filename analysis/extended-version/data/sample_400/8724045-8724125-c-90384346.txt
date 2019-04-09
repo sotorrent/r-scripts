@@ -1,0 +1,2 @@
+@SantiBailors "one whole day" out of what? That day is spent by the computer, not you. A computer can't fix bugs (unless programmed to?), otherwise you wouldn't be needed. A change that gains 1/1000 inside a 1000 iteration loop is still just a 1/1000 gain, I don't see your point. If someone wants to pay you for such a small gain, that's great for you, otherwise it's a waste of time.
+

@@ -1,0 +1,2 @@
+Yes, it wouldn't even run on my own machine. So when I just it runs fine, but the compiled version from the pyc.py doesn't run (crashes and pops up visual studio debugger)
+

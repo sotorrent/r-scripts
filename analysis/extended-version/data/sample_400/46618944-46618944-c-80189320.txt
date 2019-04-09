@@ -1,0 +1,2 @@
+I need indicate to user that this property or other properties not working or not allowed in the controller, in this case is because the api is public and I need indicate that it can and can't do the api
+

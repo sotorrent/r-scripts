@@ -1,0 +1,10 @@
+So i have this problem where i want input 5-digits and be sure that it's 5 digits.
+If it's lower, it'd say, you don't have enough digits
+If it's higher, it'd say, you have too many digits.
+Also if you would input Char with the digits, it would say, that it's not valid.
+This is what i got so far and where im stuck at.
+I also want to know if their's a way to say
+input > 5digits length.
+Also, overall it keeps saying "else without if" case,default, or } expected on the first else if line.
+tl;dr : My question would be, is there a way to input 5 digits and recognize them as digits, if it's higher or lower, and if their's any character in them, also how to loop it up so it'll repeat until 5 digits are entered under the corresponding criteria.
+

@@ -1,0 +1,2 @@
+so is it alright to declare my string array in strings.xml? or can i even declare it rite on the activity.java?
+

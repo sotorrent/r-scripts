@@ -1,0 +1,4 @@
+Just issue a new command with an expanded range.  On modern computers the time taken to recreate the plot is small and you generally will not see a delay.  Any other approach will essentially do the same thing, clear the current plot and create a new plot.
+The ggplot2 and lattice packages have ways of constructing a plot and updating the plot, but when the updated plot is shown it is redrawn from scratch.
+There is a function in the TeachingDemos package which will allow you to change the range of a plot, but it also will just redraw the plot from scratch (and due to changes in R 3.0.0 it is not currently working, so if you wanted to use it you would need to go back to R 2.15 or before, or wait for it to be fixed).
+

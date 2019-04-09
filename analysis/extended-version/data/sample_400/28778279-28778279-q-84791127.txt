@@ -1,0 +1,6 @@
+I want to convert the IST(indian standard timing) to UTC and then to  PST(Pacific standard timing).
+Can you guys please help me doing it in Jquery.
+I will provide the code what i have.
+Here i have got the IST timing and am assigning that value to a text input timepicker field. I want this to be converted to UTC time and then from UTC to PST..
+Thank you..
+

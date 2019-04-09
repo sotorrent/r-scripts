@@ -1,0 +1,5 @@
+I'm trying to implement Drag & Drop functionality with source being a TreeView control. When I initiate a drag on a node, I'm getting:
+Invalid FORMATETC structure (Exception from HRESULT: 0x80040064 (DV_E_FORMATETC))
+The ItemDrag handler (where the exception takes place), looks like:
+Does anyone know the root cause of this and how to remedy it? (.NET 2.0, Windows XP SP2)
+

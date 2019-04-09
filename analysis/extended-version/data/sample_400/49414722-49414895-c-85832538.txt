@@ -1,0 +1,2 @@
+First of all thanks for your answers.So inside the new function of the controller I should change the attribute? How would I pass the variable which is on the script to the function of the controller?
+

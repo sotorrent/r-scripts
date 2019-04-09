@@ -1,0 +1,5 @@
+I had the same problem.
+For resolve it you should remove focus before you call your modal window.
+Or you should check your inputs like touched at the ngOnInit.
+You can read here about this problem.
+

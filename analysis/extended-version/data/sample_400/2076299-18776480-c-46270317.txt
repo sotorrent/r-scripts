@@ -1,0 +1,2 @@
+Bad side of this solution is that a get request is sent to server. But on the other side, I haven't found any other solution.
+

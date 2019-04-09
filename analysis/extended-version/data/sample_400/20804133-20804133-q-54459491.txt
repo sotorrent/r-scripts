@@ -1,0 +1,8 @@
+I'm creating the "framework" to control a Hexapod.
+So (simplifying) I have a Servo class:
+and a child HexBone class:
+and also a HexLimb class:
+In the HexLimb class whenever I do:
+self.femur.setAngle(30) I want to call self.calcPosition() to recalculate the limb's tip position.
+I've been searching all over and couldn't found any answer...Am I doing it the wrong way?
+

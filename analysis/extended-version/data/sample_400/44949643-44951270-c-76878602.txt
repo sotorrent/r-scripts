@@ -1,0 +1,2 @@
+Basically all I did was find a way to split a list into sublists based on a list item (which in your case is the empty element - '') and then increase a counter and print the sub-list for each non-empty sublist. And pop all the unneeded stuff from the list (which in your case is the 'Pool member IP' string).
+

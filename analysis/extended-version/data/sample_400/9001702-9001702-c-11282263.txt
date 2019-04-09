@@ -1,0 +1,2 @@
+If the folder is password protected, then PHP is not doing the authentication. Apache (or the web server) is.
+

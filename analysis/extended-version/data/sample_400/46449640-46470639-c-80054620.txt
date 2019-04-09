@@ -1,0 +1,2 @@
+I used Ext.data.JsonP.request() because your requirement was to do client-side pagination. For this, the example fiddle first fetched the complete data set and then used the memory proxy for pagination.  If you want to send partial data on every click of  next button, from cross domain , then this fiddle does it. It uses jsonp proxy and works perfectly but pagination does not work because there is no server-side code to process the paging information in request. (Back-end code sends the complete data set.)
+

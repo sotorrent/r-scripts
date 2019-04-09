@@ -1,0 +1,2 @@
+Yeah, the data comes back fine. I am able to log it and see the data. But in the UI, all I can see is an empty object. As you said, rows query might get returned before counts query and that might be the thing.
+

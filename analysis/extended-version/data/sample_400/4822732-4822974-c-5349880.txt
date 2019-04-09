@@ -1,0 +1,2 @@
+No I hadn't, I didn't think I had to because it has the whole ProjectFusion as a Direct Dependency.  But I tried to add it by (on the database file) right click->Get info->Targets and checking UnitTests as another target for it.  I got the same errors.
+

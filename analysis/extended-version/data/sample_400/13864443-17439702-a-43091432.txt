@@ -1,0 +1,6 @@
+I believe you can based on section 9.1.1 of the java memory model:  9.1.1 Post-Construction Modification of Final Fields ... Freezes of a final field occur both at the end of the constructor in which the final field is set, and immediately after each modification of a final field via reflection other special mechanism. ...
+Some related Guice discussions are:
+
+.. and
+It would be nice if DI frameworks made this explicit statement though.
+

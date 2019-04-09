@@ -1,0 +1,2 @@
+Except that does not exist exactly as a floating point number, so the resulting distribution cannot be uniform. Stephen Canon's solution on the other hand should work.
+

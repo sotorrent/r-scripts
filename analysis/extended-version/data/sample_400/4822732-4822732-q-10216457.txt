@@ -1,0 +1,8 @@
+I'm working on a new iPhone project and I'm running into problems with sqlite.  I've done this before on a different project and it worked just fine so I'm not sure exactly what is going on with this one.  I'm using the same code from before, but the situation is a little different.
+First of all, I'm trying this time to use Unit Testing so I've created a Cocoa Unit Test Bundle, and I got that working correctly, then I wanted to make a Unit Test for my sqlite database.
+The first thing run with this test is [self checkAndCreateDatabase] which is as follows:
+Then I attempt to open the database with the following line:
+This fails everytime with error code 14 SQLITE_CANTOPEN, and databasePath is "/Users/labuser/Library/Application Support/iPhone Simulator/Documents/projectfusion.db3".
+What is odd is that when I go to that directory, Documents/ isn't there, so if I create that, then it doesn't fail, BUT projectfusion.db3 then has a size of 0kb; the tables aren't there.  That makes any sqlite3_prepare_v2() fail, because the tables aren't there.  If I manually copy the projectfusion.db3 file to that directory before running, then it works just fine.
+Is it because I'm doing this inside the unit tests and the scripts don't have permission or something?  Or is it possibly because I'm working on a school computer at my university and can't write to that directory? (I tried logging in as admin and it didn't work either).
+

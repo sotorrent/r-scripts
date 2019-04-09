@@ -1,0 +1,2 @@
+I am working on a directive but I don't want to play with ```````element.ready(function() {...})element.ready` instead.
+

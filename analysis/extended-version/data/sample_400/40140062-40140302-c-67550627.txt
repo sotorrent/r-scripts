@@ -1,0 +1,2 @@
+The results of your JSFiddle seem completely random. Sometimes the function with no return statement executes faster (according to your timing), and other times the function with the return statement runs faster. I don't think this information is accurate enough to form a solid conclusion.
+

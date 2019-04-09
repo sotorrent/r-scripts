@@ -1,0 +1,2 @@
+The calculation of Total Costs in the question is incorrect, I believe.  Total Costs should be the sum of Item, Marketplace, and Payment Processor costs, and not the Price minus those terms.
+

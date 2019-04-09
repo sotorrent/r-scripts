@@ -1,0 +1,2 @@
+Its losing the GET parameter... have a look at
+

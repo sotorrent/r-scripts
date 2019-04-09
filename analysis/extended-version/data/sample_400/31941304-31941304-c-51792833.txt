@@ -1,0 +1,2 @@
+@SouravGhosh I discover that compound literals are, in fact, operators. Wut.
+

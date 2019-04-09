@@ -1,0 +1,2 @@
+Actually i know the problem. my appendImages function appends images in div but i have to append in li
+

@@ -1,0 +1,10 @@
+Is it possible to make a class abstract in C++ without declaring any abstract methods? Currently, I have a Sprite class with a StaticSprite and DynamicSprite subclass. I would like to make the Sprite class abstract.
+The problem is that there aren't any methods they share. Well, both StaticSprite and DynamicSprite might share a draw()-method, but the parameters of this method are different so this isn't an option.
+Thank you!
+EDIT:
+Here is the code to demonstrate what I'm trying to do:
+Sprite:
+Staticsprite:
+Dynamicsprite:
+As you see, it's useless to create a Sprite-object, so I would like to make that class abstract. But I can't make draw() abstract as it uses different parameters.
+

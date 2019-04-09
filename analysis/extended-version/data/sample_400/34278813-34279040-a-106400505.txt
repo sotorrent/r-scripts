@@ -1,0 +1,3 @@
+What you want to do is make a random number generator that generates a random number from 1 to 8, and each number represents a direction. It is something like this:
+I am very sorry if I confuse a language with c# since I didn't do unity for a while :)
+

@@ -1,0 +1,2 @@
+Please, export your project as a war file, open the war with zip utility and see if you find your Alogin class inside in the expected path, that is . If this is correct, then your project is right and you have a problem with tomcat. If the class is not present, the problem is with your project. Tell us.
+

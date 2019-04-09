@@ -1,0 +1,4 @@
+enter image description here
+
+Hi guys I'm wondering how to make this in HTML and CSS. I know the obvious way is to make a triangular shape image in the bottom but it feels wrong. Is it possible to do it in HTML and CSS?
+

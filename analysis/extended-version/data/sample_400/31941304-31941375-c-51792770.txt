@@ -1,0 +1,2 @@
+FYI (well, I guess you know – but for others' sake): this only removes one additional pitfall. It doesn't guard against blatant misuse such as in .
+

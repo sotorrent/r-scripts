@@ -1,0 +1,5 @@
+Well, I use the class for reading out of a csv-file.
+An example would be
+gives you exact one line in the .csv-file. After that you have to split the String line you have got into whatever the lines are seperated by (in most cases the line is separated by ";"). Then you have each element available which was saved in one line.
+In order to insert the data you read out of the .csv-file into your sql-lite database use this example
+

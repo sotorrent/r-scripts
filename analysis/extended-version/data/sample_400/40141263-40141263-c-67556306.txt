@@ -1,0 +1,2 @@
+It is an event table it's actually called plays.. I've implemented all the tables already, I just posted the attributes that I need the constraints on. The total of homeTeam and awayTeam scores needs to add up to a total score, which actually isn't an attribute in any table.... so can I create a view and add an attribute to it?? And Everything you said I should have I do have as in player table have their team ID and in the game I have away team home team and then home score and away score in quarter table.
+

@@ -1,0 +1,2 @@
+i think you fix the bottom constant of your view . not give bottom constant of uiview.
+

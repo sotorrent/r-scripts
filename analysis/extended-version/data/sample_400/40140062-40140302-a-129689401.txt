@@ -1,0 +1,6 @@
+Just for fun and FYI I wrote a little benchmark script to try it out.
+To my surprise, the one with the return statement returned faster than the one without by about 100ms for about a dozen runs on Firefox (Gecko). This result was pretty consistent on both Mac and Ubuntu.
+I also ran it on Chrome (WebKit) and the results were much more ambiguous, there wasn't much consistency at all.
+These were my results and are in no way definitive. Feel free to try it for yourself. In my opinion your personal preference is more relevant than 100ms anyway. If that's how you roll, then add it.
+Here's a fiddle.
+

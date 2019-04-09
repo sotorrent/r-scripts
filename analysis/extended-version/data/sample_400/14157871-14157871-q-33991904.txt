@@ -1,0 +1,5 @@
+I have this data:
+How can I loop through this data in order to have two tables as shown below:
+I have started this but got stuck:
+Any help would be appreciated. Thanks
+

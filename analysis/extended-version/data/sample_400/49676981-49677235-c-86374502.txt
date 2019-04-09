@@ -1,0 +1,5 @@
+You can use 
+
+Use .nextAll instead of .next to get all following siblings, and then use .slice to narrow that down to a range.
+so from ten columns to the sixth column we need next 5 times and show upto 6.
+

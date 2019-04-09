@@ -1,0 +1,4 @@
+if it is ing in the right order then try to populate an array with the data at the point where you it. this is quite a long thread to debug without using the code itself, but perhaps you could try to turn
+into
+also, 's role seems a little ambiguous so maybe either declare it in a loop or get rid of it altogether.
+

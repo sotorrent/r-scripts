@@ -1,0 +1,2 @@
+if it doesn't return anything then you don't need the return statement. it doesn't make anything faster by putting it there.
+

@@ -1,0 +1,15 @@
+Do I have to set the METHOD (RFC2445 4.7.2 Method)? I can't even find a decent description of this property or the values it accepts (is it client specific?). For the methods, see the WebDav and CalDav specs. Calendaring Extensions to WebDAV (CalDAV
+
+This document defines extensions to the Web Distributed Authoring and
+Versioning (WebDAV) protocol to specify a standard way of accessing,
+managing, and sharing calendaring and scheduling information based on
+the iCalendar format.  This document defines the "calendar-access"
+feature of CalDAV.
+
+METHOD (RFC2445 4.7.2 Method)?
+RFC 2445 was obsoleted by RFC 5545 so you might be interested in differences between 5545 and 2445 so that you can try to fit into the intersection of the two.
+
+I'm at the end of my rope. I'm willing to read documentation if it answers questions about actually building a website that generates proper calendar subscriptions.
+All of these standards are maintained by CalConnect which has discussion lists that you might find of use.
+Sorry I can't be of more use, since I have very little personal practical experience with Outlook, but there are a lot of people involved with CalConnect who know all the interop minutiae.
+

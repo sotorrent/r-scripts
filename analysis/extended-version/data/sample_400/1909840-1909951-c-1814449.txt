@@ -1,0 +1,2 @@
+That's not entirely true. You can set the parentViewController property by calling [controller setParentViewController:] (you get a warning though, but it works). When there's a UINavigationController several levels up the hierarchy, the navigationController property will return the correct controller instance. So it's not only used by a model view controller, but by every built-in view controller that uses some kind of navigation.
+

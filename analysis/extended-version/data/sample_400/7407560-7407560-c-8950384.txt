@@ -1,0 +1,2 @@
+Can  you post the actual execution plans?  I'm assuming this is from an actual not an estimated plan.
+

@@ -1,0 +1,2 @@
+So it is probably not a good idea to be sending tons of rpc communication because each time node1 receives an rpc from node2, it has to spawn off a whole new process, which I have read is intensive.
+

@@ -1,0 +1,3 @@
+@FelixKling, That's actually the same example I am following to make and API call to Google analytic. I have 
+and my handleClientLoad contains : The least I should see it "loading" on screen, right?
+

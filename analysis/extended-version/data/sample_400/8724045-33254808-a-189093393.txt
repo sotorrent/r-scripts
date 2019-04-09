@@ -1,0 +1,2 @@
+While impact in compilation is minimal, the impact in deployment can be bad, I've just come across an unused import that required a separate library which became a maven dependency, a further transitive dependency problem was fortunately not found but the war was thicker for no reason, add to that a superfluous jar in the webapp classloader.
+

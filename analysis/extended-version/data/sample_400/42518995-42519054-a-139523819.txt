@@ -1,0 +1,4 @@
+or for more items:
+
+optionally: add a delimeter: (notice the 0 changed to the length of the delimiter for the 3rd parameter of )
+

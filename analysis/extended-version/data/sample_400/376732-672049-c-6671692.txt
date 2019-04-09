@@ -1,0 +1,2 @@
+Wait… what?  Unless you have some extremely Apache-specific requirements (and rewrite rules are not Apache-specific), this suggestion is insane.
+

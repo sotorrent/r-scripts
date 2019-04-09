@@ -1,0 +1,2 @@
+@dyp Well, the term "value" doesn't really apply to functions, so it's IMO nonsensical to talk about lvalues of function type. You can't put a function on the left-hand side of an assignment, IIRC
+

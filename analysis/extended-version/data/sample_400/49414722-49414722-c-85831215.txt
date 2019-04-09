@@ -1,0 +1,2 @@
+the change_key method changes the public_key attribute of every User created. That is the question, how can I pass an argument to a function of Model?
+

@@ -1,0 +1,3 @@
+Here's my approach:
+Update: removed conversion to numeric (not required)
+

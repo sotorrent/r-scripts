@@ -1,0 +1,2 @@
+I added the style setting for date and time, so it now prints something like . Clearly you can customize that.
+

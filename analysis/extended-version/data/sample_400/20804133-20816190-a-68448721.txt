@@ -1,0 +1,5 @@
+Taking what Lukas Graf suggested i've changed the code a little bit in order to maintain the Servo class more general.
+Basically Servo (and inherently its child class HexBone) take a callback function reference as an optional argument for init (which defaults to None).
+When calling Servo.setAngle in the end this will execute the callback function.
+Code is as follows:
+

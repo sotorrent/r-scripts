@@ -1,0 +1,7 @@
+Just faced a very strange behavior of my ExtJS application. Sometimes I can see old JavaScript code or outdated ExtJS views. Even if I reload webpage with Ctrl+F5 I can found old content. Sometimes I can see correct page, but then reload it an find out it's outdated.
+And seems like there can be mixed content. For example, I remove some label and then add some forms. And sometimes I can see both forms and label.
+Clearing browser's cache doesn't take any effect as well as opening page on clear VM.
+I tried to put
+into function of my instance before creating main view, but it doesn't seem like there's any effect.
+This is very weird because I have never seen this in my application before.
+

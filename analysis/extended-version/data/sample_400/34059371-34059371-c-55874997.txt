@@ -1,0 +1,2 @@
+by the way I can't find some recommendations or limitations about speed of ForEach subsystem. Are you really sure this block is hot place of your model? you can use profiler to check it.
+

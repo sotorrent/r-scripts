@@ -1,0 +1,2 @@
+-1 because you can't possibly know if inheritance should be used or not.  Review Alexandrescu's visitor framework for an excellent counter-point to your statement.
+

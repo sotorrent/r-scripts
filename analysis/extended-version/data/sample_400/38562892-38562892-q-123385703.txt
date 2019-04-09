@@ -1,0 +1,6 @@
+When pulling from my remote develop branch, I get a long series of messages like this:
+I shut down IntelliJ and all other open editors as suggested here, but the error persisted.
+I tried to chflags on all files, as written here, but it did nothing.
+I also tried chowning all files to my user and forcing write permissions with chmod both on files and on the directory itself, recursively (both from my user and sudo, I tried simply +x, then 775), but to no avail.
+I cannot get rid of these messages. This happens only when pulling develop. Other branches are fine.
+

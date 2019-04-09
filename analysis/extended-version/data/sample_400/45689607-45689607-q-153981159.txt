@@ -1,0 +1,4 @@
+I am trying to pass a Javascript variable into a URL, but there is some sort of syntax error within it.
+The variable is basically the kml file name which is stored on the server within the folder KML and I am trying to access that file in order to add a KML layer on my google map.
+The URL syntax seems to be incorrect.
+

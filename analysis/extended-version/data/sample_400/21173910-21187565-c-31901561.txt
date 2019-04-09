@@ -1,0 +1,2 @@
+For me, the new web application was created under the Default Web Site.  There is no beta folder in this instance.  Just separate where the files are located for your "MySite" and your new Web Application.
+

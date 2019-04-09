@@ -1,0 +1,2 @@
+The R internal plotting systems don't allow dynamic operations, but you can call OpenGL and TclTK graphing systems from within R, and those (IIRC) let you adjust dynamically, add slidebar controls, etc.
+

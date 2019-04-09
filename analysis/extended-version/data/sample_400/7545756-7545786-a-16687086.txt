@@ -1,0 +1,5 @@
+If you know that your is always 7 characters, you could do this.
+So..
+Example:
+Check the inspector to see the s removed.
+

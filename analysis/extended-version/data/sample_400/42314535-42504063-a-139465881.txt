@@ -1,0 +1,7 @@
+  - Why you are getting involved in a a wild goose chase?
+  - Why use script for this function? why not assign it directly using user manager? Something like discussed here
+    ... its just to share some thoughts on it, maybe you can further enhance it as per your requirements.
+  - Mikrotik User manager is a nice mini billing system but its not the focus of mikrotik since long. it have its flaws and limitations.
+  - If you are a commercial entity like ISP/Net_Operator, then I recommend you to use some dedicated billing billing system like freeradius or radius manager which can do the job nicely.
+  - It can also perform many other fancy functions like sending sms / redirection / and much MORE...
+

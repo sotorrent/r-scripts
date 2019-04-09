@@ -1,0 +1,3 @@
+The Account Kit documentation states that if your began the login session with AccountKitActivity.ResponseType.TOKEN, it's possible to access the Account Kit ID, phone number and email of the current account via a call to getCurrentAccount().
+Is it possible to get the user's phone number if you began with AccountKitActivity.ResponseType.CODE just like the way Saavn does it?
+

@@ -1,0 +1,9 @@
+The total number of rows is correctly showing in pagination but Pagination is not updating the view when the next button is clicked
+Im new to Sencha. Im Mysql, I'm returning all rows. So that I can limit in client side. If I limit the rows in backend, I cannot have all the rows in client side.
+View: List.js
+/**
+
+  - This view is an example list of people.
+    */
+    Store: Personnel.js
+

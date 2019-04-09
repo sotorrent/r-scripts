@@ -1,0 +1,7 @@
+I am using Valums ajax file-upload plugins for multi file-upload using asp.net mvc 3.
+Views
+Scripts
+Controller Action
+Problems Explaination
+I have Upload controller action where I have rename the filename for uploaded file and it is working fine. The problem here is that after file is uploaded, file name displayed the name of original file name and also show the file size. But I want to display the file name which is re-named and the value which is selected in dropdown box list and datetime value submitted from form fields and it's file size is ok. I have no idea how could I modify those content which is displayed after file-upload is completed.
+

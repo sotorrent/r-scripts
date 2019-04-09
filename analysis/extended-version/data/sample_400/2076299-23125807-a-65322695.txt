@@ -1,0 +1,3 @@
+This is one way of solving the same, declare a JavaScript function like this
+Add the following line to the HTML to call the function using a
+

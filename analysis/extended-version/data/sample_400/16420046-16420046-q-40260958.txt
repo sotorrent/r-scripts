@@ -1,0 +1,10 @@
+I´ve just started using R, and am having problems making a grouped bar graph.
+My data is Type (5 categories), mRNA expression (numbers ranging from -3 to +3) and ER (2 categories).
+mRNA is on the y-scale, Type is on the x-scale - columns are split into ER+ and ER-.
+I tried to use the function, but I´ve gotten every error under the sun, but I managed a :
+My problems are:
+
+1)  The y scale is way off - it ranges from -12 to + 8, and the y legend says -2.5. ylim=(-3,3) didn´t help.
+2)  I haven´t been able to put error bars on the graph.
+    Can anyone help me with this?
+

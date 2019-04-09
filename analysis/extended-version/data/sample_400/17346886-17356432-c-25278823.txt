@@ -1,0 +1,5 @@
+1 (c) (continued) 
+When I delete xmlns:xs="(which I suspected would get rid of the duplicate definition errors, I get another error that states "Element 'xs:schema' has no declaration for an attribute named 'xmlns:hfp'"
+
+Can you or anyone tell me what the I'm doing wrong here?
+

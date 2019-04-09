@@ -1,0 +1,2 @@
+I think the question is more about how do you read the elements without inputting the number beforehand, rather than how do you store them?
+

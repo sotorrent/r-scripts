@@ -1,0 +1,2 @@
+Probably.  But seriously, is using two indent levels for a switch actually conveying any information?  It really isn't.  The switch is one control level, not two, and the cases are easily read as alternations of it.
+

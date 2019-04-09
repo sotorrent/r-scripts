@@ -1,0 +1,5 @@
+Since the parameters are simple types (strings), they can be bound either from the route data (URL path) or the query string. So you can move the optional parameters to the query string and have your route only match the parameter.
+The URl that you would use to call this action would thus look like
+You may of course omit any of the optional parameters.
+The action method signature can remain as it is in your example. For more information, you can have a look at parameter binding ASP.NET Web API.
+

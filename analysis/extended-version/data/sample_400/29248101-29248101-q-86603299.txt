@@ -1,0 +1,3 @@
+All the Google API descriptions mentionds that after Javascript client library has loaded, this should fire the function it's give to
+Here is a test code I wrote, but myFunc doesn't get activated. Anyone can help?
+

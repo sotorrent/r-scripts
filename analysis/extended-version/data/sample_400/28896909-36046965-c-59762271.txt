@@ -1,0 +1,2 @@
+Well, seems to work in (reasonably modern) bash. You may need to before.
+

@@ -1,0 +1,2 @@
+i don't know much about nodejs, but if it has a foreign function interface it should be easy enough to call ChangeDisplaySettings.aspx) yourself
+

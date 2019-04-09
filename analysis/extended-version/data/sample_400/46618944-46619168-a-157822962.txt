@@ -1,0 +1,4 @@
+You could write a simple extension method validating against a generic type using JSON.NET:
+Usage:
+And the output:
+

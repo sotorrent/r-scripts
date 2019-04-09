@@ -1,0 +1,2 @@
+@Bv202 You can still implement a pure virtual destructor to clean up the memory.
+

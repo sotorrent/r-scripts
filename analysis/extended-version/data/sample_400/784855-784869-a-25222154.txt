@@ -1,0 +1,7 @@
+Not a wrapper for any specific library, but the JNA (Java Native Access)  "provides Java programs easy access to native shared libraries (DLLs on Windows) without writing anything but Java code"
+
+No JNI or native code is required. This functionality is comparable to Windows' Platform/Invoke and Python's ctypes. Access is dynamic at runtime without code generation.
+JNA allows you to call directly into native functions using natural Java method invocation. The Java call looks just like it does in native code. Most calls require no special handling or configuration; no boilerplate or generated code is required.
+The JNA library uses a small native library stub to dynamically invoke native code. The developer uses a Java interface to describe functions and structures in the target native library. This makes it quite easy to take advantage of native platform features without incurring the high overhead of configuring and building JNI code for multiple platforms.
+Using JNA, you should be able to call the Linux API directly (same as you would from C).
+

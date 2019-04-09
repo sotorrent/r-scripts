@@ -1,0 +1,2 @@
+Thanks, @FelixKling. I commented on my post. Now, on you're 'potentially-changing-the-code-behavior bit', I'd say it's a reasonable assumption to make that will not be defined in "cllient.js" -- since defined in preceding code, especially.
+

@@ -1,0 +1,7 @@
+I'm getting an error in actionscript 3 and it's something to do with my Timer. Here is the Error:
+TypeError: Error #1009: Cannot access a property or method of a null object reference.
+at RECOVER_pacmangame_fla::MainTimeline/doCheck()
+at flash.utils::Timer/_timerDispatch()
+at flash.utils::Timer/tick()
+My code involving the Timer is as follows:
+

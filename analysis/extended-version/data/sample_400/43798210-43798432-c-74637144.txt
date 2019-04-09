@@ -1,0 +1,2 @@
+Good find. I wonder what is the logic behind this, how return type makes sense, in the first place and if it makes sense, why not .
+

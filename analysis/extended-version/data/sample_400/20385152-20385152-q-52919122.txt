@@ -1,0 +1,6 @@
+I'm trying to embrace the new PCL fun on a Xamarin.iOS project in Xamarin Studio. I created a PCL "Core" library for my project and added Splat (v0.3.4) via NuGet. Then, in a consuming iOS project, I reference my core library. Once I do that, a couple compile errors show up.
+One of these:
+Multiple of these:
+It looks like this was addressed in an pull request to Splat that landed since v0.3.4 hit NuGet. Following along with the notes there, I added a reference to to the iOS project. When I do, the compile errors change up to complain about too many type definitions.
+Is it possible to work around these errors using Xamarin Studio 4.2.1 (Xamarin.iOS 7.0.4.209), and Splat 0.3.4 or do I need to build the latest code with its type-forwarding awesomeness?
+

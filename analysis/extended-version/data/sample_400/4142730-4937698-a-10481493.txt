@@ -1,0 +1,4 @@
+There are a couple other solutions to this kind of problem which don't require you to use or , but instead rely on the fact that already has the attribute. You first locally "erase" the definitions of using , so the expression you're interested in can be safely constructed, and then uses to interpolate that into a which can then be safely returned outside of the , and also uses the fact that doesn't really mean anything outside of .
+Using your example:
+I don't know if this is all that much less cumbersome than using , but it is different.
+

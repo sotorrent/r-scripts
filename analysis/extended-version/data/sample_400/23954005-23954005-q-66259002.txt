@@ -1,0 +1,5 @@
+I will show some data in my WebGrid. The SQL Statement looks like this:
+In table1 and table2 I have some columns with same name. If I want to Access a "duplicated" column from one specified table, I was used to (with Ado) Access it with:
+But this seems not to work in the WebGrid:
+How can I Access them?
+

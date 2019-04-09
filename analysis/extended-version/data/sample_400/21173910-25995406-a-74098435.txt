@@ -1,0 +1,2 @@
+I know this post is a little older but here is a powershell script I wrote that converts an existing folder to a web application in IIS or if it doesn't exist creates a new folder and web app. It also creates the app pool for it as well. It receives an array of app names so you can create more than one web application. This was my first powershell script so if you have any suggestions feel free to comment.
+

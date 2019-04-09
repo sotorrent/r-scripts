@@ -1,0 +1,26 @@
+When a WebApp is idle for along time IIS will close the application to save resources. This might have happened in your case.
+Its also said that the application would turn off if the last user session timed out. I hope this article will guide you properly.
+Look at what happens when the request gets to the runtime.
+
+1.  When ASP.NET receives the first request for any resource in an
+    application, a class named ApplicationManager creates an application
+    domain. (Application domains provide isolation between applications
+    for global variables, and allow each application to be unloaded
+    separately.)
+2.  Within an application domain, an instance of the class named Hosting
+    Environment is created, which provides access to information about
+    the application such as the name of the folder where the application
+    is stored.
+3.  After the application domain has been created and the Hosting
+    Environment object instantiated, ASP.NET creates and initializes
+    core objects such as HttpContext, HttpRequest, and HttpResponse.
+4.  After all core application objects have been initialized, the
+    application is started by creating an instance of the
+    HttpApplication class.
+5.  If the application has a Global.asax file, ASP.NET instead creates
+    an instance of the Global.asax class that is derived from the
+    HttpApplication class and uses the derived class to represent the
+    application.
+    See How it happens
+    How it happens!!!
+

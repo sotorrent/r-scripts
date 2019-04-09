@@ -1,0 +1,2 @@
+In most cases you may just redirect a user to it's browser home page 
+

@@ -1,0 +1,6 @@
+As answered HERE
+I believe the best solution for you would be to run the following VBA while highlighting/Selecting column B:
+This should give you desired result.
+However, when I tested the code, it was sometimes not clear if the code had ran as you need to remember that Excel has a nice feature of adding commas for you to separate numerical values.
+For example, where you might have 123456,123456789 this code will split it but Excel might then display 123,456 and 123,456,789 as the results. You will need to amend your formatting so that this does not happen.
+

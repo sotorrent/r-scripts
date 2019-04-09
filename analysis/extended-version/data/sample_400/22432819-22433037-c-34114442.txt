@@ -1,0 +1,2 @@
+You create a View Model that has some sort of IEnumerable<> of objects that have the info you need for your form. This would include Company, Location and IsSelected. In your View, you use the HTML helpers to do a . Then when you submit, your model will be wired up with the properties populated and you can then filter as needed.
+

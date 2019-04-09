@@ -1,0 +1,2 @@
+Is your starteam server on a remote server (remote location)?  If so could just be cost of going across the wire.  Do you have compression turned on in the connection?  Does it take the same amount of time to connect from an installed client?  If so that would rule out the SDK adding overhead.
+

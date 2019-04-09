@@ -1,0 +1,3 @@
+Duplication the element and the script together will be helpful
+check this i got it working as you want (took me a good time)
+

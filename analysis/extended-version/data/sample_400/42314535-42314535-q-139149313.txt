@@ -1,0 +1,5 @@
+I wrote this script but it's not working properly.Anyone can help?
+It's supposed to check download limit and download used by a user and then do some action i.e to remove the user from active ppp list but it has some flaws which is that I can't get the actual-profile value in a variable so instead I save the Profile name in Comment with the user manager user account so then I can get the profile name in the variable but that's not how I want it to be..So that's why how to get the actual-profile value in a variable and also there is one problem..Why I can't change the user account profile directly instead I am doing it the long way but in that way I loose the statistics of the user account so any way that I do not lose the statistics of the user account and the job get's done also???
+SCRIPT V1.0:
+SCRIPT V2.0 :
+

@@ -1,0 +1,2 @@
+i got an error like this.    error message:parameter 7:(.........).The clr type does not exist or you dont have permission to access it.
+

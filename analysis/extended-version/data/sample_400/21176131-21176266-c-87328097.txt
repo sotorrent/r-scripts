@@ -1,0 +1,2 @@
+@HassanBaig I think its because collides with since phones can't like desktop users with a mouse cursor. So in a smartphone if you touch an image for example, the hover handler will trigger, but if you have a click handler it will trigger also. I think that was and is still the issue?
+

@@ -1,0 +1,2 @@
+I tried to copy a local file from hard disk directly to Hadoop directory and got the following results. None of them work. Can anyone help me with the right syntax?
+

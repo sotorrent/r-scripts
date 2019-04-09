@@ -1,0 +1,5 @@
+main.cpp
+theme.cpp
+I have main.cpp and theme.cpp and many other files. I have two radio-buttons in my theme window. I have two style-sheet files for both gray and blue color. When I check any button it should apply all over application as shown in main.cpp.
+The problem is when I start application it applies file just once. But I want to make it run when I check other button. Is there anyway so that I can now in main.cpp that particular button is pressed and application can be restarted applying style sheet file for that button?
+

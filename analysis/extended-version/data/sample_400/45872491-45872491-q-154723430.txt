@@ -1,0 +1,6 @@
+im use visual code with angular 4 and bootstrap 4 (v4.alpha, ng-bootstrap).
+The problem happens when you finish typing some numbers and pressing enter without losing the focus (to show the modal), is shown modal but in console show the error mentioned. (Error: ExpressionChangedAfterItHasBeenCheckedError) and points out that error comes from the input text:
+I have read that I can do it using ngAfterContentInit, but this variable is not filled by a calculation, it's the user who fills the information in the input text.
+I use the ng-bootstrap modal code.
+Thanks a lot for your help.
+

@@ -1,0 +1,5 @@
+Totally agree with Ben. Try asking the opposite question. Why did Apple create a and property in a . This could've easily, well not easily, be accomplished with some hacking around of the property. Something like this to find the tab view controller would be common across all apps:
+Yes, it probably goes against intuition as a navigation, or a tab bar controller, is most likely also a parent view controller.
+There is no harm in using the property actually. To get past the warning, checkout this thread.
+But once you expose any data/behavior in the hierarchy's parent view controller, these checks would become far too common.
+

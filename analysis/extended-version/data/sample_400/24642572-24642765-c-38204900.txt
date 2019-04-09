@@ -1,0 +1,2 @@
+Added timestamp to js - didn't help. Also, those old scripts appear even in fresh new browsers, so I think this is ExtJS caching problem.
+

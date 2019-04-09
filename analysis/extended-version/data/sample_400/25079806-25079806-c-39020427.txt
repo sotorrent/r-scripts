@@ -1,0 +1,2 @@
+@Matthijs 3 of them can possibly have the parts of the categories. If none exists then I need to mark it as "Others"
+

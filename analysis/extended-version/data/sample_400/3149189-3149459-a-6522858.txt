@@ -1,0 +1,3 @@
+[](has a really dumb API. It should give a real handle, or at least mimic in a compatible fashion (so we pass it to the constructor or at least be able to call the method), but doesn't.
+We can work around its incompatibility by storing the file content temporarily in an array.
+

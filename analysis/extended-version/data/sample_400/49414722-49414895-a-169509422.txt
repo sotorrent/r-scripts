@@ -1,0 +1,8 @@
+To pass an argument, you would do
+Which you could call as:
+And, as long as has an attribute , and is something -like, then it should work.
+Unless, of course, you expect to be persisted. In which case, it would be something more like:
+Which is silly because you could do that in one shot, like:
+But, why declare a method at all when you can simply do:
+Which, of course, you definitely do not want to do in a because (IMO) your s should never be making changes to your models in your views. Doing so requires that your layer requires intimate knowledge of your layer - which makes your application brittle.
+

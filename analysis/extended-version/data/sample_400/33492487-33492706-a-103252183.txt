@@ -1,0 +1,4 @@
+Option 1 : If you use The Android SQLite DB class methods, they return the last inserted id.
+Option 2 : SELECT last_insert_rowid();
+Refer to question
+

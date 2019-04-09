@@ -1,0 +1,2 @@
+Though unused import in Java file does not create any harm, it's unnecessary increase length and size of Java source file.
+

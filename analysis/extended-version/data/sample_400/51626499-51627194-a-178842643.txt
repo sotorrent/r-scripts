@@ -1,0 +1,4 @@
+You can use this answer like this :
+Objective C :
+Swift :
+

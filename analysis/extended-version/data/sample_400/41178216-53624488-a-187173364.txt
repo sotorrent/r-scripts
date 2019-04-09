@@ -1,0 +1,17 @@
+Summary
+
+It looks like the reason is that glibc's malloc uses multiple malloc "arenas", and gives each new thread its own arena, no matter what you set to.
+And if there's space in that arena, glibc will give it to your requests.
+You can disable that with .
+
+Details
+
+I confirmed this by importing (glibc specific) and changing your code to show [](statistics:
+This prints:
+We can see how a new was added with many bytes.
+In , we can see the creation of this arena:
+So looks like glibc s some memory for the new arena, frees some part of it, and then s many bytes -- just as much as that arena shows up as in .
+This suggests to me that [](saying
+isn't quite true: It will still when it wants to create a new arena.
+You can apparently avoid this using:
+

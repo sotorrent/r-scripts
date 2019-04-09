@@ -1,0 +1,2 @@
+DISTINCT IS Supported... just somewhat limited.  For example you can't use it inside of a count.  i.e. .  But for this scenario it should work fine.
+

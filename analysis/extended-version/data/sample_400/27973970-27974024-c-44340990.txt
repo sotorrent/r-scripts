@@ -1,0 +1,2 @@
+@Octopus: Discovered it myself. Create a page with absolutely position children (results in a calculated body height of 0). Mouse click events stop bubbling to body. document on the other hand always gets the events, so is a better default (and only one step removed from body)
+

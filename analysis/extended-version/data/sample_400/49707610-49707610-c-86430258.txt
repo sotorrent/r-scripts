@@ -1,0 +1,2 @@
+Alignment of itself is maintained, so if a function needs that much alignment for anything (e.g. loading/storing an SSE vector) it can get it for free.  Why does System V / AMD64 ABI mandate a 16 byte stack alignment?.  That of course doesn't imply that every object on the stack is 16-byte aligned.  GCC does this even in leaf functions (that don't make any function calls), just as an implementation detail.
+

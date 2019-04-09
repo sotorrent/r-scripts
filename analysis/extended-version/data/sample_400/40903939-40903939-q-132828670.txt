@@ -1,0 +1,4 @@
+I have wrote a test method using MS Test. I have written two assert for testing purpose. I have made the test case failed intentionally but I don't know which part of its failed.
+As in the first assertion it will fail. Also I have maded Total greater than 0. So the second one will be also failed. But say one of them is valid. So how do I identify for which assert, my test case failed?
+Thanks in advance.
+

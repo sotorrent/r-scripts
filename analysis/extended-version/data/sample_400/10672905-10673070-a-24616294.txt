@@ -1,0 +1,2 @@
+try in both the children . Its happening because you have which is probably overriding the effect.
+

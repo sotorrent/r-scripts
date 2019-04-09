@@ -1,0 +1,2 @@
+@GordonLinoff I want to join the matching entries from into , but constrain it to the 10 oldest for each entry. Say there are 15 entries in for the related entry, I only want to join the 10 oldest of these.
+

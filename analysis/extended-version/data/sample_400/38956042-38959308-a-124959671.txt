@@ -1,0 +1,3 @@
+It would be a really bad idea to use peripheral registers as general purpose memory. Not every bit will be R/W, not all addresses may be implemented, and that's not even getting into the fact that you'll be configuring hardware based on application data and not correct register values.
+If you are out of memory, there are some memory spaces that you may be able to use as general purpose if they are not already used for another purpose. The STM32F2's have a 4 kB backup SRAM that can be used, though there is some setup required to make it R/W. The USB peripheral(s) also has some RAM built in for endpoint buffers. If you aren't using USB, you could abuse some of this memory, and you could configure the USB peripheral so there aren't any bad side effects.
+

@@ -1,0 +1,2 @@
+The final sum has terms, since the recursion bottoms out. The largest is The others decrease geometrically, so they don't matter in the big-O accounting (alternatively, divide through by ).
+

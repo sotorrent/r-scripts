@@ -1,0 +1,2 @@
+If you know that you need q=... then you can use regexp. I will update post if that's what you need.
+

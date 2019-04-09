@@ -1,0 +1,7 @@
+I am trying to get information from a collection in meteor and using a helper passing it to a template.
+Here is my code on server.js:
+Here is my code on client.js:
+Here is the template code:
+The problem is that it won't display anything in the rendered page.
+I am sure this is probably a typo or something similar on my part as I am quite new to meteor so any help would be appreciated.
+

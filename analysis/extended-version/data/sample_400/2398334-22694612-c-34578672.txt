@@ -1,0 +1,6 @@
+first, call 
+"UILocalizedIndexedCollation sectionForObject:collationStringSelector:"
+to get an index of section.
+
+then back to check which section this index mapping to in "UILocalizedIndexedCollation.sectionTitles"
+

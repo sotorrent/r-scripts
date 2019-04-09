@@ -1,0 +1,2 @@
+is it a value passed from the server? or a count calculated at the client side or decided based on a value entered by the user in one of the prompts
+

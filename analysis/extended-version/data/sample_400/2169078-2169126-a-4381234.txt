@@ -1,0 +1,5 @@
+You're right, the first way isn't a good approach.  Observers are my preferred way to go, for a couple reasons.
+First, if you use TDD (test-driven development) you can shut off observers to more purely test the model without every creation firing off a mailer creation.  Then you can unit test the mailer and observer separately.
+Second, the idea of separating callbacks creates cleaner code.  Callbacks aren't really part of your model, they are events.  Your model contains the functions and attributes necessary to run itself, and the callbacks (implemented with observers) are separate event handlers.
+That said, I don't think your second option is "bad" or less professional.  Either way works as long as it's at the model level, instead of controllers or (even worse) views.
+

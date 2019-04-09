@@ -1,0 +1,2 @@
+All I did was remove the on(release)  & wouldn't you know it, Works like a charm, Thank You! (:
+

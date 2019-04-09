@@ -1,0 +1,2 @@
+Stupid question but how do I print it? disp(Result)?
+

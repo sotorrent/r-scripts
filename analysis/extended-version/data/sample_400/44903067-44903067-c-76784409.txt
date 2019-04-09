@@ -1,0 +1,2 @@
+How do i install nmap?? isn't it a module that can be added directly? can you tell me the whole process of setting up the nmap,  please? @Càphêden
+

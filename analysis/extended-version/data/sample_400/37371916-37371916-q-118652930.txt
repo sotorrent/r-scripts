@@ -1,0 +1,6 @@
+Why does MATLAB open a plot window when I load a file that contains a figure inside an ?
+The problem that I am facing is that I have the output of an optimization algorithm as a collection of files. Each file contains the state of each generation of the algorithm in a form of a single . The state structure has (among other variables) a field of type . Now, whenever I try to load any of these files with the command, a plot window opens automatically.
+MATLAB Workspace
+Is there any way to stop MATLAB from from opening this plot window?
+I am using MATLAB 2015rb.
+

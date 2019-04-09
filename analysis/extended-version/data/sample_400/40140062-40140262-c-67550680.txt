@@ -1,0 +1,2 @@
+According to MDM JavaScript reference  it's correct to define return type of function.
+

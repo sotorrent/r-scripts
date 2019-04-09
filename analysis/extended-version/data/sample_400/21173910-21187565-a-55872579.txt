@@ -1,0 +1,2 @@
+Since you are using the same physical file repository that is used by the "MySite" collection, it will create the "beta" folder.  If you place this new web application in its own path (i.e., "C:\Sites\WebApps\WebApplication") you will get the desired results.  The code below worked for me.
+

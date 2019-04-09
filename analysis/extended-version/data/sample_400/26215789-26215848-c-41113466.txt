@@ -1,0 +1,2 @@
+I removed the 2nd SOP and it's still terminating. Not sure what's going on. At first I wasn't sure if I had the brackets placed correctly, but I've tried just about everything that I can think of.
+

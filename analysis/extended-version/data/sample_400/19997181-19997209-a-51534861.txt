@@ -1,0 +1,16 @@
+From [][1]
+
+Return Value
+
+The first column of the first row in the result set, or a null
+reference if the result set is empty.
+That's why when there is no row as a result, you actually try to convert to .
+Looks like you need to change your line like;
+Because [][2] returns when parameter is .
+Return Value
+
+A 32-bit signed integer that is equivalent to the number in value, or
+0 (zero) if value is null.
+And you should always use [][3]. This kind of string concatenations are open for [][4] attacks.
+For example;
+

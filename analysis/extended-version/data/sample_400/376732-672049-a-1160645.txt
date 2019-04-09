@@ -1,0 +1,3 @@
+If it were at all possible, I would recommend that they setup Apache on a nonstandard port accessible only from the Nginx box, and have Nginx proxy to Apache.
+Nginx Proxy documentation
+

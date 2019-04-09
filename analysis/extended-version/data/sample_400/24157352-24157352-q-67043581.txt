@@ -1,0 +1,3 @@
+I've already create a collection in mongo db and I want to insert to it a list of integers. I've found the function insert. My code for pymongo is the following:
+follower_list a function that returns a list of ids. The above code seems not to working since it doesn't create a new item in already defined collection. I want add this list into a document which already exists in collection and has the specified id.
+

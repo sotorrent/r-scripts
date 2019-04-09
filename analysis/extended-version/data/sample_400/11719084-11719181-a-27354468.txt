@@ -1,0 +1,2 @@
+and also make sure that j-i will not be negative
+

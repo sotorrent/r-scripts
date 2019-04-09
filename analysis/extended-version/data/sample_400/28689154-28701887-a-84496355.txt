@@ -1,0 +1,4 @@
+That is the main principle behind ADF task flow navigation, principle that we all love and care about. And now, you want to change it!
+Seriously, I don't know a simple way of doing it, but if I were to try something like this, I would use a pagePhaseListener:
+Again, I would be very careful with such approach, especially if you are using ADF Business Components.
+

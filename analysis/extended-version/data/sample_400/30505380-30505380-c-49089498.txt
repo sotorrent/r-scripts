@@ -1,0 +1,2 @@
+Please do some research. This Google search returned more than 10 questions on stackoverflow alone. One classic is to turn off screen updating while the macro is running, I.e. and at the end.
+

@@ -1,0 +1,2 @@
+PHP resolves methods to call at runtime. You don't need explicit downcasting of object classes such as in Java or C++. In fact, you don't need to specify type-hints at all: methods will work well. Type-hints are runtime checks, contracts for method signatures.
+

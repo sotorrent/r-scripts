@@ -1,0 +1,3 @@
+Do:
+Or use if you have an old version of Rails.
+

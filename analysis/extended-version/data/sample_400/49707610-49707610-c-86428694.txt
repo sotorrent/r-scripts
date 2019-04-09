@@ -1,0 +1,2 @@
+Different C compilers might output different code. On the other hand inspecting an unoptimized build is futile at best. Besides that, your question has merit from a practical point of view.
+

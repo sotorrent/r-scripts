@@ -1,0 +1,2 @@
+Complex is probably not the right word. What if you want to create a custom view controller which has navigation similar to the tab bar controller? You'd need to have a number of subcontrollers (just like UITabBarController has), but you're not allowed to use the built-in parentViewController property. You'd have to create your own pointer to the parent (I can't believe I'm the only one who thinks this is plain silly).
+

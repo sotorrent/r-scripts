@@ -1,0 +1,5 @@
+In what kind of action you want this process? The file should only be really deleted if you persist the $banner object with an action redirect or manually with the PersistenceManager.
+Maybe you can also clone the ObjectStorage and then detach some objects.
+In this solution all files should remain in $banner but UID4 is removed inside $files variable.
+UPDATE: See comments below. The deleted=1 was caused by @cascade remove annotation inside the model.
+

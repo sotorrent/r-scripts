@@ -1,0 +1,11 @@
+Yeah, I have ['in'] on the page, I mistyped it here.
+that's the problem.
+the only your problem.
+it is obvious that nothing mysterious in a variable name, expecially when this variable gets interpolated and do not interfere with SQL at all.
+thus, the only possible reason left - the typo again.
+And as you fail to post the correct code here, it is become impossible to even find that typo for you.  You have to do it yourself.
+The only thing you can do to help yourself is to print out each interpolated variables and compare them.
+Instead of silly one-liner a sane programmer would separate his code into several lines for the better readability/maintainability:
+thus you can comment out the actual query execution and print the query out instead, for the debugging purposes.
+And thus you'll be able to see yourself, if there is any difference in a variable names.
+

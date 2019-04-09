@@ -1,0 +1,3 @@
+$builder->add('lyrics','textarea')
+just add a new parameter 'textarea'
+

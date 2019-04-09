@@ -1,0 +1,3 @@
+'SELECT DISTINCT dir_FileName, dir_ID, dir_Path, dir_Icon
+FROM            directories' can you see where im going wrong here
+

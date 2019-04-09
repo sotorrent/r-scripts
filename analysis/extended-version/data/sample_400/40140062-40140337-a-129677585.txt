@@ -1,0 +1,4 @@
+As the other people have stated, its not necessary. But some people find it good practice.
+For example you can have the following function
+This way in a void method you can return 'early' to make sure you dont continue when a condition is not made. This is whats also called defensive programming.
+

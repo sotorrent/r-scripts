@@ -1,0 +1,2 @@
+Why should it be inaccessible? is still an object of class irregardless of that class implementing some interface.
+

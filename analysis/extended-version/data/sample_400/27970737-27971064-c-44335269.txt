@@ -1,0 +1,2 @@
+And this is indeed one of the weirdest rules I've encountered in C++. I think I've learned it when trying to bind to an lvalue reference where the type is deduced: doesn't work if returns a const non-class type.
+

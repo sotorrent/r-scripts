@@ -1,0 +1,2 @@
+This is a perfect fit for Power Query. Suck the table into Power Query, split Column2 with the comma delimiter, select all but the first columns and click Unpivot.
+

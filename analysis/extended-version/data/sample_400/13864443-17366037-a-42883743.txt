@@ -1,0 +1,4 @@
+Perhaps the thread safety for this situation has been deliberately left out from the specification, which means thread safety is not guaranteed.
+Let's think: if a field written by one thread is read by some other thread, unless there is some form of happens-before relation, the other thread may read stale data. Guice ultimately uses either reflection to set the value of myField, or it may use an auto-generated setter. There is no happens-before relation so that reflection-write happens-before field-read or method-invocation happens-before field-read (unless locks, volatiles or other means are used which forms the happens-before relation).
+Therefore, I would say that there is a (perhaps rather low) possibility of seeing null values.
+

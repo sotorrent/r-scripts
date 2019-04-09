@@ -1,0 +1,4 @@
+I had a similar issue. My solution was to manually blur the input before opening the modal:
+
+and in the component class (before opening the modal):
+

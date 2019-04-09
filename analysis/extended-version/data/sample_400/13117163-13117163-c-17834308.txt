@@ -1,0 +1,2 @@
+They will also be able to lie to you about the timezone they're in. You're out of luck if you want to observe their timezone, but you don't trust them to tell you the truth.
+

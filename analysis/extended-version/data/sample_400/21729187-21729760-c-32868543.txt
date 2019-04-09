@@ -1,0 +1,2 @@
+Looks like massive memory allocation-deleting occur somewhere else. Make minimal program and run it on Android. Make even smaller program and run it on a desktop with gc log on.
+

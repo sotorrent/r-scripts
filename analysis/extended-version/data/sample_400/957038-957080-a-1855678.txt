@@ -1,0 +1,2 @@
+I would put the break in to show that you do not intend to fall through to next case.
+

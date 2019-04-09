@@ -1,0 +1,2 @@
+You can pass the data to the load function using JSON.stringify (data) and then receive it in the load function using JSON.parse (parameter).
+

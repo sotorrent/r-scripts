@@ -1,0 +1,2 @@
+I tried that, I removed one of the brackets following SOP("The Reciprocal is" + 1/number); this works to check if it's a zero or not but now the code does not work if I enter in a string instead of a double.
+

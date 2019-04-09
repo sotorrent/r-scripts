@@ -1,0 +1,2 @@
+void is a js operator and has nothing to do with functions. in java for example void is a function modifier, not just an operator that can be put there if the dev feels like it. not the same thing.
+

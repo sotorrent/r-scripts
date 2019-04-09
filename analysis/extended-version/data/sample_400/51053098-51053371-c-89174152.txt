@@ -1,0 +1,2 @@
+So, more generally, is there no way to write a verified typechecker (a function of type given the existential As) that can infer polymorphic types? All the examples I’ve seen are either strictly monomorphic type checking (like Lennart’s blog post that I linked in the question), or include inference but require the language to be embedded in Haskell (e.g., Oleg’s “Typed Tagless Final Interpreters”). If that’s not possible then this question is moot.
+

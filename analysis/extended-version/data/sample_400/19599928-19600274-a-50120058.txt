@@ -1,0 +1,9 @@
+What you want to do with your class is impossible, because its attributes have no inherent order, because they're stored in a dict, so there is no reasonable way to map to instead of to .
+But you can modify the class in a few different ways to make it reasonable:
+
+  - Pick an order and store it in a list (e.g., in a class attribute). Then, your just calls .
+  - Pick an order that you can define programmatically (e.g., sorted order).
+  - Use a metaclass to make your class store its attributes in an , in which case the order in which you assign them in is their order. So it's just .
+  - Use instead of a dict for your attributes.
+    If you look at the source for [](you can see that it's using a combination of these: there's a class attribute named to store the field names, while the field values are stored in the tuple that it inherits from, and it then defines as a that puts them together an on the fly. This is probably far more clever than you need to be. And, if you do need to be this clever, just use or inherit from a in the first place.
+

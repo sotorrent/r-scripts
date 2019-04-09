@@ -1,0 +1,2 @@
+That code I suggested earlier builds a function where gives if is an edge in the graph indices that were passed to . I think I misunderstood your question in those earlier comments.
+

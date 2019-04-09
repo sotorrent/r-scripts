@@ -1,0 +1,2 @@
+Unknown system variable 'event_scheduler'. I'm using MySQL 5.5 on Amazon RDS. What should I do to use MySQL Event Scheduler?
+

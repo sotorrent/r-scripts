@@ -1,0 +1,47 @@
+I'm trying to create db in sdcard using greenDAO but getting exception.
+here i have attached the snippet code for DatabaseManager.java and DAOMaster.java file.Please have a look and give me your suggestions.Thank You:)
+DatabaseManager.java
+DAOMaster.java
+
+Exception
+Process: com.example.cisystem3.mobiledeliveryndispatch, PID: 30820
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.cisystem3.mobiledeliveryndispatch/com.example.cisystem3.mobiledeliveryndispatch.Login}: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2584)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2666)
+at android.app.ActivityThread.-wrap11(ActivityThread.java)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1493)
+at android.os.Handler.dispatchMessage(Handler.java:111)
+at android.os.Looper.loop(Looper.java:207)
+at android.app.ActivityThread.main(ActivityThread.java:5769)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:789)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:679)
+Caused by: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:212)
+at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:196)
+at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:836)
+at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:821)
+at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:714)
+at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:578)
+at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:269)
+at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:223)
+at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:163)
+at com.example.cisystem3.mobiledeliveryndispatch.manager.DatabaseManager.(DatabaseManager.java:64)
+at com.example.cisystem3.mobiledeliveryndispatch.Login.onCreate(Login.java:65)
+at android.app.Activity.performCreate(Activity.java:6583)
+at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1114)
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2531)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2666) 
+at android.app.ActivityThread.-wrap11(ActivityThread.java) 
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1493) 
+at android.os.Handler.dispatchMessage(Handler.java:111) 
+at android.os.Looper.loop(Looper.java:207) 
+at android.app.ActivityThread.main(ActivityThread.java:5769) 
+at java.lang.reflect.Method.invoke(Native Method) 
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:789) 
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:679) 
+

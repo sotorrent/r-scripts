@@ -1,0 +1,4 @@
+I need to know how can I Write a query to display deptno and count of emp in that dept, show only the depts that have more than 5 employees. I tried this:
+
+Though I only got the dept no
+

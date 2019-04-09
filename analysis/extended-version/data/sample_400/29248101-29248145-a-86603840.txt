@@ -1,0 +1,2 @@
+You've just got some quotation mark messiness. Try putting quotes at end of script location, removing the from the property. Then set the property to with the parentheses.
+

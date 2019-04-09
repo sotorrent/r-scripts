@@ -1,0 +1,4 @@
+Yes, it's possible provided you use LoginType.PHONE in your configuration.
+This is your phone number: phoneNumberString; but, will return null if LoginType.PHONE was used in your configuration. 
+Vice versa if you use LoginType.EMAIL in your configuration.
+

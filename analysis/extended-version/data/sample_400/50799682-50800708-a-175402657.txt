@@ -1,0 +1,6 @@
+As Jeroen Mostert told you already: There are more approaches to skin that cat :-)
+This is my suggestion.
+You need the outer sub-select, because there is an attribute in the top-root-level. You can use to create a root element, but no attributes are supported here. That's why we need an external .
+The internal list of nodes can be achieved by a trick: Just place an empty "column" in between. This will tell the engine to close the element and to start a new one.
+About your DOB: within XML any date should be ISO8601. On different systems a date like can be taken as the third of December or as the twelvth of March. Let the engine do the translations for you...
+

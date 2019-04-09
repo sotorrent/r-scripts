@@ -1,0 +1,2 @@
+@himanth I can't seem to reproduce this bug. The log is taken from a 3rd party crash reporter (Testfairy)
+

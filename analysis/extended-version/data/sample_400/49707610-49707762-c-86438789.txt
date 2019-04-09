@@ -1,0 +1,2 @@
+Just a note that the ABI requires 16-byte alignment upon calling a function (i.e., at the instant before the is executed), which means that you when actually entering the called function the stack is misaligned by 8 bytes since pushes the return address.
+

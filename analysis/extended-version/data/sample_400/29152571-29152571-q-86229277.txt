@@ -1,0 +1,3 @@
+Our customer is providing us with a handle window value that they send to a sql table. This needs to be passed to a Postmessage() call in an exe. Any ideas how this can be done? I can't see a way of converting the input parameter into the correct data type for the first parameter in PostMessage e.g.
+I need to pass the parameter in the command line to sWindowName?
+

@@ -1,0 +1,2 @@
+The is stored as the property of the parameter. It comes back as a JSON string, so you'll need to it before you can directly access the properties.
+

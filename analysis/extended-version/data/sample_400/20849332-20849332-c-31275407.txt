@@ -1,0 +1,2 @@
+I'm not doing anything specific to color spaces. I assume whatever iOS uses as a default space is what is being used throughout. I've added my code for which is what creates the context I use. I've not dealt with color spaces on iOS so far. I was thinking maybe that's what I was running into, but I'm not sure where to set a color space.
+

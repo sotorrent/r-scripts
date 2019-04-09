@@ -1,0 +1,2 @@
+I tried! No matter what i do, i never get that warning! I tried: -Deleting the storyboard file without changing the project settings, leaving the storyboard file and editing the project properties so that it wouldn't use it, deleting the file and editing the project storyboard property and even leaving both the storyboard file and the project property!
+

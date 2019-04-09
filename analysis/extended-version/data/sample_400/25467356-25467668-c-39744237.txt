@@ -1,0 +1,2 @@
+I built your code on VC++ 8 and for some reason unknown to me, I am getting "English_United States.1252" even though Windows on my computer is Windows 7 running the Spanish language and locale. I'm starting to wonder if there is some kind of limitation to VC++ 8 because I try to set the locale and I can't seem to do it, i.e.: std::locale ("en_US.UTF8" ); // exception.  In a nutshell, I am only able to use the "English_United States.1252" local, don't understand why this is.
+

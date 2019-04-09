@@ -1,0 +1,13 @@
+Well, I use the class for reading out of a csv-file.
+An example would be
+gives you exact one line in the .csv-file. After that you have to split the String line you have got into whatever the lines are seperated by (in most cases the line is separated by ";"). Then you have each element available which was saved in one line.
+In order to insert the data you read out of the .csv-file into your sql-lite database use this example
+
+EDIT:
+Your table-command has some mistakes:
+
+  - CREATE-command and the table-name are missing
+  - Columnnames have to be ONE word (no spaces between each word like you had in "Jahr der Vergabe", this should be changed to "jahr_der_vergabe" or "vergabejahr".
+  - You had a comma in the last COLUMN-Annotation (Umsatzsteuer), which will give you an error.
+    This table-command should work properly (I have changed a bit, for instance the type of the PLZ, this should never be a number as you don't calculate with it):
+

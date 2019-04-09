@@ -1,0 +1,8 @@
+**** is a type of application clipboard, for lack of a better term.  In order to pull off some of the visual tricks of draging around the tree node, it has to be copied into this clipboard with its source description.  The source control loads its info into the clipboard and sends it to the target object.  It looks like the error occurs on the drop and not on the drag. The in typically indicates the error occurrs on the drop step.
+The destination doesn't look like it likes what you are droping on it. The clipboard may be corrupt or the drop destination may not be configured to understand it.
+I recommend you try one of two things.
+
+1.  Remove the original tree structure and destination. Dump your dlls.  Close everything.  Open up and put the treeview and destination back on the form.  It may have just been poorly formed and not fully populating the structure.
+2.  Try putting another treeview and droping to that.  If you are droping to another tree and it works you know your oranges to oranges work and it isn't the treeview.  It may be the destination if it is a grid or listview.  You may need to change those structures to be able to receive the drop.
+    Not that it helps but the structure is something like this:
+

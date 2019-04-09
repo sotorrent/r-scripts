@@ -1,0 +1,2 @@
+Uh, the compiler doesn't automatically rewrite the author's source to remove the break or anything.
+

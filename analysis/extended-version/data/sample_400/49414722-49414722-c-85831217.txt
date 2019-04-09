@@ -1,0 +1,2 @@
+Not to mention that if you call this kind of method in view, you're probably doing something wrong.
+

@@ -1,0 +1,2 @@
+Why a regex? Just use integer comparison.
+

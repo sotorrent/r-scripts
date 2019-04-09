@@ -1,0 +1,4 @@
+Help me
+How can I insert a function inside a single quote?
+what's the correct syntax ?
+

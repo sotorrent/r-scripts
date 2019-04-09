@@ -1,0 +1,4 @@
+and will only remove widgets from view, it doesn't destroy them. If you don't plan on re-using the widgets, your only real choice is to destroy them with the method.
+To do that you have two choices: destroy each one individually, or destroy the frame which will cause all of its children to be destroyed. The latter is generally the easiest and most effective.
+Since you claim you don't want to destroy the container frame, create a secondary frame. Have this secondary frame be the container for all the widgets you want to delete, and then put this one frame inside the parent you do not want to destroy. Then, it's just a matter of destroying this oen frame and all of the interior widgets will be destroyed as well.
+

@@ -1,0 +1,12 @@
+I'm getting this error on eclipse console,
+On running the jsp page, tomcat says
+HTTP Status 404 -
+type Status report
+message
+description The requested resource is not available.
+My code is correct. Still I'm unable to find a way.
+web.xml
+admin.jsp
+Alogin servlet
+Java build path has required jar files, i.e., , , . I'm using any sql code for this page still it is giving the error.
+

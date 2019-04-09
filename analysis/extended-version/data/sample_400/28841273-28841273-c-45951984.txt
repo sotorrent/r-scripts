@@ -1,0 +1,2 @@
+A shell such as git-bash on windows would enable using a #! line if you don't mind using the shell to invoke your script.
+

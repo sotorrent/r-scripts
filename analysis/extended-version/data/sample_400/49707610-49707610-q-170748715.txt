@@ -1,0 +1,16 @@
+I have 2 functions in C:
+Compiling with:
+
+gcc 7.3 x86-64
+-O0 -g
+OS:
+16.04.1-Ubuntu x86-64
+Produced intel assembly of functions:
+I can see that for 50 bytes array 64 bytes were allocated. It seems that it's allocating stack on 16 bytes boundary, since for 10 bytes - 16 bytes were allocated.
+My questions:
+
+1)  Is there some standard of stack alignment on 16 byte boundary for arrays?
+    Cause variables like int, long int, etc. clearly aren't allocated on 16 byte boundary.
+2)  Why arrays allocated in such a weird way? We can see for array , 14 bytes that were added as alignment padding right after our payload of 50 bytes, but for array , 6 alignment bytes are allocated before our payload of 10 bytes. Am i missing something?
+3)  Why function argument passed in (), placed on stack 4 bytes away from our arrays memory beginning(including padding). So byte variables() are also padded or something? Why 4 bytes?
+

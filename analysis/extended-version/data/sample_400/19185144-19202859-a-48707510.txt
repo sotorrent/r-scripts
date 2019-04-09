@@ -1,0 +1,9 @@
+does not work with forked test runs as mentioned in another Stackoverflow answer.
+But there are workarounds:
+Set fork to false
+This is simple but may slow down your tests because they won't be executed in parallel.
+Use the test framework
+For example with the protected method afterAll()
+Override the test task
+My favorite.
+

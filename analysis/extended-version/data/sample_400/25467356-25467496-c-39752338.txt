@@ -1,0 +1,2 @@
+@CarolineBeltran: The optionally takes a locale, which might fix it. But is a , not a single char. (Just as any "" string literal can't be passed to isalpha)
+

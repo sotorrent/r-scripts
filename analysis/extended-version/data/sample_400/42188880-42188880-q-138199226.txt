@@ -1,0 +1,8 @@
+I'm new to javascript and I have the following code:
+It prints out a list of coordinates
+The question is once it gets to 8,1 What would you use to get it to continue to
+then
+1,3
+and so on until it reaches 3,4 (this could be variable) then it stops.
+In an ideal world I would be able to get it to go up to a maximum of 8,12.
+

@@ -1,0 +1,4 @@
+Can't you just use ?
+Then in your template you can:
+docs:
+

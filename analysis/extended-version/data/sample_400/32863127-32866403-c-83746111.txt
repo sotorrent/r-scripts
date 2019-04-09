@@ -1,0 +1,2 @@
+"Actually, I'd suggest you mainly stop worrying about memory leaks. They occur only in very specialized situations". I strongly disagree with this statement. At least Detached DOMs are a frequent occurrence in SPAs and every developer must know about it.
+

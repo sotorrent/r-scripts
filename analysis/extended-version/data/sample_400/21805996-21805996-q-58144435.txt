@@ -1,0 +1,4 @@
+I have read some posts about how to add css style in mPDF, I am using Yii framework and I tried many ways with no result, any idea about how to make it work?
+Thats the controller code.
+Thats the code in the layout/pdf
+

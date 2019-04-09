@@ -1,0 +1,4 @@
+You basically have to come up with your own file format and write binary data.
+You can also serialize your object model and write the output to a file, but that's usually less efficient.
+Better to use an existing database, or use xml (or other) for simple needs. If you want to write a file in a format that already exists, find a library that supports it.
+

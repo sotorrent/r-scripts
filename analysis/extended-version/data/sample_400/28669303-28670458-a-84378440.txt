@@ -1,0 +1,11 @@
+You can use Javascripts localStorage Objects. Your values get stored in the Browser for as long as you wish, or the browser is deleted.
+Take a look at w3cschools explaination and further information on Web Storage:
+
+The localStorage Object
+
+The localStorage object stores the data with no expiration date. The
+data will not be deleted when the browser is closed, and will be
+available the next day, week, or year.
+
+Example:
+

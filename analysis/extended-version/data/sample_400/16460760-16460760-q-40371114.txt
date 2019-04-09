@@ -1,0 +1,3 @@
+is everything is right in my programme??
+When i run it the a screen appears but it says that Applet is not initialized
+

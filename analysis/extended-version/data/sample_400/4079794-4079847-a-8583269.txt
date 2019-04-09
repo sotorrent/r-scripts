@@ -1,0 +1,2 @@
+You could move the specialized parts in separate functions and call these from your generic template:
+

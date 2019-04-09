@@ -1,0 +1,10 @@
+The standard input filter loop in C++ is - this will read until there is no more input, or other bad things happen:
+You could also use a one liner with input iterators - the shortest way to read elements in a vector:
+See Ideone example here
+Assuming however that you wish to ignore all this C++ awesomeness, strongly discouraged IMHO, you can just:
+Note that you will:
+
+1.  need to guess the ,
+2.  or manually handle reallocation once you read more elements than MAX_SIZE;
+    Hence: USE An !!
+

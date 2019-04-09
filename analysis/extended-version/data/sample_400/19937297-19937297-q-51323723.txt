@@ -1,0 +1,5 @@
+I have a simple jar application that works properly when double-clicked directly, but crashes when run as a .
+The Mac console/system error application shows an which means there's an error.
+I tried adding the key/value to the plist as recommended by another stackoverflow question (cant find it again... hmm), however that didn't work.
+I'm trying to find a way to capture the errors/stacktrace so I know what the actual problem is, and not just shooting in the dark.
+

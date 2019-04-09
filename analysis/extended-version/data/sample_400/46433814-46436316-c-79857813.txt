@@ -1,0 +1,2 @@
+You suggest an alternative, to get predefined information about the node and send it a gen_server:cast() -  Ideally though you would want to use a pool so that 1) no new processes are spawned(time concern) 2) if an influx of messages come, then concurrency is limited. How then would you know the process id, if to get a process id you have to first consult some form of grpoc_get_worker on node1 from node2? Is there any commonly accepted workaround to this or is it sort of a "fix" that everyone does differently?
+

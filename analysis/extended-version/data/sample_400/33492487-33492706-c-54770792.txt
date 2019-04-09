@@ -1,0 +1,2 @@
+Thanks for your answer but i want to get the primary key instead of rowID or is there a way to get row data by its rowID
+

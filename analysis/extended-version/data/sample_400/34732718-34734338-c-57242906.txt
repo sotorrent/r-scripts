@@ -1,0 +1,2 @@
+Adobe Blank is an extreme specialty font, it does the opposite of a full Unicode implementation: it has a special CMAP that maps every single Unicode code point to the same, single, glyph (the "blank"). Instead of implementing everything, it implements nothing, and represents that nothing with an empty picture. It's used in font debugging as fallback during testing: if you see Adobe Blank's "blank" (which has a width, so you can see it in your text), you know the font you're debugging is missing something.
+

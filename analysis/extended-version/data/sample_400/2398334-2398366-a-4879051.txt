@@ -1,0 +1,3 @@
+A little googling came up with this zipped file which contains several text files including Unihan_RadicalStrokeCounts.txt which may be what you want.
+[1]: ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip
+

@@ -1,0 +1,7 @@
+I have a page that gets a couple of variables from the url through a php GET method. The address would be sampledomain.com/sample.php?id=11&in=16&lang=1
+Then I use $in=$_GET[in']; and $id=$_GET['id']; to get the values.
+Now, I have a MySQL statement like this:
+It just doesn't work even though the $in value is correct (I checked that). What's really strange is, when I put $id (or any numeric value) instead of $in, it inserts it! Both $id and $in are numeric, out of desperation I tried using $in_num=intval($in) and then inserting $in_num but no luck. No error is thrown.
+The '$some_variable' part is irrelevant to this problem, the statement behaves the same with or without it.
+This is a real conundrum for me, why would the statement work for one variable but not the other?
+

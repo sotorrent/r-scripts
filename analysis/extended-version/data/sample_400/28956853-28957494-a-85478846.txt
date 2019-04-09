@@ -1,0 +1,2 @@
+I'm still working on a solution but I think part of the problem is a 1px div can't cast a long enough shadow. However, I still want to clip the shadow so that it looks like an inset.
+

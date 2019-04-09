@@ -1,0 +1,3 @@
+This should do it. It uses two loops to parse the data.
+The outer loop creates the individual entries in the new array, while the inner loop parses all the entries from the original element, with the content split in the right way. is used to select the correct data element based upon the looped index.
+

@@ -1,0 +1,4 @@
+The Zend Framework based site I have been working on is now being migrated to its production server. This server turns out to be nginx (surprise!). Naturally the site does not work correctly as it was developed on Apache and relies on an htaccess file.
+My question is... anyone have any experience with this? Any ideas on how to translate what the htaccess file does to an nginx.conf file? I'm researching this but am hoping someone already has experience with this. Thanks!
+EDIT: This is the current htaccess:
+

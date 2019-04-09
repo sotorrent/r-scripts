@@ -1,0 +1,4 @@
+No, a statement is not necessary at the end of a void function (sorry for the C-terms there). If you want to exit a function early, however (say if a specific condition wasn't met), then you'll use a statement, even if you're not returning a value.
+Including a return statement at the end of a void function for readability, should be fine. I honestly don't think doing so is going to add much to your footprint.
+In my opinion, however, you shouldn't include a return statement at the end of a function that doesn't return anything.
+

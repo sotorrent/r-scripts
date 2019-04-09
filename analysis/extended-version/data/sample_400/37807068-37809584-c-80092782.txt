@@ -1,0 +1,2 @@
+All right, now that I learned a bit of kivy usage I understand that was a trivial question
+

@@ -1,0 +1,6 @@
+}
+enter image description here
+
+Give leading ,top, trailing and height constraint for view .
+And height outlet of view name as constraint [because i used outlet name constraint]
+

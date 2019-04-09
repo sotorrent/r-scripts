@@ -1,0 +1,2 @@
+passes a parameter "onload=myFunc"  to "this to its attribute
+

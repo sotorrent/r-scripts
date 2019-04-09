@@ -1,0 +1,2 @@
+@SamAxe - yes, but let's assume that my Screen1 is 600x800 and Screen2 is 1000x1400. I have windowed-mode Windows of size 600x800  in Screen2. It will be detected as fullscreen-mode because of one of my screens' sizes or as a normal window?
+

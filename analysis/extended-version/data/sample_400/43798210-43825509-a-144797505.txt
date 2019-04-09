@@ -1,0 +1,3 @@
+The previous answers are perfectly valid. I just want to add a potential motivation why it may sometimes be useful to return const objects.
+In the following example, gives a view on internal data from , which in some cases shall not be modifyable (Disclaimer, for brevity some essential parts are left out -- also there are likely easier ways to implement this behavior):
+

@@ -1,0 +1,6 @@
+You can use this regex to get both captured groups:
+RegEx Demo
+This will give 2 groups.
+Group #1:
+Group #2:
+

@@ -1,0 +1,6 @@
+how to read data from fairebase and populated it in autocomplectetextView
+how can i read (adress,x and y)
+This is my data base
+
+I've traied this
+

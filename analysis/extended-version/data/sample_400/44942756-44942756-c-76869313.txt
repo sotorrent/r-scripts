@@ -1,0 +1,2 @@
+@CBroe Wow, when I go to the ad-account settings (business settings -> add accounts --> people), turns out I am listed as an 'ad account admin'. Is there anything else causing this then?
+

@@ -1,0 +1,8 @@
+i am trying to use the 'nmap' module in python.i am using windows, pycharm, python 3.6.i installed the 'python-nmap' module(installing 'nmap' module was showing the error: nmap has not attribute called 'PortScanner')  directly from inside the pycharm. I tried like 4 hours. cant solve this issue.
+running this gives the following error:
+nmap.nmap.PortScannerError: "nmap program was not found in path. PATH is :
+C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS
+Client\;C:\Program Files\Intel\iCLS
+Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Users\Tanmay's\AppData\Local\Programs\Python\Python36-32"
+i'm new with python and nmap.. your help would be really appreciated.
+

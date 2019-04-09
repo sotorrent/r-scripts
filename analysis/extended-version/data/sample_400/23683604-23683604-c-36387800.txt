@@ -1,0 +1,2 @@
+Actually it appears as if your counting mechanism is very messed up. It continues to count such that multiple clicks are required to get back to previous or next depending on the number of clicks issued.
+

@@ -1,0 +1,14 @@
+I have a database structure which is something like the one described below.
+"Universe" can contain any number of "Items".  "Person" may have a "Box" which refers to one or more of the "Items" in the "Universe"
+Universe, Items, Person, Box are all database tables. Box is like a join table for the Person and Items.
+Note: I am using javax persistence API and hibernate
+Now an Item can be created in the Universe and saved. A Person can have an entity in the Box for this Item and save the info for the Person. This works fine.
+But my application desires to create an Item in the Universe but do not save it immediately. Now I am referring trying to associate this Item with the Person. I have a complete save method which tries to save all the contents in a transaction. Invoking this method I am getting two entries in the Items table for the same Item, one being referred by the Person and the other by the Universe.
+Is there a way to make the Universe save the Item and make the Person refer to this Item through the usage of hibernate annotations and JPA.
+Any ideas are welcome.
+Am not good at editing the code. Please bear with me.
+The Person class:
+The table Box (the join table):
+The Items class:
+The table Universe has a one to many set of Items.
+

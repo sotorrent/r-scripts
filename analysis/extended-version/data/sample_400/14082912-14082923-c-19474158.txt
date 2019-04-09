@@ -1,0 +1,2 @@
+@Seb Store it like it is. NSDate contains the timezone information (the trailing ) so whenever you need to display it just format it and you're good. is a model, whereas its formatting (timezone, style, whatever) is purely a visualization matter. And by the way my name has just one "l" in it :P
+

@@ -1,0 +1,2 @@
+UILocalizedIndexedCollation can be a total solution.
+

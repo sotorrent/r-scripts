@@ -1,0 +1,12 @@
+I am a fairly new user to MySQL although I am fairly experienced with SQL(DB2 environment).  I am using the workbench to run queries and update statements.  I am having a problem updating data in a table which I have been able to prior.  I am able to select rows but when I go to update based on the same criteria, the return message is:
+0 row(s) affected Rows matched: 9 Changed: 0 Warnings: 0
+Update gina1.proj001_bcbs set contract_percentage = 1.50
+where contract_category = 'All Other Services'
+and doctor = 'JSmith' ;
+When I run the same WHERE clause with a select I get the correct list of records.
+9 row(s) returned  and I get the correct list of data.
+select * from gina1.proj001_bcbs
+where contract_category = 'All Other Services'
+and doctor = 'JSmith' ;
+I do not believe I am logging but I can't say for sure, I did ready somewhere about resetting the log.  If someone can help it would be great.
+

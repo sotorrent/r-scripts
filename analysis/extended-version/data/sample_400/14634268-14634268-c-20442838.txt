@@ -1,0 +1,2 @@
+if you want to check, if something is in an array or not, use - i dont get the point what you are trying to do with exceptions here? i.e. wheres the difference between returning and throwing an exception? Or lets say: What is your desired outcome? Should the app behave different?
+

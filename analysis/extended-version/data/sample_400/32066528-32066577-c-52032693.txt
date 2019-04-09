@@ -1,0 +1,2 @@
+I've just updated my answer.. there was a missing in the code.. . Please note that you can use firebug to debug the js code.. Check this demo . It is working now
+

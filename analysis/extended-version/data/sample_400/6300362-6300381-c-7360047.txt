@@ -1,0 +1,2 @@
+I just saw your edit. Is there a way to use the echo $entries[0]->title; and show all the titles. With a loop maybe ?
+

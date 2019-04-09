@@ -1,0 +1,3 @@
+How do you insert variables into an SQL Query? This is what I have so far ...
+What I'm trying to do is get  "amount" bugs to list. So if I input 2, then only the top 2 will get listed.
+

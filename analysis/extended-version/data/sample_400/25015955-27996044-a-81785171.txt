@@ -1,0 +1,7 @@
+Several problems makes this happen (in my case)...
+
+1.  Most important to check for the ;
+2.  Application is compiled in and running on platform;
+3.  If any , compiled in platform, added to the application;
+    These are some of those problems gives the error.
+

@@ -1,0 +1,5 @@
+Use a instead.
+Then use , , and .
+This means that the vector will automatically grow as you add more data. There are in a sense smarter ways, but my way carries the advantage of clarity.
+These days the cool cats don't worry about repeated as they trust a C++ standard library implementation to keep the memory nice and unfragmented for you. But if you must, then does allow you to set an initial capacity via its method: you can still grow your vector beyond that if you wish.
+

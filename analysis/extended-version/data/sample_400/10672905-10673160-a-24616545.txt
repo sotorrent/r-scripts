@@ -1,0 +1,3 @@
+Simply in your parent layout, replace with
+This works by setting the weight sum of the parent layout and the weights of the children layouts. The weight of the children should be equal to the weight sum of the parent. Take a look at this
+

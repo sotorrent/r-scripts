@@ -1,0 +1,4 @@
+Thanks daxim. Works for me. The only other problem I had with what I was trying to do was a parsing issue with the list of *.jar files. The manifest adds extra spaces in random spots of the list so this is what I did to get a list of jar files separated by ':'.
+
+join(".jar:", split(".jar", join("", split(" ", $headers->get("Class-Path"))))).".jar";
+

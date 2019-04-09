@@ -1,0 +1,2 @@
+I removed the semicolons but the problem persists. I'll look into the length method and comeback with another script.
+

@@ -1,0 +1,5 @@
+I have 3 ListViews in a UserForm and also a few other items. Currently when I expand the UserForm, the ListViews and other items expand in relation to the increase in size of the UserForm.
+What I'm after doing is also expanding the size of the Columns within the ListViews by cycling through all Controls on the UserForm and checking if it is a ListView, then cycling through all the columns and extending as required.
+This is where I am currently at...
+Anyone any ideas?
+

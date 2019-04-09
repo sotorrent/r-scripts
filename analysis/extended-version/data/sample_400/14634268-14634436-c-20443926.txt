@@ -1,0 +1,2 @@
+Well, I wrote that I don't want to throw exception manually, like you wrote, because I supposed there was a better way to do that using natural internal exception mechanism. This would reduce amount of code. But if there is no chance to do that - well, then I'll check conditions and throw exceptions in method's code.
+

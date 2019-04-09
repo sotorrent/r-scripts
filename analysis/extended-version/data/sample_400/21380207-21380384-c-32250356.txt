@@ -1,0 +1,2 @@
+Yes it was working although I had square brackets round my data, which caused it to fail as the string already had these. I would have fixed this a lot sooner but I do not have a console as working on phonegap
+

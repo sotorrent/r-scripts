@@ -1,0 +1,2 @@
+How I can prevent duplicate values to not insert into the table. I have created a code to INSERT, UPDATE and DELETE and I want to display a MsgBox that there is a duplicate value and to cancel it. Thanks. Below you have the code:
+

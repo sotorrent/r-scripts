@@ -1,0 +1,2 @@
+I checked this on: CentOS; MySQL 5.0.91-50-log; PHP 5.2.12. And it works correctly. The problem is in php multi_query function under windows I guess.
+

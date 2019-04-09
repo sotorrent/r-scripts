@@ -1,0 +1,2 @@
+Try changing that select up earlier to "SELECT * FROM accounts" and moving the equivalent of a "WHERE id=$u['user_two']" to an if-else statement condition, which prints the complete, dotted username if $s['id] == $u['user_two'], otherwise printing the other ones only if the search is enabled. I guess after that you'd want to add some additional filtering logic for the other ones, but try something like this for now?
+

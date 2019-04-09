@@ -1,0 +1,4 @@
+can you please tell me How to remove the div contend? I am getting data from server regularly .I check if div height is "100"
+Then it remove contend and write data from top in jquerry
+I tried very thing nothing is work for me
+

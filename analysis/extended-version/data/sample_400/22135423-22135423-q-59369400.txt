@@ -1,0 +1,5 @@
+I would like to capture values from the input , calculate and display the result on the same page, but for some reason I keep getting this error:
+
+Notice: Undefined index: inputval in C:\xampp\htdocs\php\exercise 2\exercise2-3.php on line 67
+here is what I have done so far.A user enters 2+ 3 or 5 * 4 or 5-4 etc.
+

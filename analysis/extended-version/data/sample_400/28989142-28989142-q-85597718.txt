@@ -1,0 +1,5 @@
+I want to use a javascript loop to check if a div exists and if it does show it onload. I have been tasked with this but am very much a novice when it comes to javascript.
+Here is my javascript:
+HTML:
+I have added the createtitleid function to the onload statement.
+

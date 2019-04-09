@@ -1,0 +1,2 @@
+ok, I'll chk the code performance. But, just to try a different implementation, is there an alternative to ForEach subsystem?
+

@@ -1,0 +1,2 @@
+Thanks so much. You can tell i had concerns about all these processes but it doesn't seem like it will be a big deal. I don't remember where I read that processes had a high overhead in erlang, but I'm happy now knowing that it's not a big concern. Thanks for your help!
+

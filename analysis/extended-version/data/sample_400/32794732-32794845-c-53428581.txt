@@ -1,0 +1,2 @@
+Yes, Alogin.class and Alogin.java file is present inside the war file web-inf/classes/..../controllers
+

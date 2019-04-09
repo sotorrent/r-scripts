@@ -1,0 +1,2 @@
+If you want to recognize the number even if it contains letters, you can remove non-numeric characters from the string, like this: is your friend here. :)
+

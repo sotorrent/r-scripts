@@ -1,0 +1,8 @@
+Simpliest approach would be this:
+So, basically, you just take last byte (last 2 bits) of your power and checking whether entire number is zero. The answer can be encoded in total of 3 bits.
+More general approach for large numbers (represented in BigEndian):
+So, for BigInteger:
+Doesn't really matter how big it is actually. All you need is just to know whether or not it is zero, and 2 last bits.
+PS
+Actually, Im very impressed that everyone downvoting me out of "oh chezzze, math here" asumption. It was painfull at begining, and some errors at my side, but now Im just more confident, casuse I ran some tests =)
+

@@ -1,0 +1,2 @@
+There is a lightweight JavaScript date library called moment JS which can do this.The same library was used to implement it. Check out the below jsfiddle.
+

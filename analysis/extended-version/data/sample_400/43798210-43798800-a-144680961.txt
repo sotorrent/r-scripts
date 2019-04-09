@@ -1,0 +1,13 @@
+Quotes from the standard, $8/9 Expressions [expr
+(emphasis mine)
+
+Whenever a glvalue expression appears as an operand of an operator
+that expects a prvalue for that operand, the lvalue-to-rvalue,
+array-to-pointer, or function-to-pointer standard conversions are
+applied to convert the expression to a prvalue. [<U+2009>Note: Because
+cv-qualifiers are removed from the type of an expression of non-class
+type when the expression is converted to a prvalue, an lvalue
+expression of type can, for example, be used where a prvalue
+expression of type is required. —<U+2009>end note<U+2009>]
+For , is a non-class type, and the return value of is a prvalue expression, then qualifier is removed, so the return type is not , but . That's why is called.
+

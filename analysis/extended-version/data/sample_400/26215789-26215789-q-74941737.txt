@@ -1,0 +1,4 @@
+I had a quick question about nested if statements. My code needs to check that the user inputs is a valid double and that it is not a zero and then outputs the reciprocal. I can get it to check that the input is an valid input and output the reciprocal but when I try to enter in a zero it terminates the program. Any help would be appreciated!
+import java.util.Scanner;
+public class Reciprocal {
+

@@ -1,0 +1,2 @@
+If you are simply trying to tell if a string is ascii or not, your function is wayyyy to complex for that. If that's not what you are doing, you should choose a different function name.
+

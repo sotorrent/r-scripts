@@ -1,0 +1,12 @@
+qqFileId attribute in the li element is the only associating link bitween li and uploaded files.
+it may notvisible in firebug, the firebug console executing the following, shows the id, $('.qq-upload-list li:last').attr('qqFileId').
+if ie causing you the problem it might be because of, 
+"find('.qq-upload-list li[qqFileId='+id+']')", and can be changed to
+
+onComplete: function (id, fileName, responseJson) {
+    $(this.element).find('.qq-upload-list li').each(function () {
+        if($(this).attr('qqFileId')==id)
+            $(this).find('.qq-upload-file').html(responseJson.filename);
+    });
+}
+

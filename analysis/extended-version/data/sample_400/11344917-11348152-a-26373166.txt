@@ -1,0 +1,6 @@
+From the Expression Language 2.2 spec:
+
+An identifier is constrained to be a Java identifier - e.g., no , no , etc.
+can't be used as an identifier in Java as it is reserved.
+This restriction applied in EL 2.1 too, so it was likely a bug in your old platform's EL parser that this ever worked.
+

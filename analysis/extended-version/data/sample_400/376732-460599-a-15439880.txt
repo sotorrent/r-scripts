@@ -1,0 +1,4 @@
+I know it's a pretty old thread but it might help some people anyway.
+Basically it redirect any 404 to index.php, but if the file exists (type file) it will set the right root.
+I did it from the top of my head. It might not be working right away, and you have to put the right path and fastcgi config. I also put everything back to index.php as it should work like that with Zend_Framework
+

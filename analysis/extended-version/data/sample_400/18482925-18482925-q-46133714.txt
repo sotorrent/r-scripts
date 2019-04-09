@@ -1,0 +1,8 @@
+I am currently working on a signup page and i was wondering if i could modify the url without the .php extension.
+For example, it is now
+www.xyz.com/signup.php
+And what I would like achieve is
+www.xyz.com/signup
+Now I am assuming that I might have to use the htaccess file, but I am not sure about it.
+Need some help people. Thanks in advance.
+

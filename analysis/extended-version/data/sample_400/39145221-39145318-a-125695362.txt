@@ -1,0 +1,2 @@
+remove the onchange event from select box and validate it in js on button click. If the page redirects what is the use of submit button
+

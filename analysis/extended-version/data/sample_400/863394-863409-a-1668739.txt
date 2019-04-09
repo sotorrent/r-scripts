@@ -1,0 +1,2 @@
+You could write a wrapper method that did it:
+

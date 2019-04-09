@@ -1,0 +1,18 @@
+I have a system tray application. The tray application has an icon and a context menu with some options. There is a menu called status which contains below toolstripmenuitems:
+
+  - Start
+  - Restart
+  - Stop
+    They are enabled/disabled according to some conditions.
+    My system tray application, has a background thread does continuously check some conditions and do some work. Its main loop is below:
+    gAppExit is a global variable that indicates whether user has exited from application through the 'exit' toolstripmenuitem.
+    thdExit indicates whether the thread should exit from the loop (I explain it later).
+    When user want to restart the background thread, he clicks on restart toolstripmenuitem and below sequence is done (Restart -> Halt -> WaitFinish):
+    Note that on Halt function, it awaits thread to finish by calling Me.ThreadBgWorker.Join() on function WaitFinish.  Before calling WaitFinish function, thdExit is set to true in order to background thread can exit from main loop:
+    on exit loop, ChangeStatusToStopped() is called, and it is as below:
+    What it does is to enable Start toolstripmenuitem and disable restart and stop toolstripmenuitems in the UI.
+    The problem is:
+    Within ChangeStatusToStopped method, when MainMenu.InvokeRequired is true, it calls:
+    and then it gets stuck there, that is, else body:
+    is never executed. It seems like main thread is busy or some other problem in message pump.... Any ideas?
+

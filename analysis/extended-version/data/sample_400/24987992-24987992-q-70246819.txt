@@ -1,0 +1,7 @@
+I have two rectangles, one of which is rotated 90 degrees, how can I draw a line between the two.
+and I think scripts is,
+But the result is not correct, how should I do?
+thanks.
+My JSFiddle
+I wan't like this pic
+

@@ -1,0 +1,2 @@
+Exception attached...Saying " Could not open database" @elefasGR
+

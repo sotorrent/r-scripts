@@ -1,0 +1,2 @@
+I'm looking to parse the results of the EF query back to an instance of a customer which contains a collection of associated orders. Using the example above I get a collection of N customers back, each with a single order where N is the number of orders associated with the customer.
+

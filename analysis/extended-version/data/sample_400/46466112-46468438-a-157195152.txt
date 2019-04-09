@@ -1,0 +1,3 @@
+Here is as base R method using with the arr.ind argument. It is similar in spirit to thelatemail's method.
+this returns
+

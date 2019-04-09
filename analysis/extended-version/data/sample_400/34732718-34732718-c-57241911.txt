@@ -1,0 +1,2 @@
+Style wasn't something I was concerned about. I was thinking "well why not have a fallback font that had everything so you'd never see 'glyph not present' because that's not helpful" and an ugly glyph beats no glyph. As pointed out in Mike's answer there are technical reasons why a font collection is required, and very good open-source font collection efforts.
+

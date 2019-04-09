@@ -1,0 +1,2 @@
+@JimMa: I have to apologize. I thought this would be straight-forward to do. So I wrote code to do it. But Linux won't allow me to fill in the biggest gap from 00007fff533b6000 to ffffffffff600000 because even though its an empty map it claims its out of memory trying to allocate 184 petabytes.
+

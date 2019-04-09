@@ -1,0 +1,2 @@
+@pstar: Look at the demo, this one or this one which all use custom formatter in the form . If you look at the source code of the examples you will see the difference to what you did. In any way I am glad to read that you have now at least one working example.
+

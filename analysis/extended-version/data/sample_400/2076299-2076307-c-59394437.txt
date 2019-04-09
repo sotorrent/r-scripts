@@ -1,0 +1,2 @@
+for me as it is not closing instead of location(path) I'm Using window open '_self' but it is still not closing as if I'm opening by window
+

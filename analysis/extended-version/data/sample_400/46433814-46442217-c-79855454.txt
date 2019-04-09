@@ -1,0 +1,2 @@
+Yep, you are right. spawns a process which does real work. I edit the answer.
+

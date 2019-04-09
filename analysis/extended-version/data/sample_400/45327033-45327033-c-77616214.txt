@@ -1,0 +1,2 @@
+@Toto I know it is unneadable. Since I wouldn't like to invent the wheel again, do you know a python lib which creates the regex you mentioned for me?
+

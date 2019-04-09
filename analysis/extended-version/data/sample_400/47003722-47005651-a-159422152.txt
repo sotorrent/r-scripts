@@ -1,0 +1,6 @@
+One common problem I see with this file previews are that most of them are unable to correctly render jpg's rotated with exif orientation
+The second thing is that it's better to use URL.createObjectURL rather then using a base64 dataURL. That also raises an other issue and that is that most developers forget to revoked objectURL's
+That is why i have created Screw-FileReader so you can easily call and get a image back with a object url that is automatically revoked and also has a exif auto-rotation built in using canvas.
+the third thing i notis with Soltani Neji answer was that when you click dublicate button before the first upload button it dose unexpected things. it don't keep track of the index so well.
+Now to my suggestions: Use the attribute instead and just have one button to make it simpler. it also helps to add the to filter out only images
+

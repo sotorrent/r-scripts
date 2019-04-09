@@ -1,0 +1,2 @@
+@GurebuBokofu Do you see any error messages in the IDE Log after restarting NetBeans?
+

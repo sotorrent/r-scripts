@@ -1,0 +1,15 @@
+To simplify the question, I will describe a simplified use case:
+Let's say I have a top level Grid that contains 1 dynamic inner Grid and a ListBox that fits in certain cells of the top level Grid:
+
+1.  The top level Grid structure (TopGrid.xaml) is relatively static with only dynamic size of the cell that will contain the inner Grid.
+2.  The inner Grid structure is dynamic, there are many/unkown kind of contents, but each kind of content is static and can be represented by a separate XAML. So I will have InnerGrid_1.xaml, InnerGrid_2.xaml, InnerGrid_n.xaml, etc.
+3.  At run time, depend on the ListBox selection, certain InnerGrid should be displayed.
+    I'm thinking of two ways to do it:
+4.  Run time text-edit the XAML in the code:
+    In the code, use XmlDocument to edit the TopGrid.xaml to add the content of certain InnerGrid_x.xaml to create the final in-memory TopGrid.xaml. Then use XamlReader to read the final TopGrid.xaml into a Visual Tree, then add the tree to LayoutRoot to show it.
+5.  Visual Tree manipulation (no text edit):
+    In the code, use XamlReader to read the TopGrid.xaml into a top-visual-tree, read InnerGrid_x.xaml into a sub-visual-tree. Then use VisualTreeHelper to find the TopGrid element in top-visual-tree, find the InnerGrid element in the sub-visual-tree. Then add the sub-visual-tree to the top-visual tree. Then add the combined tree to LayoutRoot show it.
+    I know the first way will work but need complex XML manipulation (or text editing) in the code. I desire the second way but not sure if it will work. Especially, I will probably change the size of the cell in the TopGrid to hold the dynamic InnerGrid.
+    Anybody has done this and can shed some light? or any better solution?
+    A side question: Seems the dynamically loaded XAML cannot specify event handler inside XAML (my test), I need set event handler dynamically after creating the tree. Is that true?
+

@@ -1,0 +1,2 @@
+@alfC because means that all members of cannot be changed (even if you copy A), while there is no members even exist for int.
+

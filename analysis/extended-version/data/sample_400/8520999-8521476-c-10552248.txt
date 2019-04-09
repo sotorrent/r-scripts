@@ -1,0 +1,2 @@
+There is only one file. I've tried hardcoding numbers, it inserts them fine. The two queries are equal, but when I run both, sql2 works but sql1 doesn't. I know this doesn't make any sense, that's why I'm here looking for help. I've gone through every possible mistake and blunder I can think off, I've tried setting $in=16; instead of $in=$_GET['in'];, I've tried renaming it, saving it in a different variable, nothing works.
+

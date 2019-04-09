@@ -1,0 +1,5 @@
+I don't have a quote from the standard, but cppreference confirms my suspicions:
+
+A non-class non-array prvalue cannot be cv-qualified. (Note: a function call or cast expression may result in a prvalue of non-class cv-qualified type, but the cv-qualifier is immediately stripped out.)
+The returned is just a normal prvalue, and makes the non-const overload a better match than the one.
+

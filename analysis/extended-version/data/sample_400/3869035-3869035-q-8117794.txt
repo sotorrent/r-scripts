@@ -1,0 +1,2 @@
+I am trying to create a simple datastructure that will make it easy to  convert back and forth between ASCII strings and Unicode strings. My issue is that the length returned by the function mbstowcs is correct but the length returned by the function wcslen, on the newly created wchar_t string, is not. Am I missing something here?
+

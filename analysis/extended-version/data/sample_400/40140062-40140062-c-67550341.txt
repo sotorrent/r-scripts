@@ -1,0 +1,2 @@
+If you ran that code through a minifier, it would remove that . Therefore it is not an optimization of any kind. If you must keep it, do be sure to include the terminating semicolon because of automatic semicolon insertion rules. See the documentation for more information.
+

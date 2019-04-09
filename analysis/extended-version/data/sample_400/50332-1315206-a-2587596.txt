@@ -1,0 +1,3 @@
+When doing drag and drop with list and treeview controls you have to make sure that you removing and inserting the list items correctly. For example, using drag and drop involving three ListView controls:
+you will note that at the end of the DragDrop event I am either moving the ListViewItem or creating a copy of one.
+

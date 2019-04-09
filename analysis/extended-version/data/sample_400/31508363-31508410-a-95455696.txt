@@ -1,0 +1,4 @@
+Put a ? at the desired variable location. Then, from this API, call the set method for the variable type.
+
+In your case you want an int, so call . If you want multiple variables, - or in SQL terms a "parameter" - , just use multiple 's. The PreparedStatement setter methods requires the parameters index. The max index is equal to the amount of 's you have in your query.
+

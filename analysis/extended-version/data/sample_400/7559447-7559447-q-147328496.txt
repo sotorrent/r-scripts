@@ -1,0 +1,2 @@
+I have reviewed the answer to which was helpful, but the accepted answer doesn't appear to answer half of the question. In essence, I want to report the -Xms and -Xmx settings that were used when the JVM was launched.
+

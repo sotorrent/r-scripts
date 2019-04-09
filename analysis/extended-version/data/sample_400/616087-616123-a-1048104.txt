@@ -1,0 +1,4 @@
+It looks like the sha1 function takes a byte array which is in hexidecimal notation.  So if you had two bytes, FA and A1, your string would be "FAA1".
+Then, you would parse the result string back into bytes and compare with the .NET output.
+Note that you could create this string in .NET with the same format rather easily (use the "x2" format on the call to ToString on each byte and append all together).
+

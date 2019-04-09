@@ -1,0 +1,4 @@
+To make a purely abstract class that cannot be instantiated without deriving from it - you must define at least one abstract method.
+eg.
+Otherwise you can use any class as an abstract class
+

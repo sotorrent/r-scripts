@@ -1,0 +1,4 @@
+Neither break does anything for you, but neither does harm.
+Personally, I usually leave them out if I have a return - but I also try to avoid having multiple return points in a function if possible.
+However, I do think the break in the case is good - for one reason:  If you were to leave it out, and somebody added a new case after default:, the behavior would be different if they "forget" to add in a break.
+

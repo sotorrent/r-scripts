@@ -1,0 +1,2 @@
+Ideally, I would like my API library to be as platform neutral as possible. The code above is just something someone could write on top of the the API library I write, where they could do what they need to to "get back" to the UI thread, be it easy or hard.
+

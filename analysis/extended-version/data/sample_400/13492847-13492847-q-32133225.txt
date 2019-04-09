@@ -1,0 +1,4 @@
+Any body please tell me how we can decrease or increase size of text in Tab button . Is it possible to do so??    I want use some large text in App.
+Please help me.....
+Thanks in advance
+

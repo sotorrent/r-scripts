@@ -1,0 +1,2 @@
+Hi gabuh, I just tried your suggestion. I put this method in my first tab view. If user is not logged in, every time I click on the tab bar, log in page will come up, even I click on my first tab view. Since my first view is supposed to be visible for both logged in users and guest, I don't really want to ask guest to sign in when the click on the first item (first view) of tab bar.
+

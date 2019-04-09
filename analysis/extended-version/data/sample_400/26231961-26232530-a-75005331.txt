@@ -1,0 +1,3 @@
+Since the optional parameters are simple types (strings), you can move them from the route path to the querystring.
+The action method signature can remain as it is in your example. For more information, you can have a look at parameter binding ASP.NET Web API.
+

@@ -1,0 +1,4 @@
+I have a doubt, whether the unused imports and unused objects in Java code creates any performance impact?
+Suppose an object is initialized and never used, what happens?
+And what is the cost of unused imports
+

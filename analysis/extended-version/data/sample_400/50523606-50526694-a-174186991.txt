@@ -1,0 +1,2 @@
+Here is another solution with gradient and without the need of . The idea is to make each corner using a gradient so you can easily control the color and simulate the overlap:
+

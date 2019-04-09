@@ -1,0 +1,26 @@
+Been trying to compile this IronPython program into a working .exe for the past 3-4 hours with no luck.
+I'm using the pyc.py that came with "IronPython 2.6 for .NET 4.0"
+The program compiles out to Program.dll & Program.exe but the Program.exe cannot run.
+I'm using this as a guide:
+
+IronPython - how to compile exe
+The very simple 'HelloWorld' program I got to work, but my more complex program failed. I'm thinking my complex program failed to run as compiled becaues it's missing DLL's?
+From IronPython directory I copied all the necessary DLL's (Microsoft*.dll, IronPython*.dll) that are needed for compilation and as run-time prerequisite to run compiled HelloWorld.exe.
+How can I figure out why my .exe won't run? Or how do I determine what .NET DLL files are needed to be included in the directory? (Assuming I have to put all .NET DLL's in the .exe directory example ? )
+The only DLLs I have in the programs directory is:
+I do not have or cause am running IronPython 2.6 for .NET 4.0
+Should I have more .dll ? My IronPython program uses System.Windows.Forms as well as a bunch of others...
+Thanks for any help.
+Goal is to compile this program and get all .DLLs in zip file so my brother can unzip & run it on his comp, but as of now I can't even run it in my own comp! Any ideas?
+
+EDIT: So I figured out what was wrong (see my answer below) But now I get this lovely pop-up when trying to run the app on another computer: Dang, now I get this error when trying to run app on another machine.
+
+MyApp.exe - .NET Framework Initialization Error
+
+To run this application, you first must install one of the following versions of the .NET Framework: v4.0.30319 Contact your application publisher for instructions about obtaining the appropriate version of the .NET Framework.
+
+OK
+
+Wonder if there's any way to get around this.
+EDIT:  My fix was, my bro had .NET 3.5  so I re-compiled it on a different machine that had IronPython running .NET 3.5
+

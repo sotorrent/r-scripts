@@ -1,0 +1,4 @@
+It sounds like you'd like to update an employee if one exists for the given ID otherwise you'd like to add a new employee. You can prevent adding duplicate employees by first trying to update an employee record with the given ID and if no records were updated only then do you add a new employee record.
+Note: In the update query I removed the update to the emID field since that is what the query is based on (in the WHERE clause). If the emID field is changing you won't be able to use the new emID value to find an employee record with the old emID value.
+If you never want any duplicates I would also suggest that you add constraints to your database table to prevent duplicates, as suggested by Daniel Cook. I would also suggest looking into using parameterized queries instead of building SQL strings in VBA.
+

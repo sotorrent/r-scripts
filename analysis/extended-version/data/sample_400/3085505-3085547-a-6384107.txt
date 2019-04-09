@@ -1,0 +1,4 @@
+The 'r' denotes a 'raw' string, which makes life easier when trying to write regexes (you don't end up escaping the escape characters).
+As far as the second question goes, it creates a named match group of 1 or more digits, and passes that value to the view as 'poll_id'.
+The reason there isn't a $ on the admin string is that you want all urls that start with /admin to be passed to the admin app. $ is a special character that defines the end of a string. So if there were an $, then only the url /admin would be passed to the admin app, not /admin/foo or /admin/foo/bar.
+

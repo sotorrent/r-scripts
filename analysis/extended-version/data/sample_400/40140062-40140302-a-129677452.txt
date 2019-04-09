@@ -1,0 +1,3 @@
+Just for fun and FYI I wrote a little benchmark script and to my surprise, adding an empty return actually does make the script run slightly faster. I don't know why, but in several different tests, the function with the return came back sooner.
+Here's a fiddle.
+

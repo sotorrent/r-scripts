@@ -1,0 +1,2 @@
+I'm afraid there's no way to do this - whilst the API allows you to dismiss the calibration view (using the call) to prevent it from interrupting your app's interface, there's no way to force a calibration to start. I'd suggest filing a feature request with Apple if you think it's something that might be useful.
+

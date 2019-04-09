@@ -1,0 +1,4 @@
+The following works for me in Chrome 41:
+I've tried several ideas for FF including opening an actual web-page, but nothing seems to work. As far as I understand, any browser will close a tab or window with xxx.close() if it was really opened by JS, but FF,  at least, cannot be duped into closing a tab by opening new content inside that tab.
+That makes sense when you think about it - a user may well not want JS closing a tab or window that has useful history.
+

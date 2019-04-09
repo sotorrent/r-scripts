@@ -1,0 +1,2 @@
+It usually doesn't work when the user changes the selectbox. It's just outputting the selected="selected" one.
+

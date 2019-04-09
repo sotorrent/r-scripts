@@ -1,0 +1,2 @@
+Use xml (something open, descriptive, and validatable), and stick with the text. There are standards for this sort of thing as well, including ODF
+

@@ -1,0 +1,2 @@
+@MSalters, I tried the isalpha function (not std) originally but it only worked with ascii decimal values up to 127 so I assumed that std::isalpha() would be similar.  I tried unsigned like this but got an error:   unsigned char* p = "ñ"; // error C2440: 'initializing' : cannot convert from 'const char [2]' to 'unsigned char *'
+

@@ -1,0 +1,2 @@
+Removed servlet-api.jar and added apache tomcat v8.0 server runtime. Now the index.jsp or any other jsp page is giving 404 error
+

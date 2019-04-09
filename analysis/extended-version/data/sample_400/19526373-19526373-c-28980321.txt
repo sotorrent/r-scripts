@@ -1,0 +1,2 @@
+@TechieJoe the site does call out to 2 different dbs, but even pages that don't reach out to them are slow initially, and then things speed up after that inital load.  Even pages that have heavy db access are quick during that time until next application pool connection timeout (NOT IIS idle timeout).
+

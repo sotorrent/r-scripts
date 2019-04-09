@@ -1,0 +1,2 @@
+The problem was I was prompting the download after declaring the Notification Builder. Download the image before initializing the notification builder.
+

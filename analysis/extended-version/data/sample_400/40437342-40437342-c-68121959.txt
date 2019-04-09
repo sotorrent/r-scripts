@@ -1,0 +1,2 @@
+No, no. You don't understand. I want to cin the elements without cin the n itself.
+

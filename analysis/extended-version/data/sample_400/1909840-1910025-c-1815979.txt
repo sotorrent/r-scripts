@@ -1,0 +1,2 @@
+Yes, very much a rare case.  I've not found a need for it yet in several very complex apps.
+

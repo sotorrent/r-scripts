@@ -1,0 +1,2 @@
+I experience random crashes using JDK 8_20 64bit for linux. It's the same with Netbeans, IDEA and Eclipse or hello world programs. It's the same with JDK 8_25 64bit. Anyone? Problematic frame is always the same.
+

@@ -1,0 +1,4 @@
+probably, what you want to achieve is:
+not
+Only objects that implement IEventDispatcher have addEventListener method
+

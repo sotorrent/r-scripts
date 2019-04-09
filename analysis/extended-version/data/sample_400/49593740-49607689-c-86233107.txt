@@ -1,0 +1,2 @@
+Thank you for answering, that's about what I thought. In the project I will use WriteableBitmap. Thank You!
+

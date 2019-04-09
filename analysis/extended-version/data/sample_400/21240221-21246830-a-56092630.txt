@@ -1,0 +1,13 @@
+I think the problem is in your description, it does not appear to match your example!
+Given the input:
+and the requirements statement:
+"all elements with an href attribute from the first child of the body element"
+Your XPath formulation of:
+matches your requirements statement. But, the expected output would be an empty sequence, exactly as you have found... and NOT the output you suggested:
+To get the suggested output, your XPath requirements statement would instead perhaps be:
+"the first child of the body element with an href attribute", which would lead to the XPath:
+From your requirements statement and the mismatched example, it is hard to be sure exactly what you meant. So perhaps your requirements statement is:
+"the first element in the body with a href attribute"
+If that is the case, then I would suggest the XPath:
+Note that the sequence constructor, i.e. the '(' and ')' flattens the descendant sequence(s) to allow you to address each selected descendant in a manner similar to an array.
+

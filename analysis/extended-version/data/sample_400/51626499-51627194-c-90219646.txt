@@ -1,0 +1,4 @@
+I still dont know how to make it :(
+
+I copy code you sent me but it still doesnt work. Should I rename function on my "showLoginAlertViewWithTitle", right?
+

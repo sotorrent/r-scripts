@@ -1,0 +1,2 @@
+I've done all that many a times. All Java Build path entries are added in the deployment assemble for the project properties. I've also reinstalled Tomcat, Eclipse many a times. Created a new project. Nothing helped.
+

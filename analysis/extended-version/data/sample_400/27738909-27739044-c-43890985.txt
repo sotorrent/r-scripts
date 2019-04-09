@@ -1,0 +1,2 @@
+Inside that method you will know where you are, and where are you going, so you could decide if present or not the login if you are on your first view. And you could change the selected tab programatically, so you could go to the view you want.
+

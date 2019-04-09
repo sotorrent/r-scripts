@@ -1,0 +1,2 @@
+If your code is looking through that array and executing those functions, you should also make sure they actually are valid functions. You can do it in pure javascript, but jQuery and other libraries have handy "isFunction" checkers that I would use for simplicity and clarity.
+

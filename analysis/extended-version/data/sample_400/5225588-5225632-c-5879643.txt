@@ -1,0 +1,2 @@
+And in the destructor case, you must.
+

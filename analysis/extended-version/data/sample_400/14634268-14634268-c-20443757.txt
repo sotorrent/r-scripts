@@ -1,0 +1,2 @@
+@crush There are several combinations of ascii symbols, that's why I have an array with regular expressions for each type.
+

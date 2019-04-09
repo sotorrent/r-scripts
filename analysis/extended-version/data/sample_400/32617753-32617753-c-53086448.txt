@@ -1,0 +1,2 @@
+@Hogan not sure how that is significantly different from using the old user table and validate one time against the hash in that old table - as I mentioned in my question, unless my question wasn't clear.
+

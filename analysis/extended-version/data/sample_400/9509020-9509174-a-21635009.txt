@@ -1,0 +1,2 @@
+It looks like should be declared as an initializer for . So you should declare it inside a category in your header file:
+

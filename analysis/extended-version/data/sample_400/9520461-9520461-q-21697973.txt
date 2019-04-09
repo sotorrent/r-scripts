@@ -1,0 +1,3 @@
+I am a fairly new user to MySQL although I am fairly experienced with SQL (DB2 environment). I am using the workbench to run queries and update statements.  I am having a problem updating data in a table which I have been able to prior. I'm able to select rows but when I go to update based on the same criteria, the return message is:
+I do not believe I am logging but I can't say for sure, I did ready somewhere about resetting the log.  If someone can help it would be great.
+

@@ -1,0 +1,2 @@
+1(b). When I try and save the local copy of the schema found at I get validation errors for that schema, citing that 'xs:occurs' is already declared.'  If I comment out that attributeGroup, I get similar errors throughout.
+

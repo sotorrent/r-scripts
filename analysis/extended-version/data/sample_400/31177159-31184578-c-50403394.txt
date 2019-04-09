@@ -1,0 +1,2 @@
+@KashifNazar "Shouldn't the directory be deleted before staging it?": sure: git rm does both (delete and stage the deletion), or rm + git add -u will also stage the deletion.
+

@@ -1,0 +1,2 @@
+can show more detail from setPostTags action ?
+

@@ -1,0 +1,2 @@
+Are you sure your path for MAC is correct? Isn't it rather ? What should the line in the hosts file exactly look like? Could you clarify?
+

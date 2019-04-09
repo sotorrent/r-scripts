@@ -1,0 +1,2 @@
+You can probably remove the quotes from your where statement. If that is not the issue, can you post the php code that you use to execute the sql?
+

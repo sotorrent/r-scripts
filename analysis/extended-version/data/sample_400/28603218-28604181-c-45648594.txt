@@ -1,0 +1,2 @@
+i'm still trying to make your sample work. And it sort of works, but my Partial views don't do anything. When the view was a normal view, it passed data to the database. But now it is a partial view, it doesn't do this, any idea why?
+

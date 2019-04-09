@@ -1,0 +1,2 @@
+So would it be more orderly to make a new class with etc instead of putting those inside the InsertCarViewModel
+

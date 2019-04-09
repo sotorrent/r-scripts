@@ -1,0 +1,4 @@
+First give the link of page in that logout button.In that page make the code which is given below:
+Here is the code:
+When the session has started, the session for the last/current user has been started, so don't need to declare the username. It will be deleted automatically by the session_destroy method.
+

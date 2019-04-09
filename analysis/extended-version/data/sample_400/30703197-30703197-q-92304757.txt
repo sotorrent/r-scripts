@@ -1,0 +1,8 @@
+I am getting response to a Ajax request with returned object as data with let says 10-15 parameters.
+Now I am adding for each item a table row in master page, how can I pass this data for each item when clicked on other side of details function without making another ajax call or adding all param as data-attributes...
+This is what's happening on master panel,
+Edit when using json.stringify
+Real data:
+Error on click
+Uncaught SyntaxError: missing ) after argument list
+

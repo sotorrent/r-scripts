@@ -1,0 +1,2 @@
+So basically you want to look for a value of certain key, without giving key (in this case q) ?
+

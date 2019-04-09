@@ -1,0 +1,2 @@
+cool, so getitem creates a list?
+

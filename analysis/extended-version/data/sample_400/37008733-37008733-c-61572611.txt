@@ -1,0 +1,2 @@
+@luschn Facebook introduced the AccountKit which allows a user to log in with just their phone number as seen here When using a token for logging in, it is possible to retrieve the phone number. I need to know if it's possible to do so if I use the CODE method instead.
+

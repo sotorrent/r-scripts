@@ -1,0 +1,3 @@
+Your regex is greedy (meaning they match as much as they can). In order to match the minimum required you should use something like . The brackets indicate a character class. So it will match everything inside of the brackets. The carat at the beginning of your character class is a negation, meaning it will match everything except what is specified in the brackets.
+When you use in a regular expression you will almost always have the problem you encountered with greediness, unless there are modifiers you can specify (e.g. in PHP you can terminate your regex with to specify you would like non-greedy matching).
+

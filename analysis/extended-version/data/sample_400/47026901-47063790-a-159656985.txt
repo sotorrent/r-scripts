@@ -1,0 +1,18 @@
+So, how I can change the IDE GUI font family? NOT code font family,
+NOT GUI font size, changing the the font FAMILY of GUI (menu, labels,
+etc.)
+Unfortunately, the ability to specify the font family for the IDE itself is not currently provided in NetBeans. See these NetBeans bug reports requesting the same feature:
+
+  - Bug 114017 - I18N - provide properties/options to change ide global font name and font size
+  - Bug 125083 - I18N - IDE's Font/Fontsize can be configured furthest
+
+Where I need to input -J-Dramos.nb.ui.font="MyFavoriteFont,14" in
+NetBeans options?
+You would provide that information as an argument to NetBeans when it is started. For example, on my Windows 10 machine NetBeans 8.2 is started by this command:
+C:\NetBeans82_151\bin\netbeans64.exe
+To specify the details for the plugin just append that plugin data as an argument. In my case I installed the plugin, then restarted NetBeans using the plugin with the Papyrus font:
+C:\NetBeans82_151\bin\netbeans64.exe -J-Dramos.nb.ui.font="Papyrus,14"
+Unfortunately that (very old) plugin did not work for me on NetBeans 8.2, but perhaps it will work in your environment with a different font family.
+If the plugin does not work for you either then the only other approach I can suggest is to see how the Dracula theme manages to change the IDE font, then attempt to replicate that without changing the theme.
+You can select IDE Log from NetBean's View menu to review startup issues, and problems with the plugin might be logged there.
+

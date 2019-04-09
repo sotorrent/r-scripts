@@ -1,0 +1,2 @@
+even when I delete that function - clickedButtonIndex - your code still doesnt working, I dont know where could be mistake....Is it possible to use PasteBoard for paste date from other app?
+

@@ -1,0 +1,2 @@
+should already generate a ternary operator.  See the source:
+

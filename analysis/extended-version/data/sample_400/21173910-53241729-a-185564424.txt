@@ -1,0 +1,6 @@
+Since some people use the term folder and Virtual Directory, I thought it would be worth posting how you create a New Web Application inside a Folder / Virtual Directory. Which looks like this in IIS Manager.
+enter image description here
+You simply need to use the Path as the site name.
+
+$SiteName\APFW-api equals "Act.Web.API\APFW-api" at run time so the highlighted application is created.
+

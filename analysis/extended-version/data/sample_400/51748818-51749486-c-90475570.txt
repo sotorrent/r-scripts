@@ -1,0 +1,2 @@
+oh, there isn't a limit clause in the one in the example code so I missed that part. In that case, if you want to run them in parallel, move all of the based property calculations to the function (like and ) and remove them from the function. The will keep the resulting data calcuations independent and allow it to run in parallel.
+

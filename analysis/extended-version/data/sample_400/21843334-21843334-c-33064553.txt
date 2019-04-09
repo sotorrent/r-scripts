@@ -1,0 +1,2 @@
+I am counting the moves the character makes as it goes from one side of the maze to the other side. Once it reaches a certain count it is supposed to go down a row and go back across the maze. Which it does do eventually, but the character gets stuck at the end of each row until the count reaches a certain number. Either the mazeWidth on the right size or 0 on the left.
+

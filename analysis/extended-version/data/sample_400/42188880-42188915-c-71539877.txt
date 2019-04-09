@@ -1,0 +1,2 @@
+Not in this case. The loop is more concise and much cleaner.
+

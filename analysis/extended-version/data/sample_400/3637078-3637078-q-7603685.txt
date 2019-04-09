@@ -1,0 +1,2 @@
+How can I check if a category exists, and if exists, return the ID; if not, create the category?
+

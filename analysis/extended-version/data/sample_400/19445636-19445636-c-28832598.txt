@@ -1,0 +1,2 @@
+Remove the ? innerHTMLconsole.log('in cleaning code')ifelse console.log('scrollerDivHeight='+scrollerDivHeight);` so you see whats really happening.
+

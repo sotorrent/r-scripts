@@ -1,0 +1,2 @@
+With the little details we see here, I don't know. There is no generic alternative, there might only be something for special cases.
+

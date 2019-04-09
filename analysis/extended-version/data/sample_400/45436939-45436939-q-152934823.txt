@@ -1,0 +1,9 @@
+I try to construct a promoted QTextEdit Console widget for my Gui in which i redirect all std::cout. For the redirection i mostly followed this tutorial:
+My code looks like this:
+myConsoleStream.cpp:
+myConsoleStream.h:
+I tried to make this class a subclass of an additional class to which I promoted the QTextEdit to.Which looks like this:
+Last but not least my Mainwindow Class looks like this:
+If I execute this there appears a second QTextEdit in the left upperhand corner of my Mainwindow, which I dont want to have there. And I cant figure out why this is appearing or where this is created?
+Btw I am using qt5.5 and QtCreator for that matter.
+

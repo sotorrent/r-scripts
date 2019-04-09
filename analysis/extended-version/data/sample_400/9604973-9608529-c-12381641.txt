@@ -1,0 +1,2 @@
+Yeah.  That was one of my wild thoughts while trying to find a graceful solution.  I went ahead with XML configuration file for the source database connections (that will different for each source)  and config table for the common connections.  This should be manageable by the client, I hope.
+

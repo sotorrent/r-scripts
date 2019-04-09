@@ -1,0 +1,2 @@
+The script was loading before the DOM was ready, junior error on my behalf, thank you for your solution to this issue Paven.
+

@@ -1,0 +1,8 @@
+As described in the marketing API, I have registered an app got my app key and and id, generated a token with ads permissions, list pages permission as well. The app is not yet submitted for approval.
+When I try to get the list of ad accountsz linked to 'me' it returns the array of all ad accounts.
+But when I select any of the business accounts (other than my personal Facebook account) and try to retrieve the ads insights API throws exception saying:
+but when I try to get the insights, using the python SDK, I get the same error, ex: (#273) This Ads API call requires the user to be admin of the ad account. User is not admin on ad account .
+What is surprising is when I use the similar sample page from Facebook-Developers to get insights, it is able to retrieve the ads data for the same account, with my own login itself.
+Why would my app be unable to do so?
+Is there any such limitation for apps not reviewed?
+

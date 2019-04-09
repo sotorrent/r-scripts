@@ -1,0 +1,2 @@
+I am using express-promise-router to achieve async/await in my query calls from node.js. Sometimes, when I need to fetch data for tables, I use async.parallel to get the data as well as the count as separate data and merge them. I am using callbacks here. How do I go ahead using async/await for these?
+

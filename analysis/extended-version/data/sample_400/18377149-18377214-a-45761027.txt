@@ -1,0 +1,7 @@
+Simply toggle the model inside ng-click and toggle the class to 'chk'.
+You dont need to bind model to the :
+
+If you want to use a function:
+
+And in the controller:
+

@@ -1,0 +1,2 @@
+Because that class only has some fields and a constructor/destructor, but the behaviour of the class should be implemented by a subclass. I know this is possible in Java, so I was wondering if c++ supports this too.
+

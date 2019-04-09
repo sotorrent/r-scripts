@@ -1,0 +1,8 @@
+Need a push in the right direction for a class assignment. I've read other posts that mentioned creating a variable/method to store the path traveled, but not sure how to get about it...
+Edited 9/28/16
+was able to get to the end point of the maze but still haven't figured  out
+how to print only the path taken; I really need to
+
+====
+so I'm not sure how to implement a method to keep track of path traveled, any pointers will be greatly appreciated!
+

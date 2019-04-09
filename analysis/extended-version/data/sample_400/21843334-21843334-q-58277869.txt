@@ -1,0 +1,2 @@
+I have figured out how to move my character around the maze using the algorithm I have written, but the count is not figuring correctly. At the end of each row my character moves up and down several times until the count reaches the specified number to exit the loop, then the character moves along the next row down until it reaches the other side and repeats the moving up and down until the count reaches the specified number again. Can anyone help me find why my count keeps getting off?
+

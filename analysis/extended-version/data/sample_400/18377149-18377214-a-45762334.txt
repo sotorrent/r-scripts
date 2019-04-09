@@ -1,0 +1,4 @@
+You dont need to bind model to the or pass the model to the function:
+
+And in the controller:
+

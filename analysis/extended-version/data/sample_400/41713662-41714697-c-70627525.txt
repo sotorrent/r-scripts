@@ -1,0 +1,2 @@
+I'm not sure if it helps but try to remove the annotation, clear the caches in install tool and try again to remove some items of the ObjectStorage.
+

@@ -1,0 +1,2 @@
+I suggest you look at developing for the Flash Platform like the guys from Suite75 did when they did floorplanner.com.
+

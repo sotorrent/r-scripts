@@ -1,0 +1,7 @@
+I have One Stored Procedure like usp_getTotalOrder which is like
+Now, i have one table which contain Stored Procedure Name .
+In My BLL i have stored Procedure Name. I want to create function which contain one parameter StoredProcedure Name  and return Count of Total record which is like
+But it does not return Total record i want to get total record from Stored Procedure Name in Function.
+Any IDEA???
+Please help.....
+

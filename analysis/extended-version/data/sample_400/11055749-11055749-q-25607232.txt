@@ -1,0 +1,7 @@
+I have a windows form where in I open new threads for server communication.
+I need to write in the form (in a textbox) how the server has responded to the query.
+At the moment I do the server communication as follows:
+The serverAction as it is now, is a void method within the ServerClass class, but I can ofcourse make that return a value if needed. However Im leaning more to delegates, but im not quite sure how to call back from the other thread...
+The ServerClass is a simple class using WCF as follows:
+Any suggestions how I can get a value from the "serverAction()" method?
+

@@ -1,0 +1,2 @@
+How would css rules that include images be any different?
+

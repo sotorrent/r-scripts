@@ -1,0 +1,4 @@
+You need some kind of the event listener to listen for and which triggers after game is finished.
+Alternatively you can put your code without into specific Frame on the timeline.
+On the end of the game you can have something like: which will point to that new Frame.
+

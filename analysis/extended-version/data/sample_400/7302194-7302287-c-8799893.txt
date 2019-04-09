@@ -1,0 +1,2 @@
+Thank you @Oleg, I modified my code based on your feedback. About 'select' and 'showlink', it doens't make sense to me as well, but because I am pretty new to jQuery and Javascript, I just copy it almost exactly from jqGrid examples, and it is in the link at the top of my question. Please let me know if you think the example is wrong.
+

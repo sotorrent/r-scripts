@@ -1,0 +1,9 @@
+I goal is to place a simple restriction on my xsd element definitions: I want to define an element so that 1.)  is reqired for all element definitionsand 2.) to be able to add "declared" and "last_modified" attributes to the and to be able to add "note_author" and "note_added" attributes to the xs:documentation element.
+With what I have below, I am able to get Schema 2 to validate, but I am unable to enforce the rules that I mentioned above, which I would like to declare in Schema 1.
+Example of what I want to acheive with the modified, validated xsd schema (Schema 2):
+Schema2.
+The root element for a document
+A subelement child of document
+changed from complex to string type
+Schema 1 (documentation_schema) -- the schema that I want to do the validating of Schema 2:
+

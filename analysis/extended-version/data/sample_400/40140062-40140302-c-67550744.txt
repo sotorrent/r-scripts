@@ -1,0 +1,2 @@
+i agree brynden. benchmarking is generally not reliable with javascript since there are so many different interpreters and versions.. however, on my set up, FF on mac, the one with a return came back first every time.
+

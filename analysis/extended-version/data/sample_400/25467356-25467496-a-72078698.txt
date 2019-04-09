@@ -1,0 +1,3 @@
+To start with, you're trying to reinvent . But you'll need to pass the ISO-8859-1 locale IIRC, by default that just checks ASCII.
+The behavior you see is because is signed (because you didn't compile with , which is the smart thing to do when you use more than just ASCII - VC++ defaults to signed char).
+

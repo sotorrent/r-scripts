@@ -1,0 +1,6 @@
+I have this link to a chess game but instead of it just displaying on the page id like it to be in a pop up. iv got videos, images, websites ext to pop up but having trouble with this. iv tried using a hidden div but couldnt get it to work.
+I would much appreciate it if anyone could help.
+thanks in advance
+stephen
+site with game i want to embed.
+

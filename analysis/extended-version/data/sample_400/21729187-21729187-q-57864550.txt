@@ -1,0 +1,6 @@
+I've started to do a speedtest application recently. The method is simple : I instanciate multiple threads all downloading the same uncompressible file, then i calculate the average download speed. But I've got some performances problems I think. When i start the test with more than one thread, i see a lot of and in the logCat. I don't understand where's that comming from. Habitually these problems seems to appear in certain circumpstances, like instanciating too much objects, or huge objects, but i don't think it's the case here... Here is my code (simplified - without speed calculation): So I'd like to know if someone already experienced this problem, or have any idea why is there these performances problems, because it distorts the speed calculations. Thanks in advance!
+
+EDIT : forgot to post the logCat, sorry. etc etc... until
+
+EDIT : same problem using ThreadPool, code below.
+

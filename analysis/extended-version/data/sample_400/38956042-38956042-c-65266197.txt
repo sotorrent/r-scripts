@@ -1,0 +1,2 @@
+Which microcontroller? Is the code you're looking at even for the same micro you're thinking about? The only 'generic' aspect is that 0x40000000 - 0x5fffffff in the Cortex-M3 memory map is where peripherals go. Anything beyond that is part-specific.
+

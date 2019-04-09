@@ -1,0 +1,2 @@
+I found another solution that used :before and :after tags which should effectively accomplish the same thing (more elegantly) but I don't have time to post that solution. The reasoning for this: the middle div has a clickable image map, which complicates adding the shadow directly, if you want to maintain compatibility with IE10.
+

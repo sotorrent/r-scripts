@@ -1,0 +1,2 @@
+Can you provide some more information? I don't think there's enough here for anyone to help you. We need to know how categorySelected gets called etc. In your current code example, there's no evidence of any Knockout involvement at the moment other than the possible unwrapping of CategoryId. Try and replicate the problem in a JSFiddle. It will be much easier for someone to help you that way.
+

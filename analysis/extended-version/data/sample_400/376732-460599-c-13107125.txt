@@ -1,0 +1,2 @@
+-f (Nginx) check for the existence of a file. It's not the same than the Apache syntax: -s (regular file) OR -l (symbolic link) OR -d (directory). The correct equivalence is -e. And try_files should be used instead of if.
+

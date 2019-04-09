@@ -1,0 +1,7 @@
+When  we add tabs to our TabHost, we use TabHost.newTabSpec() to create a TabSpec object.  Using the default tab look, we would call setIndicator(String, Drawable) on the TabSpec (passing the text and image we want displayed on the tab), and then call setContent(intent) on the TabSpec, passing an intent for an Activity we want to be used as that tab’s content.  However, in this case, we want to use a custom layout for the tabs, and we want to simply use the Views defined in our tab_activity_layout.xml for the content, instead of individual Activities.
+For custom tabs, first, we must define the custom layout of our tabs as a layout resource file.  Then we will programatically inflate a View object using that layout, set whatever attributes we want, and pass it into TabSpec.setIndicator(View).  Here is a very simple example layout, and some of the code to use it: Please check the link
+Custom View for Tab
+Please accept this answer if you get it helpful.
+Thanks,
+Puneet
+

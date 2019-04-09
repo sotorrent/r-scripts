@@ -1,0 +1,3 @@
+first of all $in = $_GET[in']; has to be $in = $_GET['in']; you forgot a quote, and also in php when you do '$in' the result will be (STRING) $in but when you put "$in" then you will get the value of the variable.
+Secondly try
+

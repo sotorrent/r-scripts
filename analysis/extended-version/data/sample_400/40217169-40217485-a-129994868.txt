@@ -1,0 +1,7 @@
+Your problem is related to the fact that you rely on the order of the result of [][1] while the order is not guaranteed as stated in the javadoc:
+
+There is no guarantee that the name strings in the resulting array
+will appear in any specific order; they are not, in particular,
+guaranteed to appear in alphabetical order.
+If you want a specific order you should sort the files yourself using [][2].
+

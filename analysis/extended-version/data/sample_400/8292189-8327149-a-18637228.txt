@@ -1,0 +1,4 @@
+First you should pass to the constructor of your and save it as a local varialble:
+Then you will need a new methods in your to check if all items are checked (I assume that since has the method it also has a method ):
+Then as the first thing in the for each item you check for this:
+

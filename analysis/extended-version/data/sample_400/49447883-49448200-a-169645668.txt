@@ -1,0 +1,3 @@
+Well, I use the class for reading out of a csv-file.
+An example would be
+

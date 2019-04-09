@@ -1,0 +1,2 @@
+Does Unicode store stroke count information about Chinese, Japanese, or other stroke-based characters?
+

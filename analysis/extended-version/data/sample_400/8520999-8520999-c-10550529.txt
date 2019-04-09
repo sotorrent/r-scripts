@@ -1,0 +1,2 @@
+have you tried executing the failing query directly on the database? see what error message you get
+

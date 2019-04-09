@@ -1,0 +1,2 @@
+This does not work for me, maybe because I don't know what "Cares" is? Is this a better solution when you want to add multiple partial views to one index?
+

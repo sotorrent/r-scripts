@@ -1,0 +1,7 @@
+I finally found a select menu plugin smart enough to work in IE comparability mode and also allows me to fire an event before the menu options are displaced. This awesome plugin is called jQuery Selectric.
+I need to fire an event before the options are displayed  and I want to make an ajax request which tells me which option I should enable/disable.
+I was able to make the ajax request before the menu opens. but I am having hard time trying to disable the options. The options are always enabled even after I disable them.
+I tried to use the on ajax sucess but his cause a problem that the menu will never get a chance to open because just before it open the ajax request will close it again.
+How can I disable options on the fly?
+Here is what I have done
+

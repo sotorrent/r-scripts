@@ -1,0 +1,2 @@
+Sooner or later you'll run into a different type name which collides with a domain model name. Also the answer is more an alternative for others -less aggressive- users who come across the problem rather then to the specific question of yours. But there are also other ways to solve it, i.e.change the namespace of the class, i.e.instead of having full qualified name of and , you could change the namespaces to and the issue shouldn't happen either. It's a common convention to surfix ASP.NET Projects or
+

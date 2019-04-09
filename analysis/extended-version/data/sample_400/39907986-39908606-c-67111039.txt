@@ -1,0 +1,2 @@
+If the property should be set in addition to calling the function, that should happen on a separate line.
+

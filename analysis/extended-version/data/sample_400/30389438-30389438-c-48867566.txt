@@ -1,0 +1,2 @@
+case when cond1 then ... when cond2 then .... end
+

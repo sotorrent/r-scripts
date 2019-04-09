@@ -1,0 +1,2 @@
+Maybe you just try the stuff out, before claiming it's wrong. When put inside the namespace rather than above it, will always refer to your domain model and not the as program entry
+

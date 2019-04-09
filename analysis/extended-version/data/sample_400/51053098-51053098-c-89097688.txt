@@ -1,0 +1,2 @@
+@Li-yaoXia: They’re not arbitrary permutations, but the intent is that you can pull an element to the head of a row provided it doesn’t cross an element with the same label. That’s meant to implement the “scoping” of labels: matches but not because —it selects the first ; swapping would change the type. In the paper they say these unification rules implement these equality rules: = , = .
+

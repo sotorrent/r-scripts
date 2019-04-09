@@ -1,0 +1,5 @@
+Given the following view:
+How can I pass "comments_extra_data_list" to the template in order to display the data for each node at MPTT tree?
+Thanks in advance!
+--bentzy
+

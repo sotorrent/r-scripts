@@ -1,0 +1,8 @@
+I have the following code and I am using popular Newtonsoft library in C#
+
+I want to pick a particular student object. If I query using JSONPath with literal string like below, I am getting the actual object
+Now If I want to pass the query string in run time, like below
+
+It's throwing an exception like
+Is it a limitation that we can use literal string only with single quotes in JSONPath query and not a string value in run time?
+

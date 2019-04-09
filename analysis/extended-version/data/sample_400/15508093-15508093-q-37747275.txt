@@ -1,0 +1,10 @@
+I'm using Ruby Sequel (ORM gem) to connect to a Postgres database. I'm not using any models. My insert statements seem to have a "returning null" appended to them automatically (and thusly won't return the newly inserted row id/pk). What's the use of this? And why is this the default? And more importantly, how do I disable it (connection wide)?
+Also, I noticed there's a dataset.returning method but it doesn't seem to work!
+Don't know if it matters but the table in question is inherited (using postgres table inheritance)
+ruby 1.9.3p392 (2013-02-22) [i386-mingw32]
+sequel (3.44.0)
+--Edit 1 -- After a bit of troubleshooting--
+Looks like the table inheritance COULD BE the problem here. Sequel seems to run a query automatically to determine the pk of a table (in my case the pk's defined on a table up the chain), not finding which, perhaps the "returning null" is being appended?
+--Edit 2--
+Yup, looks like that's the problem!
+

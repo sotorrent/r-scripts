@@ -1,0 +1,3 @@
+How to insert javascript variables into a URL :
+
+

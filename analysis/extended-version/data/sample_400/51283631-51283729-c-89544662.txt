@@ -1,0 +1,2 @@
+I want name_of_image to be a variable containing the name of the image
+

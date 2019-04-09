@@ -1,0 +1,3 @@
+This seems now absolutely unnecessary, but in base
+While being little clumsy, it has an advantage in clarity, which accomodates easy adaptation to
+

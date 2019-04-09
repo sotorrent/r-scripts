@@ -1,0 +1,6 @@
+Thanks, @JovanPerovic and yoshi.
+
+Well, in my constructor I'm waiting an object with ITestService contract. I should discard any methods that not exists in this contract.
+
+I worked with c# and castle windsor IoC framework and I could only use the methods defined in the interface. It make sense to me, but symfony component confuses me.
+

@@ -1,0 +1,2 @@
+So you just did not have notebook installed. There is nothing wrong with running it, under sudo. :)
+

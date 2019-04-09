@@ -1,0 +1,2 @@
+OCD? Obsessive-Compulsive Disorder?  If so, then break after return is pure OCD and a good compiler will complain about unreachable code.  Listen to the compiler more than your OCD.
+

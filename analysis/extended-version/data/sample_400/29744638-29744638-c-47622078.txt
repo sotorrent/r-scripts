@@ -1,0 +1,2 @@
+What's the problem with updating the ng-repeat?
+

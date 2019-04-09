@@ -1,0 +1,12 @@
+Solution 1 : Add missing references to a dummy project.
+
+1.  Create 'dummyProject' (ie class library)
+2.  In Visual Studio - Package Manager Console
+3.  In Sandcastle Help Fil Builder - Project Explore, add two references
+    It looks like  MRefBuilder found that Microsoft.AspNet.Identity.Owin relies on Microsoft.Owin (== v 2.1.0) and not Microsoft.Owin (>= 2.1.0).
+    The main project is still using Microsoft.Owin 3.0.1.0
+    Solution 2 : Ignore unresolved references
+    In Project Properties / Plug-Ins :
+4.  Add "Assembly Binding Redirection" in "Plugs-Ins in This Project"
+5.  configure it to "ignore if Unresolved" "Microsoft.Owin" and "Microsoft.Owin.Security.OAuth"
+

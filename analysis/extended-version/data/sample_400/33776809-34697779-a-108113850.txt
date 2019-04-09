@@ -1,0 +1,24 @@
+Based on Hamcrest Github
+
+  - Hamcrest Github CHANGES.txt
+  - Decouple the evolution of Hamcrest and JUnit
+  - Is this still being maintained?
+
+and JUnit Lambda (Junit 5)
+
+  - Minimize dependencies (especially third-party)
+    My take on it
+  - hamcrest-junit 2.0 (should be) is a fresh start with also the goal to decouple hamcrest from junit
+  - in the meantime Junit 5 project kicked off which (also wants to) reduce/remove third party dependencies
+    => In this situation, I expect it is prudent for the hamcrest guys to wait for / coordinate with the JUnit 5 project before moving forward substantially.
+    As @heenenee mentioned, the hamcrest guys became busy with other stuff and so not much is happening with the project at this point.
+    To answer
+
+Can somebody explain me the connection between them? Because it seems that hamcrest-junit 2.0 has everything build in from hamcrest 1.3
+
+  - hamcrest-junit 2.0 started but the guys behind it got busy soon after (and still are) with other projects, so the development stopped
+  - there might also be some uncertainties regarding JUnit 5 which may be an incentive to defer further hamcrest-junit 2.0 development until the JUnit 5 release (speculation)
+
+... but I do not feel really comfortable. Because I can just find people writing about 1.3 and can not really find the use of hamcrest-junit 2.0.
+At the moment, other than for your case there is not much incentive to move to hamcrest-junit 2.0. Once Junit 5 releases I expect that there will be more incentive to move forward again.
+

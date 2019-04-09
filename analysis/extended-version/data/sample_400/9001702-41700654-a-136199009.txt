@@ -1,0 +1,3 @@
+Here is the code:
+When the session has started, the session for the last user has been started, so don't need to declare the username. It will be deleted automatically by the session_destroy method.
+

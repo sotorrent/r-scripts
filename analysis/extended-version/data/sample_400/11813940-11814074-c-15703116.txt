@@ -1,0 +1,2 @@
+Thanks David. I have been able to get the trait to return what I wanted, but then tried to implement this without using a trait at all, as you suggested. I have edited my question to reflect this - would you be able to comment on how to achieve what you were suggesting?
+

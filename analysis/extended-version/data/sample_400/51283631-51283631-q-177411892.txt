@@ -1,0 +1,8 @@
+I have a set of images in my drawable resources. Now I want to be able to change a placeholder image accordingly with programmatically.
+My ImageView is defined as
+How would I do this? I have tried but that didn't work.
+The images have the format
+EDIT:
+I currently have the following construction:
+I have changed the image name to lowercase and it is now a png file.
+

@@ -1,0 +1,7 @@
+I have a basic datatables that I use with will_paginate.
+The jQuery is
+While everything mostly work wonderfully, including the column search, my role column, however, does not.
+While everything else are attributes that I use SQL to query, role is a method call.
+This in turn will not work with column sorting.
+With that said, is there a way to use will_paginate and datatables with ajax to use a custom sort with the method output? I tried using on the column but that doesn't seem to be it.
+

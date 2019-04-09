@@ -1,0 +1,5 @@
+How about keeping track of the Forms parents so you have direct access.
+For example in your Form1:
+Then in your Form2 when Form3 is called:
+Then when you want to close of Form3:
+

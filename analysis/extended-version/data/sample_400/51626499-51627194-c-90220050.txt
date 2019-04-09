@@ -1,0 +1,2 @@
+Thanks, but it still doesnt do anything. I renamed function, and I am calling it, but nothing appears. It cant be done easier? I just need to allow copy/paste for users, is it impossible to do that like with one command? :D
+

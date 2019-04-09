@@ -1,0 +1,2 @@
+well.. you can only serve a single document and that should include everything including the images. and that's why you can inline them.
+

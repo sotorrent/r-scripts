@@ -1,0 +1,2 @@
+I figured the issue. The issue occurred because the SSL certificates were not generated properly. The CA certs were not imported in the keystore file. Due to this mistake, the application was not running on Mozilla and Chrome newer versions. But it was working on IE. It was also working on Mozilla and Chrome previous versions. Not able to figure out why. It might be because of newer updates they should have prevented this.
+

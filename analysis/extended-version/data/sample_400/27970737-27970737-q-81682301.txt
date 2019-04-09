@@ -1,0 +1,4 @@
+At least in 'Clang' & 'GCC'. Here is an example:
+As most of you probably knows in the second line of 'main' we are bounding the return-value temporary ('prvalue') into an 'rvalue reference'  thus extending it's life time. So my question is what is happening here - is 'cv' for return-values really ignored and if so where in the standard this is written or else how 'char *const &&' is converted to 'char * &&'?
+*Need ISO C++ standard qualification.
+

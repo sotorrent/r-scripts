@@ -1,0 +1,10 @@
+html
+I need that:
+
+  - When user hover in - appears dropdown menu, and if hovered it stay visible
+  - When user change target (anything else instead and ) - dropdown menu hold 1s and disappear.
+    I write this jQuery
+    but it dont work correctly) and css transitions working in mouseover and dont working on mouseout..
+    1 question else - Is that functions mouseover and mouseout cross browsers + mobile devices such as iPad?
+    Here is JsFiddle Link, I hope you'll help me)
+

@@ -1,0 +1,2 @@
+@seanizer actually, if you want (pre-jpa-2.0) functionality like delete-orphan, or multiple lazy-loaded collections, it's legitimate. :)
+

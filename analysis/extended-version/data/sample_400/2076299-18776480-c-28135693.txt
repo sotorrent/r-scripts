@@ -1,0 +1,2 @@
+In my initial tests this seems like the best solution.
+

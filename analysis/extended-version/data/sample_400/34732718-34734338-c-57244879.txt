@@ -1,0 +1,2 @@
+it's special purpose for when you're doing type design implementation, as well as proofing before sending something off for production (be that text, a webpage, whatever). Especially for the latter, seeing "nothing" rather than text styled with a different font that might be similar enough that you don't catch it on the first proofing is quite valuable.
+

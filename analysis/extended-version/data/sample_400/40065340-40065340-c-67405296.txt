@@ -1,0 +1,2 @@
+Learn to create a minimal reproducible example. That's a useful and important skill for a programmer. You are expected to provide one when asking a question at Stack Overflow. Downloading a huge dataset is not part of a minimal reproducible example for a question about plotting.
+

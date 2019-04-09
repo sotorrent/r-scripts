@@ -1,0 +1,2 @@
+I would use a combination of objects/arrays as mentioned here and JavaScript sessionStorage or localStorage in order to build up a store of your question results whilst the user progresses through the quiz. Bear in mind that if you use sessionStorage, your data will be lost if the browser is closed.
+

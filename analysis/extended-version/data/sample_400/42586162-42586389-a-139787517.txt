@@ -1,0 +1,3 @@
+As far as I now the best you can do is to change the canvas width and height attributes to reduce the pixel canvas count and resize it to fit the viewport.
+Note that the and attributes are different from its CSS properties, e.g. will result in pixels being upscaled by the factor of 25 (so similar to 4x4 pixel image resized using CSS).
+

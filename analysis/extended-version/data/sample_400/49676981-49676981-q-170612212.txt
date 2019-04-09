@@ -1,0 +1,3 @@
+When I click the check box I need to add an image in the next column for that particular row. I use the method to the code and target . However it's adding everywhere.
+Can you tell me how to fix it? I'm providing my code below
+

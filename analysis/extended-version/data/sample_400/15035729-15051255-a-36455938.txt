@@ -1,0 +1,2 @@
+I dont think there is any api for that in ios6 and below :(
+

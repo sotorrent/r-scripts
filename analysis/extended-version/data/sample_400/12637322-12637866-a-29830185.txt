@@ -1,0 +1,4 @@
+For your second parameter in the - I think you should be specifying the time zone in a second parameter so something like
+On a side note it may be easier to use JHTML::date() in the component as this involves less lines and is more 'Joomla native'. See the API page on this here. Then use a code like :
+Where = now specifies to use the time 'now'. The second parameter is your format for the date and the third parameter means the time setting is set the server time. Rather than the users selected time.
+

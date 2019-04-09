@@ -1,0 +1,2 @@
+I was under the impression that he was stuck with the actual dynamic HTML element of the problem. He has the code for the loops already, using $.each
+

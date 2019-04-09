@@ -1,0 +1,10 @@
+I am seeking help after having wasted almost a day. I have a big data frame (bdf) and a small data frame (sdf). I want to add variable z to bdf depending on the value of sdf$y (which changes as a function of a time variable).
+Here is a reproducible example:
+I want to create variable z in bdf with the following values of sdf$y:
+
+  - 0.2 for rows where bdf$tb ranges from the first bdf$tb value to mid-way between the 1st and 2nd value of sdf$ts. In this simple example, that is the case of rows 1 to 3 of dbf which have times bdf$tb below "2013-05-23 12:00:00 GMT".
+  - -0.1 for rows where bdf$tb ranges from mid-way between the 1st and 2nd value of sdf$ts to mid-way between the 2nd and 3rd value of sdf$ts. In this simple example, that is the case of rows 4 and 5 of dbf which have times bdf$tb between "2013-05-23 12:00:00 GMT" and "2013-05-27 12:00:00 GMT".
+  - 0.3 for all rows where bdf$tb ranges from mid-way between the 2nd and 3rd value of sdf$ts to the last value of bdf$tb. In this simple example, that is the case of rows 1 to 6 to 10 of dbf which have times larger than "2013-05-23 12:00:00 GMT".
+    Hence, in the end, the big dataframe bdf should look like this:
+    I could not succeed using dplyr::mutate and got nowhere using loops... Any help would be much appreciated. I hope that I clearly described the issue as adhered to the etiquette (it is my first question).
+

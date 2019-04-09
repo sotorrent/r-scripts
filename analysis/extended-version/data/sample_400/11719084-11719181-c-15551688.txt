@@ -1,0 +1,2 @@
+Output[j] is not defined for 0<=j<i, so just make for(j = i;j < size+size_filter;j++)
+

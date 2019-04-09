@@ -1,0 +1,2 @@
+Awesome! Much better than the HTTP authentication method, of which the logging-out code is much more complicated. If you would add the PHP closing tags in all three codeblocks, I will up you answer. Oops, I already did! :-)
+

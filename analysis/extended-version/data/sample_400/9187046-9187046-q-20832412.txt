@@ -1,0 +1,6 @@
+I'd like to use the root app_offline.htm file as a maintenance page.
+Design came back with a maintenance page that will require images and css.
+I added the image and ran the site, but the image won't render. I looked in firebug and saw that the image is showing a 503 error (service unavailable). This makes sense seeing as is in the web.config, so all requests will run through .net, hence the error.
+I thought I'd be able to do this in the web.config, but no luck:
+Is an app_offline.htm not recommended for MVC? Is there a better alternative?
+

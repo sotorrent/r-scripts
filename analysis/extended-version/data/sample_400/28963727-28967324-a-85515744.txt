@@ -1,0 +1,5 @@
+There are many ways that this can be done. A couple of ideas that spring to mind:
+
+1.  Instead of using GIN to inject the view, inject a view provider (). This can be used by the code that builds the view (the activity?) to get the view. The implementation of the view provider can then return an implementation of the view for the relevant mode, simple or expert. For example,
+2.  Use deferred binding. This is not so dynamic but has the advantage a simple implementation will be a smaller download than an expert implementation. There is a project, gwt-seminar, on github that shows this in practice that has mobile and desktop versions.
+

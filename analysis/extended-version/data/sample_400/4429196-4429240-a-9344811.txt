@@ -1,0 +1,5 @@
+The USB connector is the least of your worries - IMO the real problem will be drivers to interface with the hardware and software to interface with the drivers.
+Are you planning to write the driver yourself? Otherwise, I don't think it's supported out of the box.
+If so, you'll need to find the specifications and protocol for your device, and implement them to work with the kernel Android is using (so probably the Android SDK reference will be useful, perhaps even Linux Kernel Documentation might be useful). Note that this is no easy task even when all the specifications are available - woe betide you if there's no published spec to the reader, as you'd have to reverse-engineer the functionality from the Windows driver.
+In closing: despite great developments in the past decade, we're still light-years away from truly plug-and-play devices: especially devices made for desktop computers don't interoperate well with other (e.g. mobile) platforms.
+

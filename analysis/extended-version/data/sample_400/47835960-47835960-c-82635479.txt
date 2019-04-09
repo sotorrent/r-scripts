@@ -1,0 +1,2 @@
+Do you have any browser/version considerations? Why not inspect the code for that website and see for yourself?
+

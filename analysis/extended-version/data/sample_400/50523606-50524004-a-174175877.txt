@@ -1,0 +1,4 @@
+Here is how I'll do it, using CSS on your background:
+( I've added some transparency to see the overlapping )
+Hope it helps.
+

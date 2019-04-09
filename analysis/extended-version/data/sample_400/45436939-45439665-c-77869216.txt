@@ -1,0 +1,2 @@
+You are right, that was the issue. I assumed that I have to create the QTextEdit in the Designer. But taking the QTextEdit from the myConsole Class and assigning Layout imformation aswell as the promotion does the trick. Thank you very much.
+

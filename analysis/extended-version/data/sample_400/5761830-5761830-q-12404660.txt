@@ -1,0 +1,6 @@
+I have an array that looks like this:
+and some Div's on my form that look like this:
+What I need is to change the background color of my Div's to red or green depending on the value of my tracker array. This is an array that's a variable size.
+Can someone give me some pointers how I could do this using jQuery. I really have little experience with this so I would very much appreciate any help.
+thank you,  Marilou
+

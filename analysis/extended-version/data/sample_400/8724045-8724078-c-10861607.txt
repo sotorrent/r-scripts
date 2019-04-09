@@ -1,0 +1,2 @@
+We can also mention a few additional CPU ticks in the compilation process. More code - more time it needs to optimize and compile
+

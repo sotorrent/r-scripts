@@ -1,0 +1,2 @@
+Weight limitations aside, style matching is why font families are preferred. Most CJK fonts have weird looking Latin letters to actively make the latter consistent. When they are not actively made to match you have oddities: °¹²³45678<U+2079><U+207A><U+207B><U+207C><U+207D><U+207E>n is my pet peeve. Adobe Garamond Premier —Pricey— has Latin and Greek, but they did not intend it for chemists to use both simultaneous —"a-ketoglutarate" looks weird in many fonts.
+

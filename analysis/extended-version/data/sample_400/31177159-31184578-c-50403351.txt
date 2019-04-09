@@ -1,0 +1,2 @@
+@KashifNazar "In my understanding, server side hooks will come into act only when the newly created branch is pushed." that is true, which means either the folder will have been deleted, or it would still be present and the push will be rejected (policy enforced)
+

@@ -1,0 +1,2 @@
+I'm sorry. I tried to pivot it first so it went into the CPSV tab as a paste values of the Pivot table. Then my logic (best ignored) was to use code to find if there was a 5th Next Step, if there was, add a row and cut the data to below Step 4. Then to do the same for the Columns of Step 4 so that they were eventually underneath eachother rather than next to each other. Like they are in the table. I'm sure there's a cleverer way of doing it but if I was doing it manually I'd do it that way and that's where I started,
+

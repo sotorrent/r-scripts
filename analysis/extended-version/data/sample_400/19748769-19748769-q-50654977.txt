@@ -1,0 +1,3 @@
+I've fixed my previous issues with the code, now i want it to recognize if it's 4 digits and less or 6 digits and above with an "Else if".
+And when i input letters to deny it with a System.out.println within an "Else if" as well.
+

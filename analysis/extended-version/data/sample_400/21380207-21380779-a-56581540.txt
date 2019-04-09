@@ -1,0 +1,2 @@
+You should convert your input data to an array (fiddle):
+

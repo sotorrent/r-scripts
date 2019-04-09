@@ -1,0 +1,26 @@
+I have multiple form application. Form 1 is Login form for user validation. Form1 goes to Form2(Menu form). Form 2 leads to Form3 which is only popupform and hides the form2 when it is open.Form 3 goes to Form 4. Now from Form4 ,with button click, I need to restore the Form2 without creating a new instance. I tried using singelton approach, getting error.Code as follows as described above.
+Form1:
+private void click_Click(object sender, EventArgs e)
+{
+
+if ((user.Text == username) && (pswd.Text == password))
+
+{
+Form2:
+private static Form2 instance;
+private void button_Click(object sender, EventArgs e)
+{
+Form3:
+private void button_Click(object sender, EventArgs e)
+
+Form4:
+
+private void button1_Click(object sender, EventArgs e)
+
+{
+Mainmenu does not contain a reference for Instance and no extension method accepting a first argument of type 'Mainmenu'
+
+    }
+
+Basically, I want to restore the Form2 that was hided.Any help would be appreciated!Thanks
+

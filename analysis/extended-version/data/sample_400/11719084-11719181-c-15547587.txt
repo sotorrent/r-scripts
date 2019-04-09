@@ -1,0 +1,2 @@
+filter[..] is the input signal according to the post. Or maybe i am confused because it says "an array of coefficinets buffer[size]?
+

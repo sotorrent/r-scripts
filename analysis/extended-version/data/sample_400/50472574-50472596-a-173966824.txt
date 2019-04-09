@@ -1,0 +1,2 @@
+You could use clause to filter rows after aggregation:
+

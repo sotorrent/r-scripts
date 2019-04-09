@@ -1,0 +1,5 @@
+Grab a fridge magnet and move it at around top of your iPhone's screen.  You may also need to rotate your iPhone on a few axis at the same time; be creative.
+Be aware that to fool the magnetometer again with a magnet, you may need to allow it to reset itself to the Earth magnetic field.  You do this by rotating the iPhone over all axis.
+I had a bug which occurred after the calibration screen disappeared again.  The above method allowed me to force it to appear at will within 10 seconds or so.
+Some additional information: When the calibration screen appears AppDelegate's is called. Then when it's done: . (My bug: I only restarted my motion manager in , not in .)
+

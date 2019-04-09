@@ -1,0 +1,2 @@
+@HansPassant char may be signed or unsigned.  That's implementation defined.
+

@@ -1,0 +1,4 @@
+If you are using windows, then
+
+the comments to this question show how to create a batch file to be run as a scheduled job that will call the procedure.
+

@@ -1,0 +1,5 @@
+i have the below knockout js code..
+Design Code
+This function is calling for every click but ajax requesting is sending for second click only. i need to send ajax request for first click, is there any solution for that....
+here i am proving one drive link for js file
+

@@ -1,0 +1,7 @@
+I have my data in an array. I need to pass an array value to function in
+ARSperl.
+The array is formed dynamically based on inputs received, so its length may vary.
+When I run the script I get this error
+
+ERROR: Cannot create host ticket: [ERROR] Invalid number of arguments (ARERR #80000)
+

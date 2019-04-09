@@ -1,0 +1,2 @@
+@Joel: Julien is correct here - will return false as soon as it finds any non-zero value, at the same place as would return true. The only extra cost here is the single extra negation, which is hardly worth considering.
+

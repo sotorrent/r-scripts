@@ -1,0 +1,9 @@
+Text given:
+Want to get two matches:
+and
+Currently trying this:
+But I'm getting:
+and
+The question is - hot to make the second match start from beginning of string?
+Third line
+

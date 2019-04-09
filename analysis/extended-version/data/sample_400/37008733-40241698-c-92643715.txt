@@ -1,0 +1,2 @@
+@ayz4sci Are you sure that account.getEmail() will return null in that case EVEN IF it is associated with a facebook account?
+

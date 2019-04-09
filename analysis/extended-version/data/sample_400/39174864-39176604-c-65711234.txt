@@ -1,0 +1,4 @@
+Many thanks for pointing out all the different options. The empty block probably was what I am was looking for initially (instead of printing an empty String). But the other options are even better.
+I really need to work through the whole intro "book" first, before I tackle exercises. Rust has a steep learning curve.
+Talking about the C example: that might be shorter by using an upper limit for the length of name. And the concatenation must be a distinct step for that exercise, otherwise it would be shorter, of course.
+

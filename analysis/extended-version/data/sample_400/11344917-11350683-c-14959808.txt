@@ -1,0 +1,2 @@
+Confirmed. These expressions are allowed in Tomcat 6.0.32 while it throws an error in Tomcat 7.0.24.
+

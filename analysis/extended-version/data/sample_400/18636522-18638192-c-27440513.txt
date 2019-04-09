@@ -1,0 +1,4 @@
+typecast the sender object as 
+
+((TextBox)sender).Text use this rather than txtSel.text that I wrote
+

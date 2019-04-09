@@ -1,0 +1,2 @@
+why it's are you set both label and view height constant  relation to greater than or equal
+

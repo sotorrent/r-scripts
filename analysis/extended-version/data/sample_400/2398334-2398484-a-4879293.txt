@@ -1,0 +1,5 @@
+If you want to do character recognition goggle HanziDict.
+Also take a look at the Unihan data site:
+
+You can look up stroke count and then get character info.  You might be able to build your own look up.
+

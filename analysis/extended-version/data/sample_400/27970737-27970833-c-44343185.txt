@@ -1,0 +1,2 @@
+"There are generally no expressions of const non-class non-array type" Sorry, I have to qualify that: there are no prvalue expressions of non-const, non-array type.
+

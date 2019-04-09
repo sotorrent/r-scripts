@@ -1,0 +1,5 @@
+I would like to get a script that lets the user to navigate on your site and use the back button without any questions until it's the same domain. Otherwise ask the visitor if he really wants to leave the site.
+I was able to write the part that take cares of the navigation. See here:
+However I can't find any reference regarding the back button. If there was any event for this, I would approach the problem with something like this:
+As I mentioned, I got stuck here. Any ideas are welcomed.
+

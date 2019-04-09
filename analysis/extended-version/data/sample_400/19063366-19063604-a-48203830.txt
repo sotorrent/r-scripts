@@ -1,0 +1,4 @@
+Well if you are using org.apache.commons.io package you could use just use:
+Example:
+I hope this helps.
+

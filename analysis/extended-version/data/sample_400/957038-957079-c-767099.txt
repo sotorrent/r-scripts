@@ -1,0 +1,2 @@
+If you're nesting so many switches and ifs that the indentation becomes a problem, you're probably better off creating some new functions.
+

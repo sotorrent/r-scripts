@@ -1,0 +1,2 @@
+@SamAxe - okay, I found some solution for enumerating windows. Do you know if it's possible to check, on which screen window lays?
+

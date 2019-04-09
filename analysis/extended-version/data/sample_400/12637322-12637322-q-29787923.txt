@@ -1,0 +1,5 @@
+I have Created this code in a custom component that I made:
+The first code displays the datetime correctly, but the second one displays the time +3 hours
+I have checked the configuration.php file and the public $offset = 'Europe/Athens'; and is correct. I am also changing the settings from the system configuration menu but nothing seems to be fixing the JFactory::getDate() to display the correct time.
+What am I missing?
+

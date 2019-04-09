@@ -1,0 +1,7 @@
+I am following code to display song list in alphabetical order
+function getSongsIn(key, value)
+{
+}
+Above code result in case sensitive arrangement.
+Can anyone suggest me to make it case insensitive??
+

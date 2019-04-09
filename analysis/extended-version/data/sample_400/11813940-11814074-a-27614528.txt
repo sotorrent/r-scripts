@@ -1,0 +1,7 @@
+You cannot obtain a pointer to member to a type member: The subexpression will only be valid when is a non-type member of . But what you need to check is whether it is a type. A minimal change to your template could be: If is a nested type of , then that function overload will be a valid candidate (the 0 will be a pointer to whatever type is), but if does not contain a nested then it will be discarded and the second test will be the only candidate. There is a different question as of whether the trait is needed at all, since if you use in the target template, the template will be discarded automatically for types that don't have that nested type.
+
+EDIT
+What I meant is that in your approach you need to create a trait for each and every possible nested type, just to generate a template that does or does not hold a nested type (). Let's take a different approach... First we define a general utility to select a type based on a condition, this is not required for this problem, and a simpler would suffice, but the utility template can be useful in other cases:
+Now se just need to use SFINAE for class template specializations:
+Note that the main difference with your approach is the use of an extra intermediate template (the one for which Substitution will Fail --and Is Not An Error). This is the reason why the template above would also work: you just need to use the nested type as argument to a template, and have that fail, you don't really care what the template does, as long as the evaluation is a nested (that must be ) if it succeeds.
+

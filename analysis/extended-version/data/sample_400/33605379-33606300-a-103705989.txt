@@ -1,0 +1,4 @@
+``
+Set content hugging and content compression.
+(<U+4E2D><U+56FD><U+4EBA><U+5427><U+FF1F>)
+

@@ -1,0 +1,2 @@
+You mean, is it encoded somehow in the actual code point? No. There may well be a table somewhere you can find on the net (or create one) but it's not part of the Unicode mandate to store this sort of metadata.
+

@@ -1,0 +1,2 @@
+I think that the logout should be implemented using post method, not get.
+

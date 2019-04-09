@@ -1,0 +1,8 @@
+One problem I've encountered when doing a fs -copyFromLocal /localpath/localfile /hdfspath/hdfsfile is when the target /hdfspath doesn't exist.
+I usually create the entire target hdfspath first: fs -mkdir /hdfspath, then issue the -copyFromLocal command.
+Beyond that, take a look at this bug:
+which seems to explain your first error.
+Perhaps your version of hadoop/hdfs doesn't have this fix.
+Also according to this blog (your first syntax seems to work for them:
+$ bin/hadoop dfs -copyFromLocal C:\cygwin\home\Rajat\java\mrh\input input
+

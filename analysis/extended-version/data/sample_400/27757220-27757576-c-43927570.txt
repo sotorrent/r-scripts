@@ -1,0 +1,2 @@
+Using is pretty slick. Could be used to populate the vector in my method and side-step the problems I had with .
+

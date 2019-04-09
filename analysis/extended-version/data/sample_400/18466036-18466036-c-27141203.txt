@@ -1,0 +1,2 @@
+But seriously it doesn't seem a problem related on how the scripts are loaded, the correct function is called and the active page is correct. BUT the panel is not shown
+

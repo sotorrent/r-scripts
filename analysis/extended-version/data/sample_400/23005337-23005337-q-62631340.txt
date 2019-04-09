@@ -1,0 +1,6 @@
+Ok I having some issues getting on my hover to work in my portfolio section, I tried a bunch of solutions from similar questions but nothing seems to be working. Also I got it to work with media queries but its a bunch of extra code and i know there is another way to do it I just cant figure it out!
+Check out my html:
+My CSS for the hover:
+Any help is greatly appreciated!
+You can also see the live version here, just go to portfolio section and hover an image.
+

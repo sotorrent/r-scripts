@@ -1,0 +1,7 @@
+Please Do Create class like below : I am taking yours as example.
+And your main Index must be like below
+Here in below code I am to show list of bikes in a Partial View.
+Note : I am give the  name as "_CreateBike" to below partial view, which should match with the one which I defined in Index view.
+And your another partial view with Cicyle class.
+Note : I am give the  name as "_CreateCicyle" toto below partial view which should match with the one which I defined in Index view.
+

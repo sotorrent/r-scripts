@@ -1,0 +1,3 @@
+You could use the method of protocol
+Then you could verify if the user is logged or not and present the login page modally. And if the user cancels the logging, just dismiss the presented view controller.
+

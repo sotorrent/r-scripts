@@ -1,0 +1,5 @@
+How can I echo for example the title of the following array? (entries). Using print_r I get this ( I post only a part of it).
+I would like to create a variable for each item I want to echo, this will help me on doing some modifications on it before showing the result.
+Thank you stackoverflow!
+This is the code.
+

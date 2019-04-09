@@ -1,0 +1,7 @@
+I have a page that gets a couple of variables from the url through a php GET method. The address would be
+Then I use and to get the values.
+Now, I have a MySQL statement like this:
+It just doesn't work even though the value is correct (I checked that). What's really strange is, when I put (or any numeric value) instead of , it inserts it! Both $id and are numeric, out of desperation I tried using and then inserting but no luck. No error is thrown.
+The part is irrelevant to this problem, the statement behaves the same with or without it.
+This is a real conundrum for me, why would the statement work for one variable but not the other?
+

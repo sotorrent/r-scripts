@@ -1,0 +1,2 @@
+I can add a Google calendar without a webcal:// protocol! So much for that.
+

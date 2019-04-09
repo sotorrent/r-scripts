@@ -1,0 +1,4 @@
+I did the tests with the xCode Instruments tool, and the tool accuses CFNetwork.
+However if I comment out the code of the request, everything runs normally.
+This would not be a leak? It is necessary to inform something on file .plist?
+

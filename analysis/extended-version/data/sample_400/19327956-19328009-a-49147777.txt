@@ -1,0 +1,3 @@
+The function writes over memory without understanding its structure in any way. If you write a bunch of random 's all over an accounting report, will that make the report show that the company has spent $1? I don't think so. Maybe it will show dollars. Maybe not. Who knows.
+To modify an object's value intelligently, you have to understand its structure. The function does not understand the structure of and just scribbles all over its bytes. What that means, does not know or care.
+

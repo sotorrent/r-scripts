@@ -1,0 +1,5 @@
+I would like to replace a string (number '2' in my example) in a data-frame differently based on the row number. This is my input:
+This would be my expected output:
+Therefore, the number '2' should be replace by '1R' in the first row, by '2R' in the second row and so on in larger matrices (my real data has more than 1000 rows). I tried the below code without success:
+I would be glad for any help here.
+

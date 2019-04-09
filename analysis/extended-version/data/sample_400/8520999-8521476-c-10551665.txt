@@ -1,0 +1,2 @@
+The trigger_error(...) code doesn't print out anything. And mysql_query($sql) doesn't insert anything into the DB.
+

@@ -1,0 +1,3 @@
+Since you are using the same physical file repository that is used by the "MySite" collection, it will create the "beta" folder.  If you place this new web application in its own path (i.e., "C:\Sites\WebApps\WebApplication") you will get the desired results.  The code below worked for me.
+EDIT: To create a web application in a folder underneath the root of a website, you need to first create the folder in the site you desire (i.e., "C:\Sites\MySite\Beta").  Then the Powershell command will look like this:
+

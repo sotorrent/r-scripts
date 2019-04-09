@@ -1,0 +1,2 @@
+No. Only consecutive should should count for the purposes of this function
+

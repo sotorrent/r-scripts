@@ -1,0 +1,4 @@
+You could wrap it up in a scriptlet, like:
+, note that above won't handle some funnily named files (like e.g. with in it).
+[update: fixed for as per comments]
+

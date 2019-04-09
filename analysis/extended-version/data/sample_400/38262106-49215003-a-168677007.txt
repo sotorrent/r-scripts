@@ -1,0 +1,6 @@
+I had the very same problem. In my case I needed to do the following sequence:
+
+1.  Add meta tag fot UTF-8:
+2.  Open the html file e.g. in Notepad++, select all text and and convert it to UTF-8 without BOM (if there are other files connected with this html e.g. .css or .js do the same with them)
+3.  Restart your IDE (in my case VS2017) because your files might be cached and rebuild the project
+

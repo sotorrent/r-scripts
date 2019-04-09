@@ -1,0 +1,4 @@
+I would like to use regular expression to check if my string have the format like following:
+The format is like or . How can I check if my string is in either of these two formats in ruby code? And please explain the regular expression. thank you.
+P.S. the random string consists of alpha-beta letters and numbers.
+

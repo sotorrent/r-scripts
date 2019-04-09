@@ -1,0 +1,2 @@
+The final sum has log_5(n) + O(1) terms, since the recursion bottoms out. The largest is sqrt(5^(log_5(n) + O(1)) n) = sqrt(O(n) n) = O(n). The others decrease geometrically, so they don't matter in the big-O accounting (alternatively, divide through by 1 + sqrt(1/5) + sqrt(1/5^2) + ... = Theta(1)).
+

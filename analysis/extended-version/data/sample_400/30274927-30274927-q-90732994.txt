@@ -1,0 +1,9 @@
+So, when i try to send a collection from server with duplicate entry (same id) backbone doesn't render that element.
+But on model.fetch() if i return a model with  an already existing id,  it works.So now we have a collection with same ids.
+Why is this different behaviour, i was thinking backbone will verify(check if that id alread exist) the incoming model before updating it  and not render it.
+EDIT
+on collection.fetch i get this
+var  coll = [{name: 'foo', id: 1 }, {'name': 'bar', id: 2 }] // just representation;
+now i do model.fetch() for second model,  and the server responds this
+{'name': 'new bar', 'id': 1} //  no-error the view gets updated
+

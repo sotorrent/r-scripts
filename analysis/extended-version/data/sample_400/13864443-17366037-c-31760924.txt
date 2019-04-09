@@ -1,0 +1,2 @@
+Good to know, but Guice isn't a CDI implementation, and as explained under Rob's answer, CDI rules out injection of final fields.
+

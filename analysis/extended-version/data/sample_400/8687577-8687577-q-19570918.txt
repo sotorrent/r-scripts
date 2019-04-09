@@ -1,0 +1,9 @@
+i have been modifying a snippet found on jsfiddle that creates breadcrumb links from an html ul nav structure:
+working example:
+trying to get working example:
+i'm attempting to port the functionality of the first example to the second.  jQuery builds the "crumbs path" by moving through the html structure relative to its origin, which is initially set by finding the navigation link's url and giving it a 'current' class.  Additional anchor elements that are 'in the path' are also given the 'current' class.
+This identifies the breadcrumb elements and works well in the first example...
+but fails on the second example as the html structure is somewhat different. I've modified it to no avail and cannot seem to find a way to reference the correct elements to build the path.
+
+many advance thanks...
+

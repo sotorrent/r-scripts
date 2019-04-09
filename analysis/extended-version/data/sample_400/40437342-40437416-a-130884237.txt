@@ -1,0 +1,4 @@
+You need to know where the input ends. In your case, it looks like the input fits on a single line. You can read that line, construct a string stream from it, and read comma-separated items from it as follows:
+Demo.
+Note how the above uses a instead of an array. This approach lets you manage storage for your data with a simple call of , and know how much data you have entered by examining .
+

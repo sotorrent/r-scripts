@@ -1,0 +1,4 @@
+Same errors, it seems like it's trying to execute the entire line as a command, an it never seems to enter the while loop with the echo commands.  I do Like Cat instead though.
+
+Also I know the first 29 lines are junk because these are all images of aix built from the same nim/mksysb. So they are all identical. I want the commented out scripts because I'm also trying to get an inventory of what might be ready for retirement and was left by installation rot.
+

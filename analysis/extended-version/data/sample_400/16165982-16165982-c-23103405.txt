@@ -1,0 +1,2 @@
+"Can I do it without loop?" Why would you want to? This is what loops are for.
+

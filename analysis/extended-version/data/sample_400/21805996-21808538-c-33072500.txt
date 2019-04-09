@@ -1,0 +1,3 @@
+$stylesheet = file_get_contents(DIR.'/../../css/print.css');
+		$stylesheet .= file_get_contents(DIR.'/../../css/main.css'); this is how i fixed it, but thank you very much!
+

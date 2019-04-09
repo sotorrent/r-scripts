@@ -1,0 +1,5 @@
+From what I can see, none of the answers given will work.  I am copying this from github, but the code below works great for processing one sample at a time:
+the h
+and the c
+Taken from:
+

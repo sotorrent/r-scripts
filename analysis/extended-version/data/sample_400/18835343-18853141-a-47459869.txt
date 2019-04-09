@@ -1,0 +1,9 @@
+I haven't found any proper documentation yet, but I have discovered some of Outlook's behaviors. Regarding the webcal/ics requirement for an "internet calendar subscription"
+
+  - Outlook can use an address
+  - Outlook can use a route that doesn't end with
+    You can try these for yourself in Outlook | Open Calendar | From Internet. You probably still want to use an /webcal link so that your browser prompts you to launch an application that can handle the request.
+    As for the rest of the controller/action requirements...
+  - Outlook makes an anonymous request*
+  - Outlook can accept a binary/stream/string kind of controller action
+

@@ -1,0 +1,2 @@
+I'm opening the new tab via Javascript, but  still not working.
+

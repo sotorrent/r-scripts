@@ -1,0 +1,2 @@
+JsonP works with GET method only so please verify this for your code. If you have Post method  then backend must send header correctly. Refer here.
+

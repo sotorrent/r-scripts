@@ -1,0 +1,2 @@
+That worked. I noticed another mistake though. When I click on any picture on the website, the lightbox moves the content of the webpage slightly. Do you know how to fix that, please? @trevor
+

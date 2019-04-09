@@ -1,0 +1,2 @@
+The ProductType class that you're binding to the ListBox should have a read/write property called IsSelected or IsChecked that you can bind to. Then instead of using a ControlTemplate, use a DataTemplate on the ListBox.ItemTemplate and bind the CheckBox's IsChecked property to that property.
+

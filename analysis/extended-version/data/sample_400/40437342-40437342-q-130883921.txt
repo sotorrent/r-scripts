@@ -1,0 +1,8 @@
+With n (The normal way of inputting elements)
+Input : 5
+
+Input : 1,2,3,4,5
+But how do I input elements of the array without inputting n? This is what I look for :
+Input : 1,2,3,4,5
+cout << a[0] -> 1
+

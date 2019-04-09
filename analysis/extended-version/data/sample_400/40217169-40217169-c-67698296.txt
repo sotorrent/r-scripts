@@ -1,0 +1,2 @@
+Get list of XML files from input directory and sort it. It would be natural order of string as filename is string. Then iterate over List and load each file using new File with combination directory and filename as path.
+

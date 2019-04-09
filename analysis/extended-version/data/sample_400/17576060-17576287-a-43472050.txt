@@ -1,0 +1,2 @@
+You can't adjust the range dynamically (sometimes Excel is better). However, you can keep track of what you've plotted, and redo the plot when you've reached the limit. You could also just make a new plot every time you get more data, which would be a way of faking a dynamic update.
+

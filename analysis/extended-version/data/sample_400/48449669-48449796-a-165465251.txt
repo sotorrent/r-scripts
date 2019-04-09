@@ -1,0 +1,16 @@
+If you look at the sequence of powers of two, you will se a pattern:
+1
+2
+4
+8
+16
+32
+64
+128
+256
+512
+1024
+2048
+its always 2 -> 4 -> 8 -> 6
+You can use this, to calculate the last digit
+

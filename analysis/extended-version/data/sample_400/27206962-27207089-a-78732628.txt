@@ -1,0 +1,2 @@
+I somehow tried to inverse the image and use the COLOR_DODGE blend mode which is available in pixi and it worked. This is a just very lucky. The effect is not 100% equal, but very close and good enough in this case.
+

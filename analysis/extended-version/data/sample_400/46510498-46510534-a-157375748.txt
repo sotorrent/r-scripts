@@ -1,0 +1,4 @@
+Does :
+this.albumService.getAllAlbums().subscribe(p => this.album = p);
+return a promise?  You'd need to attach it to a .then() and do your work there.
+

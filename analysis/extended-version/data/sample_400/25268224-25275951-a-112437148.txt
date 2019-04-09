@@ -1,0 +1,7 @@
+Per the model builder, the function GetByExternalKey is a bound function. According to the OData Protocol v4, a bound function is invoked through the namespace or alias qualified named,  so you need to add more in the route attribute:
+If you don't know the namespace, just add below to the method GetModel():
+And replace "Your.Namespace" with the namespace of the type Order.
+Here are 2 samples related to your question, just for your reference:
+<
+<
+

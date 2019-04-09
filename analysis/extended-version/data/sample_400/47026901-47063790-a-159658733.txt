@@ -1,0 +1,19 @@
+So, how I can change the IDE GUI font family? NOT code font family,
+NOT GUI font size, changing the the font FAMILY of GUI (menu, labels,
+etc.)
+Unfortunately, the ability to specify the font family for the IDE itself is not currently provided in NetBeans. See these NetBeans bug reports requesting the same feature:
+
+  - Bug 114017 - I18N - provide properties/options to change ide global font name and font size
+  - Bug 125083 - I18N - IDE's Font/Fontsize can be configured furthest
+
+Where I need to input -J-Dramos.nb.ui.font="MyFavoriteFont,14" in
+NetBeans options?
+To specify the details for the "ramos" plugin you referenced:
+
+  - Locate and edit the text file netbeans.conf which will be under your NetBeans installation directory in the etc folder.
+  - Locate the line containing the text netbeans_default_options and append the data for the plugin, save the file and then restart NetBeans. For example, this line (at the very end) specifies to the plugin that the Serif font should be used for the NetBeans IDE:
+    netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true -J-Dramos.nb.ui.font=Serif,14"
+    Here is a screen shot of the NetBeans IDE using that (really ugly!) Serif font:
+    enter image description here
+    If the approach described above does not work for you then select IDE Log from NetBean's View menu to review startup issues. Any problems with the plugin might be logged there.
+

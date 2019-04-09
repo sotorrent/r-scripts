@@ -1,0 +1,2 @@
+You could also have added the div inside the div for your images, that would ensure, that the div wrapping the images has the same height as the images (e.g. if you want to use a background-color)
+

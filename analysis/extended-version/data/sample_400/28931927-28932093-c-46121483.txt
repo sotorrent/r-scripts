@@ -1,0 +1,2 @@
+Don't apply display: initial. Do what I suggested in my edited answer above. Adding that style rule will fix your issue.
+

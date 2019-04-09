@@ -1,0 +1,2 @@
+is 0xf1 in code page 437, the default code page for console mode apps.  Does Unicode start sounding attractive yet?  Use SetConsoleCP(CP_UTF8) to switch to utf-8, use the console window system menu to change the font to, say, Consolas.
+

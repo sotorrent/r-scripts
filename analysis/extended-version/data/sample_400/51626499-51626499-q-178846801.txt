@@ -1,0 +1,5 @@
+I want to allow users to copy/cut but mainly PASTE data from other apps into my app. I need to allow them to paste data in , when they are logging to the app. How can i make it?
+This is my code:
+It does this:
+show what my code does, I need to allow users to paste data in password TextField
+

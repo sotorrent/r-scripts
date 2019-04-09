@@ -1,0 +1,10 @@
+Firefox says in the console:
+
+A call to document.write() from an asynchronously-loaded external script was ignored.
+Chrome says something similar:
+Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.
+Try to use something other than .
+
+  - Use of [][1] is discouraged because it replaces the whole document if it is executed after the document was loaded.
+  - Learn how to debug JavaScript.
+

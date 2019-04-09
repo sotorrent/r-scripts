@@ -1,0 +1,2 @@
+@s-n-2 I understood that you are looking to make the by the border of the div. The inside the is outside, by the border of the div. Did I understand your question wrong?
+

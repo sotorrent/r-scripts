@@ -1,0 +1,2 @@
+The date is an abstraction. What you want is to display it correctly, and you can do that with a date formatter.
+

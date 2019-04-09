@@ -1,0 +1,2 @@
+When you go to in the the project properties, the version of matters with servers. If it is not supported, you would need to delete the project without purging the files, delete eclipse specific settings folders inside the project and do an import of project with lower version of compatible to the current server.
+

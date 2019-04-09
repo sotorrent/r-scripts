@@ -1,0 +1,5 @@
+I have come up with the following theoretic solution to a query I want to run:
+However, MySQL "doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'" as it tells me.
+I want to achieve that only the 10 oldest entries from are joined into . How to achieve this?
+Dump of tables w/ dummy data:
+

@@ -1,0 +1,4 @@
+for overload resolution purposes the functions
+are equal, because the implicit conversion sequences used to convert to Test and Test&&, respectively, are equal. The former is not better, because the direct reference binding is also considered an identity conversion.
+When confronted with the ambiguity of 2 equally good matches, the compiler gives an error. You probably want this:
+

@@ -1,0 +1,4 @@
+This behaviour is as per EL specification. You need to rename the property name to something which isn't a Java literal, or you need to use the brace notation so that it can be referenced as .
+and
+This should have failed in Tomcat 7 as well, perhaps you were using a rather old version of Tomcat 7. This was been "fixed" somewhere between 7.0.0 and 7.0.10. It's currently already at 7.0.28.
+

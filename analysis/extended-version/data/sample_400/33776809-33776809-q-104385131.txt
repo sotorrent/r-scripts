@@ -1,0 +1,9 @@
+I am quite confused. Currently I am testing my spring application using
+I was happy as long as I wanted to match RegularExpressions. In hamcrest 1.3 you need to write your own matcher, which I did not like that much.
+I searched and found that hamcrest 2.0 has something build in, like:
+I was happy, I added:
+And kicked out the 1.3 hamcrest dependencies from spring-boot-starter-test:
+Now everything is still working as I expect it to work, but I do not feel really comfortable. Because I can just find people writing about 1.3 and can not really find the use of hamcrest-junit 2.0.
+Can somebody explain me the connection between them? Because it seems that hamcrest-junit 2.0 has everything build in from hamcrest 1.3...
+Thanks Ben
+

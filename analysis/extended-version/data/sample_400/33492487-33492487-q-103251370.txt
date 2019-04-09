@@ -1,0 +1,3 @@
+Is there a smart way of getting the primary key that is auto incremented rather than rowID while inserting in the database, basically i don't want to write a new query to get the primary key of the last entry, is there any way to get the primary key using its rowID.
+Thanks in advance.
+

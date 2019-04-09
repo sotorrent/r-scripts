@@ -1,0 +1,2 @@
+I can see all kinds of problems, but you need to analyze what's going on for yourself instead of expecting everyone to do your work for you. When you run this program (assuming it compiles), does it give you the output you expect?
+

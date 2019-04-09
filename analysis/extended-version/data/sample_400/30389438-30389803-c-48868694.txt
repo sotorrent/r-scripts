@@ -1,0 +1,2 @@
+which dbms it is mysql, sql server??Above code works on sql server..
+

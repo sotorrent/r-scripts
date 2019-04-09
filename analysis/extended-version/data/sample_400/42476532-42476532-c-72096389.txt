@@ -1,0 +1,2 @@
+Thanks Aivan, I did. But typescript seems didn't recognize my declaration file. That's why I put my file structure and config above.
+

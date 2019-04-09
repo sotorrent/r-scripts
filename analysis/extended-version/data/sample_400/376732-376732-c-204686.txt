@@ -1,0 +1,2 @@
+What do you have in your .htaccess?
+

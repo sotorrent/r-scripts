@@ -1,0 +1,2 @@
+Isn't System.Diagnostics.Trace.WriteLine() also static? Depends which he's using I guess :/
+

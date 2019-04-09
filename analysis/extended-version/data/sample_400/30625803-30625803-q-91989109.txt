@@ -1,0 +1,7 @@
+Say I have a table from a relational database.
+What is the preferred method for mapping these into triples/RDF in MarkLogic 8?
+So instead of:
+I end up with:
+
+I need to know if this is something that we just need to manually develop or are there tools to provide mappings and namespaces and generate these?
+

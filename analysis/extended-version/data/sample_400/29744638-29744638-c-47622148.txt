@@ -1,0 +1,2 @@
+As you can see in the two array some positions have different values and other not, when data changes AngularJS recreate the entire DOM removing all the elements and creating it again, I want to keep the elements that have not changed and just reload new ones.
+

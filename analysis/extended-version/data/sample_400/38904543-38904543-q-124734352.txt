@@ -1,0 +1,7 @@
+I am trying to send email via a web form, but I get this undefined index error
+below is my php code
+but when I submit the form it throws those errors
+and  below is my form that
+How can I fix this error?
+Please any help will be well appreciated
+

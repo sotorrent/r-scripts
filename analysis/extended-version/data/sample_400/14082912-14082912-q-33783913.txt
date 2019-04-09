@@ -1,0 +1,6 @@
+I'm trying to get the current date with :
+But when I execute it, I have a difference of one hour between the date displayed and the current date.
+!Log
+I found topics on questions like that but none of them gave me the answer.
+How can I change that ?
+

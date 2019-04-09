@@ -1,0 +1,2 @@
+Are statements like "select distinct x from t " not supported? I believe SQL CE 3.5 does support DISTINCT statement.
+

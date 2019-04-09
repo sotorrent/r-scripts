@@ -1,0 +1,2 @@
+I tried using in terminal and still saw no output, the jar file itself executes without a problem when I execute/open it directly.
+

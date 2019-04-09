@@ -1,0 +1,3 @@
+i am new in matlab and search everything. I am writing a the function. i could not able to understand why this error is comning :"Input argument "b" is undefined." . shall i intialise b =0 ? whereas it is the parameter coming from input console. my code:
+console:
+

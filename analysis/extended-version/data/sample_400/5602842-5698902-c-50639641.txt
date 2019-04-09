@@ -1,0 +1,2 @@
+I upload a file via an infopath form which adds the file to the library and displays in a webpart. The file when clicked takes me back to form to download. Is there anyway to directly download the file from sharepoint without having to goto the infopath form?
+

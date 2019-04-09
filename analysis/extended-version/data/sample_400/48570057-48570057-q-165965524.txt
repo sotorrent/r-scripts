@@ -1,0 +1,10 @@
+I wrote a Rest webservice in jersey. when I return from get method to client, client recieved a HTTP ERROR: 500 response. My Service Class is :
+public class PersonCreditInfo {
+
+}
+and MyResponse Class:
+public class MyResponce {
+private Map map;
+}
+I use embedded jetty server.
+

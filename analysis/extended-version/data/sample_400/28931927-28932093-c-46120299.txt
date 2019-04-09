@@ -1,0 +1,2 @@
+When you click an image and the lightbox opens, an inline style is being applied to the  tag: . Not sure where that is coming from, but it is the source of the problem.
+

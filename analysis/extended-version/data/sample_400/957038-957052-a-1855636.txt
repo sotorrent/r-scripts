@@ -1,0 +1,2 @@
+I don't personally put the breaks in, but it could help when someone else decides to move the return (-1) to outside of the switch and forgets to add break.
+

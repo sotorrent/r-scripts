@@ -1,0 +1,3 @@
+Your "row" and "box" classes are reversed in this section of your code:
+And the padding on your home page footer (which is not applied on your sub pages) is coming from a rule in your 'bootstrap-lightbox.css' file:
+

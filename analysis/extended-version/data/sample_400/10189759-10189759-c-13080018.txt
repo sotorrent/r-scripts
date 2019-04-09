@@ -1,0 +1,2 @@
+I could make a bash script to call the procedure and cron it I suppose.
+

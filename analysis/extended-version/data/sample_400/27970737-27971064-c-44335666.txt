@@ -1,0 +1,2 @@
+@dyp So you're saying there is no fundamental difference between an integer literal and a constant expression prvalue of integral type? (Apart from the funny fact that the latter is not allowed as a null-initializer for pointers)
+

@@ -1,0 +1,2 @@
+i understand what it does, no need to translate it for me. i just wonder, how? in the link i got from the answer below, it seems >> can recognize some conditions, but none mention a whitespace.
+

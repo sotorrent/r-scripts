@@ -1,0 +1,6 @@
+I'm trying to understand someones code and they are reading a memory space in the GPIO region (0x4002 0000 - 0x4002 03FF), but it's a higher address than the GPIO registers (they only go to 0x24).
+Can you use all the extra space above 0x4002 0024 and below 0x4002 03FFF?  What would happen if this space is read from?
+EDIT:
+I totally forgot I could just post the code.  I bolded the line that causes me headaches:
+LDR     R0, [GPIO_Port_A_Address,R0] ;
+

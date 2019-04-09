@@ -1,0 +1,13 @@
+I'm attempting to throw together a Python script which accepts several variables and outputs a price based on a target profit margin (percentage).
+If I come up with a price I can calculate the percentage margin on it. For example, let's say I have a product that I am listing for .
+
+  - Item cost:
+  - Marketplace cost: 10% of $49 ()
+  - Payment processor cost: 2.9% ()
+  - Total costs: ($49 - $14 - $4.90 - $1.42)
+  - Total profit: ($49 - $20.32)
+  - Calculated profit margin: 41.49% ((100 / 49) * 20.32)
+    However, when attempting to flip the problem and generate a price based on price, profit margin, marketplace pecentage and payment processor percentage, I'm at a complete loss on how to solve this.
+    Has anyone else tackled this problem and if so, do you have any pointers or would you provide a solution for me to work from to better understand how to tackle these sorts of challenges in the future?
+    Examples don't necessairily have to be in Python, that just happens to be the language I'm working in.
+

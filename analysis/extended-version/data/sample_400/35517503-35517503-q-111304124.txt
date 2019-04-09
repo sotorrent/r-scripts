@@ -1,0 +1,4 @@
+I have the following query:
+return
+There are two identical protocolo (2016000008) with different status (0,1) . I want to display only one of the repeated protocolo , one that has status = 1
+

@@ -1,0 +1,2 @@
+1)  In you're working with global array and setting for all items, it's wrong. object mustn't know about global array, it must works only with local properties. (I added /, it's wrong too.) 2) You need first to set new position of element, then draw it. (You did the opposite, so there were lags.)
+

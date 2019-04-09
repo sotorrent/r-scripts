@@ -1,0 +1,2 @@
+my products was loading from RESTful API Services and that's why I couldn't post much code. You did understand my question. Is it possible to prevent products from being added to multiple categories and select the most relevent category based on the number of occurrences of the keyword?
+

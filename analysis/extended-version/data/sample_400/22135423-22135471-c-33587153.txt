@@ -1,0 +1,4 @@
+This is what I got: array(2) { ["inputval"]=> string(5) "10+20" ["register"]=> string(8) "Register" } 
+Parse error: syntax error, unexpected end of file in C:\xampp\htdocs\php\exercise 2\exercise2-3.php(68) : eval()'d code on line 1
+Result is:
+

@@ -1,0 +1,5 @@
+try using CheckedTextView for this issue
+main.xml
+listrow.xml
+CheckedTextVwActivity.java
+

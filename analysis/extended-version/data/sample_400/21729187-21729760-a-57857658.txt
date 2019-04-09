@@ -1,0 +1,2 @@
+Thread objects themselves consume much memory for their stacks. To clean your test from instantiate/free threads, do not use AsyncTask (which creates Thread), but create a fixed threadpool beforehand, start test, wait it to end, and only then shutdown the thread pool.
+

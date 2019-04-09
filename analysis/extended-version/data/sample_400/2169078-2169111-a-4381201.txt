@@ -1,0 +1,3 @@
+i would go for observers as they reduce clutter in your model / controller code and i can think of no downside in using them ...
+iirc sending an email after save email is even an example in the active record observers documentation
+

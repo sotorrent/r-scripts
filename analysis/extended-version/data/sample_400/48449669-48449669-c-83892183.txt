@@ -1,0 +1,2 @@
+You can't know the answer without performing the calculation.  And if you've performed the calculation then you've already stored the result some where.
+

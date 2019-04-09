@@ -1,0 +1,2 @@
+@pandit - One more thing: You can use SVNKit with either Subclipse or Subversive. You don't have to use Subversive as your Eclipse SVN client if you rather use Subversive.
+

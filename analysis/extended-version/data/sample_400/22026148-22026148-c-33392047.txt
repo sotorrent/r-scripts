@@ -1,0 +1,2 @@
+Something like this would work, but I cannot use the external fields inside a subquery:
+

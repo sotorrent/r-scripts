@@ -1,0 +1,2 @@
+Right, if that context were in the question to begin with, then I wouldn't have had to ask. With only "Cortex-M3" to go on, "the GPIO region" is meaningless, because CPU cores don't have GPIOs. Similarly, for all we know "someone's code" which we can't see and reason about could feasibly turn out to be, say, some random misidentified STM32F1 code off the internet (where that address range would be the DMA controller) and thus render the question invalid. A good question contains all the relevant details.
+

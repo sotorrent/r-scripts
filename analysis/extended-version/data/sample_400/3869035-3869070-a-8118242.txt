@@ -1,0 +1,8 @@
+The code seems to work fine for me. Can you provide more context, such as the content of strings you're passing to it, and what locale you're using?
+A few other bugs/style issues I noticed:
+
+  - is left as the allocated length, rather than updated to match the length in (wide) characters. Is that your intention?
+  - The cast to is useless and bad style.
+    Edit: Upon discussion, it looks like you may be using a nonconformant Windows version of the function. If so, your question should be updated to reflect as such.
+    Edit 2: The code only happened to work for me because returned a fresh, zero-filled buffer. Since you are passing to as the maximum number of values to write to the destination, it will run out of space and not be able to write the null terminator unless there's a proper multibyte character (one which requires more than a single byte) in the source string. Change this to and it should work fine.
+

@@ -1,0 +1,2 @@
+Do you have some condition on Transdate? Uncheck "Convert NULL values to default" in report options and use report selection formula like . Using in selection formula may not work with NULL values properly.
+

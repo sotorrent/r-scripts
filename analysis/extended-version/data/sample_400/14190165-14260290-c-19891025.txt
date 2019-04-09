@@ -1,0 +1,2 @@
+I lied!  I am coming from VSS2005 - there you "check out" to a base folder...and everything else is relative to that folder.  Does SVN do the same?  I think that is the source of my confusion - matching where something "sits" in SVN to where it "sits" locally on my HDD!
+

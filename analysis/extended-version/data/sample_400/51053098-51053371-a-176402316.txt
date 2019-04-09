@@ -1,0 +1,4 @@
+Is it possible to introduce a fresh variable with forall or something
+Unfortunately not. That way lies impredicativity and there is no good story for it in Haskell.
+Computation via type families will get stuck as soon as it inspects a variable. You will have to encode (row) variables of your guest language as concrete types to do anything with them.
+

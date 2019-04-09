@@ -1,0 +1,2 @@
+Application is compiled for x86. Forgot to mention in question.
+

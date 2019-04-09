@@ -1,0 +1,2 @@
+You can use dialog timers to start activated procedures. This functionality is available on the Express edition. The advantage over an external service, like Windows Scheduler, is that the solution is self contained inside the database. For example you can move the database to a different computer and the timed procedure will still run, on the new computer, once the database is started. An external service requires you to reconfigure the scheduler agent on the new computer.
+

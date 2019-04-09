@@ -1,0 +1,2 @@
+@CBroe yeah, I have also seen this discrepancy but not able to find what is causing it. The same happens with Twitter cards. Any pointers in the right direction would be helpful.
+

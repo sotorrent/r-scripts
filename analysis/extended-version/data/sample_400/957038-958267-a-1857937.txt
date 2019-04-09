@@ -1,0 +1,2 @@
+In this exact example, for both questions, it is personal preference. In general, the rule is this: anything without a break will fall through. That means (as Pod said) its a good idea to put breaks in default cases in case they are not last. This also means if your case contains a return, then a following break is indeed not necessary.
+

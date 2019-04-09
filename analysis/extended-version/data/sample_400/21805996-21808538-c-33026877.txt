@@ -1,0 +1,4 @@
+try it this way:
+file_get_contents(Yii::getPathOfAlias('webroot') . /path to your css file from the project root/)
+as the webroot is the actual path of your project root.
+

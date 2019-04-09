@@ -1,0 +1,2 @@
+So you would use composition instead of inheritance in this case? What are the advantages of that in this situation? Thanks
+

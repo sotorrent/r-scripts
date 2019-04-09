@@ -1,0 +1,2 @@
+Your source query is missing the column that supplies . What's the name and type in the table? (This matters for how we format it in T-SQL.)
+

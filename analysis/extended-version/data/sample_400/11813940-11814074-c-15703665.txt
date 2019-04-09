@@ -1,0 +1,2 @@
+@lori : David is not suggesting that a trait is never needed, only that it might not be needed in your particular use-case -- in many cases, a trait is exactly the appropriate solution, but in others it might be overkill. For example, see this demo which does not use a trait, but uses simple overloading instead. If you do need a trait, this demo shows one.
+

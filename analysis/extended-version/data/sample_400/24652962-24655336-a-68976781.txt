@@ -1,0 +1,3 @@
+To get all the tables from your schema:
+You will have to "treat" the output to make it usable (assuming sqlplus, set long, lines, pages, head, and maybe look at the dbma_metadata set_transformation flags ).
+

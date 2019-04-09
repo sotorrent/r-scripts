@@ -1,0 +1,4 @@
+Well, seems I've worked this out myself.
+Doing the following allowed me to see the stack trace, which led me to the fact that my for mac app bundle plugin was incorrect.
+The eventual -600 error I was getting was cleared away by doing a and .
+

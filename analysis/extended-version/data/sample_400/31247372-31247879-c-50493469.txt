@@ -1,0 +1,2 @@
+From Android documentation: Canvas.saveLayer() - "this method is very expensive, incurring more than double rendering cost for contained content. Avoid using this method, especially if the bounds provided are large"
+

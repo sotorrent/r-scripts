@@ -1,0 +1,5 @@
+I have json message in this format
+and I want to convert this into javascript array, I have tried
+and
+neither worked. The data is there as it is in a success to an ajax call which returns json object.
+

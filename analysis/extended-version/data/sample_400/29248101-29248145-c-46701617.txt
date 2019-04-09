@@ -1,0 +1,2 @@
+@Ojen: As I tried to show in my answer, browsers don't seem to allow to call from callbacks that are invoked by asynchronously loaded scripts. What about that is not clear?
+

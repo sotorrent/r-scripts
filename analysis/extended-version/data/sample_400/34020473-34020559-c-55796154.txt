@@ -1,0 +1,2 @@
+Stil don't do anything. Could it be because I test it on a subdomain? - The testing domain is: subdomain.site.com/cms/page.php?url=string.html
+

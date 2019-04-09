@@ -1,0 +1,4 @@
+You don't need either.
+isn't needed since element has to exist for link function to fire. Also there is no element level ready event ... it is only used at document level to account for full body of page existing. That stage is long over when angular is compiling directives.
+You can do any manipulation or event binding directly to element immediately within function of directive
+

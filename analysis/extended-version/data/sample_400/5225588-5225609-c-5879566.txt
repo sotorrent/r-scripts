@@ -1,0 +1,2 @@
+Well, that may or may not be what the OP wants -- it does add overhead to the class and changes semantics.
+

@@ -1,0 +1,2 @@
+I'm working on a program that accesses StarTeam using the StarTeam SDK for .NET. And I've noticed that it takes about 10 seconds to login to the StarTeam server. I'm wondering if there's anything I can do to speed that up.
+

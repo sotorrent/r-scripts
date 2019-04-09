@@ -1,0 +1,3 @@
+I would consider the break after return to be bad form, you will get warnings about unreachable code on some compilers.
+The break on your default case is completely appropriate, case fall through is a tool and should be especially marked when used.
+

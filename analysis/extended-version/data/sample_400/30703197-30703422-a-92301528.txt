@@ -1,0 +1,5 @@
+You can pass the data to the load function using JSON.stringify (data) and then receive it in the load function using JSON.parse (parameter).
+EXAMPLE
+In your above code you can add
+And then inside the load function you can access the data object as follows
+

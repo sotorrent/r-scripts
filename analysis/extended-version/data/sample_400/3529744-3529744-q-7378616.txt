@@ -1,0 +1,10 @@
+I have a database 'test' with two tables. Here is phpmyadmin dump: And here is php code: After execution 'tag_three' is still in the table. And when I run this SQL through phpmyadmin it works fine. Where am I wrong?
+
+mysql 5.1.42 php 5.3.1 windows 2003 nginx 0.8.32
+
+MySQL.log 1 Connect - It is my code 2 Connect - It is 'Refresh' from phpmyadmin
+
+There is no errors in php logs.
+
+It is stand along code. As is. There is no any queries before or after this code.
+

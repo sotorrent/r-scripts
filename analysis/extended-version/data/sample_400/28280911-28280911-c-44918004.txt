@@ -1,0 +1,2 @@
+Not knowing the type until runtime is the entire point of generics.  Why you'd intentionally make it slow with Reflection is hard to guess, that's the opposite of using generics.
+

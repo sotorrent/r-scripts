@@ -1,0 +1,2 @@
+@datenwolf You should post this as an answer, as this seems to be his problem quite obviously. I guess he just uses some other small uniforms that "block" the last 64th matrix slot (builtin uniforms also count, I think).
+

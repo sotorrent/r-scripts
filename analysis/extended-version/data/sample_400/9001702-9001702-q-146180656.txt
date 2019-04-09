@@ -1,0 +1,15 @@
+I'm currently working on a site that has a log-in (username and password) - The password protection is done by the operating system within the web server at folder level called a Realm within the OS. For now this will have to do, until we figure out a proper PHP log in system.
+The code below, is based on a previous question on the stack overflow.
+I'm using 3 files (See code snippets at the bottom).
+The process is:
+
+  - Click Log In button on index.php
+  - Enter username and password to access authenticate index file.
+  - Click log out button, which references the logout.php file - it SHOULD clear the cache and return the user to the top level index.
+    It doesn't 'destroy the session' in the sense that you're not asked to re-enter the password when prompted to, which is essentially what I want to happen.
+    My minimal knowledge of php leaves me a little bit stumped here.
+    index.php (top level file with log in button)
+    authenticate/index.php (This folder is password protected - contains the index file with the log out button which links to the logout.php file)
+    authenticate/logout.php
+    "previous question on the site"
+

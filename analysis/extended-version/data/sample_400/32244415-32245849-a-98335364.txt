@@ -1,0 +1,4 @@
+I wrote piece of code which is working:
+}
+Thanks for @SamAxe and @quetzalcoatl for providing me useful tips.
+

@@ -1,0 +1,2 @@
+Yes, using CDI sometimes necessitates writing the code a little less defensive when using access modifiers and final. But I see no reasonable doubt that thread-safety would be an oversight in CDI-spec. So while I can't explain this I for myself feel pretty save. One of our applications also have 60.000 users and it's working out fine
+

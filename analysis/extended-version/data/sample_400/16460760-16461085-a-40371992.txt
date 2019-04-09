@@ -1,0 +1,6 @@
+This class
+
+  - Does not extend or
+  - Does not contain an method
+  - Nothing in the method will ever be invoked
+

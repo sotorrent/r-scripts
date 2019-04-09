@@ -1,0 +1,2 @@
+Sorry, I changed a good amount of stuff and added a lot of descriptions so thought it would be easier to start fresh, but I won't do so next time! Do you think the problem could be caused by the QualityScorer class?
+

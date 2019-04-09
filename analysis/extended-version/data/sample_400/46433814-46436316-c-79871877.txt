@@ -1,0 +1,2 @@
+@Ryan Actually, I have good news for you! Spawning processes in Erlang is extremely lightweight in time, memory and CPU. The network communication and latency involved in talking to another node is much more expensive than the job is doing. So even though there is only one on the other side you could probably spam it pretty hard with requests without too much worry -- the overhead of 's work is negligible. If you have significantly complex calculations where RPC is a good fit then the cost of the cast is the least of your overhead concerns.
+

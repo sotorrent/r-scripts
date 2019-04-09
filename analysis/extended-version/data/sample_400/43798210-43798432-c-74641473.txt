@@ -1,0 +1,2 @@
+That leaves the question why C++ allows class prvalues to be cv-qualified. Imho, that makes just as little sense as allowing it for non-class prvalues.
+

@@ -1,0 +1,2 @@
+Why don't you store each subset as the element of a list and use over that whole list?
+

@@ -1,0 +1,13 @@
+Firstly, I'm new to programming and Stackoverflow scares me, but I've tried to contain all the relevant code and to explain my problem well. I have seen many other posts regarding people attempting to make Space Invaders clones and even specifically the "invaders" not moving in unison. However, these posts have not solved my problem and I would be really grateful if someone could point out where I may have gone wrong.
+The prototype is available here.
+Full code here
+Code contains comments of me trying to dumb down the code :). I am using the "processing.js" library but this shouldn't hinder anyone from understanding my code.
+My specific problem is that the invaders' behaviour when moving on the X axis is not consistent and they do not always move at the same time. At first it seems like everything is fine (minus the very first invader being a bit laggy) but over time the behaviour becomes erratic and they start to move out of line.
+I actually understand the flaw in my logic already, but I do not know how to solve it. However, before I explain..
+I load the space invaders into a 2d array like so:
+My enemy class is:
+They are drawn and moved in the "draw" (basically processing.js's version of "update") loop. Like so:
+Then (where the problem most likely is) I handle movement like so:
+Now, I believe/know that the problem is I am interating through the arrays and checking the first and last item to monitor the X position. Therefore, there will be some lag between the program changing the direction and with it finding an object that meets the criteria of the if/else statement. (I hope that makes sense).
+I have thought of somehow creating a column object with its own independent X and Y axis and to contain the invaders in there. That way I do not need to rely on individual "invaders" triggering the if/else statement's criteria. However, does anyone know another/easier approach or a different gap in my logic?
+

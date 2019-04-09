@@ -1,0 +1,2 @@
+i run this query in sql management studio..it works... when @val=1 it retrieve rows with value 1 and null. When @val=2  shows rows with value 1 and null. and same for @val=3..
+

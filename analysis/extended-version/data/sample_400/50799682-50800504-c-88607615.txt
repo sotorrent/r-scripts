@@ -1,0 +1,2 @@
+@Shnugo: like most people, I prefer to pretend there's no such thing as namespaces, but your point is well taken. :-)
+

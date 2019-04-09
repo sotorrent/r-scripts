@@ -1,0 +1,2 @@
+iOS 6 introduced a different mechanism to perform autorotation. Check these:
+

@@ -1,0 +1,2 @@
+@Hockeyman271 - You can declare five 1000-element string arrays in your resources; that's probably the most "Android-ish" way of doing it. You can also declare them directly in Java code. (I'd be tempted to declare them in a separate class from the activity itself, just as a matter of style.) Did you mean that each string is 700 characters long on the average?
+

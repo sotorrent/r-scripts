@@ -1,0 +1,3 @@
+Fixed:
+I had my Info.plist file in my Resources/ directory, so I moved it to the root project folder, and renamed it to AppName-Info.plist and tweaked some stuff in there... for example, hardcoded the Bundle identifier, delete the old reference to Info.plist and added this new one. Then the next time I opened the project, the project editor worked fine. Hopefully that will help someone else in the same boat.
+

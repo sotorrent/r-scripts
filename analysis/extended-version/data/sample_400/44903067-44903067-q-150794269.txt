@@ -1,0 +1,4 @@
+i am trying to use the 'nmap' module in python.i am using windows, pycharm, python 3.6.i installed the module(installing 'nmap' module was showing the error: )  directly from inside the pycharm. I tried like 4 hours. cant solve this issue.
+running this gives the following error:
+i'm new with python and nmap.. your help would be really appreciated.
+

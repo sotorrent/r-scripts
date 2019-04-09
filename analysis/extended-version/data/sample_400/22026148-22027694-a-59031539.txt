@@ -1,0 +1,10 @@
+I am assuming that you want the list of matches (as in your comment) and not some sort of count by as suggested in the original question.  In any case, you can add aggregation to the following query, if that is what you really want.
+This query uses a clause to get up to 10 user ids for each matchid.  The idea is to count the number of users with a smaller match_id and compare this number to :
+EDIT:
+The following query does the summary by user:
+The SQL Fiddle is here.
+EDIT II:
+How does this work?  Obviously, the interesting part of the query is the subquery in the clause.  This subquery is counting the number of records that have a smaller date than a given record in the outer query.  You can think of this as being a "loop", although the implementation is not necessarily a nested loop.
+The clause in the subquery is the key part of the subquery.  The first clause looks at all records with the same .  The second part matches only earlier records.  The counts the number and the outer filter keeps a particular record only when there are at most 10 such records.
+As I look at the query, I realize the join in the subquery is not necessary, nor in the outer query.  This should produce the same results:
+

@@ -1,0 +1,2 @@
+Yes, *.cpp will be expanded by the shell. clang just needs a list of files. More advanced options (like recursive globbing) depend on the features of your shell. See on how to use construct.
+

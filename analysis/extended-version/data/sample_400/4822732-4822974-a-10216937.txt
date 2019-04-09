@@ -1,0 +1,2 @@
+Try adding the database to your application bundle in xcode and then copy it to the applications Documents directory. You can get that path using
+

@@ -1,0 +1,7 @@
+These is my django URLconf:
+I don't understand what the r in this regex does:
+I don't understand what this Regex does:
+And I don't understand why in:
+There is no sign and it still works...
+I don't understand what URLconf I have to add, to see a site under
+

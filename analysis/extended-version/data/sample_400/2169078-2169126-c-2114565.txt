@@ -1,0 +1,2 @@
+The TDD thing is a fantastic reason to use Observers. Unless someone makes a more compelling point, I'll check you off soon.
+

@@ -1,0 +1,3 @@
+Instead of using a subquery to get the sum, just use the SUM() aggregate function. This will work assuming you join the tables properly. Without seeing your table designs and some sample data from both it's hard to test, but I picture something like this:
+You need to group by the ISBN in order to get the proper sum for that ISBN. That may be part of the problem you were having.
+

@@ -1,0 +1,2 @@
+No, I don't mean with . There is something inside the directory that you can execute directly from the terminal, if I remember correctly.
+

@@ -1,0 +1,2 @@
+inline this generation into a single SQL call - the last query should be done in just 1 SQL query round trip (not mention the error you have in that  query). So I don't understand what you actually want.
+

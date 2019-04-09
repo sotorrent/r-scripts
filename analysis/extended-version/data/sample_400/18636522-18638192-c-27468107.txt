@@ -1,0 +1,2 @@
+I can use a counter. at got focus the counter sets to zero and increases everytime in the textChanged event and checks and do stuff when counter is even.
+

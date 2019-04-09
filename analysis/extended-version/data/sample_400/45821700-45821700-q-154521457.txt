@@ -1,0 +1,2 @@
+After creating a typical ASP.NET Core project, is it possible to name the Program class something else. I ask because "Program" is a word in my domain and having this class in the root namespace is a headache. Any other suggestions to work around this problem are welcome.
+

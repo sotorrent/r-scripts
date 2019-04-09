@@ -1,0 +1,2 @@
+First of all, I typed everything out, several times. $in types out as 16. $id types out as 11. If die(mysql_error()) doesn't show anything, why would trigger_error do any better? There is NO typo in the code. The only typo here was a forgotten '. The mysql statement is copy-pasted. My question here is simple: if $in is 16 and $id is 11, and both variables are created the same way, why would the same query possibly work with one but not the other? I'm not looking for basic syntax tips and I'm definitely not looking for someone to question my sanity.
+

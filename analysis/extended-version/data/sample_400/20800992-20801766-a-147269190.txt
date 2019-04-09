@@ -1,0 +1,6 @@
+With Python you can do something like this, in the root of your project, remembering to substitute grunt-contrib-compass for any other package installed with npm.
+
+This is not my code, I've adapted it from here - - but I've tested it and it works. :-)
+If you'd rather a node/grunt solution, you can have a look at my answer here. It's based on the project's , but you could adapt that to use one in the directory.
+Edit: After reading Nico's answer, you could transform that output with sed to print just the version number, like so:
+

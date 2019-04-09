@@ -1,0 +1,3 @@
+I go back to index.html using the link that you see in the code.
+For the javascript libraries, I have them splitted just after the div with page role, only the common ones (jquery mobile, cordova, and similar) are inside the tag.
+

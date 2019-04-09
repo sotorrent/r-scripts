@@ -1,0 +1,5 @@
+Using different enums as keys to the map does not work. From the documentation.
+
+All of the keys in an enum map must come from a single enum type that is specified, explicitly or implicitly, when the map is created.
+You'll need to use a different map implementation.
+

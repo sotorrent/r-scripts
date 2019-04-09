@@ -1,0 +1,6 @@
+I am somewhat new to SSIS.
+I have to deliver a 'generic' SSIS package, that the client will make multiple copies of, deploy and schedule each copy for different source databases.  I have a single SSIS Configuration table in a separate common database.  I would like to use this single configuration table  for all connections.  However the challenge is with the configuration filter.  When client makes a copy of my package, it will have the same configuration filter just like others.  I would like to give an option to the client to change the configuration filter before deploying, because for this new copy, the source database can be different.  I do not find an option to control this.
+Is there a way to change the configuration filter from outside the package (without editing the executable .dtsx file)?  Or is there a better approach that I can follow?  I do not prefer XML configuration files, the primary reason being my packages are deployed onto SQL server.
+Any help would be greatly appreciated.
+-Shahul
+

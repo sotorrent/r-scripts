@@ -1,0 +1,6 @@
+I have a java project, which I build with Maven.
+My maven version is 3.1.1
+my java version is 1.7.0_25
+When I run , I got the following error:
+How to solve it? I googled and see many answers which configures project's pom to solve the problem. But is there away to configure it globally? If so, how to do so?
+

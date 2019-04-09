@@ -1,0 +1,3 @@
+@Phylogenesis: It is a regex problem. I have a thousand files where the filename contains a unix timestamp. What I want to do is to have an efficient way to collect all the files within 24h and put them to an archive. 
+The fastes way I can think of to find these files is using a regex.
+

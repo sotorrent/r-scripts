@@ -1,0 +1,5 @@
+Yea, redefine the macros as , and you simplify that. ORing together bit masks is a very common idiom that anyone will recognize. Getting the shift positions out of your face will help a lot.
+Your code goes from
+to this
+This suggestion does assume that the bit-field definitions are used many times more than there are definitions of them.
+

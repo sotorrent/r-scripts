@@ -1,0 +1,2 @@
+If $files inside your $banner model declared as @cascade remove?
+

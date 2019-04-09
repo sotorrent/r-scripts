@@ -1,0 +1,4 @@
+If the class does nothing and provides nothing, and only exists as a marker, there's no reason to worry about whether or not it's abstract. This is essentially a non-issue.
+If you absolutely wish to ensure that one is never instantiated except in the context of inheritance, use protected constructors.
+Please avoid making a pure virtual destructor. That way madness lies.
+

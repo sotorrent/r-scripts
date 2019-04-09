@@ -1,0 +1,2 @@
+Do you have any suggestions on how to interpret the output of str()? Admittedly, I'm new to R, but these look pretty similar. (I'm posting output to main post)
+

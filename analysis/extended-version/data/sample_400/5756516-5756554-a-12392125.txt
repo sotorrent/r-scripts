@@ -1,0 +1,2 @@
+You can use scheduled task (control panel-administrative tools) and start a .cmd/.bat file where you use sqlcmd to execute SP's or run scripts.
+

@@ -1,0 +1,2 @@
+Note that this method doesn't require checking whether the category already exists - if it does, wp_create_category() will simply return its cat ID.
+

@@ -1,0 +1,2 @@
+Ok, I found it: I accidentally defined object with same xtype and got some kind of race condition. And in spite of JS itself was ok, sometimes I saw the panel from another JS.
+

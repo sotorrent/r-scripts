@@ -1,0 +1,4 @@
+In the asterisk is a greedy quantifier and matches as many characters as it can, so it only stops at the last it finds.
+You can either use to make it lazy, or (better IMO), use to make the match explicit:
+You might still need to escape the quotes if you're building the regex from a string; otherwise that's not necessary since quotes are no special characters in a regex.
+

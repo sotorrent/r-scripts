@@ -1,0 +1,2 @@
+I would have  alook at using parameters for your query. That is vulnerable to SQLi
+

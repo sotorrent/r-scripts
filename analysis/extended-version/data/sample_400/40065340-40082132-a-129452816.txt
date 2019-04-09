@@ -1,0 +1,9 @@
+All right, I'm feeling generous. Your example code contains a lot of fluff that should not be in a minimal reproducible example and your call is not portable, but I had a look anyway.
+The good news: Your code works as expected.
+Let's plot only the bars:
+plot 1
+Now only the lines:
+plot 2
+Now compare the scales of the y-axes. If you plot both together, the bars get plotted, but they are so small that you can't see them. You need to rescale:
+plot 3
+

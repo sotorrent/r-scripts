@@ -1,0 +1,9 @@
+I'm currently preparing to design a C or C++ library for accessing an existing Rest service, but here's what I'm not sure about:
+Most API Client libraries like this that I've seen simply provide a calling style that's very close to the ReST API, where you have to read the ReST API docs to use it. They aren't really written in they native style of the language, IMO. They are basically wrapping an http library, maybe an XML/JSON library and handling a few special things like auth:
+STYLE 1:
+It seems much more natural to me to use the conventions of the language, rather than the API. Thinking of using the API as calling functions rather than accessing resources.
+STYLE 2:
+I've written API Libraries in the latter style and they take much more work, but I find them much more natural to use and integrate into apps, especially for complex ReST APIs, but I'm not super experienced at this.
+Is one style clearly better than the other? Is there a reason, other than ease of development, most seem to be written in the first style?
+This library will definitely be used in multithreaded apps, and UIs, so please answer with threading in mind.
+

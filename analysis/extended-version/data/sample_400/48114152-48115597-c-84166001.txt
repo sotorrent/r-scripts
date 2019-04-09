@@ -1,0 +1,2 @@
+@JogradMahusay You can produce a SQL command: Go to the Database Expert, as if you were going to add an existing table, but instead select the Add Command option at the top.
+

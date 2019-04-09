@@ -1,0 +1,2 @@
+This is a DSP-related question. You should first read up on speech rate literature.
+

@@ -1,0 +1,2 @@
+To be more precise, there is no performance impact at RUNTIME. However, depending on the number of imports, COMPILATION may be slower however unnoticeable.
+

@@ -1,0 +1,6 @@
+I apologies for my bad english....
+Is there possible to modify this HTML code for it retrieve the data from POST method??
+that page is only a input and a submit button, in there possible to include php code in, for it receive his input by POST and then automatic submit??
+I know it's possible with javascript but I need it in php POST...
+thank you very much for your help :)
+

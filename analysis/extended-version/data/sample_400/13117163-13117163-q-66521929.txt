@@ -1,0 +1,8 @@
+I meet some trouble while managing hours of connections.
+Actualy I allow my users to be connected to the area only some hours and some days, for example Monday from 9am to 6 pm. For that  I have registered the day in the database and the hours for which they are authorised to be logged on.
+The script check all this details and if it is a good time the user can be logged on, if not, it display a message with the good time and hours .
+here below is my code:
+The real trouble is not whith that code which works fine. the only trouble is that I actualy use the hour of the server but if I have some user overseas with different time, how can I allow them to be logged on, they can not be logged on on the same time as the users in my country.
+Moreover If I use the time of their computer, they will be able to change their clock, so I really do not know how to proceed.
+Anykind of help will be much appreciated.
+

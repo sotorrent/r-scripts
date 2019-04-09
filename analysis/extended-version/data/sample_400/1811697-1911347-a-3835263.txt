@@ -1,0 +1,9 @@
+Let me simplyfy my question: I need a
+list box with checkbox and textblock.
+textblock data context is different
+and check box data context is
+different. i mean they get their data
+from different objects. no idea how to
+achieve this...
+Create a new class (a ViewModel) which contains the two data contexts (Model1 and Model2) and data bind to it, also known as the MVVM pattern.
+

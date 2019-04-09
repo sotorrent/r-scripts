@@ -1,0 +1,2 @@
+The debug tool does show errors for that, why did you say it didn’t? The meta tags are present when I view the source code in my browser, but the FB scraper sees something different: - so you need to go do some debugging as to why that happens.
+

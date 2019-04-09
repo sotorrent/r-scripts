@@ -1,0 +1,2 @@
+<U+4F60><U+8981><U+4EC0><U+4E48><U+6548><U+679C><U+554A><U+FF1F>“ Then how to make the width of each label show depending on its content with even more labels in a view?” <U+770B><U+4E0D><U+61C2><U+4F60><U+5728><U+8BF4><U+4EC0><U+4E48>
+

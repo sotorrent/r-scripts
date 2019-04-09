@@ -1,0 +1,2 @@
+Can't we Move a Microsoft Azure VM to a Different Subnet Within a vNet using the azure new portal or the azure classic portal ? if not possible through portal then how to do so ?then  how to edit the properties of a VM after creation, like moving to a different subnet,, etc.,?
+

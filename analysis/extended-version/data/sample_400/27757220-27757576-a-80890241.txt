@@ -1,0 +1,12 @@
+Here's my approach:
+Update: removed conversion to numeric (not required)
+Brief explanation:
+
+  - converts the dates to POSIXct-style date-times
+  - computes the rolling mean of each two consecutive rows. This happens to be exactly the time you want to use for separating the observations. is from package . Computing a means the output vector is shortened by 1 compared to the input vector.
+  - That is why I wrap the result of in which means that the infinity value is added to the rollmean vector as the last value. This will ensure that the last entries of in are also returned (0.3 in the specific example).
+  - I use to add the column to
+  - loops through the entries in and for each entry, computes the maximum index for which is less (earlier) than (which holds the vector of rollmean entries). Only the maximum (latest) index is returned for each entry.
+  - That vector of indices is used in to extract the corresponding elements of which will then be stored/copied to the new column in
+    Hope that helps
+

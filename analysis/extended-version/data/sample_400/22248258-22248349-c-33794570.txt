@@ -1,0 +1,2 @@
+Thanks Stefan. Just making sure as I tried this in my Batch but it didn't work so at least I know this is not the issue.
+

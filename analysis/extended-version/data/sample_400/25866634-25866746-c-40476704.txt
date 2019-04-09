@@ -1,0 +1,4 @@
+wont work for me, it put error:
+
+"SELECT OBJECT_SCHEMA_NAME('{0}') + '.' + OBJECT_NAME('{0}'),  name FROM sys.identity_columns",name[i]"
+

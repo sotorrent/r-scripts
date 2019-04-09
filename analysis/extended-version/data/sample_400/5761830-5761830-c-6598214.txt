@@ -1,0 +1,2 @@
+@Hogan. I understand but I'm very new to jQuery so just looking for some hints. Thanks
+

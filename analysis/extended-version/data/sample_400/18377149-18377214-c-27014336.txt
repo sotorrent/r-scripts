@@ -1,0 +1,2 @@
+How about for multiple list elements?  I would need to know which one was clicked to update the associated model.
+

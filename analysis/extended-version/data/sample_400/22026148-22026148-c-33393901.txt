@@ -1,0 +1,2 @@
+And the desired result set? (Just the actual rows - before any aggregation)
+

@@ -1,0 +1,11 @@
+I'm fairly new to node.js and I've came from C#/Java lands, so I need some help with logging.
+Right now I'm writing tests with Selenium, using native bundings and as my testing framework. I have a - base class for all other which contains basic methods for interactions with the page and a method.
+For now, I've decided to go with a for logging. My logger config looks like this:
+And it works totally fine. The thing is that when I run my test-case all log messages are logged instantly, not as part of a function they are supposed to be logged, at least from C#/Java point of view.
+So I want them to be logged only when the execution of action for the page (ie, button click) happens. What can I do here?
+EDIT: providing code as well as some explanations.
+My methods looks like this:
+My method:
+And iself is import of logger, moved to another file. Configs are provided.
+Finally, my tests are calling methods from by inheritence chain, and i suppose that they are called async too, but because of promises from it looks like they are synchronous. Only logging shows that they aren't, in fact. So, what can be done here?
+

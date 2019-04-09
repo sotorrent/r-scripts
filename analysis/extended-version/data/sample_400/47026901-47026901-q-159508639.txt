@@ -1,0 +1,4 @@
+Sorry for duplicate if my question is it: I found the solution for some hours and tried some solutions, but zero effect or lack of explanations.
+So, how I can change the IDE GUI font family? NOT editor's code font family, NOT GUI font size, changing the the font FAMILY of GUI (menu, labels, etc.), please!!!
+It's simply if you use Darcula Look and fill theme, but what if I use the Nimbus light theme?
+

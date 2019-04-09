@@ -1,0 +1,2 @@
+Hi Stephan, Ok so  %LOCALAPPDATA%\Temp\CopyToFolder would be the same as writting C:\Users\User1\AppData\Local\Temp\CopyToFolder . Correct?
+

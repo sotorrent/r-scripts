@@ -1,0 +1,2 @@
+This question does not make sense; in SQLite, the autoincremented key always is the rowid.
+

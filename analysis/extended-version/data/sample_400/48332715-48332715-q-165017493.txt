@@ -1,0 +1,12 @@
+My VBA experience is limited to copying and pasting from forums such as this or recording them in Excel so my Macros are all very long and clunky but sometimes they do the job.
+My boss has asked me to automate tabulating a SharePoint list into a table.
+The format is that which a lot of people are comfortable with and getting them to populate SharePoint will be battle enough for us to change their table too so it can't be changed.
+The problem I'm having is that there isn't always the same amount of Benefits or Next Steps so I can't build a static table.
+It turns out that after a lot of trying I can't write code that shifts things about and makes the data table shaped either. :/
+I fudged this together somehow and it works if I press F8 every time but if I just run the Macro it doesn't work on the bottom rows.
+I know it's big and clunky but I'm winging it.
+This is the Spreadsheet
+
+Any hints on how to get the SharePoint List looking like the CX Imperatives page will be gratefully received.
+Thanks for reading if you're still here.
+

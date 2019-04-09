@@ -1,0 +1,11 @@
+I wrote this script but it's not working properly.Anyone can help?
+It's supposed to check download limit and download used by a user and then do some action i.e to remove the user from active ppp list but it has some flaws which is that I can't get the actual-profile value in a variable so instead I save the Profile name in Comment with the user manager user account so then I can get the profile name in the variable but that's not how I want it to be..So that's why how to get the actual-profile value in a variable and also there is one problem..Why I can't change the user account profile directly instead I am doing it the long way but in that way I loose the statistics of the user account so any way that I do not lose the statistics of the user account and the job get's done also???
+SCRIPT V1.0:
+HOW SCRIPT V1.0 WORKS :
+It looks for all users who has exceeded their downloading limit past the profile download limit so their account is removed and created back again with Expired profile being assigned to them so they won't be getting internet anymore.
+But it has one problem which is that I loose the Statistics of the user account when I remove the account.So that's why it's not a good solution.
+SCRIPT V2.0 :
+HOW SCRIPT V2.0 WORKS :
+It looks for all users who has exceeded their downloading limit past the profile download limit and get their static IP and then split the ip into the network address and host address and then adds the expired ip pool network address to it and then adds the host address to that expired ip pool network address and then each user is assigned the ip and hence like that their working internet ip pool is changed into expired pool and hence the statistics are not lost in the process and also they don't get any internet now anymore..!
+So it's a better solution..but I am looking forward if it can be even made even better than this..! :D
+

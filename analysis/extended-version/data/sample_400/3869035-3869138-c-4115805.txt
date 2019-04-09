@@ -1,0 +1,2 @@
+Because you're passing and not to , it cannot null-terminate. The code only happened to work for me because returned fresh (zero-filled) memory. It will also happen to work if there are any actual multi-byte characters since then your destination will have extra space. BTW your never helped because you forgot to multiply by (or better, use ).
+

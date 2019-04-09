@@ -1,0 +1,2 @@
+thanks I tried your code but the ball linear velocity still surpasses the maxLenght2
+

@@ -1,0 +1,2 @@
+Add the whole object for that row to a property on the
+

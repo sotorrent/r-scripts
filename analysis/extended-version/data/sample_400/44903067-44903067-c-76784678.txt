@@ -1,0 +1,2 @@
+nmap is a separate program that looks like you haven't installed... nmap download page
+

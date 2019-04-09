@@ -1,0 +1,2 @@
+I don't think it's a valid solution, because with the 404 error you'll be serving the page OK but in the header response you'll see the 404 status code, so it will mess up with your SEO, right?
+

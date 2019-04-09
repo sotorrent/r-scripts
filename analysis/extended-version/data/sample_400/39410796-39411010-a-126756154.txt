@@ -1,0 +1,4 @@
+Below code will resolved your issue :
+
+//Adjust View Height
+

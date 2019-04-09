@@ -1,0 +1,9 @@
+OK, I read these:
+
+I guess there is no clear solution of the problem (although the second post is from 2009) but I think it's an important issue of Entity Framework so I will ask my question despite all.
+Let say we have code like that:
+If we use NHibernate, the UnitOfWork implementation will encapsulate an ISession instance. And the given code will behave as we expect - we can get newly added category back from the repository (i.e. underlying ISession) before changes are committed.
+I was surprised to discover that Entity Framework behave different. If our UnitOfWork implementation encapsulate EF's ObjectContext, the assertion fails. Before calling ObjectContext.SaveChages() (in the unitOfWork.Commit() method), newly added category is not reachable (via the same ObjectContext). I tried to find some property of ObjectContext that configure this behavior but didn't succeed.
+So my question is: Is it possible to get entities from ObjectContext we just added without need of calling ObjectContext.SaveChages() (because we don't want to commit until the business transaction ends)? If the answer is "No", is not this violation of the Identity Map design pattern in particular and the UnitOfWork pattern in general? And if you use EF how deal with this scenarios?
+Thanks in advance.
+

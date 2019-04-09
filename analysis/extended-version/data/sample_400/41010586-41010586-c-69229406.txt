@@ -1,0 +1,2 @@
+please first test this : console.log(this.props.setPostTags), what is the output ? your action is defined ?
+

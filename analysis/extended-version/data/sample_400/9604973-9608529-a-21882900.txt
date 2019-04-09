@@ -1,0 +1,2 @@
+Your preferred solution does not align well with the way that SSIS package configurations are typically used. See Jamie Thomson's answer to a similar question on the MSDN forums.
+

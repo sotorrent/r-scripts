@@ -1,0 +1,8 @@
+You main difficulty is that in Maple Notation powering by the base of the natural logarithm is done like,
+and not like,
+Notice the presence of the name in the error message you received. In Maple the name has no special meaning in 1D Maple Notation input.
+Presumably you just stuck those calls to in because you were trying to resolve your issue with . In your example the floats have enough contagion to make the calls unnecessary.
+You might also be interested in these two variants to obtain an actual float from your formula. I leave out the unnecessary calls here.
+Here is defined as an expression.
+And here is defined as an operator.
+

@@ -1,0 +1,2 @@
+I´m using this macro for loading the data from multiple excel files to one master table. This code is shorten than actual code. In reality I have more rows starts with GetData myFile. The code is repeating and I assume there is a better way to run this macro faster.
+

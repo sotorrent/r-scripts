@@ -1,0 +1,3 @@
+I need to start an vb.aspx page with a modal window if a codebehind query condition is true,
+how to achive that dear experts!!!
+

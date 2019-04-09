@@ -1,0 +1,2 @@
+Id like to do that but again the query is returning false when it shouldn't. I posted all the code - the first block prints users with conversations the second is the search bar for (right now) all users
+

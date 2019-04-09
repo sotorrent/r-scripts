@@ -1,0 +1,2 @@
+flattens the into one sequence of ints, whereas checks that every element matches a condition.
+

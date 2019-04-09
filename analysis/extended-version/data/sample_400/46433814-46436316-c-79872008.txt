@@ -1,0 +1,2 @@
+@Ryan As for "an alternative", you can spawn a process on another node directly, which is why and accept a argument (All of this is impossible to make good judgements on without knowing what the jobs are, what the load looks like, etc. Context of operation is everything. Whatever it is you're doing, writing some test cases to see how they react to your load should be pretty straightforward. You could come to Erlang/OTP chat to discuss it with us.
+

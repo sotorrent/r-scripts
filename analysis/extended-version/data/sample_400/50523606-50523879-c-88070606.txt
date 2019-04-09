@@ -1,0 +1,2 @@
+45 degrees isn't always the case. Borders meet at an angle proportional to their border-widths -
+

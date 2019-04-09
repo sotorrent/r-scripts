@@ -1,0 +1,2 @@
+remove onChange="window.location.href=this.value" from your select tag
+

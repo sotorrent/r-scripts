@@ -1,0 +1,2 @@
+There are different methods to decrease the response time like find in batch or making a view with the data and calculation you need to view. please see this article about database views in rails
+

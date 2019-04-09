@@ -1,0 +1,3 @@
+If you add meta tag for each of the template HTML, then it works. For ex. below code
+However I think your question is about inheritance of meta tag inside template html. Not sure if its supported by w3
+

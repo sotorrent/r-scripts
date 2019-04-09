@@ -1,0 +1,4 @@
+Hi Teylyn, thanks for your answer. Im not familiar with Power Query but it sounds interesting. 
+
+As written to Petay87 answer, I found the solution in the other stackoverflow thread, which solved my problem.
+

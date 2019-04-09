@@ -1,0 +1,6 @@
+We are creating a new web app that will update/migrate an existing DB, including the user information. Since the passwords are SHA encrypted in the user table, I would need to migrate during runtime, as the users log in.
+In order to do this, I want to hook into the user validation code - if the user exists in the new Identity user table, good - we're done - use it. Else check the old user table (and validate the password with the old password validation mechanism), create a user in the new Identity table, delete the old user from the old table (or flag as migrated), then return that new Identity user.
+Is this a reasonable approach? Are there any examples of this I could use as a starting point?
+Note: I would like to use the standard ASP.NET Identity 2.0 table structure with the exception that user ids will be int - since the existing schema relies on an int user id.
+Edit: The existing web app will go away and we will replace it with the new web app (with ASP.NET Identity) but we will still point to the existing DB (containing the old user table and other data). The addition to the DB will be the new ASP.NET Identity tables and any updates to join to those tables instead of the old user table.
+

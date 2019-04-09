@@ -1,0 +1,8 @@
+The statement would not return the results into 2 separate queries.
+Consider the following query
+Now try and select a column from this query
+Its impossible to determine which ID to extract.
+So you would have to do something like the following
+SO to fix your issue...
+...As your query and then setup your grid like so...
+

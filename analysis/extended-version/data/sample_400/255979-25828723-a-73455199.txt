@@ -1,0 +1,2 @@
+Check out Prototyper in the Unity 3D Asset store, it has tools for architectural modelling in Unity. The pro builder version will meet the requirements stated in your specifications. cheers.
+

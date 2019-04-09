@@ -1,0 +1,2 @@
+In your first example: is an attribute, not a property. In your second example: s must be unique, hence that makes no sense (and is undefined for that matterif#nume#name#getElementById()` anyways.
+

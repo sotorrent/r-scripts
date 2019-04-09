@@ -1,0 +1,2 @@
+Well, it turns out that actually does work on those . I found out when I called on the first of three in a row and now every other reacts to . So something about is preventing from taking effect, but I can't find any info as to why. Have any idea?
+

@@ -1,0 +1,2 @@
+Because they can't. A USHORT can only fit 65k numbers. Want more characters? Good news: use a font collection. Which the spec has been updated with (=> "font collections")
+

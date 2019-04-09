@@ -1,0 +1,2 @@
+Because spawning is so fast in Erlang, I think the big performance bottleneck surprise would be the difference people will encounter over disterl between sending large and small messages. If the arguments to the rpc call were huge in terms of bytes you could start getting strange behavior. Or if the connection was slow or high latency. RPC gets complex pretty quick, but I think the spawning part is the smallest of all overheads here (on the order of 8 microseconds or so, network latency is going to be way higher than this usually).
+

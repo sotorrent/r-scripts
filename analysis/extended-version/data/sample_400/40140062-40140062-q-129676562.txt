@@ -1,0 +1,3 @@
+what's the best practice of finishing the JS function if it doesn't return anything?
+In this case 'return' is unnecessary but I leave it for readability purposes. I also tried to google if this is a way to micro-optimize JS but wasn't able to find anything.
+

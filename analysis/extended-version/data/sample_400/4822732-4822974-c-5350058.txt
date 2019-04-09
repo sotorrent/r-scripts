@@ -1,0 +1,3 @@
+It would be a good idea to add NSError instance instead of nil to   [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
+ so you could know if there is a problem during copying.
+

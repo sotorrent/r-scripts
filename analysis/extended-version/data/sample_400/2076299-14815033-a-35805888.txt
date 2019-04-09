@@ -1,0 +1,5 @@
+Tested successfully in FF 18 and Chrome 24:
+Insert in head:
+HTML:
+Credits go to Marcos J. Drake.
+

@@ -1,0 +1,6 @@
+I think you must maintain separated the logical software configuration and the SVN structure. I would make the general structure like this:
+Where "general structure" is:
+
+The internal structure of projects and common code can be in any shape you want and the logical dependecy among projects and common codes must be defined outside the repository.
+You can read more about the standard layout in the SVN Book
+

@@ -1,0 +1,2 @@
+@HebeleHododo Many Testframeworks, including MsTest and NUnit have way of providing functionality to execute before each test is run (NUnit calls this for example). You could simply create a seperate TestClass for those complex szenarios where you have to test many things and have the asserts seperated by tests.
+

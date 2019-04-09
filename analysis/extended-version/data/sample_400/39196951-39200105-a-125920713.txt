@@ -1,0 +1,7 @@
+Is cassandra really a good solution if we expect more query situations without primary key columns in where clause?
+This is a use case where a priori Cassandra isn't the best solution.
+But if you have 250+ millions records, other databases will also meet performance issues.
+One solution is to build your own indexes in other tables.
+If you don't have too much different type of where clause it should do the trick.
+Even if you will have to do several update or select command to update or select a single row, each of these commands should be as fast as the bench you did.
+

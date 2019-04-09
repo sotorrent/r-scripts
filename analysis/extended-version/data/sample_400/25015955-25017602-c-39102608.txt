@@ -1,0 +1,2 @@
+I found some solutions for the error. They are 1. To compile whole application on 32 bit os. 2. 64 bit dlls can make trouble.  3. Icons for the application can make trouble.  Done all of them,  but same error. Tired of this.
+

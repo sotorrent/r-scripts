@@ -1,0 +1,3 @@
+Actually i run a nginx with a drupal site that work like zend framework: one index.php as bootstrap
+this is the rule (not tested on zend framework, just on drupal, but should be similar)
+

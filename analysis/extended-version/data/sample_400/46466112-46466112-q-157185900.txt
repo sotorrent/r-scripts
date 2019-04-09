@@ -1,0 +1,5 @@
+I would like to replace a string (number '2' in my example) in a data-frame differently based on the row number. This is my input:
+This would be my expected output:
+I tried the below code without success:
+I would be glad for any help here.
+

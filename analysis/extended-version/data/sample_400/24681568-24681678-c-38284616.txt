@@ -1,0 +1,2 @@
+If you just want that, you don't have to use x-editable. Something like Attribute readonly on condition should solBe your problem
+

@@ -1,0 +1,2 @@
+Thanks that's the beastie, one note though...it didn't work at first because i set it under the Form KeyDown event and not the DataGridView KeyDown Event. It seems when a DataGridView is present in a form it automatically hooks the Ctrl+A shortcut. Please post your answer so i can select it as the solution ;)
+

@@ -1,0 +1,8 @@
+I can't understand the execution of the JavaScript code. After the function greet, first two function declaration are executed
+You can look below:
+1st :
+2nd :
+Also look jsfiddle.net/QHN6T/8/ , jsfiddle.net/QHN6T/
+Help me from this anonymous problem.
+Why there is no pop-up for Kitty and Max
+

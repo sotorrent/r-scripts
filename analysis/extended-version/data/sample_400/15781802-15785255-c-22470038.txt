@@ -1,0 +1,2 @@
+I managed to solve my problem by creating a function that will recreate the frame i want to clear up every time i want it to update.Thanks a lot for your help Bryan, your answer was informative.
+

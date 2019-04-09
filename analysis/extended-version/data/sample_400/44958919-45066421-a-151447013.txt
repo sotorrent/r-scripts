@@ -1,0 +1,2 @@
+Well it turns out I had a few bugs that I got fixed. I'm posting what I learned because I've not seen it mentioned before, in case someone else runs across this. If you set a custom color to a calling will not affect the color to make it look disabled. Similarly, for an I set background to and that also makes the the button look like it's not reacting to . I'm sure other have little nuances like this, I just haven't found them yet.
+

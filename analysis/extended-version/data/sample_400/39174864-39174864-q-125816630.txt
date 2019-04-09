@@ -1,0 +1,7 @@
+I started programming Rust a couple of days ago by working through the official documentation. Now I'm trying to challenge my understanding of Rust by working through the book "Exercises for Programmers" by Brian P. Hogan (The Pragmatic Programmers).
+The first exercise is to write a program that asks the user for a name and prints out a greeting using that name. Input, string concatenation and output should be done in three distinct steps.
+The name will be entered at the same line as the initial prompt. Here's my solution:
+
+The macro doesn't actually output the prompt until I call . needs error handling, so I need both to handle the and the case. In case of , there's nothing useful to do, so I just an empty string.
+Is there a shorter way to handle this? Maybe the error handling can be skipped or simplified somehow, or the whole /approach is the wrong one. (Everything works fine, but I could write this shorter in C, after all...)
+

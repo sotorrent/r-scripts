@@ -1,0 +1,11 @@
+I have to fill a DB with the data in my CSV (about 30 columns).
+I need to write code that automatically fills up my DB with the data from my CSV. I should use SQLite to do that.(Or HSQL)
+Im kinda new to all that so please dont be rude.
+Is it possible to do that?
+Any suggestions?
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Edit: So I came so far.
+
+This is all my code.
+What am I doing wrong here? The "println" commands get executed but I still get this error:
+

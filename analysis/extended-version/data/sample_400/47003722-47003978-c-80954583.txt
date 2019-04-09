@@ -1,0 +1,2 @@
+I know, and a part of my question was how to make this function work to only one div not all of them
+

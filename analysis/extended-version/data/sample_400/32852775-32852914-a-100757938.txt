@@ -1,0 +1,4 @@
+That's pretty simple, provided the delimiter is unique. Split the line at and output either the even or the odd array elements, depending on whether 1 or 2 was chosen.
+The value of is your users' selection (either 1 or 2).
+Note that for this to work the strings must not contain apostrophes anywhere else. As @Ekkehard.Horner pointed out in his comment you can't use the delimiter character elsewhere in the text (), because otherwise it would be impossible to distinguish where it was intended to be a delimiter and where not.
+

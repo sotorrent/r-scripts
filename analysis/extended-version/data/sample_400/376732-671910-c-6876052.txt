@@ -1,0 +1,2 @@
+This is the basic rule for many apps in nginx, like Drupal. Good!
+

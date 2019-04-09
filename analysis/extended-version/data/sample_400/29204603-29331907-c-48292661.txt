@@ -1,0 +1,2 @@
+thank you for sharing this - had same issue just now with 4.5.1...i ended up ignoring the missing references in my case.
+

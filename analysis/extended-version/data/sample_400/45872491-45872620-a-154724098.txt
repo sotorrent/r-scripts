@@ -1,0 +1,8 @@
+This error isn't shown on production builds... so if worse comes to worst, you could ignore it. It can happen in a lot of different situations though, and changing states / views through user input is definitely a common one.
+First thing to do is make sure you're using the Default changeDetection mode and not using 'OnPush' mode. If its your own app that you built and you haven't changed those settings anywhere, you are using the default change detection mode so you're good.
+Rather than binding to the keyup event manually in the template, you could wrap the input in an NgForm element and put a submit method in the component code that calls the onSearchDocumento method. This would probably prevent the error and might make for a slightly cleaner template.
+When you're using NgForm, its submit method automatically listens for the user pressing the enter key. That would pass the contents of the entire form (which in your case would only be one input) as the object named 'formName' and you can access individual form parts with their identifiers, i.e
+If that doesn't work you may have to import ChangeDetectorRef and force it to check changes using its detectChanges() method before proceeding with the rest of the other method. Something like -
+in your component:
+and then add the call to detectChanges in the search method:
+

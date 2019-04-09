@@ -1,0 +1,2 @@
+1985 called, and said they have some help IFF you are willing to read up. The interchange file format is still in use today and provides some basic metadata around binary files, such as RIFF or WAV audio. (Unfortunately, TIFF is a false friend.) It allegedly even inspired PNG, so it can't be that bad.
+

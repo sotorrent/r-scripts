@@ -1,0 +1,6 @@
+how to read data from firebase and populated it in autocomplectetextView
+how can i access to this data data.features.properties.adress like the image below
+This is my data base
+
+I've traied this
+

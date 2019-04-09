@@ -1,0 +1,2 @@
+It is significantly different -- your question implies leaving the old server up and available after the migration.  This means you have not migrated -- if you are still accessing data on the old server it is active and in production.  Whatever the reason for the migration, you want to do the migration and then de-comission the old server.  With your design you  have to maintain that server until every user has logged on once.  In other words; that server will never go away.
+

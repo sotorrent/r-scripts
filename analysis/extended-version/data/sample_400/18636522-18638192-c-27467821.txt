@@ -1,0 +1,2 @@
+@Anobik I got 1 problem left now. When I Type at the end, the if case crashes for prevVal gets "Index and length must refer to a location within the string." error
+

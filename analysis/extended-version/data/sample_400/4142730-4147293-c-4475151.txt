@@ -1,0 +1,2 @@
+Yes, that works, but the "lack of typical elegance" is why I keep coming back to this question. Using Part and just ignoring the warnings also seems to work and also gives the most concise code. I wonder if I should just Off[Part] and stop worrying about the warnings
+

@@ -1,0 +1,2 @@
+Judging by the code you're showing, the will always be visible, unless you have some CSS that you haven't shown that sets . Even after adding , your code seems to work fine: Granted, I was not able to use as I couldn't modify the tag in JSFiddle, but the effect should be the same.
+

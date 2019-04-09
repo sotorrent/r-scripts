@@ -1,0 +1,5 @@
+I get this crash quite often recently, device iPhone 5s, SDk: 9.1
+I can't seem to reproduce this bug. The log is taken from a 3rd party crash reporter (Testfairy).
+It's annoying as I can't figure out what's causing it..
+Do you have any ideas on what causes this crash?
+

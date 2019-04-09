@@ -1,0 +1,2 @@
+sure you can. You have to remember. We are in control of the app. You can programmatically switch tab bars. So put it in view did appear and have a button that performs the task to go back to tab #1 of they don't want to sign in like so MyAppDelegate appDelegate = (MyAppDelegate) [[UIApplication sharedApplication] delegate];  [appDelegate SwitchToTab:index]
+

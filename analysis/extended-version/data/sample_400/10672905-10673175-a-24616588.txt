@@ -1,0 +1,3 @@
+Try using this Layout it works for me
+The trick is to set up a instead of wrap_content in portrait mode and instead of wrap_content in Landscape mode you can use layout-land folder for that.
+

@@ -1,0 +1,2 @@
+Yes the query works fine, but that is not the query you are performing (). My point about the subquery is that you cannot specify to select a duplicate column name. you must alias that column name.
+

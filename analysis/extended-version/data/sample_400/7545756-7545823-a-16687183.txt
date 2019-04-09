@@ -1,0 +1,2 @@
+Your regex is greedy. Use . The bit means it will match everything EXCEPT a double-quote.
+

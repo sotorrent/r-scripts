@@ -1,0 +1,10 @@
+When I change the selection in a DropDownList, a PartialView gets updated via a GET request. When updating the PartialView via the jQuery html() function, the html returned is correct but when it displayed in the browser it is not correct. For example, certain checkboxes within the PartialView should become enabled but they remain disabled even though the html returned says they should be. When I do a view source in the browser the html never gets updated.
+I'm a little perplexed. Thoughts?
+Search.aspx
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+Search
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+</asp:Content>
+

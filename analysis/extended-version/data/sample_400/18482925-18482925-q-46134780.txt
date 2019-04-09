@@ -1,0 +1,5 @@
+I am currently working on a signup page and I was wondering if I could modify the URL without the extension.
+For example, it is now
+And what I would like achieve is
+Now I am assuming that I might have to use the htaccess file, but I am not sure about it.
+

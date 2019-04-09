@@ -1,0 +1,2 @@
+You don't need either break, but there's no harm in having them. In my opinion, keeping your code structured is worth having a couple of extraneous statements.
+

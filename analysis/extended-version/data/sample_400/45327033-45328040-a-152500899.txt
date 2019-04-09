@@ -1,0 +1,4 @@
+As per my comment above, you are using the wrong function from that library.
+You should use the following:
+This returns the correct regex:
+

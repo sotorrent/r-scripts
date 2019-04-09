@@ -1,0 +1,2 @@
+You could also declare all the Forms as global variables, but without knowing the details of your project it's hard to tell what the best method of handling them is. Are you possibly trying to implement too many forms when the approach could be simplified? Just things to think on. Hope it all goes well!
+

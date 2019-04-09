@@ -1,0 +1,2 @@
+Hi Jaya, I do not have any additional parameters in my table creation. It is just normal table, with couple of columns out of 28 as Primary key and one other column used for ordering. it is like create table with all columns + PRIMARY KEY (("col1", "col6"),"col10")
+

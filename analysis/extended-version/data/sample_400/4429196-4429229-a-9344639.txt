@@ -1,0 +1,3 @@
+What do you think will happen if you'd be able to connect your finger print reader to your device?
+I can tell you what will happen. Nothing. Android does not support finger print reading.
+

@@ -1,0 +1,2 @@
+@HansPassant Well, I do not have a generic type argument (let´s call it T), I do have a type-param (see in the code). Thus I do not know how to pass that param to the generic method by not using reflection (since as you said its quite slow).
+

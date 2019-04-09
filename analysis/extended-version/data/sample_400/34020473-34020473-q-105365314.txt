@@ -1,0 +1,4 @@
+I want to go from to
+My .htaccess looks like this:
+But it does not do anything.
+

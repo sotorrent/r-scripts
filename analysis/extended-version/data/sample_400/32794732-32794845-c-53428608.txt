@@ -1,0 +1,2 @@
+Then eclipse is not deploying your app into tomcat. Try to remove tomcat runtime from eclipse and start again.
+

@@ -1,0 +1,6 @@
+I have an array of objects that can change depending on the data that returns an API and I want to change only the changed elements without reload the entire ng-repeat
+Here is how I show the data:
+Here is an example array :
+And here and example from a different elements response from API:
+Sorry for my English, if you do not understand me or need more information, please let me know.
+

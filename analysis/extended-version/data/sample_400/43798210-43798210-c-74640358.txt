@@ -1,0 +1,2 @@
+@JonasWielicki: this does not enable all warnings, for backward compatibility reasons, which is why Clang introduced :)
+

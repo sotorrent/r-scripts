@@ -1,0 +1,7 @@
+I've added a Virtual Host to my file like this
+I also have two .htaccess files (for the moment identical), one for localhost and one for sub.localhost
+website/.htaccess:
+website/sub/.htaccess:
+Now if I open in my Chrome it works as expected. However when I open it in Safari, Firefox or Opera I get a message basically saying that the server was not found.
+What am I missing?
+

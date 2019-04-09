@@ -1,0 +1,2 @@
+@MuhammadUmar red square? your backgound color is red? at top? check your mTransparentRect , I change the color from semiblack to black so you get a black screen, I have edited the answer and run the code, that works
+

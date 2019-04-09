@@ -1,0 +1,4 @@
+There are a variety of approaches you can take, but in general you'll want some sort of serialization library.  BOOST::Serialization, or Google's Protocal Buffers are a good example of these.  The basic idea is that you have memory structures (classes and objects) that represent your data, and you want to write that data to a file in a way that can be used to reconstruct those structures again.
+If you're hesitant to use a library, you can do it all manually, but realize that you can end up writing a lot of redundant code, or developing your own library.  See fopen, fread, fwrite and fclose for a starting point.
+"Google's Protocal Buffers"
+

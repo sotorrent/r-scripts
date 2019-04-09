@@ -1,0 +1,2 @@
+Is there any way or function in Matlab to approximate the rhythm of speech? How can it be done? If not, what should I use to do that?
+

@@ -1,0 +1,8 @@
+I have a line of SQL that results in 2 rows of 1 cell coming back:
+Results:
+
+I am trying to concatenate them together so they look like this 'TESTTEXT[H400]':
+However, I am getting a bunch of errors saying that the column names are wrong.
+I think this is because both cells come from the same column.
+What am I doing wrong and how do I fix it?
+

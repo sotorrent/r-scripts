@@ -1,0 +1,2 @@
+The alert displays NULL
+

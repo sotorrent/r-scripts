@@ -1,0 +1,3 @@
+You have to insert another div after your image-div, which clears the two floats... like this:
+Edit: See my comment, what would be the advantage of placing the clearing div inside the div wrapping the images.
+

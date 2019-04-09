@@ -1,0 +1,6 @@
+You have specified but your method returns a view (html), not  so an exception is being thrown.
+Either omit the option (the function will work it out based on the response) or change it to
+In addition, your can delete the option. You are making a GET which has no body so its ignored (and if it was a POST, your method would also fail because you have not stringified the data).
+Your url should also be (leading forward slash), and you should always use the method to generate the url
+Your function should be
+

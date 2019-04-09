@@ -1,0 +1,6 @@
+You can also do a combination of things.  You could use observers for one action, and if there is just a single email for one other action you could use option #1 for it.
+Have you heard of acts_as_state_machine, or any other similar solutions?
+
+They allow you to define a state of each object and different things that can happen with state changes.
+This allows you to have as much logic as you need about when things are sent, if you need this much.  Can be overkill, but can be really handy.  I suggest because you want an email sent when a task is 'completed' which sounds like it may be a type of state or status column in your Task model.
+

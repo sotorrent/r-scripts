@@ -1,0 +1,6 @@
+From what I see, this is what you are trying to do:
+
+1.  No need to initialize as .
+2.  In MATLAB, you cant concatenate a number and string with operator. Use .
+3.  The above function 'evenorodd' takes one argument (integer) and returns 0 or 1.
+

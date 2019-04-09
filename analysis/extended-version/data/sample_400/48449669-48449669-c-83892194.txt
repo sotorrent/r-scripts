@@ -1,0 +1,2 @@
+in binary its always 0 - and we are talking about computers here so that probably what you want
+

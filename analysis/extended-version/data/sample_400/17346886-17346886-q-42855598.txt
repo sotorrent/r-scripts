@@ -1,0 +1,9 @@
+My goal is to place a simple restriction on my XSD element definitions: I want to define an element so that
+
+1.  is reqired for all element definitions
+2.  "declared" and "last_modified" attributes are added to the and "note_author" and "note_added" attributes are added to the element.
+    With what I have below, I am able to get Schema 2 to validate, but I am unable to enforce the rules that I mentioned above, which I would like to declare in Schema 1.
+    Example of what I want to achieve with the modified, validated XSD schema (Schema 2):
+    Schema2.
+    Schema 1 (documentation_schema) -- the schema that I want to do the validating of Schema 2:
+

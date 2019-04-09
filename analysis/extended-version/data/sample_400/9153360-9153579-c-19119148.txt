@@ -1,0 +1,2 @@
+Sorry for not being clear. Using your example I had the case where the stored procedure required parameters to be passed with it. But because your setting this as a string I do not know how to do this.
+

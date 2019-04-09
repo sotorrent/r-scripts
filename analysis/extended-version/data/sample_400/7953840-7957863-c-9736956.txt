@@ -1,0 +1,2 @@
+thanks, but my 4.0Android Emulator does not work, I don't know why, I have updated SDK but when I try to launch it, crash. Is necessary to update Eclipse to work with Android Emulator 4 ?
+

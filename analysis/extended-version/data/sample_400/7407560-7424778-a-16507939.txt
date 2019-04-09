@@ -1,0 +1,8 @@
+Subtree costs should be taken with a large grain of salt (and especially so when you have huge cardinality errors). output is a better indicator of actual performance.
+The zero row sort doesn't take 87% of the resources. This problem in your plan is one of statistics estimation. The costs shown in the actual plan are still estimated costs. It doesn't adjust them to take account of what actually happened.
+There is a point in the plan where a filter reduces 1,911,721 rows to 0 but the estimated rows going forward are 1,860,310. Thereafter all costs are bogus culminating in the 87% cost estimated 3,348,560 row sort.
+The cardinality estimation error can be reproduced outside the statement by looking at the estimated plan for the with equivalent predicates (gives same 1,860,310 row estimate).
+That said however the plan up to the filter itself does look quite sub optimal. It is doing a full clustered index scan when perhaps you want a plan with 2 clustered index range seeks. One to retrieve the single row matched by the primary key from the join on source and the other to retrieve the range (though maybe this is to avoid the need to sort into clustered key order later?)
+Original Plan
+Perhaps you could try this rewrite and see if it works any better or worse
+

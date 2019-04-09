@@ -1,0 +1,2 @@
+@IanH Im only partially understanding what you mean here.. would you post some code in your answer? A little confused as to how an if else statement would work here
+

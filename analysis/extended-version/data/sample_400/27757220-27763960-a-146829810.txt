@@ -1,0 +1,8 @@
+Here's a solution using 's rolling joins:
+
+  - converts data.frame to data.table by reference.
+  - sorts the data.table by reference in increasing order by the columns provided, and marks those columns as key columns (so that we can join on those key columns later.
+  - In data.table, performs a join when is a data.table. I'll refer you to this answer to catch up on data.table joins, if you're not already familiar with.
+  - performs an equi-join. That is, it finds matching row indices in for every row in and then extracts those rows from to return the join result along with the corresponding row from . In case a row in doesn't find matching row indices in , that row would have for by default.
+    HTH
+

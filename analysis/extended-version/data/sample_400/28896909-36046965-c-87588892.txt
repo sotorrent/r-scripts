@@ -1,0 +1,2 @@
+This command fails if any .cpp or .h files exist in pwd. will fix the issue.
+

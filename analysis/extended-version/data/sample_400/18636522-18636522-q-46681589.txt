@@ -1,0 +1,5 @@
+I working on a project. I have text boxes and with TextChanged event I changed the text to upperCase
+txt.ToUpper();
+and after that the selectionStart starts at the beginning. I changed that to textbox.text.length .
+how can I determine the changes? I want to move selectionStart to where the user made the change in the text.
+

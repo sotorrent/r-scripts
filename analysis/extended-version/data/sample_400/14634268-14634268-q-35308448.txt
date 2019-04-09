@@ -1,0 +1,10 @@
+I don't have enough experience with PHP and programming at all, so I want to know, what the best decision in my situation is.
+Here is my code sample:
+I want to ensure that key exists for array . What is the best way to do that?
+I can offer two decisions:
+
+1.  The simplest. Just check key existence manually with function. If key doesn't exist - throw an exception, also manually. But I think that is not a good idea and checking this condition is redundant, because PHP compiler will generate warning if I don’t write anything (Notice: Undefined index:) and I want to use this somehow. I found there are some predefined exceptions like and , it would be easy just to use them like in Java, but it seems that PHP doesn’t throw these exceptions, only warnings and errors.
+2.  Use function to 'convert' errors and warnings to exceptions. But there is another problem - how can I handle all possible errors? I tried to find the complete list of PHP errors and warnings, but it doesn't exist.
+    So I have no idea how to solve this problem, please help me.
+    Thanks in advance, hope you will understand my question even with my poor English level.
+

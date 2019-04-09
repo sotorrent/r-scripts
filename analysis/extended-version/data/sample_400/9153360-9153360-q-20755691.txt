@@ -1,0 +1,7 @@
+I have a stored procedure called which looks like
+Now, I have a table which contains stored procedure names.
+In my BLL I have a stored procedure name. I want to create function which contain one parameter and returns the count of total rows which is like
+But it does not return total row count that I want to get from the stored procedure with its name in the function.
+Any IDEA???
+Please help.....
+

@@ -1,0 +1,6 @@
+I'm trying to create db in sdcard using greenDAO but getting exception.
+here i have attached the snippet code for DatabaseManager.java and DAOMaster.java file.Please have a look and give me your suggestions.Thank You:)
+DatabaseManager.java
+DAOMaster.java
+//EDITED BY MYSELF
+

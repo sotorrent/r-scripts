@@ -1,0 +1,3 @@
+I'm having trouble validating a file upload in php. Basically the code doesn't see that the files are empty, I've been looking at it all afternoon and can't figure it out. I'm sure it's something simple. If somebody could solve my problem I'd greatly appreciate it. Thanks in advance.....
+ps. this is in an unfinished project, I'm just stuck at the validation stage.
+

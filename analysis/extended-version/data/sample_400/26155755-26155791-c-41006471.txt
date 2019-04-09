@@ -1,0 +1,4 @@
+yes it show ok but it shows first day of all dates of event and the las day of that event.
+
+What i want is the start date of each day lets say 2014/2/1 06:00 to 2014/2/1 23:00 and the next line 2014/2/2 06:00 to 2014/2/2 23:00 and so on
+

@@ -1,0 +1,4 @@
+1)  fork false : works  
+    2) Cannot use BeforeAndAfterAll : because, I need to execute methods before and after all tests  
+    3) Your fav : also works, but is it possible to add a before hook?
+

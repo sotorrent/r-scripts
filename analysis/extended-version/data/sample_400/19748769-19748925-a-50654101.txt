@@ -1,0 +1,4 @@
+This regex should match your need (with leading zeros):
+and you will use a while loop, looping until these two conditions are met, something like
+And you can use a helper method like this:
+

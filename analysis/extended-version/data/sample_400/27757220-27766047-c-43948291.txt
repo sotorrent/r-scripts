@@ -1,0 +1,2 @@
+The second option is my favorite. It is the simplest solution as it does not require any additional package and is very short.
+

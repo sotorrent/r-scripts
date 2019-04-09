@@ -1,0 +1,14 @@
+In my rails application I have two associated models called Magazine and Article.
+Magazine
+Article
+Routes
+schema.rb
+I am trying to create a new article associated to a magazine from the article's new page. So, I created a link in the magazine's show page to pass the selected magazine to the new article's page.
+views/magazines/show.html.erb
+The partial that is rendered in the article's new page is:
+views/articles/_form.html.erb
+And the create method from the article's controller is:
+But when I try to create a new article associated to the magazine I get the error message:
+rake routes
+How can I solve this problem? What are the correct parameters to pass to the simple_form_for in this case?
+

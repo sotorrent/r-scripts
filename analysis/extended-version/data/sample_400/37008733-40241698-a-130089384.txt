@@ -1,0 +1,4 @@
+Yes, it's possible.
+This is your phone number: phoneNumberString. 
+However, this will return null:
+

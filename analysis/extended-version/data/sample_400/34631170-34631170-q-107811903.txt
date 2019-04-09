@@ -1,0 +1,4 @@
+I have two pythons installed on my ubuntu, 1) 2) (anaconda). And both pythons have ipython installed in it. When i run (anaconda) it simply takes me to the browser and works perfectly. But, when i run it like  (calling from systems python) it gives me an error. I want run ipython in browser in both cases. Please help me to sort out this issue.
+Thanks!
+Snapshot what i did!
+

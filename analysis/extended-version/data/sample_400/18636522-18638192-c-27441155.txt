@@ -1,0 +1,2 @@
+ok but I must update prevVal after I set the selectionStart and must use string variables for every textboxes I have
+

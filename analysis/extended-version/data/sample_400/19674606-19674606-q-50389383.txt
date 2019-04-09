@@ -1,0 +1,3 @@
+I'm learning R and I have a dataset with about 6,000 daily records of three weather variables. I'm interested in knowing the mean and sd for each variable for each season in each year. I've found a bunch of different ways to break the data down into subsets. However, I can't figure out how calculate these without typing in & for each one. I would like to produce something that looks like this:
+I'm not even sure that R can do this though.
+

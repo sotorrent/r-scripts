@@ -1,0 +1,4 @@
+I have noticed that JavaScript placed in a page div section is only loaded/executed ONCE EVER for the first page that is loaded in a JQM site and never again within the same session.  However, any JavaScript code in the page div section for any other page EXCEPT the first one loaded will execute every time.
+I don't put js code in the page div anymore and instead use the pageshow or pageinit events depending on what I am doing.
+The following shows example code that, when used, would be placed in the head .. /head section of every page (AFTER the jquery library is loaded and BEFORE the jquery-mobile library is loaded):
+

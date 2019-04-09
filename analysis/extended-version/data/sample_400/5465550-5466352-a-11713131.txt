@@ -1,0 +1,2 @@
+Those are called anonymous functions, and let you create short, nifty functions on the fly without having to create a separate file. The two variables between the parentheses after the symbol are the inputs to the function. What follows it is the definition of the function. For example,
+

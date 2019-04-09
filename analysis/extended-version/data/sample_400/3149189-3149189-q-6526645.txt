@@ -1,0 +1,3 @@
+I'm trying to figure out how to read the META-INF/MANIFEST.MF file form a java jar file in perl. I'm attempting to use Mail::Header in order to separate the properties in the manifest. This works fine if the manifest file is already extracted from the jar, but I'm trying to figure out how to extract the manifest into memory and then immediately put into a Header object. This is what I have so far:
+I can't figure out which constructor and/or which extract/read function to use to read the $manifest file handle. (I'm new to perl)
+

@@ -1,0 +1,2 @@
+@TakitIsy it's a syntax for multiple background ;) .. for each one you specify the image [the gradient in this case with one color] and you specify the size and position at the same time. Then it's important to set everything as no-repeat or all of them will get repeated and it won't work
+

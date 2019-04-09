@@ -1,0 +1,5 @@
+I have a very large text file containing XYZ data, with each value separated by a single space:
+I'm looking to create an array of only the last value in each line (i.e. the Z value). What I have so far is:
+This prints out the first line of the file, as expected:
+How can I grab the third value and iterate to next line in text file? I guess I need a for loop somewhere here. I know how to append the value to the array, which would go in between these two processes:
+

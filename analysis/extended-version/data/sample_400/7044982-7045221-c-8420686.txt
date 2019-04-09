@@ -1,0 +1,2 @@
+As everyone is saying sign is encoding stuff for WHITESPACE, therefore, if there will not be any spaces, your query will not return needed urls (row will not be included)
+

@@ -1,0 +1,12 @@
+I wrote simple C-code to compute average of N float s that exist in an array. I got 10.5 ClockCyles per float as throughput for large N.
+The arm_mean_f32() is actually poorer in performance.
+Isn't this too many CCs/float ?
+The 3 operations
+
+1)  load-from-memory
+2)  accumulation-of-loaded-values
+3)  increment of pointer
+    can happen in parallel. Does ARM Cortex M4F do this ?
+    The project was run on custom board with Freescale K24 processor having ARM Cortex M4F.
+    Thanks.
+

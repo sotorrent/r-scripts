@@ -1,0 +1,5 @@
+When you add an event directly to the element, it does not magically remove the event when you change the class. You either need to unbind it or add logic inside of the function. Other option is to use event delegation
+unbind example:
+Basic idea with a check:
+event delegation:
+

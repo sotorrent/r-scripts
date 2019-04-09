@@ -1,0 +1,2 @@
+It should work, does it really pass the if statement? Put an alert in it and see if it does that
+

@@ -1,0 +1,2 @@
+@zwol: Clang is meant to be used as a blacklist. Clang otherwise manages warnings differently, most notably by enabling the nearly no false positive warnings by default (without any flag) and by having a consistent warning story regardless of optimization levels. I remember designing and implementing the [](and the discussions about whether to activate by default or not (hint: it's only enabled by default for abstract classes).
+

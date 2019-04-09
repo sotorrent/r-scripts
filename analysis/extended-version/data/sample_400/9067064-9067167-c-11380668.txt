@@ -1,0 +1,2 @@
+But, don't stop doing server side validation... I know you didn't mean to imply that, just wanted to make sure it was said.
+

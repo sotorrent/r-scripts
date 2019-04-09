@@ -1,0 +1,2 @@
+What a strange font. Noto doesn't have complete coverage (they're missing linear A among other things) but it's already 500 MB so I can't really blame them.
+

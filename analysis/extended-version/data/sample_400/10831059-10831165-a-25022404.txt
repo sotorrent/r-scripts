@@ -1,0 +1,5 @@
+1.  Create a new table with the same column
+2.  Add unique index to columns that you want to make unique (prevent duplicate)
+3.  Copy records over row by row, ignore any error
+4.  Empty the original table and copy back the records; or drop old table and rename the new one to old
+

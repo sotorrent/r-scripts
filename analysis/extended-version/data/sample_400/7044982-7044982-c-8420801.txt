@@ -1,0 +1,2 @@
+And i still don't get why won't you use something like Regexp, that way you can look for both and and any other key you need
+

@@ -1,0 +1,2 @@
+@kamaldeepsinghbhatia hi, please, where exactly should be that line of code? ("textField.isSecureTextEntry = true")?
+

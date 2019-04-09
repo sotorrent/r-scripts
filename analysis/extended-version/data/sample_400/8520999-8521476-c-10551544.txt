@@ -1,0 +1,2 @@
+I'm not looking for such a long comments. Just an output of the code I posted here is enough (assuming you'll assign the same number to the variables).
+

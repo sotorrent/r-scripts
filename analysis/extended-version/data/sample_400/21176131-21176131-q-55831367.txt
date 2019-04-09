@@ -1,0 +1,4 @@
+I am trying to create a pure 100% CSS (no jQuery) "Back to Top" button but I would like the button to show only if the visitor scrolls down the page.
+Is it possible to check that with CSS somehow? So if visitor scrolled down a bit show the "Back to Top" button.
+Thanks!
+

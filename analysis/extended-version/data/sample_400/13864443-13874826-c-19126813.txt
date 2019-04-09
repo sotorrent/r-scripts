@@ -1,0 +1,2 @@
+Good point about using interfaces. However, sometimes they're not useful and simply add boilerplate.
+

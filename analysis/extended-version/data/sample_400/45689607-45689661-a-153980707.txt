@@ -1,0 +1,4 @@
+You missed it.
+
+If you're using ES6, then template literals makes it even cleaner.
+

@@ -1,0 +1,4 @@
+Clearing the containing floating objects won't work.
+Try placing this between your images and the text container :
+And define the class as so:
+

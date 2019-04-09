@@ -1,0 +1,2 @@
+@RyanP13 Can you share more of your HTML? How exactly are you using model inside the HTML?
+

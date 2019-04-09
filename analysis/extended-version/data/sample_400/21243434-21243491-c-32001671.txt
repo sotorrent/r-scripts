@@ -1,0 +1,2 @@
+What he's saying is that you need to format the data in the database, then removing special characters from the search query becomes easy. So use preg_replace on the data when inserting, and preg_replace on the keywords when searching. This way you don't deal with special characters at all, you just remove them from the equation entirely.
+

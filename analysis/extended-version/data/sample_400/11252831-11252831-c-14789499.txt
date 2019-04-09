@@ -1,0 +1,2 @@
+Hm... operator >> is called on stringstream which copies a stream of bytes until the first whitespace, and that is done in a loop?
+

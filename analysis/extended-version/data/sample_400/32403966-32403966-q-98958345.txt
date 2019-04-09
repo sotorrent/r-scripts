@@ -1,0 +1,3 @@
+Is there a way to have my Excel charts in an AutoCAD layout that automatically updates based on changes made in the spreadsheet?
+Right now I'm having to manually copy and paste each chart every time a change is made.
+

@@ -1,0 +1,2 @@
+Why not use Assert.AreEqual()? That Assert method will show the mismatch between expected and actual values in the output log.
+

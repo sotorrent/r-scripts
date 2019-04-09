@@ -1,0 +1,2 @@
+What is the version of MySQL you're using? MySQL 5.1.6 and later supports this
+

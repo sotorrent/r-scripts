@@ -1,0 +1,3 @@
+How to make go to "link" button after changing option value and click sumbit?
+I've got problem, because when I change value it's going to "link" before i click submit
+

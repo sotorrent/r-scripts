@@ -1,0 +1,6 @@
+As shown in Querying JSON with JSONPath, you need to put single quotes around string literals in filter expressions.  So should be :
+Or, using the old [](style:
+Or with simple string concatenations:
+Note that "string literal" does not mean "a string constructed entirely at compile time", it means "string value included in a JSONPath expression."  Any c# string constructed by any method can be passed in.  In each statement above a string is being constructed in run-time by surrounding the value of the variable with single quotes and embedding it in a full JSONPath expression.  The first statement uses string interpolation while the second uses an explicit function call, but both do the same thing.
+Sample .Net fiddle.
+

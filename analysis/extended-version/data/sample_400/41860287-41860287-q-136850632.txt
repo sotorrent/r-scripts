@@ -1,0 +1,4 @@
+When I apply master theorem, I get O(n) but when I  try to solve it using recursion tree, I get stuck and couldn't make out any solution.
+I tried this :
+How do I suppose to solve this GP??
+

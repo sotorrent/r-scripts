@@ -1,0 +1,6 @@
+That works beautifully for organization! The only problem is here  Resources res = getResources();
+            myString = res.getStringArray(array_city.array1);
+            String q = myString[rgenerator.nextInt(myString.length)];
+            t1.setText(q);
+The "getStringArray" is giving me a error code? it says it cant be a String [] but that doesnt make any sense to me
+

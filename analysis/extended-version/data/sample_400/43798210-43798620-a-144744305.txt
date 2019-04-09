@@ -1,0 +1,25 @@
+Why do primitive and user-defined types act differently when returned as 'const' from a function?
+Because part is removed from primitive types returned from functions. Here's why:
+In C++11 from (p. 84):
+8
+
+Whenever a glvalue expression appears as an operand of an operator that
+expects a prvalue for that operand, the lvalue-to-rvalue (4.1),
+array-to-pointer (4.2), or function-to-pointer (4.3) standard conversions are
+applied to convert the expression to a prvalue. [Note: because cv-quali<U+FB01>ers
+are removed from the type of an expression of non-class type when the
+expression is converted to a prvalue, an lvalue expression of type
+const int can, for example, be used where a prvalue expression of type
+int is required. —end note]
+And similarly from (p. 95):
+2
+
+The expression T(), where T is a simple-type-speci<U+FB01>er or
+typename-speci<U+FB01>er for a non-array complete object type or the
+(possibly cv-quali<U+FB01>ed) void type, creates a prvalue of the speci<U+FB01>ed
+type,which is valueinitialized (8.5; no initialization is done for the
+void() case). [Note: if T is a non-class type that is cv-quali<U+FB01>ed, the
+cv-quali<U+FB01>ers are ignored when determining the type of the resulting
+prvalue (3.10). —end note]
+What that means is that prvalue returned by is effectively treated as .
+

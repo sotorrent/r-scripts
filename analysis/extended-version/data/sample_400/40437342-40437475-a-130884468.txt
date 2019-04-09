@@ -1,0 +1,4 @@
+The standard input filter loop in C++ is - this will read until there is no more input (or other bad things happen).
+You could also use a one liner with input iterators - this is the shortest way I know to read some numbers in a vector:
+See Ideone example here
+

@@ -1,0 +1,2 @@
+"before 'C++ 11' you weren't allowed to modify the return-value whatsoever because 'rvalues' weren't introduced"  - complete rubbish, C++ has always had rvalues, and you could always modify the return value
+

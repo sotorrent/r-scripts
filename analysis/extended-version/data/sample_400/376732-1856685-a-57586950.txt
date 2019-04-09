@@ -1,0 +1,4 @@
+If you use a subdirectory for your project like then you also need to add setBaseUrl to your bootstrap file.
+The nginx rewrite would look like this:
+PS The question mark is not typo!
+

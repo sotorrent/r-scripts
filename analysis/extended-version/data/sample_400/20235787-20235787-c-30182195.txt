@@ -1,0 +1,2 @@
+I'm actually new to cake php.I'm aware of containable behaviour but dont know in detail.This is my first cake php project btw :)
+

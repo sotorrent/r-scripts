@@ -1,0 +1,8 @@
+I know how to use ode15s or other ode solver in MATLAB, what I'm not sure about, is this code(from CellML) that seems vague to me:
+More specifilcly, what is the meaning of the following (?):
+The header of the function, "computeRates", is the following:
+I know "@computeRates" meanse the handle of the function, but what is the meaning of
+Why has it put (VOI, STATES) between @ and "computeRates" ?
+By the way, According the MATLAB help, if we want to integrate of the following function:
+we only need to write:
+

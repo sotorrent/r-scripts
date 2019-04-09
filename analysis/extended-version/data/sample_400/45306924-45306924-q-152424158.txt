@@ -1,0 +1,10 @@
+I'm pretty new to SI and I'm trying to make it so when an exception occurs, the exception becomes the header of the message that caused the exception, and then is sent on to a designated error queue instead of the regular queue. I went through the sample and followed it, but still for some reason nothing shows up on my error queue. I posted about this earlier but I've changed some stuff up and I'm adding more code now to make the issue more clear.
+config:
+MessageErrorHandler:
+Class that the transformer calls from:
+Right now, the message being loaded has no source, so the program should be throwing the MessagingException to the MessageErrorHandler.
+Transformer code:
+All together, the program should receive a pre-loaded message from a queue, transform it and send it on to a second queue, which it does successfully if the source is provided in the pre-loaded message. I'm trying to handle errors and make it so they are sent to an error queue as a message header. This issue has been frustrating me for awhile, so help is greatly appreciated!
+The error currently being shown in the stacktrace is:
+But nothing is going to the error queue.
+

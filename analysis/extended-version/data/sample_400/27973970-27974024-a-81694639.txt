@@ -1,0 +1,4 @@
+The problem is you connect a handler to the element, after which it does not matter if the class changes.
+Use a delegated handler attached to a non-changing ancestor:
+is the default if no other element is handy, but never use for delegated events as it has a bug (if styling results in a calculated body height of 0 it will not respond to mouse events).
+

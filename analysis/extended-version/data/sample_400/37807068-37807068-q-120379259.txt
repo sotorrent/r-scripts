@@ -1,0 +1,2 @@
+I have an application in kivy that uses many labels. Is it possible to obtain their values from a list? e.g. (but this doesn't work)
+

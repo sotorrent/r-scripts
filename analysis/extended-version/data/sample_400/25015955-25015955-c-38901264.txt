@@ -1,0 +1,2 @@
+.NET framework 4.0 doesn't contain 3.5. You have to install 3.5. Replacing random files in is a great way to cause major trouble (thankfully, Windows will just replace them back). You have to compile your application and all your references as 32-bit - that includes those Access interop libraries. Non-.NET DLLs are most likely at fault (do you use P/Invoke?). And of course, is Access even installed on the target computer? :)
+

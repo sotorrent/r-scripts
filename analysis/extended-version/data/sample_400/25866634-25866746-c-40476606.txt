@@ -1,0 +1,2 @@
+The object's id - any SQL Server object has a unique value. It's present in almost all the system catalog views. Here, it's the table object's
+

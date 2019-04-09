@@ -1,0 +1,2 @@
+try .find('option:selected').attr('value') instead of .val()
+

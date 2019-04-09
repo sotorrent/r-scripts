@@ -1,0 +1,2 @@
+Try using the auto layout as described here
+

@@ -1,0 +1,2 @@
+You can't implement a pure virtual.
+

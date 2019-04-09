@@ -1,0 +1,4 @@
+First of all, you need change the on line 9 of your second posted code block to , for API consistency and compatibility.
+Also, you could have duplicate results if you are allowing multiple entries in the conversation table where users A and B can be entered as user1 = A, user2 = B in one conversation, and user1 = B, user2 = A in a different conversation.
+Lastly, as Jay Blanchard said, you should use prepared statements to avoid SQL injection.
+

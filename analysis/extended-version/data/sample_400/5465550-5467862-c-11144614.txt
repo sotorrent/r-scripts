@@ -1,0 +1,2 @@
+Actually you can pass in additional parameters to most of the ode routines that will be happily passed to the solution function after t and y. e.g. would work fine, This behaviour is undocumented and may change in the future however. I should also mention that in this case the same arguments will also then be appended to the events function arguments etc. as well, which will not be the case with the anonymous function form.
+

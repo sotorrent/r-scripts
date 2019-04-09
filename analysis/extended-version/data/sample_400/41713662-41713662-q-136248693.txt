@@ -1,0 +1,5 @@
+I have 2 models banners and files.Banners and files were connected via mm relation.The banner object containing the files as object storage.When i remove a file from object storage the file being deleted.How can I only remove the relation instead of removing object .
+return an object storage.
+
+When I done the above code the field deleted of file model updated to 1
+

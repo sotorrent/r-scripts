@@ -1,0 +1,4 @@
+You can't close any tab via JavaScript.
+
+"This method is only allowed to be called for windows that were opened by a script using the window.open method." In other words, you can only use JavaScript to close a window/tab that was spawned via JavaScript.
+

@@ -1,0 +1,2 @@
+Thanks for reply. Actually, there is a Cross Domain problem. So I'm using JsonP. Ajax is not working for Cross domain request.
+

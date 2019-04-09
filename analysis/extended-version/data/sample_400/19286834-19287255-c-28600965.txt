@@ -1,0 +1,2 @@
+@thedeepfield, I think method on model is better/cleaner, only problem is its computes for each option. Creating list of dicts/list is also good way but you will have to modify that code if new attribute is added to model that needs to be displayed in template.
+

@@ -1,0 +1,2 @@
+In - if you look through the linked code it'll be clear. You keep legacy password and hash in the same column as the non-legacy passwords. And knows how to compare old hashes.
+

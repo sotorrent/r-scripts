@@ -1,0 +1,2 @@
+For the specific circumstances of your post, consider private inheritance.  That way you get to lazily use the implementation of the base, without advertising a spurious IS-A relationship to the world.
+

@@ -1,0 +1,2 @@
+If you could tell us what the digital characteristics of the rhythm of speed might be, we might be able to help you write Matlab code to perform computations for your needs.  It seems to me that your first problem is to make this characterisation digital, and that that is not a programming question and this question is, therefore, off-topic for SO.  Once you have an outline of the code you are looking for, ask another question.
+

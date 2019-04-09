@@ -1,0 +1,2 @@
+I have decided to eliminate the redundant relationships so now I am left with something that looks a lot cleaner.  Thanks!
+

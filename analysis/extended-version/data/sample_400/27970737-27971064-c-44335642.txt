@@ -1,0 +1,2 @@
+Yes, the whole initialization topic is rather complicated. Recently, I've argued that function lvalues appear in ref init because there are no rvalues of function type. It sometimes seems like a gathering of obscure parts of the language.
+

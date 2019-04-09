@@ -1,0 +1,2 @@
+Related to copy paste, Yes you can use but it is also deprecated in iOS 10 and from then it'll be handled implicitly so I don't think you need this now
+

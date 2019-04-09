@@ -1,0 +1,2 @@
+I have a MYSQL table that has a column defined as TEXT, when i reading the contents into PHP the result is that the data is not being pulled through. my php code The table row has data so this is not an issue, i am reading the data using php as below: Update: PHP Code
+

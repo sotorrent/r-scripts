@@ -1,0 +1,2 @@
+Seems like might have some quirks... check out the comments. Also, check out that "max_allowed_packet" thing
+

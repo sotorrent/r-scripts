@@ -1,0 +1,7 @@
+I'm trying to create a custom function in an OData v4 Web API solution.  I need to return a collection of "Orders" based on unique logic that can't be handled natively by OData.  I cannot seem to figure out how to create this custom function without destroying the entire OData service layer.  When I decorate the Controller method with an ODataRoute attribute it all goes to hell. Any basic request produces the same error.  Can someone please take a look at the code below and see if you notice something that I must be missing?
+WebApiConfig.cs
+OrdersController.cs
+When issuing ANY request against the OData layer I receive the following error response.
+
+The path template 'GetByExternalKey(key={key})' on the action 'GetByExternalKey' in controller 'Orders' is not a valid OData path template. Resource not found for the segment 'GetByExternalKey'.
+

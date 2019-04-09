@@ -1,0 +1,6 @@
+The code seems to work fine for me. Can you provide more context, such as the content of strings you're passing to it, and what locale you're using?
+A few other bugs/style issues I noticed:
+
+  - is left as the allocated length, rather than updated to match the length in (wide) characters. Is that your intention?
+  - The cast to is useless and bad style.
+

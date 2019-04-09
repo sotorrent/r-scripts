@@ -1,0 +1,2 @@
+@JimMa: The problem with trying to fix malloc to not mmap is that malloc is not the only thing using mmap. You might upgrade some other library in the future and it will mmap on its own, bypassing malloc, and return a pointer to you from the high range...then what do you do.
+

@@ -1,0 +1,5 @@
+In jQuery i would like to write a simple function to show an alert if the difference of sum of values selected inside select box is > 0, for each div of same class.
+This is my html code:
+Looking at this html code, i would like a function like this:
+My code is not working. Where i'm wrong? Some hint?
+

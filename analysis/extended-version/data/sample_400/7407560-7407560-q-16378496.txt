@@ -1,0 +1,10 @@
+I have situation where a "publisher" application essentially keeps a view model up to date by querying a VERY complex view and then merging the results into a denormalized view model table, using separate insert, update, and delete operations.
+Now that we have upgraded to SQL 2008 I figured it would be a great time to update these with the SQL MERGE statement. However after writing the query, the subtree cost of the MERGE statement is 1214.54! With the old way, the sum of the Insert/Update/Delete was only 0.104!!
+I can't figure out how a more straightforward way of describing the same exact operation could be so much crappier. Perhaps you can see the error of my ways where I cannot.
+Some stats on the table: It has 1.9 million rows, and each MERGE operation inserts, updates, or deletes more than 100 of them.  In my test case, only 1 is affected.
+So how does this get to 1200 subtree cost?  The data access from the tables themselves seems to be quite efficient.  In fact, 87% of the cost of the MERGE seems to be from a Sort operation near the end of the chain:
+MERGE (0%) <- Index Update (12%) <- Sort (87%) <- (...)
+And that sort has 0 rows feeding into and out from it.  Why does it take 87% of the resources to sort 0 rows?
+UPDATE
+I posted the actual (not estimated) execution plan for just the MERGE operation in a Gist.
+

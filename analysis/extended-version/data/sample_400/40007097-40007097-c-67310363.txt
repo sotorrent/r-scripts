@@ -1,0 +1,7 @@
+yes i've tried that and discovered that the rules wasn't enabled and fixed it {
+  "rules": {
+    ".read": true,
+    ".write":true
+  }
+}but i still geting no data
+

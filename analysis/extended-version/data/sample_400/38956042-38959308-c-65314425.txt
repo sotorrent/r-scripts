@@ -1,0 +1,2 @@
+Do you have the value for at the instruction and at the instruction in question? I'm getting , which would mean the would be accessing , which I do agree is not a valid address to read. It then also accesses which is also not valid.
+

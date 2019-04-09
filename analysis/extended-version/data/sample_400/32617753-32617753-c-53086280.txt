@@ -1,0 +1,2 @@
+why does the SHA encrypted passwords require you to migrate at runtime?  You can store the SHA in the new db.
+

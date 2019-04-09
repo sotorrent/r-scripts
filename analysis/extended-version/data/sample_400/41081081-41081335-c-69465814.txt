@@ -1,0 +1,2 @@
+I am new to c# programming.   I am creating  user interface application on controlling the lights in  a building(smart control) by fetching lights from server and controlling it. I am extensively using forms and now having difficulty in managing them.Could be please give suggestion on how it can be improved to manage them. If possible,please provide me with example code .
+

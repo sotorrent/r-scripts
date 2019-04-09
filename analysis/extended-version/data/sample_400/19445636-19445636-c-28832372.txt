@@ -1,0 +1,2 @@
+or should work fine. My guess is that height is not equal to . Can you put an example in a fiddle.
+

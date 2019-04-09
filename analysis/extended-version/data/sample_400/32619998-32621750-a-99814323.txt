@@ -1,0 +1,9 @@
+Here's the basic algebra.  First, define your symbols:
+note that instead of doing percentages (0-100), I'm using fractions (0-1). You can convert a fraction to a percentage by multiplying by 100.
+And then your basic formulas
+With some substitution and simplification
+So that's the formula for Profit Margin with everything on the right hand side.  If you want to solve for Price, first isolate the term with Price by itself:
+Divide by Cost
+And take reciprocal
+or in percentages:
+

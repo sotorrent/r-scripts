@@ -1,0 +1,2 @@
+I'm not trying to get into an argument here.  That's just one way of consuming the stored procedure output.  The point is that there is NO way to get the count first in an output parameter and then the rowsets.  Same thing in pure T-SQL - the rowset(s) will be spooled, then the variables will be set.  T-SQL has no way to consume multiple rowsets or assign a SP output set to a cursor, so it's more limited anyway.
+

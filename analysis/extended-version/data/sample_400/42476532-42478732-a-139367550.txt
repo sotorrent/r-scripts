@@ -1,0 +1,6 @@
+The problem is in the line -- you have to use the TypeScript-specific syntax to import it:
+From the TypeScript documentation:
+
+When importing a module using export =, TypeScript-specific must be used to import the module.
+So your import should be:
+

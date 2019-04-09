@@ -1,0 +1,5 @@
+I have the following function header in WebAPI controller declared as route:
+The issue here is that I'd wish that every parameter is optional, so I'd want to make a request that has either a cityfilter, a statefilter, an organization filter, two of them or three of them, and then be processed and router by this function, but I have no clue about how I can build the URI so that, for instance, this route works for just the statefilter.
+How can I do that in WebAPI? How should I call the resource address from, for instance, a Jquery Ajax call?
+Thank you.
+

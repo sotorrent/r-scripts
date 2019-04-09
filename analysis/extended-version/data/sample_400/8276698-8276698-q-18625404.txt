@@ -1,0 +1,17 @@
+`  public void tryLogin() {
+Log.v(TAG, "Trying to Login");
+EditText etxt_user = (EditText) findViewById(R.id.txt_username);
+EditText etxt_pass = (EditText) findViewById(R.id.txt_password);
+String username = etxt_user.getText().toString();
+String password = etxt_pass.getText().toString();
+HttpClient client = new DefaultHttpClient();
+HttpPost = new HttpPost("
+List< BasicNameValuePair > nvps = new ArrayList< BasicNameValuePair >();
+nvps.add(new BasicNameValuePair("username", username));
+nvps.add(new BasicNameValuePair("pass", password));
+try {
+UrlEncodedFormEntity p_entity = new UrlEncodedFormEntity(nvps,"utf-8");
+
+I am having an Android Activity which I want to connect with MYSql database with JSP page as middle layer to accept values from android and do query on databse.
+Problem is I'm not able to send parameter values from Android Activity to JSP page. Application crashes as Emulator starts. I have given permission for internet in manifest file,This catches exception plz help...
+

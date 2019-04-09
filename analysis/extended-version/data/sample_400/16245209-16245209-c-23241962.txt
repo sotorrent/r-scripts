@@ -1,0 +1,2 @@
+You are just showing your SQL request. Show us your PHP script in pass_url.
+

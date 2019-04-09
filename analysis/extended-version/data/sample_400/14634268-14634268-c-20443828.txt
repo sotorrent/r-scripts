@@ -1,0 +1,2 @@
+@dognose I just want this method to throw exception (OutOfBoundsException or OutOfRangeException probably) and I don't want to throw it manually after checking condition with or function.
+

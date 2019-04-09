@@ -1,0 +1,2 @@
+I've named variables that refer to the correct ranges but I can't find a way to group them all together under a heading like season. I just used s1997<-will.data[will.data$DATE>=19970701 & will.data$DATE<=19970831,]. Though I also tried making them subsets and replacing the dates using ifelse, though that wouldn't allow me to just put in the name of the season b/c the object wasn't defined. Thanks for the help and I'm sorry for leaving that out.
+

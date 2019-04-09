@@ -1,0 +1,2 @@
+@SubhrashisDas - I looked at your jsfiddle. The code on line 7 should be changed from to (without the parentheses). The reason you only see is because when is called, it generates the alert and then returns . Since line 10 is actually , the second parentheses cause an error (because is not a function) and the script stops. Change line 7 and all should be well.
+

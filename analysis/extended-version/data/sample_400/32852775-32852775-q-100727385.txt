@@ -1,0 +1,7 @@
+I have to read between 2 values after asking the users if he want between the '' or not between.
+Exemple if the user select 1 in the text
+he will have
+in a text file. If he chose 2, he will have
+Right now I'm using
+For now it's only reading both of the value (between '' and not between) but I have no idea how to change it.
+

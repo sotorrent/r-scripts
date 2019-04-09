@@ -1,0 +1,2 @@
+Mark: I just need (1). Michael: actually it checks if x[a]==x[b] instead of x[[a]]==x[[b]], that's the problem
+

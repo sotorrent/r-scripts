@@ -1,0 +1,6 @@
+You shouldn't have any of this issues, if you declare your namespaces correctly.
+This may confuse the compiler as may be defined in and in .
+The later one shouldn't cause any confusion issues, because if you have ambiguous/conflicting names, the compiler will take it from the inner using and if it doesn't find it there, look at the outer usings.
+###On a side note
+doesn't sound like a very good name for a domain model, /(Software) or (TV) etc. imho
+

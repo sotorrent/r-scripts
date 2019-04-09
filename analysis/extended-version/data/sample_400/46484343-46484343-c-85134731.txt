@@ -1,0 +1,2 @@
+@Amrait Dalerian - could you log synchronously to an external file with winston in node.js ?
+

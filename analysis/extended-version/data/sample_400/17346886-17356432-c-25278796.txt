@@ -1,0 +1,12 @@
+1 (c). Note that I have included the XMLSchema.dtd header at the top of my localy saved schema (and have the dtd locally saved) the attributes of my local schema:
+
+
+"<xs:schema targetNamespace="
+	blockDefault="#all" 
+	elementFormDefault="qualified" 
+	version="1.0" 
+	xmlns:xs="
+	xml:lang="EN" 
+	xmlns:hfp="
+	finalDefault="" attributeFormDefault="unqualified">
+

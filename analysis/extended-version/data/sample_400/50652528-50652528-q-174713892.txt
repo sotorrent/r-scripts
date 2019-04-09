@@ -1,0 +1,9 @@
+I am trying to use custom json encoded data after firing an error on server
+(throwing error intentionally) under jquery ajax request.
+I don´t understand what is wrong, because the header is right and the data arrives. But it seems that the exception arguments are not passed to the exception callback in javascript.
+The php code
+The javascript code
+Response from server
+But the alert is undefined instead Bad Format.
+What is wrong ?¿
+

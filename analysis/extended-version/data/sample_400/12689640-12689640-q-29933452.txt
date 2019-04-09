@@ -1,0 +1,6 @@
+I have a query like this:
+Now I have another table which has hoursWorked in it. Basically I want the sum of anotherTable.hoursWorked where anotherTable.a = a and anotherTable.b = b and anotherTable.c = c.
+What kind of query do I need to do this?
+Thanks
+Something like this:
+

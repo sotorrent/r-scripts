@@ -1,0 +1,3 @@
+I have the following query:
+This subquery can return two identical protocolos with two equal status field with values <U+200B><U+200B>0 and 1. Must group the protocolo, but the group has to be at status 1 and not zero. In the above example he considers the protocolo with status 0 .
+

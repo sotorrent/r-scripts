@@ -1,0 +1,8 @@
+Although there are available answers, I hope this will show you another, hopefully more pretty and/or efficient way.
+Each widget when it's added to another widget as a child is then present in i.e. a list of objects which works in this way:
+With this way you don't need any additional variables to get/set values of your widgets. You can simply set in file or have a parent object(widget) available in a variable so that you could do this:
+Which is basically what @Alan purposed, but without the unnecessary variable - you can just add them with and access later from existing list.
+@Yoav sets it in , but you are dependent on that list, which means to add another you'd need to update that list. Or the other way around - additional function , which would check for length and add a new widget or remove widget or a similar case and if the new one would equal the old length of the list, then would do nothing. And this only complicates things in a large scale.
+If you have a lot of (nested) widgets, your statements will become long, but there are ways to make them short e.g. using and setting it in kv or using an additional property in an class such as:
+In this way you can access pretty much anything, because you save the object you want to access somewhere you could access it easily from.
+

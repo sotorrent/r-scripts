@@ -1,0 +1,6 @@
+This question may be asked so many times. I searched for the solution too much. I got a solution (although that didn't work) to replace some .dll files.
+Actually I made an application in Windows 7 Ultimate 64 bit, Visual Studio 2010, target Framework 3.5 with MS Access 2007 Database (Platform target ). Then I tried to run this application (.exe file) on another machine having Windows 7 Ultimate 32 bit. But the error appeared.
+As I got solution to replace those 5 dll files in folder, but cannot find this folder on 32 machine. Even though I replaced/copied those 5 dlls to folder. But the same error.
+I also installed framework 4.0 on the target machine. But the same error.
+Now how to resolve this error? Thanks...
+

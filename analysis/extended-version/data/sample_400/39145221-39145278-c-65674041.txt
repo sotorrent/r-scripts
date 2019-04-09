@@ -1,0 +1,2 @@
+@Peril have used the javascript listener to load the page from the option values. Hope it answers your queries :) Upvote / mark as accepted if this helped you. Thanks!
+

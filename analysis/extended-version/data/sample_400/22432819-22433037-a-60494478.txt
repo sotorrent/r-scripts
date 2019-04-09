@@ -1,0 +1,8 @@
+Just add an property along with your Company and Location properties. Your checkboxes should be wired to those. Then when a user submits the form, your model will pick up these values. You can just filter your data based on IsSelected being true and return the matching rows.
+Edit to show an example. Quickly tested with IE since it's such an aggressive cache monster:
+A quick note. It's late and I'm tired. Take the concept but think more clearly about your objects and storage. This is a working example only.
+First, a ViewModel:
+And the Get and Post actions in the controller:
+This demonstrates the Post, Redirect, Get pattern to ensure the browser doesn't display incorrect results from caching and won't lead to undesired behavior if the user refreshes the screen which would re-submit the original form.
+Now the view using the scaffold code for an Edit screen:
+

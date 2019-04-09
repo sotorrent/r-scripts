@@ -1,0 +1,2 @@
+You probably need to .unbind() the class and bind the new and vise-versa. I bet the original class is still being used as a reference by the DOM.
+

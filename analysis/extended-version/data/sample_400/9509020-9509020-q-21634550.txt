@@ -1,0 +1,7 @@
+I'm trying to apply Unsynchronized's answer (Drawing waveform with AVAssetReader) while using ARC. There were only a few modifications required, mostly release statements.  Many thanks for a great answer!  I'm using Xcode 4.2 targeting iOS5 device.
+But I'm getting stuck on one statement at the end while trying to invoke the whole thing.
+Method shown here:
+On the call to initWithMPMediaItem I get the following error:
+Since I do have the method initWithMPMediaItem declared in the class header, I really don't understand why I'm getting this error.
+Been trying to wrap my head around this for several hours now but to no avail. Is my method declaration wrong for this type of method? Thanks!
+

@@ -1,0 +1,5 @@
+Storing constant bookmarklet variables for IE8/9?
+In Firefox you can save (cross-domain) constant variables to the browser to be written/accessed via bookmarklets (i.e. not just cookie/session level) through the following JS:
+In Chrome you can do:
+Does anyone know what the equivalent is for Internet Explorer please?
+

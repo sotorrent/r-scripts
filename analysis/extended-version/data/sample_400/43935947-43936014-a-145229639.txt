@@ -1,0 +1,4 @@
+You will read the line and split the line on the basis of space , then you will get an array of that line.
+Of that array fetch the third element.
+Another way that's List Comprehension as suggested by Jon is :
+

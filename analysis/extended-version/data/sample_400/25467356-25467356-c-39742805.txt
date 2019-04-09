@@ -1,0 +1,2 @@
+@Christophe It is somewhat obvious OP uses a signed char.
+

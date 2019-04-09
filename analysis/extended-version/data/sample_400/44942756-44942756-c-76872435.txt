@@ -1,0 +1,2 @@
+Thank you for pointing out, I did not bother with it because the facebookmarketingdevelopers sample went through and made the API call anyway. But what you are saying makes sense, that looks like the only thing out of place, let me try fixing it.
+

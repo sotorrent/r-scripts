@@ -1,0 +1,3 @@
+I want to make a FIR filter. I have an array of coefficients (buffer[size]) and an array of data (filter[size_filter]). I have to do a convolution between the two arrays:
+output[size+size_filter] is the result. Where I'm wrong?
+

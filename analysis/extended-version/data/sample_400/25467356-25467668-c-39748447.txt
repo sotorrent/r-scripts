@@ -1,0 +1,2 @@
+I see.  Try the following change in the code: .  (and .  I got spanish and consistent resutls with MSVC13. Locale names other than "" and "C" appear library dependent, and I've found this guy who played around with windows:
+

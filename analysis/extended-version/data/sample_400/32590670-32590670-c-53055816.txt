@@ -1,0 +1,2 @@
+If you are using relationship then you have to get page or post id into the loop and you have to pass that id to get image url using wp_get_attachment_url() and pass that url into .
+

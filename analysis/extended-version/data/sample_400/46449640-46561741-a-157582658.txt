@@ -1,0 +1,7 @@
+bbar: {
+store: {
+type: 'personnel',
+},
+},
+I have removed store inside bbar and it works. Thanks for being cooperative.
+

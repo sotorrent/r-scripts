@@ -1,0 +1,19 @@
+Yes, it successfully compiled an ran.
+Reason being was I had uncaught exceptions in my source.
+For some reason the lines
+Caused the IronPython Compiler to throw an "ImportError", but runs fine.
+Also the biggest bug was a "ThreadStateException" error (Thanks Migol for the tip) when I tried to init System.Windows.Forms.WebBrowser()
+Googled it, and found out that:
+
+Oh, the problem is that pyc.py doesn't mark the thread as STA.
+And the fix is:
+You can add this line to pyc.py right after mainMethod = ...
+source:
+Sweet. :)
+Works, compiles and runs, Turns out the only DLLs you need for "IronPython 2.6 for .NET 4.0" are
+(Just copy & paste these from your directory or wherever you installed IronPython)
+Also the exact command I used to compile my script is:
+follow this guide IronPython - how to compile exe
+turns out you only have to include the files that you import in your file (mine was program.py. takes care of importing the rest. :)
+Hope this helps somebody, took me one whole evening to figure it out. Cheers. =)
+

@@ -1,0 +1,2 @@
+Since it also takes other clients the same about of time, I'm assuming that its something on the server.
+

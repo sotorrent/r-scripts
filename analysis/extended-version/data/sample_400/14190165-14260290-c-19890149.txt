@@ -1,0 +1,2 @@
+You can choose the layout. You can define a global T/B/Tg to branch and tag the whole repository having only one trunk where all projects progress or have the projects (and common code) and inside each one the T/B/Tg layout. It's your project/projects life cycle what defines the repository layout, without knowing more of your product development cycle I can't say more.
+

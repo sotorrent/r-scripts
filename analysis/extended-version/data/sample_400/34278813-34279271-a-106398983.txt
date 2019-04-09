@@ -1,0 +1,5 @@
+I would do like:
+(The last number does not appear, note that the possibility here is to give two possible random outcomes: "0 or 1". - if you want "0, 1 or 2" put and so on)
+More about Random Range
+And checking it out with switch statement - it will trigger the exact action sorted in the :)
+

@@ -1,0 +1,2 @@
+You create a tag from any directory. That includes any directory of the trunk. A tag is only a copy. So you can tag trunk/Proj1 to tags/Proj1_release01, for example.
+

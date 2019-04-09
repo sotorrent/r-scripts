@@ -1,0 +1,6 @@
+As an user of a mechanical compass, I notice that the heading that the magnetometer delivers, is often off by 45 degrees or more, although the calibration display did not appear in that cases.
+If I test, or use my app outdoors, I ever calibrate the magnetometer when my compass view comes up. This works, it seems that this is necessary.
+I don't want to show the users of my app an inaccurate heading, when it is possible to achieve an more or less accurate one, by performig a frequent calibration with the figure eight motion.
+Does anybody know a solution to force the display of the magnetometer calibration view, every time my compass view comes up?
+I searched all(?) posts here, only one person had a similar idea, but without an answer.
+

@@ -1,0 +1,3 @@
+The preprocessor is a text replacement. So your expression becomes:
+and have equal precendence, so gets divided by then multiplied by .
+

@@ -1,0 +1,2 @@
+okay perfect! I am going to have probably 5 different lists all of 1000 entries, you dont think simply having those string arrays on the app will slow it down at all? Sorry i am new to this so i was unsure
+

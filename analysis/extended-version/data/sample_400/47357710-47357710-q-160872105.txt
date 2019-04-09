@@ -1,0 +1,9 @@
+Currently I'm following the nice book App Development with Swift and so far everything is explained awesome. Nevertheless following the exercises I found certain piece of code that I'd love to understand much better. I've already tried to look information everywhere but I don't even know what's the name or how to find it. So with no more to say, it's the following:
+I have a dictionary:
+var frequencyOfAnswers: [AnimalType: Int] = [:]
+AnymalType is simply an enum with four cases. Then they perform a mapping on frequencyOfAnswers:
+An so far everything is good. But in the following iteration:
+I cannot comprehend totally the use of ??. I know that here the point is that if the new element is not already into the dictionary, then is gonna be added and it'll have a value of 1. And if it already exists, then its correspondent integer values is gonna increase by 1.
+I'd like to have little more information about this syntax. If anyone of you guys could provide me with a good text, webpage or explanation I'd be really thankful.
+Thank you in advance.
+

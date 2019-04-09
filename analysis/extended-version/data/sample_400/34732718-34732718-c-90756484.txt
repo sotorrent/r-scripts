@@ -1,0 +1,2 @@
+I know this is older but I'm surprised by the "Is redrawing 110K glyphs (with metrics and kerning and combining attributes and hinting) too hard?" I used to do typography. A plain, unoriginal typeface with 255 straightforward latin-# oriented letters is at least a couple days of work; probably a couple weeks; couple months for truly good work. 110K is the equivalent of 400+ faces with much harder metrics and such. 15,000 hours of work or drastically more; so at least 7 or so years. So, kinda hard.
+

@@ -1,0 +1,2 @@
+This will not create the array the OP wants. should be an index not the ID from the original array.
+

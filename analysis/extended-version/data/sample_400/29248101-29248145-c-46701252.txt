@@ -1,0 +1,2 @@
+I'm pretty sure there is a reason that expects the function name passed as argument to itself and not a callback set on the element. For example, may loads other scripts asynchronously, and the callback should be called after those scripts have been loaded. However, I don't know for sure, and while your solution may still work, the explanation of why the code doesn't work is incorrect.
+

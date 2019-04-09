@@ -1,0 +1,4 @@
+This is a script that I made to make a simple stopwatch on my website and I've been doing it for ages and after all, the stopwatch wouldn't change its digits, it just stays as 00:00:00.00
+This is my Script:
+Please help!
+

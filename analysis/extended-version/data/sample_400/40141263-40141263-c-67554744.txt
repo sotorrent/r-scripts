@@ -1,0 +1,2 @@
+If I couldn't alter the table structures/designs, I think I'd just use functions to calculate everything from the players table, now that I'm looking closer at it. Presumably you have a table somewhere to record who the home team and who the away team was... I'd just create functions that calculates the total scores from the players table alone. The quarter table would be filled with functions to calculate the quarter scores. The game table would just calculate the totals based on the player table alone.
+

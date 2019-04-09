@@ -1,0 +1,3 @@
+My Problem as stated
+My Code was Fine Until I add a mini button between frames because i cant find a tutorial putting a coding between. some say i need to put it in a new layer. im stuck myself. Please help!
+

@@ -1,0 +1,4 @@
+  - Freeradius is a backend engine only. If you want to know more, search google for Freeradius deployments. Thousands of guides there. i wrote some beginner guide on my blog as well which is good in taking first step by using some ready to copy paste commands.
+    - If you some customized display / functions requirements, You can design your own frontend in php or any other language. 
+    - OR you can use premade frontend like Daloradius, dialupadmin, and many others.
+

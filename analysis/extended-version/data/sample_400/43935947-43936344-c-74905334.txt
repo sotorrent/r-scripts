@@ -1,0 +1,2 @@
+This function is awesome! However, I think you should change by to be sure that you will get the last column in every cases.
+

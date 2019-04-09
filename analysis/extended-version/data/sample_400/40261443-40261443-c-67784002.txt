@@ -1,0 +1,2 @@
+Exception coming at this line database=helper.getWritableDatabase();@elefasGR
+

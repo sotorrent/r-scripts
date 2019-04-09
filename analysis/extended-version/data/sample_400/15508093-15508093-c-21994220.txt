@@ -1,0 +1,2 @@
+If you can figure out how to modify the pk lookup query to handle table inheritance without breaking things, I'd definitely be willing to accept a patch.
+

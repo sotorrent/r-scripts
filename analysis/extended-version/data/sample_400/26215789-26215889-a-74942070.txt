@@ -1,0 +1,3 @@
+Divide by 0 error.
+That line is done twice if number is not 0, and once if it is 0.
+

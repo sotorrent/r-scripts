@@ -1,0 +1,3 @@
+Yes you can, see e.g. 10.4/2: "A pure
+virtual function need be defined only if explicitly called with the qualified-id syntax (5.1)." and 12.4/7: "A destructor can be declared virtual (10.3) or pure virtual (10.4); if any objects of that class or any derived class are created in the program, the destructor shall be defined. If a class has a base class with a virtual destructor, its destructor (whether user- or implicitly- declared) is virtual."
+

@@ -1,0 +1,5 @@
+w.winfo_children()
+Returns a list of all w's children, in their
+stacking order from lowest (bottom) to highest (top).
+Will destroy all the widget in your frame.  No need for a second frame.
+

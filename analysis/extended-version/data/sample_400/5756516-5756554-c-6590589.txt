@@ -1,0 +1,2 @@
+what do you mean by start a .cmd/.bat file...im more of a mac guy and this windows env is new to me...also is sqlcmd a command or a stand alone program
+

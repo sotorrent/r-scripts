@@ -1,0 +1,2 @@
+Doesn't make sense to me to introduce a whole new concept and complexity to all the software (in addition to fonts, every software must now understand the concept of a family from which to pick a correct font that has the glyph we're trying to draw) only because the datatype is too small to represent all glyphs. IMO they should just update the format to support UINT32.
+

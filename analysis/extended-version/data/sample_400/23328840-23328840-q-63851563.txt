@@ -1,0 +1,16 @@
+I am new in NDK and i want to use a c library in my application. I try with a simple c file and it work. I succeded to send and receive data between the two api. But when i want to introduce an existing c library i have this kind of error when i run ndk-build.
+root@xxx:~/workspace/Myproject# ndk-build
+Android NDK: WARNING: APP_PLATFORM android-16 is larger than android:minSdkVersion 8 in /root/workspace/MyOpus/AndroidManifest.xml
+[armeabi-v7a] Compile thumb  : my_manager <= myencoder.c
+[armeabi-v7a] SharedLibrary  : libmy_manager.so
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: error: ./obj/local/armeabi-v7a/libopus.so: incompatible target
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:81: error: undefined reference to 'opus_encoder_create'
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:84: error: undefined reference to 'opus_strerror'
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:93: error: undefined reference to 'opus_encoder_ctl'
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:96: error: undefined reference to 'opus_strerror'
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:120: error: undefined reference to 'opus_encode'
+/usr/local/mes_installations/android_tool/android-ndk-r9d/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: ./obj/local/armeabi-v7a/objs/my_manager/src/myencoder.o: in function myEncodeOpus:/root/workspace/MyOpus/jni/src/myencoder.c:123: error: undefined reference to 'opus_strerror'
+collect2: ld returned 1 exit status
+make: *** [obj/local/armeabi-v7a/libmy_manager.so] Error 1
+How can i solve this problem? I read all the Android.mk documentation but i did not see any thing to solve it. Regards
+

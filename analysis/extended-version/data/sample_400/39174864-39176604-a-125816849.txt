@@ -1,0 +1,12 @@
+As other people have said, read the error handling chapter. This has all been covered before.
+In most cases, you don't want to use to report errors. Either you should return the error from your function and let the caller deal with it, or you should use to abort that thread and potentially the process.
+Instead of printing nothing (which is inefficient), you can just... do nothing:
+Replacing the with a would be even better:
+And that's exactly what [](does (source):
+However, it's even better to use [](which allows you to specify an error message to be added:
+Applying that twice:
+Note that there's no need to re-allocate a , you can just shadow , and there's no need to use just to print out stuff.
+
+but I could write this shorter in C, after all...
+I would encourage / challenge you to attempt this. Note that every memory allocation in this program is checked, as is every failure case dealing with the standard output. Many people are not aware that C's returns an error code that you should be checking.
+

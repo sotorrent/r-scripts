@@ -1,0 +1,2 @@
+You can return the count of rows by output parameter or return value from your SP. Of course you have to add that output parameter to your SP and set it with COUNT(*) inside the SP.
+

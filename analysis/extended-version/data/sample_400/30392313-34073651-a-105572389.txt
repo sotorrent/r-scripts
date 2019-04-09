@@ -1,0 +1,11 @@
+I think this will help you AngularJS with ASP.net MVC
+
+For setup angularJS in asp.net mvc application follow below steps
+
+1.  Load required js first. you can use asp.net mvc bundles
+2.  Modify _Layout.cshtml
+3.  Add a new js File for add angularjs module, controller etc. here 'ngRoute' is optional (not required if you don't want to use angularjs routing)
+4.  Add new action into your controller for Get View.
+5.  Add view for the Action & design.
+6.  Run application.
+

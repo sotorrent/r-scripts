@@ -1,0 +1,7 @@
+When you have nested resources you have to assure that you always pass the higher level resource between your requests.
+Your routes will be the ones you have noticed using rake routes.
+The form should be like this:
+This way now you have to use the new routes everywhere on your articles controller and articles view pages, which will include the magazine itself.
+Your create action in the controller would be:
+So now all your routes should reference @magazine too.
+

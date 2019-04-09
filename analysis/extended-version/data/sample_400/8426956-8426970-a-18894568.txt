@@ -1,0 +1,5 @@
+Sounds like you want to use BigInteger
+
+[edit] To pass a number larger than to the constructor, use a :
+If you need a number larger than a can hold, you'll need to find some other way of constructing it, like multiplying two s.
+

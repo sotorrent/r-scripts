@@ -1,0 +1,2 @@
+Are you trying to insert #{label.name} in {0} inside error.required? In that case, it should be: th:text="#{error.required(#{label.name})}"
+

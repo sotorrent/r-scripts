@@ -1,0 +1,5 @@
+the function is executed
+the problem seem in the document.write();
+it's generate the following error on chrome console
+Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.
+

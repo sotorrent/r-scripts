@@ -1,0 +1,9 @@
+multiple_checkboxes
+
+In attached image, is present with in an activity, and all within adapter.
+If i then all checkboxes are checked in adapter and if I unchecked then all are unchecked. Its happening nicely.
+But I want if I and after that if i one or more checkbox in tha adapter then the .
+and if without check to SelectAll If i manually check all the checkboxes in adapter then automatically.
+How can I do that.
+bellow is my code.,
+

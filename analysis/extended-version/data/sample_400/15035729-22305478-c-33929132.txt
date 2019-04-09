@@ -1,0 +1,2 @@
+no, when hiking outdoors you need the compass often. but the compass is only acurate if you always calibrate it immeadetly befire using it. so i want to force!! the calibration view to be shown whenever my app decides to show it.
+

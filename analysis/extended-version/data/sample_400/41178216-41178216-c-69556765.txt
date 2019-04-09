@@ -1,0 +1,2 @@
+Why would you want to disable ed heap space?
+

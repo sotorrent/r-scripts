@@ -1,0 +1,2 @@
+My understanding is that you can recycle an ASP.NET Application (which is an AppDomain), e.g. by "touching" web.config or a file in the bin folder.  If this happens, I believe other AppDomains in the same process (e.g. other ASP.NET applications) will keep running.  On the other hand, if an application pool (IIS6 and later) is recycled, the worker process will be shut down and restarted.  The problem you describe suggests that the process isn't being recycled, only the AppDomain.
+

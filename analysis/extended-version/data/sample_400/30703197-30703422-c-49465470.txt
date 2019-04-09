@@ -1,0 +1,2 @@
+thanks +1, but one of parameter is url and it's not going well with that, also  do i still need to pass it a s a jquery object ? and btw i tried encoding using this encodeURIComponent(JSON.stringify(object_to_be_serialised)) but then it adds a lot of "%"
+

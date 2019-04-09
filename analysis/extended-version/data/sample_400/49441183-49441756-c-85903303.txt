@@ -1,0 +1,2 @@
+Honestly, apache axis sets the timeout after the handshake of the ssl socket.
+

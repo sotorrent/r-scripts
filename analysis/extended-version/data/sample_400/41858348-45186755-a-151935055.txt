@@ -1,0 +1,4 @@
+ARM implementation is very traditional you can check it on Github , they just do loop unrolling to reduce loop overhead then accumulate the sum of 4 samples each loop and finally divide the number of samples, i tried it with M4F and i got 5.3 cycles per float.
+Here is the code i used
+I think this is the best performance you can get with floating point, your poor performance can be due to that your are measuring the number of cycles incorrectly or your silicon. you can also try to increase compiler optimization.
+

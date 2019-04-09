@@ -1,0 +1,7 @@
+I have developed an Android application that stores camera captured images to a MySQL database. I am trying to store images into a Blob field in MySQL database but I am unable to store and retrieve the data.
+Since I did not have enough resource to save the images to a file. That why I have adopted this method.
+I have used the below class to insert the image in the database.
+
+I have used the below PHP script to insert the image in the database.
+In order to retive the values from the datbase i have used the below php code
+

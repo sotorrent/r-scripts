@@ -1,0 +1,2 @@
+can you try binding with in the constructor ?
+

@@ -1,0 +1,3 @@
+I would suggest to redirect towards a static page (e.g. blank.html)
+And in that page, to again redirect back to your portal from javascript ( body onload="document.location='www.yourportal.com'")
+

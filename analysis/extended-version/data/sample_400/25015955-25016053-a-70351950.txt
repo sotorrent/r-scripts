@@ -1,0 +1,2 @@
+You need to change system target. On menu Build -> Configuration Manager, you can change the platform to x86 instead of x64.
+

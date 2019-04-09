@@ -1,0 +1,2 @@
+@MatthieuM. GCC does add to both and from time to time; the actual policy for is something like "almost certainly indicates a bug, and even if it doesn't, the code can easily be changed to squelch the warning", and for similarly but with lower estimated odds of indicating a bug.  You'll probably have noticed that clang's includes warnings where there's no workaround if the code is correct as-is - that's what the GCC people want to avoid.
+

@@ -1,0 +1,2 @@
+it's for making an autocomplete for a big list of contacts so it will be easier for the customer to find the contact if he can enter both the first name and the last name to filter the possibilities
+

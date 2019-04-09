@@ -1,0 +1,2 @@
+This would hide the link and cause it to be clicked on load, I don't think that is what he wants
+

@@ -1,0 +1,2 @@
+would work too. It is much cleaner markup.
+

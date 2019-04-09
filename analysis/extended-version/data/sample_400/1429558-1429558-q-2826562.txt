@@ -1,0 +1,11 @@
+I'm getting into microcontroller hacking and while I'm very comfortable with bitwise operators and talking right to the hardware, I'm finding the resulting code very verbose and boilerplate. The higher level programmer in me wants to find an effective but efficient way to clean it up.
+For instance, there's a lot of setting flags in registers:
+Thankfully there are macros that hide actual port IO operations (the left hand side), so it looks like a simple assignment. But all that syntax to me is messy.
+Requirements are It only has to handle up to 8 bits, the bit positions must be able to be passed in any order. Should only require set bits to be passed.
+What I'd like is:
+SPCR = bits(SPE, SPIE, MSTR, SPI2X);
+The best I've come up with so far is a combo macro/function:
+This compiles to 32 bytes on my particular architecure and takes 61-345 cycles to execute (depends on how many bits were passed).
+Ideally this should be done in preprocessor since the result is a constant, and the output machine instructions shouldbe just an assignment of an 8 bit value to a register.
+Can this be done any better?
+

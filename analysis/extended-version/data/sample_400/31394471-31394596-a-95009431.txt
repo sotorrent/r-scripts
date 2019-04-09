@@ -1,0 +1,4 @@
+In angularjs, is a jqLite object
+And element in angular directive is a jqLite object and you dont need to wrap again with
+for example in this code all elements is same
+

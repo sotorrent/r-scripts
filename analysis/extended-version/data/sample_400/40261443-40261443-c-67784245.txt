@@ -1,0 +1,2 @@
+Does the path on your sdcard exists and what is the filename of the database you are trying to open?
+

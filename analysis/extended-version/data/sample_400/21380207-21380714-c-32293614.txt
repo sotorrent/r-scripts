@@ -1,0 +1,2 @@
+is a bad way to parse json. You can read about it on mdn
+

@@ -1,0 +1,2 @@
+I need to do some web-scrapping from a C# console application. The site is using typo3. I need some help to login, specifically at RSA encryption used by typo3 extension (/typo3/sysext/rsaauth/resources/jsbn/rsa.js). Any clues are appreciated. Here is the code, I used Encrypt versions found in a similar thread with Javascript to C# RSA excryption.
+

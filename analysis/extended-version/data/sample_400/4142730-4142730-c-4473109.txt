@@ -1,0 +1,2 @@
+Actually, no it doesn't, it builds a function that gives if for any edge in the graph. No coffee yet this morning!
+

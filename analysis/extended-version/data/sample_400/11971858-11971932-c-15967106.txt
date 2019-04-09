@@ -1,0 +1,2 @@
+@Hockeyman271 You'd call if you stored your string arrays as resources. If the string arrays are hard-coded in Java, then you don't need to access the resources at all. Just use them as is.
+

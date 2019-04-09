@@ -1,0 +1,2 @@
+Yes prevVal must be updated constantly and better if you maintain a key value pair . Do some thing update the prevVal on focus first to store the current data then compare it in the textchanged and set the cursor. Theres no direct method to go through it so u will have to code it through. Forgive me if i spell or write wront m using a note currently
+

@@ -1,0 +1,6 @@
+Try the following rewrites:
+
+EDIT
+
+Since the page is inside directory, updated the rules to reflect the same.
+

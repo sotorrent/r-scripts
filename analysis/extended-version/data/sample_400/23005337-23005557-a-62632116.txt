@@ -1,0 +1,2 @@
+Change span.portfolio-hover from display: table, to display:block
+

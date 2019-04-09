@@ -1,0 +1,2 @@
+Why not just call unwrap, like so: ? With something like flush, which should almost never fail, that should be sufficient.
+

@@ -1,0 +1,4 @@
+Anyone know why this sometimes crashes? I'm stumped on this one. I guess it crashes 1 time in 100 or something like that.
+Crash is on last line:
+Crash data:
+

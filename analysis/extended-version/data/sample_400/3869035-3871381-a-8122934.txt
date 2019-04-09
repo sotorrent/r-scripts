@@ -1,0 +1,3 @@
+The length you need to pass to includes the terminator character, but your calculated length in does not include it - you need to add 1 to the value passed to .
+In addition, instead of using to determine the length of the converted string, you should be using .  You should also change the type of to , and elide the cast.  can be used in place of a pair.  Overall, it should look like:
+

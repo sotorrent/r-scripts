@@ -1,0 +1,5 @@
+First, I created this utility in order to debug my situation:
+This utility is used in order to confirm I am not getting an expected set of data back when reading values just drawn. I expect to get value matching what was just drawn. Here is the drawing code:
+In my test case ant.size.width is 5. That should produce a line drawn wide enough that when I query the color, I should get the same color back. Here is the method for querying color:
+I realize this method is creating a color from a different mode, RGB, than what was written, HSB, but since I'm using the same context for both, I would think this shouldn't matter. Maybe there's some other setting I need to set?
+

@@ -1,0 +1,12 @@
+My GAE app sends email, and I followed Jeff Atwood's excellent article to improve the likelihood of email delivery.
+The first two steps are really easy, but setting up a Sender ID record is more challenging.  The article provides a link to a "Wizard" to help do this, but I don't know the answer to many of the questions in the wizard.
+I use Google Apps for email so I'm thinking the Sender ID record should be the same for many other people in my situation (Google Apps and GAE users).
+Can anyone point me to a Sender ID record for this?
+EDIT:
+This page explains how to set the SPF and SenderID record for Amazon SES, and gives the following TXT record for SPF:
+and the following TXT record for SenderID:
+
+Leontx's answer appears to give an SPF record and not a SenderID record.
+Also, when I look at the headers of the email I send with GAE, there are notes saying that SPF authentication passes even though I haven't added either of the above TXT records to my domain.  There is no info in the headers about SenderID.
+I'm still confused about this, but I will now be using Amazon SES to send email.  It is really cheap and it seems that Amazon takes a lot more care than Google to help make sure that email gets delivered.
+

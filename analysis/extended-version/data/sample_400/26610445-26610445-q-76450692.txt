@@ -1,0 +1,10 @@
+i must sorry for my bad english at start.
+Im trying to do some math in maple.
+My function
+i try to calculate
+f(0.05) * f(0.06) < 0
+but maple say:
+
+cannot determine if this expression is true or false: (0.6000000000e-1/e^0.64692635994760e-1-0.6064e-1)*(0.5e-1/e^0.64692635994760e-1-0.6064e-1) < 0
+can i do something to calculate it?
+

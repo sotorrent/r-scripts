@@ -1,0 +1,2 @@
+Could you explain why this is necessary? Does android not support jpg? This is not a problem but I am curious.
+

@@ -1,0 +1,2 @@
+That either means the listener is getting cancelled (see my first comment on how to detect that) or that the client is not connected to the database.
+

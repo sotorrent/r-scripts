@@ -1,0 +1,3 @@
+Simpliest approach would be this:
+So, basically, you just take last byte of your power.
+

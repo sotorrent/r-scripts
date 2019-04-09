@@ -1,0 +1,2 @@
+If it contains data management, it isn't very abstract, is it? Another option is to make the destructor protected. That forces you do derive from it, as it cannot be destroyed alone.
+

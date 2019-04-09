@@ -1,0 +1,2 @@
+And the from EF 4.1 actually just encapsulates query similar to first linked question.
+

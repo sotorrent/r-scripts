@@ -1,0 +1,2 @@
+Some explanation about what you are trying to achieve would be appreciated. Without looking closer at your code, I guess you want to solve the maze? If so, do you have to use a specific algorithm or just solve it? Furthermore, could you describe your implementation and the problem(s) you encountered more detailed?
+

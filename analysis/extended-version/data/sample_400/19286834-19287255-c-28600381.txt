@@ -1,0 +1,2 @@
+is it better to do create a method, or create a list in the view? for example
+

@@ -1,0 +1,2 @@
+right when the php tag starts put . Submit a value in the form, submit, and then tell me the output.
+

@@ -1,0 +1,3 @@
+store The the previous value of text in a variable say previousVariable initialized with null
+Try using the above code on selection change.
+

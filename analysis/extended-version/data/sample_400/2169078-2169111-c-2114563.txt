@@ -1,0 +1,2 @@
+Yeah I saw it, and that's one of the reasons I asked. However, a few people told me to avoid Observers, so I just wanted to get a few more opinions.
+

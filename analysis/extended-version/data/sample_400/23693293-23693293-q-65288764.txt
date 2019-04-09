@@ -1,0 +1,5 @@
+I am loading a new module in CPAN, [](but while installing this module its giving error that [](not found.
+I have mentioned all the dependencies of this module in Makefile.PL, but is giving error, its saying this module not found.
+Is there some other name for this module or I have to mention dependencies in some other file, so that I can be automatically installed by CPAN while installing my module?
+Below is my Makefile.PL
+

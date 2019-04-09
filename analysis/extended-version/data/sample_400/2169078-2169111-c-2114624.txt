@@ -1,0 +1,2 @@
+The reason they gave was that nothing directly references the observers, so new people looking at the code may not notice them. It seems like a somewhat weak reason to me, and more indicative of a hole in a developer's Rails knowledge than a bad code smell, but I still want to hear the opinions of those more experienced than me.
+

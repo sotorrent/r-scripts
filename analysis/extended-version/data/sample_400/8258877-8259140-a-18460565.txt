@@ -1,0 +1,3 @@
+Give a try. is the beginning of the string, the end. are one or more of letters, numbers and underscores and is either or .
+A nice and simple way to test Ruby Regexps is Rubular, might have a look at it.
+

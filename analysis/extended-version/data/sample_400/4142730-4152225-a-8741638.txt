@@ -1,0 +1,3 @@
+I'm still puzzled by the difficulties that you seem to be having.  Here's a function which checks that no 2 consecutive elements in a list are identical:
+No trouble with Part, no error messages for the simple examples I've tried so far including OP's 'test' cases.  I also contend that this is more concise and more readable than either of the other approaches seen so far.
+

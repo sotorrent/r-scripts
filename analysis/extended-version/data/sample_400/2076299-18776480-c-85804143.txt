@@ -1,0 +1,2 @@
+Just run this in Chrome console and it worked.
+

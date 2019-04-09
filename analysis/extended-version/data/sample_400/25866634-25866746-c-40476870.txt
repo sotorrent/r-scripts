@@ -1,0 +1,5 @@
+i work with the sql server 2005 with c#
+
+already try that:
+sql1 = string.Format("SELECT OBJECT_SCHEMA_NAME(OBJECT_ID('{0}', 'U')) + '.' + OBJECT_NAME(OBJECT_ID('{0}', 'U')),  name FROM sys.identity_columns", name[i]);
+

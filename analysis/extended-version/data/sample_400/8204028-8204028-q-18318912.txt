@@ -1,0 +1,4 @@
+I'm writing a handler that uses yesod-sitemap to generate a sitemap file. The issue I'm having is converting a into as defined in . The haddock documentation says that is an instance of the typeclass, so that's what I'm trying. Here's my code.
+I've looked through my copy of Real World Haskell in chapter 20 on systems programming, but it doesn't cover in it's code samples, I've searched google with the term 'haskell "Convert a String to UTCTime"' with no results. I found the following Thread in the haskell-cafe mailing list which won't work because doesn't take a . I think I'm making a really stupid mistake here, but I'm not sure, could someone please point me in the right direction?
+Thank you for your time and consideration.
+

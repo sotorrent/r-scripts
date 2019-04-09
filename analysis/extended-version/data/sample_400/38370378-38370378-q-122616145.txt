@@ -1,0 +1,6 @@
+I have several containing integers such as:
+I want to print (, and later ) them like this: 30,40,50,40,30. Basically ignore the duplicates if they come after each other.
+Another example:
+shall give: 10,50,10,50
+Help is very much appreciated!
+

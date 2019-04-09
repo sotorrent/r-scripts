@@ -1,0 +1,5 @@
+The problem is in the line is TypeScript-specific and you have to use the typescript specific syntax `import let
+
+= require("module")index.d.ts` like below:
+... and import it like this:
+

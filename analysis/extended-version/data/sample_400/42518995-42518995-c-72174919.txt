@@ -1,0 +1,2 @@
+Your table doesn't have those columns, so I'm just not following the relationship between your query and what you want to do.
+

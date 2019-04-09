@@ -1,0 +1,2 @@
+The problem is with the conflict between lazy and greedy matching if we start playing with and . I doubt you can achieve what you want with a regex.
+

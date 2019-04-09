@@ -1,0 +1,5 @@
+I prefer to wrap it in macro.
+test.h:
+
+test.cpp:
+

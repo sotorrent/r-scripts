@@ -1,0 +1,2 @@
+I don't think this is the problem here. Alternatively I can set to prevent the next action until ajax request finish. The problem here is how do I get the option to show as disabled after it has been opened. It seems that I have to use the function which cause an infinite loop!
+

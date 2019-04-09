@@ -1,0 +1,11 @@
+Okay, tuned your code a little and I believe it covers the desired functionality.
+Fiddle: Horizontal dropdown menu
+Code:
+$(window).load(function () {
+var closeTimeout;
+});
+Explanation:
+Basically I've changed the mouseover and mouseout events with hover syntax, which accepts two functions as parameters. One for hoverin and one for hoverout, this fixes the problem you have with the inconsistency of mouseout.
+The second change is exposing your timeout as a globally accessible variable so you can shut it down if you happen to move your mouse from the hidden menu back to the button that opens it. Because, after all, we don't want it to hide considering your mouse is over what opened it in the first place.
+In all other cases it will close within one second.
+

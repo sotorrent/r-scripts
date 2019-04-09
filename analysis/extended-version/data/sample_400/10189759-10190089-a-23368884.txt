@@ -1,0 +1,5 @@
+Try this query
+Check if event scheduler is off
+if its off you have to toogle it to on
+if the mysql server shutsdown the event scheduler would again turn off
+

@@ -1,0 +1,2 @@
+:( It doesn't work. If I use your updated code, the title is "blah" (when the page is loaded), and it stays the same no matter if at least 3 chars are present in the textbox.
+

@@ -1,0 +1,9 @@
+here you should attach the event listener to element.but instead you attached to element
+and you also want to access the files inside the ,so you should pass reference to the
+and the way you are attaching the event is not right.
+your are doing this
+this is wrong as it will execute the and assigns the result to on change event.
+actually you should attach reference of the function like below
+i edited your code a little.
+try this snippet.
+

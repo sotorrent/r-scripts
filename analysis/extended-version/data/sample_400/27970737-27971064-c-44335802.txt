@@ -1,0 +1,2 @@
+Hmm. They're different kinds of expressions, for example (grammatically). For class types and arrays, we need to be able to get pointers, so they cannot be values to the same degree that the other types can.
+

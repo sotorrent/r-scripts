@@ -1,0 +1,2 @@
+Working for me in Safari 9.0.2 for browser windows opened by python.webbrowser module. So I guess "not working safari browser" depends on exactly how you are trying to use it.
+

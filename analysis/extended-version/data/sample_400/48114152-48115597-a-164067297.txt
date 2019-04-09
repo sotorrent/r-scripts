@@ -1,0 +1,3 @@
+Right click the link between and to open Link Options. From here, you can change the Join Type to a Right Outer Join. (Returns all rows from the right table, even if there are no matches in the left table.)
+Alternatively you can replace your tables with a SQL command and perform any links or unions manually.
+

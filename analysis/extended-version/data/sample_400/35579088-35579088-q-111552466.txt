@@ -1,0 +1,6 @@
+Help me
+How can I insert a function inside a single quote?
+<php
+echo ' Hello world  ';
+what's the correct syntax ?
+

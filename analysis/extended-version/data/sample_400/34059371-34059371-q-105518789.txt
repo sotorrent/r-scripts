@@ -1,0 +1,2 @@
+enter image description hereI need to find an alternative method for implementation the output obtained by using ForEach subsystem. Currently, in my model, I am using ForEach subsystem to extract a set of inputs and assign it to respective buses. Can anyone suggest an alternative method to implement the ForEach functionality in Simulink.
+

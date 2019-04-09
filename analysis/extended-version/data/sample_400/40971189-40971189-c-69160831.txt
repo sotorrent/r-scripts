@@ -1,0 +1,2 @@
+This is a PHP issue.  Just the way interfaces and objects were implemented.  Your IDE should at least prevent you from using non-interface methods.
+

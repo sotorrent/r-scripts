@@ -1,0 +1,4 @@
+The issue description is embedded in the code. My compiler is .
+I just wonder:
+Why does C++ treat built-in types and custom types differently in such a case?
+

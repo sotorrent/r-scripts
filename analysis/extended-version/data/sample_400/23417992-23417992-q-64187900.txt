@@ -1,0 +1,4 @@
+How can I make sure that a sound does not start to play if another one is already playing?
+Im using the following code to play sounds:
+Any ideas?
+

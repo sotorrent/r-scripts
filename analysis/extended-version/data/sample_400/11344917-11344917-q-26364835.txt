@@ -1,0 +1,12 @@
+I've got a JSF1.2 application which deploys fine on Tomcat6 and Tomcat7.
+So far so good.
+One of the pages contains the following property on a h:inputText:
+
+This validates and works fine on aforementioned Tomcat servers.
+However, websphere8 believes this is a problem and throws the following error:
+I had a similar issue with which is perfectly fine, but because continue is a reserved word, WAS8 throws me an error.
+
+  - Why does websphere not accept this while the code is working perfectly?
+  - How can I resolve this problem?
+    Many thanks!
+

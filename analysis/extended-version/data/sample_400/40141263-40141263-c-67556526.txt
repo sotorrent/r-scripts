@@ -1,0 +1,2 @@
+The total for the home team would just be a sum of all the player scores in the player table, right? e.g. if I wanted to find the total scores for each player in a game, i'd do a sum of the points in the plays table grouped by game and playerid (and quarter if necessary). If I wanted to find the total for a game id just group by game and not playerid. I'd create whatever views/stored procedures/functions you want based on that.
+

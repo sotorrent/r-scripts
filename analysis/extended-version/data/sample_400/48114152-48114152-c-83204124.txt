@@ -1,0 +1,2 @@
+Start your links (joins) from tblAccount and left join to tblTransaction. Note that if you have some report selection conditions on tblTransaction, you have to rewrite those to include null values.
+

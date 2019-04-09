@@ -1,0 +1,4 @@
+If you really must use inheritance, consider using the non-virtual interface (NVI) idiom (see
+Essentially the base class will define an overloaded, non-virtual set of methods, which call protected pure virtual functions from the derived classes.
+What you definately don't want to do is overload a virtual function (which it looks like you really want to do).
+

@@ -1,0 +1,5 @@
+I have created a package with the same requirements for my company. It loads data from different sources and loads them into different destinations based on individual configurations for the instances. It is used as an internal ETL.
+We have adapters that connect to different sources and pass data to a common staging table in XML format and the IETL Package loads this data into different tables depending on a number of different settings etc.
+i.e. Multiple SSIS package instances can be executed with different configurations. You are on the right track. It can be achieved using SQL Server to hold configurations and XML Config file to hold the database info that has this configurations. When an instance of the package executes it will load the default values configured with the package, but needs to update all variables to reflect the purpose of the new instance.
+I have created a Windows app to configure these instances and they settings in the database to make it really easy for the client or consultant to configure them without actually opening the package.
+

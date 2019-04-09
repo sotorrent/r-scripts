@@ -1,0 +1,7 @@
+I have a string with some HTML code in, for example:
+I need to strip out the attribute from every HTML tag, but I have zero experience with regular expressions, so I searched here and there from the internet and I wrote this pattern:
+Unfortunately it's not working as I would expect. Infact, I was hoping that the regular expression would catch the followed by any character repeated for any number of times and terminated with the nearest double quote; Practically in this example I was expecting to catch and .
+But instead the pattern returned me the substring , it finds the first occurrence of and the last occurrence of a double quote character.
+Could you tell me what is wrong in my pattern and how to fix it, please?
+Thank you very much
+

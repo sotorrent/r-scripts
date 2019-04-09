@@ -1,0 +1,4 @@
+Readonly properties are usually properties that an instance must have set all the time to avoid serious problems.
+In this case of a navigable hierarchy, child controllers must be able to have access to the parent controller at all times. (This is trait defines the actual navigation hierarchy i.e. you can back out of subviews.) If the property is readwrite it might not be set,might not be set correctly or might suddenly change all of which would orphan the controller. That is unacceptable in the API upon which the entire platform depends.
+Why risk making the API more fragile just to handle a rare design case? It's easy enough to roll your own for the rare circumstance in which you want a flexible hierarchy.
+

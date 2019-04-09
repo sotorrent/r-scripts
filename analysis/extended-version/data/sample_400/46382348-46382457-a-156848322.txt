@@ -1,0 +1,7 @@
+*Replace
+
+books/index
+with just
+/books
+Because by default will hit action only.If u pass anything after it will consider that as an id as mentioned in url.*
+

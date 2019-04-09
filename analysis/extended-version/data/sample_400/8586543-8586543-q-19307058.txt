@@ -1,0 +1,11 @@
+I'm writing a GLSL vertex shader for an iMac with a AMD Radeon HD 6970M 2048 MB graphics card:
+In my shader I would like to have a large array of uniform mat4s:
+but if I try to have 64 of these my shader (secretly) switches to Apple Software Renderer mode. If I instead use 63:
+everything is fine.
+Seems to be a problem with exceeding the maximum number of uniforms. But as I wrote above I'm getting 4096 for GL_MAX_VERTEX_UNIFORM_COMPONENTS so 4096/(4*4) = 256 not 63...
+OpenGL.org wiki says
+
+ATI/AMD note: The ATI max component values are wrong. They are the actual number of components divided by 4.
+But reading this I would think that if I query GL_MAX_VERTEX_UNIFORM_COMPONENTS and get 4096 that I actually have 16,384. What seems to be the case is that GL_MAX_VERTEX_UNIFORM_COMPONENTS returns the actual number of components multiplied by 4. This would then give 1024/(4*4) = 64 (not exactly 63, but close enough).
+Can anyone confirm this?
+

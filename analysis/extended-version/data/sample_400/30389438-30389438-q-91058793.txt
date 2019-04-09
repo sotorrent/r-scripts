@@ -1,0 +1,8 @@
+I have used following code.. but it have some erors...pls help me
+SELECT        VoucherTypes.types, VoucherHead.VoucherNo, VoucherHead.VoucherDate, SUM(VoucherDetail.Debit) AS debit, SUM(VoucherDetail.Credit) AS credit,
+VoucherHead.VoucherStatus
+FROM  VoucherHead INNER JOIN VoucherTypes ON VoucherHead.VoucherType = VoucherTypes.vtypeid INNER JOIN
+VoucherDetail ON VoucherHead.VoucherID = VoucherDetail.VoucherID
+WHERE        (VoucherHead.VoucherDate >= @fromdate) AND (VoucherHead.VoucherDate <= @todate) AND (VoucherTypes.types = @vtype) AND (VoucherHead.Branchno = @branchid)and case(VoucherHead.VoucherStatus)when @val=1 then VoucherHead.VoucherStatus='true' when @val=2 then VoucherHead.VoucherStatus=false when @val=0 then VoucherHead.VoucherStatus=true or VoucherHead.VoucherStatus=false or VoucherHead.VoucherStatus is null
+GROUP BY VoucherTypes.types, VoucherHead.VoucherNo, VoucherHead.VoucherDate, VoucherHead.VoucherStatus
+

@@ -1,0 +1,2 @@
+This worked great! Execution plan of 0.0638 on the merge statement, and this is backed up by the fact that the execution time is now around 1.4ms average compared to over a second before. Also, turns out that the extra WHEN MATCHED-DELETE clause doesn't affect the behavior or the execution plan, so I took it out, and edited your answer here to show that. Thanks so much!
+

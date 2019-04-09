@@ -1,0 +1,3 @@
+Are statements like
+not supported? I believe SQL Server CE 3.5 does support DISTINCT statement.
+

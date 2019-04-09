@@ -1,0 +1,2 @@
+If the implied context of the question is correct, though, it's not even peripheral registers being accessed, just some reserved address space which happens to (presumably) read as zero rather than faulting (unless possibly there might be some undocumented debug/integration test registers there). Either way, it sounds a lot more like plain buggy code than anything sneaky.
+

@@ -1,0 +1,2 @@
+Nope. The value is typed by the user. I wanted to escape the loop, because I have to send an AJAX request to the server for each prompt in the array and I just wanted to ignore the empty prompts.
+

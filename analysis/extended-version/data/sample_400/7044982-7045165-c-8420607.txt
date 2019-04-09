@@ -1,0 +1,2 @@
+@Patrio While I won't say that it's impossible to do it with mysql, it would be unnecessarily complex and probably unreliable. Why would you want a mysql only query?
+

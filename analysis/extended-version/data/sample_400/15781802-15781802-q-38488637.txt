@@ -1,0 +1,3 @@
+I am trying to clear out a frame in the tkinter so that the new contents can be written (refresh information) but i could not manage to do it. I am aware of these
+but frame.destroy() will totally remove the frame. And the other two also could not give me the result i want.What i need to just to clear up every items in the frame but the frame itself will stay. Is there anyway to do it?
+

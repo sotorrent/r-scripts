@@ -1,0 +1,3 @@
+See wotsit.org for information on file formats for various file types.  Example: You can figure out exactly how to write out a .BMP file and how it is composed.
+Writing to a database can be done by using a wrapper class in your language, mainly passing it SQL commands.
+

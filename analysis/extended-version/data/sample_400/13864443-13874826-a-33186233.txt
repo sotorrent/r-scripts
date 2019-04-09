@@ -1,0 +1,2 @@
+I always use constructor injection.  Then your fields may be final and there is no question about their thread safety.
+

@@ -1,0 +1,2 @@
+POSIX for Java sounds like a good place to start, at least. Remember that most of those things you listed are not "Linux", they are just plain old POSIX.
+

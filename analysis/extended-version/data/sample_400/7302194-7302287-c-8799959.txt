@@ -1,0 +1,2 @@
+@pstar: It's a bug in the documentation. It's good that the documentation is wiki-documentation and so everybody (like me) can modify it. So I just now removed from the 'showlink' example. All other what I wrote in independent from the example. Do you have success in modification of your code? Which from described ways you choosed?
+

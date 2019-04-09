@@ -1,0 +1,10 @@
+I have .net application that is compiled with 'AnyCPU' flag. This application uses MySQL for persistent storage.
+I have run into a strange problem i.e. When I run my application on a 32 bit machine and hook it to 64 bit version of MySQL running on a different machine, my queries end up in state " Waiting for table metadata lock ".
+I have already tested that it works fine when both, my application and MySQL, are running on the same platform i.e. both on 32bit or both on 64bit.
+Here is my theory which can be totally wrong :)
+Since my application is loaded as 32 bit application, consequently the .net connector assembly (which I presume is compiled with 'anycpu') will  be loaded as 32 bit as well. My guess here is that something goes wrong when a 32bit .net connector communicates with 64bit MySQL.
+Is my theory correct?
+a) If no, please let me know, what would be the easiest way to find out whats going wrong?
+b) if yes, what can I do about it. The reason being I can't force the .net framework to load mysql's .net connector assembly in 64bit mode for my 32bit application. Even if that was possible ( within the same process), how in the world am I going to know, before loading the connector, what type of MySQL will my application be connecting to ....?
+P.S. My gut feeling is that its highly unlikely that this theory is correct as according to Google, no else has encountered this problem before.
+

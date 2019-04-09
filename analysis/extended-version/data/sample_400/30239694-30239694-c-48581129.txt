@@ -1,0 +1,2 @@
+You either query the database first, to see if a different record already matches what you're going to insert/update. Or add constraints to the table not allowing duplicates as you define them.
+

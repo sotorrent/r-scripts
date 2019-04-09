@@ -1,0 +1,15 @@
+What really happens is that a temporary of type is created, initialized with the return value and then bound to the reference. I.e.
+Is equivalent to
+Indeed the return value cannot be bound to the reference directly, because isn't reference compatible with , which is a fundamental requirement for direct reference binding:
+
+Given types “cv1 ” and “cv2 ,” “cv1 ” is
+reference-related to “cv2 ,” if is the same type as ,
+or
+is a base class of . “cv1 ” is reference-compatible with “cv2 ” if is reference-related to
+T2 and cv1
+is the same cv-qualification as, or greater cv-qualification than, cv2.
+However, these two points ensure that everything still works fine:
+
+  - The initializer is an rvalue
+  - It is convertible to the target type (i.e. the type referred to by the reference) via copy-initialization.
+

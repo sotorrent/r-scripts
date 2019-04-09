@@ -1,0 +1,5 @@
+Clearing the containing floating objects won't work.
+Try placing this between your images and the text container :
+And define the class as so:
+P.S After getting a second up-vote on this and before I eventually get the comment stating contrary to my answer: clearing the containing should work, but just in my experience doesn't; there are a few cases in very clean HTML where I can say it did, but in general, and I don't know if this was to do with a particular technique designers have used in the past, we've had to clear with a standalone div after the container.
+

@@ -1,0 +1,12 @@
+I am trying to build a stored procedure in SQL.
+I have the following syntax:
+How do I tell the procedure in which table the columns and are?
+I have tried and various attempts with and but it doesn't seem to work.
+Eventually, this procedure will be called upon by a C# datareader.
+What I am trying to do is build a procedure that, when called upon, will return the selected cells from a row, depending on the information in specific cells:
+
+  - If is not null, then I want to get it.
+  - If it's null, I want to get instead.
+  - If THAT's null as well, I want to get back a message that no contact information is available (a string which I have placed in ).
+    Am I going about this the right way?
+

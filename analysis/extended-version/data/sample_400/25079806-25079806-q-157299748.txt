@@ -1,0 +1,10 @@
+I have a that contains 1000 products and a that contains 100 category names.
+
+  - The class has properties like , and .
+  - One of the sample value of the list is .
+    I am trying to match categories with the property values of the .
+  - I have tried Levenshtein distance.
+  - I also tried to split categories into words and check .
+    What is the best way to do this?
+     
+

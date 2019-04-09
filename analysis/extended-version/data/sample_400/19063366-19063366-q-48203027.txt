@@ -1,0 +1,3 @@
+I have written a in a file. And then I am trying to read that back from that same file..
+Now, I am not able to understand how to read that ByteArray back from that same file? Below is my readFile method-
+

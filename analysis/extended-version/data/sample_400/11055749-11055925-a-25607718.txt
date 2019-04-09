@@ -1,0 +1,8 @@
+Well, you can't exactly return a value from the thread's entry point.
+What I would suggest is some kind of async communication between the Server class.
+You can define an event in your Server class, something like:
+Then, when serverAction is ready, you do something like:
+Next, you need to bind to this event from somewhere from the UI (probably the Window).
+There you need to just call your code in the UI thread's context, by first checking Dispatcher.CheckAccess and then invoking your UI code.
+Something very similar with what is described here.
+

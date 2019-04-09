@@ -1,0 +1,2 @@
+Thank you, but I need close that menu when user hover anything else except and . In your fiddle I hover some other menu item (eg 7) and menu dont dissapears.
+

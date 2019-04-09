@@ -1,0 +1,6 @@
+Since you cannot know how long the ajax is going to take to complete, I can think of two possible solutions: The first is to display a hidden over the input and, on click, show a loading image inside it. Then wait until the ajax is over to finally hide the div and trigger a click event on the updated , or .... You can launch the update function as soon as the page loads and keep the disable until the ajax is complete. I recommend the second one, but there might be other solutions. If you need any help implementing any of these you should open a new question.
+
+Update
+Since you want to do it after the click, the best I could come up with was this solution. It has the drawback that if the ajax takes too long and the user leaves the select input, it will reopen anyway. But I think this could be fixed with some focus/class verification. I'll leave that in your hands.
+I must remind you that this kind of UI might leave some users (the one with bad connection) confused about what is available or not.
+

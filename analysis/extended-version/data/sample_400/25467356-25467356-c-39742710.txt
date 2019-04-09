@@ -1,0 +1,2 @@
+Has no one asked about the encoding of the tty?
+

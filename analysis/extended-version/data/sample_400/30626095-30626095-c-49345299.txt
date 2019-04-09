@@ -1,0 +1,2 @@
+Are you wanting to do some sort of surface fitting, e.g. with the Curve Fitting toolbox? Or do you just want a type solution?
+

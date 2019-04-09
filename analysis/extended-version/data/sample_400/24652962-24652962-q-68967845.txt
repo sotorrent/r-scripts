@@ -1,0 +1,4 @@
+I have 2 different database : db1@srvr1  and db2@srvr2 .
+I have a list of 80 tables and 100 columns that exists in db1@srvr1 and not exists (missing) in db2@srvr2.
+I want to add those missing tables and columns to db2. how to that in a quick way ?
+

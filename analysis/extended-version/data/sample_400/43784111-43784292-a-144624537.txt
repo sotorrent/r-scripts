@@ -1,0 +1,3 @@
+Would recommend to create another empty div after your div where you have the content, a solution with absolute position is not good/useful, because you will have more things on your website and then they will be on top of your "a" text or whatever text you will add with :after.
+So just create another div :-)
+

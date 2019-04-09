@@ -1,0 +1,2 @@
+When a normal notIfication builder is created, extra values are passed correctly. But when i add BigPictureStyle to the notification, it passes old Intent Extras.
+

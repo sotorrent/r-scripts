@@ -1,0 +1,2 @@
+Consider using events instead. Fire an event when your thread operation has completed.
+

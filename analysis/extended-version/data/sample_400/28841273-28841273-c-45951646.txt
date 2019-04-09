@@ -1,0 +1,2 @@
+possible duplicate of How to I launch a ruby script from the command line by just its name?
+

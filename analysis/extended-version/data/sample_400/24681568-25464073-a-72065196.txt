@@ -1,0 +1,4 @@
+I know that's late but I've faced the same myself
+for example let's say you don't want to allow modification of e-mail unless the e-mail is the default one
+that's just an example but i'm sure you can inspire yourself
+

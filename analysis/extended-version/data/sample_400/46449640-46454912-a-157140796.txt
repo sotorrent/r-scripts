@@ -1,0 +1,4 @@
+The way you're using the store, ExtJS will do a request every time you change the page, sending the page number parameter to the URL set to the store.
+If you want to do client-side pagination using ExtJS, you must set your store's proxy type to , load your data into the store and then ExtJS Grid will handle pagination as you expect.
+Do an like that:
+

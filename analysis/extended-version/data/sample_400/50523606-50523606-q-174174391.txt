@@ -1,0 +1,5 @@
+I created a centered slightly rotated section border. Also, I gave each side of the section different color. Here what my basic code looks like:
+Can I achieve border overlapped on each other? Is it possible by just using CSS or Do I have to create separate section/div for that?
+HTML & CSS Design and build websites
+Reference: Cover picture of HTML & CSS Design and build websites by Jon Duckett.
+

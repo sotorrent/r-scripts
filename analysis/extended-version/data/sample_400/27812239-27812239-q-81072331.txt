@@ -1,0 +1,13 @@
+I using thymeleaf and spring boot to build my web application.
+I have problem on internationalization.
+I need to change all text on my web application into outer file based (all text include validation).
+I have code like this:
+
+error.required=The {0} is required
+My web application have 2 validation.
+Validation from modal warning and validation from javascript for bootstrapvalidator.
+For javascript, it work fine after I implement
+But my problem is on thymeleaf.
+My question: How do I inject {0} from (The {0} is required) with another string?
+NB: I have tried to do something like this but the result is error 
+

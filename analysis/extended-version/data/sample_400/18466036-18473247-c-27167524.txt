@@ -1,0 +1,3 @@
+Thanks for the reply Drew.
+Anyway, as I wrote before, it's not a problem related to events fired or not, because I can see that I reach the function , and I see the message printed on the console with the statement . So, the events/callbacks stuff works correctly AND the activePage id is correct. But the panel is never visualized :\
+

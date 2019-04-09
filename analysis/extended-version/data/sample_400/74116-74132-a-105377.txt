@@ -1,0 +1,2 @@
+There are a number of standards of course.  The likely one to use is some flavor of xml since there are libraries and tools that already exist to help you work with it, but nothing is stopping you from inventing your own.
+

@@ -1,0 +1,2 @@
+I had a similar issue in the past. You need your row view to implement . Check this question.
+

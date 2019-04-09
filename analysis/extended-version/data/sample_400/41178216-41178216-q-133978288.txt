@@ -1,0 +1,8 @@
+Seems like prefer to use to allocate space in multi-thread program. I just tried set and to turn off usage but failed:
+A simple test piece of code is as following:
+The output is as following:
+allocated the space on a high-address instead of normal heap address. However, if we change the code in to following:
+The output is:
+Instead of using , allocated the space on a normal heap. I wanna if it's possible to turn off usage for in multi-thread program?
+My environment configurations:
+

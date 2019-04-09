@@ -1,0 +1,2 @@
+No sorry, my converted wchar string has random bytes tacked on the end for some reason, that's the problem. It's like it doesn't have \0 until it randomly hits one. I thought mbstowcs was supposed to copy the string terminating null byte(s?) when it did the conversion.
+

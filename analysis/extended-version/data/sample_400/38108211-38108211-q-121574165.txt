@@ -1,0 +1,14 @@
+Ok, so I am building on my first question here
+trying to only echo only usernames of people whose id is NOT in a mysql table called conversation along with a set id (the person who is signed in).
+I echo the people who their id is in a table conversation REGARDLESS if a search bar is posted here:
+This works well, meaning only individuals who a conversation has been started with (a row exists for this user and the one signed in conversation table) are echoed in a link.
+Problem comes here with the search bar because it echoes all individuals even if a conversation has been started, resulting in duplicates:
+enter image description here
+(notice the 2 khusteds)
+This does not make sense because here I select the row in conversation where user_one is the signed in user and user_two is the second user and only echo a link if the result is FALSE (meaning there's no conversation):
+But it looks like the query is always false because again, all users are echoed. Why is this happening? How can I only echo users not in conversation table with the signed in user (user_one)?
+EDIT:
+enter image description here
+new code (sorry for screenshot); :
+enter image description here
+

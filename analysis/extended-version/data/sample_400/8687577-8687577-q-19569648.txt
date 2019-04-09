@@ -1,0 +1,6 @@
+I've massaged a good snippet found on jsfiddle into something very close to workable that creates breadcrumb links from an html ul nav structure, with it's origin based on a 'current' class (you are here) being set on a list items anchor. working example:
+my problem is integrating a slightly different ul html menu structure. I been after this one for a couple of days, maybe some kind soul on here has some spare brain power they can lend on this one. Here is the broken one:
+This is the tricky part...
+since the nav system is already in place and fully functioning (-breadcrumbs), i prefer to make the proper adjustments to the jquery statements over changing the html formatting.
+many advance thanks...
+

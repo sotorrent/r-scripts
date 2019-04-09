@@ -1,0 +1,2 @@
+I believe since you are using the no args version of split, it will strip the whitespace for you.
+

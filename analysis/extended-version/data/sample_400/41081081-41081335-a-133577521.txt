@@ -1,0 +1,6 @@
+How about keeping track of the Forms parents so you have direct access.
+For example in your Form1:
+Then in your Form2 when Form3 is called:
+Then when you want to dispose of Form3:
+Something along this lines for as many open forms as you need. If you need to drop back to the previous form, then make the Parent 'this' instead of 'this.Parent'
+

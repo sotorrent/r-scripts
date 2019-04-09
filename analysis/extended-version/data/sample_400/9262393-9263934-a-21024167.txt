@@ -1,0 +1,2 @@
+One approach you might want to consider is to create an isolated AppDomain for your unmanaged component.  In this way it won't be orphaned when an IIS-hosted AppDomain is recycled.
+

@@ -1,0 +1,5 @@
+I am assuming that you want the list of matches (as in your comment) and not some sort of count by as suggested in the original question.  In any case, you can add aggregation to the following query, if that is what you really want.
+This query uses a clause to get up to 10 user ids for each matchid.  The idea is to count the number of users with a smaller match_id and compare this number to :
+EDIT:
+The following query does the summary by user:
+

@@ -1,0 +1,2 @@
+@Gabrielle : I don't want to print it, I want to set it to a property of a custom NSObject.
+

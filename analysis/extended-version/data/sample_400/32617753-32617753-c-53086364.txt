@@ -1,0 +1,2 @@
+ok don't put it in the new table put it in a special table called "old_password_sha_hashes" and validate one time against that table if you need to.  If you migrate to a new database you don't want to make your application connect to the old one and you don't want to maintain the old one after you migrate.
+

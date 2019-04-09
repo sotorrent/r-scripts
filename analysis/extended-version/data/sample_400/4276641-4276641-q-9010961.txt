@@ -1,0 +1,6 @@
+I have Excel Cell Address like A1,A2. So, how to access this cell programatically using poi3.6
+another way is row=mySheet.getRow();
+cell=row.getCell();
+But i have the address in the format of A1 ... so, how to access those cell programatically
+please guide me to get this.
+

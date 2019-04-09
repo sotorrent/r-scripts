@@ -1,0 +1,25 @@
+i installed omnet++ on my ubuntu 15.10
+i am trying to run omnetpp.ini on TKenv simulator but it gave an error i don't know what it is.
+this is the error
+
+<!> Error during startup: Could not start user interface 'Tkenv'.
+OMNeT++ Discrete Event Simulation  (C) 1992-2014 Andras Varga, OpenSim Ltd.
+Version: 4.6, build: 141202-f785492, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+User interface 'Tkenv' not found (not linked in or loaded dynamically).
+Available ones are:
+Cmdenv : command-line user interface
+End.
+Starting...
+$ cd /home/ibrahim/Downloads/omnetpp-4.6/samples/ijij/Simulations/radioTest
+$ ../../ijij -r 0 -u Tkenv -n ..:../../src omnetpp.ini
+Simulation terminated with exit code: 1
+Working directory: /home/ibrahim/Downloads/omnetpp-4.6/samples/ijij/Simulations/radioTest
+Command line: ../../ijij -r 0 -u Tkenv -n ..:../../src omnetpp.ini
+Environment variables:
+PATH=/home/ibrahim/Downloads/omnetpp-4.6/bin::/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+LD_LIBRARY_PATH=/home/ibrahim/Downloads/omnetpp-4.6/lib::
+OMNETPP_IMAGE_PATH=/home/ibrahim/Downloads/omnetpp-4.6/images
+please help me.
+[error screen shot[1]
+

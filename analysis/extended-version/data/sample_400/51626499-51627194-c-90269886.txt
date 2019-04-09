@@ -1,0 +1,2 @@
+today I made some changes in code and now options  like - copy, cut and paste - are shown me. But when I click on paste or copy, nothing happens. It seems me, like that buttons are blocked or cant do what they should... Please do you know, what it could be?
+

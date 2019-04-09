@@ -1,0 +1,2 @@
+The SQL is fine so there must be something in multi_query, which I am not versed in, or you have some other query that might be adding it that tag back to the db.
+

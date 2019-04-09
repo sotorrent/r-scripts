@@ -1,0 +1,2 @@
+I think "better way" may be a matter of perspective. As far as I know, php doesn't have a means for defining functions like Java, and that's ok seeing as they're just different languages. Succinctly, the answer would be "no" that you cannot do this and have to rely on the self definition. I'm not the end all authority on this, but in my 8+ years of PHP and numerous frameworks, CMS packages and adopted code I've never known of this being possible.
+

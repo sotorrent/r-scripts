@@ -1,0 +1,8 @@
+There  is already plenty of information here. However, I'd like to propose some ideas to adress your inital problem, being the categorisation of extended character set.
+For this, I suggest the use of [][1] (country specific topics), and especially the new locale-aware form of isalpha(), isspace(), isprint(), ...  .
+Here a little piece of code to help you to find out what chars could be a letter in your local alphabet:
+This will print out the ascii code from 0 to 255,  followed by an indicator if it is a letter according to the local settings,  and the character itself if it's printable.
+FOr example, on my PC,  I get:
+screenshot because of char encoding differences
+And all the accented chars, as well as ñ, and greek letters are considered as alpha, whereas £ and mathematical symbols are considered as non alpha printable.
+

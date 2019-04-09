@@ -1,0 +1,9 @@
+I have seen this question which allows one to check for the existence of a member function, but I'm trying to find out whether a class has a member type.
+In the example below, both evaluate to "false", but I would like to find a way so that evaluates to false, and evaluates to true.
+Is this possible?
+Edit: implementing a specialisation in response to the answers below:
+
+...if you use C::bar in the target template, the template will be
+discarded automatically for types that don't have that nested type.
+I have tried to do this, but am clearly missing something
+

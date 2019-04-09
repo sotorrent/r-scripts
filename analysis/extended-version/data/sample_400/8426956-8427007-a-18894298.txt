@@ -1,0 +1,3 @@
+When you construct your BigDecimal, you are doing it with an integer.  In Java, integers can only hold 2^31, so when you construct your BigDecimal that way, that's all it will allow.  The compiler will complain if you give it a larger int.
+The way to solve this is to pass in a String representation of your number.
+

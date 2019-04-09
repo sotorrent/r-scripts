@@ -1,0 +1,4 @@
+Below is my Build.scala file
+There is no error in test, but the cleanup hook is not executed after test
+what is the issue?
+

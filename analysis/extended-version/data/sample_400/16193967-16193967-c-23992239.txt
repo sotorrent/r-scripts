@@ -1,0 +1,2 @@
+There is nothing in that code that could be leaking save for the returned (if it is retained somewhere).
+

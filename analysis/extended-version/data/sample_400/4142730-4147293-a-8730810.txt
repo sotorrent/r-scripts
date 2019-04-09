@@ -1,0 +1,3 @@
+Here's something. When nothing else is working, and rules can usually get the job done. I'm not sure it produces the correct results w.r.t. your graph-coloring question but hopefully gives you a starting place. I ended up using instead of named variable because there were some scoping issues (also present in my previous suggestion, vs. ) when I used a named variable that I didn't spend the time trying to work around.
+I feel like it lacks typical Mathematica elegance, but it works. I'll update if I'm inspired with something more beautiful.
+

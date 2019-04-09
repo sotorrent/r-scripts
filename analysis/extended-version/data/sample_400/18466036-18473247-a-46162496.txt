@@ -1,0 +1,14 @@
+Update 1
+I created three basic pages to test with.  This is the structure of the pages:
+Pages two and three are the same except the page and panel id's are changed replacing "one" for "two" and "three" respectively for each page. (the links in the content area are adjusted to point to the other two example pages as well.)
+I have the following function in the head .. /head section of all pages:
+You'll notice in the code above that find is not necessary because we are able to target the panel by it's unique ID.  I also found a post that suggested the use of as being more efficient than
+I just use a simple link in the content area of each page to call the showMenu function.  You can bind your swipe event to call the showMenu function, I just did it this way to keep things simple.
+Anyway,  the panel works fine on the first page loaded and subsequent pages.  Your question doesn't clarify if you are using the same panel id value for all panels in each page or not.  I do want to point out that I am using different id values for each panel.
+The other thing I noticed while playing around is that there is a bug as to when activePage is available which may or may not be related to your issue.
+See:
+Original Answer
+I have noticed that JavaScript placed in a page div section is only loaded/executed ONCE EVER for the first page that is loaded in a JQM site and never again within the same session.  However, any JavaScript code in the page div section for any other page EXCEPT the first one loaded will execute every time.
+I don't put js code in the page div anymore and instead use the pageshow or pageinit events depending on what I am doing.
+The following shows example code that, when used, would be placed in the head .. /head section of every page (AFTER the jquery library is loaded and BEFORE the jquery-mobile library is loaded):
+

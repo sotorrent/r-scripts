@@ -1,0 +1,2 @@
+My legacy password and salt are currently in 2 separate columns. Looks like I should combine them, delimited by "|" (pipe), into the PasswordHash column. And returning SuccessRehashNeeded will generate the Identity hash and update column. Is all that accurate?
+

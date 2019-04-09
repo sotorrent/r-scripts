@@ -1,0 +1,2 @@
+@ChinotoVokro But I don't get the A change that gains 1/1000 inside a 1000 iteration loop is still just a 1/1000 gain If you gain 1/1000" on an operation which is not in a loop, and later that operation needs to be moved inside a 1000 iteration loop, the original optimization now causes a 1" gain and no longer a 1/1000" gain. This is my point (about the loop thing only; my considerations about time spent I do agree that were wrong and confusing).
+

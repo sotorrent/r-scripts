@@ -1,0 +1,11 @@
+Modern engines would not maintain unused variables in the outer scope.
+Therefore, it doesn't matter if you set before returning the inner function, because the inner function does not depend on ("close over") .
+If the inner function did depend on --perhaps it returns it--then setting is certainly not what you want to, because then, well, it would be null instead of having its original value!
+Assuming the inner function does depend on , then yes, as long as is being pointed to (referred to by) something, then the value of will have to be kept around. But, that's what you are saying you want! How can you have something available without having it be available?
+Remember that at some point the variable which holds the return value of will itself go out of scope. At that point, at least until is called again, will be garbage collected.
+The general rule is that you don't need to worry about memory and leaks with JavaScript. That's the whole point of GC. The garbage collector does an excellent job of identifying what is needed and what is not needed, and keeping the former and garbage collecting the latter.
+You may want to consider the following example:
+And examine its execution in Chrome devtools variable window. When the debugger stops in the inner function of , note that is not present as a local variable or as a closure. For all practical purposes, it does not exist.
+When the debugger stops in the inner function of , we see the variable , because it had to be preserved so as to be accessible in order to be returned.
+The article you quote is four years old, which is a lifetime in the web world. I have no way to know if jQuery still is subject to leaks, but I'd be surprised, and if it is, there's an easy enough way to avoid them--don't use jQuery. The leaks he mentions related to DOM loops and event handlers are not present in modern browsers, by which I mean IE10 and above. I'd suggest finding a more up-to-date reference if you really want to understand about memory leaks. Actually, I'd suggest you mainly stop worrying about memory leaks. They occur only in very specialized situations.
+

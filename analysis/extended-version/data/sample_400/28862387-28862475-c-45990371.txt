@@ -1,0 +1,2 @@
+That is absolutly spot on! Thank you so much, I've never seen the DirectCast function, shall take note of that one going forward. Now all perfect, thanks again
+

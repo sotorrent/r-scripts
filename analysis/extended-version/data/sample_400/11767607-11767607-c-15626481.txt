@@ -1,0 +1,2 @@
+It sounds like someone has bad data in their model :-) Is "Robert G" a valid FirstName? LastName? If not, don't allow it, then don't bother to look.
+

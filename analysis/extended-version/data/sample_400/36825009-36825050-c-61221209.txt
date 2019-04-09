@@ -1,0 +1,2 @@
+@NimrodYanai Yes, It is a column alias for expression.
+

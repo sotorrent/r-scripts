@@ -1,0 +1,3 @@
+From what I can see, none of the answers given will work.  I am copying this from a website, but the code below works great for processing samples from a file:
+Taken from:
+

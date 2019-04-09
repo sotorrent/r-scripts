@@ -1,0 +1,2 @@
+You're right isofar, that you need to divide the 4096 by 4 not multiply. The wiki entry is was worded badly.
+

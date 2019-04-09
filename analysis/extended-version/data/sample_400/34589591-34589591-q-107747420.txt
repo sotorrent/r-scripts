@@ -1,0 +1,5 @@
+I have a circle shape dynamic body that simulates a bouncing ball, I set the restitution to 2 and it just gets out of control to the point it does't stop from bouncing up and down. So I want to slow down the ball linear or angular velocity using Damping.
+When the linear velocity of the ball reaches 80 or above I set its linear Damping to 50 then it  just goes super slow motion. Can someone please explain me how Damping works and how to use method properly, thanks.
+EDIT
+This is what I did, if the linear velocity exceeded from what I need it sets the ball linear Damping to 20 if not always set it to 0.5f. This creates and effect that the gravity changes constantly and instantly. However @minos23 answer is correct because it simulates the ball more naturally you just need to set the MAX_VELOCITY that you need.
+

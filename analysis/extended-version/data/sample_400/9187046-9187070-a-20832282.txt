@@ -1,0 +1,3 @@
+I didn't even know app_offline.htm worked for MVC :-)
+As an alternative, you could create a global filter or if you have a common controller base class that when the maintenance flag is turned on, redirect all traffic to the maintenance view (flag can be in DB or app config).
+

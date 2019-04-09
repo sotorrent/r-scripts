@@ -1,0 +1,5 @@
+I'm developing an application using GWT 2.6.
+Now I have a task to implement a functionality to switch between simple/expert modes (of view) at run-time. It means to show a simplified version of view which may contain another widgets.
+But the problem is that all the views in most cases are "static" and defined as singletons (using GIN).
+Is it possible to implement this using only GWT and what should I use to make it?.
+

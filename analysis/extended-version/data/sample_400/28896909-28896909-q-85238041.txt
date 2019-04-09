@@ -1,0 +1,3 @@
+Is there a way to call something like this "clang-format --style=Webkit" over the cpp project folder rather than running it separately inside each code?
+I am using the clang-format.py and vim to do this. But I assume there is an easier way to apply this once.
+

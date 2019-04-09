@@ -1,0 +1,2 @@
+I made the whole application on 32 bit win 7 home basic. And tried to run it on client's pc,  same error. I also installed visual c++ redistributable 2008 on client's pc, SAME ERROR.
+

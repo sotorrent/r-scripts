@@ -1,0 +1,2 @@
+I need to call a controller method to post the model property and value to the server.  Sorry for not mentioning it.  This also does not seem to work when the value is already preset to true.
+

@@ -1,0 +1,3 @@
+I am trying to generate documentation with sandcastle help file builder. While building the project in the sandcastle i am getting the following error.
+Can anybody help me to resolve this issue? I also tried adding it separately to project references in the sandcastle but no help.
+

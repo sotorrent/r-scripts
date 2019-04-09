@@ -1,0 +1,2 @@
+Sorry I don't fully understand how to integrate this into my existing code. Am I to replace everything in my view with this? how would I display this in my template?
+

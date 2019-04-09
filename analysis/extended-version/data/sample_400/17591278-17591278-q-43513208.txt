@@ -1,0 +1,10 @@
+I have an array, $items, which contains lot of informations:
+name, size, quantity, color, id...
+I'm using 'for' loops to sort $items values by color and save the sorted values in a new array, But the values I get in the generated array are false or not right ordered.
+In the way to sort $items, I first created 3 arrays from $items
+
+Then used them as reference to compare to $item
+So echo are displaying the structure that I wanted
+But when I'm applying a print_r on $sorted_items, I get 4 arrays whereas 3 (3 colors), and worst, color rows have a false value and the other values inside the sub arrays are not in the same order as displayed in the echo...
+Any Ideas?
+

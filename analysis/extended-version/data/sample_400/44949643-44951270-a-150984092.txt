@@ -1,0 +1,4 @@
+May i play a bit with itertools for an answer?
+Prints out:
+Kudos to and google-fu
+

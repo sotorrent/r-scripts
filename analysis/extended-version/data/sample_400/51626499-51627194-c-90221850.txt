@@ -1,0 +1,2 @@
+This Alert shows every-time, when user is logging. So user start App and then this alert shows. And I need, if user has some other app, for example lastpass where he copy password and then he want it to paste it in my app.
+

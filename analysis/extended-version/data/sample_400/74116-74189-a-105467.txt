@@ -1,0 +1,3 @@
+The general problem is usually referred to as serialization of your application state and in your case with a source/target of a file in whatever format makes sense for you.  These days the preferred input/output format is XML, and you may want to look into the existing standards in this field.  The problem then becomes how do I map from the state of my system to the particular schema.  Boost has a serialization framework that you may want to check out.
+/Allan
+

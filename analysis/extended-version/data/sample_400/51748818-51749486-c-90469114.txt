@@ -1,0 +1,2 @@
+The reason why I have two queries is because I have a limit clause in the main query and I need the counts query to get me the total count for pagination. In this case, since I only fetch 5 at a time, it wouldnt work I guess.
+

@@ -1,0 +1,6 @@
+I hope I'm understanding this question correctly -
+Are you basically asking inf there is a natural internal exception to adopt instead of running your own exception?
+Or are you just not aware you can do something like:
+if i missed the point, let me know and I may update.
+As fro a reason to not throw your own exceptions... I can't say I know of a real benefit to this. It would seem to me that in_array() is perfectly acceptable and throwing exceptions may just be personal preference and not necessarily a worthwhile concern for performance.
+

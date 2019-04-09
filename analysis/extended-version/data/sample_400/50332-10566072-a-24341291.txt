@@ -1,0 +1,2 @@
+In case it helps anyone else - I encountered this problem with the WPF TreeView (not Windows Forms as listed in the question) and the solution was simply to make sure to mark the event as handled in the drop event handler.
+

@@ -1,0 +1,2 @@
+thanks for your reply...its working...suppose if there are ten columns and I wanted to show in the sixth column the image...how can I show
+

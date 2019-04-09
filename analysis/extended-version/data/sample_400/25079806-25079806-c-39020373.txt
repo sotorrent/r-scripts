@@ -1,0 +1,2 @@
+Is the category stored in the description, keyword or name; are there other properties? Can the category be in any property?
+

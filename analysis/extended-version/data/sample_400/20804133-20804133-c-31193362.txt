@@ -1,0 +1,2 @@
+Oh, I didn't realize you need rep for that, sorry. I guess my questions boil down to: How would you like to use your framework once it's finished? Can you add an exmaple of how you would instanciate the classes, and how you would use them to control the hexapod?
+

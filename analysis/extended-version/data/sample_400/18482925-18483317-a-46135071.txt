@@ -1,0 +1,3 @@
+First rule will redirect from to .
+Second rule will redirect internally so the URL will remain while displaying the content of .
+

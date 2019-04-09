@@ -1,0 +1,2 @@
+Is it the OCD that makes you put the superfluous parens round return values too?
+

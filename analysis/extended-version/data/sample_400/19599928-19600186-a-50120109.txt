@@ -1,0 +1,3 @@
+It sounds like you're trying to build a [](
+If you want additional functionality in your class beyond just having attributes, you can just inherit from the instead of using it directly:
+

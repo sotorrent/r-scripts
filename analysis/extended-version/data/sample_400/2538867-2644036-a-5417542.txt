@@ -1,0 +1,2 @@
+Try changing the StarTeam client personal options. There's an option under Worksapce | Display called Custom Tools - from the manual  "Displays custom tools created as part of StarTeam Extensions. If no custom tools are configured, clear the Custom tools check box to prevent custom tools from attempting to load with each view window." I've found clearing this field dramatically speeds up the StarTeam client load time, especially over a slower connection. It 'may' help with the SDK app as well, but you will have to test this.
+

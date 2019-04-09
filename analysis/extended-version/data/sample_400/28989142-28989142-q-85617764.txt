@@ -1,0 +1,6 @@
+I want to use a javascript loop to check if a div exists and if it does show it onload. I have been tasked with this but am very much a novice when it comes to javascript.
+Here is my javascript:
+HTML:
+I have added the createtitleid function to the onload statement.
+Right now nothing happens, but when I check the console there are no errors. The final page will have anywhere between 1 and 10 divs with an id using the naming convention of div_title and the number. The script should check to see if the div id exists and if so show the title. Any help would be greatly appreciated.
+

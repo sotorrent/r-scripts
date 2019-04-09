@@ -1,0 +1,2 @@
+Actually, it looks like I'm right: makes this call: . is an asynchronous call and seems to be called after that call was made. You are changing the code so that is called after was loaded, which is a big difference.
+

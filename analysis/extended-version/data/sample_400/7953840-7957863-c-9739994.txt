@@ -1,0 +1,2 @@
+Yes, you need to update ADT. Go to Eclipse, select the menu "Help" and pick "Check for updates", then update ADT.
+

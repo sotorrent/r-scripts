@@ -1,0 +1,2 @@
+Ah, I was thinking of , not . I don't think s use color spaces. It could also be that the conversion to and from HSB isn't reversible. Perhaps one has a wider gamut than the other?
+

@@ -1,0 +1,2 @@
+What exactly are you trying to count? The code you've posted is impossible to understand without knowing what the class does, so I doubt you'll get any answers as this question is now. Please either explain with words what your algorithm is and the methods of that class do, or include the code. You should also probably add the tag, in case it's some language feature you're tripping on (I don't see anything obvious, but I haven't written java in 10 years, so that doesn't mean too much).
+

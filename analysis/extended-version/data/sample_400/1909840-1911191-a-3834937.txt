@@ -1,0 +1,4 @@
+Explain what you mean by "complex", that you cannot do with the system as it exists.
+Controllers can have subcontrollers... you can either compose subcontrollers/views and delegate work, or have complex inheritance hierarchies of controllers to manage behavior.
+I would love to see a concrete example of what it is you think you cannot do.
+

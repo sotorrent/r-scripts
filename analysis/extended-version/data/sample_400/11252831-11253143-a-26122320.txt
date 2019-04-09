@@ -1,0 +1,9 @@
+i just cant figure out how it knows to cut the words by whitespaces
+Since the type of is , you need to read the description of that takes an on the left and a on the right.
+To quote cppreference.com
+Characters are extracted and appended onto until either:
+characters are read, where is if , otherwise is ,
+an EOF marker is read from , or
+is true for the next character in .
+That last clause says, in English, "stop if the next character is a space"
+

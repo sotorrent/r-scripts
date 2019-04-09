@@ -1,0 +1,6 @@
+Adding an unnecessary statement won't make any real difference in terms of optimization. Write code for humans and not computers.
+It's not need if you won't use function to get a result (i.e. ), such as:
+You see I have 3 functions and all have not statement, and it's just fine.
+Entering in opinion lands, I would say that you could leave it for your readability and comfort, but you would have an approach different from most of programmers. And as less is better (KISS), and if it's not necessary at all, it's better to omit it.
+PS: The result of a function without , will be , naturally.
+

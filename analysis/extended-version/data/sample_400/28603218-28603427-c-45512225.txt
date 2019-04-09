@@ -1,0 +1,2 @@
+No you can't able to able to add more then one @model in a single page. instead of it you can use any other class in your car class. Example: !st create a class like bikeClass in name of bike and thencreate a object for bikeclass in carclass. Then in your index view you can able to call bikeClass like @Model.bike( which you can use to pass to another partial view).
+

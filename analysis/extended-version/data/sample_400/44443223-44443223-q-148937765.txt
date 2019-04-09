@@ -1,0 +1,4 @@
+I am trying to use requests_mock on a function that I am testing.
+This returns an error which suggests the mock adapter is not making its way into the tested function.
+How can I pass the mock adapter into the function?
+

@@ -1,0 +1,15 @@
+Hello again fellow programmers
+Table:
+Customer
+cust_nbr
+cust_name
+cust_street_address
+Cust_City
+Cust_Zip
+Cust_industry_code
+I am trying to select:  customer number, customer name, customer zip & customer industry code for all those customers who have industry code between 1000 and 2000 or more than 5000 and then sorting the output by industry code.
+here is my attempt:
+
+do you see any issues with it? Someone mentioned there is a minor issue but i can't spot it as it seems to be giving me what i need.
+Thanking you kindly.
+

@@ -1,0 +1,3 @@
+or if you are using a config file and want to format multiple file types:
+
+

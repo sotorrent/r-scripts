@@ -1,0 +1,6 @@
+I am building a webpage using Twitter Bootstrap. I have a class where I put my content. The problem is, that on one of the pages where I have 2 boxes, one of them doesn't have the proper width of the container. The first box is wider than the second one and It doesn't look nice. I think that there will be a problem with an unclosed div or something like that, but I wasn't able to figure that out.
+HTML
+Here is the webpage, so you could look at what it does:
+
+  - I noticed that the footer acts differently than on the other subpages too. I think that the container doesn't apply on the whole content, but I don't know why.
+

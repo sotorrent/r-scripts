@@ -1,0 +1,2 @@
+Just realized that the spacing error is due to the formatting of ".fa-stack" rather than "margin-left".  Thank you for solving this problem - looks like I have another one to deal with now!
+

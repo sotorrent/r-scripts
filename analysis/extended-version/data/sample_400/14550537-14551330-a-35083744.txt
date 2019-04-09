@@ -1,0 +1,2 @@
+This is called run-length encoding. Check out problem 10 of 99 Scala Problems (click on the problem numbers for solutions).
+

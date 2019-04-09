@@ -1,0 +1,8 @@
+EXC_BREAKPOINT in this sort of context generally means that an NSException was thrown, which is a handy place for debuggers to break.
+The two likeliest reasons (not mutually exclusive) for something to go wrong with self.myWorker.eventInputStream are
+
+  - You're trying to read from it after its source was closed
+  - There's a thread contention issue with that source
+    That this is crashing in an NSThread makes the second option probable. That you report this happening "1 time in 100 or something like that" makes the second option a virtual certainty.
+    Just to be sure, put everything using self.myWorker.eventInputStream on the main thread. If crashes immediately disappear completely, as would be expected, then you need to figure out how to properly lock access to the stream so that whatever the contention issue is here disappears. Good luck!
+

@@ -1,0 +1,2 @@
+Is there any advantage in packaging those six queries into one string instead of sending six queries one by one?
+

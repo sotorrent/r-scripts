@@ -1,0 +1,4 @@
+If you do not want to keep the original documents (and enrich them with triples), but instead to store only triples, the easiest is to generate the triples.  The preferred way to do this is indeed to generate the sem:triples documents yourself.
+The key point to take into account is how to group triples in a document.  As triples are stored in a document, like any other document in MarkLogic, grouping them in logical units makes it easy to "insert them all together", or "delete them all together".
+This depends on the entities you are representing (at the conceptual level) and the relations
+

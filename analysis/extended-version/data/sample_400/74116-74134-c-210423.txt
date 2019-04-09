@@ -1,0 +1,2 @@
+Do not serialize your object model. One change to your object model and you can read old formatted files.
+

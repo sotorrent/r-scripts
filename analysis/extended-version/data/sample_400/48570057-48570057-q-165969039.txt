@@ -1,0 +1,7 @@
+I wrote a Rest webservice in jersey. when I return from get method to client, client recieved a HTTP ERROR: 500 response if i return String Object from MyMessage class it is fine. service Class is:
+public class MyMessage {
+}
+and class object that return from service is MyObject that wrapped message:
+}
+I use embedded jetty server and this is pom.xml :
+

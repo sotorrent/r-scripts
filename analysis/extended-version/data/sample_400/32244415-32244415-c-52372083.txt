@@ -1,0 +1,2 @@
+@Fka: Imagine a piece of paper.  Draw two rectangles of different sizes, each sharing a border with the other.  The paper represents, for lack of a better term, your virtual desktop.  The rectangles represent your monitors.  and are given in virtual desktop coordinates.  There's no need to fret over monitor resolutions.
+

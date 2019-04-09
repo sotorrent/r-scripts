@@ -1,0 +1,2 @@
+Since the base class destructor is virtual, destructor for your derived class destructor will be called when and where needed. There shouldn't be any problems.
+

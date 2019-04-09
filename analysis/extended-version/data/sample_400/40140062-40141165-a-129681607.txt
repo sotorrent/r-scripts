@@ -1,0 +1,13 @@
+what's the best practice of finishing the JS function if it doesn't
+return anything?
+A function returns by default. The use of is therefore only necessary if you want to override the default behaviour.
+
+Why most leave it out when they can
+The Javascript community seem to dislike unnecessary verbose code. It might even be said to be a sport to make the code as short and compact as possible.
+Why this may not be the best practice for all
+The habit of always using return may serve as a good reminder that a function always returns something and thereby remind you to reflect on whether the default behaviour should be overrided.
+However an experienced programmer will have such considerations deeply internalized and therefore rarely have need for such reminders.
+Conclusion
+As one gains experience the sport for less verbose code intensifies and in that context writing code just confirming default behaviour is an absolute no-go.
+So: in the long run I would say most people end up leaving it out and that it is justified to do so because of the high degree of internalization.
+

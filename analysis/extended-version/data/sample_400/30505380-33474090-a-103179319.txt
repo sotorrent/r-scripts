@@ -1,0 +1,2 @@
+Add Application.ScreenUpdating=false as nhee says and replace some values with a With...End With statement, in order to be more readeable and slightly faster. And pre-calculate Rows.count!:
+

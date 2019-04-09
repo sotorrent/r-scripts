@@ -1,0 +1,2 @@
+Thanks. html lang doesn't working. It's odd to must using i18n for this issue.
+

@@ -1,0 +1,8 @@
+Short answer: a process spawned specifically to handle the RPC.
+If we take a look at the code for the rpc module, we see that it wraps the underlying normal inter-node messaging features in disterl:
+
+What is happening there is that when cast is called on the current node, a new process is spawned with the provided MFA to be executed. If case is being called on a different node, then a message is sent via to the indicated node's group leader, and the group leader on the target node will spawn a process to handle the MFA.
+The handling code for the cast is here:
+
+In the case that you already know which process you want to dispatch a message to on the other node, then it would possibly make more sense to treat the mesh of nodes as a supernode, bypass the rpc module entirely and just make a gen_server call or cast directly to it. Which approach to use is a matter of taste and architecture, of course.
+

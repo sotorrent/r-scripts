@@ -1,0 +1,23 @@
+Now basically there are two questions here, let me just gently introduce you to the problem I'm having at the moment. Let's say we have a regular DataGrid, and I try to apply the on the row for custom functionality and at the same time avoid selection, as this expands the Details view. I thought that this post would help; it was directed at , but with few adjustment it should work the same, right?
+
+Why would you want to do that?, you may ask.
+I want to avoid opening the Details on right click, because in the main project Details section makes a (sometimes) lengthy trip to the database, and right-clicking would only set the appropriate flag-property in the view model in collection.
+
+Questions time:
+
+  - Why is the on the listed as
+    and not ? I thought all events were
+    .
+    enter image description here
+  - And the more important one: the above solution works if I put a breakpoint inside , selection does not occur and Details are collapsed, everything works
+    as intended. If I remove the breakpoint though, item is selected and
+    Details section opens as if the event was not stopped from
+    propagating. Why does that happen? I thought that setting the
+    to on the should just indicate
+    that the event is really handled.
+
+[EDIT]
+Now I've found a 'sleazy' workaround, I can just attach the event:
+and then hook up to event:
+It works for my particular case, but subjectively looks very smelly, so I'm open to any other suggestions. Especially why the simple on mouse event is not enough to suppress firing of later on :)
+

@@ -1,0 +1,2 @@
+@CarolineBeltran  if you encode ñ in a windows text editor, it's one encoding.  If you write to the console, it will use the code page of the console, which is another encoding.
+

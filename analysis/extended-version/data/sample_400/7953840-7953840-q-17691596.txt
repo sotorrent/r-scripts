@@ -1,0 +1,4 @@
+I'm trying to record sound using Android Emulator. I know that this question is popular over the internet, I checked many posts, it seems that only one person succeded: And following his advice and the official site tutorial and also other resources, I'm still not able to record. My application throws exception at line:
+I added both audio record and external storage permisions in AndroidManifest.xml and both audio hardware settings to the emulator 2.3.3 on Win 7. Is anything wrong within my app, the way I storage the file or something else? Please, if anybody has any idea feel free to share, it will be appreciated.
+Here is the full source code:
+

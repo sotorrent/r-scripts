@@ -1,0 +1,5 @@
+HTML Template
+
+Java Script
+Just above I'm setting the canvas width and height to 60x60 but i cant use the variables I've passed in without getting an error, and I cant figure out why. the error is
+

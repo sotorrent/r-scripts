@@ -1,0 +1,2 @@
+I can't see how. Alternate solution: put the file in your public folder, then you'll be able to use its url.
+

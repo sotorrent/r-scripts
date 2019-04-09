@@ -1,0 +1,2 @@
+I cant figure this out and i am sure its really simple. I have a boostrap button group toggle. It says male|female.  On page load it shows male so I want it to be toggled/selected to male on page load. Does anyone know how to do this simply?!
+

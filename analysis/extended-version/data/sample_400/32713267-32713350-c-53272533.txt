@@ -1,0 +1,2 @@
+Thanks for reply. But what if I have an array with words to search for and I don't know the sequence of occurrence for these words in the text?
+

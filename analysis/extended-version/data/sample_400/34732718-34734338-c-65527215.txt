@@ -1,0 +1,2 @@
+I wonder why the OTF/TTF specifications aren't updated to support more than 65536 maximum glyphs. Clearly we've surpassed this limit a while ago and downloading a single font would be easier than trying to navigate a font family.
+

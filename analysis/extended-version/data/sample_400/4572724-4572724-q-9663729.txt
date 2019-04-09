@@ -1,0 +1,6 @@
+I'm struggling with deciding how many HABTM relationships I really need in my cakephp app.  I guess I don't quite get what "has" truly means.  I don't want to have more HABTM tables than necessary.  Here's what I have in my database:
+HABTM , HABTM , HABTM , HABTM , hasMany , hasMany , hasMany .
+Also, I have two aliases for my model (and ).  This is one of the reasons I ended up with so many HABTM relationships, but I'm not sure it's necessary.
+Do I have too many user HABTM relationships?  Would it be better to just have cake recurse through my models?
+Thanks!
+

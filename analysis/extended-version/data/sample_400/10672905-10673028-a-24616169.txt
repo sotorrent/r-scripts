@@ -1,0 +1,6 @@
+layout_weight specify extra space in the layoutfot the view. you should try measuring your screen first like:
+and then doing some  calculation like width*0.6 and 0.4 , this way your layout will always have 60 40 ratio.
+OTHER WAY:
+Set the sum of weight, like  and then to give 60 40, android:layout_weight="6" and android:layout_weight="4".
+Hope This Helps
+

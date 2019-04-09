@@ -1,0 +1,2 @@
+Also knowing how to use namespaces usings will help you avoid with future questions when your domain model is called , or some other common type name used by the framework, or a 3rd party library where you can't simply "rename the type" (though you can alias it with usings)
+

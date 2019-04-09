@@ -1,0 +1,9 @@
+The main user-case is:
+
+1.  Create the 2d floor plan
+2.  See the 3D view of the room in colors and in dynamic lighting (switching on and off the lamps)
+3.  Select the furniture from the large library of predefined samples.
+4.  Change the color and texture of the furniture samples.
+5.  Create the photos of the 3D room view from different points.
+6.  Also user can move and turn the camera in the room and discover the view.
+

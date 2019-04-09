@@ -1,0 +1,6 @@
+Use this one :
+This is exactly answar of your question
+This is your Javascript function
+and use button to call it.
+add this in HTML
+

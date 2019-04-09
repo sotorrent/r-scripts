@@ -1,0 +1,2 @@
+Yes you are right. But the problem is even I change to export class Draggabilly, the error still there said "Could not find a declaration file for module 'draggabilly'. '/node_modules/draggabilly/draggabilly.js' implicitly has an 'any' type".   It's seems the typescript ignore my local  declaration file
+

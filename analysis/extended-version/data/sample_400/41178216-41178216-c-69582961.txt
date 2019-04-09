@@ -1,0 +1,2 @@
+@JimMa: I don't know what your system design is. Do the mmap with PROT_NONE flags at the very beginning of main. Later in your program if you are actually allocating virtual pages in that memory range, you just change your mmap calls to use MAP_FIXED and it will overwrite the old mmap setting for the new call. But if you are using that high range just as some kind of marker on pointers, just leave the high range mmap alone and it will block other users of it.
+

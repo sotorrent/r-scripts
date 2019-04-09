@@ -1,0 +1,2 @@
+If you tried with that SQL, you did not get dept. no. You didn't get anything, because it's not valid SQL.
+

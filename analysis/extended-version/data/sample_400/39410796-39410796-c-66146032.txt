@@ -1,0 +1,2 @@
+@pkc456 i have nothing to do with TableView and Cells. It's just a simple view!
+

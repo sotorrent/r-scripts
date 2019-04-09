@@ -1,0 +1,2 @@
+You´re not right. works fine - on MSSQL. Accessing on of the columns works with od . Try it out. Building a subquery is not my solution.
+

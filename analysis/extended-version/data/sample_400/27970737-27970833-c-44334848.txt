@@ -1,0 +1,2 @@
+There are generally no expressions of const non-class non-array type. is not ignored on the return type. Check with class types.
+

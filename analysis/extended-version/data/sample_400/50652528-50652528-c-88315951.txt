@@ -1,0 +1,2 @@
+Fail will be triggered if the request really fails, like a 404 error or “unable to connect”. You custom 500 error will never trigger the fail function.
+

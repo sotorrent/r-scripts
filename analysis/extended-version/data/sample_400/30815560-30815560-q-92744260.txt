@@ -1,0 +1,5 @@
+I want to show the images that are stored in "appendReturnedImages(data)" function. But I gets error and it cannot display the images. The format of images should be follow my HTML.
+HTML:
+JavaScript
+Javascript part  that sets the height and width
+

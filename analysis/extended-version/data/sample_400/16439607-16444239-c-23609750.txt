@@ -1,0 +1,2 @@
+You're right, I still had a main nib file and that's why i didn't need to alloc-init my self.window I now actually tried your setting and self.window does need initialization, your code, however, works fine and doesn't give me any warning (no storyboard, no xib files, all done through code)!
+

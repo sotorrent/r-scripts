@@ -1,0 +1,2 @@
+@devqon I also thought of that, and i'm definitely not loading it twice from what I can see
+

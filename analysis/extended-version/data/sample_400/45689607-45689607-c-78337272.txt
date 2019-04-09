@@ -1,0 +1,2 @@
+The names stored in the kml files are like this "T12_Zentral_Schweiz.kml" .
+

@@ -1,0 +1,3 @@
+Yes it impact a bit on performance, if we are referring unused import statement in our java class. The Java compiler will check for references mentioned into the import statement and at minute level it impact on the performance of the your class.
+Thanks
+

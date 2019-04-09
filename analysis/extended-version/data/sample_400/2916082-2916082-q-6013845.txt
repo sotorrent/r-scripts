@@ -1,0 +1,5 @@
+I have two-dimension array
+How can I enumerate throw this array to check that it contains other value than 0 ?
+I think about boardArray.Contains and ForEach ,cause it return bool value but I don't have too much experience with lambda expression :/
+Please help  :)
+

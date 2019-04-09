@@ -1,0 +1,5 @@
+I'm new to JQuery and I have a question about the order of events with my code. I have a multiple choice question with 3 choices below it. I want the user to click on the correct answer. My problem is that if the user clicks on the correct answer first, then I don't want anything to happen if they then click on the other 2 boxes.
+How would I do this? I believe I need an if statement, but I'm not sure how to set it up to do what I'd like. Any tips/help would be appreciated.
+This is in my script section:
+This is in my body section:
+

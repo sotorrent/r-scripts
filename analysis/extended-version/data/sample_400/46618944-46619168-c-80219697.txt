@@ -1,0 +1,2 @@
+The solution is very cool, but it have a problem with deep json and exist conflict with the annotations, because for example some properties are optional and this solution is very very strong with properties, but is a good begining, Thank so much!
+

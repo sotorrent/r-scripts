@@ -1,0 +1,3 @@
+GNU Unifont.
+It has goal to contain all Unicode, except Apple Emoji.
+

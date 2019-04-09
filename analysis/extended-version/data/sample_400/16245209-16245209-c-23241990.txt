@@ -1,0 +1,2 @@
+You havn't included the PHP code that the page is sending AJAX request to
+

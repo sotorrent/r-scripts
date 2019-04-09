@@ -1,0 +1,3 @@
+use and instead of appending filename to your append filepath + filename.
+Any reason you can't delete them as you find them?
+

@@ -1,0 +1,2 @@
+is called the first time heading updates are ever requested, so you can as soon as you show the compass and return TRUE. Was that what you tried to do?
+

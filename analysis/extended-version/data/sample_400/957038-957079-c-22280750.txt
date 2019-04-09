@@ -1,0 +1,2 @@
+@JamesThompson I disagree.  Vim-only here.  If a statement requires an opening parenthesis after it, then the line succeeding that parenthesis gets indented.  Q.E.D.
+

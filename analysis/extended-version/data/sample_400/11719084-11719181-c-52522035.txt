@@ -1,0 +1,2 @@
+Luka your code won't work either, because i is not defined when you first enter the outer loop
+

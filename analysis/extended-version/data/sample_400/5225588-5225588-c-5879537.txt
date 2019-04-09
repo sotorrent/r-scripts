@@ -1,0 +1,2 @@
+What's the point in having a base class with no methods to be inherited anyway?
+

@@ -1,0 +1,8 @@
+Your code sets up a strong linear damping, but never releases it, so when the ball reaches a specific speed, it will switch to a state in which it behaves like it's glued.
+I would rather limit the maximum speed by checking and resetting it if necessary in every frame:
+
+How linear damping works
+
+Linear damping imitates the phenomenon called drag when the objects moves not too fast. It is basically described by the following equation in every moment:
+)
+

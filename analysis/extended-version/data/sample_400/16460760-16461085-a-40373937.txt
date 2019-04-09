@@ -1,0 +1,4 @@
+This class is not launching as an applet as it does not extend or .
+Even when this is fixed, nothing will appear in the applet client. Applets do not call the method but rather . Also don't create a new for applet components - add them to the applet container itself.
+Rather than using the old heavyweight AWT, use lightweight . Also look at Java Web Start for deployment.
+

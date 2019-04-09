@@ -1,0 +1,2 @@
+Possible duplicate of How do CSS triangles work?
+

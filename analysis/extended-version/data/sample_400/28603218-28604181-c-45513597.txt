@@ -1,0 +1,2 @@
+Yes, Then only you can able to use the model in partial view as its own class
+

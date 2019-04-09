@@ -1,0 +1,11 @@
+From
+
+The expression T(), where T is a simple-type-speci<U+FB01>er or
+typename-speci<U+FB01>er for a non-array complete object type or the
+(possibly cv-quali<U+FB01>ed) void type, creates a prvalue of the speci<U+FB01>ed
+type,which is valueinitialized (8.5; no initialization is done for the
+void() case). [Note: if T is a non-class type that is cv-quali<U+FB01>ed, the
+cv-quali<U+FB01>ers are ignored when determining the type of the resulting
+prvalue (3.10). —end note]
+What that means is that effectively treated as .
+

@@ -1,0 +1,3 @@
+Managed to figure it out in the end. I need to run getstring as follows
+I don't understand why I need to do this, the MySQL example code I used from doesn't show this, so if someone can shed some light on this, that would be great.
+

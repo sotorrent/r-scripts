@@ -1,0 +1,5 @@
+I don't see why that is any different from what I'm already doing.  I tried it by replacing my code above with 
+NSString *databasePathFromApp = [NSString stringWithFormat:@"%@/%@", [self applicationDocumentsDirectory], databaseName];
+and the path that was returned was "/Users/labuser/Library/Application Support/iPhone Simulator/Documents/projectfusion.db3" which is the same as above.
+I assume by "adding the database to your application bundle" you mean adding it as an existing file? I did that in my "Resources" directory.
+

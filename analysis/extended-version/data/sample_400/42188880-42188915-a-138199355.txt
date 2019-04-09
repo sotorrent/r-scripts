@@ -1,0 +1,2 @@
+You could use another while structure for the seconde value.
+

@@ -1,0 +1,2 @@
+@Ally I'm not following what you're trying to do.  Are you trying to return the row count as an output parameter in a stored procedure?  If so, let's say your parameter is named .  Then at the end of your stored proc you would do
+

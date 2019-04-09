@@ -1,0 +1,7 @@
+Your question is funny because if you interact with the concept of streams you almost always get bytes instead of an string. You used the idiom of reading a file to a string:
+But this actually is made to read a file line by line to a string.
+You can acually use the same reader classes but this time with another idiom (or you use Apache Commons like described above):
+You could just put the integer (value between 0 and 255 for one byte 2^8) into an byte array. Now the problem is you don't know how many bytes you receive from the stream (how big the file is) and therefore you can't determine the size of your resuling byte array. One solution is to use a list (like ArrayList) and afterwards convert it to an byte[] with the list.toArray(new byte[list.size()]) method but I don't like this so much. There is an other class called ByteArrayOutputStream which handes the reseizing of an byte[] transparently for you.
+The code would look like:
+The code is not tested, it is written from my brain. I hope it works.
+

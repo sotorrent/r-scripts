@@ -1,0 +1,5 @@
+As others have pointed out, placing a break after a return or in the default case is mostly a matter of personal style.
+When I don't have to follow any specific style rules, I prefer something like this:
+Between cases 1 and 2, I tend to prefer 2.  Even though the comment says NOTREACHED, comments can lie ( unintentionally of course ) when the code changes.  I like the NOTREACHED comment since it can satisfy lint that you know what you are doing and serves as a reminder that you exiting the function early.  The reasoning that placing a break after the return will mitigate errors if the return is deleted seem flawed to me.  You are still going to get bogus behavior regardless if you fall through to the next case or you exit the switch and continue on as before.
+Of course, if I can avoid it I would not return from a function within the body of a switch.
+

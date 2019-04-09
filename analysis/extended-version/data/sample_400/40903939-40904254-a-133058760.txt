@@ -1,0 +1,22 @@
+There are many ways to do so:
+
+Debugging
+
+Try debugging the Test instead of just running it. This will case an exception beeing raised at the failing assertion.
+
+Inspecting Assertion Messages
+
+You already povided some messages to your assertions, those will be visible in the test-explorers details-section after selecting the failed test. This is making it easier to determine which test-case failed (see screenshot below).
+enter image description here
+
+One Assertion per Testcase
+
+As pointed out in the comments, try to have just one assertion per test-case where ever it is possible. This way its obvious which assertion failed simply because there is only one within a testcase.
+
+Use fitting Assertions
+
+Try to have more fitting assertions. In your case, you might try
+which will also tell you which of the two assertions failed by providing more precise automated messages as seen in the following screenshot:
+enter image description here
+However, the screenshot shows points out very well that even though we have 2 Assertions in the testcase, only one is marked as failed. The second one would also fail, but since the test is stopped at the first failing assertion, we'll not see that until the first assertion succeeds. This is why I would always go for one assertion per test-case.
+

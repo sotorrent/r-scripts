@@ -1,0 +1,2 @@
+The solution was to make the adjacent divs taller and adjust the shadow numbers.
+

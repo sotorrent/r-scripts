@@ -1,0 +1,2 @@
+Looks like a good place would be in , where we are doing a to look for user (with pw) in new User table. If that fails (user == null check), I'll add the code to look for user in old User table and if there (and password passes hash test), will create user in new User table with old User table data and new password hash - and then mark old User table record as "migrated" or "upgraded"
+

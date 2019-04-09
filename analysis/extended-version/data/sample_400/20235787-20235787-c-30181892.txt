@@ -1,0 +1,2 @@
+I was thinking same. Why dont you use containable behaviour ? Glad to see that you have solved the issue yourself
+

@@ -1,0 +1,2 @@
+using this code i get one level of the treeview templated (Base level) and no others each treeview item in the tree needs to be binded to the property Folders
+

@@ -1,0 +1,5 @@
+I have an infopath form where i can attach pdf files. The attachment can be viewed only if i chose download from the attachment icon. I am unable to view the pdf by just clicking on the attachment..
+Am I missing something?
+Thanks!
+P.S: This is a browser enabled form hosted in my sharepoint site.
+

@@ -1,0 +1,8 @@
+Use a .  This is available in Google Spreadsheets from the Data menu.
+Create a named range to represent your table of data.
+enter image description here
+
+Give it a name like or whatever you want to call it, then you can use that in the formula:
+If you need to expand the range, just go back in to the Named Range menu and edit the existing range.
+I have not tested it yet but if this is like Excel, then you can even define a named range based on a formula (typically using the , , and some other functions to dynamically determine the size of the range).  This is probably available to Google Spreadsheets but I have only done that in Excel.
+

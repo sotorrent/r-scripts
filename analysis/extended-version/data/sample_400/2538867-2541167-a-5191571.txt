@@ -1,0 +1,5 @@
+Does it take 10 seconds every time for every user or is it just the first time for the first user?
+If it's the latter then this sounds like the initial JIT is slowing down start up. If so there are plenty of solutions out there.
+Otherwise I'd look at profiling any database queries that go along with logging in.
+In other words, try to break down the time taken to do each part of the log in process and when you find a significant chunk of time try to reduce or eliminate it.
+

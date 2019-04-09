@@ -1,0 +1,2 @@
+Or is this a more general question of: How to query a computed value without requiring extra model loads? e.g. , where FistName and LastName might be "Robert" and "Gambonni" for a particular record ..
+

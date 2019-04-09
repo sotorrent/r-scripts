@@ -1,0 +1,2 @@
+They would still be served via .net, and would still issue a 503 error. All you could really do is base64 encode the images.
+

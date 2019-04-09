@@ -1,0 +1,2 @@
+actually, the most efficient string concatenation method is probably string.Concat(). Not that it would matter anyway.
+

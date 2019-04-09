@@ -1,0 +1,5 @@
+You can use this answer for swift versions :
+Objective C version of shared answer is :
+Above code work like this :
+Copy/Paste Demo
+

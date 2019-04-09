@@ -1,0 +1,2 @@
+PHP is executed on the (web-)server, javascript by the client (browser). if you need the submit to come from the client, then it has to be in javascript.
+

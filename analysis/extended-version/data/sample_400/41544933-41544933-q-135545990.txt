@@ -1,0 +1,9 @@
+I'm working on a website with 2 languages
+It's working for me but the problem comes when i change the language of current view which has a parameters , the language of the current view changed and the current view reloaded but without the parameters , it's a null value
+how to keep the parameters while changing the language?
+I searched a lot of time but i didn't find anything could help me
+this is what i did
+in RouteConfig.cs
+
+in html
+

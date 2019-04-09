@@ -1,0 +1,2 @@
+I have a Main Case Studies Page, where I would like to show the images from each of the case studies post type pages in a list. I have the following code:
+

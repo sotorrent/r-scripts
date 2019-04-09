@@ -1,0 +1,2 @@
+Tried that too. Looks like result is sent in the response even before the data from the database is returned and is an empty object. Is there a specific place I should put my response.json?
+

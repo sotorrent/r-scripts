@@ -1,0 +1,4 @@
+I'd like to check, if any screen hosts application in fullscreen mode. I have solution only for one screen which is code copied from here: [[WPF] [C#] How-to : Detect if another application is running in full screen mode.][1] This solution is based on
+which gathers only active window handle. The problem is, I have two screens. I've searched many sites but none of them answers my question. It is not about capturing screenshot, which is simple and doesn't rely on P/Invoke.
+Is this possible?
+

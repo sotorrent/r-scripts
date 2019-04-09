@@ -1,0 +1,5 @@
+can anyone help me with this?
+what i need to do is to add a very large number that a calculator doesn't hold.
+this is the code i have though it can only hold a number until 2147483647.. any number higher than that i get the error message stating "integer number too large"
+can anyone tell me how can i use a larger number?
+

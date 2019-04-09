@@ -1,0 +1,2 @@
+@Poul7 That's the thing. I think I need to setup the "ITEventPlayerPlayingTrackChanged" event and call "UpdateLabels" from there. But I have no idea how to set up this event so that I can call "UpdateLabel" from it. To answer your question, it is currently being called from the form load event, as well as my previous and next buttons.
+

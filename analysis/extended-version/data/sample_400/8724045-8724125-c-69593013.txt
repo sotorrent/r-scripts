@@ -1,0 +1,2 @@
+If something takes a day longer than usual, you'll notice it... assuming it's something that would normally take less than a few days. What if it normally took a year? You're not going to notice it because it is just noise at that magnitude. There are more rewarding things to focus on than a 0.274% performance increase. If you really need that little of an increase, throw better hardware at it or improve the compiler, you'll get far more out of that than going after pocket change.
+

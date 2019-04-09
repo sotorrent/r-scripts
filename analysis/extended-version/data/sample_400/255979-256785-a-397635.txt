@@ -1,0 +1,3 @@
+While doing 3D in flash is cool and nice, why not use a tool that actually supports 3D acceleration on the users graphics cards, while Unity is a game engine, i think you would be able to create your tool with it, in addition you get support for creating 3D content in a variety of modelling tools, Unity support web plugins. There are also a couple of Java 3D engines out there JMonkeyEngine is only one of them.
+I think you would get better performance and visual quality with either of theese than what you can achieve in flash.
+

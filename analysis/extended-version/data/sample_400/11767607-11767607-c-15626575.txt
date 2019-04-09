@@ -1,0 +1,2 @@
+Another approach (besides the computed form) is to split up the user input, e.g. "FirstName LastName", and then use each part in the search for the applicable field. Of course "FirstOrLastName" also needs to be considered.
+

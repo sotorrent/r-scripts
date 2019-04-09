@@ -1,0 +1,4 @@
+I'm trying to get the sum of a column if their ISBN is the same and the shipdate is null. Shipdate is in a different table so it seems that " and shipdate is null" portion does not properly get checked, in fact they all seem to be counted as not null which is not true.
+I've tried another method
+but it has an outer reference so it won't work. Any help is greatly appreciated.
+

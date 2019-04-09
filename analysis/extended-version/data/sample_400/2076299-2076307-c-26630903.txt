@@ -1,0 +1,2 @@
+-1 Doesn't work chrome 30 PC the other answers showing to open a window in the current tab and then close it work
+

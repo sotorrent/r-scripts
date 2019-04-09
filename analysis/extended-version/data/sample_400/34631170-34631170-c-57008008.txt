@@ -1,0 +1,2 @@
+hey i resolved it using this command "sudo apt-get install ipython-notebook". Actually sudo pip doesn't work i think. Therefore i tried that and installed ipython-notebook and then i tried "sudo ipyton notebook" and it worked! :)
+

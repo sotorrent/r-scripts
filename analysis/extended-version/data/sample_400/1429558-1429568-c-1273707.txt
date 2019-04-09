@@ -1,0 +1,5 @@
+good idea. but for safety reasons, i would add some braces around n
+#define BIT(n) (1 << (n))
+
+you know, macros can be nasty. imagine somebody using the macro with BIT(5-1)...
+

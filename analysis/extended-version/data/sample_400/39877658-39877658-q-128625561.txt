@@ -1,0 +1,6 @@
+I have my AngularJS app that works on
+I use that phantomJS script to run and return rendered the HTML:
+so, phantomJS runs on and makes a redirect to
+when I hit the
+I can see the HTML, but I still see the angularJS' tags instead of the desired values. What's more, when I open the in the browser, I get the infinite loop. What's going on ?
+

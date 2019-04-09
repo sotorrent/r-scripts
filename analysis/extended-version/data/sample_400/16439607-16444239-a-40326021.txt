@@ -1,0 +1,2 @@
+I tried your code, the problem arises from the fact that you reinstantiate the application window, which you don't need to do. If you just remove that first line of code your application should work anyway and the warning should go away.
+

@@ -1,0 +1,6 @@
+First the new file name is to be returned to clienside as,
+assuming filename to be shown is already yielded in the following line,
+this needs to be sent to client side,
+client side code changes, notice the onCompleted event handler, its job is to replace the original filename with the new one received from server.
+hope this helps.
+

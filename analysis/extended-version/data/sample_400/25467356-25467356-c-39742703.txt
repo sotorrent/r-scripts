@@ -1,0 +1,2 @@
+Cast to (int) instead and it will be a bit more obvious that is a signed type.  And yes, the character code for ñ is 0xf1 in many code pages, including Windows 1252 and ISO 8859-1.
+

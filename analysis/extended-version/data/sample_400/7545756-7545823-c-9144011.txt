@@ -1,0 +1,2 @@
+Thank you very much, now I understand how it works: (1) it starts by searching any amount of space + id=" (2) it searches any characther until a double quote character is found (3) it searches a double quote char.
+

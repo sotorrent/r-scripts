@@ -1,0 +1,2 @@
+(Because an integer literal is IMO the best example for pure "valueness" in C++.)
+

@@ -1,0 +1,4 @@
+When run from the UnitTests databasePathFromApp =  "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/Developer/usr/bin/projectfusion.db3"
+
+I just tried to do the exact same things from the project and it runs just fine it looks like, and databasePathFromApp there = "/Users/labuser/Library/Application Support/iPhone Simulator/4.2/Applications/C0783695-CB4D-4EA2-A1A9-DC7C8C797CEA/ProjectFusion.app/projectfusion.db3"
+

@@ -1,0 +1,4 @@
+Unfortunately, there is no way to apply clang-format recursively. will only match files in the current directory, not subdirectories. Even doesn't work.
+Luckily, there is a solution: grab all the file names with the command and pipe them in. For example, if you want to format all and files in the directory recursively, you can do
+See here for additional discussion.
+

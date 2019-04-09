@@ -1,0 +1,4 @@
+I am trying to make a SVN repository. I downloaded subversion and when I am trying to create a SVN than I am getting error -
+I am using Eclipse  Indigo and my system is of 64-bit.
+I got asolution on but Answer is not working for me any clue ?
+

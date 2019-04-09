@@ -1,0 +1,4 @@
+@Moudiz - no, it will give you the ddl for all tables in your schema. If you log in as SCOTT/tiger and run it you get the SCOTT schema tables EMP, DEPT, etc. The query reads "user_tables" and passes each table_name to teh get_dll call.
+
+If you are only seeing one table, it's because you only have one table in teh schema. If you are connecting as UserA but want to run this on tables owned by UserB you would need to query "all_tables" and add "WHERE OWNER = 'USERB'", and also add the owner to the get_ddl call.
+

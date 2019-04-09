@@ -1,0 +1,2 @@
+@TakitIsy background image allow you to set only the image [the gradient] so you cannot add position/size ... but here it's the shorthand version including image/size/position
+

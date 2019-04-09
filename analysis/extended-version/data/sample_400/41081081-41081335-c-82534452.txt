@@ -1,0 +1,2 @@
+Create an MDI application and hide the mdi parent however creating variables for each form and calling them as needed
+

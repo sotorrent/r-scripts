@@ -1,0 +1,2 @@
+That said, why do you need to store the score in the games table? You would probably be better off creating a view with said functions if you really require it and not storing the total score in a table. It depends on your needs I guess, but eh.
+

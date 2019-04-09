@@ -1,0 +1,2 @@
+One more test on: Linux Debian 2.6.26-2-amd64; PHP 5.3.3; mysql 5.5.4; nginx/0.8.49. And as a result... 'tag_two' is still in the tags table!
+

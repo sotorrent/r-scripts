@@ -1,0 +1,6 @@
+New to Angular and a bit confused.  I have a list item that needs to display a tick or a cross depending on an initial value from its controller.
+When a user clicks the list item I want to change the value to its current opposite and then update the CSS class to reflect this in the DOM.
+Currently I have the following controller:
+And the following template partial:
+I do not now how to pass the model reference to update the $scope value to trigger the change?  When I pass the model property reference I get the value.
+

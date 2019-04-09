@@ -1,0 +1,9 @@
+After considering the quote mentioned by @dyp, which is [expr]/6:
+
+If a prvalue initially has the type “cv ,” where is a
+cv-unqualified non-class, non-array type, the type of
+the expression is adjusted to prior to any further analysis.
+The conclusion is rather simple: As the expression is a prvalue, the type of (which is the initializer of the reference) is simply adjusted to , which is clearly reference compatible to the target type of the reference (also ). In other words, the you added is simply ignored when determining the type of the function call expression (but it is not ignored when looking at the function type itself!).
+However, for non-class types, references never bind directly to the initializer expression, but a temporary is initialized and bound to the reference.
+In both cases the initializer is a prvalue of type , and a temporary is created and bound.
+

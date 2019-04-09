@@ -1,0 +1,3 @@
+I have to java enums, A and B, and an EnumMap is it possible to add keys from A and B to this map?
+I have tried with no success, is there anything i'm doing wrong?
+

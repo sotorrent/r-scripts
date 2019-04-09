@@ -1,0 +1,3 @@
+The regular syntax is (somewhat simplified):
+The -clause is optional. All return value-expressions must have compatible data-types.
+

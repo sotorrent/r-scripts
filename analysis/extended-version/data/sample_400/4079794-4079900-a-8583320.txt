@@ -1,0 +1,2 @@
+sth has the correct answer.  However, if you need a more generic solution, in that say the function that accepts sb type could accept any type that implements the concept "has C" (or whatever) then you need to use tag based dispatch.  I'd suggest looking it up because though I might be able to describe one hypothetical situation that may or may not resemble your real problem, I couldn't get them all.
+

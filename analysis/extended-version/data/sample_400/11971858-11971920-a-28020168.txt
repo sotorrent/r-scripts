@@ -1,0 +1,2 @@
+1000 entries are not a large list if we talk about say integers and short strings, if its complex objects I really like OrmLite for database persistence.
+

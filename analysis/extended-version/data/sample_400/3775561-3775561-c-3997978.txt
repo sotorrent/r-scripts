@@ -1,0 +1,2 @@
+You are apparently mixing hibernate and jpa annotations. That can't / shouldn't work.
+

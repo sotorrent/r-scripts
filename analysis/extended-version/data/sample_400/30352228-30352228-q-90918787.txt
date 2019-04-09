@@ -1,0 +1,24 @@
+I'm trying to configure TLS on production server.
+Application Server: JBoss 6.1.0 Final
+JDK: 1.6.31
+Following is the code from JBOSS_HOME/server/default/deploy/jbossweb.sar/server.xml:
+I've kept the Keystore.jks file at JBOSS_HOME/server/default/conf/
+After the configurations, the website is opening on IE8 but not on Chrome and Mozilla.
+Not opening on Chrome(Version:42.0.2311.135),
+Error-ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+Not opening on Mozilla(Version:37.0.2),
+Error:ssl_error_no_cypher_overlap
+However, it is opening on previous versions on Chrome(before v40) and Mozilla(before v33).
+I searched about the issue on various sites and blogs.
+What I found is that SSL3 is disabled as it is not safe(POODLE and BEAST attack). All modern browsers are supporting TLSv1.2. But while disabling SSL3, they have also disabled SSL3 cipher suites.
+I've tried the cipher configuration in HTTP connector like:
+I have few questions:
+
+1.  While disabling SSL3, does the browsers have also disabled SSL3 cipher suites ?
+2.  For TLSv1.2: Is JDK1.7 mandatory on server ?
+3.  What configurations do I need to do to overcome the cipher mismatch issue and the website can open on all modern browsers with TLS?
+4.  Which ciphers do I need to use ?
+    Please help. I need to complete it urgently.
+    Thanks in advance.
+    Please do not mark this question as duplicate as I've searched all the questions but none of them solves my purpose.
+

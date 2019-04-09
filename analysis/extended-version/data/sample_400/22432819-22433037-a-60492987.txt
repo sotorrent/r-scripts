@@ -1,0 +1,2 @@
+Just add an property along with your Company and Location properties. Your checkboxes should be wired to those. Then when a user submits the form, your model will pick up these values. You can just filter your data based on IsSelected being true and return the matching rows.
+

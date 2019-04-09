@@ -1,0 +1,2 @@
+I'll try that. I forgot to mention that treespacing is something which only applies when physics are disabled for the network and stabilize() enables the physics. I havn't found a way to alter the options after I initialized them. Otherwise I would just disable physics after stablize() is done and then reduce the tree spacing.
+

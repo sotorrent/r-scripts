@@ -1,0 +1,2 @@
+Stop fretting people... This is an old answer and now this method is obsolete if you don't use window.open() method to open the page in first place.
+

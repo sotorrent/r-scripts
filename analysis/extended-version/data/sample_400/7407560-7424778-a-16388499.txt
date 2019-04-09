@@ -1,0 +1,8 @@
+The problem in your plans is one of statistics estimation.
+Subtree costs should be taken with a large grain of salt (and especially so when you have huge cardinality errors).
+The zero row sort doesn't take 87% of the resources. The costs shown in the actual plan are still estimated costs. It doesn't adjust them to take account of what actually happened.
+There is a point in the plan where a filter reduces 1,911,721 rows to 0 but the estimated rows going forward are 1,860,310. Thereafter all costs are bogus culminating in the 87% cost estimated 3,348,560 row sort.
+I'll come back to this tomorrow and see if I can add additional explanation and suggestions but in the mean time the code below reproduces the same cardinality issue in a simpler plan if anyone wants to experiment with it.
+###Setup Test Table and fiddle row count statistics
+###Look at the estimated plans for the below
+

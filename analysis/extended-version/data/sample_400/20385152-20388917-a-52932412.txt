@@ -1,0 +1,2 @@
+Yep, I'll build a new release of Splat tomorrow'ish, but building from source will also solve this.
+

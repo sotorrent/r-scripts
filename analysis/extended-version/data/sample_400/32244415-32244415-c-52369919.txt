@@ -1,0 +1,2 @@
+just gives you a windows handle (hWnd).  Use any method of enumerating windows that you like - they will all give you an hWnd - and plug those values in instead of the foreground hWnd.
+

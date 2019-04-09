@@ -1,0 +1,3 @@
+Your method needs to expect an argument:
+However since this is a model method, it should not be called directly in the view as this is not MVC.  But if you wanted to use it in a controller action, that might work.  You'd need to define a controller action and maybe use javascript to make an ajax request to your controller action, where it could then operate on your model.
+

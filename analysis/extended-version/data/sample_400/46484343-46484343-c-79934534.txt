@@ -1,0 +1,2 @@
+It's hard to say without having seen your test script, but maybe you need to return the Promise from your method? i.e.
+

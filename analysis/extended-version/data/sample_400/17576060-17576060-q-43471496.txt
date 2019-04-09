@@ -1,0 +1,4 @@
+I try to receive the data from a sensor from time to time and plot it in real time. That means the length of the dataset is not know before hand. And need to adjust the range of the graph dynamically.
+I tried the following
+But once the number of dots is beyond the range of x axis (10 in this case), the data points are out of the range. How to adjust the range accordingly?
+

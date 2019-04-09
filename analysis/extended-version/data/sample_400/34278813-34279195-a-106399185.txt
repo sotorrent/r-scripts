@@ -1,0 +1,5 @@
+A generic way would be to store an array of functions, and use a random value to index the array to select which function to perform.
+Something like this:
+This however can be quite tedious, but has some advantages. For example, the set of possible actions can change dynamically.
+In this case, if you're only concerned about selecting a random vector from a static set, you really only need to select a random deltaY and deltaX, where dX and dY are { -1, 0, 1 }
+

@@ -1,0 +1,2 @@
+It throws runtime error java.lang.ClassCastException
+

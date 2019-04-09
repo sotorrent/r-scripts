@@ -1,0 +1,2 @@
+I agree, you are a bit overengineering here. This kind of complexity at this stage of your application design won't help in the future.
+

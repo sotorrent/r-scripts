@@ -1,0 +1,2 @@
+That's right. After I did those modifications in the article's controller and changed my links in other pages like article's show, edit and index,  I had my problem solved. Thank you very much.
+

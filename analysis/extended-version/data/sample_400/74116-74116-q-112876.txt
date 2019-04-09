@@ -1,0 +1,4 @@
+I have always been able to read and write basic text files in C++, but so far no one has discussed much more than that.
+My question is this:
+How, if I had my own spreadsheet file or database application, would I go about writing the data to a file and preserve the layout, formatting, etc.? Are there any standards, or does it just depend on the creativity of the programmer?
+

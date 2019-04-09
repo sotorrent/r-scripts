@@ -1,0 +1,2 @@
+Oh, and curly braces would be useful for the "if (result.code)" in sample 1.  But I'd put "catch()" on the line after the try{} block.  As far as "exceptions" vs. "error codes"; I'm used to the library defining that for you.  If you are the library author - then I guess it's purely a matter of Personal Preference.  And I hope you'll prefer JSON ;)
+

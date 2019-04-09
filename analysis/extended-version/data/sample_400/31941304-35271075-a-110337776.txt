@@ -1,0 +1,14 @@
+Explanation:
+The macro function calculate the square of the given number 'x'.
+Step 1: float s=10, u=30, t=2, a; Here the variable s, u, t, a are declared as an floating point type and the variable s, u, t are initialized to 10, 30, 2.
+Step 2: a = 2*(s-ut)/SQUARE(t); becomes,
+=> a = 2 * (10 - 30 * 2) / t * t; Here SQUARE(t) is replaced by macro to tt .
+=> a = 2 * (10 - 30 * 2) / 2 * 2;
+=> a = 2 * (10 - 60) / 2 * 2;
+=> a = 2 * (-50) / 2 * 2 ;
+=> a = 2 * (-25) * 2 ;
+=> a = (-50) * 2 ;
+=> a = -100;
+Step 3: printf("Result=%f", a); It prints the value of variable 'a'.
+Hence the output of the program is
+

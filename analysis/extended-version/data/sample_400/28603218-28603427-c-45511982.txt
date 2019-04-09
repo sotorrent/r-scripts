@@ -1,0 +1,2 @@
+Yes this works, thank you! Now if I want to add another partial view to the same index view, can I just add another @model to the index page?
+

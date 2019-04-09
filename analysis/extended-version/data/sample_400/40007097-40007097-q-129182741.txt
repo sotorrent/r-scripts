@@ -1,0 +1,6 @@
+how to read data(latitude and logitude) from firebase and populated it in autocomplectetextView
+how can i access to this data data.features.properties.adress like the image below
+This is my data base
+
+I've tried this this code but it give me nothing and i don't know what is the problem
+

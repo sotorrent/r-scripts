@@ -1,0 +1,9 @@
+You are attempting to log and use the updated value of before it has been set. Take a look at the code you have above:
+The code is going to run asynchronously once the network call completes. Immediately after invoking this asynchronous operation, you attempt to use , which will not have been updated yet. Here's a breakdown:
+
+1.  You instruct Angular to make a network call, providing it a function to invoke once the data is returned.
+2.  Before Angular has a chance to make the request, you attempt to access , which has not yet been updated and remains as an empty array.
+3.  Some milliseconds later, Angular returns with the data and invokes your callback function, which updates but does not update .
+    To fix this issue, you need run the relevant code in order. e.g.:
+    As you can see, this will ensure that the value of is set correctly before attempting to use it to update your component.
+

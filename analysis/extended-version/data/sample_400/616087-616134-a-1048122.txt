@@ -1,0 +1,4 @@
+Since SHA1 is a common, standard algorithm, it is implemented the same way in PHP as it is in .NET. The only part that is different is how you invoke the two functions.
+Technically, SHA1 is defined on bytes rather than strings, but (correct me if I'm wrong) PHP strings work with single-byte characters, so bytes and characters should be interchangable from the SHA1 algorithm's point of you.
+You'll have to make sure that your string's value in binary is the same as .NET's byte array, in the same order. I'm not a PHP guy, so you'll have to get someone else's answer for how to do that.
+

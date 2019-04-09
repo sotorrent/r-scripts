@@ -1,0 +1,2 @@
+I want to cast my class that extends to Application in my MapsActivity which is extends to FragmentActivity. I try but it has error Cannot resolve method 'getActivity()' and when I try only it throw runtime error java.lang.ClassCastException. How can i fix it?
+

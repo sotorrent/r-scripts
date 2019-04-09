@@ -1,0 +1,2 @@
+I added the execution plan for the MERGE in a gist. Obviously I've changed all the database names for improved employer happiness, and I tried to make the same changes to the plan XML.  I hope I didn't screw anything up! It still loads in SQL Management Studio, at any rate.
+

@@ -1,0 +1,6 @@
+As the other people have stated, its not necessary. But some people find it good practice. especially when you love being declarative and you know return statement is nothing more than actually a statement. (think of your programming being completly linear and you can only move between code with labels and goto statements). This way you always declare where you are going to: you are going back.
+##Another reason to return void
+For example you can have the following function
+This way in a void method you can return 'early' to make sure you dont continue when a condition is not made. This is whats also called defensive programming.
+note: most of the time your better of throwing an error instead. This way you realise earlier you forgot to match a pre-condition.
+

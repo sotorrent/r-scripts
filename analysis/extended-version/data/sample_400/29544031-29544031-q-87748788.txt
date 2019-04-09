@@ -1,0 +1,7 @@
+Struggling with this for a couple of days. Trying to create a space delimited list of $host $useraccount $crontab entries.
+I've tried a couple of different ways. Each ending in a different level of disaster, The closest I've come is this, someone point out the obvious thing I'm missing.
+It seems to be complaining about trying to execute the output of the tail as a command.
+./crons.sh: line 11: (Several pages of cropped cron entries): File name too long
+./crons.sh: line 11: : No such file or directory
+./crons.sh: line 11: #
+

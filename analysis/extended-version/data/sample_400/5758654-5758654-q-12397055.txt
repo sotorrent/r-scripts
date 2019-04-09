@@ -1,0 +1,5 @@
+I have a file containing expenses. Categories are tree-like in that a category can have multiple sub-categories, which can have multiple sub-categories etc... e.g.
+I would like to use awk to create a report summing up each node in the category tree.
+e.g.
+Any help would be appreciated.
+

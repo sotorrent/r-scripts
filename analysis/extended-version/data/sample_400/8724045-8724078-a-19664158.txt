@@ -1,0 +1,5 @@
+Its a very common question.
+Like most performance questions the best approach is to write the clearest and simplest code you can as this improves the maintainability of the code and helps ensure it performs reasonably well even after it is changed. (Clever/Obtuse/Needlessly Verbose code can run fast to start with but as it is changed by mere mortals it can get much slower)
+Unused imports have a trivial impact on the compiler, but there are no imports in the byte code or at runtime.
+Unused objects can be optimised away, but its best to avoid these as they almost always cause some performance impact, but more importantly make reading and maintaining your code more difficult.
+

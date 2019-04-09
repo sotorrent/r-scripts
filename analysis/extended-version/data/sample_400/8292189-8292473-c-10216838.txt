@@ -1,0 +1,2 @@
+Now another problem is if u click one checkbox within adapter its affecting to selectAll & all checkboxes in that adapter
+

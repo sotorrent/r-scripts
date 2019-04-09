@@ -1,0 +1,8 @@
+I'm working on a small simulation program and I use vis.js to create hierarchical trees. When I do this they are spread out pretty far. Using myNetwork.stabilize() fixes this but the spacing between the trees stays the same and adjusting treeSpacing after I use stabilize() won't work. I've added to sreenshots to illustrate what I mean since it's hard for me to describe it.
+Picture without myNetwork.stabilize()
+Picture with myNetwork.stabilize()
+I'd like to have the stabilized trees with shorter gaps between individual trees.
+
+Edit:
+Solved it with the help of Jason B. After I initiated the tree I used the following code to get what I wanted.
+

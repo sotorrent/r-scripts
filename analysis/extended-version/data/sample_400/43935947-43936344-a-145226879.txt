@@ -1,0 +1,2 @@
+You could try using numpy's , documentation is found here. There is a handy argument that you can set to 2, to only read the 3rd column. Using the small bit of data you provide the following code generates a 1D array of the 3rd column
+

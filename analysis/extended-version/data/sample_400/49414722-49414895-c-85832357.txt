@@ -1,0 +1,2 @@
+There are multiple ways of doing this. You could do it either in the or actions of your . Or, you could do it in your model using a either during or . Any of these has pros and cons.
+

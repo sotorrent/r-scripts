@@ -1,0 +1,2 @@
+so you have 2 questions (1) how to create a function which takes a vector argument and manipulates it with Part[], and avoid errors arising when Part tries to deconstruct an undefined symbol, and (2) how to remember evaluations of the function so that they don't need to be recomputed.  Or have I misunderstood ?
+

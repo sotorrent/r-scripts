@@ -1,0 +1,2 @@
+This is Not an Applet. I think you need to check out the Life cycle of an Applet Here:
+

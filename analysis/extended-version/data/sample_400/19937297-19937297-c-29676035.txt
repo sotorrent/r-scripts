@@ -1,0 +1,2 @@
+Have you tried running it from Terminal.app? I mean into the directory and execute it.
+

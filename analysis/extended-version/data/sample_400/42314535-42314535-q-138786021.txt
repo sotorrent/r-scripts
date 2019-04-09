@@ -1,0 +1,3 @@
+I wrote this script but it's not working.Anyone can help?
+It's supposed to check download limit and download used by a user and then do some action i.e to remove the user from active ppp list and also change profile of the user in user-manager but it's not working as :
+

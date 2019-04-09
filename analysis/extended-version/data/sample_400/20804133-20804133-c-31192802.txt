@@ -1,0 +1,3 @@
+Thanks for your reply.
+I still haven't finished creating the all class (that's why I don't have self.femur.setAngle(30), also the class is incomplete since its  much complex.
+

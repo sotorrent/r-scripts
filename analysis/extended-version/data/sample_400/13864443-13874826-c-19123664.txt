@@ -1,0 +1,2 @@
+Can't say I know enough about CDI / Weld proxying to help with that.  That said, I usually try to only proxy interfaces (not concrete classes) and then there is no need for dummy constructors.
+

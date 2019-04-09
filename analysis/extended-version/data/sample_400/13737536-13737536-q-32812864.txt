@@ -1,0 +1,3 @@
+I have Class in src/groovy . I want to use my service here . but error occurred "No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here ". i try to debug but not able to find . can you please help me that what is my mistake .
+code in service is:
+

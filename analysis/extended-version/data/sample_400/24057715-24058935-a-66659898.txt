@@ -1,0 +1,2 @@
+As per comments - there's nothing you've missed. Unlinking shouldn't be done by the user-code, such things might not be permitted and can fail due to various reasons.
+

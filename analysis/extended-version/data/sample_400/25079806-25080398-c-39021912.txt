@@ -1,0 +1,2 @@
+and my categories aren't single word and that's why I used to split them into words and match them.
+

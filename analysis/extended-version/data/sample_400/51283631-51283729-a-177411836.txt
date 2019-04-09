@@ -1,0 +1,5 @@
+Your images has to be in png format (prefered by android) and must contain only lowercase letters and digits ([a-z0-9_.].
+Then you can use
+You can get the name of the drawable with this:
+To get the drawable with the string name:
+

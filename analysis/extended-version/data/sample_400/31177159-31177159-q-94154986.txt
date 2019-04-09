@@ -1,0 +1,3 @@
+We need to write a client-side Git hook to detect a new branch creation from master. Whenever a new branch is created, a folder needs to be deleted from the branch.
+I am not sure which hook is the best place to do this check or how to identify if the branch has just been created.
+

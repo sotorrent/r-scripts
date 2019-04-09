@@ -1,0 +1,2 @@
+@JimMa: If you need special address ranges for yourself, mmap them first.
+

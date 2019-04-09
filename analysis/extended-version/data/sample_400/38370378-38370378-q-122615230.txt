@@ -1,0 +1,7 @@
+I have several containing integers such as:
+0,0,0,0,0,30,30,30,40,40,50,50,50,40,0,0,0,30,30,30.
+I want to print (, and later ) them like this: 30,40,50,40,30. Basically ignore the duplicates if they come after each other.
+Another example:
+0,0,0,010,10,10,10,50,50,50,50,10,10,10,50,50 shall give: 10,50,10,50
+Help is very much appreciated!
+

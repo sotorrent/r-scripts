@@ -1,0 +1,2 @@
+For (EF 4.1) there is : would behave as you expect.
+

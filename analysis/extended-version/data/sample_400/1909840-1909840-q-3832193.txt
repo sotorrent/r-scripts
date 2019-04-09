@@ -1,0 +1,5 @@
+Can anyone explain why it's not possible to create your own view controller hierarchies using UIKit on the iPhone?
+Let me explain: when creating applications using a complex view hierarchy and navigation logic, it's a good idea to have certain views controlled by a dedicated view controller. These controllers can have their own subcontrollers, and so on. All standard stuff really.
+So why is the parentViewController property readonly? It's used by UINavigationController and UITabBarController, and many other properties rely on it (for example the navigationController property).
+I've seen many people telling us to create our own property for managing view controller hierarchies, but that's a little silly when Apple's own framework uses its own private "you can't touch it" hierarchy model.
+

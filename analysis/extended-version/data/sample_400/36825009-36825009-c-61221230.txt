@@ -1,0 +1,2 @@
+COALESCE is what you want but you should also know, is wrong, you want or these are both urinary operators.
+

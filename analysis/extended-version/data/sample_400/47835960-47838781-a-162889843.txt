@@ -1,0 +1,3 @@
+@JordiNebot answer is where I think we'd like to eventually land, but hasn't been completely included yet. If you want to make sure it runs well everywhere, I would do something along the lines of the following. Create two triangles built from the middle out-ward well beyond what you would expect to need, then place them in absolute position at the bottom middle of the div containing the image.
+It's considerably more work, but it will work better across all platforms.
+

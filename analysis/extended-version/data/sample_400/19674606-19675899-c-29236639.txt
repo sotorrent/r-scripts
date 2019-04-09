@@ -1,0 +1,2 @@
+Thank you, this makes sense. However, I think I left out some important info, sorry. The reason I had been trying to divide it into subsets is because the data isn't already divided into seasons. Right now TMAX, TMIN and PRCP are all associated with a single date like 19990701, which would be the first day of s1999. I don't just want to replace the dates because though summer and winter are 2-3 months and continuous, fall's calculations include the winter of that year (has to do with the organism I'm working with).
+

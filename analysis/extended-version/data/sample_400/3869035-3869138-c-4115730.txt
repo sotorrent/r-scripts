@@ -1,0 +1,2 @@
+If you've put "random data" in for 'xxxxxxx' then will almost surely fail with , returning (since "random data" is not likely to be valid UTF-8), but will report the length of the successfully-converted part plus whatever junk is already in the output buffer, since it won't get null-terminated.
+

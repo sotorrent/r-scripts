@@ -1,0 +1,2 @@
+When you do you're advancing the pointer in file to the next line for each line read - is that what you're wanting?
+

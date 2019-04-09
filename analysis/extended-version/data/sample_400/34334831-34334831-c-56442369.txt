@@ -1,0 +1,2 @@
+click binding code should be like this:  
+

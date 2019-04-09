@@ -1,0 +1,4 @@
+@franciscosollima's solution is good. Here's another way with regex.
+It's as simple as adding consecutive matches to the same pool. Otherwise, initialise a new one. The regex pattern will match from the start, and you may configure it detect IPv6 addresses too.
+Prints out:
+

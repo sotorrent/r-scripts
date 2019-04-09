@@ -1,0 +1,2 @@
+Also, from a quick "play" with SVN, it appears that projects also have Trunk/Branch/Tag folders?  So do I have T/B/Tg inside my T/B/Tg ?
+

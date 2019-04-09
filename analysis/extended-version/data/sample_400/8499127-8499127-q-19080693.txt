@@ -1,0 +1,6 @@
+Another question related to my question from yesterday.
+Again, my apologies in advance if this is an obvious question...
+In the code below, I'm trying to get the string (40*(parseInt($('#2-cat').attr('id')))+1) to be the pixel height for moving a div. But it is just not working, and I don't really see why - I've put in two other test lines of code, and the server seems to accept that this string is an integer... but it doesn't want to let me use it for the height of the div.
+All help much appreciated!!!
+All can be viewed at
+

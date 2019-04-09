@@ -1,0 +1,7 @@
+Not from Apple.
+Apple used to say this on their website, but have subsequently changed their wording:
+Push is free
+If you're using a 3rd party to send these messages, then there might be. E.g. Urban Airship currently offer:
+Push Notifications
+1 Million FREE Push messages/month. $0.001 per additional Push message. $0.0025 per every Rich Push message.
+

@@ -1,0 +1,2 @@
+@payala, For a few reasons, I've switched to Amazon SES for email.  There is some good info here about Sender ID:
+

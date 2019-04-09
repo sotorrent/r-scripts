@@ -1,0 +1,6 @@
+The problem is you connect a handler to the element, after which it does not matter if the class changes.
+Use a delegated handler attached to a non-changing ancestor:
+Delegated events work by listening for the event to bubble up to an ancestor element. They then apply the jQuery filter at event time (not event registration time) to the elements in the bubble-chain. They then apply the function only to matching elements that caused the event. This type of handler can actually be more efficient (as it swaps a minutely slower event handler for a much faster setup time). As click speeds are very slow, you will never notice a delegated event handler being slower than a directly connected handler.
+documentbody` for delegated events as it has a bug (if styling results in a calculated body height of 0 it will not respond to mouse events).
+Generally though you will try to bind to an ancestor near to the changing elements.
+

@@ -1,0 +1,4 @@
+Try and see if it works for Android 4.0. I know I had some issues with the camera in the emulator, in lower version (Lower than 4.0) it just wouldn't recognize my laptop webcam. But when I tried it on 4.0, when the AVD was loading a popup message came and asked me if I want to connect the webcam to the AVD, and once I agreed it worked.
+Another poster in SO asked this question too, about the camera, and changing the AVD version to 4.0 did help him.
+Maybe its the same for audio recording too, as both are external hardware for the typical PC.
+

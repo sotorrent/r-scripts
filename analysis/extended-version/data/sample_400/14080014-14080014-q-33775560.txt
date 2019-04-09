@@ -1,0 +1,6 @@
+I have a dictionary of type and I want to convert it to a list of type . For e.g.
+Input:
+Output:
+I am able to do it using for loops but I was looking for a more clean way.
+PS: I am from C background and new to C#
+

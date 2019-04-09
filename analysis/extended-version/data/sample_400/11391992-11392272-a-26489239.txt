@@ -1,0 +1,27 @@
+You can get a random sequence of array index, i think it will allow you to resolve your problem;)
+
+// return random nonrecurring array of numbers
+//params:
+//$fromto - if $to is null, interval will be [0, $fromto], elsewhere [$fromto, $to]
+//$to - end of interval.
+//$limit - limit number. notice! if $limit < size([$fromto, $to]) not all numbers from interval [$fromto, $to] will be return
+function rand_seq($fromto, $to = null, $limit = null){
+if(is_null($to)){
+    $to = $fromto;
+    $fromto = 0;   }
+    if(is_null($limit)){
+      $limit = $to-$fromto+1;
+    }
+  $randArr = array();
+  for($i=$fromto; $i<=$to; $i++){
+    $randArr[]=$i;
+  }
+  $result = array();
+  for($i=0; $i < $limit||sizeof($randArr) > 0; $i++){
+    $index = mt_rand(0, sizeof($randArr)-1);  // select rand index / <U+0432><U+044B><U+0431><U+0438><U+0440><U+0430><U+0435><U+043C> <U+0441><U+043B><U+0443><U+0447><U+0430><U+0439><U+043D><U+044B><U+0439> <U+0438><U+043D><U+0434><U+0435><U+043A><U+0441> <U+043C><U+0430><U+0441><U+0441><U+0438><U+0432><U+0430>
+    $result[] = $randArr[$index]; // add random element / <U+0434><U+043E><U+0431><U+0430><U+0432><U+043B><U+044F><U+0435><U+043C> <U+0441><U+043B><U+0443><U+0447><U+0430><U+0439><U+043D><U+044B><U+0439> <U+044D><U+043B><U+0435><U+043C><U+0435><U+043D><U+0442> <U+043C><U+0430><U+0441><U+0441><U+0438><U+0432><U+0430>
+    array_splice($randArr, $index, 1);  // remove it=) / <U+0443><U+0434><U+0430><U+043B><U+044F><U+0435><U+043C> <U+0435><U+0433><U+043E> =)
+  }
+  return $result;
+}
+

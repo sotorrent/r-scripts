@@ -1,0 +1,8 @@
+I have a problem with my VBS script. I have to read between 2 values after asking the users if he want between the '' or not between
+Exemple if the user select 1 in this text , 'Hi' My name is 'Kev'in and i'm happ'y' to be 'there'
+He will have 'Hi' 'Kev' 'y' 'there' in a txt
+If he chose 2, he will have My name is in and i'm happ to be
+right now i'm using
+For now it's only reading both of the value ( between '' and not between) but I have no idea how to change it.
+thanks and sorry for my english.
+

@@ -1,0 +1,2 @@
+The way you described your problem doesn't make any sense. You defined function without any arguments yet you try to call it with one (). What is this method?
+

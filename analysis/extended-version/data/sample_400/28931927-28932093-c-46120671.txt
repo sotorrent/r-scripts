@@ -1,0 +1,2 @@
+The way to fix it is to remove the inline style. You'll need to look through your code to find and remove it. All I can tell you is that when you have a modal window open, the style affecting your webpage appears in two different places: in the body tag (  ), and in the lightbox modal html as well (  ). You'll need to look through your code to find the offending style.
+

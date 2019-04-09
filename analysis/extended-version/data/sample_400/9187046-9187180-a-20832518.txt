@@ -1,0 +1,4 @@
+If it's not that much images in design, you can embed css and images straight into the app_offline.htm
+for css just use a element.
+for images read  up
+

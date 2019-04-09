@@ -1,0 +1,2 @@
+@Tyler note that in the failure case, is not reset to 1.  I'm not sure that the in that case is worth it, either - you might as well leave the larger block allocated.
+

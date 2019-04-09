@@ -1,0 +1,7 @@
+It doesn't matter if you set before returning the inner function, because the inner function does not depend on .
+If the inner function did depend on --perhaps it returns it--then setting is certainly not what you want to, because then, well, it would be null instead of having it's original value!
+Modern engines would not maintain unused variables in the outer scope.
+Assuming the inner does depend on , then yes, as long as is being pointed to (referred to by) something, then the value of will have to kept around. But, that's what you are saying you want! How can you have something available without having it be available?
+Remember that at some point the variable which holds the return value of will itself go out of scope. At that point, at least until is called again, will be garbage collected.
+The general rule is that you don't need to worry about memory and leaks with JavaScript. That's the whole point of GC. The garbage collector does an excellent job of identifying what is needed and what is not needed, and keeping the former and garbage collecting the latter.
+

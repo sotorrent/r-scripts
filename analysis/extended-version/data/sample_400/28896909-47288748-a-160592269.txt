@@ -1,0 +1,8 @@
+I recently found a bash-script which does exactly what you need:
+
+This is a bash script that will run `` filename
+
+  - Fixes files recursively
+  - Detects the most common file extensions used by C/C++ projects
+    On Windows, I used it successfully in Git Bash and WSL.
+

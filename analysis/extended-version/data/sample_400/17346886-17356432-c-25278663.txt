@@ -1,0 +1,2 @@
+1(a). I still need to have a local copy of the schema used to validate schema documents, right?  (in your case: sfsd-11.xsd, and in my case: the schema found at ? [named however I choose to name it?)?
+

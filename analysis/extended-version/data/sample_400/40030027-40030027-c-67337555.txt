@@ -1,0 +1,2 @@
+value is initialised to empty string and passed to the method as a pointer. The value in the DB is . I know about the exception, I did have it cleaning in the exception handler as well, but took it out in case that was causing the issue
+

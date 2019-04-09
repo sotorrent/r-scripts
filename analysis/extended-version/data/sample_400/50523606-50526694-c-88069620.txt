@@ -1,0 +1,2 @@
+@TakitIsy no :) all the trick is there, a color is not an image so you cannot apply size/position ... a color can only be used as the final layer [background-color] ... but if you specify a linear-gradient with same color, you will have YOUR color that you can adjust easily ;) .. so what I did is exactly like this, but with a valid syntax
+

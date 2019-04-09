@@ -1,0 +1,2 @@
+From a local repository. Oddly, I can unlink them: I tried unlinking one of them and I received no errors; I repeated the same command and I received a rightful error telling me the file does not exist (because I already unlinked it). oddly enough, however, the same file gets reported again in the list of messages when I try to pull again.
+

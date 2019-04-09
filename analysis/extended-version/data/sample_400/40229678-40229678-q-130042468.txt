@@ -1,0 +1,6 @@
+I have a grouped by pandas dataframe that looks like so:
+
+and I am hoping to get an output:
+
+I feel like there is a straightforward solution to this that I am not seeing.
+

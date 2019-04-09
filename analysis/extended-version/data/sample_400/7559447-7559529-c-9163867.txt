@@ -1,0 +1,2 @@
+Perfect for my needs. We just want to log the JVM settings at start-up to provide some context when reviewing logs associated with problem reports. Thanks!
+

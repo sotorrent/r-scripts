@@ -1,0 +1,8 @@
+Seems like malloc() prefer to use mmap() to allocate space in multithread program. I just tried set M_TRIM_THRESHOLD and M_MMAP_MAX to turn off mmap usage but failed:
+A simple test piece of code is as following:
+The output is as following:
+malloc() allocated the space on a high-address instead of normal heap address. However, if we change the code in main() to following:
+The output is:
+Instead of using mmap(), malloc() allocated the space on a normal heap. I wanna if it's possible to turn off mmap() usage for malloc() in multithread program?
+My environment configurations:
+

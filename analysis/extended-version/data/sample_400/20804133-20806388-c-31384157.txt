@@ -1,0 +1,2 @@
+First of all, sorry for the late reply. I think your version with a callback function that may or may not be passed is the way to go, I would have suggested something along those lines. A totally different route to go would be to use an event based system (or implement a simple one yourself). could then fire an (with a argument), and could subscribe to these events.
+

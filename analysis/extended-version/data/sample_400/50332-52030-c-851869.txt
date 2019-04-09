@@ -1,0 +1,2 @@
+You misunderstood the answer.  This is how the FORMATETC is constructed in windows.  The code of the answer is not an answer it is how the object having the error is built.  The clipboard is not written in C#, it is written in C++ and is a part of windows.  The error is local to windows and there is no C# code in that object.  This is the code that of the object having the error.  I answer is the text above the code.  The solution is in replacing the .DLLs with the newer library.
+

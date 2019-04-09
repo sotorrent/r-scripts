@@ -1,0 +1,5 @@
+Resolved the issue:
+
+working example: crumbs = $(".current").parents("ul")
+.prev("a").add(".current")
+

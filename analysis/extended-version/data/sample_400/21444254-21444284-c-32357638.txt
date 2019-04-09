@@ -1,0 +1,2 @@
+@user3250884 it prints in your browser's JavaScript console. (usually you can access this by pressing F12)
+

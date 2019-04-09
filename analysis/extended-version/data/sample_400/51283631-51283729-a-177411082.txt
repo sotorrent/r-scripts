@@ -1,0 +1,3 @@
+Your images has to be in png format and named with lowercase letters.
+Then you can use
+

@@ -1,0 +1,2 @@
+tbh. I never had to do things like that before. I am new to reading out data from files. So some clues f. e. what methods or clases i should use would be greatly appriciated.
+

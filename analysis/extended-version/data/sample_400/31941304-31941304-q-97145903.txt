@@ -1,0 +1,2 @@
+The output displayed by the compiler is -100.000000. But according to me it should be -25.000000. What should i do to correct it and what is my mistake?
+

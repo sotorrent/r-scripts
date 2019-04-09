@@ -1,0 +1,2 @@
+to be sure, the observer.rb lies right next to the model.rb in the models directory.
+

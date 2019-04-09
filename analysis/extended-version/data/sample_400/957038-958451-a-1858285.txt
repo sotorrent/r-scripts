@@ -1,0 +1,2 @@
+I'm told that in C, C++, java and C#, if you don't put those "breaks" the program code flow will fall into the other "cases" and will execute the instructions inside them, not matter if the variable doesn't have the values assignned to the "cases".
+

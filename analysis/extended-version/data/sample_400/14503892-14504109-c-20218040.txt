@@ -1,0 +1,2 @@
+@rhalbersma Thanks for the answer.  I obviously have more to understand about why the implicit conversion sequences are same by understanding rvalues more
+

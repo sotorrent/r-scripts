@@ -1,0 +1,3 @@
+I want to find the argmax of the values in a matrix by column, e.g.:
+I feel like I should just be able to map an argmax/posmax function over the columns, but I don't see a particularly intuitive way to do this in Octave.
+

@@ -1,0 +1,18 @@
+what i have is:
+| Equipment Name | Event.............. | Time of Event...................|
+|EX001...................| Brake Active... | 2014-09-29 20:05:10.000 |
+|EX001...................| Brake Active... | 2014-09-29 20:07:10.000 |
+|EX001...................| Brake Active... | 2014-09-30 06:07:10.000 |
+|EX001...................| Brake Active... | 2014-09-30 18:05:10.000 |
+|EX001...................| Brake Inactive | 2014-09-29 20:05:45.000 |
+|EX001...................| Brake Inactive | 2014-09-29 20:06:10.000 |
+|EX001...................| Brake Inactive | 2014-09-29 23:01:10.000 | and so on.
+i want to find out the number of Events in each date from first it happened count to last time it happened and show the date and the count of it. i have a query to count it in days but unable to show the fist and the last time it happened.
+what i want is:
+| Equipment Name | Event.............. | First Occurance................| Last Occurance................| Event Count |
+|EX001...................| Brake Active... | 2014-09-29 20:05.............| 2014-09-30 18:05.............| 4.................. |
+|EX001...................| Brake Inactive | 2014-09-29 20:45.............| 2014-09-29 23:01..............| 3.................. |
+and so on
+All from one table
+Please help guys.
+

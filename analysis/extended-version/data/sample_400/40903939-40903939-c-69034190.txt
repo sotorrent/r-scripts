@@ -1,0 +1,2 @@
+@HebeleHododo while i like the idea of that, when you do have a single branch of a function you're trying to test, and there's numerous things to check, if not doing multiple asserts is the alternative just copy and pasting the same test several times, once for each instance of an assert you'd want to do?  That seems like a big violation of DRY :D
+

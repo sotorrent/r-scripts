@@ -1,0 +1,2 @@
+You don't need the delete. Creating the FileOutputStream will create a new file anyway.
+

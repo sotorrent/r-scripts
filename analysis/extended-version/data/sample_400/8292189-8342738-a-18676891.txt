@@ -1,0 +1,5 @@
+I tried it something like this,
+Passed the checkAll checkbox to the Adapter class constructor and setting is Listener there itself so that we don't need to declare any flag public static from the Main Class.
+Also I took couple of flags that maintain the state of the checkbox, that is I tried to maintain such that when the checkAll checkbox check is changed it does not effect the List Items checkbox and vice-versa for List Items checkbox check.
+So, try this
+

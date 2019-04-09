@@ -1,0 +1,8 @@
+A client hook is tricky, as:
+
+  - it can be bypassed by a client, and
+  - is not easily deployed on all clients.
+    A server hook is easier (update hook), since it receives a zero sha for new refs.
+    That same hook can list the content of a commit
+    If a specific folder is still there, it can reject the push with an helpful message.
+

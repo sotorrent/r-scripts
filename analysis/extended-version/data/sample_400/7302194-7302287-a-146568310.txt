@@ -1,0 +1,10 @@
+I suppose that you fill no value in JSON input for the column. Because of this the hyperlink is empty. If you want to place the link with any fixed text in column I would recommend you to use custom formatter. See the recent answer for an example.
+One more possible solution way is to use and include to the 'MyLink' column definition. In the case you will not need to include in the JSON data for every row of data. It's important to understand that the trick works only in case of usage (so it should work for your grid).
+If you have another problem you should include in the text of your question the JSON data which you use.
+Some small remarks to your current code:
+
+  - the usage of together with has no sense. You should remove it if you will do use .
+  - the parameter should be .
+  - is better to replace to . If you use , the jqGrid will replace it internally to and the object will be discarded.
+  - If you use and you don't plan to show the guids to the user you can remove the column from the grid. The (the in your case) will be used to assign ids of elements (table rows) of the grid. So you don't need to hold the same information twice
+

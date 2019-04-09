@@ -1,0 +1,7 @@
+I use and store there. Tried to sterilize the using Newtonsoft.Json, it only saves the text. Wanted to keep the image in the form of bytes, but have not found how to convert to .
+In general I have two questions:
+
+1.  Has the of images to be sterilized to a file?
+2.  How can I convert a into a byte array?
+    The issue relates to the UWP platform, I would appreciate any help.
+

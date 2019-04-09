@@ -1,0 +1,2 @@
+designates the human language of the content, not the charset encoding of the document. The latter is clearly the problem here, not the former.
+

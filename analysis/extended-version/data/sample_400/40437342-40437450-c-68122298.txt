@@ -1,0 +1,2 @@
+Why show the wrong way to do it? Also, why use the longer istream+back_inserter when you can simply use ?
+

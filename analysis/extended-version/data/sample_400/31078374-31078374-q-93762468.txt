@@ -1,0 +1,3 @@
+I am using to scramble an binary array (code below) but the output does not appear very random. I would expect a random assortment of dots but the resulting array appears to be a semi-regular pattern of dashes. What is going on here?
+enter image description here
+

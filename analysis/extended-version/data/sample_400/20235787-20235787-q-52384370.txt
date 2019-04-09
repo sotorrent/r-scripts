@@ -1,0 +1,6 @@
+I have two Models,Doctor and Patient.I have related them each other through HABT.
+I want to retrieve associated data of patients from model Doctor.ie I want to retrieve all patients belongs to a specific Doctor in DoctosController.
+I have following  code in my DoctorController for index action.
+Its working perfectly in 'view' action in same controller but not in 'index' action.I'm looking to display data in index.ctp view of Doctor Controller
+I have used this to display in index.ctp but it not working
+

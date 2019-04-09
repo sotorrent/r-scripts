@@ -1,0 +1,2 @@
+Numbers are are always interpreted as ints. if you want the number to be compiled as long, you should add the suffix "L" to it, so it will be . In case for numbers bigger than MAX_LONG (~2^31) you should provide them as byte arrays using this constructor with the string representation of the number ("1234.56").
+

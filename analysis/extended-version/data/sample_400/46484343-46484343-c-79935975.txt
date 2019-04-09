@@ -1,0 +1,3 @@
+Thank you for your reply - see my edits on this. My test script just calls wrapper functions for in similar fashion of method.
+Can you explain to me, how methods within are invoked? Because right now my chain is like something: , where and are calling methods on their own. So what is the order if any?
+

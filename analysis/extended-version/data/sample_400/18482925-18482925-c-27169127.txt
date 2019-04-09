@@ -1,0 +1,2 @@
+possible duplicate of remove .php extension with .htaccess
+

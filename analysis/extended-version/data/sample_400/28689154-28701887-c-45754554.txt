@@ -1,0 +1,2 @@
+I am using taskflow inside portlet. First step of taskflow is parameters initialization. So,  when webcenter portal put it's new parameters user see old,  because taskflow didn,t now about it and shows the same view of taskflow,  with old parameters.
+

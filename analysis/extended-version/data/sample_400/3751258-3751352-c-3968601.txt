@@ -1,0 +1,2 @@
+I'm going through my code line by line (commenting out) and it seems that when I init a System.Windows.Forms.WebBrowser() it causes a 'ThreadStateException' error i think. Weird I wonder how come causes no errors yet when I compile it, it does.
+

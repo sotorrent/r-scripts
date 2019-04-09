@@ -1,0 +1,10 @@
+What are the requirements for the storage?
+
+  - Do you want to store data local or serverside?
+  - Should it be secure? DB backend password protected
+  - How many storage you think you need?
+  - Is it mandatory that the data will be persistent?
+    If you are happy with 5mb max semi-persistent storage unsecurely stored clientside: Localstorage, or IndexedDB(200mb)
+    If you want to secure your data, you have to need to create a database like MySQL and some back end controller to handle the requests from your web application.
+    I think localStorage is the best option for you :)
+

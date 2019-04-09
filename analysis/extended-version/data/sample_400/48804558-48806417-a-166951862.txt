@@ -1,0 +1,4 @@
+In general to handle a shortcut key, you can override [](By overriding this method, you can handle the key combination:
+Returning , means it's handled by your code and the key will not pass to the child control. So it's enough to override this method at form level.
+But if you are talking specifically about to customize the combination, you can override [](method of the :
+

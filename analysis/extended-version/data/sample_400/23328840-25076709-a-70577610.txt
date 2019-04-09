@@ -1,0 +1,2 @@
+you said you succeed to create shared library . in Android.mk specify the path of and the path of header files
+

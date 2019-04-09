@@ -1,0 +1,7 @@
+There are many Ways to do so:
+
+1.  Try debugging the Test instead of just running it. This will case an exception beeing raised at the failing assertion.
+2.  You already povided some Messages to your assertions, those will be visible in the test-explorers details-section after selecting the failes test making it easier to determinse which test-case failed (see screenshot below).
+    enter image description here
+3.  As pointed out in the comments, try to have just one assertion per test-case, this way its obvious which assertion failed simply because there is only one within a testcase.
+

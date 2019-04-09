@@ -1,0 +1,3 @@
+This doesn't sound like it has anything to do with 64/32 bit from the error message given.
+Have a look at this SO question and answer and see if that gives any clues:
+

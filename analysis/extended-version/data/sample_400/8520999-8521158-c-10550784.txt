@@ -1,0 +1,2 @@
+Yeah, I have ['in'] on the page, I mistyped it here. Writing the variables like that doesn't help, in fact it was like that originally and it didn't work. As I said, the statement works when I put $id instead of $in. When I print them out $id is, for example, 11 and $in is 16. What could be wrong?
+

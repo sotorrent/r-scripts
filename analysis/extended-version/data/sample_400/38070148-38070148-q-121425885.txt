@@ -1,0 +1,2 @@
+Hi if a URL will contain a sub domain like then i want to execute a controller action for that and the sub domain as its parameter.For Ex for above URL i want execute controller and action with as its parameter.
+

@@ -1,0 +1,2 @@
+How to create a textarea field in symfony2.0?Plesae provide an example also.I am new in symfony.
+

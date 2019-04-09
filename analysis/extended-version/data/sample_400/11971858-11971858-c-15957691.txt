@@ -1,0 +1,2 @@
+You can save it in SQLite DB.
+

@@ -1,0 +1,5 @@
+If you have these models:
+You can just do this in your template:
+That's the naive approach. It will do one database query (fetching related objects) for each .
+If you're using django 1.4, you should prefetch the data objects in your view, so it doesn't do so many queries:
+

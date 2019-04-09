@@ -1,0 +1,6 @@
+Modify your . The is only a bare name. You need to add the path to the file name in the time of processing, because you do not know where the file was found in the directory hierarchy:
+The variable contains the path during walking.
+To make check whether your code works, just print the content of the list:
+Or you can do it in the loop to get ready for the later part:
+Then you just add the to remove the file name:
+

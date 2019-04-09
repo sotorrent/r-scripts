@@ -1,0 +1,5 @@
+No ready-to-use solution here, but let's see..
+Get list of all displayed windows and check positions and sizes of those windows - possible, lots of tools does it, many articles on that, I'll skip this one. Then, you can call MonitorFromWindow.aspx) for each or some windows and compare window dimensions&position against monitor info. If windowpos ~= 0,0 and windowsize ~= monitorresolution you could assume that this window is in fullscreen mode.
+On the other hand, if already having a list of all HWNDs, then why not just Query the window for its placement.aspx) and check the for SW_MAXIMIZE/SW_SHOWMAXIMIZED flags. That won't tell you which monitor is it, but should tell you at least if the window is maximized and if it's enough for you..
+I don't know how fast/slow would it be to do it like that, but, yes, it seems possible.
+

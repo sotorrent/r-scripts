@@ -1,0 +1,2 @@
+I posted the shader code above (I also noticed that before I had a one off in my counting, so I edited the numbers in the original question 63->64 and 64->65 accordingly).
+

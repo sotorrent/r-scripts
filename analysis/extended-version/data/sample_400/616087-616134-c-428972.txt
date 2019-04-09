@@ -1,0 +1,2 @@
+Once again, great suggestion. I'll get my .net guy to send me an example of the data that gets sent to the ComputeHash function to see if I can convert the PHP to it.
+

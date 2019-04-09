@@ -1,0 +1,4 @@
+Do you want to count the number of rows in the result set from the sproc?
+In that case you could do:
+or you could use a Table variable instead of the temp table.
+

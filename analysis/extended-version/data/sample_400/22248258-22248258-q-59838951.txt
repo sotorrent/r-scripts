@@ -1,0 +1,6 @@
+I am learning how to use to copy a folder to a user's profile. The PC has multiple users therefore the batch file will need to get the username and then go into the folder structure inside the username.
+EG: We have a PC with multiple users. Lets say one user is called User1 and one User2 need a folder located in
+The FolderToCopy needs to be copied to for user 1
+and to for user 2.
+Can somebody help me in defining some sort of local variable where the user name is picked up based on who is logged in to the PC?
+

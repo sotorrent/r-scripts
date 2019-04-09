@@ -1,0 +1,23 @@
+We've an ASP.Net MVC2 web app (SQL 2008 in backend). We use Data Annotations at model level for all sprt of validations (hope its one of the best practices). So, our validations are performed on server side and errors (if any) are returned. Works fine.
+Next, we've AJAX based postback jQuery plugin. In combination with MVC partial views, we've 'AJAXified' certain forms. I hope this is pretty much like a basic stuff with a little AJAX & jQuery.
+
+Now, we want to bring the validation on client side as well (and still
+persist the server side validation). We've found some simple &
+basic way to have basic validations like required, format,
+range, etc... using bassistance jQuery. But what about certain server
+side validations, like duplication check, etc.. what are the best
+practices?
+Note that we've simplified our web app by not including the default Microsoft AJAX libraries. We prefer simplified jQuery plugins. Also Microsoft js files weight several KB. Though it might lesson the effort but it requires several files.(
+For example, jquery forms plugin looks simpler then the default MicrosoftAjax.
+jQuery plugins are abstract & self contained thats one reason we're away from the Microsoft scripts. Here're some options -
+SOLUTION #1:
+Using ASP.Net Data Annotations validations using pure jQuery, AJAX,
+JSON & Partial views
+
+SOLUTION #2:
+ASP.NET MVC Client-Side Validation Summary with jQuery Validation Plugin
+We need to keep things simple, clean and optimal. For example, this looks complex -
+
+If possible we'd prefer to keep the validation in one place instead of having to replicate it in data annotations as well as in jQuery.
+Thank you.
+

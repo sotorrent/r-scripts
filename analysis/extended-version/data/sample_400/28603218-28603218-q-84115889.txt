@@ -1,0 +1,8 @@
+I'm making my first .NET MVC 4 application just to try it out. I have made an application wich is connected to MongoDB where you can store en retrive car data. Currently these are two different views. But I want them to become two different partial views, which I can display in one view. To do this, I started over with my application.
+I have made an CarsController:
+I have made a CarsModel
+And I have made the folder Cars for the Indexview and Shared for the partial views (_Create.cshtml).
+My Index view:
+I can't see my partial view and I get an error.
+What am I missing / doing wrong? Does my Index view need a Model?
+

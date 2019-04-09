@@ -1,0 +1,3 @@
+Store the the previous text in a variable, say, , initialized with .
+Try using the above code on selection change.
+

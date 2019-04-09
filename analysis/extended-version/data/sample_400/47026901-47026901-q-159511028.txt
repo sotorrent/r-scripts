@@ -1,0 +1,18 @@
+Sorry for duplicate if my question is it: I found the solution for some hours and tried some solutions, but zero effect or lack of explanations.
+So, how I can change the IDE GUI font family? NOT code font family, NOT GUI font size, changing the the font FAMILY of GUI (menu, labels, etc.), please!!!
+It's simply if you use Darcula Look and fill theme, but what if I use the Nimbus light theme?
+
+Update: Solutions that I tried
+
+Search request:
+Google search results:
+1.
+
+This module will allow you to set the font family and size of the fonts used by netbeans in the UI. When you add the command line switch -J-Dramos.nb.ui.font="MyFavoriteFont,14" to the netbeans options this module will set the font used by netbeans to the font named MyFavoriteFont with the size of 14. This doesn't seem to work with synth based look and feels.
+Where I need to input in NetBeans options??!!
+
+2.  
+Not font size, font family please!!
+3. How to change NetBeans 7.0 UI font? - Stack Overflow
+Contains link to
+

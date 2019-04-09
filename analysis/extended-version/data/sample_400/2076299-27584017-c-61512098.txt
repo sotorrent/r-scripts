@@ -1,0 +1,2 @@
+"Scripts may close only the windows that were opened by it." on Chrome 50.
+

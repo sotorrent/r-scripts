@@ -1,0 +1,2 @@
+You can make an array of booleans corresponding to list of items and in the adapter you should toggle the boolean values accordingly checked/unchecked, and in adapter on each and every check that is all elements of boolean array is true? then setchecked(true) the selectall_checkbox else keep it setchecked(unchecked).
+

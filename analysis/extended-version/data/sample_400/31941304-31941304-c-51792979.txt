@@ -1,0 +1,2 @@
+This should be noted on every C tutorial. Read one first if you haven't
+

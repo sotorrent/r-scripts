@@ -1,0 +1,2 @@
+Yeah, it's the STM32F205. Of course I'm reading the same datasheet for the uC the code was written for.  I'm specifically asking about the GPIO region, which is why I stated that in my original question.
+

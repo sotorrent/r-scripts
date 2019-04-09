@@ -1,0 +1,3 @@
+I just saw that the newest source code on github is more recent than the one I installed with pip. 
+I might just clone the github lib and try to get along with that. Thank you very much!
+

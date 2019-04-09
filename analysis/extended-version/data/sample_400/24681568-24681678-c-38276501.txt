@@ -1,0 +1,2 @@
+Thank you for reply. I went through that link earlier. My actual problem is that how can form elements be made editable/non-editable based on a specific condition.
+

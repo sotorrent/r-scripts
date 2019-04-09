@@ -1,0 +1,14 @@
+I have come up with the following theoretic solution to a query I want to run:
+However, MySQL "doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'" as it tells me.
+I want to achieve that only the 10 oldest entries from are joined into . How to achieve this?
+Dump of tables w/ dummy data:
+EDIT
+Per Strawberry's suggestion I tried out SQL Fiddle and put in the dummy data that I am working with:
+Desired output from query contains two columns: ,
+is the number of times that is associated with a match through the table.
+The catch is that only 10 players are allowed to line up for each match. We'll use a limit of 3 for this, since there's not enough dummy data for 10.
+This means that the 3 players () who RSVP'd first () is playing.
+Referring to the SQL Fiddle, that should leave out the row from with =5 since that is the only case where there are more than 3 users RSVP'ing for a match, and that is the oldest RSVP for =2
+Further limit
+If we limit to 2 players per match, two more rows would be excluded from the output. Rows =4 and =7, because those are the oldest for either .
+

@@ -1,0 +1,2 @@
+The question was different: Asume ios thinks the calibration is currently not needed, but I think it is always needed, so i want the calibratuion view, whenever I show my compass.
+

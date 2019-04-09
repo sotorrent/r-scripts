@@ -1,0 +1,2 @@
+i am not entirely sure what you are asking here, your question is quite broad. but there is no way to get the phone number of a facebook user. there is no api for that, it´s just impossible.
+

@@ -1,0 +1,2 @@
+Do you know whether Google Spreadsheet supports Named ranges? I haven't used it enough but if so, that would be the best solution.
+

@@ -1,0 +1,6 @@
+I was testing my cocos2d-iphone 1.0.1 game on an iPhone 4 with iOS version 4.3.3. It is a landscape mode game.
+I recently updated Xcode to 4.5.2, and it comes with iOS simulator 6.0.
+If I run my game on the simulator (Hardware set to retina iPhone 4), the device window rotates to the expected position, but the game itself seems to be rotated 90 degrees to the right. The touches also seem to be caught rotated. So basically, I have the device window in the correct orientation but the game itself is rotated.
+When I run this on the iPhone 4, it all works just fine.
+What could have happened?
+

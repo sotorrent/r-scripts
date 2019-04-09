@@ -1,0 +1,2 @@
+There is no stack in the C language.
+

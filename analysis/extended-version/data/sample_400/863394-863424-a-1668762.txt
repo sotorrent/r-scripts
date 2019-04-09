@@ -1,0 +1,2 @@
+We use log4net TraceAppender where you can config layout or filtering easily.
+

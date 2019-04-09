@@ -1,0 +1,2 @@
+s are usually four bytes long. But sets the value of individual bytes, so you're setting each value to 0x01010101, which just so happens to equal 16843009.
+

@@ -1,0 +1,2 @@
+The total memory is the same as the on startup, but might be higher after it start running.
+

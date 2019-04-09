@@ -1,0 +1,3 @@
+I would do this outside of mysql and use php and some regex.
+That will replace all non numerical characters
+

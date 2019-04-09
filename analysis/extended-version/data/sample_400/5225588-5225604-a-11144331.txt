@@ -1,0 +1,6 @@
+No there isn't.
+You could use this of course:
+but of course the compiler isn't going to complain when you try to create an instance of it.
+You may add a pure virtual destructor:
+or you may make the constructor protected, stopping the instantiation:
+

@@ -1,0 +1,6 @@
+The problem is that there aren't any
+methods they share.
+Well there's your problem right there. You shouldn't be using inheritance here! If you aren't intending to substitute one class for the other they just shouldn't be in a parent-child relationship.
+Depending on the needs they should be totally unrelated, templates, or use composition.
+EDIT: Based on the code sample, you're inheriting to reuse and I would suggest using composition instead. could be a that is owned by both and . You can put as much/little helper logic into as appropriate.
+

@@ -1,0 +1,2 @@
+look at your imports: either use only org.hibernate.. annotations or only javax.persistence.. annotations. Hibernate has the advantage of supporting more options, JPA has the advantage of being an open standard. If you're mixing them, you're missing at least the open standard (portability), while I don't think it will work at all (I don't think the hibernate entitymanager parses hibernate annotations, at least he shouldn't)
+

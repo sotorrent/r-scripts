@@ -1,0 +1,2 @@
+@JadedEric I have same scenario and having a unstoppable warning WARNING: Tried to load angular more than once. Do you find its solution?
+

@@ -1,0 +1,3 @@
+The break after your default case is just a matter of personal preference.
+Putting a break after return almost seems contradictory to me. I'd remove the break, just to make the return statement really stand out.
+

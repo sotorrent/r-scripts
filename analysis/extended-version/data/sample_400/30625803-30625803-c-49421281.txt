@@ -1,0 +1,2 @@
+It's perhaps not relevant to your specific problem, but it's worth pointing out that this sem:triple-syntax is still a MarkLogic-specific XML syntax, and not a standard RDF syntax format. It should be relatively easy to convert though.
+

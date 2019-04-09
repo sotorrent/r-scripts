@@ -1,0 +1,8 @@
+I think that Chrome will make some magic and resolve all subdomain of localhost to 127.0.0.1.
+
+You have to add to your host file
+
+  - Linux: /etc/hosts
+  - OSX: /private/etc/hosts
+  - Windows: %windows%/system32/drivers/etc/hosts
+

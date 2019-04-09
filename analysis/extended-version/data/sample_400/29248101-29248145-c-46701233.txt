@@ -1,0 +1,2 @@
+I'm confused by the last statement. Functions defined in earlier scripts are always accessible by code loaded in later scripts.
+

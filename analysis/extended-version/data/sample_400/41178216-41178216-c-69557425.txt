@@ -1,0 +1,2 @@
+@EOF We reserved addresses greater than 0x100000000000l for storing our system data. malloc() via mmap() will destroy our data as it would take these addresses as well.
+

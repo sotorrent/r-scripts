@@ -1,0 +1,2 @@
+If your vm is a classic one, moving it to different vNet is very easy using azure powershell cmdlets. Here is the code-
+

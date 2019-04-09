@@ -1,0 +1,2 @@
+Welp. I don't know when the first time is that you need to access the . My tendency would be to set the attribute in the action, but you could do it in the action. I also don't know what your script looks like, but the logic for creating the probably belongs in the controller or in a service.
+

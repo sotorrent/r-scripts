@@ -1,0 +1,5 @@
+I just installed the Xcode 4/iOS SDK 4.3 bundle from the apple dev center. I renamed /Developer to /Developer3 before installing. Anyway, after opening up my 3.x xcode project I wanted to change the target, so I clicked on the project at the top of the left hand side tree, and I got an "Internal Error." (Details, Continue or Crash). So I clicked "Details" and saw:
+Earlier I also tried going to "Edit Scheme..." but it just sat there and didn't do anything, like I never clicked the menu item.
+Has anyone else seen this or know of a workaround?
+Thanks.
+

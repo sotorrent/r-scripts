@@ -1,0 +1,2 @@
+Your method is in the model which has no access to by default.  Also your method needs to be defined to take an argument if you intend to pass it one.
+

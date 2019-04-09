@@ -1,0 +1,3 @@
+I am trying to create a Black screen with a transparent Hole in the middle of the screen. Here is what i have tried.
+The second paint, shows black color instead of transparent. How can i punch a transparent hole in MY SemiBlack Canvas?
+

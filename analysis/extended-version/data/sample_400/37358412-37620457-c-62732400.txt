@@ -1,0 +1,2 @@
+Hmmmm. Reading on a different thread than the socket's runloop sure sounds to me like something that's likely to turn out problematic. Did you find some documentation somewhere that explicitly states it to be safe?
+

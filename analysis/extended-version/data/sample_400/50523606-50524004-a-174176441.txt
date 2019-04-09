@@ -1,0 +1,4 @@
+Here is how I'll do it, using CSS on your background:
+You can choose the borders you want on the front by arranging the gradient ordering.
+Hope it helps.
+

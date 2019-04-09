@@ -1,0 +1,9 @@
+This means simply, that all relevant records already have
+
+  - 0 row(s) affected : No rows were affected by your query
+  - Rows matched: 9 : 9 rows were found, ...
+  - Changed: 0 : ... but none of them had to be changed
+  - Warnings: 0 : Nothing recoverable bad happened while runinng the query
+    .
+    Is ver likely to bring you 9 row(s) affected Rows matched: 9 Changed: 9 Warnings: 0
+

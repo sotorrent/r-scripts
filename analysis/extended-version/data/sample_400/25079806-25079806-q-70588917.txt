@@ -1,0 +1,5 @@
+I do understand that several variants of this question has been asked here; but unfortunately any of them couldn't solve my issue. I have a that contains 1000 s and a that contains 100 category names. The class is having properties like , and . One of the sample value of the list is .
+I am trying to match these categories with the property values of the . I have tried so many including .
+Another method which I tried was to each categories into words and then check ; and that is also not giving expected result.
+What is the best way to do this?
+

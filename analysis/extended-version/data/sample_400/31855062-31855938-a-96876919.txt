@@ -1,0 +1,11 @@
+you can create anservices "Context" where you write your  "active image" path.
+so that you don't need using state parameters.
+moreOver this not resolve why $index is imutable...
+sevices exemple :
+inject it in your card controller  :
+and in your full screen :
+
+use alias is a good practice.
+but if it disturb you, you can publish you var on $scope.  (me => $scope).
+except in services, who have not $scope of course
+

@@ -1,0 +1,2 @@
+On windows, it seems kind of baked in that type is identified by extension.
+

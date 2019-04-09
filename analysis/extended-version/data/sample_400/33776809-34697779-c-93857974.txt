@@ -1,0 +1,2 @@
+@gavenkoa comes with various strings attached, so it's not a viable alternative for every project.
+

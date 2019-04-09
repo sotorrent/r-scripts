@@ -1,0 +1,4 @@
+I'm a high school student in the process of creating a fairly simple quiz-like app as an attempt to learn more about coding. My goal with the app is to have the user answer a few questions which will have each answer associated with a value, and the final result will be sum of all of the values.
+I just don't know how to store the data/values that the user selects in order to use them later to create an end sum. Should I associate each value with a variable to use later? If so, how?
+Here's a fiddle of an example question from my ideal quiz:
+

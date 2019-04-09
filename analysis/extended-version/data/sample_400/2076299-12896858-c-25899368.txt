@@ -1,0 +1,2 @@
+This method is denied in Firefox, not works:
+

@@ -1,0 +1,4 @@
+First, ensure that property
+Next, do not forget to handle the message (you don't want process the message and do )
+So you preview on the (), perform the required action, and prevent from executing select all ()
+

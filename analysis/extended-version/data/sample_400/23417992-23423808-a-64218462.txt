@@ -1,0 +1,3 @@
+Store a pointer to the playing QSound in your MainWindow, then check if it has finished with the isFinished function.
+Note that m_pSound is now declared as a member variable of MainWindow.
+

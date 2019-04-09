@@ -1,0 +1,2 @@
+we don't specify function return types in javaSCRIPT.
+

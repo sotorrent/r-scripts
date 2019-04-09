@@ -1,0 +1,2 @@
+For me, success is not working inside or outside proxy, I have given alert or console.log but dosen't goes inside Success function. You are using Ext.data.JsonP.request, Please show me how to write using proxy.
+

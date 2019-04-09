@@ -1,0 +1,6 @@
+I created a little ruby script on OSX and i would like to use it on Windows.
+How can i ask windows to start my script in the ruby environment, without specifying the keyword ?
+I did it this way on OSX
+But on windows i don't know.
+Thank you in advance.
+

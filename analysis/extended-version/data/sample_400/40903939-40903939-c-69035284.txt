@@ -1,0 +1,2 @@
+@Kritner you could write a private method in your test class which returns the object you want to test. Thus, eliminating the need to copy-paste.
+

@@ -1,0 +1,3 @@
+I want an exponentially distributed variate, and it seems pretty efficient to do:
+where my_random_function gives a double x, so (strictly) meaning that I don't ever get or . How would I get a random number that excludes the 0 and 1 values. I'm sure someone would have asked this before, but I can't see it. Also, I'm open to other ways of generating exponentially distributed values.
+

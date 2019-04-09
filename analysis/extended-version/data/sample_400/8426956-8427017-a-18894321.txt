@@ -1,0 +1,2 @@
+Are you asking how to create the BigDecimal (or BigInteger) with a larger number? If so, first thing you should do is append an to your number literal -- that makes it a instead of an . If that's not big enough, you can also create new BigDecimals/BigIntegers by passing them a representation of the number.
+

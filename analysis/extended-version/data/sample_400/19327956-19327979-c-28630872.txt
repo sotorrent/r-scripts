@@ -1,0 +1,2 @@
+"Integers are four bytes long" on this particular platform.
+

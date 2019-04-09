@@ -1,0 +1,2 @@
+articles_path does not exist, and magazines_articles_path() redirects to the show action of the articles_controller. But, what are the correct parameters to pass to the simple_form_for in this case?
+

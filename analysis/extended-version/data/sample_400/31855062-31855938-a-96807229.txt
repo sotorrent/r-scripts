@@ -1,0 +1,4 @@
+you can create anservices "Context" where you write your  "active image" path.
+so that you don't need using state parameters.
+moreOver this not resolve why $index is imutable...
+

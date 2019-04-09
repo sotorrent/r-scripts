@@ -1,0 +1,2 @@
+I'm asking about the return-value temporary 'prvalue' which life-time, starting with C++11, can be extended and thus modifying it became useful and so the 'const' cv.
+

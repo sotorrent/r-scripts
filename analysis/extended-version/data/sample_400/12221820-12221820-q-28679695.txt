@@ -1,0 +1,3 @@
+I'm using fixtures and I'm running a test where I need to access a URL of a file from a certain person. I don't want to go over the internet to fetch this everytime so I have downloaded the file and put it in my test directory .
+How do I write the local path in my fixture file so I can access within my test.
+

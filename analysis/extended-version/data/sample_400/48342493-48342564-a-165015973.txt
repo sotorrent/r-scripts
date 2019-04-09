@@ -1,0 +1,3 @@
+Usually the generic type is defined for the whole class as shown below:
+This way you can instantiate with (assuming you're using Java 7+).
+

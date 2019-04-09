@@ -1,0 +1,11 @@
+If you are using PostgreSQL inheritance please note that the following are not inherited:
+
+  - Primary Keys
+  - Unique Constraints
+  - Foreign Keys
+    In general you must declare these on each child table.  Do for example:
+    What you want instead is to do this:
+
+This sounds to me like you have some urgent DDL issues to fix.
+You could retrofit the second's constraints onto the first with:
+

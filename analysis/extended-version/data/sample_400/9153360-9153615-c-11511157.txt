@@ -1,0 +1,2 @@
+You can count the rows in the SP's query.
+

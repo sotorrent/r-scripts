@@ -1,0 +1,2 @@
+AFAIK, this strange behavior was added in recent MATLAB versions. Since files are actually files, might just work... If this solution works for you, I can post it as an answer.
+

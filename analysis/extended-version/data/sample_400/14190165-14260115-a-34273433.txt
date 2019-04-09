@@ -1,0 +1,4 @@
+The answer to structuring is more of question for your team rather than a Q&A site. There are a variety of solutions as you have shown and each will have its merits. It all depends on what is most comfortable for your team.
+In terms of how this ties in with SVN - it doesn't. SVN will allow you to structure however you like as it is agnostic of IDE/Programming language etc.
+However, what you could do whilst you are in a transitional stage is to create several branches of your code made up into the varying structures so that you can demo each different way to your team. Once you have made a decision, merge the best code into trunk.
+

@@ -1,0 +1,2 @@
+i finally found the error, effectively there was an allocation problem, i reallocated a bytes[] in my loop, so there was a huge amount of memory used this way. Solved now, thanks.
+

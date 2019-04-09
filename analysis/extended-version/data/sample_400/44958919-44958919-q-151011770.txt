@@ -1,0 +1,2 @@
+I have a layout here that has some nested layouts which contain various Views that I want to enable/disable. I thought it would be as straight-forward as calling on them but I've found that only works on the and . The , , and don't react to programmatically and don't have available to them in XML. What am I missing here?
+

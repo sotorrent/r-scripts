@@ -1,0 +1,4 @@
+Yes, you can. A list can hold any kind of object in it. Consider the following code:
+Now you have a list containing 10 labels, all having their position in the list as a text. Having created the list you can access it like you normally would. The following code takes the labels from the previous example and adds them to a grid layout:
+I hope this answers your question.
+

@@ -1,0 +1,4 @@
+The best approach is to protect the class constructors, this way the class cannot be instantiated directly and therefore it's essentially abstract:
+Or, newer style:
+Destructor is generally better to keep public because you might want to delete an object by its base class pointer.
+

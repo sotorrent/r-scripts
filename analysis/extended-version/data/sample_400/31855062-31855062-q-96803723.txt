@@ -1,0 +1,7 @@
+i have a grid with pics and i'd like to get the clicked pick position to pass to a full screen (using $state.go). I've implemented all stuff but the index position is always 0. This is my code:
+Grid screen (secure.html):
+app.js:
+Finally the full screen (fullscreen.html) when any pic is clicked:
+It's rare because "images" is read correctly, but "index" is always 0 value, i've started trying using a var like images, i mean:
+These lines get images array but index is modified only in controller.js, but in the fullscreen.html is 0..... I have no idea what is happennig
+

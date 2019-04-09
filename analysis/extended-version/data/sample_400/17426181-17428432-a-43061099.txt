@@ -1,0 +1,4 @@
+Are you trying to use JavaHL? If so, you'll also need the Subversion API libraries which aren't necessarily included in JavaHL.
+Otherwise, you can use SVNKit which doesn't require the Subversion API libraries.
+This can be selected via the Windows->Preferences dialog box. Go to Team->SVN and look under SVN interface section and select SVNKit.
+

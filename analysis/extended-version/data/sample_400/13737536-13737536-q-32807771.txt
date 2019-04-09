@@ -1,0 +1,12 @@
+I have Class in src/groovy . I want to use my service here . but error occurred "No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here ". i try to debug but not able to find . can you please help me that what is my mistake .
+
+code in service is:
+`def updateUserLastLogin(User user,Date date){
+try{
+User.withTransaction{
+println "121212"
+user.lastLogin=date
+user.loginDuration=new Date().time - user?.lastLogin?.time
+def x=user.save()
+}
+

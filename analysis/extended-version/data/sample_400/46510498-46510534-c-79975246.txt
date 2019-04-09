@@ -1,0 +1,2 @@
+Sorry I'm quite new in Angular world, what do you mean by returning a promise? I've used this code in different "application" and it worked fine ie. returned data and put it in html tab.
+

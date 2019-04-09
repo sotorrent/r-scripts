@@ -1,0 +1,2 @@
+You need to initialise the m_pSound ptr and then check it is valid before dereferencing the pointer; see the change in code in my answer.
+

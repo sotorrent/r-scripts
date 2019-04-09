@@ -1,0 +1,19 @@
+As a start, there are other GPIO ports that live at every multiple of from and beyond that but still in your range, there are the CRC peripheral, RCC, and Flash controller. The relevant memory map is on page 50 of RM0033 (Rev 3, old version so page number is probably wrong).
+
+0x40023C00 - 0x40023FFF Flash interface register
+0x40023800 - 0x40023BFF RCC
+0x40023000 - 0x400233FF CRC
+0x40022000 - 0x400223FF GPIOI
+0x40021C00 - 0x40021FFF GPIOH
+0x40021800 - 0x40021BFF GPIOG
+0x40021400 - 0x400217FF GPIOF
+0x40021000 - 0x400213FF GPIOE
+0X40020C00 - 0x40020FFF GPIOD
+0x40020800 - 0x40020BFF GPIOC
+0x40020400 - 0x400207FF GPIOB
+0x40020000 - 0x400203FF GPIOA
+
+The code you have posted, as best I have been able to calculate, does access some unimplemented addresses (), so I'm not sure what's going on there, or if I have miscalculated. In testing on an STM32F207, I can confirm that you can read and write to this without getting a fault, but the registers are unimplemented and always read as zero.
+It would be a really bad idea to use peripheral registers as general purpose memory. Not every bit will be R/W, not all addresses may be implemented, and that's not even getting into the fact that you'll be configuring hardware based on application data and not correct register values. The range you've specified includes the flash controller and RCC, both of which are vital to the operation of the microcontroller.
+If you are out of memory, there are some memory spaces that you may be able to use as general purpose if they are not already used for another purpose. The STM32F2's have a 4 kB backup SRAM that can be used, though there is some setup required to make it R/W. The USB peripheral(s) also has some RAM built in for endpoint buffers. If you aren't using USB, you could abuse some of this memory, and you could configure the USB peripheral so there aren't any bad side effects.
+

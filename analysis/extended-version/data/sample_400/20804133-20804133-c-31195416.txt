@@ -1,0 +1,2 @@
+I'm using inverse kinematics algorithm that iterates small angular changes of both servos to reach final position, that's why im not posting all HexLimb class. Instead let's assume a method #liftLimb(self): self.femur.setAngle(30) besides setting the angle i want to automatically call the method calcPosition without explicitly calling it everytime i "setAngle"
+

@@ -1,0 +1,2 @@
+Correct!!! Ideally for creating the online test scenario, I would suggest you to create ajax calls and store it to database each time the user selects an answer or clicks next question. The object thus created can be used to do so. In this case even if the user closes the browser and returns back, you can always repopulate the object created from database.
+

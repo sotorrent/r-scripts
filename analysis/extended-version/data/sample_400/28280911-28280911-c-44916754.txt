@@ -1,0 +1,2 @@
+Yes, you can do the same for method/property invocation - caching, compiled expressions, and if really adventurous manual .
+

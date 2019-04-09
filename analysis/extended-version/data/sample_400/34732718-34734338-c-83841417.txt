@@ -1,0 +1,2 @@
+I downloaded Source Code Pro, and the zip contains many files in the, "family," but the files are just variations on the weight (normal, bold, etc.). Based on the above, shouldn't there be separate files for different parts of unicode. I tried the font in Notepad++, and characters Ø (the empty set) and <U+21A6> (the maps-to arrow) don't appear. Where's the rest?
+

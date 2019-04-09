@@ -1,0 +1,2 @@
+@cmaster Indeed, I'm not advocating at all. But I guess language designers wanted to make sure something like can be prohibited (assuming is non-), or similarly for . Of course now we have value categories overloads and to select which member functions can be invoked on lvalues/rvalues.
+

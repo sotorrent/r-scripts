@@ -1,0 +1,2 @@
+as I mentioned in my question this query will give me only one table @teng
+

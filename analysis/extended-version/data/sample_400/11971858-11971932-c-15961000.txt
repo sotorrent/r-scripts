@@ -1,0 +1,2 @@
+@Hockeyman271 Just declare a class with a static member for each array (or a static member that is an array of arrays). For instance: . Then you can access each array as , etc. No need for intents or anything special; it's just static data accessible throughout your application code.
+

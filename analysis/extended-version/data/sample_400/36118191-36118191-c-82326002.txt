@@ -1,0 +1,2 @@
+I share the same issue. I'm not able to reprocude this issue during debugging, because then everything works fine. However, in the debugger's Threads combobox I can see a number of threads, halted at Invoke()
+

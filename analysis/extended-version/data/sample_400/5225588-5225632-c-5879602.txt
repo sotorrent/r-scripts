@@ -1,0 +1,2 @@
+@Cthutu Actually you can implement pure virtual methods. It just means the child has to implement it again.
+

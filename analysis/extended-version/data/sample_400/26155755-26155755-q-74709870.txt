@@ -1,0 +1,8 @@
+What I have is:
+and so on
+I want to find out the number of Events in each date from first it happened count to last time it happened and show the date and the count of it. i have a query to count it in days but unable to show the fist and the last time it happened.
+What I want is:
+and so on
+All from one table
+Please help guys.
+

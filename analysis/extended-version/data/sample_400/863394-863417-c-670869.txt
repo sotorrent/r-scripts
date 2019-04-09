@@ -1,0 +1,2 @@
+I'd suggest logging with UTC timestamps to avoid any ambiguity in timezones etc. - also you might want to use Format or StringBuilder to avoid all those temporary strings
+

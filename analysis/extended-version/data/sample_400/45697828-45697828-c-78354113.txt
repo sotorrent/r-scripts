@@ -1,0 +1,2 @@
+Make an Ajax call on the window.load event to check the condition.
+

@@ -1,0 +1,2 @@
+Your issue is likely that you have made your language parameter optional . For a default language/specified language scenario, there should be a second route (if that is what you are trying to do). If you pass a controller as the first parameter now, it will end up in the language route value. See this answer.
+

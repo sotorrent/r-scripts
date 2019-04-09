@@ -1,0 +1,2 @@
+I also find that when I present my login page modally and dismiss the page later, it won't come back to my first view, it will continue to the next tab view.
+

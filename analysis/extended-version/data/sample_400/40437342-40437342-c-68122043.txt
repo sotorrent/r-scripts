@@ -1,0 +1,2 @@
+@try using the cin as a conditional statement in the while loop.
+

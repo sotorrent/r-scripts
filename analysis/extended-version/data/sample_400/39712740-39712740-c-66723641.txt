@@ -1,0 +1,2 @@
+Welcome to StackOverflow.  Please read and follow the posting guidelines in the help documentation.  Minimal, complete, verifiable example applies here.  We cannot effectively help you until you post your code and accurately describe the problem.
+

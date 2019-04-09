@@ -1,0 +1,12 @@
+I am trying to implement cosine similarity to calculate Item-Item Similairity using Input Dataset which looks like this -
+UserID, ProductID, Transactions
+where UserID, ProductID are Long values and Transaction is Integer.
+I am following this example in Spark -
+
+In above example it expects a dense Vector as input , which gets converted to RowMatrix.
+Could you please help me convert my input data set -
+to a Matrix of form -
+I am aware of the way that I can create a CooridnateMatrix something like this -
+But, this one uses actual user and product id values in place of indices of Matrix, and fails as soon as the values extend beyond Integer.
+I need a way that i can convert my data to an indiced matrix.
+

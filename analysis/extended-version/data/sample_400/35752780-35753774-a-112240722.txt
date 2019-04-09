@@ -1,0 +1,5 @@
+Since you cannot know how long the ajax is going to take to complete, I can think of two possible solutions:
+The first is to display a hidden over the input and, on click, show a loading image inside it. Then wait until the ajax is over to finally hide the div and trigger a click event on the updated , or ....
+You can launch the update function as soon as the page loads and keep the disable until the ajax is complete.
+I recommend the second one, but there might be other solutions. If you need any help implementing any of these you should open a new question.
+

@@ -1,0 +1,3 @@
+If Plutonix' suggestion of enabled auto-resizing columns doesn't work, then read on...
+To access the control's properties, you'll need to cast it to first (so far you've only checked to see if it is a . Then, you can loop through the rows and columns:
+

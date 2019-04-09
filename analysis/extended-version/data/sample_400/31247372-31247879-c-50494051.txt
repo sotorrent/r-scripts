@@ -1,0 +1,2 @@
+@BladeCoder that is because you are using xfermode, you can also draw 4 opaque rect around the hole.
+

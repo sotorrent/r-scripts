@@ -1,0 +1,6 @@
+I have a table with a Decimal degrees (-22.541100,30.719333) field. I altered the table and added a spatial data column (POINT) to the table. I am trying to update the POINT field with the point value of the Decimal degrees field but cannot get it to work.
+This is my sql:
+I keep on getting an error:
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@loc')')' at line 1
+Can anyone see what I am doing wrong?
+

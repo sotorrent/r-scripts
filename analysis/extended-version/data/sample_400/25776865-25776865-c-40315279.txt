@@ -1,0 +1,2 @@
+Im getting no binding errors. the binds are all working however the templates are not
+

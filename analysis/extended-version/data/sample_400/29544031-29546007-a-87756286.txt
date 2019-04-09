@@ -1,0 +1,6 @@
+This is working for me.
+I prefer instead of redirecting input as you did.  In theory it should be the same.  I did not spot anything specifically wrong and I did not really change anything -- just rearranged what you had.
+The advantage of the technique is you can insert commands between the cat and the while.  In this case, I would not do the tail -n +29 because you are guessing the first 29 lines are junk but that might not be true.  Rather I would just do a cat of the file and then egrep out the lines that start with a hash .  Again, .... yes, the cat is redundant but who really cares.  It is more general and easier to add and delete things.
+I don't have the packages installed and I would not depend upon them unless absolutely necessary.  You are increasing dependencies.  So I just used the local "ls" and "tail".  I also added an explicit but you don't need that.  It just simplified my testing.
+Hope this helps...
+

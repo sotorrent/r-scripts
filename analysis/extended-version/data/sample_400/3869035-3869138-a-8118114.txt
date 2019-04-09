@@ -1,0 +1,11 @@
+I am running this on Ubuntu linux with UTF-8 as locale.
+Here is the additional info as requested:
+I am calling this function with a fully allocated structure and passing in a hard coded "string" (not a L"string"). so I call the function with what is essentially setCString(*obj, "Hello!").
+Length = 6
+!C string Hello! converted to wchar string Hello!xxxxxxxxxxxxxxxxxxxx
+(where x = random data)
+Length failure!
+for reference
+printf("wcslen = %d\n",(int)wcslen(obj->string)); prints out as
+wcslen = 11
+

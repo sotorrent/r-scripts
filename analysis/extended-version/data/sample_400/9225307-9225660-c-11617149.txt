@@ -1,0 +1,2 @@
+Yes, i found about it. Thanks anyways oers! I have downloaded version 3.8.5 which is a development release and it seems to be working there. How reliable is Apache POI to create word documents?
+

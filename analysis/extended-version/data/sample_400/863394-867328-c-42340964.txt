@@ -1,0 +1,2 @@
+Note that the trace output options do not apply to Trace.WriteLine, only Trace.TraceInformation / Trace.Trace* methods.
+

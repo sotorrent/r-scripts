@@ -1,0 +1,4 @@
+It is not really possible to overlap the borders, as they always meet at a 45 degree angle. It's still possible to create your effect by making separate blocks, though. The property allows for the overlay effect as provided by your image.
+Keep in mind that doesn't have any support for IE/Edge.
+Here's how it can be done:
+

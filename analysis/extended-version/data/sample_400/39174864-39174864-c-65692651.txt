@@ -1,0 +1,2 @@
+OK. Rust seems to be a hard nut to crack. Even an advanced hello world example needs intimate knowledge of the error handling mechanism ;-)
+

@@ -1,0 +1,5 @@
+My OCD makes me add "break" when writing case statements, even if they will not be executed.  Consider the following code example:
+My two questions are:
+For "case 2:", I don't really need the break, but is it a good idea to have it there anyway?
+For "default:".  Is it purely OCD, or is there any real reason to have the break here?
+

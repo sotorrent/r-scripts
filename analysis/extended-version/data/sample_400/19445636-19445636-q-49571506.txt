@@ -1,0 +1,4 @@
+Can you please tell me how to remove the div content? I am getting data from server regularly. I check if div height is "100" .
+Then it remove content and write data from top in jQuery.
+I tried very thing nothing is working for me.
+

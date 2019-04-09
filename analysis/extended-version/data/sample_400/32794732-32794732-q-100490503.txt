@@ -1,0 +1,36 @@
+I'm getting this error on eclipse console,
+java.lang.ClassNotFoundException: com.ebank.rajeev.controllers.Alogin
+at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1332)
+at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1166)
+at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:520)
+at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:501)
+at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:120)
+at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1095)
+at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:817)
+at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+at org.apache.coyote.
+at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+at java.lang.Thread.run(Unknown Source)
+On running the jsp page, tomcat says
+HTTP Status 404 -
+type Status report
+message
+description The requested resource is not available.
+My code is correct. Still I'm unable to find a way.
+web.xml
+admin.jsp
+Alogin servlet
+java build path has required jar files, i.e., servlet-api.jar, jsp-api.jar, mysql-connector.jar. I'm using any sql code for this page still it is giving the error.
+

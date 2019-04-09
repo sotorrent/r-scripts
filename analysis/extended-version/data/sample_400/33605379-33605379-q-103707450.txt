@@ -1,0 +1,4 @@
+I want to use the Masonry to show two labels (UILabel) in the a line (view). But the left label is much wider than the right one. They shows like that in this picture.(The green label and yellow label.)
+The content compression of them are UILayoutPriorityRequired, I want the left side of the left label is equal to its superview and the right side of the right label is equal to its superview. Then how to make the width of each label show depending on its content with even more labels in a view?
+Here is my code:
+

@@ -1,0 +1,12 @@
+I have the following models:
+Each has defined by the User. For Example: Question - What is the best fruit? Options - Apple, Orange, Grapes. Now other user's can the question with their responses restricted to .
+I have the following view:
+For each option in o, I am receiving an answer count. For example:
+Question - What is the best fruit?
+Option - Grape, Orange, Apple
+Answer - Grape: 5votes, Orange 5votes, Apple 10vote.
+What is the best way to calculate the vote percentage for each option out of the total number of votes for that question?
+In other words, I want something like this:
+Answer - Grape: 5votes 25%votes, Orange 5votes 25%votes, Apple 10vote 50%votes.
+test.html
+

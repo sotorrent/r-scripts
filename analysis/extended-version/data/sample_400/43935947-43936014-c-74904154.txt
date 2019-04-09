@@ -1,0 +1,2 @@
+You're reading a line and then reading another line each loop... so you're discarding half the file here
+

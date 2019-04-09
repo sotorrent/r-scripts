@@ -1,0 +1,4 @@
+I have three divs and want to "fake" an inset by casting shadows from outside (1px divs) into the larger middle div.
+I don't care if we use z-index or not (they could be floated) whatever you think is the best way to solve it.
+The end result should look like this...
+

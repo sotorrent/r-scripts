@@ -1,0 +1,3 @@
+Note that your constructor doesn't compile actually:
+To accept any subclass of , use the Upper Bounded Wildcard:
+

@@ -1,0 +1,3 @@
+A variation on @sotos' answer:
+Equivalent to the replacement form of:
+

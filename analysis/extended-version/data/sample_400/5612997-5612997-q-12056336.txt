@@ -1,0 +1,6 @@
+I have a page which looks like this:
+Each image has this CSS:
+How can I make it so that those two images float next to each other, but text does not wrap in between those images?
+ASCII art of the current page:
+Beautiful ASCII art of what I desire:
+

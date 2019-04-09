@@ -1,0 +1,2 @@
+you might not have an issue if your data is coming back fine. It's hard for me to tell, but the answer I gave is how you would use and promises together instead of the callbacks. (btw... i didn't see your comments earlier because I didn't get notifications from SO until just now)
+

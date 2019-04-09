@@ -1,0 +1,5 @@
+so I am currently working on a enemie that free roams and moves around to random spots by itself.to do this I plan to have it choose from a set up possible directions it can go like here:enter image description here
+
+How Do I Choose Randomly From A Set Of Possible Actions(Increasing Y,IncreasingX,ETC)
+Feed Back is Always Appreciated ;)
+

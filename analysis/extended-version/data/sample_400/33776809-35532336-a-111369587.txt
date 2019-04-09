@@ -1,0 +1,2 @@
+Great answer by Ivo, which really should be getting more votes, but here's some added information. If you check Maven for information on the dependencies, Java Hamcrest 2.0.0.0 and Hamcrest JUnit 2.0.0.0, there are some usage links. At the time I write this, it's 74 and 68 respectively, and no major projects from a brief browsing.
+

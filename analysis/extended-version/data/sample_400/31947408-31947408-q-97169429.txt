@@ -1,0 +1,6 @@
+I am a noob and this is my first real experience with Bootstrap. I have been trying to position my logo in the navbar towards the left and aligned with the drop down links inside the navbar toggle class . I have attached screenshots of what I am ultimately trying to do/copy, as it is easier to show than for me to try and describe it.
+When viewed on mobile device, the menu turns into a dropdown and is moved under a larger logo.
+The site I would like to use as reference is
+
+I have been playing around with the size by giving a max width and max height, as well as auto, I have tried moving the logo out of the navbar header and even out of the container.
+

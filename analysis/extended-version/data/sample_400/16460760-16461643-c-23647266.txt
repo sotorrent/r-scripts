@@ -1,0 +1,2 @@
+@ChandrakantSingh If You have read the Link I have sent you and checked the Answer Below from Reimus An Applet requires init method in place of the main Method you have Also you have extended Frame Innstead of JApplet or Applet. To amke this an Applet you need to Follow the Applet Life cycle and Add init, start, stop or destroy Methods.
+

@@ -1,0 +1,4 @@
+A parser is the best solution in the general case, but they to take time to write. There are cases where writing one would take more time than the parser would save; perhaps this is such a time.
+What you want is a either a non-greedy match or a more precise match. /[\s]+id=".?"/ will do the trick, but [\s]+id="[^"]" will be faster.
+Note that a full regex that takes into account the possibility of escaped quotes characters, allows single quotes instead of double quotes, and allows for the absence of quotes entirely would be much more complex. You would really want a parser at that point.
+

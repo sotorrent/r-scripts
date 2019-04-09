@@ -1,0 +1,4 @@
+Changing this method resolves the problem.
+I don't remember where I got the idea for this code. Whatever it was, the alpha channel was also on the other end. When I moved the alpha channel, I should have checked the other channels, too, but I didn't.
+If anyone decides to borrow this code, you should know that the channel order is not the same on the device as in the simulator. What I'm looking for now is a way to tell what the appropriate order is.
+

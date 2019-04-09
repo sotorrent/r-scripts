@@ -1,0 +1,4 @@
+See wp_create_category().
+Output should go like:
+Note that this isn't very efficient, but, does the job.
+

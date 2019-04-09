@@ -1,0 +1,5 @@
+Without some code, it's impossible to write working code, but can be something like this:
+Where this function is a parameter of your trigger
+Edit:
+Now that you provided the code, try this:
+

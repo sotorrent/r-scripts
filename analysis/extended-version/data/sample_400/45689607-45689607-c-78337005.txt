@@ -1,0 +1,2 @@
+I had checked that question before, but the solution doesnt work in my case, According to that my url should become "+ kml; but this doesnt work as well .
+

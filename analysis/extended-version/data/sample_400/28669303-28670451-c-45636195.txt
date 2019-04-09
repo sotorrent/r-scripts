@@ -1,0 +1,2 @@
+They are not "basic options" though. Not for a high school project. A basic option would be storing data in localStorage or even to file.
+

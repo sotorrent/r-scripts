@@ -1,0 +1,7 @@
+I am currently learning C++ and slowly making progress but getting an issue with MySQL selects and prepared statements.
+I have an app which links to a library and the app is calling the library function as follows:
+In the library in the DynamicConfig class I have the method getValueFromDBConfig which contains the following:
+It seems to be successfully executing the query as it prints out to the console however, when I call resuletset->getstring("Value") it throws an error:
+I don't understand why this isn't working, its got a row, and the database table I am looking at definietely has the column called Value.
+Thanks for any help you can provide.
+

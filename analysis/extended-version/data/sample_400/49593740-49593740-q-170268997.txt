@@ -1,0 +1,7 @@
+I use ObservableCollection and store BitmapImage there. Tried to sterilize the ObservableCollection using Newtonsoft.Json, it only saves the text. Wanted to keep the image in the form of bytes, but have not found how to convert BitmapImage to Byte[].
+In General I have two questions:
+
+1.  As the ObservableCollection of images to be sterilized to a file.
+2.  How can I convert a BitmapImage into a byte array.
+    The issue relates to the UWP platform, I would appreciate any help.
+

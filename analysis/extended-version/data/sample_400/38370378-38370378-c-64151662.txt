@@ -1,0 +1,2 @@
+please give an small example of your actual matrix data using actual MATLAB syntax e,g, or etc
+

@@ -1,0 +1,5 @@
+I'm playing with various ajax uploaders. When analyzing their server-side code, I see something like this:
+It is either muted one (like above), so does nothing (in my case) or unmuted one, so throws a warning, that access to temporary folder is prohibited (in my case) and breaks execution of a script.
+What am I missing? I was always told, that we should not touch temporary files transmited via PHP form. Because this is unnecessary (and somethimes prohibited, like in my case). PHP will do all the cleaning, when script ends -- i.e. remove all uploaded temporary files.
+What is the reason in code like above? Is it for the case, when script breaks, PHP is halted with some critical error and thus isn't able to remove temporary files? Or there is another reason?
+

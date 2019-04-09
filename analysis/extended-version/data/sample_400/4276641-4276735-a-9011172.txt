@@ -1,0 +1,5 @@
+There's a cellReference function
+E.g.
+CellReference cellReference = new CellReference("B3");
+(taken from the example here)
+

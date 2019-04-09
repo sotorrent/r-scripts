@@ -1,0 +1,3 @@
+If you want to get the real JVM arguments this should help you. You can get all JVM arguments with the MXBean:
+You have to look for the arguments which start with "-Xm(s|x)". The problem is that the value could be something like "256M".
+

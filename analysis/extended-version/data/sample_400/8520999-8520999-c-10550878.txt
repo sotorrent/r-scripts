@@ -1,0 +1,2 @@
+Again, it works when I put $id instead of $in. In my example, $id is 11 and $in is 16. MySQL doesn't throw any error either way, it just inserts it in one case but not in the other.
+

@@ -1,0 +1,2 @@
+I know it should work, that's why I'm here:) $some_variable is fine. Either way, when I write the statement to just update column1 with $in, it still doesn't work. I'm completely confused, I've been staring at this for 2 hours.
+

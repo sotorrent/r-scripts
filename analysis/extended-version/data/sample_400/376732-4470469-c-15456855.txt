@@ -1,0 +1,2 @@
+This solution worked better for me than the accepted answer. Using the accepted answer version, no POST data was passed to PHP, probably due to the use of the error page. Using this solution, everything works as expected.
+

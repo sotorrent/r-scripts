@@ -1,0 +1,2 @@
+Also works in Mobile Safari (iOS 6.1.3)
+

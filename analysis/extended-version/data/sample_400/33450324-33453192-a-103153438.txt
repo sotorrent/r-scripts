@@ -1,0 +1,3 @@
+The project by default uses mode only. In order to run simulation in open file (from root directory) in a text editor and add to the variable. As a consequence, this line should look like:
+Next, open Ubuntu terminal, go to root directory of the project and type . (This has to be done every time after changing of file.) Then type: .
+

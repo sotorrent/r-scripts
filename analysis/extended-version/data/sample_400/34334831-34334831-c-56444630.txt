@@ -1,0 +1,2 @@
+@Tomalak the design code is provided to show how can i call click event for my ajax request..
+

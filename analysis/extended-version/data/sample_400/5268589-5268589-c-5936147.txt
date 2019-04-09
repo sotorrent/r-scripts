@@ -1,0 +1,2 @@
+Shaggy Frog - reboot is required only if you've installed older version after uninstalling newer one.
+

@@ -1,0 +1,2 @@
+@JacobKing Yes. The problem is, I can't find out where exactly this crashes. there is a lot of JSON serialisation in the app..
+

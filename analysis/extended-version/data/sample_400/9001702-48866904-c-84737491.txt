@@ -1,0 +1,2 @@
+Thank you for this code snippet, which might provide some limited short-term help.  A proper explanation would greatly improve its long-term value by showing why this is a good solution to the problem, and would make it more useful to future readers with other, similar questions.  Please [edit] your answer to add some explanation, including the assumptions you've made.
+

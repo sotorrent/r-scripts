@@ -1,0 +1,2 @@
+Is that a kind any kind of php tag recursion? Because I guess there should be a tag for the before your function call :)
+

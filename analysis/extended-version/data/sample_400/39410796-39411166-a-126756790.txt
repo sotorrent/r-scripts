@@ -1,0 +1,8 @@
+you can just do it with storyboard this pics
+enter image description here
+enter image description here
+
+set the label height relation to greater than or equal
+and set the view  height relation to greater than or equal
+it work like a magic
+

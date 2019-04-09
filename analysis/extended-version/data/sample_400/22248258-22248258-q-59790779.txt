@@ -1,0 +1,6 @@
+I am learning how to do a XCopy in Dos to copy a folder to a User's profile. The PC has multiple users therefore the Batch will need to get the username and then go into the folder structure inside the username.
+EG: We have a PC with multiple users. Lets say one user is called User1 and one User2 need a folder located in C:\FolderToCopy
+The FolderToCopy needs to be coppied to C:\Users\User1\AppData\NewFolderLocation for user 1
+and to C:\Users\User2\AppData\NewFolderLocation for user 2.
+Can somebody help me in defining some sort of local variable where the user name is picked up based on who is logged in to the PC?
+

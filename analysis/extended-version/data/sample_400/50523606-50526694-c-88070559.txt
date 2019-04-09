@@ -1,0 +1,2 @@
+@TemaniAfif I love your solution, the syntax is a lot easier than mine. You could remove the corners and add to fulfill all the needs of the OP (only one div, only 4 colors).
+

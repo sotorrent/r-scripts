@@ -1,0 +1,10 @@
+if not possible through portal then how to do so ?then how to edit the properties of a VM after creation, like moving to a different subnet,, etc.,?
+It could be done with Powershell. In brief, it contains 3 steps:
+
+1.  Get the VM (NIC) configuration
+2.  Edit the VM (NIC) configuration
+3.  Update the edited configuration
+    Note: Moving VMs between different VNET is not supported. To move the VM to another VNET, the only solution for now is re-create the VM with the same vhd file.
+    Here is a good step-by-step guide:
+    How to change Subnet and Virtual Network for Azure Virtual Machines (ASM & ARM)
+

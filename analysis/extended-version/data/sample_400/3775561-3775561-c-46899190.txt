@@ -1,0 +1,2 @@
+You are currently using the OneToMany, look into the ManyToMany relationship between the Pesron and the Item model class.
+

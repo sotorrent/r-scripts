@@ -1,0 +1,5 @@
+Please do like this
+Note: Your Have to mention the namespace of model which you using the Index page.
+And your partial view all must need to contain the same name space you passing
+example :
+

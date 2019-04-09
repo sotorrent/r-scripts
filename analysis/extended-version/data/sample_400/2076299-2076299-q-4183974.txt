@@ -1,0 +1,4 @@
+I want to create a link on a webpage that close current active tab in a browser without closing other tabs in browser. When user click that close link a alert message should appear asking user to confirm with two buttons, "YES" and "NO". If user clicks "YES", close that page and If "NO", do nothing.
+How it will be done using html and php?
+Thanks
+

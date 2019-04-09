@@ -1,0 +1,5 @@
+Thread is not method and thread in .net designed in a way that runs
+asynchronously and can not return value.
+But you can return value by using BackgroundWorker. You can get the result in BackgroundWorker in e.Result.
+Additionally you can check this for different technique to return value from thread.
+

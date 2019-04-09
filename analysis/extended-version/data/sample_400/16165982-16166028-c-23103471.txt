@@ -1,0 +1,2 @@
+Yes, my code will check any number of prompts assuming each prompt is specified as
+

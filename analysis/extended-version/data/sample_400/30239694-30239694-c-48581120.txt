@@ -1,0 +1,2 @@
+Very easy: when a new value is inserted, first try to select it. If the result of the selection is not empty, then it means it's a duplicate and you don't allow the rest of the code to run. Note: you're exposed to SQL Injection, if your data might be at risk, consider using parametric SQL (I don't know if the AdoDB of VBA provides though, maybe try to clean the insertion yourself if not).
+

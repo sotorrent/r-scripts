@@ -1,0 +1,2 @@
+As far as I can tell, it no longer is possible in Chrome or FireFox.  It may still be possible in IE (at least pre-Edge).
+

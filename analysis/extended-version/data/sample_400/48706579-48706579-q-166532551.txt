@@ -1,0 +1,7 @@
+I need to change the Secure Simple Pairing mode programmatically, but I can't figure out how to set SSP mode on or off in Bluez using a DBus command.
+Using utility, I just do:
+Ok, but what I need is rather DBus method calls that I can include in my application.
+But the Bluez documentation doesn't seem to mention any DBus method to change the SSP mode.
+Does anyone know how to do that? (a or example would be just great).
+Or is this just impossible?
+

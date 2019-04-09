@@ -1,0 +1,5 @@
+change it  to
+  $(document).on('click', '.uploadimg', function() {
+  $(this).siblings('input:file').click();
+});
+

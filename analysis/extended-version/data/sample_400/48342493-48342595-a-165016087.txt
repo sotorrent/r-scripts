@@ -1,0 +1,5 @@
+That's not the error I get when I try to compile it:
+Which is what I'd expect, because a isn't a .
+You'd have to take a defensive copy of the list:
+Or make the field of a bounded type:
+

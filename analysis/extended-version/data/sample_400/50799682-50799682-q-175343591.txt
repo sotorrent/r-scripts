@@ -1,0 +1,5 @@
+I've written an Oracle package to query out some data to XML, as below:
+Which returns:
+I'm trying to now put together a SQL server version of the same package, but cannot get it to match the Oracle output which includes a ROW element to cover each row returned, a field tag to cover each element within the row, and an alias for the column name to be used as an attribute.
+I've tried various permutations of FOR XML EXPLICIT/RAW/AUTO etc and can get some of the output required, but not all of it.  Can anyone suggest a way I can make this work with T-SQL? many thanks.
+

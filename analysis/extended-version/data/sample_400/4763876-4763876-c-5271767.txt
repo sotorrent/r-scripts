@@ -1,0 +1,2 @@
+@Robert No need for . The header of the while statement is coerced to boolean automatically, so you don't need to cast it.
+

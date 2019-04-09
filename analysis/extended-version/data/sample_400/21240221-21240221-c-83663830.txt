@@ -1,0 +1,2 @@
+@IanRoberts Moreover, one could stress that the '/' in /descendant-or-self::node() is referring to the very root node of the DOM; so the implementation starts looking at each and every node in the tree. This might be hard to grasp for a beginner.
+

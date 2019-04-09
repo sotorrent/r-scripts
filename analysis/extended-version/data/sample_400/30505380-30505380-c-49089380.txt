@@ -1,0 +1,2 @@
+You should gather all the data you need and store it in an object array. One you have all the data you need, you should then write out that data in one go. That will speed things up dramatically.
+

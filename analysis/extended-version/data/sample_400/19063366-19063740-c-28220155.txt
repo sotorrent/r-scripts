@@ -1,0 +1,2 @@
+@EJP: Good point, I always thought that a BufferedReader is a buffer, designed for all kind of data (also just bytes), but it seems that Readers and Writers are designed for textual data. Well I adjusted my answer to just use the plain stream.
+

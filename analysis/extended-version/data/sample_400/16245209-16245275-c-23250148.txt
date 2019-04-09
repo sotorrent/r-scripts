@@ -1,0 +1,9 @@
+SELECT establishments.name AS estName, 
+            establishments.address AS estAddr,
+            establishments.telephone_num AS estTel,
+            establishments.description AS estDesc,
+            establishments.Logo AS estLogo,
+            establishments.title AS estTitle
+      FROM bucurestideals1.establishments
+      WHERE establishments.establishment_id ='.$est_id.';
+

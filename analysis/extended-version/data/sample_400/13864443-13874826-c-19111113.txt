@@ -1,0 +1,2 @@
+I know how constructor injection works, as stated in the original question. But when I add a constructor with arguments (injection-annotated or not), I also need to add an explicit no-args constructor as well to keep the class proxyable. And in the case of final fields, I need to set all the fields to something (null in this case). That's a bit awkward.
+

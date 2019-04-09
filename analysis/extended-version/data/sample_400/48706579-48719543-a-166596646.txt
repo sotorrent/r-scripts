@@ -1,0 +1,4 @@
+There is no way you can do this using DBus. Bluez has no DBus API for this. You need to either use Bluetooth Management socket interface to toggle SSP mode or you can do this using bluez deprecated HCI interface.
+To know how to use Bluetooth Management sockets see bluez-5-X/doc/mgmt-api.txt file in bluez-5.X source directory. Command code to toggle SSP is . Actually, this is how tool enables/disables SSP. It uses Bluetooth Management socket. Search keyword in bluez-5.X/tools/btmgmt.c and see the sample C code.
+You can also do this using deprecated hci API (not recommended). See method in bluez-5-X/lib/hci.c.
+

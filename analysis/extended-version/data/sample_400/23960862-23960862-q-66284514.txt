@@ -1,0 +1,6 @@
+I tried to copy a local file from hard disk directly to Hadoop directory and got the following results. None of them work. Can anyone help me with the right syntax?
+$ hadoop fs -copyFromLocal C:\\temp\\sample_file.txt /user/user_name/sample_file.txt
+copyFromLocal: unexpected URISyntaxException
+$ hadoop fs -copyFromLocal C://temp//sample_file.txt /user/user_name/sample_file.txt
+copyFromLocal: /temp/sample_file.txt': No such file or directory
+

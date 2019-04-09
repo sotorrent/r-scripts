@@ -1,0 +1,2 @@
+Never use as the default for delegated events as it has a bug (if styling results in a calculated body height of 0 it will not respond to mouse events). Use as the fallback just in case.
+

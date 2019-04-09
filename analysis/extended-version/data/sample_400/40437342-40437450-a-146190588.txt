@@ -1,0 +1,8 @@
+There are a few ways. The most important is that if you don't know the number of values you need to use a container that can grow as needed. For that you have []((as mention by others already).
+The naive way to use a vector and read input would be something like
+But the above loop is wrong!
+Using a similar approach to the above loop (but working) would be something like
+However C++ have many nice utility functions and classes that can make it even simpler.
+Using the standard algorithm function [](and a few iterator helpers ([](and [](we can write
+It can, as noted by paul-g, be even simpler since there is a vector constructor overload that takes an iterator range, so all that's really needed is
+

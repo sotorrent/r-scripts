@@ -1,0 +1,11 @@
+I have an issue with my web application.
+I'm using AngularJs v1. When I'm wrinting
+In my index.html I have :
+I have this render on my browser (chrome or firefox) :
+
+Enregister les préférences
+But, with the same  in my template HTML which replace the ng-view, I have :
+Enregister les pr<U+FFFD>f<U+FFFD>rences
+How to extends the charset of index.html to ng-view ?
+Thanks.
+

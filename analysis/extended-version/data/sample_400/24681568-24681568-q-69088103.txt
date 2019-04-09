@@ -1,0 +1,9 @@
+I am using X-Editable with AngularJS for Form
+
+There are two criteria, one wherein user should be allowed to update all fields and other where in user will be allowed only to edit role i.e. Select Role.
+My actual problem is that how can form elements be made editable/non-editable based on a specific condition.
+If I remove editable-text manually from all fields it satisfies second criteria. Is there any way I can add editable-text based on condition.
+Anyone have any helpful ideas?
+
+Thanks in Advance
+

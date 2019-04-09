@@ -1,0 +1,2 @@
+"Source Code Pro" is not the "Source Pro" family, it is the subset specifically for, unsurprisingly, the needs of code editor users. Instead go to and you will see five sets to cover serif (CJK and not-CJK), sans-serif (CJK and not-CJK), and a special monospaced programming font (that's the "source code pro" you downloaded)
+

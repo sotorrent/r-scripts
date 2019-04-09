@@ -1,0 +1,2 @@
+@NullUserExeption, Yes, I agree this should be done on the server side. I'm just offering a SQL query that will do what he is asking, for thet specific example he gave, and in SQL as he requested. Anyway, if he doesn't quit insisting on using , no answer will be good enough.
+

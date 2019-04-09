@@ -1,0 +1,2 @@
+Even with a zero value you try to get "1 / number" so you get a division by zero exception and I think this is why your program stops.
+

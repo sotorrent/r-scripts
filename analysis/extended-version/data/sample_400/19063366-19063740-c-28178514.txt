@@ -1,0 +1,2 @@
+It doesn't. Unless you know that the data is text, you shouldn't use Readers and Writers at all. Otherwise you are liable to corrupt the data. Untested code cannot possibly be an answer. -1
+

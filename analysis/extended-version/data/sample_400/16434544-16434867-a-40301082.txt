@@ -1,0 +1,3 @@
+You can't select a whole day with UNIX timestamps because of their more accurate nature (i.e. seconds), you would need the textual version:
+Take note of any timezone differences between the server that runs your script and the database server itself.
+

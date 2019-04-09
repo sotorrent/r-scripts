@@ -1,0 +1,2 @@
+Not 100% sure about that post, I need to know whether I file exists or not. Not whether it has a file size or not?
+

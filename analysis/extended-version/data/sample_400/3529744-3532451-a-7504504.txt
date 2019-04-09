@@ -1,0 +1,5 @@
+you should check your error log and maybe post a part of it here? Because it seems a quirk of the multi-query function. I've tried your code with a mostly same configuration (except for the os, win server 2008) and it worked. I've also tried modifying it into six different query, and it also worked.
+I've tried changing the query into the following:
+
+hope it works for you
+

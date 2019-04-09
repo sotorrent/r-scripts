@@ -1,0 +1,4 @@
+Can the range ever be a cell reference so my vlookup's range be
+dynamic?
+There may be better ways of achieving what you need to do, but the short answer is yes - using INDIRECT.
+

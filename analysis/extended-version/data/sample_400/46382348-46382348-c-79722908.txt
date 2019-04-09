@@ -1,0 +1,2 @@
+You're passing it an ID of 'index' in the URL. Don't, it's not necessary. A GET request to the root books route in what you want.
+

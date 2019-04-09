@@ -1,0 +1,5 @@
+somebody know, how to not allow other properties in controllers using annotations or some other method?
+for example, I have a model
+Then in the request I send this body:
+The problem is that the validation passed, I need for example send in response something like "property not allowed"
+

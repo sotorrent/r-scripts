@@ -1,0 +1,3 @@
+Well you could store the data in a format you could read, but which maintained the integrity of your data (XML or JSON for instance).
+Or (shudder) you could come up with your own propriatory binary format, and use that.
+

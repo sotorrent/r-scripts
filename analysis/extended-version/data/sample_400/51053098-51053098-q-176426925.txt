@@ -1,0 +1,33 @@
+TL;DR: I want to implement unification for row polymorphism, using a , but have gotten stuck.
+
+Background
+
+I’m writing a compiler for a language that has an effect system which uses row polymorphism, as in Extensible Records with Scoped Labels, to represent sets of effects attached to function types. That is, in this language, the kind of the function arrow is:
+Where is a sequence of effect labels such as or —either a “cons” of a label with another effect row, an effect type variable, or the “pure” effect (an empty row). A simple example is the type of :
+In hypothetical Haskell syntax:
+This means takes a of values of type , and a function from to with a set of effects , and returns a of s, also requiring the effects . A pure function is fully polymorphic in its effect, which is defaulted to an empty row; so is pure if its functional argument is pure; otherwise it requires the same effects as its argument.
+I’m experimenting with representing the type system of this language within Haskell’s type system, so that I can lean on Haskell’s typechecker to write a verified typechecker in the manner of this blog post.
+However, when I get to unifying function types, I need to unify the inputs and outputs by regular unification (equality), but I need to unify the effects by row unification, which is defined like so:
+This says “if can be rewritten into under substitution , and and unify under substitution , then unifies with under substitution , plus a side condition marked with a dagger (†) that I’ll explain momentarily.
+The (<U+2243>) relation means that two rows are isomorphic according to the following three rules:
+In my current unverified typechecker, these two functions look like this in Haskell:
+implements the rule described in the paper:
+
+When a row is unified with some row , we first try to rewrite in the form […] If this succeeds, the unification proceeds by unifying…the tail of the rows.
+So given , , and , along with the unification rule, is used to assert that can be rewritten into under some substitution, failing () or returning () the tail of the rewritten row, the substitution (because it’s always empty or a singleton), and the updated type environment. We don’t actually pass because we only need its last element .
+The rule: a row which already begins with the given label is trivially rewritten by the identity substitution.
+The rule: a row that contains a label somewhere within it can be rewritten to place that label at the head.
+The rule: when unifying with a type variable, no label is present, so we can’t directly test for equality, and must return a fresh variable for the row tail.
+† This enforces the side condition that prevents unifying rows with a common tail but distinct prefixes, thereby ensuring termination even though we’re adding fresh type variables.
+In any other case, the rows are not isomorphic.
+
+What I’ve Tried
+
+I’m attempting to translate row unification with to the type level, using a type family operating on type-level lists of types: That seems to work for basic cases: But fails on more complex cases: I believe it’s because I may have implemented the rule incorrectly (the seems suspicious), and I’m missing the rule. I’m stuck on the implementation of because I don’t know how to bring a fresh type variable into scope (or whether that’s even the right approach). I tried this: But I wasn’t surprised to see that the free generates a type error:
+
+Question
+
+  - Is it possible to introduce a fresh variable with or something, or should I give up on trying to implement the typing rules directly and take a different approach?
+  - Alternatively, is there some existing extensible-record library that specifically uses row unification (not some other method) so I can use the library or learn the technique from it?
+    Note that this is not the same as simple set equality, because there may be duplicate labels, and they are “scoped” in the sense described in the paper I linked at the top of this question. This is important for two reasons: first, I intend to extend this in the future so that an effect label may have type parameters, e.g., ; and second, I intend to use this machinery to implement extensible records and variants in the language.
+

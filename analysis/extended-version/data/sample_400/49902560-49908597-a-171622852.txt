@@ -1,0 +1,4 @@
+Returns TRUE if the file named by filename was uploaded via HTTP POST. This is useful to help ensure that a malicious user hasn't tried to trick the script into working on files upon which it should not be working--for instance, /etc/passwd.
+For proper working, the needs an argument like , - the name of the uploaded file on the client's machine does not work.
+You can check the documentation for mroe
+

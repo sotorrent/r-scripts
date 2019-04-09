@@ -1,0 +1,2 @@
+Thanks for reply! I took your suggestion and made some tests. It turned out that it has problems when there are several occurrences of word in the text.
+

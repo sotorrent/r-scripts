@@ -1,0 +1,2 @@
+Is this message from local git repository, or from remote git repository?
+

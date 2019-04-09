@@ -1,0 +1,2 @@
+This actually helped me - thanks! You might want to change your answer a bit. The option filter should just be true to have access to all available options (I needed to change it to that to find a solution (solver=barnesHut)) and container should be "yourcontainer" instead of undefined. Thanks again for nudging me in the right direction ;)
+

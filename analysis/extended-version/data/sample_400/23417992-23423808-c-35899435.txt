@@ -1,0 +1,2 @@
+It crashes on this line I've declared it in my .h like this: Any ideas?
+

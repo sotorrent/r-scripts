@@ -1,0 +1,5 @@
+Is it possible to make a query on two differents properties in a Where()? For exemple, I want to fetch all my users that have "Robert G" in their FirstName ans LastName properties. If I do :
+I will get no result for "Robert G" since FirstName contains "Robert" and LastName "Gambonni".
+I also taught about making a new property FullName wich is only a Getter but then I have to load them all before since my property is not in the DB.
+Any suggestions? Thanks a lot!
+

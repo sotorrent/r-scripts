@@ -1,0 +1,2 @@
+thanks again for modify the Wiki. As I need fixed text now, I am using custom formatter and it is working now. But I used 'function formatter' instead of 'formatter: function' in your answer.
+

@@ -1,0 +1,4 @@
+I have my data in an array. I need to pass array value to ars_CreateEntry function in ARS module in perl. Array is forming dynamically based on inputs received and so its length will vary eventually.
+When I run the script, getting the below error
+ERROR: Cannot create host ticket: [ERROR] Invalid number of arguments (ARERR #80000)
+

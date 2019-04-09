@@ -1,0 +1,3 @@
+That's fantastic!
+I don't know why our teacher wanted us to use IIF when this COALESCE is so much more accurate for our needs...
+

@@ -1,0 +1,2 @@
+@JorgeGT You could do that but that makes a lot of assumptions about your file (i.e. it only contains one figure) and also assumes that somehow actually is pointing to that figure which isn't always a guarantee.
+

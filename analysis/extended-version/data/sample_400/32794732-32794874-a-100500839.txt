@@ -1,0 +1,2 @@
+Go to Project Properties and on , add and a reference to your source folders, usually to . Do >and restart the server.
+

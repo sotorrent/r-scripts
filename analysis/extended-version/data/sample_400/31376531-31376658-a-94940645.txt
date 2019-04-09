@@ -1,0 +1,2 @@
+No there is no possibility of wht u want. PHP code is executable only on server side. So, anyhow you have to create a seperate PHP script file and send your form to it for further posting.
+

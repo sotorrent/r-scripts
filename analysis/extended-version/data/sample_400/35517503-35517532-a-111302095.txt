@@ -1,0 +1,3 @@
+Is this what you want?
+Note: In a query, all columns in the should be either in the or in aggregation functions, unless you really, really know what you are doing.
+

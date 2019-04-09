@@ -1,0 +1,2 @@
+I removed the second SOP from the code and it's still terminating.
+

@@ -1,0 +1,11 @@
+a bit late but this is what i found out...
+will only work (IE is an exception) if the window that you are trying to was opened by a script using window.open() method.
+you will get console error:
+Scripts may not close windows that were not opened by script.
+as an error and nothing else.
+you could add a unique parameter in the URL to know if the page was opened from a script (like time) - but its just a hack and not a native functionality and will fail in some cases.
+i couldn't find any way to know  if the page was opened from a open() or not,
+and close will not throw and errors.
+this will NOT print "test":
+you can read in MDN more about the close() function
+

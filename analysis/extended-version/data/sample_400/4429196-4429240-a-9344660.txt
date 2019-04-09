@@ -1,0 +1,3 @@
+The USB connector is the least of your worries - IMO the real problem will be drivers to interface with the hardware and software to interface with the drivers.
+Are you planning to write the driver yourself? Otherwise, I don't think it's supported out of the box.
+

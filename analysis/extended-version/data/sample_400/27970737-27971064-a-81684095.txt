@@ -1,0 +1,9 @@
+After considering the quote mentioned by @dyp, which is [expr]/6:
+
+If a prvalue initially has the type “cv ,” where is a
+cv-unqualified non-class, non-array type, the type of
+the expression is adjusted to prior to any further analysis.
+The conclusion is rather simple: The type of the initializer of the reference is simply adjusted to , which is clearly reference compatible to the target type of the reference (also ).
+That allows the reference to bind directly. That is, there is no difference between these reference initializations:
+In both cases the initializer is a prvalue of type .
+

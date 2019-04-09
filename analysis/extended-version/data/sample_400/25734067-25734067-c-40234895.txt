@@ -1,0 +1,2 @@
+Where is Updatelabels called from? You will need something like an event handler or timer-based polling that calls it.
+

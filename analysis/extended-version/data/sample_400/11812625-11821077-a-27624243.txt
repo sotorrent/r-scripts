@@ -1,0 +1,9 @@
+Handling PreviewMouseRightButtonUp instead of Down gets the desired effect for me (selection must be done on up instead of down?).
+The msdn page for PreviewMouseRightButtonDown says its routing strategy should be 'Direct' and the Routed Events Overview page says:
+
+Tunneling events are also sometimes referred to as Preview events,
+because of a naming convention that is used for the pairs.
+So maybe tunneling events are generally preview events, but it doesn't really say that preview events have to be tunneling ;)
+Edit:
+Looking at the other events like PreviewMouseDown vs MouseDown they are Tunneling and Bubble though, maybe just the Right/Left button events are done as direct.
+

@@ -1,0 +1,2 @@
+Turns out the xyz file has at end of each row, which is carried through when using the above. Accepted alternate answer as this strips out references to .
+

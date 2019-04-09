@@ -1,0 +1,2 @@
+So do I, but more out of a gut feeling than solid knowledge. And this approach forces you to provide an awkward "dummy" no-args constructor that simply nulls all the fields, right? Otherwise the class wouldn't be proxyable.
+

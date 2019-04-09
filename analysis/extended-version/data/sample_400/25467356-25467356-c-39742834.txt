@@ -1,0 +1,2 @@
+@HansPassant, I don't understand why the '±' is displayed:   char* p = "ñ";  std::cout << p;
+

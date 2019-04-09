@@ -1,0 +1,2 @@
+You can use a regex to identify the pattern, but by extracting the timestamp as a group you can easily extract the timestamp and use datetime to perform the comparison on the extracted group, as @Toto suggested.  In addition to likely being faster (as a simpler regex), it will make your intent much clearer.
+

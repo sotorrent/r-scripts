@@ -1,0 +1,2 @@
+you code will not run. you're comparing against accuracyDegree. Also the method gets called after the first heading update.
+

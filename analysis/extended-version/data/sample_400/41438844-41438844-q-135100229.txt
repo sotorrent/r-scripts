@@ -1,0 +1,10 @@
+I am trying to implement drag and drop from panel to grid.
+in panel i am doing like this
+Now element is draggable.
+But i dont have any idea how to get drop element in grid.
+in grid i am trying to use plugin
+And on in listeners trying to listen drop event
+But i am not getting any result.
+Give me some idea how can i implement it.
+Thanks
+

@@ -1,0 +1,2 @@
+No, I dont have to replace the special chars from $keywords, is over "phone" database column to compare It with $keywords.
+

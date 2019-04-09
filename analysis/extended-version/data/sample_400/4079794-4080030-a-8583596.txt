@@ -1,0 +1,2 @@
+Perhaps this is just a test case for you in writing templates but a more natural implementation would be to have and inherit from a common base struct say, with members and only, and then have and implement their own , delegating to the base for the common parts.
+

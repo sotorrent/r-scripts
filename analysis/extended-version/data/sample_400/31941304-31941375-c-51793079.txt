@@ -1,0 +1,2 @@
+@lurker I've seen "text" and "token" substitution, but your new wording looks unambiguous to me now. Thanks !
+

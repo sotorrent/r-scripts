@@ -1,0 +1,10 @@
+Based on the discussion on question and experience I now have:
+
+  - API user needs to be an admin of the ad account and of the app if you
+    wish to use the API.
+  - The ad account needs to be specifically added to the app, in app settings. In developer access an app can only have access to a maximum of 5 ad accounts.
+  - Error messages in Facebook API are misleading more often than not. Fix anything marked in yellow or red anywhere in the portal, to be
+    sure.
+  - Do read about limits of every API before you use it, all API have different limits and your application design needs to take those into account.
+    As for the question, yes the issue was the text in red, as pointed out by @CBroe, although the error message was off by a mile and issue occurred only when using our own app.
+

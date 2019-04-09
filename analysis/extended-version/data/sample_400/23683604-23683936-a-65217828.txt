@@ -1,0 +1,5 @@
+You simply were not fading out in the prev loop like you were in the next button loop.
+Also, in the css, i put the following code:
+This makes only the first img appear as default, and then the other ones will fade in as necessary.  The way you currently have it, is count is updating properly but your images are inline and are appearing behind the current image number 1.. But on your next loop click, you properly fade out the images.
+Hope this helps.  Here is the
+

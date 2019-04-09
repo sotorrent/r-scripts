@@ -1,0 +1,3 @@
+The purpose of using CODE instead of TOKEN is to shift the token request to your application server. The server uses the Graph api to submit the auth token and if the auth token is valid, the call returns the access token which is then used to verify the user's identity for subsequent API calls.
+A graph call to validate the access token returns the account kit id plus additional metadata like the associated phone number and/or email.
+

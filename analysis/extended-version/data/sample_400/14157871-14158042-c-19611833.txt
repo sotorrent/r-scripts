@@ -1,0 +1,2 @@
+He's using jQuery. Might as well make some use of $.each etc.
+

@@ -1,0 +1,2 @@
+sory for discribing my question...here the variable @val can take values 1, 2, 3. .if @val=1 i want to show the rows in which voucherstatus='true' or if  @val=2 i want to show the rows in which voucherstatus='false'  or  @val=3 i want to show the rows in which voucherstatus='true' or false or null. (ie if @val=3 it retrive all rows )
+

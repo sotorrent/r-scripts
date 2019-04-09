@@ -1,0 +1,2 @@
+How about explicitly checking for 0 or 1 and rejecting the random number.
+

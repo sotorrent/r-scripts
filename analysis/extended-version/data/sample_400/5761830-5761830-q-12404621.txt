@@ -1,0 +1,7 @@
+I have an array that looks like this:
+tracker[0] = false
+tracker[1] = true
+tracker[2] = true
+tracker[3] = false
+and some Div's on my form that look like this:
+

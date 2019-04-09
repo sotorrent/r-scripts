@@ -1,0 +1,5 @@
+You need to set the proper timezone. The default, as you can see, is UTC.
+You can use a date formatter for doing that.
+For a list of available timezones you can use
+or check out the constants here on this Rails doc page.
+

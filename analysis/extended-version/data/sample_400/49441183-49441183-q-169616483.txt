@@ -1,0 +1,4 @@
+Recently, I am having trouble with our SOAP calls which uses apache axis 1.4. I have set the timeout as 30s, however it sometimes reaches around ~1000s before throwing an exception. After exploring internal implementation of axis, I found out that it is due to the SSLSocket handshake.
+See sample error below.
+Is it possible to put a timeout also on the handshake? Or is there another way to forcibly cut the connection.
+

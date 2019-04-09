@@ -1,0 +1,2 @@
+We have implemented Facebook comments in our AMP pages but not able to see the comments on our dashboard. Has anybod experienced such an issue? Is it something wrong with our AMP implementation or do Facebook comments have this issue on AMP pages?
+

@@ -1,0 +1,2 @@
+if I check the string format in ruby code, do I need to add // like mystr==/^mc_[0-9a-z]+_(dv|oa)_ids$/ ?
+

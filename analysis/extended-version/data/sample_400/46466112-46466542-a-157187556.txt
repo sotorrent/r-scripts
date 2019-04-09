@@ -1,0 +1,8 @@
+Here is an idea using from base R,
+which gives,
+
+  V1 V2 V3 V4
+
+1 1R 1R 1R  3
+2  3  3 2R  1
+

@@ -1,0 +1,2 @@
+Just check my code what I attached, I already did that using Model class where i took a boolean variable, and for each checked i am setting the values to that boolean.
+

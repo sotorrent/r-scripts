@@ -1,0 +1,6 @@
+This is a perfect fit for Power Query. Suck the table into Power Query, split Column2 with the comma delimiter, select all but the first columns and click Unpivot.
+One of the major processing problems is that numeric data is separated with a comma, and a comma can also be a "thousand" separator in large numbers. I've tried to copy your data sample, but some rows come back as text with only numbers and commas, and other rows come back as very, very big numbers in exponential format.
+So you may need to do some work on defining the incoming data type. This may be an issue with regional settings. My regional settings have the comma as the thousand delimiter.
+You may be better off posting an actual Excel file with a file sharing service and post a link here.
+Power Query can do this -- that's a given. We just need to straighten out the data format to work out HOW to do it.
+

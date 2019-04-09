@@ -1,0 +1,8 @@
+Using the code below, I'm having trouble checking whether a specified date exists in a MySQL 'date' column.
+It's returning false, despite the fact that I can see the date '2013-05-08' displayed in phpMyAdmin.
+The table itself contains 70+ entries for that date. It always will do, if it contains any at all, but I just want to know whether it exists or not at this stage.
+The date field is a MySQL 'date' type. I'm suspecting that the bug is in my structuring of the PDO calling of the query.
+UPDATE
+Updated to `$s['date']. I suspect that I still have an issue with the structure of that, but probably need to fix the query so that it gives us results before focusing on this.
+Also tried running the query against the database directly and got an empty resultset, despite being able to see that the target date exists. Still baffled!
+

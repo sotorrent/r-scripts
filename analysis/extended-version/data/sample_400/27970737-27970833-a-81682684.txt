@@ -1,0 +1,9 @@
+The cv-qualifier in return types is ignored only of the very first level, so equals but does not equal .
+In your case, your function is equivalent to .
+And about the binding of the . The return of the function is a r-value (a temporary), and is an r-value reference, so this is expected. Of course, the lifetime of the temporary is extended to the scope of the reference.
+BTW, your code, compiled with gives in CLang++:
+
+warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+And in G++:
+warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+

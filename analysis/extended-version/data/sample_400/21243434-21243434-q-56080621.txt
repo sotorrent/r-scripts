@@ -1,0 +1,3 @@
+I have the following query in mysql:
+$keyworks is an array with search bar's data. I want to remove the special chars from -> phone LIKE '%".$keyword."%' <- because the users can be register using " . - ( ) " at phone number field and I am searching them with "clean" phone number (without special chars). How can I do It in mysql?
+

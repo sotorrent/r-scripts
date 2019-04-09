@@ -1,0 +1,3 @@
+I get a slightly different result than do you probably related to not defining a timezone for the sdf values. Timezones in objects remain mystery to me. The function is very useful as an index creation function that maps a values-vector where one has multiple adjoining non overlapping intervals. You really only have two time-points that split into three intervals.
+I also checked to see if my result would be affected by whether the intervals in findIntervals were closed on their right rather than the left (default) and saw no difference. I'm not near GMT so this may be getting calculated in Pacific timezone.
+

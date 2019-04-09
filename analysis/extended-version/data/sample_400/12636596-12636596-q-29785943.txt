@@ -1,0 +1,11 @@
+I am following code to display song list in alphabetical order
+
+function getSongsIn(key, value) { 	var query= "SELECT * FROM Songs
+where " + key + "="" + value + ""ORDER BY title ;" ;
+SongsDB.transaction(function (tx) {
+//tx.executeSql(query,[],showSongsIn,onError);
+tx.executeSql(query,[],showSongs,onError);
+});  }
+Above code result in case sensitive arrangement.
+Can anyone suggest me to make it case insensitive??
+

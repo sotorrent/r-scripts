@@ -1,0 +1,6 @@
+You will need Javascript to do this. Use [][1]:
+Note: the current window is implied. This is equivalent:
+or you can specify a different window.
+So:
+Now the options on the [][2] dialog box will be OK and Cancel (not Yes and No). If you really want Yes and No you'll need to create some kind of modal Javascript dialog box.
+

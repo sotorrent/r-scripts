@@ -1,0 +1,2 @@
+It is more logical to use attributes and . If you insist on using indexing, you should implement [](on the class.
+

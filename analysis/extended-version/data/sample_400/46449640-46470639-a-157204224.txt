@@ -1,0 +1,3 @@
+For cross domain, you can make a call to Ext.data.JsonP.request() method and process the response as shown in the code below:
+Check this fiddle for complete working example.
+

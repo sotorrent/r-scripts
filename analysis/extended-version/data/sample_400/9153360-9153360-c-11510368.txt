@@ -1,0 +1,3 @@
+I want to count record which is stored procedure return.
+Syntax not an issue.
+

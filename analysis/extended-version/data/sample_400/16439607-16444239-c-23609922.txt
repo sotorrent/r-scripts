@@ -1,0 +1,2 @@
+Did you delete the property "Main storyboard file base name" in the project plist file?
+

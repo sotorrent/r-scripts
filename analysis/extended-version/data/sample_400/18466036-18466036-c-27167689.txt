@@ -1,0 +1,3 @@
+Thanks Omar, I've tried but in this way it doesn't work on every page.
+I've tried even to apply a class to the panel and change to code to $('.theclass').panel("open"). It's a terrible solution because calls a function on every panel in the DOM, but even like this doesn't work, with the same behavior of the .ativePage.find(....).panel("open"). I don't know what else to try :)
+

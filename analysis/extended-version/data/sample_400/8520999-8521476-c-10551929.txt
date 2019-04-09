@@ -1,0 +1,2 @@
+^^ in this case I had sample.php?id=16&in=16&lang=1 in the address.
+

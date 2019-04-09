@@ -1,0 +1,2 @@
+@TakitIsy feel free to do it ;) but the main idea of my solution is to not use mix-blend-mode to avoid browser support issues. That's why I propsed a solution with only gradient that is more supported
+

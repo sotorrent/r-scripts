@@ -1,0 +1,7 @@
+I goal is to place a simple restriction on my xsd element definitions: I want documentation is reqired for all element definitions
+I've been able to validate the desired schema below by adding namespaces and using xs:include (which references a schema that defines those attributes), but I have been unable to produce a schema that makes the attributes "created", "last_modified", "note_author", and "note_added" required in their respective places.
+Example xsd schema:
+The root element for a document
+A subelement of document
+changed from complex to string type
+

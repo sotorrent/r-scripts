@@ -1,0 +1,2 @@
+Side question: the isomorphism laws seem to only allow you to pull one element to the head of the row, but does not represent arbitrary permutations. In particular, isomorphism is not transitive, or am I missing something?
+

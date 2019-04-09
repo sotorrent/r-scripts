@@ -1,0 +1,2 @@
+I'm thinking it might be a piece of code ported from a different platform where these addresses are defined. Or the memory may actually contain something useful and just be undocumented. I've seen examples of both in various third-party code.
+

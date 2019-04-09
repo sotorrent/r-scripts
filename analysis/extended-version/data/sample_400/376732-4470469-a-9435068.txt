@@ -1,0 +1,19 @@
+server {
+listen   80; ## listen for ipv4
+listen   [::]:80 default ipv6only=on; ## listen for ipv6
+server_name  localhost;
+access_log  /var/log/nginx/localhost.access.log;
+error_log  /var/log/nginx/localhost.error.log;
+root   /var/www/localhost/public;
+try_files $uri @php_index;
+
+pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+
+location @php_index {
+fastcgi_pass   127.0.0.1:9000;
+fastcgi_param  SCRIPT_FILENAME /var/www/localhost/index.php;
+include fastcgi_params;
+}
+}
+It's recommended to use try_files when ever possible.
+

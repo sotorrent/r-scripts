@@ -1,0 +1,5 @@
+This is a split from discussion on <a href="question.
+Suppose I need to define a function f which checks if given labeling of a graph is a proper coloring. In other words, we have an integer assigned to every node and no two adjacent nodes get the same answer. For instance, for {"Path",3}, f[{1,2,3}] returns True and f[{1,1,2}] returns False. How would I go about creating such a function for arbitrary graph?
+An approach suggested in earlier discussion is below, but it's not clear how to actually use f there.
+This is a toy instance problem I regularly come across -- I need to programmatically create a multivariate function f, and the creation process complex enough that I don't want to rerun it for every evaluation of f. Meanwhile, during creation of this function, "Part" expects it's arguments to be actual arrays rather than uninstantiated variables, so evaluating things like x[[i]] causes warnings.
+

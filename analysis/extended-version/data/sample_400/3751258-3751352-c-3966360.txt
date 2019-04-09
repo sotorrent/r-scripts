@@ -1,0 +1,2 @@
+Maybe you could provide informations from this crash? Is it .NET exception or some other error?
+

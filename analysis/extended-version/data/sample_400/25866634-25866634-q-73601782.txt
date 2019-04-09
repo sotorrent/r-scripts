@@ -1,0 +1,5 @@
+I tried that query:
+is the table name
+is the column name
+but it working for every column and not only the specific the identiy one
+

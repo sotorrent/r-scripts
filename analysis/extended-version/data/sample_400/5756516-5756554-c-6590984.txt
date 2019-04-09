@@ -1,0 +1,2 @@
+@Tamer - Updated answer with some more info. I think you don't have to use bat/cmd file. You can use the sqlcmd utility directly from Task Scheduler.
+

@@ -1,0 +1,3 @@
+Syswow64 is a folder just for 64 bit versions of Windows, where it stores files for 32 bit programs. It shouldn't exist on 32 bit Windows.
+Try compiling for 32 bit Windows, then running on the other computer.
+

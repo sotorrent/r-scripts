@@ -1,0 +1,2 @@
++1. And the solution to the problem is to get rid of the move assignment operator, the copy-and-swap one handles rvalues and lvalues, that's the point
+

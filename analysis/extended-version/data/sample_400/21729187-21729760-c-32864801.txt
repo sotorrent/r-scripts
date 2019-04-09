@@ -1,0 +1,2 @@
+Even using a ThreadPool i've the same problem. Posting my code above, if you want to see it.
+

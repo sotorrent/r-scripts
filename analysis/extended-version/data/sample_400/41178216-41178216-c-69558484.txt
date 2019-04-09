@@ -1,0 +1,2 @@
+@ZanLynx That might be a potential solution but we have to change our system design. And can we guarantee that malloc() will never use the addresses were mmapped but have not been read/written? AFAK, mmap won't allocate the real space until a read/write operation happens.
+

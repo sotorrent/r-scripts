@@ -1,0 +1,2 @@
+Neither of the HTML samples work in Firefox 11 on a PC
+

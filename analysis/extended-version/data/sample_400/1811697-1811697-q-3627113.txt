@@ -1,0 +1,6 @@
+I am creating checked list box with the following template:
+my problem is, i am getting all the product types from Database and binding it to the list box itemssource. i have a product class which contains a list of product types it belongs to. i need to set the IsChecked property of check boxes based on Product's product type list. Typically i need to set one or more check  boxes IsChecked property.  product may belong to 1 or more product types. and selection mode is multiselect. if user checks the additional product type check boxes ..i need to get the total checked list boxes and save them to the database... this is a MVVM WPF application ...    any ideas on how to solve this scenario...
+in the controltemplate what will be the path is IsChecked?
+Thanks
+Rey
+

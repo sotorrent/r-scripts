@@ -1,0 +1,2 @@
+If you create a binary file , you can write any file to it . The only drawback is that you have to know exactly where it starts and where it ends .
+

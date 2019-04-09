@@ -1,0 +1,5 @@
+The easy way is to wait until you find the solution.  Then simply record the successful moves as you crawl back up that branch of the call tree.  Each winning call prepends its move to the front of the return value and passes that back up the stack.  This would be something like
+You do have a couple of things to fix.  Most of all, you have to block taking a step you've already taken.  Right now, when your search hits a dead end, it keeps repeating the final step and backtrack in an infinite recursion.
+Second, you'll need to implement logic to abort other searches once you've found one solution.  Setting a finish doesn't help much; that's a local variable, and you need to communicate to the calling program that you've failed or succeeded.
+Is that enough to move you to the next step?
+

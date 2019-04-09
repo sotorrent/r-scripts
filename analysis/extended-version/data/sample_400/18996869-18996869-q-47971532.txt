@@ -1,0 +1,11 @@
+I need to make my button check if the user has:
+
+  - entered text into the position textbox
+  - entered text into the name textbox
+    if nothing has been entered then it displays an error message box and exits the procedure.
+    also it needs to call my insertIntoArrayist() procedure and pass the values to it and insert the new value into the array list.
+    and then call my populateActors() one.
+    Here is what i have so far:
+    Pretty sure at the moment it would add the name, but not into the correct position.. for example if i want to add a name "Bob Marley" into position "1" it needs to go into the top of the array.
+    There may also be some other errors with the code, so please if you see any let me know! All tips are appreciated :)
+

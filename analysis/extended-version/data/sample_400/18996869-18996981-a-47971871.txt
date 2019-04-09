@@ -1,0 +1,6 @@
+That do-while loop in your button click handler is a big problem!
+When the button is first clicked, if the condition is not met, a message box will be shown repeatedly without giving the user an opportunity to fix the error.
+Try this instead:
+This instead checks the condition each time the button is clicked, giving the user the opportunity to fix the issue.
+Your array insertion code looks fine to me.
+

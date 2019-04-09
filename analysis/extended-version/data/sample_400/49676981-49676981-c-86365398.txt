@@ -1,0 +1,2 @@
+The issue itself is because you're using to select all the elements. You  need to change that selector to whatever it needs to be. instead. You've not told use what you do want to add the class to
+

@@ -1,0 +1,2 @@
+@RyanP13 In that case you can pass the index of the item to the function: .
+

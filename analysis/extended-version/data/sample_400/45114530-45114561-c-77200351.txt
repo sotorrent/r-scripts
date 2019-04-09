@@ -1,0 +1,2 @@
+I already tried that. But it has Cannot resolve method getActivity()
+

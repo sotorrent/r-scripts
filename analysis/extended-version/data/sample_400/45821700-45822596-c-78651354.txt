@@ -1,0 +1,2 @@
+Doing what you describe doesn't address the fact that the program can still be compiled and then error at runtime. If you care to take a look, I've updated the question to clarify that I'm looking for a solution that keeps me from compiling an application that will fail at runtime due to C# picking up the wrong Program class under the circumstances described.
+

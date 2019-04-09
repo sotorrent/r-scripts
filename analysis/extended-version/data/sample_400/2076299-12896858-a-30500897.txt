@@ -1,0 +1,2 @@
+This method works in Chrome and IE:
+

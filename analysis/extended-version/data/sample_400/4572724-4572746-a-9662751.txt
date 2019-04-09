@@ -1,0 +1,4 @@
+This is a rather subjective question. That is to say one only you can decide as you know your code. The best thing to do is ask yourself if the following is strictly true: X really has and belongs to many Y?
+For example, does really have many ? Or does have a and the has ? Same with and .
+As far as CakePHP having too many, I wouldn't worry about that. Setting the property on your , using , or will also help limit when all these relationships are used.
+

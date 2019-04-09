@@ -1,0 +1,2 @@
+I prefer , as then you get its typedefs, converting constructors, etc. for free.
+

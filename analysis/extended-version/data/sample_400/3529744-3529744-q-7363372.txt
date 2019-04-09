@@ -1,0 +1,7 @@
+I have a database 'test' with two tables. Here is phpmyadmin dump: And here is php code: After execution 'tag_three' is still in the table. And when I run this SQL through phpmyadmin it works fine. Where am I wrong?
+
+mysql 5.1.42
+php 5.3.1
+windows 2003
+nginx 0.8.32
+

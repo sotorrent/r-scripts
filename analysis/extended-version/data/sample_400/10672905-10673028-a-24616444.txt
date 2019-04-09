@@ -1,0 +1,4 @@
+layout_weight specify extra space in the layoutfot the view. you should try measuring your screen first like:
+and then doing some  calculation like width*0.6 and 0.4 , this way your layout will always have 60 40 ratio.
+Hope This Helps
+

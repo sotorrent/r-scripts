@@ -1,0 +1,3 @@
+I emptied the array ‘$line‘ after the nested ‘for‘ loop
+And it gives me exactly what I wanted
+

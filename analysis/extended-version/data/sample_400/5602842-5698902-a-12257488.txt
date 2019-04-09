@@ -1,0 +1,3 @@
+In SharePoint 2007, you can think of storing the file url in a SharePoint list and displaying the links in the Infopath form. This will directly open up the file from the form and even you have the links stored in the list. Please read this article.
+If you are checking this out in SharePoint 2010 - its quite straight forward. This might help.
+

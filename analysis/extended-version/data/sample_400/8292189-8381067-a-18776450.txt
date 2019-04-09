@@ -1,0 +1,4 @@
+Here is a simple solution for you.
+I have one main arrayList which has all the data and I have second arrayList
+which will keep the track of  checked items.We will check if selected item is in it means you have checked that item so you have to set checked property to true for that checkbox.
+

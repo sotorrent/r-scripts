@@ -1,0 +1,2 @@
+Solution 2 worked perfectly for me as well. System.Net.Http.Formatting v5.2.3 has a reference to Newtonsoft v6.0.0.0 and we're currently using v9.0.0.0. Thanks!
+

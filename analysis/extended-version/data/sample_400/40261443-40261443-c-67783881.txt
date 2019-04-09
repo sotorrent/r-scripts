@@ -1,0 +1,2 @@
+I believe it is working when i'm not specifing any sdcard path. @elefasGR
+

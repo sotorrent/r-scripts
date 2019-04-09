@@ -1,0 +1,2 @@
+I could make the call as querystring no problem, but then how should I change the header of my WEBAPI function for that? Thanks
+

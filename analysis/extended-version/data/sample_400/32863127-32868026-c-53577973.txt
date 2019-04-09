@@ -1,0 +1,2 @@
+Good to mention adding shared data to the prototype. I'll also drop a link here to this question about circular references in js as this also relates to common beliefs regarding memory leaks.
+

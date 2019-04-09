@@ -1,0 +1,4 @@
+There is no need to use statement but it's good practice to use operator which force the function keyword to be treated as an expression instead of a declaration. But then your function should look like that: If you declare a non-immediately-invoked function expression, your should:
+
+or
+

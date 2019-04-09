@@ -1,0 +1,2 @@
+model.fetch() fetches an individual model back from the server.How do you say you have a collection of models with simillar id's ? Can you post the code ?
+

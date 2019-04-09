@@ -1,0 +1,5 @@
+Basically i have a eeview that has a bunch of objects in it and the treeview needs to bind the same properties.
+here is the code im using and it doesnt seem to work
+Basically when i get to the third level of treeview items i just get the Namespace+ObjectName.
+Isnt the DataTemplate supposed to flow on and on ?
+

@@ -1,0 +1,10 @@
+I've seen a lot of topics on the panel element of JQM, but I don't see anything similar so here's the question.
+I have different pages (with different ids), each with its own panel element:
+And the event bound to call the a function with the following code:
+Now, for all the other pages the navigation is OK and the panel works without problems.
+The only problem I have is when I go back to index.html (the first page loaded, page with id ).
+It's strange because I see the code executed correctly: , but the panel is not shown.
+Any hints?
+Thanks,
+Lorenzo
+

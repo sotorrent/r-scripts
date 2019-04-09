@@ -1,0 +1,7 @@
+At least in 'Clang' & 'GCC'. Here is an example:
+As most of you probably knows in the second line of 'we are bounding the return-value temporary ('prvalue') into an 'rvalue reference'  thus extending its life time. So my question is what is happening here - is 'cv' for return-values really ignored and if so where in the standard this is written or else how is converted to ?
+*Need ISO C++ standard qualification.
+EDIT: The thing is that before 'C++ 11' you weren't allowed to modify the return-value whatsoever because 'rvalues' weren't introduced and also because something like:
+Was meaningless. However now you can extend the 'return-value' life-time and so modifying it becomes possible:
+From this it comes that the 'const' return 'cv' can be useful. If the return-type of 'InString' above is 'constant' then the second assignment to 'nullptr' will be illegal.
+

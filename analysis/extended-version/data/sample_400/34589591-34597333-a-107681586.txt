@@ -1,0 +1,4 @@
+here is what i uselly do to limit the velocity of the body :
+try this code inside the render() method please and it will limit the speed of the ball body that you're making
+Good luck
+

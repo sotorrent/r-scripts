@@ -1,0 +1,5 @@
+I am working with winForms in c#. I want to access video file from resources without using any dialog box for load or select. That means I want directly store video file in EXE file.
+
+I get warning while I execute this code. the warning is " byte[] that does not matches the file format" please help me to run this code.
+Thank you.
+

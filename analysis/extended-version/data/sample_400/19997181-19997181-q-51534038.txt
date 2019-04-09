@@ -1,0 +1,3 @@
+I need to check if arecord is saved into database or not if it was saved in database open another form else show amessage that it is not in database but if the record isnot in database i got this error "Object reference not set to an instance of an object."
+that is my code plz help me to find the error here
+

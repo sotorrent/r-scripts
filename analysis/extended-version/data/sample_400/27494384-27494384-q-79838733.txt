@@ -1,0 +1,6 @@
+I have 2 MasterPages (A main MasterPage and Simple MasterPage) I use only the Simple one with my other pages. Here part of my program:
+How to register data (ex. name) and an image  in a Workbench database ?
+I tried with
+...
+but I only saw a space with NULL in the database.
+

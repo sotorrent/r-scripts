@@ -1,0 +1,2 @@
+@Strawberry Thank you for the tip. Updated my question with a link to a SQL Fiddle and further description. Does that help?
+

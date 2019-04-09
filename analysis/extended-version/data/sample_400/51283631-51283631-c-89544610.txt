@@ -1,0 +1,2 @@
+edited the post to include the ImageView declaration
+

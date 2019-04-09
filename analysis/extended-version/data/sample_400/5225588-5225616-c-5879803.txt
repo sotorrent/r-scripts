@@ -1,0 +1,2 @@
+@Randolpho - the question changed. Do you mean why have an abstract class, or why make it abstract if it has no methods?
+

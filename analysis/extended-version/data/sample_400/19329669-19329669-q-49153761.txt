@@ -1,0 +1,5 @@
+I have to iterate through a table and test 14 different fields for a certain value. All of these fields have a similar name, e.g. , , etc.
+I want to use a For loop to iterate through the different fields so I can condense 15 statements to something like the following
+
+But I know if I do it this way VBA will look for a field literally named "fieldname", it won't interpolate the variable's value as I wish. Is there a way to get the variable's value in there? If not, is there another way to systematically go through a record's values without too many statements?
+

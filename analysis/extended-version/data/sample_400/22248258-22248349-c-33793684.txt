@@ -1,0 +1,2 @@
+Thanks for reply. Just quick question. I found an environment variable called LOCALAPPDATA which takes me to C:\Users\User1\AppData\Local. How do I join the path to drill into Appdata\Local? I was thinking of doing it like this @set CopyFolderTo=%LOCALAPPDATA%\Temp\CopyToFolder. Is that the right way?
+

@@ -1,0 +1,6 @@
+Thank you all for your help! The main problem, it's that i'm a stupid...
+means append negative variable with $(this).val(). Not means do an algebraic sum.
+Very ugly solution:
+Or much better:
+Now it works!
+

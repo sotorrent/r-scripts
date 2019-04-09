@@ -1,0 +1,14 @@
+I'm following this tutorial:
+My code:
+The issue is, this part of the code throws me an exception:
+
+{"Could not load file or assembly
+'Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.16.0,
+Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its
+dependencies. The system cannot find the file
+specified.":"Microsoft.Threading.Tasks.Extensions.Desktop,
+Version=1.0.16.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"}
+PS.: While most likely irrelevant to the issue, when setting up my project on google to get the credentials, I've selected Installed Application -> Other (As I'm assuming that's what a console application is)
+EDIT: Adding seems to have solved that issue. Now the remained of my code:
+returns an empty line, even though when I run the application it does request access to my calendar and such. Am I forgetting something?
+

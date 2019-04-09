@@ -1,0 +1,4 @@
+Why don't you use javaScript objects to store your data at the frontend.
+You may directly pass this object by encoding with json on the server to store it to database.
+Example :
+

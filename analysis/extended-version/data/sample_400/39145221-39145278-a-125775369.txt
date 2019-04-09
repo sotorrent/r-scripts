@@ -1,0 +1,4 @@
+Remove the from the element and write a listener for your submit button (you are using action already)
+EDIT:
+@Peril Adding a solution as requested. Now it is working if you use for the form submit as per below. Note that you should give valid links for the values
+

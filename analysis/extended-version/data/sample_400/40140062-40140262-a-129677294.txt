@@ -1,0 +1,4 @@
+There is no need to use statement in functions. But then your function should look like that: On the other hand, if you don't use operator the best practice is to:
+
+or
+

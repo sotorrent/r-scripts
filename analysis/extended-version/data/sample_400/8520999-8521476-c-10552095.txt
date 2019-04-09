@@ -1,0 +1,2 @@
+look, these queries are equal (proves that). thus there is no difference, what variable to use. you have to look for another reason. Let me suggest a typo or some mistake of the sort, like if you are editing one file and running another one. Also try to run these queries with both numbers hardcoded . I doubt the number can be an issue but just to be sure.
+

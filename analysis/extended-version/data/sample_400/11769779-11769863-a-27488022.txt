@@ -1,0 +1,4 @@
+Presumably you meant , since a number can't be simultaneously less than 0 and greater than 1.
+In that case, I'd probably do something like:
+C's random number generator normally produces numbers from 0 to RAND_MAX. This adds one to the value produced by the random number generator, so it can't produce 0. Dividing by RAND_MAX+1 would give us results from 1/RAND_MAX to (RAND_MAX+1)/(RAND_MAX+1), so the latter is 1. Since we want to avoid that, we use (RAND_MAX+2), so we get 1.0/(RAND_MAX+2) through (RAND_MAX+1)/(RAND_MAX+2), which will be something slightly greater than 0.0 to something just a tad less than 1.0.
+

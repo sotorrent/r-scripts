@@ -1,0 +1,6 @@
+The reason that it is displaying a figure is because if you look closely at your structure, there is a object stored in there. When you load this graphics object (or any object, really) from a file, MATLAB will reconstruct the object. The defined behavior for loading a figure (it's method) is to open the figure.
+This is a recent issue because older versions of MATLAB stored graphics handles as simply a number and when loading a graphics handle from file, MATLAB had no way of knowing that it was supposed to be a figure so it would just parse it as a number and move on without displaying a new figure window.
+Unfortunately since your handle is nested within a there is no easy way to not load it. Probably the easiest thing to do would be to just delete the figure object right after loading the file (since you have the handle already).
+And if you really don't like the figure poping up even for a second, you can set the default figure property to prior to loading and then reset it back to on afterwards.
+In the future, to avoid this behavior, consider not saving any graphics  handles within your .mat files.
+

@@ -1,0 +1,3 @@
+There are so such things as pointers in JavaScript. Therefore there's no need "dereference". You can use functions and put them in arrays however you like:
+You can access and call them by doing:
+

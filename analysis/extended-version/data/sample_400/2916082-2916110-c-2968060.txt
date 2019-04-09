@@ -1,0 +1,2 @@
+They're the exact opposite and work in the same way. will stop as soon as it find a value that is not zero. So is the same as and is the same at . Reflector both if you want to see it by yourself.
+

@@ -1,0 +1,2 @@
+possible duplicate of 1d linear convolution in ANSI C code?
+

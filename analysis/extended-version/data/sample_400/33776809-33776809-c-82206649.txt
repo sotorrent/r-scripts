@@ -1,0 +1,2 @@
+Related: Snippet on how to setup Junit with hamcrest propertly
+

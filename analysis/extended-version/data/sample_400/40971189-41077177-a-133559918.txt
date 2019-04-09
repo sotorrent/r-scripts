@@ -1,0 +1,7 @@
+As @Timurib says, this is because despite having Type Hintings, PHP doesn't evaluate the methods to call until runtime. This could be seen as something undesirable, but it allows to use some technics such as Duck Typing.
+Here you have a simplified example based on the one you're providing (it doesn't put the Symfony Container into the mix, because this is something purely related to PHP). You can run it on 3v4l.org:
+Output:
+But when we inject another implementation that does not contains the , the code throws an at runtime:
+Output:
+If you're going towards the use of interfaces, DI, and DIC, you should not call any public method rather than the exposed by the interface. This is the only way to really take advantadge of the benefits of having an interface: Decoupling from the implementation details, and be able to change the class to be injected without changing anything inside your .
+

@@ -1,0 +1,8 @@
+A typical binary file format for custom data is an "indexed file format" consisting of
+Where the index contains records "pointing" to the data.
+The index consists of records containing an offset and a size.  The offset tells you where in the file the data is stored and the size tells you the size of the data at that offset (i.e. the number of bytes to read).
+Suppose you want to store 50 records in the file you would create 50 indices and 50 data structures.  The 50 index structures would be written to the file first, followed by the 50 data structures.
+To read the file you would read in the 50 index structures, then from the data in the read-in index structures you could tell where to "seek" to read the data records.
+Look up (fopen, fread, fwrite, fclose, ftell) for functions to read/write the data.
+(Sorry my semicolon key doesn't work)
+

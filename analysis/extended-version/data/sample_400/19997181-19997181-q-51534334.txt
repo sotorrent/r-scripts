@@ -1,0 +1,4 @@
+I need to check if a record is saved into database or not. If it was saved in database open another form, else show a message that it is not in database.
+If the record is not in database I get this error
+This is my code please help me to find the error here:
+

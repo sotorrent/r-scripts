@@ -1,0 +1,2 @@
+I just add that BETWEEN is a bit confusing operator. As you see, your first condition implies . I am pretty sure this what you wanted. However, one may assume that you have made a mistake, that you instead wanted something like . In fact, your next condition uses , which makes me think: what if you actually wanted < for the first one???
+

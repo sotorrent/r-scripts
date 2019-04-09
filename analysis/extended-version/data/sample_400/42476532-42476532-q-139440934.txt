@@ -1,0 +1,16 @@
+I'm building a typescript project and using a non-typescript lib call 'draggabilly';
+So I'm trying to declare it by myself.
+Here is the file structure:
+src/application.ts
+it's showing that
+
+Could not find a declaration file for module 'draggabilly'.
+'/node_modules/draggabilly/draggabilly.js'
+implicitly has an 'any' type.
+So I try to create the local declaration file: @types/draggabilly/index.d.ts:
+then include the types path in tsconfig.json:
+But the error still there. So I want to know what's wrong here and what's the correct way to build the third party module declare file locally
+I created a demonstration repository for this question on github:
+
+The issue is not only about how we define inside the .d.ts file, but also the typescript could not find a declaration file at all.
+

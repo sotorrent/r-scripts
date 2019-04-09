@@ -1,0 +1,4 @@
+I've already create a collection in mongo db with several documents and I want to insert to that documents a list of integers. I've found the function update. My code for pymongo is the following:
+follower_list a function that returns a list of ids. Update it seems to replace the document with new one only containing two fields id and list_followers(initial document containing more fields). I dont want to replace docs I just want to add a new field to the old one. How can i do such a thing?
+The mongoDB example here:
+

@@ -1,0 +1,12 @@
+As you see, error raised:
+Traceback (most recent call last):
+
+File "/Library/Python/2.7/site-packages/sklearn/decomposition/pca.py",
+line 86, in assess_dimension
+(1. / spectrum_[j] - 1. / spectrum_[i])) + log(n_samples)
+ValueError: math domain error
+I already know that math domain error is caused when we take logarithm of a negative number ,but I don't understand how can there be a negative number inside the logarithm ?
+Can someone tell me what exactly the problem is?
+Here is the origin code:
+The elements in Matrix are all greater than or equal to 0.
+

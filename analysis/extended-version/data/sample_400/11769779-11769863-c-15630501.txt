@@ -1,0 +1,2 @@
+Very reasonable; alternatively on a UNIX system use + rejection sampling to throw out zero.
+

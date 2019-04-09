@@ -1,0 +1,6 @@
+  - when I click the check box I need to add an image in the next column for that particular row.
+  - so I gave addclass method to the code and target td.
+  - but its adding evrywhere.
+  - can you tell me how to fix it .
+  - providing my code below
+

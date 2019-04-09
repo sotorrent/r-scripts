@@ -1,0 +1,9 @@
+I have this function in my user.rb Model :
+I want to call this function from a script on Views (new.html.erb) like this :
+and I want self.public_key to get the x value
+The result I get is :
+
+undefined local variable or method `params' for
+#User:0x00007f238cf8dd18
+Any thoughts??
+

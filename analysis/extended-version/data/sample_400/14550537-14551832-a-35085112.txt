@@ -1,0 +1,4 @@
+It is indeed run-length encoding.
+Here's a straightforward, though generic,attempt...
+In the REPL:
+

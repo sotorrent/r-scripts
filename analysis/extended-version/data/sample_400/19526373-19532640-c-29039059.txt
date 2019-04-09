@@ -1,0 +1,2 @@
+Guide was helpful, but the issue here was being caused by 3rd party software trying to load files that weren't there.  See the answer below.
+

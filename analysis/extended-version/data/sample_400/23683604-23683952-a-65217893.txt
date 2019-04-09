@@ -1,0 +1,5 @@
+First you need to hide all the other elements not being shown when your page first loads. You can do that multiple ways, but here's an example:
+Next, you need to hide the current showing slide when going to the previous one:
+Finally, you need to set the count to the number of elements in when going to the last image:
+Here's a working example:
+

@@ -1,0 +1,2 @@
+The function in matlab. Sample output is approximately like this: @nkjt yes it is like
+

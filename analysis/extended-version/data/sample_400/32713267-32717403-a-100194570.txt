@@ -1,0 +1,8 @@
+If you need just to capture text, and you use Java or .NET flavour regex, you can try with:
+
+1.  JAVA
+
+2.  NET
+
+)(%3F%3C%3D%5E(.*))(%3F%3D.RANDOM%7CWORDS)&i=First%20line%20bla%20bla%0D%0ASecond%20line%20RANDOM%20bla%20bla%20bla%0D%0AThird%20line%20WORDS%20bla
+

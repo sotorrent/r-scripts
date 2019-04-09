@@ -1,0 +1,12 @@
+If I get the question correct; you could use the following code:
+Output:
+
+Name: MyProduct Description: Some product Keywords: Luggage Category:
+Luggage Name: MyProduct Description: Luggage Keywords: Airport
+Category: Luggage Name: MyProduct Description: Other Keywords: Abc
+Category: Other
+What it essentially does is create a Dictiory which uses the supplied categories as keys; so using will get you a list of products that are in that category.
+You do have to fill it first, ofcourse. The comment describes where that happens. For each string in the categorylist, it searches the three supplied string in each available product. You could add other properties of Product to your liking.
+At the bottem, it loops through all the products and displays their properties with the correct category.
+Note: if more than one category appears in a product, it gets added to both. If no category is found, the product is skipped. .
+

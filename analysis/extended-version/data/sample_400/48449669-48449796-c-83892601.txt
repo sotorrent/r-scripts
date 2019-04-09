@@ -1,0 +1,2 @@
+If i have a number that can't be store in a int or a long what i can do?
+

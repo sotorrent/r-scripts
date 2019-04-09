@@ -1,0 +1,2 @@
+Also you can call just after loading the file. But thanks for the extended answer, I found the option to disable figure creation very useful!
+

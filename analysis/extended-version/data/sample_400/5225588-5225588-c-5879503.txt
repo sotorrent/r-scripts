@@ -1,0 +1,2 @@
+Why should it be abstract without abstract methods?
+

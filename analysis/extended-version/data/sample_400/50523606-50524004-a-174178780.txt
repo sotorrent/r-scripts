@@ -1,0 +1,5 @@
+Borders overlaping isn't possible…
+… but, here is how I'll do to create your effect,
+using only CSS with a on your instead of using s:
+Hope it helps.
+

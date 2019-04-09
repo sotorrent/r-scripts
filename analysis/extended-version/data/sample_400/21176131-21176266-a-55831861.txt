@@ -1,0 +1,4 @@
+The only way I can immediately think to do this without using JavaScript would be to base the visibility of the link off of the pseudo-class on a content element. It makes sense that the user will not want to scroll to the top when they're already mousing over the header, so we make the link visible when their mouse is over the body:
+You can see the effect here:
+Other than this, CSS (to my immediately thinking) has no concept of page offset.
+

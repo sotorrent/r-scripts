@@ -1,0 +1,2 @@
+Is the nmap directory listed on the error message? If not try adding the nmap dir to the path via python (i.e. import sys; sys.path.append('path/to/nmap') )
+

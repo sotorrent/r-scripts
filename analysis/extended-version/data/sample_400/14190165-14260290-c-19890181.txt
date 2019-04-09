@@ -1,0 +1,2 @@
+Also maybe you must consider an approach based on several SVN repositories, one for each project.
+

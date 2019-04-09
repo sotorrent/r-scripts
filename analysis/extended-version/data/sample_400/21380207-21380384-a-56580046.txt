@@ -1,0 +1,3 @@
+Your example work great!
+simple data should be a string
+

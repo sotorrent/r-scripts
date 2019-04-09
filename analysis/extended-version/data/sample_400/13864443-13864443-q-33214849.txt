@@ -1,0 +1,8 @@
+When I use field injection in a class, like so:
+can I make any assumption about the "safe publication" status of this field? Or put differently, and assuming that MyClass itself is thread-safe, are there any concurrency risks I should be aware of when using this field?
+My instinct is usually to create all fields final if possible, but that doesn't work with field injection. Of course, I can use constructor injection, but then I usually end up having to create an additional "fake" no-args constructor just for proxying. Not much of a problem, but using field injection is just more convenient. Another option could be marking the field as volatile (or even using a lock on it...), but is that really necessary?
+The JSR-299 spec does not seem to answer this question. I'm using CDI on implementations like Weld.
+
+  - I understand that if MyClass is immutable, safe publication is not a concern. But I don't necessarily inject only immutable objects.
+  - MyClass itself is assumed to be thread safe; this is not my concern. The concern is strictly about unsafe publication, e.g. the possibility of threads seeing half-constructed instances of MyClass, due to the rules of the Java Memory Model.
+

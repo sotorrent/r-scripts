@@ -1,0 +1,2 @@
+It isn't unreasonable to want nginx to serve the lightweight static content and have apache handle application logic.
+

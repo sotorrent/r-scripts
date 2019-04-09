@@ -1,0 +1,2 @@
+What about creating a directive where you would add the attribute(s) based upon a condition? However, I have no knowledge of x-editable.
+

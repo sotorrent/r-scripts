@@ -1,0 +1,16 @@
+Recently I needed to evaluate an XQuery on the Node of an HTML document. Basically, I needed to select all elements with an href attribute from the first child of the body element. I've added a slight example to explain:
+The desired extraction result is in this case obviously:
+My first idea was to use because:
+
+  - matches the body element, wherever it is
+  - matches the first child of the body element
+  - matches all descendants or self of the current element
+    I figured that would work but on the example provided, the XQuery gives no results.
+    However, I read up a bit and found the following (source:
+    So I changed my XQuery to and this time, the results were correct.
+    My question: what is the difference between // and descendant-or-self::node()? What I found here (and here (says:
+
+is short for . For example, is
+short for .
+Which leads me to conclude that and are not interchangeable (probably because of the terminating at the end?), but then can someone tell me if there is a shorthand for ?
+

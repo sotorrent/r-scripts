@@ -1,0 +1,4 @@
+That's probably what I would do if not for the Bit position definitions already being defined by the architecture-specific compiler support (in, this case avr-gcc).
+
+Pretty dumb I think. If there is anywhere they must be used other than as a left-shift argument...I can't find it. But it is what it is.
+

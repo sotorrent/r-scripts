@@ -1,0 +1,2 @@
+Lets say that the UILabel is how can i call your function to set the view heigh as the labels height?
+

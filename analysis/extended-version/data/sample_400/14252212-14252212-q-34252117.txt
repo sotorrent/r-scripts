@@ -1,0 +1,3 @@
+Is there a limit on number of free APNS notifications that can be sent before it becomes paid or is it unlimited free notifications? Some reference to Apple doc on this would be helpful.
+Thanks in advance :)
+

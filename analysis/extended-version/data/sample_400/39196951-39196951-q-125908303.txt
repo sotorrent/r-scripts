@@ -1,0 +1,11 @@
+I am taking performance benchmarks to consider cassandra as a DB solution to our project. I have created a table with 28 columns with couple of fields as Primary key.
+I loaded tables with data around 250+ Millions of records.
+When i hit the queries with primary key columns in where clause, the results were very much satisfactory. When i parallelized queries in 5 threads, i could complete close to 1 Million queries in 2.5 Minutes.
+However, when i tried queries with non-primary key columns in where clause, 1000 queries took almost 2 Hours.
+I knew that, not having primary key is big disadvantage, still we might have that kind of situation some where down the line.
+a) I tried to see if i can use secondary indexes, but they seems to be restricted to one column only.
+b) I could not find right example for custom indexes as it needs index type class.
+c) If i used all columns in the primary key, would that be helpful at least by 5%.?
+d) Is cassandra really a good solution if we expect more query situations without primary key columns in where clause.?
+I strongly believe somebody might have definitely faced this situation, so it would be great if any one can share their experience.
+

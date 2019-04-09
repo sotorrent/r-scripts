@@ -1,0 +1,2 @@
+It is not a good practice to mix jquery and angularjs unless they are cleanly separated. I am guessing you want to look at this -
+

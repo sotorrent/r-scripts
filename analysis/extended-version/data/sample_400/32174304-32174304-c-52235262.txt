@@ -1,0 +1,2 @@
+Using setAttribute for listeners is not advised, use addEventListener instead. Also, not all A elements are links and AREA elements can cause navigation too. All links (A and AREA) in a document are available as document.links.
+

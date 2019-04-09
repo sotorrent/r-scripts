@@ -1,0 +1,2 @@
+@Don localStorage also works in IE8
+

@@ -1,0 +1,2 @@
+Also note that you're not checking the return values of (it could fail), but I've added checks and they don't return errors in this case.
+

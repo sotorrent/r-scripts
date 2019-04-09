@@ -1,0 +1,10 @@
+I'm using C# as my programming language for this tryout.
+I've searched through countless forums and other places that popped up on my Google search result. However, I cannot find a solution to my question.
+I have a FileExplorer and I have the menu items Copy/Paste/Delete in my Context Menu Strip component. Now, I have Copy working for files in my File Explorer, but I'm trying to figure out how to copy folders.
+I'm using the TreeView component as my primary component that this is tied to.
+What is a File Explorer? Here is what I'm talking about (This is an actual image of my File Explorer):
+enter image description here
+Here is my current code for copying 'files' inside of my "FileExplorer" folder. It also retrieves other folders/files inside of the 'FileExplorer' folder.
+
+Help would be appreciated if someone could give me the needed pointers/code on how to Copy a folder inside of my File Explorer!
+

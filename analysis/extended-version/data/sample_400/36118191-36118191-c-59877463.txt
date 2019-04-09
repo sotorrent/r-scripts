@@ -1,0 +1,2 @@
+Have you placed breakpoints in your thread to see if your Boolean value(s) are ever changed? I will attempt to reproduce this if I get the time. Also, are you using a or a ?
+

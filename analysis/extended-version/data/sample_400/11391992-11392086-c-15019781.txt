@@ -1,0 +1,2 @@
+thanks i got this wrong way before, i shuffle the array and assigned it in to a variable. :)
+

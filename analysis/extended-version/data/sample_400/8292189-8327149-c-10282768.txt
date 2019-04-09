@@ -1,0 +1,2 @@
+I tried with this code, but it still have some problem. If all are checked and if i ll uncheck one of them from adapter then selectAll checkbox should be uncheck but here all becoming unchecked.
+

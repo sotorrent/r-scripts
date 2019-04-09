@@ -1,0 +1,3 @@
+I need to capture a kepress combo on the keyboard so i can override the standard function, i've tried the following:
+But when pressing Ctrl+a the message is not triggered. The end aim is to override the windows shortcut 'select all' in a DataGridView within the Form to ensure only certain rows are selected when Ctrl+a is pressed in the form window.
+

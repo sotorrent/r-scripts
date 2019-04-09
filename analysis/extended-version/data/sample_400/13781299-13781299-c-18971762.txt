@@ -1,0 +1,2 @@
+@LearnCocos2D: You're right, these fixed my problem. Should I... delete this?
+

@@ -1,0 +1,4 @@
+I disabled storyboard by change the Main Storyboard to nothing. And I have rewrite everything so I don't need a storyboard and it working correctly. But in the console log, Application windows are expected to have a root view controller at the end of application launch occurred.
+Could I just ignore the message and They will approve my app after submitted?
+The didFinishLaunchingWithOptions:
+

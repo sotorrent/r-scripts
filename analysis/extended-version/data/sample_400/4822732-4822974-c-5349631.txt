@@ -1,0 +1,2 @@
+It should return smth like this: /Users/max/Library/Application Support/iPhone Simulator/4.2/Applications/C5178257-E12C-4088-BA2C-68E472458575/Documents   It is really strange. Ok, can you access your DB from the app bundle?
+

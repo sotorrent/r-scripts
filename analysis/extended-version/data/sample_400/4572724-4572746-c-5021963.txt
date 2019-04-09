@@ -1,0 +1,2 @@
+One last thing: Right now I'm linking and with a table.  But since HABTM and HABTM would it be better to allow cakephp to link and together through the common model?  I suppose this also depends on my code..
+

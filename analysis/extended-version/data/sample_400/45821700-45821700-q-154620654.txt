@@ -1,0 +1,5 @@
+"Program" is a word in my domain. I have a class named for my domain model. What can happen is the entry class gets picked up if I just use in my code, and do not fully qualify it via . The part that troubles me is that this can result in the application compiling and then erroring at runtime.
+I am interested in solutions that keep me from compiling an application that will exception at runtime. The best solution I've thought of is renaming the MyNamespace.Program entry class to something else.
+Addendum:
+This question's original title was "Can I name the .NET Core Program class something else". Unfortunately that resulted in multiple down votes, and some surprisingly opinionated responses to what I thought was a simple question. So instead of asking that question I've rewritten this question as a description of my specific problem, hoping it might be more helpful to anyone who stumbles upon it in the future.
+

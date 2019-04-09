@@ -1,0 +1,3 @@
+Though we don't have enough to work on still I think it is calling on first request as well (unless you have verified in developer tools etc.). The reason it seems to work on second click is that ajax call has not returned and on second click it appears to work.
+Try this to disable button until ajax returns:
+

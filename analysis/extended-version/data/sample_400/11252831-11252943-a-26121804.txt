@@ -1,0 +1,3 @@
+That is [](not the bitwise operator, and is used to extract formatted data, in this case a . It returns a reference to the stream being read.
+A can be used in a boolean context due to its conversion [](allowing it to be used as the terminating condition in the loop.
+

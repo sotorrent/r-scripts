@@ -1,0 +1,2 @@
+should fail, because will return you an object related to . You could pull a native DOM object first:
+

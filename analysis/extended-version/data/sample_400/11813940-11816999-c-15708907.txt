@@ -1,0 +1,2 @@
++1, This is probably the simplest approach to get the trait (although I would avoid writing a trait for that, as the same technique can be directly applied where needed)
+

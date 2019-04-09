@@ -1,0 +1,2 @@
+Okay, I tested that with more than 3000 records in one page with listing a lot of relations and it had an acceptable response time without views even and more information presented as well. I agree with you that it will be an issue if you have timeout error to load the data at the client side.
+

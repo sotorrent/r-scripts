@@ -1,0 +1,8 @@
+With such a wide spectrum of things crashing, I suspect that it is something systemic with your Java installation.  Maybe you installed from a corrupted installer (or whatever), or maybe the installation has been "messed with".
+And if it isn't that, then the next place to look is either:
+
+  - some JVM bug that is particular to your platform (e.g. OS, window manager, video device, etc), or
+  - hardware errors (!).
+    The best thing I can suggest is that you enable core dumping (per the instructions), and see what you get.  This page may help you diagnose the dump ... as may Googling.
+    And if you have a support contract, call Oracle for help.
+

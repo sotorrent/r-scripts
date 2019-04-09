@@ -1,0 +1,11 @@
+is called a "nil-coalescing" operator.
+Quite simply, it checks an optional variable to see if it has a value, and:
+
+  - if it does, the value is unwrapped and used
+  - if it does not, the value to the right of the operator is used instead.
+    For example:
+    In this case, the variable equals "bread" because the variable was never assigned a variable.
+    If you did:
+    Now equals "lettuce" because we gave a value. And because is an optional, the value is automatically unwrapped (meaning we can use its value directly).
+    If you want to read more about it, check out Apple's documentation.
+

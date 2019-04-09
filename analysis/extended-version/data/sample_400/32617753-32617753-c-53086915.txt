@@ -1,0 +1,2 @@
+I think the first line should be ".. to update an existing DBs User information."  Don't use the scary migration word.
+

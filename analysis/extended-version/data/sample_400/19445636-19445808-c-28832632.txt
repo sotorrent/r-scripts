@@ -1,0 +1,2 @@
+OP has already tried empty(), something else is the problem
+

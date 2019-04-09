@@ -1,0 +1,2 @@
+First str () does say that you have a dataframe with 3 variables and 18 observations, each variable type like for $year is int , $variable is factor, $qty is numwricetc. So str () does give structure of the data.frame, variable type data, what data does contain, if any missing etc.
+

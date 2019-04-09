@@ -1,0 +1,7 @@
+Input : 5
+How do I input elements of the array without inputting ?
+This is what I look for :
+Input : 1,2,3,4,5
+output:
+1
+

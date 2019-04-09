@@ -1,0 +1,7 @@
+This class
+
+  - Does not extend or
+  - Does not contain an method
+  - Nothing in the method will ever be invoked
+    Rather than using the old heavyweight AWT, use lightweight . Also look at Java Web Start for deployment.
+

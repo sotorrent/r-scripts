@@ -1,0 +1,2 @@
+New error fontattributesDictionary = [NSFontAttributeName:font] as [String:AnyObject]`
+

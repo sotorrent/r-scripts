@@ -1,0 +1,22 @@
+Are there any official sources for programming an Outlook "internet calendar subscription ", described in the link as
+
+An Internet Calendar Subscription is a calendar that you download and view in Outlook. However, unlike a Calendar Snapshot, Internet Calendar Subscriptions are updated automatically.
+I'm using ASP.NET MVC and the DDay.iCal library. I have been unsuccessful creating such a calendar. I need answers to specific questions. I'm tired of guessing. And I won't accept random code, links to out-of-date codeproject articles, or anything else non-authoritative.
+The only concrete information I have is that the URL must
+
+  - begin with
+  - end with a filename
+    I have to generate a unique and up-to-date calendar per user, preferably every time Outlook polls the address. I want to avoid hooking the calendar updates into the CRUD parts of the site. So, I need to know some specifics about what Outlook accepts.
+  - Can I use a controller/action that returns a (or derivative: stream, content, path) to dynamically generate the calendar when Outlook hits the address?
+  - Can I "fake" the ICS file/filename part of the URL by decorating the action, like ?
+  - Can I use an to create the link for the action, like ?
+    I've tried some of these things in an ad-hoc fashion and Outlook loves to pop up and handle links, but it shows nothing and displays no error messages. Is there somewhere to dig for Outlook web calendar import errors?
+    If no to the above questions, is there another way to serve fresh contents every time Outlook polls the address? I'd rather not update the calender in sync with the CRUD operations on the site. That seems more complicated than is necessary.
+    Either way, I also need to know what parts of the iCalendar specification Outlook requires to have a properly updating "subscription". I imported a valid ICS file as a regular "snapshot" with as little as a start/end date, summary, and location. But, apparently, there are some tricky parts of the spec, like
+  - Do I have to set the (RFC2445 4.7.2 Method)? I can't even find a decent description of this property or the values it accepts (is it client specific?).
+  - Do I have to keep track of event UIDs and change their disposition based on my system's CRUD operations? Or is adding/removing/updating the events from the calendar on subsequent polling good enough for Outlook to figure it out? If I have to keep track, now I have to add a whole layer of persistence and state-awareness to my application.
+  - If I'm keeping track, I've noticed in other SO questions that Outlook is real picky about the property... does it have to be an email address or not? A link or just an address?
+    I'm at the end of my rope. I'm willing to read documentation if it answers questions about actually building a website that generates proper calendar subscriptions. I haven't found anything on MSDN except this strange conversion "algorithm". And, as far as I can tell, it's useless.
+
+).aspx
+

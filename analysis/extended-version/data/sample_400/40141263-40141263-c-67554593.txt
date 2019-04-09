@@ -1,0 +1,2 @@
+You could use some sort of check constraint. What I would do if I were creating these tables is create the player table that has basic information about a player (id, name, dob, whatever), create a game table that has basic information about a game (id, name, perhaps where, etc), then create an event table that records points in a game (with columns like gameid, quarter, playerid, points). I wouldn't bother storing the scores, I'd get that from a basic SUM query against the event table.
+

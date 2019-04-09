@@ -1,0 +1,7 @@
+In my Android project, I have one xml (item.xml) like this :
+and one other xml (layout.xml) like this :
+in my Java file, I put a setText, like that :
+In the result, I have only the first textView with the text I have set ("hello"). The other are blank.
+I would like to put the same text on all the include.
+Why this is not working ?
+

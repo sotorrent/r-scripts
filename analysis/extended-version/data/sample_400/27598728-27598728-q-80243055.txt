@@ -1,0 +1,47 @@
+I have an Excel sheet with 2 columns.
+Column1 contains values like:
+
+10969
+11284
+1222
+1227
+12669
+12670
+12671
+12672
+Column2 contains comma separated values like this:
+601010,6010,40,4010
+601010,6010,40,4010
+40,4010,6010,601010
+40,4010,6010,601010
+40,4010,6010,601010
+40,4010,6010,601010
+40,4010,6010,601010
+40,4010,6010,601010
+I need this split up differently, so instead of having column2 commaseparated, I need 1 row for each value i column 2
+Column1 should use the same value for each string, so you get 4 rows with the same number in column1 and different numbers in column2
+An example using the data from above
+Column1 
+10969
+10969
+10969
+10969
+11284
+11284
+11284
+11284
+Column2
+601010
+6010
+40
+4010
+601010
+6010
+40
+4010
+It is not the same values everytime, and there is more than 1000 lines, so its a big task to do it manually.
+As far as I can see this is not possible with "standard Excel", But maybe with VBA?
+I hope someone can point me in the right direction.
+Regards
+Martin
+

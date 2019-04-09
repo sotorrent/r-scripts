@@ -1,0 +1,2 @@
+@anders. You are right I have changed the example accordingly. Check the documentation here. I do it differently nowadays. catchall location for php and specific location for assets(images, css, js, html, ...)
+

@@ -1,0 +1,7 @@
+Has the ObservableCollection of images to be serialized to a file?
+You could not extract the bitmap from a . There is no way to save it to file.
+You could use a instead of a and then you can get the pixels data of the .
+How can I convert a BitmapImage into a byte array?
+There is no way to extract the image data from an ImageSource. You will need to keep track of the original source of the information and recreate the image in the WriteableBitmap from the original source. If you know you are going to need to do this you may be better off just using a WriteableBitmap as your ImageSource to begin with
+From Rob’s reply Convert ImageSource to WriteableBitmap in Metro Windows 8, there is no way to  convert to a byte array. If you have used , It will be easy to do.
+

@@ -1,0 +1,2 @@
+It could. It depends on how it is implemented in the hardware. I'm going to edit the answer after looking over the code you added.
+

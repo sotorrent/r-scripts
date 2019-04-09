@@ -1,0 +1,6 @@
+Normally, you could have different field, like for your private needs, and leave for mongo generation.
+But if you still need it to be exactly the same - there could be 2 variants:
+
+1)  setting custom generated do each doc.
+2)  Save first doc, then read it again, check it's and set it to the other docs.
+

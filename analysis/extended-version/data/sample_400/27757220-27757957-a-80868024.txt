@@ -1,0 +1,4 @@
+Edit note: I initially get a slightly different result than you did  which I now think was related to my lack of understanding of R difftime objects. Timezones in objects also remain a mystery to me but I now see that when I coerced a 'difftime' object to 'numeric' that I got the value in "days".
+The function is very useful as an index creation function that maps a values-vector where one has multiple adjoining non overlapping intervals. You really only have two time-points that split into three intervals.
+I also checked to see if my result would be affected by whether the intervals in findIntervals were closed on their right rather than the left (default) and saw no difference.
+

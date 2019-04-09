@@ -1,0 +1,2 @@
+How do you tell Identity which columns hold the legacy passwordhash and legacy salt?
+

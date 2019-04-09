@@ -1,0 +1,5 @@
+you would go at it exactly the same way as you would a text file. writing your data byte by byte, encoded in such a way that when you read the file you know what you are reading.
+for a spreadsheet application you could even use a text format (OOXML, OpenDocument) to store presentation and content information.
+Or you could define binary datastructures and write that directly to the file.
+the choice between text or binary format depends on the application. for a configuration file you may prefer a text file which can be modified outside your app, for a database you will most likely choose a binary format for performance reasons.
+

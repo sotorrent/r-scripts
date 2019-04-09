@@ -1,0 +1,2 @@
+It's a java application that we're bundling as a mac .app, because the latest Mac OS X Gatekeeper won't allow "apple developer IDs" on a jar by itself. The jar always fine, outside the app, even when executed from the .app contents. It's only failing when the .app is the source executing the jar. I can't figure out why, and can't see any stack traces. The mac console app only shows some info on the filename, and "Exited with code 1". No stack track I can find, etc
+

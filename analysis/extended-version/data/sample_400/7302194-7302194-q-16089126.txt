@@ -1,0 +1,5 @@
+Hi I am trying to get showlink formatter working by following this document from trirand.
+What I want to achieve is a hyperlink I can click for a edit view to update/edit records. But for some reason, the column are empty where I want show a hyperlink.
+Here is my code snippets, and link is the last column:
+The formatter from jqGrid is working for currency, but for some reason, it just didn't shown for hyperlink.
+

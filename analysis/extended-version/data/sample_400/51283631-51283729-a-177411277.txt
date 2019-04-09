@@ -1,0 +1,4 @@
+Your images has to be in png format and named with lowercase letters.
+Then you can use
+You can get the name of the drawable with this:
+

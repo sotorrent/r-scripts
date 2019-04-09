@@ -1,0 +1,2 @@
+@MatthieuM. If I hadn't quit working on GCC in 2005, I would probably have pushed for a more aggressive set of on-by-default warnings by now, and probably also for the adoption of a mode similar to -- blacklist-style usage was infeasible in GCC as long as there were some warnings only controlled by generic options like or , but I think that's been fixed by now.
+

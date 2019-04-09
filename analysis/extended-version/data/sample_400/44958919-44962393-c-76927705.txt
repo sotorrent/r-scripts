@@ -1,0 +1,4 @@
+I've corrected my previous answer. also should respond to the calls: the alpha for your not changing when it is disabled?
+
+I'm not particularly sure which examples you might be referring to, but my guess is that they may be taking advantage of . These allow you to display a different drawable depending on the state of the view (our case being enabled/disabled).
+

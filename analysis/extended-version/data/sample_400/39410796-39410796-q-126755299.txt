@@ -1,0 +1,5 @@
+I have a Label which takes dynamicaly some data from database.
+These data are strings which can sometimes be 3-4-5 rows etc.
+So this labe is inside a UIView.
+How can i make the to take the certain height of the Label dynamicaly??
+

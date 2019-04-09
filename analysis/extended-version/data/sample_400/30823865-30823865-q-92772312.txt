@@ -1,0 +1,10 @@
+I want to stack the two Font Awesome icons fa-star and fa-star-half, but I am having alignment issues.  See image below:
+Attempt to stack fa-star and fa-star-half fails due to alignment of icons
+
+Here is my HTML:
+...and my CSS:
+Note that I do not want to use fa-star-half-o which has an unappealing design when used with an outline.
+I have tried to use "float," but without success.
+Any help is appreciated.  Thanks!
+Jesse
+

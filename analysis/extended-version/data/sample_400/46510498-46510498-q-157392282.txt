@@ -1,0 +1,7 @@
+I'm facing difficulties with simple Angular/Java application. During rest call, I'm also creating a tile component. Data is being retrived - I can see logs in the network tab and in backend logs, however Tile component is not being created. Here is the code:
+main.grid.ts:
+album.service.ts:
+in the logs on frontend side I can see:
+Edit.
+To narrow the issue, to my understanding the issue is with the order of loading in the Main.Grid.ts. as I've noticed in the logs, the rest call is being triggered after the code to create the tile element. I've tried to use hardcoded json object, and it was loaded properly.
+

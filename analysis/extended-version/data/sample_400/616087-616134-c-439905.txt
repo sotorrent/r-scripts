@@ -1,0 +1,2 @@
+I finally did. The .net side is creating a keyed hash, so I needed to use hash_hmac() with a validation key on my side.
+

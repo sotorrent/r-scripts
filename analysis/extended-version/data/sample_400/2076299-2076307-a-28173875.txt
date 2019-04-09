@@ -1,0 +1,10 @@
+You will need Javascript to do this. Use [][1]:
+Note: the current window is implied. This is equivalent:
+or you can specify a different window.
+So:
+with HTML:
+or:
+You here to prevent the default behavior for the event. Otherwise the browser will attempt to go to that URL (which it obviously isn't).
+Now the options on the [][2] dialog box will be OK and Cancel (not Yes and No). If you really want Yes and No you'll need to create some kind of modal Javascript dialog box.
+Note: there is browser-specific differences with the above. If you opened the window with Javascript (via ) then you are allowed to close the window with javascript. Firefox disallows you from closing other windows. I believe IE will ask the user for confirmation. Other browsers may vary.
+

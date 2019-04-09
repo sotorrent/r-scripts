@@ -1,0 +1,2 @@
+It can be used to force the function keyword to be treated as an expression instead of a declaration. So it's  operator.
+

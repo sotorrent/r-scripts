@@ -1,0 +1,2 @@
+I know. I was just wondering why these statements work in Tomcat, WAS6, WAS7 and no longer in WAS8
+

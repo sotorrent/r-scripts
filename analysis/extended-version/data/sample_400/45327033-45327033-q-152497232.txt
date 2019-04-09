@@ -1,0 +1,5 @@
+I would like to create a regex for a 24h unix timestamp starting from, say: 01/01/2015 00:00:00 (1420066800) to 01/01/2015 23:59:59 (1420153199), which is a difference of 86399 sec. in the unix time stamp format.
+I'm using the range_regex python lib, but it's buggy for such a huge ranges. The range_to_pattern method () would produce a regex of: 14200-13-6\d{2}
+This is fine for the static bounds to create the regex, but when it comes to values like: 1420159111 since the 7 digit (9) from the left is not in the third range group ([3-6]).
+Can someone provide a better python3 lib or a workaround on how to create a regex for 86400 sec. of a day?
+

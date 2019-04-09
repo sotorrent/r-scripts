@@ -1,0 +1,2 @@
+i have a fingerprint reader device for pc but now i want to connect that fingerprint reader to my android mobile ?anyone help me which is the usb connector for this???
+

@@ -1,0 +1,2 @@
+yes Mihai Caracostea, while I store it on the same directory, it has been working by giving that address. But if I store it on Resources it gives that type of warning.
+

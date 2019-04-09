@@ -1,0 +1,2 @@
+I have a function that uploads and image and adds a preview to this image, and i have two buttons, when i click on the first one it clicks on the input type file and opens it, and the second one duplicates the div, how can i duplicate this div and change it's id's or classes? and after duplicating it how can i make the buttons work for the new duplicated div not the original one only? here is my code:
+

@@ -1,0 +1,6 @@
+Is there any possibility to override the title of an HTML element with js or anything other technology? My goal is to change that title based on an if condition:
+I've tried different ways. Some of them would be:
+Or
+
+None worked, until now. Thanks!
+

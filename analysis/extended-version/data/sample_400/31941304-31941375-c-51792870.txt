@@ -1,0 +1,2 @@
+@Quentin I reworded a little. Not perfect, but perhaps better. It's hard to avoid the word "string" and, thus, a potential confusion. The preprocessor really does a "literal string substitution" as in "a string substitution that is literal" rather than a "substitution of a so-called string literal"
+

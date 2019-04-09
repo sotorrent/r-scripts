@@ -1,0 +1,2 @@
+It really depends on how you insert your data into the table, but one idea might be to scrap your current "hscore", "lscore", "tscore" columns and use computed columns with functions to determine whatever you need. e.g. and the functions would just return the total values of the quarter table for each respective requirement.
+

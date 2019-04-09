@@ -1,0 +1,2 @@
+So now that you have all the details, do you have any useful advice?  What did knowing it's a STM32F205 tell you that you needed to know?
+

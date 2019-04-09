@@ -1,0 +1,3 @@
+Just try to execute the php file by hand and echo the output of the sql statment. At least you know if your scripts work then. Post your results.
+Greetings
+

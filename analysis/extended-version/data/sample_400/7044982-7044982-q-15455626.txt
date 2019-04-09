@@ -1,0 +1,10 @@
+the question might be a bit confusing, so here is what i have:
+i insert in the database the previous link where a person came from like tihs:
+if the link is from google.com it will come like this:
+if we look inside we can find as beeing the keywords that i search for.
+my question is how can i create a query to return ?
+i know that the keywords have the sign in between them.
+so far i came up with this, but not exactly what i wanted:
+any ideas?
+thanks
+

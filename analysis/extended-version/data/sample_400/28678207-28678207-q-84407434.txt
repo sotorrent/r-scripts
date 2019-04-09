@@ -1,0 +1,7 @@
+I need to convert a flat array where the similar data is held in separate properties into an array of arrays grouping the data fields from each property together. Hopefully an example will make sense of this.
+The original array:
+Output required:
+I know that I can do this by 'manually' setting up objects for each data field and adding them to the new array:
+and then iterating through the original array grabbing the data for each object:
+However there are in fact a dozen of these data properties and this method seems long-winded. Is there a way I can populate the new array by looping through the data properties?
+

@@ -1,0 +1,5 @@
+My GAE app sends email, and I followed Jeff Atwood's excellent article to improve the likelihood of email delivery.
+The first two steps are really easy, but setting up a Sender ID record is more challenging.  The article provides a link to a "Wizard" to help do this, but I don't know the answer to many of the questions in the wizard.
+I use Google Apps for email so I'm thinking the Sender ID record should be the same for many other people in my situation (Google Apps and GAE users).
+Can anyone point me to a Sender ID record for this?
+

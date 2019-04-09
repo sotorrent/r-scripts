@@ -1,0 +1,6 @@
+My python regex is rusty but here goes:
+the means starts with.
+The means the end
+means an integer which in my code will be put into a variable
+doesn't have a $ because you may not want the url to end there. You want admin/somethingelse to be passed to your admin.sites.urls class.
+
