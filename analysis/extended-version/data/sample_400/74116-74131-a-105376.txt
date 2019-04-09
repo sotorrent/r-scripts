@@ -1,4 +1,4 @@
 You usually use a third party library for these things.  For example, you would link in a database library for say Oracle that would allow you to talk to the database. Because the underlying file type, ( i.e. Excel spreadsheet vs Openoffice, Oracle vs MySQL, etc. ) differ these libraries abstract away your need to care how the file is constructed.
 Hope that helps you find what you're looking for!
-Frank Wiles, Revolution Systems, <a href="
+Frank Wiles, Revolution Systems, www.revsys.com
 

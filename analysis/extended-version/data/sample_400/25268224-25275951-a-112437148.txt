@@ -2,6 +2,4 @@ Per the model builder, the function GetByExternalKey is a bound function. Accord
 If you don't know the namespace, just add below to the method GetModel():
 And replace "Your.Namespace" with the namespace of the type Order.
 Here are 2 samples related to your question, just for your reference:
-<
-<
 

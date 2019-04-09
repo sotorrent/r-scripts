@@ -1,3 +1,4 @@
 Us the Empty() method in jquery
-See fiddle Jquery Empty Documentation here
+See fiddle  Demo
+Read Jquery Empty Documentation here
 

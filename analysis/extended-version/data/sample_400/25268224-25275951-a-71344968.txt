@@ -3,6 +3,4 @@ if you don't know the namespace, just add below to the method GetModel():
 builder.Namespace = typeof(Order).Namespace;
 And replace "Your.Namespace" with the namespace of the type Order.
 Here are 2 samples related to your question, just for your reference:
-<
-<
 
