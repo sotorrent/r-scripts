@@ -50,3 +50,4 @@ sampling/data/EditedThreads.csv
 sampling/data/EditedThreadsComments.csv
 MostRecentPostBlockVersionNormalizedClonesHash.csv
 analysis/extended-version/data/MostRecentPostBlockVersionNormalizedClonesExport.csv
+/analysis/extended-version/data/CodeBlocksComparisonFiltered.csv
