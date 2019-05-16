@@ -90,4 +90,6 @@ for (i in sample_ids) {
 # reorder columns
 clones <- subset(clones, select=c(22,1,23,2:21))
 
-write.table(clones[sample_ids], file="data/CodeBlocksComparisonFilteredSample1.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+sampled_snippets <- clones[sample_ids]
+
+write.table(sampled_snippets, file="data/CodeBlocksComparisonFilteredSample1.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
