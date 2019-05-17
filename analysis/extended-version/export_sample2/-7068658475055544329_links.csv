@@ -1,0 +1,6 @@
+"Url","PostCount"
+"http://myserver.com/index.html#123/456",1
+"http://myproject.com/app_dev.php",1
+"http://myproject.com",1
+"http://symfony.com/doc/current/components/routing/hostname_pattern.html",1
+"http://myserver.com/123/456",1

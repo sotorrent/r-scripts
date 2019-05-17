@@ -1,0 +1,9 @@
+"Url","PostCount"
+"https://developers.google.com/maps/documentation/geocoding/",6
+"http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true_or_false",3
+"http://maps.googleapis.com/maps/api/geocode/json?address=1600%20Amphitheatre%20Parkway,%20Mountain%20View,%20CA&sensor=true_or_false",1
+"https://maps.googleapis.com/maps/api/geocode/output?parameters",1
+"http://maps.googleapis.com/maps/api/geocode/output?parameters",1
+"http://strava.github.io/api/v3/segments/#explore",1
+"http://developer.android.com/reference/android/location/Geocoder.html",1
+"http://i.stack.imgur.com/qnEcs.png",1
