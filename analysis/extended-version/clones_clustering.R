@@ -82,12 +82,12 @@ clones$PostsPerOwner <- as.numeric(clones$PostCount/clones$UniqueOwnerCount)
 clones$QuestionRatio <- as.numeric(clones$QuestionCount/clones$PostCount)
 clones$AnswerRatio <- as.numeric(clones$AnswerCount/clones$PostCount)
 
-clones_clustering <- clones[,c("AnswerRatio", "MedianScore", "MedianTimeBetweenPosts")]
+clones_clustering <- clones[,c("ContentNormalizedHash", "AnswerRatio", "MedianScore", "MedianTimeBetweenPosts")]
 ncol(clones_clustering)
 # 3
 
 library(Hmisc)
-rcorr(as.matrix(clones_clustering[,1:3]), type="spearman")
+rcorr(as.matrix(clones_clustering[,2:4]), type="spearman")
 #                        AnswerRatio MedianScore MedianTimeBetweenPosts
 # AnswerRatio                   1.00        0.33                   0.18
 # MedianScore                   0.33        1.00                   0.25
@@ -100,7 +100,7 @@ clones_clustering$MedianScoreScaled <- scale(clones_clustering$MedianScore)
 clones_clustering$MedianTimeBetweenPostsScaled <- scale(clones_clustering$MedianTimeBetweenPosts)
 
 library(cluster)
-clones_clustering$cluster <- pam(clones_clustering[,4:6], 3, metric="manhattan")$clustering
+clones_clustering$cluster <- pam(clones_clustering[,5:7], 3, metric="manhattan")$clustering
 table(clones_clustering$cluster)
 #     1     2     3 
 # 18548  3322  8108 
@@ -165,12 +165,12 @@ par(
   cex.axis=1
 )
 
-pairs(clones_clustering[,4:6], col=colors)
+pairs(clones_clustering[,5:7], col=colors)
 
 dev.off()
 
 
-summary(clones_clustering[clones_clustering$cluster == 1,1:3])
+summary(clones_clustering[clones_clustering$cluster == 1,2:4])
 #  AnswerRatio       MedianScore       MedianTimeBetweenPosts
 # Min.   :0.00000   Min.   :-11.0000   Min.   :    0.000     
 # 1st Qu.:0.00000   1st Qu.:  0.0000   1st Qu.:    4.582     
@@ -179,7 +179,7 @@ summary(clones_clustering[clones_clustering$cluster == 1,1:3])
 # 3rd Qu.:0.00000   3rd Qu.:  1.0000   3rd Qu.:  137.633     
 # Max.   :0.50000   Max.   : 75.5000   Max.   :16962.002
 
-summary(clones_clustering[clones_clustering$cluster == 2,1:3])
+summary(clones_clustering[clones_clustering$cluster == 2,2:4])
 #  AnswerRatio     MedianScore      MedianTimeBetweenPosts
 # Min.   :0.000   Min.   : -3.500   Min.   : 5377         
 # 1st Qu.:0.500   1st Qu.:  0.500   1st Qu.:16009         
@@ -188,11 +188,11 @@ summary(clones_clustering[clones_clustering$cluster == 2,1:3])
 # 3rd Qu.:1.000   3rd Qu.:  6.000   3rd Qu.:31792         
 # Max.   :1.000   Max.   :881.000   Max.   :85610
 
-summary(clones_clustering[clones_clustering$cluster == 3,1:3])
+summary(clones_clustering[clones_clustering$cluster == 3,2:4])
 #  AnswerRatio      MedianScore      MedianTimeBetweenPosts
 # Min.   :0.5000   Min.   : -5.000   Min.   :    0.005     
 # 1st Qu.:1.0000   1st Qu.:  0.500   1st Qu.:    0.454     
 # Median :1.0000   Median :  1.000   Median :  143.001     
 # Mean   :0.8988   Mean   :  3.094   Mean   : 2154.915     
 # 3rd Qu.:1.0000   3rd Qu.:  2.500   3rd Qu.: 2808.218     
-# Max.   :1.5000   Max.   :422.000   Max.   :16683.234 
+# Max.   :1.5000   Max.   :422.000   Max.   :16683.234
