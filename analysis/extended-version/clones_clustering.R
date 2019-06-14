@@ -232,6 +232,7 @@ sample_export <- data.frame(
 )
 names(sample_export) <- names(sample_cluster_1)
 
+write.table(sample_export, file="sample4.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
 
 # write posts containing clone
 for (i in 1:nrow(sample_export)) {
@@ -249,7 +250,7 @@ for (i in 1:nrow(sample_export)) {
     scores,
     stringsAsFactors=FALSE
   )
-  names(clone_data) <- c("PostId", "ParentId", "OwnerUserIds", "CreationDate", "Score")
+  names(clone_data) <- c("PostId", "ParentId", "OwnerUserId", "CreationDate", "Score")
   
   # sort posts chronologically
   clone_data <- clone_data[order(clone_data$CreationDate),]

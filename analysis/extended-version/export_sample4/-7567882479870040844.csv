@@ -1,3 +1,3 @@
-"PostId","ParentId","OwnerUserIds","CreationDate","Score"
+"PostId","ParentId","OwnerUserId","CreationDate","Score"
 "13512329","13512329","1844909","2012-11-22 11:59:27","3"
 "20627037","20627037","3093831","2013-12-17 06:00:04","0"
