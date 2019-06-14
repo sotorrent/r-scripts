@@ -21,6 +21,14 @@ n <- nrow(clones)
 n
 # 29,978
 
+summary(clones$PostCount)
+#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 2.000   2.000   2.000   2.256   2.000  78.000 
+
+table(clones$PostCount)[1:10]
+#     2     3     4     5     6     7     8     9    10    11 
+# 25779  2786   772   283   132    63    41    39    20    15 
+
 clones$UniqueOwners <- as.character(rep(NA, n))
 clones$UniqueOwnerCount <- as.integer(rep(NA, n))
 clones$ClonesWithinThreads <- as.integer(rep(NA, n))
@@ -196,3 +204,94 @@ summary(clones_clustering[clones_clustering$cluster == 3,2:4])
 # Mean   :0.8988   Mean   :  3.094   Mean   : 2154.915     
 # 3rd Qu.:1.0000   3rd Qu.:  2.500   3rd Qu.: 2808.218     
 # Max.   :1.5000   Max.   :422.000   Max.   :16683.234
+
+medians <- data.frame(
+  rbind(apply(clones_clustering[clones_clustering$cluster == 1,2:4], 2, median),
+        apply(clones_clustering[clones_clustering$cluster == 2,2:4], 2, median),
+        apply(clones_clustering[clones_clustering$cluster == 3,2:4], 2, median)
+  )
+)
+medians
+#   AnswerRatio MedianScore MedianTimeBetweenPosts
+# 1         0.0           0               23.60542
+# 2         0.5           2            21957.78313
+# 3         1.0           1              143.00069
+
+# draw sample for qualitative analysis
+n <- 5
+
+sample_cluster_1 <- clones[clones$ContentNormalizedHash %in% sample(clones_clustering[clones_clustering$cluster == 1,]$ContentNormalizedHash, n),]
+sample_cluster_1$Cluster <- as.integer(rep(1, n))
+sample_cluster_2 <- clones[clones$ContentNormalizedHash %in% sample(clones_clustering[clones_clustering$cluster == 2,]$ContentNormalizedHash, n),]
+sample_cluster_2$Cluster <- as.integer(rep(2, n))
+sample_cluster_3 <- clones[clones$ContentNormalizedHash %in% sample(clones_clustering[clones_clustering$cluster == 3,]$ContentNormalizedHash, n),]
+sample_cluster_3$Cluster <- as.integer(rep(3, n))
+
+sample_export <- data.frame(
+  rbind(sample_cluster_1, sample_cluster_2, sample_cluster_3)
+)
+names(sample_export) <- names(sample_cluster_1)
+
+
+# write posts containing clone
+for (i in 1:nrow(sample_export)) {
+  post_ids <- strsplit(sample_export[i,]$PostIds, ";", fixed = TRUE)
+  parent_ids <- strsplit(sample_export[i,]$ParentIds, ";", fixed = TRUE)
+  owner_user_ids <- strsplit(sample_export[i,]$OwnerUserIds, ";", fixed = TRUE)
+  creation_dates <- strsplit(sample_export[i,]$CreationDates, ";", fixed = TRUE)
+  scores <- strsplit(sample_export[i,]$Scores, ";", fixed = TRUE)
+  
+  clone_data <- data.frame(
+    post_ids,
+    parent_ids,
+    owner_user_ids,
+    creation_dates,
+    scores,
+    stringsAsFactors=FALSE
+  )
+  names(clone_data) <- c("PostId", "ParentId", "OwnerUserIds", "CreationDate", "Score")
+  
+  # sort posts chronologically
+  clone_data <- clone_data[order(clone_data$CreationDate),]
+  
+  # write metadata
+  write.table(clone_data, file=paste0("export_sample4/", sample_export[i,]$ContentNormalizedHash, ".csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+  
+  # write content
+  content <- data.frame(Content=as.character(sample_export[i,]$Content))
+  write.table(content, file=paste0("export_sample4/", sample_export[i,]$ContentNormalizedHash, "_content.csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+}
+
+# write index file
+index <- sample_export[,c("ContentNormalizedHash", "Cluster", "PostCount", "ThreadCount", "LineCount")]
+names(index) <- c("HashValue", "Sample", "PostCount", "ThreadCount", "LineCount")
+
+write.table(index, file="export_sample4/index.csv", sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+
+
+# read SO links
+clones_so_links <- fread("data/CodeBlocksComparisonFilteredLinksSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+# prevent problems with SQLDF and integer64
+clones_so_links$ContentNormalizedHash <- as.character(clones_so_links$ContentNormalizedHash)
+nrow(clones_so_links)
+# 4,962
+
+# write SO links for each cloned code block
+for (hash_value in sample_export$ContentNormalizedHash) {
+  so_links <- sqldf(paste0("SELECT LinkedPostId, LinkedPostTypeId, PostCount FROM clones_so_links WHERE ContentNormalizedHash=", hash_value, " ORDER BY PostCount DESC"))
+  write.table(so_links, file=paste0("export_sample4/", hash_value, "_so-links.csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+}
+
+
+# read other links
+clones_links <- fread("data/CodeBlocksComparisonFilteredLinksNonSOExport.csv", header=TRUE, sep=",", quote="\"", strip.white=TRUE, showProgress=TRUE, encoding="UTF-8", na.strings=c("", "null"))
+# prevent problems with SQLDF and integer64
+clones_links$ContentNormalizedHash <- as.character(clones_links$ContentNormalizedHash)
+nrow(clones_links)
+# 28,733
+
+# write other links for each cloned code block
+for (hash_value in sample_export$ContentNormalizedHash) {
+  links <- sqldf(paste0("SELECT Url, PostCount FROM clones_links WHERE ContentNormalizedHash=", hash_value, " ORDER BY PostCount DESC"))
+  write.table(links, file=paste0("export_sample4/", hash_value, "_links.csv"), sep=",", col.names=TRUE, row.names=FALSE, na="", quote=TRUE, qmethod="double", fileEncoding="UTF-8")
+}
